@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Enterprise Infrastructure Series Part 3 - Configuration Automation</title>
+    
+    <meta name="author" content="Ajey Gore">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Ajey Gore</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Enterprise Infrastructure Series Part 3 - Configuration Automation </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>12 January 2012</strong>
+    </div>
+    <div class="content">
+      <p>In the last two posts I went about how to get basic virutalization and  why configuration management is necessary. In this part I will explain  about setting up a Chef server and how to setup basic provisioning, In part 4 I will explain on how can we go about automated provisioning using OpenVZ and monitoring those instances.</p>
+<p><strong>Let's put the requirements upfront --</strong></p>
+<ol>
+<li>We should be able to create containers using any virtualization provider, in this case OpenVZ.</li>
+<li>We should be able to manage configurations for each servers - name  resolution, package update mirror server, time zones and ssh key  infrastructure information</li>
+<li>We should be able to have centralized logging, monitoring and  accounting for various projects - in TW we have dozens of projects and  we wanted to have accurate accounting for these projects - such as how  many VMs have been used by a project, how much computing power has been  utilized and how much disk space has been used.</li>
+<li>We should be able to reliably recreate any infrastructure server using this automation.</li>
+</ol>
+<p><br />This  is a typical chicken and egg problem -- if we do not have any  configuration management tool, how do we configure the first hardware  server? And if we do not have any containers, then how do we setup the  first server? So the answer lies in one basic principle -- configure  anything manually first and then we should not require to do it manually  next time, we should automate it for next time - we kept this principle in mind.</p>
+<div class="im">So in short what I did was to setup a hardware node and then create OpenVZ containers for setting up first Chef server.</div>
+<p>I downloaded CentOS 6 OpenVZ template from here&nbsp;<a href="http://download.openvz.org/template/precreated/" target="_blank">http://download.openvz.org/template/precreated/</a> and first thing was to install the Chef server, our aim was to create a  self scaling private cloud based on OpenVZ - where we can add more  hardware on demand, which provides HA and load balancing.<br /> Since configuration management allows us to define configuration as  source code, we should be able to redeploy that source code on any  server thus recreating that server reliably when ever we have lost it or  due to mis-configuration we have malfunction.</p>
+<p>My team settled on following tool set --</p>
+<ol>
+<li>Ruby for scripting everything</li>
+<li>Chef from OpsCode for configuration management</li>
+<li>MCollective for infrastructure orchestration</li>
+<li>Nagios for monitoring&nbsp;</li>
+<li>GrayLog2 for centralized logging</li>
+<li>Bind as name server</li>
+<li>CentOS as default Linux flavor</li>
+</ol>
+<div class="im">So for configuration automation - we started with following list.</div>
+<ol>
+<li>OpenVZ server <strong><a href="http://(covered in Part 1)" title="http://ajeygore.in/part-1-bootstrap-openvz">(covered in Part 1)&nbsp;</a></strong>and later provision containers using Chef Server.</li>
+<li>Chef server - and then make it chef client so that we can re-setup in future.</li>
+<li>Bind, where we can add and remove entries and add CNAMEs as well.</li>
+<li>Nagios server, when ever a node* is created using Chef, it automagically gets picked up by Nagios for monitoring.</li>
+<li>GrayLog2 - for logging and analysis.</li>
+<li>A reporting tool for infrastructure reports regarding utilization and accounting for this infrastructure.</li>
+</ol>
+<div class="im"><strong>Getting started with Chef server setup in 3 easy steps</strong>.</div>
+<p style="padding-left: 30px;">Please read <strong><a href="http://ajeygore.in/part-2-automating-infrastructure" title="this" target="_blank">this</a></strong> post for chef basics. FrameOS have been doing awesome job in Linux + Ruby ecosystem, they have stable and latest ruby packages, we will be using FrameOS RBEL repo for setting up our chef server, although FrameOS blog mentions how to install chef easily, I will be kind of re-iterating same thing here but I will cover how do we continue setting up client, knife UI on your machine and verify chef client run. While you can use OpsCode client recipes - we will most probably will not use them because they are influenced hugely with Ubuntu Linux. Since we will be using RHEL/CentOS combo where ever possible - so we will end up modifying those scripts, so lets start with basic scripts on our own.</p>
+<p style="padding-left: 30px;"><strong>1. Setup </strong></p>
+<p style="padding-left: 30px;">To Setup chef on your CentOS 6 box - you can refer to <strong><a href="http://blog.frameos.org/2011/05/19/installing-chef-server-0-10-in-rhel-6-scientificlinux-6/" title="this" target="_blank">this</a></strong> post or use following shell script (trust me this is one of the few place we will be using shell script, mostly we will be using ruby to do our scripting as well, but since our bare bone container may or may not have ruby, we should use shell script to setup chef and then use ruby everywhere else), become root and execute these 4 statements</p>
+<div class="CodeRay">
+  <div class="code"><pre>rpm -Uvh http://rbel.frameos.org/rbel6
+yum install rubygem-chef-server
+service iptables stop
+setup-chef-server.sh</pre></div>
+</div>
+
+<p style="padding-left: 30px;">&nbsp;</p>
+<p style="padding-left: 30px;">Once you are done with this setup, we are ready to hit chef server! so lets get going and setup our first chef client and a repo. Chef needs recipes which form a cookbook and in ideal scenario one of many cookbooks form a role which gets applied to a node*.&nbsp;<strong>Now login to <a href="http://your-chef-server:4040">http://your-chef-server:4040</a> user: admin password: chef321go&nbsp;</strong></p>
+<p style="padding-left: 30px;"><strong>2. Admin Client</strong></p>
+<p style="padding-left: 30px;">After loggin in as Admin, you will have to change default admin password - keep a note of it, after this, create user name for yourself. And create a client for yourself as well.&nbsp;</p>
+<p style="padding-left: 30px;">User name is required if you want to operate web-ui and client is required for knife to be able to help you manage roles, cookbooks, recipe and nodes on chef.</p>
+<p style="padding-left: 30px;"><strong>3. Repository Setup</strong></p>
+<p style="padding-left: 30px;">Unlike puppet, Chef does not need a repository, what you do is to create repository for yourself and then upload cookbooks/recipes/nodes/roles from the repository to chef server. For basic stuff, you should have something like this</p>
+<p style="padding-left: 30px;">&nbsp;</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>.. (up a dir)
+/Users/ajeygore/Documents/workspace/chef/
+|+checksums/
+|+cookbooks/
+|+data_bags/
+|+databags/
+|+environments/
+|+nodes/
+|+roles/
+`-scripts/</pre></div>
+</div>
+
+<p style="padding-left: 60px;">&nbsp;</p>
+<p>once you have setup repository, you might want to check it in Git or something similar. After this you will create a .chef directrory inside chef repo. Install chef client on your machine, and run knife configure. Once you have setup knife - enter <strong>knife node list</strong> as command and you should see empty node list.&nbsp;</p>
+<p>That concludes our setup for Chef Client, In next post, I will conclude how can we start automating monitoring and basic setups with Chef, including provisioning. I hope by now you understand how chef works and how recipes work, its time to write a simple recipe which changes MOTD on linux machine to the motd of your choice.</p>
+<p>*A node is a machine - whether its virtual, containers or physical box</p>
+<p>&nbsp;</p>
+
+    </div>
+
+  
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      
+      
+
+
+  
+     
+    	<li><a href="/categories.html#Automation-ref">
+    		Automation <span>4</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#chef-ref">
+    		chef <span>2</span>
+    	</a></li>
+     
+    	<li><a href="/categories.html#Configuration Management-ref">
+    		Configuration Management <span>3</span>
+    	</a></li>
+    
+  
+
+
+    </ul>
+    
+
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/part-2-automating-infrastructure/index.html" title="Enterprise Infrastructure Series Part 2 - Need for Configuration Management">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/enterprise-infrastructure-series-part-4-monit/index.html" title="Enterprise Infrastructure Series Part 4 - monitoring and provisioning automation">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 Ajey Gore
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

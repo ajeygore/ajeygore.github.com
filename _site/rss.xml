@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Ajey Gore</title>
+        <description>Ajey Gore - Ajey Gore</description>
+        <link>http://ajeygore.github.com</link>
+        <link>http://ajeygore.github.com</link>
+        <lastBuildDate>2013-03-29T00:08:32+05:30</lastBuildDate>
+        <pubDate>2013-03-29T00:08:32+05:30</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>Change for eventual failure</title>
+                <description>&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;I have always believed in software functionality being ZERO or ONE. It means that either it will work or it will not, very well..! people argue that software should be like phone - should be able to make calls &#39;always&#39;, it should be like your alarm clock - should go off at certain pre-defined time occurence or like car remote, will lock on unlock the car given it has batteries with enough power - it will always function - software is also expected to work like that. Well why not and when you put this question infront of software techie - he will either get frustratred or will be looking around twiddling his thumbs on thinking on how to explain it better.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;Well, software engineers always take pride in showcasing the software they wrote and always take pride in improving it over time, wait a minute, we are just talking here about running the software after its written, then why improving it? it does what it&#39;s expected to do, then why improve? Its very different paradigm, while other systems I just outlined up there, are expected to do precisely what they are suppose to do and once they are designed &amp;amp; manufactored, they don&#39;t have any place for improvement, now given that, their new versions are better, but we live with the current one with their limited functionality - eg, car remote will lock and unlock the car, and hopefully, next version comes out with starting AC in your car as well, but if you have old remote then it will do only those two functions, and you are happy with that. Given the flexibility of software we always expect to add more features, and when those features are added, software workflow gets complex. Hardware features are almost always linear in nature, but software features addition makes software workflow branch out into different routes and then end up in same fashion.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;Once software goes complex, we abstract out similar functional areas and split the software into smaller separate modules - but there is rarely a pause to relook at software and re-engineer it. A software built for a specific purpose and then with added functionality will not perform at same level. Companies tend to write or re-write parts of software every few months, to make it adapt to new architecture or deliver better performance. The change is unavoidable and managing it is the key - that also involves people understanding NFRs (non-functional requirements) around project life cycle. One of the key qualities of software is that it&#39;s quality seems to detoriate over the period of time, actually its not true, extended functioanality makes its quality seem to detoriate, software becomes obsolete very quickly - it also does not hold good for new requirements - and given the nature of change - it leads to eventual failure.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: medium;&quot;&gt;So how do you cope up with that? how do you make sure that change does not lead to eventual failure? how do you make sure that change is tackled in a same way as you designed the software at first occassion? If we follow one rule of thumb - you need to have pause, if you keep driving your car without re-fuelling it tend to stop, choke and won&#39;t start very quickly, unless you remove air from fuel-lines and make fuel flow again, this takes time! so pausing is always great. I have always believed in this quote - &quot;I am not done, I will never be done, its the pause I cherish&quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/change-for-eventual-failure/index.html</link>
+                <guid>http://ajeygore.github.com/change-for-eventual-failure/change-for-eventual-failure</guid>
+                <pubDate>2013-02-17T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Tuning performance with Java - on Linux systems</title>
+                <description>&lt;p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;I love java, rather jvm - well, as technology and have been making use of it. Java world is full of rock solid implementations about technologies and have a huge software library eco system to deliver things with rock solid performance. It also makes a very good candidate for dependable technology.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;Recently, we choose java at backend for everything we do in ruby :-) So everything ruby becomes everything java at the backend. There are many advantages of this approach - a nice language to work with (ruby) and nice dependable technology at production environment (jvm) - in short, we use jruby with torquebox. But there are caveats and as its true with every tool - &quot;if you didn&#39;t use it right, it won&#39;t give you right results&quot;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;When check-in rush happened last week at hoppr - it melted our servers to levels of not able to breath within given time frame. Our code looked right, we were doing everything right and making sure that our code is well optimized for what ever we can - although we had to make some changes to our code the way we look up db entries and other information, but that did not help at all for making service perform to the levels we wanted. We did not have enough time to react because service would go down pretty frequently &amp;ndash; we started investigating to figure out what&amp;rsquo;s causing it.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;The first culprit - memory&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;At prima facie it looked like we were running out of memory, well its true and it was true &amp;ndash; and the easiest way to deal with it to add more ram. Unfortunately we did not have that option, we had to make service work within limited memory and make sure that it does not go out of memory.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;&amp;ldquo;Out of memory&amp;rdquo; error occurs for several reasons &amp;ndash;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;We increased limits for user processes and open file &amp;ndash; since everything is file in linux including sockets and tends towards memory allocation, but that did not solve the problems we had 1000s of open sockets and still it would cause it to get out of memory.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;The secon cultprit - network protocol&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;Next tuning was around fixing networking parameters &amp;ndash; like decrease FIN_WAIT, TIME_WAIT parameters to 5 seconds, we then added options to recycle sockets, increased WMEM and RMEM parameters to use large data size to transporting data &amp;ndash; so that with one socket connection we can send upto 640kb data &amp;ndash; which resulted in less round trips&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;Using big pages was another tuning which we had to implement so that we can take advantage of java using big memory pages instead of smaller ones and perform better.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;The third culprit - defaults in app container&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;When we were done with OS level settings, we turned towards torquebox and found many things which could be fixed &amp;ndash; we increased thread pools, put threads execution times within 3 seconds (since we had to complete processing within 200ms) and thread wait to max 5 seconds.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The fourth culprit - default jvms gc&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;Lastly we looked at JVM itself &amp;ndash; if you do have multiple cores and huge memory &amp;ndash; then set &amp;ndash;Xms and &amp;ndash;mXM to same value &amp;ndash; so JVM does not have to struggle to allocate memory, since we knew that its going to consume that much, we should have done that earlier. GC also plays a huge part in it and we ran GC every 15 minutes instead of every hour, made it run parallel and allocated 25% CPU to it &amp;ndash; that way we ensured that we collected what ever we littered in last 15 minutes &amp;ndash; we do a lot of check-ins and most probably they did not need to dangle around for an hour.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;In summary, The learning was fun &amp;ndash; it required reading a lot of core-dumps, jmx monitoring and looking at threads very carefully, but solved our problems and hopefully we will be able to scale better.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;The default settings are pretty relaxed in OS and JVM. But these settings won&amp;rsquo;t always work for everyone, the bigger learning was that adding more cpu and memory will not solve a problem. We know that our existing system still has limits &amp;ndash; to how many check-ins we can handle per hour, but at least now we know that what works when&amp;hellip;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-family: Arial;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/tuning-performance-with-java-on-linux-systems/index.html</link>
+                <guid>http://ajeygore.github.com/tuning-performance-with-java-on-linux-systems/tuning-performance-with-java-on-linux-systems</guid>
+                <pubDate>2012-12-03T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Engineering at hoppr - technologies we use...</title>
+                <description>&lt;p&gt;At hoppr we get checkins over SMS and USSD, soon our apps will launch across mediums and then we will open up other access mediums.&lt;/p&gt;
+&lt;p&gt;At hoppr, we particularly pay attention towards USSD checkins - because we must repond to users pretty quick - within 200ms - and since this is the time for overall checkin, other access mediums enjoy this fast processing across. To make this work, we have been doing many things to improve upon checkins, sms sending and responding to users.&lt;/p&gt;
+&lt;p&gt;Major decision we took was to re-write our core app in Ruby - which eventually means that we are using rails and sinatra. Our core business logic is implemented in rails with various services handling different input mediums and calling main core services. We had to do this because old system was full of JSPs and every telco application (we have 6 of them) - had their own databases, this created problems related to Mobile Number portability and logic being repeated all over the place. Also this code was not unit-tested since it was organically grown over period of last 18 months. Rewrite was a big challenge and moving 2mn+ users was a challenge to be tackled in a nice way without loosing any customer information.&lt;/p&gt;
+&lt;p&gt;We wanted a futuristic service and we wanted to rapidly improve our database, sticking to a rdbms would have been a difficult task since database migrations for a schema or 2mn+ entries would have taken a longer time.. having worked on mongodb in my previous company where I had developed a system with 20mn+ records for online store with images and tags - it was easy for us to choose MongoDB?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NoSQL to rescue - way to go Mongo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The major advantage of moving to MongoDB was to not deal with any migrations in Rails. Migrations can be head-ache for large production dbs, our DB was evolving from a loosely coupled, some how put together tables to proper domain model. We took a call - not to embed too many documents and try to keep it like relational database with mongo documents - we lost flexibility of map-reduce, but it was good decisions for ETL. Given no migrations we could deploy our code - sometimes 6 - 8 times in day without worrying about big table migrations, the database is huge, with enormous amount of checkins coming from wap, campaigns, coupon downloads, ussd and sms - we could deal with pretty nicely. We had few problems with Mongo around performance and then we realized that our indexes were not optimized for the task and later mongo was breeze to work through...&lt;/p&gt;
+&lt;p&gt;The major problem we faced for not having multi-master replication in mongodb, but later we implemented a custom service for Rest over JMS for replicating domain objects across multiple WAN environment* (side not on environment down)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Torquebox -&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Not many people use jruby with torquebox, I have always been fan of JRuby - it does give us speed over time and also gives us native advantage of Java eco-system. Easy deployment came as an added advantage with JRuby, our deployments became like one single line shell script telling torquebox deploy our services pretty quickly. We process huge load of SMS every day across six telcos for checkins in, doing sychronous checkin would have been nightmare and torquebox&#39;s hornetq scaled up like crazy for us and we were able to deliver messages pretty quickly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;JMS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For every asynchronous processing for tasks we moved to JMS. At hoppr, when a checkin happens it goes through multiple stages - for example, when a user checks into a place with offer, we need to send him 2 - 3 smss based on offer type - for example, if you checkin to barista, we would be checking you in, in addition to that we would send you an offer coupon code. since every checkin gets you points, we need calculate your ranks and points, there are few points trigger in hoppr, which entitle you for certain awards if you cross that benchmark, for example crossing 100,000 points we send you a coupon code some nice service free! So processing all these in serial way would have caused delay in system - we check you in and rest all gets taken care by JMS and message processing happens based on triggers and notification - we are able to handle around 100K+ messages per hour using this technique. This also reduced our synchronus processing for first sms to 50 ms from 500ms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sinatra and Rails&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As I stated earlier, our core logic is implemented in rails, but other services we have been using Sinatra, hoppr has multiple modules using sinatra as web service for each end point - for example, when a sms arrives from user, its received by a service called &lt;span style=&quot;text-decoration: underline;&quot;&gt;receptionist&lt;/span&gt;, this service, for all practical purposes, acts as entry and end point for hoppr core service, apart from that we have implemented dnd, image service, subscription service, points trigger service, wap service, coupon service for all other purposes. Sinatra is beautiful and small framework with not much of overload, also, all services talk to core over http, this helps us deploy multiple instances if required to scale up system pretty quickly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mysql - Percona&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For all our services, we use percona mysql variant as logging and reporting db, every call is recorded as log, we do extensive logging to figure out what&#39;s causing problem and also, since services live on separate instance, it was just easy to do rdbms logging to enable graphs and everything else - this way we were able to scale and generate graphs for loggin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Redis&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;While mongo is great and efficient, looking up users, places, offers, points in db everytime was a troublesome feature, doing lookups and updating these models in database was exepensive, for example we update user points everytime, this results in 1000s of users getting updated every minute and in turn, locking down database, in turn slowing down system with few milliseconds, but since we needed to keep tab on USSD checkins and it must not cross 200ms boundry for us, we could not do without a near cache - simple key-value hash in redis has improved our performance many folds - lookups have been down to 5 ms and we could store live checkin counters - foursquare does&lt;a href=&quot;http://engineering.foursquare.com/2011/02/09/mongodb-strategies-for-the-disk-averse/&quot; title=&quot;foure square does counters with mongodb&quot;&gt; s&lt;/a&gt;&lt;a href=&quot;http://engineering.foursquare.com/2011/02/09/mongodb-strategies-for-the-disk-averse/&quot; title=&quot;foure square does counters with mongodb&quot;&gt;imilar stuff on mongodb&lt;/a&gt; &lt;/strong&gt;and we did the same with redis - resulted in much faster throughput. We not only used redis here, but we also used redis for caching multiple objects and tried to not to lookup database everytime, it also became kind of shared memory across all services! Redis improved our service performance by magnitude of 10 - 50 times at times.&lt;/p&gt;
+&lt;p&gt;Redis is also used with node.js as pub-sub client for putting up live checkin counters with using raephal as graph library, its fascinating to see live checkin counts ticking minute by minute, showing us details on hours, daily and overall checkins!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PHP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Well, if you are web service, you need to have a little bit of php in your place! PHP is not part of our core system, but it helped us migrate from old system - the major advantage of PHP is that you can connect to multiple DBs in a single line and migrate databases, we used PHP to inter-connect mongo and old mysql system and migrate useful data as places, users, merchants and many more across db ETL tasks! for example a 15 line php code, looked up places in old system and inserted them in new system as mongodb document - it ran as scheduled cron job every 15 minutes, and helped us through migration period of about 8 weeks! now we are using PHP in multiple ways such as looking up 25mn+ dnd entries and looking up whether a number is on that or not - in less than 2ms, it helped us scale! PHP worked as simple shell scripts where we did not want to use ruby!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Java&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hoppr can not live without java, all our sms sending modules, basic entry points, call back urls are all JSPs and java jms clients, in telco eco system we have less libraries for sending sms using CIMD, SMPP protocols in ruby compared to java, also, java sending module run as simple background programme in our system, they are efficient, fast and long running java programs get better and better in performance over period of time, we have been processing 1mn+ sms every day just by using this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nagios&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No production environment is complete if its not continuously being monitored by nagios, we use nagios at the core for monitoring everything at hoppr.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Node.js&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We just started using node for web presence! there has not been a significant advantage or disadvantage related to that. but more on that later...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Testing &amp;amp; CI&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No code at hoppr gets to our server if its not been run using rspec, junit and has not passed the greenlight at your CI server,&amp;nbsp; in last 90 days we have cross 1200+ builds - around 15 builds and 4 deployments per day! we run tests and write tests before writing code!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If all this stuff - near cache with redis, nosql with mongodb, excellent mvc using ruby on rails or sinatra, play with low level protocols using jms, java, smpp, cimd for sending and receiving sms and want to limit performace of application to 200ms benchmark, then we are waiting for you! drop me a note on twitter or send a mail at hoppr.com and we will get back to you! At hoppr you get to use fast mac books, with IDE of your choice! the only choice you don&#39;t have is to stop innovating at hoppr with all us! :-)&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;more on architecture in following post!&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/engineering-at-hoppr-technologies-we-use/index.html</link>
+                <guid>http://ajeygore.github.com/engineering-at-hoppr-technologies-we-use/engineering-at-hoppr-technologies-we-use</guid>
+                <pubDate>2012-11-29T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Perceptions - what makes you stand out?</title>
+                <description>&lt;p&gt;Every time I look at people judging others and creating perceptions about them. Sometimes they judge people on behavior, what people do and what appears to them as what people are doing.. Its just very confusing, I have been lurking around this for many years - as to what people think about me and sometimes what I think about them...&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;One thing, which everyone judges someone else, is that they want them to behave like them or better than them - that&amp;rsquo;s perceived image. On the other hand they want people to know &quot;what they are&quot; and that&amp;rsquo;s projected image. The mismatch between projected vs perceived causes misjudgment about the person. Sometimes this mismatch grows beyond the appropriate tolerance levels, it then most probably results into the judgment being biased. People make up the mind about the person as being useless or super-star.&amp;nbsp;&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;At times these triggers are caused by a single action. Since people have already made up their mind about the person, so it will have a view about person being stupid or useless. Usually this single action either causes people to give up on others and or to start ignoring others.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Most of the time we usually don&#39;t care about perceived image but keep working on projected image, by way of keeping in mind our ideal hero and improving to match ideal personality. People do think differently - I have learned how people perceived me being stubborn, arrogant and rigid - just because I did not behave the way they wanted me to behave, while I have all right to believe I have been right all the time. This tension between balancing your appearance vs what you are is something I have learned to work on. This does not mean that you should stop being what you are...&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;I have faced these issues several times, where I did not like some act of people and have taken drastic action based on instant reaction and influenced by rush of hour. But that&#39;s something not right if you are put up in that situation again and again - so most probably that means that there is somehting in me which is not right. I have learned to find the right balance and take out positive hints and start over again to think through and introspect my acts. It has not only helped me to keep myself calm but also helped me understand others&#39; point of view. People are always right the way they react because they have the right context and right opinion which they have formed over period of time. One really can&#39;t change that perceived image overnight, someone has to understand why that image was formed, why people thought that way and why they reacted that way. Its like trust, the way you build it over time and it can shatter in pieces by an act of stupidity.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;I believe &quot;personal perceived image&quot; is a very subjective act and it builds over a period of time. If you start doing what might fix it, within reasonable limits, as to what others like, express in a manner what others can understand and bring behavioral changes over the period of time, then things might settle down for better relations :-)&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;One of the examples - we used to play Age of Empires during evening and people thought that our team did not have a lot of work and plays during work time, no one bother to check that we used to work pretty late night - because they were not exposed to that fact since they left pretty early from the office. So what we did is to move our Age of Empire game play time to later in evening and worked through normal hours, it did cause some of the inconvenience because we did not get that much required break, but then we later introduced Friday night gaming and other stuff... It was just a perceived image which got better over the period of time and then we could resume what we did earlier but it was 3 months affair :-)&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;On the other hand - when ever I had a perception about some one and others did not agree to my views, instead of being firm on my opinion I tried to get involved more in their world to figure out my perception being right or not.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;People never change the way they are, but people can certainly change the way they interact with others.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/perceptions-what-makes-you-stand-out/index.html</link>
+                <guid>http://ajeygore.github.com/perceptions-what-makes-you-stand-out/perceptions-what-makes-you-stand-out</guid>
+                <pubDate>2012-10-31T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>3 Rules for passionate people</title>
+                <description>&lt;p&gt;Today, when I was talking to my collegues, we went on to chatting about being passionate and how do we create passionate work culture. The thought process went on to extent that - we should not leave the work place till the time work finished to being passionate to the extent where problems keeps you awake...! actually second one is what keeps me going. Solving complex problems keeps me awake. But lets not digress.&lt;/p&gt;
+&lt;p&gt;I have been thinking what makes people passionate about something? what makes them doing things for an organization where they are just employees? what makes them so emotionally attached to problem. I have gone into memory lane and I was going through my career graph where I have not been/gone into such discussions - but there were most probably some rules already set, and once you are used driving, you don&#39;t put attention to basic controls but your car just keeps cruizing. &lt;a href=&quot;http://www.thoughtworks.com&quot; title=&quot;ThoughtWorks&quot;&gt;ThoughtWorks&lt;/a&gt; is just amazing, when it comes to keep sharp, talented people together with an amazing low attrition rate, but I think I am just putting more thought into those now!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule No 1 - A class people hire A class, B Class people hire C class&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Many time when you are trying to hire people, always take a note who is interviewing them? who are you trying to bring in? A smart guy will not fear on hiring a Smarter grad into group, because he knows that he gonna benefit from his view point.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;So let your existing employees talk to the potential new employee, does not matter who is he, let a grad interact/interview a senior engineer, it shows maturity not at the grad level but at the senior engineer level that how did he take it&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A side note - while hiring - years or experience and salary don&#39;t have ANY correlation, if you found an expensive guy, hire him, tell him what you can pay and if you have some nice creds, he will join you on lower salary - if you find a right guy, but if his previous organization is not paying well, give him at par salary, he will be happy to know that you treated him fair and did not take advantage of his inferior salary.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule No 2 - Make it their responsibility - give it to them...&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Having good internet connection speed when no one is torrenting in office and you don&#39;t have proxy installed, is then ideal situation (very few companies in India will have this setup, else everyone is just restricting internet access) - this is great scenario - where every one plays and every one wins. Singling out someone for one thing nice they did, goes against team spirit, also be passionate about your team and make them realize that they need to stand with your promises! Give them your goals, your vision and where do you want to see them in next 90, 180, 360 days and not in next week.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Pointing out things and managing at micro level is just becomes irritant and will irritate the hell out of them, if you believe that they don&#39;t have sense of urgency then most probably you have not communicated with them well enough or you don&#39;t trust them to deliver or they don&#39;t trust you - making some one own stuff is very difficult its just not possible sometimes, this also means that you empower them in right manner - a very good example across indian restaurents - if you tell them that dish is not good as per you, very few will take the responsibility and give you new one or not charge for it. But if you abuse it many times then most probably they will defend it and not replace it - thats exactly happens at a lot of Indian restaurents!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Rule No 3 - Give them space&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the best way to innovate on projects/products is give space so that people can think of solution, right solution, exciting solution, its not easy, for example - years ago when whole basic compiler could fit into less than 200KB to today where a nice language distribution takes like 200 megs, software complexity has gone multifold as well, software is not as easy as writing &quot;hello world&quot; any more.. while java/ruby/web apps have taken away the headache of managing memory, network and other stuff - software has evolved into complex configuration management piece - where 100s of services fit together to produce one of them - we at hoppr engineering, have around 30 repos and at least 20 moving parts for just sms checkin service - so if you want some one to innovate in complex software world, you need to give them space - in terms of time, rejuvenation and work area itself. We try to do that hoppr, I personally try to space out technologies and technical problems for them - so that they don&#39;t get bored, I try to move them to different parts of system, where they are filled with excitement of learning new things and responding to old once quite quickly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We always figure out what needs to be done, but I never set an expectation on how it needs to be done! there is a difference in what and how, if you tell them how it has to be done, then you just killed their space in terms of creativity.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Giving them space also means that you need to put immence amount of trust on estimates they provide, if they over estimate, you try to get in mid-term development and try to put correction there - or if they are going on wrong path, let them experience that once, and they add your thoughts!&lt;/p&gt;
+&lt;p&gt;Poeple can come up with many more rules related to being the best pay master, strategic vs tactical, long shot vs short shot, work hard, party hard.. but I believe creating right team with right mindeded people with logical thinking is just starter - but letting them flurish is a way more complex and its about treating them as organic eco system is way more difficult...&lt;/p&gt;
+&lt;p&gt;Its all fun at hoppr - and way more learning for me compared to where I have been.&lt;/p&gt;
+&lt;p&gt;most proabably thats it - more thoughts later..&lt;/p&gt;
+&lt;p /&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/3-rules-for-passionate-people/index.html</link>
+                <guid>http://ajeygore.github.com/3-rules-for-passionate-people/3-rules-for-passionate-people</guid>
+                <pubDate>2012-10-25T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>mongo or not to mongo</title>
+                <description>&lt;p&gt;Literally means - to ask or not :-) But over here my context is bit different.&lt;/p&gt;
+&lt;p&gt;After taking a brief break from ThoughtWorks, I joined hoppr, a different kind of mobile startup with focus on location based services.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Hoppr is checkin based service but on SMS and USSD - we display interactive ivr like menu for USSD and provide with options on SMS based on user&#39;s location - and users can checkin. I joined hoppr when it was already deployed on six telco operators in India. It was just amazing that how this new cocept was picking up at different places in India and how people with mobile handsets are behaving on USSD as smart phone application.&lt;/p&gt;
+&lt;p&gt;We get a lot of checkins everyday - and since telcos were introduced gradually, every one of it was different database and different jsp files - if you live in telco world, you will know how APIs work and how java is national language at telco eco system. Anyway, I decided that we need a big re-write to bring all telco interfaces at one place and also bring a unified experience from end user perspective and from administration point of view as well.&lt;/p&gt;
+&lt;p&gt;We embarked on big rewrite with JRuby, Rails, Torquebox, JMS, Sinatra, Java, HornetQ and most important decision was to go with MongoDB. And we have been in for surprises and as well as some shocks. Here are few of them...&lt;/p&gt;
+&lt;p&gt;1. MongoDB is hated all over place - and sometimes its praised, but similar services to us like FourSquare use it &amp;nbsp;big time&lt;/p&gt;
+&lt;p&gt;2. We ran out of option for clustering because Telco&#39;s data center allowed on one box and that was kind of disaster, but we are finding out options in terms of containers and thin services (do what ever is required for basic checkin and rest all goes as delayed job, few seconds, using JMS)&lt;/p&gt;
+&lt;p&gt;3. MongoDB not only increased development cycle, but speed for queries is just amazing when, we did not have to write migrations for our rails application, that would have been night mare - like we have millions of user checkin records and if we have to add a column - then most probably we would have to take downtime.&lt;/p&gt;
+&lt;p&gt;4. Our schema changes were very rapid and it works better as continuous delivery, our tasks or document structure was growing as features&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;5. We used embedded documents at first, but later realized that we don&#39;t have to do something like that because it was not very great for reporting.&lt;/p&gt;
+&lt;p&gt;6. Since MongoDB is not a relational database, we had tought time for reporting, it runs as as rake tasks and produces reports using models and its slow... but we know that for big data we have to eventually move to ETL and we will use some opensource tool.&lt;/p&gt;
+&lt;p&gt;In all MongoDB has been good for us with a lot of learning, few things like locking whole database for every write has been a pain - but we have been using delayed job coupled with lot of caching using redis - more on that in next blog&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;So there are mongo haters - and if you are one of them, I would like to say that MongoDB is not an RDBMS, so you should not treat it like one and then get frustrated - use it for right things, mongo queries one in 4+ million records within milliseconds and that has been charm.As far as technology goes, we have mixed technology and have started using percona db for a lot of stuff, so that has been great as well. lets see where do we go from here...&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;So far, for us it has been Mongo and never been like &quot;WTF why did we choose Mongo&quot; but we have not been shying to say where it did not work for us, but after ETL hopefully we will never go down that path.&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/mongo-or-not-to-mongo/index.html</link>
+                <guid>http://ajeygore.github.com/mongo-or-not-to-mongo/mongo-or-not-to-mongo</guid>
+                <pubDate>2012-10-14T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Enterprise Infrastructure Series Part 4 - monitoring and provisioning automation</title>
+                <description>&lt;p&gt;Unfortunately, I gone silent after 3 exciting posts on Enterprise Infrastructure Series, there were many events which caused this silence..&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;This post will cover most parts in theory because I could not get time to prepare sample examples, but most probably thought process should help you understand what it takes to monitor existing infrastructure and automate provisioning for the same...&lt;/p&gt;
+&lt;p&gt;Equipped with Chef&#39;s cook books and nagios&#39;s simple configuration templates, you can almost have automated provisioning and plugin automated monitoring right at your finger tips. Nagios is one of the most simple tools to setup. Nagios has inheritable configuration. Where you define simple base configuration such as just monitoring for ping or ssh, and later on you can create complex configuration which can be as complex as monitoring web server and java jmx processes and many more things.&lt;/p&gt;
+&lt;p&gt;For provisioning, we extensively used chef databags - so for creating a new configuration for a virtual machine, it can be as simple as entering virtual machine details as databag parameters in json format and which in turn can be processed by chef receipe on virtual machine host and can create virtual machine from base image - then automatically joining that to chef server and then applying appropriate roles.&lt;/p&gt;
+&lt;p&gt;Since all this will require me post internal, not generalized source code, I thought I would skip that part, but would be very happy if you want me to help you out with setting up these things.&lt;/p&gt;
+&lt;p&gt;Also this means that I will have to create an elaborate example on this configuration - I wish I could do that &amp;nbsp;but since long I have moved out of my previous fabulous organization thoughtworks ( &lt;a href=&quot;http://thoughtworks.com&quot;&gt;http://thoughtworks.com&lt;/a&gt; )&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;But I think, &amp;nbsp;Iwill have time in future and will start putting up some examples around this as well.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/enterprise-infrastructure-series-part-4-monit/index.html</link>
+                <guid>http://ajeygore.github.com/enterprise-infrastructure-series-part-4-monit/enterprise-infrastructure-series-part-4-monit</guid>
+                <pubDate>2012-10-14T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Enterprise Infrastructure Series Part 3 - Configuration Automation</title>
+                <description>&lt;p&gt;In the last two posts I went about how to get basic virutalization and  why configuration management is necessary. In this part I will explain  about setting up a Chef server and how to setup basic provisioning, In part 4 I will explain on how can we go about automated provisioning using OpenVZ and monitoring those instances.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Let&#39;s put the requirements upfront --&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We should be able to create containers using any virtualization provider, in this case OpenVZ.&lt;/li&gt;
+&lt;li&gt;We should be able to manage configurations for each servers - name  resolution, package update mirror server, time zones and ssh key  infrastructure information&lt;/li&gt;
+&lt;li&gt;We should be able to have centralized logging, monitoring and  accounting for various projects - in TW we have dozens of projects and  we wanted to have accurate accounting for these projects - such as how  many VMs have been used by a project, how much computing power has been  utilized and how much disk space has been used.&lt;/li&gt;
+&lt;li&gt;We should be able to reliably recreate any infrastructure server using this automation.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;br /&gt;This  is a typical chicken and egg problem -- if we do not have any  configuration management tool, how do we configure the first hardware  server? And if we do not have any containers, then how do we setup the  first server? So the answer lies in one basic principle -- configure  anything manually first and then we should not require to do it manually  next time, we should automate it for next time - we kept this principle in mind.&lt;/p&gt;
+&lt;div class=&quot;im&quot;&gt;So in short what I did was to setup a hardware node and then create OpenVZ containers for setting up first Chef server.&lt;/div&gt;
+&lt;p&gt;I downloaded CentOS 6 OpenVZ template from here&amp;nbsp;&lt;a href=&quot;http://download.openvz.org/template/precreated/&quot; target=&quot;_blank&quot;&gt;http://download.openvz.org/template/precreated/&lt;/a&gt; and first thing was to install the Chef server, our aim was to create a  self scaling private cloud based on OpenVZ - where we can add more  hardware on demand, which provides HA and load balancing.&lt;br /&gt; Since configuration management allows us to define configuration as  source code, we should be able to redeploy that source code on any  server thus recreating that server reliably when ever we have lost it or  due to mis-configuration we have malfunction.&lt;/p&gt;
+&lt;p&gt;My team settled on following tool set --&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ruby for scripting everything&lt;/li&gt;
+&lt;li&gt;Chef from OpsCode for configuration management&lt;/li&gt;
+&lt;li&gt;MCollective for infrastructure orchestration&lt;/li&gt;
+&lt;li&gt;Nagios for monitoring&amp;nbsp;&lt;/li&gt;
+&lt;li&gt;GrayLog2 for centralized logging&lt;/li&gt;
+&lt;li&gt;Bind as name server&lt;/li&gt;
+&lt;li&gt;CentOS as default Linux flavor&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;im&quot;&gt;So for configuration automation - we started with following list.&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;OpenVZ server &lt;strong&gt;&lt;a href=&quot;http://(covered in Part 1)&quot; title=&quot;http://ajeygore.in/part-1-bootstrap-openvz&quot;&gt;(covered in Part 1)&amp;nbsp;&lt;/a&gt;&lt;/strong&gt;and later provision containers using Chef Server.&lt;/li&gt;
+&lt;li&gt;Chef server - and then make it chef client so that we can re-setup in future.&lt;/li&gt;
+&lt;li&gt;Bind, where we can add and remove entries and add CNAMEs as well.&lt;/li&gt;
+&lt;li&gt;Nagios server, when ever a node* is created using Chef, it automagically gets picked up by Nagios for monitoring.&lt;/li&gt;
+&lt;li&gt;GrayLog2 - for logging and analysis.&lt;/li&gt;
+&lt;li&gt;A reporting tool for infrastructure reports regarding utilization and accounting for this infrastructure.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;im&quot;&gt;&lt;strong&gt;Getting started with Chef server setup in 3 easy steps&lt;/strong&gt;.&lt;/div&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Please read &lt;strong&gt;&lt;a href=&quot;http://ajeygore.in/part-2-automating-infrastructure&quot; title=&quot;this&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;&lt;/strong&gt; post for chef basics. FrameOS have been doing awesome job in Linux + Ruby ecosystem, they have stable and latest ruby packages, we will be using FrameOS RBEL repo for setting up our chef server, although FrameOS blog mentions how to install chef easily, I will be kind of re-iterating same thing here but I will cover how do we continue setting up client, knife UI on your machine and verify chef client run. While you can use OpsCode client recipes - we will most probably will not use them because they are influenced hugely with Ubuntu Linux. Since we will be using RHEL/CentOS combo where ever possible - so we will end up modifying those scripts, so lets start with basic scripts on our own.&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;strong&gt;1. Setup &lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;To Setup chef on your CentOS 6 box - you can refer to &lt;strong&gt;&lt;a href=&quot;http://blog.frameos.org/2011/05/19/installing-chef-server-0-10-in-rhel-6-scientificlinux-6/&quot; title=&quot;this&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;&lt;/strong&gt; post or use following shell script (trust me this is one of the few place we will be using shell script, mostly we will be using ruby to do our scripting as well, but since our bare bone container may or may not have ruby, we should use shell script to setup chef and then use ruby everywhere else), become root and execute these 4 statements&lt;/p&gt;
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;rpm -Uvh http://rbel.frameos.org/rbel6
+yum install rubygem-chef-server
+service iptables stop
+setup-chef-server.sh&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Once you are done with this setup, we are ready to hit chef server! so lets get going and setup our first chef client and a repo. Chef needs recipes which form a cookbook and in ideal scenario one of many cookbooks form a role which gets applied to a node*.&amp;nbsp;&lt;strong&gt;Now login to &lt;a href=&quot;http://your-chef-server:4040&quot;&gt;http://your-chef-server:4040&lt;/a&gt; user: admin password: chef321go&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;strong&gt;2. Admin Client&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;After loggin in as Admin, you will have to change default admin password - keep a note of it, after this, create user name for yourself. And create a client for yourself as well.&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;User name is required if you want to operate web-ui and client is required for knife to be able to help you manage roles, cookbooks, recipe and nodes on chef.&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&lt;strong&gt;3. Repository Setup&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Unlike puppet, Chef does not need a repository, what you do is to create repository for yourself and then upload cookbooks/recipes/nodes/roles from the repository to chef server. For basic stuff, you should have something like this&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;.. (up a dir)
+/Users/ajeygore/Documents/workspace/chef/
+|+checksums/
+|+cookbooks/
+|+data_bags/
+|+databags/
+|+environments/
+|+nodes/
+|+roles/
+`-scripts/&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;once you have setup repository, you might want to check it in Git or something similar. After this you will create a .chef directrory inside chef repo. Install chef client on your machine, and run knife configure. Once you have setup knife - enter &lt;strong&gt;knife node list&lt;/strong&gt; as command and you should see empty node list.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;That concludes our setup for Chef Client, In next post, I will conclude how can we start automating monitoring and basic setups with Chef, including provisioning. I hope by now you understand how chef works and how recipes work, its time to write a simple recipe which changes MOTD on linux machine to the motd of your choice.&lt;/p&gt;
+&lt;p&gt;*A node is a machine - whether its virtual, containers or physical box&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/enterprise-infrastructure-series-part-3-confi/index.html</link>
+                <guid>http://ajeygore.github.com/enterprise-infrastructure-series-part-3-confi/enterprise-infrastructure-series-part-3-confi</guid>
+                <pubDate>2012-01-12T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Enterprise Infrastructure Series Part 2 - Need for Configuration Management</title>
+                <description>&lt;p&gt;I lead &quot;Continuous Delivery&quot; group aka DevOps group within ThoughtWorks. One of main principles we follow within our group is that we should automate almost everything possible. In last post we setup OpenVZ container virtualization - but system administrators should worry more about on how can they make sure that their environment configurations and machine setup is repeatable, easily backed up and restored, also provisioned on demand. Usually this is accomplished using scripts or also sometimes using more sophisticated tools like CFEngine.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Last few years, we have seen infrastructure being a commodity and you do not really have to setup a private scalable infrastructure unless you have huge requirement around security - but even when you setup this infrastructure on public cloud or manage your own cloud, you still need configuration management automation to deal with issues I mentioned earlier. So our next quest was, how can we leverage OpenVZ&#39;s virtualization technology and get pre-configured containers on demand. With this we started configuring small parts of infrastructure to make sure that we can inject scripts in almost every piece of software, so to starting a machine should not be a problem.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;We created a sub-zone in our infrastructure which will not be part of corporate active directory - there were few reasons behind doing so.&amp;nbsp;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We did not want to take risk of messing corporate DNS system if something goes wrong.&lt;/li&gt;
+&lt;li&gt;Its always easy to manage a sub-domain with not much complex DNS system to make sure that debugging it in early days, restarting dns server or even restarting infrastructure machines does not impact everyone.&lt;/li&gt;
+&lt;li&gt;We added forward in corporate name servers to point subdomain to our domain and also configured our dns server to forward everything to main corporate DNS servers - this way we complied with corporate DNS policy.&lt;/li&gt;
+&lt;li&gt;We could add and remove dns entries using scripts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once we had DNS server setup, We moved ahead with creating Containers or VMs, but we wanted to make sure that all servers should have right DNS settings and they should change, if we change our DNS servers, that means we wanted to automate configuration for DNS settings on each of clients. And thats when an automated configuration management was required.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;In ThoughtWorks we have been using puppet for a while, its pretty nice tool and system admin friendly, but we wanted something more - where we can use some centralized place to query about servers and their attributes, while you can do this with mcollective + puppet. We decided to use &lt;strong&gt;Chef&lt;/strong&gt; for server side atttributes, configuration queries and a powerful CLI - &lt;strong&gt;knife! And last thing was that everything was ruby! &lt;/strong&gt;There are numerous articles about puppet vs chef and this isn&#39;t! We made a choice 6 years back, it was puppet, and we made a choice in 2010, and it was chef! You can do almost everything I am describing here using puppet + mcollective!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;As soon as you want to ensure correct configuration for system, packages and services, you might want to look at some configuration management tool. We needed to manage 100s of nodes or servers or virtual machine, and we wanted to make it such a way, that we do not have to login to machine even for once! we will see in next parts hows that possible!&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;So lets talk about Chef a little bit more, before we go ahead into details for next steps.&amp;nbsp;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Chef &lt;/strong&gt;works in client server mode, a Chef server contains information about client as defined by system administrators. In Chef terminology we call client - Node. A node has some part of play in infrastructure, either it computes or provides a service. My favorite example is a web server - suppose we need to configure a web server. A web server requires a package which provides web server service, in Linux most probably &lt;strong&gt;apache httpd &lt;/strong&gt;has been defacto standard across Linux ecosystem - So when a client talks to Chef server, Chef server looks for node with client name and see what definitions it needs to tell client - it might look as simple as below example node definition&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;{
+  &amp;quot;name&amp;quot;: &amp;quot;vm100-081.sc01.twcorp.com&amp;quot;,
+  &amp;quot;chef_environment&amp;quot;: &amp;quot;_default&amp;quot;,
+  &amp;quot;normal&amp;quot;: {
+    &amp;quot;tags&amp;quot;: [
+      &amp;quot;web_app01_production&amp;quot;
+
+    ]
+  },
+  &amp;quot;run_list&amp;quot;: [
+    &amp;quot;role[web_app_server]&amp;quot;,
+    &amp;quot;role[dns_client]&amp;quot;
+  ]
+}&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;This node says that it runs httpd_s erver_role, dns_client role - and tagged as web_app01_production, this means that - some how client will figure out what needs to done when you apply a specific role. And if we query chef server asking it - &quot;provide me list of all nodes which have web_app01_production as tag&quot; and this node should be listed over here. If you notice the node name, its following some convention which tells us about node location and also ip address information - we will talk about that later, but lets talk about roles!&lt;/p&gt;
+&lt;p&gt;To install a package or to do some specific tasks, you create a recipe! If you need to do multiple tasks - you club them and call it cookbook! once you have multiple cookbooks, you can create a role and then you apply that role to a node! for example, a httpd server might have recipe to install http server, recipe for installing and configuring mysql and some proxy configuration, also it might configure your rails app as well! so thats what your web_app_server role needs!&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;name &amp;quot;web_app_server&amp;quot;
+description &amp;quot;sets up web server for application&amp;quot;
+run_list &amp;quot;recipe[apache_httpd]&amp;quot;, &amp;quot;recipe[ruby_1_9_2]&amp;quot;, &amp;quot;recipe[mysql_server]&amp;quot;
+default_attributes({&#39;mysql&#39; =&amp;gt; {&#39;users&#39; =&amp;gt; { &amp;quot;&#39;web_app&#39;@&#39;localhost&#39;&amp;quot; =&amp;gt; &#39;&#39; }, &#39;databases&#39; =&amp;gt; [&amp;quot;web_app_prod&amp;quot;, &amp;quot;web_app_configurations&amp;quot;]}})&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;As you can see, it tells some how to run those recipes (cookbooks) on this specific node. So now if you want to create N+ servers for your web app, you can create those many instances in OpenVZ (takes less than 5 minutes) and just apply web_app_server_role, and if you have a proxy configuration, you can ask chef client to query server for web_app_server role nodes and generate proxy configuration.&lt;/p&gt;
+&lt;p&gt;This was just a concept, for more information please read&amp;nbsp;&lt;a href=&quot;http://wiki.opscode.com/display/chef/Chef+Basics&quot;&gt;http://wiki.opscode.com/display/chef/Chef+Basics&lt;/a&gt; I will be explaining about setting up chef server and a simple client in next post in simple steps&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/part-2-automating-infrastructure/index.html</link>
+                <guid>http://ajeygore.github.com/part-2-automating-infrastructure/part-2-automating-infrastructure</guid>
+                <pubDate>2012-01-01T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Enterprise Infrastructure Series Part 1 - Bootstrap OpenVZ</title>
+                <description>&lt;p&gt;We have been working with OpenVZ for almost 4 years now, and its just amazing that how this nice piece of technology not only provides 99% native virtualization but also wins on Disk IO. OpenVZ provides way more containers or OS Instances compared to any hypervisor.&lt;/p&gt;
+&lt;p&gt;Here is sample comparision&lt;/p&gt;
+&lt;p&gt;96 GB RAM, &amp;nbsp;24 Cores&amp;nbsp;X5650 &amp;nbsp;@ 2.67GHz&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;KVM&lt;/strong&gt; it can host around ~40 2 GB Hypervisor based virtual machines, After around ~30 machines you can see performance going down and if you have high Disk IO build machines, its gonna be slow - this is almost true with every type of hypervisor&lt;/p&gt;
+&lt;p&gt;For &lt;strong&gt;OpenVZ &lt;/strong&gt;it can host around 100+ containers and depends on free memory - since containers will consume only actual memory and OpenVZ can still allocate more containers based on free memory.&lt;/p&gt;
+&lt;p&gt;So lets get started with setting up OpenVZ on CentOS 6.2 box.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hardware summary:&lt;/strong&gt; 24 Cores, 96 GB RAM, 2 TB Box&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Install CentOS 6 with customized LVM layout. Allocated 500 MB on /boot (/dev/sda1), created 3 Physical Volumes of 200 GB - (/dev/sda2), 1 TB (/dev/sda3) and 800 GB (/dev/sda4)&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;In first physical volume, create volumegroup and then 2 logical volumes for 145 GB (mounted on /) and (50 GB swap) - this will leave around 5 GB for future use and snapshots&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;In second physical volume, just create a volumegroup and logical volume for 500 GB - it should have mount point /vz&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;This should complete CentOS setup&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Install OpenVZ repo&lt;/p&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;wget &lt;a href=&quot;http://download.openvz.org/openvz.repo&quot;&gt;http://download.openvz.org/openvz.repo&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;rpm --import &amp;nbsp;&lt;a href=&quot;http://download.openvz.org/RPM-GPG-Key-OpenVZ&quot;&gt;http://download.openvz.org/RPM-GPG-Key-OpenVZ&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Search for suitable for kernel and OpenVZ utils&lt;/p&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;yum search all OpenVZ&lt;/p&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;yum search all vzkernel&lt;/p&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Then I installed OpenVZ with this command&lt;/p&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;yum install vzkernel.x86_64 vzkernel-firmware.noarch vzctl.x86_64 vzquota.x86_64 vzctl-lib.x86_64&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;After you have installed OpenVZ - you need to modify three configuration files&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;/boot/grub/grub.conf - Make sure that default points to OpenVZ kernel&lt;/p&gt;
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# grub.conf generated by anaconda
+#
+# Note that you do not have to rerun grub after making changes to this file
+# NOTICE:  You have a /boot partition.  This means that
+#          all kernel and initrd paths are relative to /boot/, eg.
+#          root (hd0,0)
+#          kernel /vmlinuz-version ro root=/dev/mapper/rootvg-rootlv
+#          initrd /initrd-[generic-]version.img
+#boot=/dev/sdc
+default=0
+timeout=5
+splashimage=(hd0,0)/grub/splash.xpm.gz
+hiddenmenu
+title CentOS (2.6.32-042stab044.11)
+        root (hd0,0)
+        kernel /vmlinuz-2.6.32-042stab044.11 ro root=/dev/mapper/rootvg-rootlv rd_NO_LUKS rd_LVM_LV=rootvg/rootlv LANG=en_US.UTF-8 rd_NO_MD quiet rd_LVM_LV=rootvg/swaplv SYSFONT=latarcyrheb-sun16 rhgb crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM
+        initrd /initramfs-2.6.32-042stab044.11.img
+title CentOS (2.6.32-220.2.1.el6.x86_64)
+        root (hd0,0)
+        kernel /vmlinuz-2.6.32-220.2.1.el6.x86_64 ro root=/dev/mapper/rootvg-rootlv rd_NO_LUKS rd_LVM_LV=rootvg/rootlv LANG=en_US.UTF-8 rd_NO_MD quiet rd_LVM_LV=rootvg/swaplv SYSFONT=latarcyrheb-sun16 rhgb crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM
+        initrd /initramfs-2.6.32-220.2.1.el6.x86_64.img
+title CentOS (2.6.32-220.el6.x86_64)
+        root (hd0,0)
+        kernel /vmlinuz-2.6.32-220.el6.x86_64 ro root=/dev/mapper/rootvg-rootlv rd_NO_LUKS rd_LVM_LV=rootvg/rootlv LANG=en_US.UTF-8 rd_NO_MD quiet rd_LVM_LV=rootvg/swaplv SYSFONT=latarcyrheb-sun16 rhgb crashkernel=auto  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM
+        initrd /initramfs-2.6.32-220.el6.x86_64.img&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Then my modified sysctl.conf looks like this, you can apply this as it is, or look for changes here -&amp;gt;&amp;nbsp;&lt;a href=&quot;http://wiki.openvz.org/Quick_installation#sysctl&quot;&gt;http://wiki.openvz.org/Quick_installation#sysctl&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;/etc/sysctl.conf - You need to change various parameters, but if you have freshly install system, you can replace with the below code&lt;/p&gt;
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;## Sysctl.conf
+
+# Kernel sysctl configuration file for Red Hat Linux
+#
+# For binary values, 0 is disabled, 1 is enabled.  See sysctl(8) and
+# sysctl.conf(5) for more details.
+
+# Controls IP packet forwarding
+net.ipv4.ip_forward = 1
+
+# Controls IP v6 packet forwarding
+net.ipv6.conf.default.forwarding = 1
+net.ipv6.conf.all.forwarding = 1
+
+# Controls ARP Proxy
+net.ipv4.conf.default.proxy_arp = 0
+
+# Controls source route verification
+net.ipv4.conf.default.rp_filter = 1
+
+# And all interfaces as well
+net.ipv4.conf.all.rp_filter = 1
+
+# Do not accept source routing
+net.ipv4.conf.default.accept_source_route = 0
+
+# Controls the System Request debugging functionality of the kernel
+# Enables the magic-sysrq key
+kernel.sysrq = 1
+
+# Controls whether core dumps will append the PID to the core filename.
+# Useful for debugging multi-threaded applications.
+kernel.core_uses_pid = 1
+
+# Controls the use of TCP syncookies
+net.ipv4.tcp_syncookies = 1
+
+# Disable netfilter on bridges.
+net.bridge.bridge-nf-call-ip6tables = 0
+net.bridge.bridge-nf-call-iptables = 0
+net.bridge.bridge-nf-call-arptables = 0
+
+# Controls the maximum size of a message, in bytes
+kernel.msgmnb = 65536
+
+# Controls the default maxmimum size of a mesage queue
+kernel.msgmax = 65536
+
+# Controls the maximum shared segment size, in bytes
+kernel.shmmax = 68719476736
+
+# Controls the maximum number of shared memory segments, in pages
+kernel.shmall = 4294967296
+
+# We do not want all our interfaces to send redirects
+net.ipv4.conf.default.send_redirects = 1
+net.ipv4.conf.all.send_redirects = 0&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;p /&gt;
+&lt;div style=&quot;padding-left: 30px;&quot;&gt;/etc/sysconfig/selinux &amp;nbsp;- You need to change SELINUX to disabled&lt;/div&gt;
+&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of these two values:
+#     targeted - Targeted processes are protected,
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted &lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Boot into OpenVZ kernel - and after reboot everything should be okay and your /vz mount point should contain vz files. Now you can start downloading OpenVZ precreated templates, and put them in /vz/template/cache - you can download vz templates from here&amp;nbsp;&lt;a href=&quot;http://wiki.openvz.org/Download/template/precreated&quot;&gt;http://wiki.openvz.org/Download/template/precreated&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&quot;padding-left: 30px;&quot;&gt;Dont go with CentOS default partitioning layout, you should have enough space for your new volumegroups and logical volumes to make sure that you can take backup for VZ and other maintainance tasks.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/part-1-bootstrap-openvz/index.html</link>
+                <guid>http://ajeygore.github.com/part-1-bootstrap-openvz/part-1-bootstrap-openvz</guid>
+                <pubDate>2011-12-31T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>Enterprise Infrastructure Series</title>
+                <description>&lt;p&gt;I have been working on setting up internal cloud with my team, we have been using many technologies to build all these things together.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;I will be publishing 4 part series on how did we put it all together, We will showcase that how easy few things are and how new age enterrprises can take advantage of new age tools like OpenVZ, LXC, Chef and other related tools.&lt;/p&gt;
+&lt;p&gt;We started our journey will hypervisors such as VMWare, Xen and KVM - there is enough documentation available for these and our experience with this was pretty traditional, since our infrastructure mainly runs on Linux with RoR applications - we really did not need full virtualization, but instead we needed something which is near native performance - we went through the journey of choices and finally decided that containers were the right platform choice.&lt;/p&gt;
+&lt;p&gt;After our container choices were done - we choose to experiment with two popular container based isolation providers - OpenVZ and LXC containers. Any infrastructure combination not only requires a virtualization but also requires a configuration management tools. At ThoughtWorks we have been using Puppet for almost 6 years now. Since most of my team members were rubyist, we decided to go towards complete ruby based environment and our obvvious choice was Chef.&lt;/p&gt;
+&lt;p&gt;In part 3 I will be showcasing how do we configure everything and part 4 will cover completing all aspects of infrastrucutre.&lt;/p&gt;
+&lt;p&gt;Lets get started with &lt;a href=&quot;http://ajeygore.in/part-1-bootstrap-openvz&quot; title=&quot;Part 1 - Bootstrap OpenVZ&quot; target=&quot;_self&quot;&gt;Part 1 - Bootstrap OpenVZ&lt;/a&gt;&lt;/p&gt;
+</description>
+                <link>http://ajeygore.github.com/infrastructure-series/index.html</link>
+                <guid>http://ajeygore.github.com/infrastructure-series/infrastructure-series</guid>
+                <pubDate>2011-12-31T00:00:00+05:30</pubDate>
+        </item>
+
+
+</channel>
+</rss>

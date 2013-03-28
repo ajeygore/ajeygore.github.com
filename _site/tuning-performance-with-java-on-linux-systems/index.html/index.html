@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuning performance with Java - on Linux systems</title>
+    
+    <meta name="author" content="Ajey Gore">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Ajey Gore</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Tuning performance with Java - on Linux systems </h1>
+</div>
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>03 December 2012</strong>
+    </div>
+    <div class="content">
+      <p>
+<p><span style="font-family: Arial;">I love java, rather jvm - well, as technology and have been making use of it. Java world is full of rock solid implementations about technologies and have a huge software library eco system to deliver things with rock solid performance. It also makes a very good candidate for dependable technology.</span></p>
+<p><span style="font-family: Arial;">Recently, we choose java at backend for everything we do in ruby :-) So everything ruby becomes everything java at the backend. There are many advantages of this approach - a nice language to work with (ruby) and nice dependable technology at production environment (jvm) - in short, we use jruby with torquebox. But there are caveats and as its true with every tool - "if you didn't use it right, it won't give you right results"</span></p>
+<p><span style="font-family: Arial;">When check-in rush happened last week at hoppr - it melted our servers to levels of not able to breath within given time frame. Our code looked right, we were doing everything right and making sure that our code is well optimized for what ever we can - although we had to make some changes to our code the way we look up db entries and other information, but that did not help at all for making service perform to the levels we wanted. We did not have enough time to react because service would go down pretty frequently &ndash; we started investigating to figure out what&rsquo;s causing it.</span></p>
+<p><strong><span style="font-family: Arial;">The first culprit - memory</span></strong></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">&nbsp;</span><span style="font-family: Arial;">At prima facie it looked like we were running out of memory, well its true and it was true &ndash; and the easiest way to deal with it to add more ram. Unfortunately we did not have that option, we had to make service work within limited memory and make sure that it does not go out of memory.</span></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">&ldquo;Out of memory&rdquo; error occurs for several reasons &ndash;</span></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">We increased limits for user processes and open file &ndash; since everything is file in linux including sockets and tends towards memory allocation, but that did not solve the problems we had 1000s of open sockets and still it would cause it to get out of memory.</span></p>
+<p><strong><span style="font-family: Arial;">The secon cultprit - network protocol</span></strong></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">Next tuning was around fixing networking parameters &ndash; like decrease FIN_WAIT, TIME_WAIT parameters to 5 seconds, we then added options to recycle sockets, increased WMEM and RMEM parameters to use large data size to transporting data &ndash; so that with one socket connection we can send upto 640kb data &ndash; which resulted in less round trips</span></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">Using big pages was another tuning which we had to implement so that we can take advantage of java using big memory pages instead of smaller ones and perform better.</span></p>
+<p><strong><span style="font-family: Arial;">The third culprit - defaults in app container</span></strong></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">When we were done with OS level settings, we turned towards torquebox and found many things which could be fixed &ndash; we increased thread pools, put threads execution times within 3 seconds (since we had to complete processing within 200ms) and thread wait to max 5 seconds.</span></p>
+<p><strong>The fourth culprit - default jvms gc</strong></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;">Lastly we looked at JVM itself &ndash; if you do have multiple cores and huge memory &ndash; then set &ndash;Xms and &ndash;mXM to same value &ndash; so JVM does not have to struggle to allocate memory, since we knew that its going to consume that much, we should have done that earlier. GC also plays a huge part in it and we ran GC every 15 minutes instead of every hour, made it run parallel and allocated 25% CPU to it &ndash; that way we ensured that we collected what ever we littered in last 15 minutes &ndash; we do a lot of check-ins and most probably they did not need to dangle around for an hour.</span></p>
+<p style="padding-left: 30px;"><span style="font-family: Arial;"><br /></span></p>
+<p><span style="font-family: Arial;">In summary, The learning was fun &ndash; it required reading a lot of core-dumps, jmx monitoring and looking at threads very carefully, but solved our problems and hopefully we will be able to scale better.</span></p>
+<p><span style="font-family: Arial;">The default settings are pretty relaxed in OS and JVM. But these settings won&rsquo;t always work for everyone, the bigger learning was that adding more cpu and memory will not solve a problem. We know that our existing system still has limits &ndash; to how many check-ins we can handle per hour, but at least now we know that what works when&hellip;</span></p>
+<p><span style="font-family: Arial;"><br /></span></p>
+<p>&nbsp;</p>
+</p>
+
+<p>&nbsp;</p>
+
+    </div>
+
+    
+
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/engineering-at-hoppr-technologies-we-use/index.html" title="Engineering at hoppr - technologies we use...">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/change-for-eventual-failure/index.html" title="Change for eventual failure">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2013 Ajey Gore
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
