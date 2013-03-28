@@ -1,0 +1,59 @@
+---
+permalink: /part-2-automating-infrastructure/index.html
+layout: post
+title: Enterprise Infrastructure Series Part 2 - Need for Configuration Management
+published: true
+categories:
+- Automation
+- chef
+- Configuration Management
+- infrastructure
+---
+<p>I lead "Continuous Delivery" group aka DevOps group within ThoughtWorks. One of main principles we follow within our group is that we should automate almost everything possible. In last post we setup OpenVZ container virtualization - but system administrators should worry more about on how can they make sure that their environment configurations and machine setup is repeatable, easily backed up and restored, also provisioned on demand. Usually this is accomplished using scripts or also sometimes using more sophisticated tools like CFEngine.&nbsp;</p>
+<p>Last few years, we have seen infrastructure being a commodity and you do not really have to setup a private scalable infrastructure unless you have huge requirement around security - but even when you setup this infrastructure on public cloud or manage your own cloud, you still need configuration management automation to deal with issues I mentioned earlier. So our next quest was, how can we leverage OpenVZ's virtualization technology and get pre-configured containers on demand. With this we started configuring small parts of infrastructure to make sure that we can inject scripts in almost every piece of software, so to starting a machine should not be a problem.&nbsp;</p>
+<p>We created a sub-zone in our infrastructure which will not be part of corporate active directory - there were few reasons behind doing so.&nbsp;</p>
+<ol>
+<li>We did not want to take risk of messing corporate DNS system if something goes wrong.</li>
+<li>Its always easy to manage a sub-domain with not much complex DNS system to make sure that debugging it in early days, restarting dns server or even restarting infrastructure machines does not impact everyone.</li>
+<li>We added forward in corporate name servers to point subdomain to our domain and also configured our dns server to forward everything to main corporate DNS servers - this way we complied with corporate DNS policy.</li>
+<li>We could add and remove dns entries using scripts.</li>
+</ol>
+<p>Once we had DNS server setup, We moved ahead with creating Containers or VMs, but we wanted to make sure that all servers should have right DNS settings and they should change, if we change our DNS servers, that means we wanted to automate configuration for DNS settings on each of clients. And thats when an automated configuration management was required.&nbsp;</p>
+<p>In ThoughtWorks we have been using puppet for a while, its pretty nice tool and system admin friendly, but we wanted something more - where we can use some centralized place to query about servers and their attributes, while you can do this with mcollective + puppet. We decided to use <strong>Chef</strong> for server side atttributes, configuration queries and a powerful CLI - <strong>knife! And last thing was that everything was ruby! </strong>There are numerous articles about puppet vs chef and this isn't! We made a choice 6 years back, it was puppet, and we made a choice in 2010, and it was chef! You can do almost everything I am describing here using puppet + mcollective!</p>
+<p><strong>As soon as you want to ensure correct configuration for system, packages and services, you might want to look at some configuration management tool. We needed to manage 100s of nodes or servers or virtual machine, and we wanted to make it such a way, that we do not have to login to machine even for once! we will see in next parts hows that possible!<br /></strong></p>
+<p>So lets talk about Chef a little bit more, before we go ahead into details for next steps.&nbsp;<strong>&nbsp;</strong></p>
+<p><strong>Chef </strong>works in client server mode, a Chef server contains information about client as defined by system administrators. In Chef terminology we call client - Node. A node has some part of play in infrastructure, either it computes or provides a service. My favorite example is a web server - suppose we need to configure a web server. A web server requires a package which provides web server service, in Linux most probably <strong>apache httpd </strong>has been defacto standard across Linux ecosystem - So when a client talks to Chef server, Chef server looks for node with client name and see what definitions it needs to tell client - it might look as simple as below example node definition</p>
+<p>&nbsp;</p>
+<div class="CodeRay">
+  <div class="code"><pre>{
+  &quot;name&quot;: &quot;vm100-081.sc01.twcorp.com&quot;,
+  &quot;chef_environment&quot;: &quot;_default&quot;,
+  &quot;normal&quot;: {
+    &quot;tags&quot;: [
+      &quot;web_app01_production&quot;
+
+    ]
+  },
+  &quot;run_list&quot;: [
+    &quot;role[web_app_server]&quot;,
+    &quot;role[dns_client]&quot;
+  ]
+}</pre></div>
+</div>
+
+<p>&nbsp;</p>
+<p>This node says that it runs httpd_s erver_role, dns_client role - and tagged as web_app01_production, this means that - some how client will figure out what needs to done when you apply a specific role. And if we query chef server asking it - "provide me list of all nodes which have web_app01_production as tag" and this node should be listed over here. If you notice the node name, its following some convention which tells us about node location and also ip address information - we will talk about that later, but lets talk about roles!</p>
+<p>To install a package or to do some specific tasks, you create a recipe! If you need to do multiple tasks - you club them and call it cookbook! once you have multiple cookbooks, you can create a role and then you apply that role to a node! for example, a httpd server might have recipe to install http server, recipe for installing and configuring mysql and some proxy configuration, also it might configure your rails app as well! so thats what your web_app_server role needs!&nbsp;</p>
+<p>&nbsp;</p>
+<div class="CodeRay">
+  <div class="code"><pre>name &quot;web_app_server&quot;
+description &quot;sets up web server for application&quot;
+run_list &quot;recipe[apache_httpd]&quot;, &quot;recipe[ruby_1_9_2]&quot;, &quot;recipe[mysql_server]&quot;
+default_attributes({'mysql' =&gt; {'users' =&gt; { &quot;'web_app'@'localhost'&quot; =&gt; '' }, 'databases' =&gt; [&quot;web_app_prod&quot;, &quot;web_app_configurations&quot;]}})</pre></div>
+</div>
+
+<p>&nbsp;</p>
+<p>As you can see, it tells some how to run those recipes (cookbooks) on this specific node. So now if you want to create N+ servers for your web app, you can create those many instances in OpenVZ (takes less than 5 minutes) and just apply web_app_server_role, and if you have a proxy configuration, you can ask chef client to query server for web_app_server role nodes and generate proxy configuration.</p>
+<p>This was just a concept, for more information please read&nbsp;<a href="http://wiki.opscode.com/display/chef/Chef+Basics">http://wiki.opscode.com/display/chef/Chef+Basics</a> I will be explaining about setting up chef server and a simple client in next post in simple steps</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
