@@ -5,7 +5,7 @@ tagline:
 ---
 {% include JB/setup %}
 
-Read [my new blog](http://blog.ajeygore.in)
+Read [my new blog](http://ajeygore.in)
 
 
 ## Why new blog? 
