@@ -11,7 +11,7 @@ Read [The utter stupid experience we had at The Lalit, Goa](http://ajeygore.in/r
 ## Why new blog? 
 
 Well, posterous decided to move on with twitter, and then twitter decided to shutdown posterous. Thanks to both of them, now I learnt few new things and have better place for my blog as well.
-Old links should hopefully work using github pages and jeykyll aliases
+Old links should hopefully work using github pages and jekyll aliases
     
 ## My Posts
 
