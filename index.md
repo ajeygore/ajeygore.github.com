@@ -5,7 +5,7 @@ tagline:
 ---
 {% include JB/setup %}
 
-Read [my new blog](http://ajeygore.in)
+Read [The utter stupid experience we had at The Lalit, Goa](http://ajeygore.in/rubyconf/the-lalit-goof-up.html)
 
 
 ## Why new blog? 
@@ -13,10 +13,9 @@ Read [my new blog](http://ajeygore.in)
 Well, posterous decided to move on with twitter, and then twitter decided to shutdown posterous. Thanks to both of them, now I learnt few new things and have better place for my blog as well.
 Old links should hopefully work using github pages and jeykyll aliases
     
-## My old posts
+## My Posts
 
 
-Here's the old "posts list".
 
 <ul class="posts">
   {% for post in site.posts %}
