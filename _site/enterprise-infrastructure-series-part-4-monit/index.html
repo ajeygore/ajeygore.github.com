@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Enterprise Infrastructure Series</title>
+    <title>Enterprise Infrastructure Series Part 4 - monitoring and provisioning automation</title>
     
     <meta name="author" content="Ajey Gore">
 
@@ -108,53 +108,26 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>Enterprise Infrastructure Series </h1>
+  <h1>Enterprise Infrastructure Series Part 4 - monitoring and provisioning automation </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>31 December 2011</strong>
+      <span>14 October 2012</strong>
     </div>
     <div class="content">
-      <p>I have been working on setting up internal cloud with my team, we have been using many technologies to build all these things together.&nbsp;</p>
-<p>I will be publishing 4 part series on how did we put it all together, We will showcase that how easy few things are and how new age enterrprises can take advantage of new age tools like OpenVZ, LXC, Chef and other related tools.</p>
-<p>We started our journey will hypervisors such as VMWare, Xen and KVM - there is enough documentation available for these and our experience with this was pretty traditional, since our infrastructure mainly runs on Linux with RoR applications - we really did not need full virtualization, but instead we needed something which is near native performance - we went through the journey of choices and finally decided that containers were the right platform choice.</p>
-<p>After our container choices were done - we choose to experiment with two popular container based isolation providers - OpenVZ and LXC containers. Any infrastructure combination not only requires a virtualization but also requires a configuration management tools. At ThoughtWorks we have been using Puppet for almost 6 years now. Since most of my team members were rubyist, we decided to go towards complete ruby based environment and our obvvious choice was Chef.</p>
-<p>In part 3 I will be showcasing how do we configure everything and part 4 will cover completing all aspects of infrastrucutre.</p>
-<p>Lets get started with <a href="http://ajeygore.in/part-1-bootstrap-openvz" title="Part 1 - Bootstrap OpenVZ" target="_self">Part 1 - Bootstrap OpenVZ</a></p>
+      <p>Unfortunately, I gone silent after 3 exciting posts on Enterprise Infrastructure Series, there were many events which caused this silence..&nbsp;</p>
+<p>This post will cover most parts in theory because I could not get time to prepare sample examples, but most probably thought process should help you understand what it takes to monitor existing infrastructure and automate provisioning for the same...</p>
+<p>Equipped with Chef's cook books and nagios's simple configuration templates, you can almost have automated provisioning and plugin automated monitoring right at your finger tips. Nagios is one of the most simple tools to setup. Nagios has inheritable configuration. Where you define simple base configuration such as just monitoring for ping or ssh, and later on you can create complex configuration which can be as complex as monitoring web server and java jmx processes and many more things.</p>
+<p>For provisioning, we extensively used chef databags - so for creating a new configuration for a virtual machine, it can be as simple as entering virtual machine details as databag parameters in json format and which in turn can be processed by chef receipe on virtual machine host and can create virtual machine from base image - then automatically joining that to chef server and then applying appropriate roles.</p>
+<p>Since all this will require me post internal, not generalized source code, I thought I would skip that part, but would be very happy if you want me to help you out with setting up these things.</p>
+<p>Also this means that I will have to create an elaborate example on this configuration - I wish I could do that &nbsp;but since long I have moved out of my previous fabulous organization thoughtworks ( <a href="http://thoughtworks.com">http://thoughtworks.com</a> )&nbsp;</p>
+<p>But I think, &nbsp;Iwill have time in future and will start putting up some examples around this as well.</p>
+<p>&nbsp;</p>
 
     </div>
 
-  
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
-      
-      
-
-
-  
-     
-    	<li><a href="/categories.html#Automation-ref">
-    		Automation <span>4</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Configuration Management-ref">
-    		Configuration Management <span>3</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#infrastructure-ref">
-    		infrastructure <span>3</span>
-    	</a></li>
-     
-    	<li><a href="/categories.html#Virtualization-ref">
-    		Virtualization <span>2</span>
-    	</a></li>
-    
-  
-
-
-    </ul>
     
 
     
@@ -163,11 +136,11 @@
     <div class="pagination">
       <ul>
       
-        <li class="prev disabled"><a>&larr; Previous</a></li>
+        <li class="prev"><a href="/enterprise-infrastructure-series-part-3-confi/index.html" title="Enterprise Infrastructure Series Part 3 - Configuration Automation">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/part-1-bootstrap-openvz/index.html" title="Enterprise Infrastructure Series Part 1 - Bootstrap OpenVZ">Next &rarr;</a></li>
+        <li class="next"><a href="/mongo-or-not-to-mongo/index.html" title="mongo or not to mongo">Next &rarr;</a></li>
       
       </ul>
     </div>
@@ -179,7 +152,7 @@
       </div>
       <hr>
       <footer>
-        <p>&copy; 2013 Ajey Gore
+        <p>&copy; 2014 Ajey Gore
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> with  <a href="http://bootswatch.com" target="_blank">Bootswatch theme</a>
 

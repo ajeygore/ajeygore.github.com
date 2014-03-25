@@ -8,6 +8,7 @@ http://ajeygore.github.com/rss.xml
 http://ajeygore.github.com/sitemap.txt
 http://ajeygore.github.com/tags.html
 
+http://ajeygore.github.com/rubyconf/index.html
 http://ajeygore.github.com/change-for-eventual-failure/index.html
 http://ajeygore.github.com/tuning-performance-with-java-on-linux-systems/index.html
 http://ajeygore.github.com/engineering-at-hoppr-technologies-we-use/index.html
