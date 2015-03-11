@@ -42,6 +42,7 @@ exclude:
 include:
 - _stylesheets
 - _javascript
+- _fonts
 
 markdown: rdiscount
 
