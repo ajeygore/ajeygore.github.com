@@ -1,89 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Calendar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Chat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Clipboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Compas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Gift-Box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Infinity-Loop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Pensils.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Pocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Retina-Ready.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Toilet-Paper.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/png/Watches.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/login/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/login/imac-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/login/imac.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-black.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-black.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-italic.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-italic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-italic.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/tile/ribbon-2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/tile/ribbon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/vendor/video-js.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/book.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_stylesheets/vendor/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/calendar.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/chat.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/clipboard.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/clocks.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/compas.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_stylesheets/flat-ui.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_stylesheets/flat-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/flat-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_stylesheets/flat-ui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/flat-ui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/gift-box.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/vendor/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/vendor/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/vendor/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-black.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bold.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-italic.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-light.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/lato/lato-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/loop.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/mail.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/map.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_stylesheets/override.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/paper-bag.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/pencils.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/vendor/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/retina.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/ribbon.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_fonts/glyphicons/selection.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_images/icons/svg/toilet-paper.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_javascript/vendor/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html" afterPath="$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/site.html" afterPath="$PROJECT_DIR$/_layouts/site.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="" />
     <ignored path="ajeygore.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -110,7 +28,7 @@
       <file leaf-file-name="post.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="180">
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
@@ -123,7 +41,7 @@
       <file leaf-file-name="bare.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/bare.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="180">
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
@@ -143,7 +61,7 @@
       <file leaf-file-name="2011-12-31-infrastructure-series.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6923077" vertical-offset="0" max-vertical-offset="432">
+            <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="432">
               <caret line="1" column="38" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="38" />
               <folding />
             </state>
@@ -153,7 +71,7 @@
       <file leaf-file-name="2011-12-31-part-1-bootstrap-openvz.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-part-1-bootstrap-openvz.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2862">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2862">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -163,7 +81,7 @@
       <file leaf-file-name="2012-10-14-enterprise-infrastructure-series-part-4-monit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2012-10-14-enterprise-infrastructure-series-part-4-monit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="378">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -173,7 +91,7 @@
       <file leaf-file-name="2014-03-24-rubyconf-hospitality-was-any-thing-but-pleasant.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2014-03-24-rubyconf-hospitality-was-any-thing-but-pleasant.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1674">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -186,7 +104,7 @@
       <file leaf-file-name="2013-02-17-change-for-eventual-failure.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2013-02-17-change-for-eventual-failure.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="342">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -196,7 +114,7 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+            <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1080">
               <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
               <folding />
             </state>
@@ -276,6 +194,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -380,7 +299,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -525,26 +443,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -570,11 +488,96 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/_layouts/post.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/bare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="432">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-part-1-bootstrap-openvz.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2862">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2012-10-14-enterprise-infrastructure-series-part-4-monit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2014-03-24-rubyconf-hospitality-was-any-thing-but-pleasant.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-02-17-change-for-eventual-failure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="1080">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_stylesheets/override.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1569" max-vertical-offset="6534">
+          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="200" max-vertical-offset="320">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2898">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -642,9 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2448">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -652,9 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="229212">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -662,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23195876" vertical-offset="0" max-vertical-offset="776">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -674,49 +669,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/_stylesheets/flat-ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="111708">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/_stylesheets/flat-ui.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499">
-          <caret line="0" column="53818" selection-start-line="0" selection-start-column="53818" selection-end-line="0" selection-end-column="53818" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/_stylesheets/flat-ui.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
-          <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-          <folding>
-            <element signature="e#107755#108558#1" expanded="false" />
-            <element signature="e#114081#114840#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/_stylesheets/vendor/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="4" column="2971" selection-start-line="4" selection-start-column="2971" selection-end-line="4" selection-end-column="2971" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_stylesheets/flat-ui.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="111708">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499">
           <caret line="0" column="53818" selection-start-line="0" selection-start-column="53818" selection-end-line="0" selection-end-column="53818" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
@@ -735,10 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="162">
           <caret line="3" column="73" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-          <folding>
-            <element signature="e#107755#108558#1" expanded="false" />
-            <element signature="e#114081#114840#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <caret line="4" column="2971" selection-start-line="4" selection-start-column="2971" selection-end-line="4" selection-end-column="2971" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6923077" vertical-offset="0" max-vertical-offset="432">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="432">
           <caret line="1" column="38" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="38" />
           <folding />
         </state>
@@ -811,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/bare.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
@@ -819,7 +769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="180">
+        <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
