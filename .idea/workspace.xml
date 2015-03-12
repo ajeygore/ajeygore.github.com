@@ -2,120 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/override.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Book.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Calendar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Chat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Clipboard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Compas.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Gift-Box.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Infinity-Loop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Mail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Map.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Pensils.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Pocket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Retina-Ready.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Toilet-Paper.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/png/Watches.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/book.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/calendar.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/chat.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/clipboard.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/clocks.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/compas.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/gift-box.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/loop.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/mail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/map.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/paper-bag.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/pencils.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/retina.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/ribbon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/icons/svg/toilet-paper.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/login/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/login/imac-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/login/imac.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/tile/ribbon-2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/tile/ribbon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/flat-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/flat-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/vendor/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/vendor/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/vendor/jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/vendor/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/vendor/video-js.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_javascript/vendor/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_layouts/post.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_stylesheets/flat-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_stylesheets/flat-ui.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_stylesheets/flat-ui.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_stylesheets/override.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_stylesheets/vendor/bootstrap.min.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/SCRIPALT.ttf" afterPath="$PROJECT_DIR$/assets/fonts/SCRIPALT.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/SCRIPTIN.ttf" afterPath="$PROJECT_DIR$/assets/fonts/SCRIPTIN.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.eot" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/flat-ui-icons-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.svg" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/flat-ui-icons-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.ttf" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/flat-ui-icons-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons/flat-ui-icons-regular.woff" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/flat-ui-icons-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/glyphicons/selection.json" afterPath="$PROJECT_DIR$/assets/fonts/glyphicons/selection.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-black.eot" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-black.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-black.svg" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-black.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-black.ttf" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-black.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-black.woff" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-black.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bold.eot" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bold.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bold.svg" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bold.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bold.ttf" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bold.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bold.woff" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bold.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.eot" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bolditalic.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.svg" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bolditalic.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bolditalic.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-bolditalic.woff" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-bolditalic.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-italic.eot" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-italic.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-italic.svg" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-italic.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-italic.ttf" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-italic.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-italic.woff" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-italic.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-light.eot" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-light.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-light.svg" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-light.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-light.ttf" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-light.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-light.woff" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-light.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-regular.eot" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-regular.svg" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-regular.ttf" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/lato/lato-regular.woff" afterPath="$PROJECT_DIR$/assets/fonts/lato/lato-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_fonts/readme.txt" afterPath="$PROJECT_DIR$/assets/fonts/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html" afterPath="$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2011-12-31-part-1-bootstrap-openvz.html" afterPath="$PROJECT_DIR$/_posts/2011-12-31-part-1-bootstrap-openvz.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-01-01-part-2-automating-infrastructure.html" afterPath="$PROJECT_DIR$/_posts/2012-01-01-part-2-automating-infrastructure.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-01-12-enterprise-infrastructure-series-part-3-confi.html" afterPath="$PROJECT_DIR$/_posts/2012-01-12-enterprise-infrastructure-series-part-3-confi.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-10-14-enterprise-infrastructure-series-part-4-monit.html" afterPath="$PROJECT_DIR$/_posts/2012-10-14-enterprise-infrastructure-series-part-4-monit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-10-14-mongo-or-not-to-mongo.html" afterPath="$PROJECT_DIR$/_posts/2012-10-14-mongo-or-not-to-mongo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-10-25-3-rules-for-passionate-people.html" afterPath="$PROJECT_DIR$/_posts/2012-10-25-3-rules-for-passionate-people.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-10-31-perceptions-what-makes-you-stand-out.html" afterPath="$PROJECT_DIR$/_posts/2012-10-31-perceptions-what-makes-you-stand-out.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-11-29-engineering-at-hoppr-technologies-we-use.html" afterPath="$PROJECT_DIR$/_posts/2012-11-29-engineering-at-hoppr-technologies-we-use.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2012-12-03-tuning-performance-with-java-on-linux-systems.html" afterPath="$PROJECT_DIR$/_posts/2012-12-03-tuning-performance-with-java-on-linux-systems.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2013-02-17-change-for-eventual-failure.html" afterPath="$PROJECT_DIR$/_posts/2013-02-17-change-for-eventual-failure.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-03-24-rubyconf-hospitality-was-any-thing-but-pleasant.md" afterPath="$PROJECT_DIR$/_posts/2014-03-24-rubyconf-hospitality-was-any-thing-but-pleasant.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/site.html" afterPath="$PROJECT_DIR$/_layouts/site.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ajeygore.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -140,36 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2012-10-14-enterprise-infrastructure-series-part-4-monit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2012-10-14-enterprise-infrastructure-series-part-4-monit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6923077" vertical-offset="0" max-vertical-offset="360">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-10-14-mongo-or-not-to-mongo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2012-10-14-mongo-or-not-to-mongo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6923077" vertical-offset="0" max-vertical-offset="468">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2012-10-25-3-rules-for-passionate-people.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2012-10-25-3-rules-for-passionate-people.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6923077" vertical-offset="0" max-vertical-offset="612">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="2012-10-31-perceptions-what-makes-you-stand-out.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2012-10-31-perceptions-what-makes-you-stand-out.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -226,18 +83,48 @@
       <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.461538" vertical-offset="0" max-vertical-offset="972">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state vertical-scroll-proportion="-6.3076925" vertical-offset="196" max-vertical-offset="972">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2011-12-31-infrastructure-series.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="site.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_layouts/site.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11597938" vertical-offset="0" max-vertical-offset="1098">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2011-12-31-infrastructure-series.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34793815" vertical-offset="0" max-vertical-offset="776">
+            <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="378">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bare.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/bare.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="180">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -273,7 +160,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/_layouts/site.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html" />
         <option value="$PROJECT_DIR$/_posts/2011-12-31-part-1-bootstrap-openvz.html" />
         <option value="$PROJECT_DIR$/_posts/2012-01-01-part-2-automating-infrastructure.html" />
@@ -286,6 +172,7 @@
         <option value="$PROJECT_DIR$/_posts/2012-12-03-tuning-performance-with-java-on-linux-systems.html" />
         <option value="$PROJECT_DIR$/_posts/2013-02-17-change-for-eventual-failure.html" />
         <option value="$PROJECT_DIR$/_posts/2014-03-24-rubyconf-hospitality-was-any-thing-but-pleasant.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -352,20 +239,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ajeygore.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ajeygore.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ajeygore.github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_posts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -533,7 +406,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -832,14 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/bare.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="180">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="198">
@@ -852,22 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="288">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.0" vertical-offset="170" max-vertical-offset="1098">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -963,21 +812,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.384615" vertical-offset="0" max-vertical-offset="378">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/bare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7692308" vertical-offset="0" max-vertical-offset="180">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.461538" vertical-offset="0" max-vertical-offset="972">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        <state vertical-scroll-proportion="-6.3076925" vertical-offset="196" max-vertical-offset="972">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2011-12-31-infrastructure-series.html">
+    <entry file="file://$PROJECT_DIR$/_layouts/site.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34793815" vertical-offset="0" max-vertical-offset="776">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.11597938" vertical-offset="0" max-vertical-offset="1098">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
           <folding />
         </state>
       </provider>
