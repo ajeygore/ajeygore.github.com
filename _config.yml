@@ -37,6 +37,7 @@ exclude:
 - changelog.md
 - .rvmrc
 - .rbenv-version
+- _includes
 
 
 include:

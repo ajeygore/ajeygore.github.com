@@ -2,22 +2,22 @@
 layout: bare
 ---
 <head>
-    <meta charset="utf-8">
-    <title>Code.Deploy.Automate</title>
-    <meta name="description"
-          content="Ajey Gore's personal website and blog"/>
+  <meta charset="utf-8">
+  <title>Code.Deploy.Automatei  - {{page.title}}</title>
+  <meta name="description"
+  content="Ajey Gore's personal website and blog"/>
 
-    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
 
-    <meta name="description" content="Ajey Gore's personal website">
-    <meta name="author" content="Ajey Gore">
+  <meta name="description" content="Ajey Gore's personal website">
+  <meta name="author" content="Ajey Gore">
 
-    <!-- Loading Bootstrap -->
-    <link href="/{{ page.leadingpath }}assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Loading Bootstrap -->
+  <link href="/{{ page.leadingpath }}assets/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Loading Flat UI -->
-    <link href="/{{ page.leadingpath }}assets/css/override.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+  <!-- Loading Flat UI -->
+  <link href="/{{ page.leadingpath }}assets/css/override.css" rel="stylesheet">
+  {% include fonts.html %}
 
 
 
@@ -26,25 +26,28 @@ layout: bare
 
 <body>
 
-<div class="container">
+  <div class="container">
 
     <div class="container div-center">
-        <div class="page-header">
-            <h1>Ajey Gore's blog</h1>
-        </div>
-        <p class="lead">earn people, not money, with good people, everything else will follow.</p>
+      <div class="page-header">
+        <h1>Ajey Gore's blog</h1>
+      </div>
+      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}index.html" >HOME</a> * 
+      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}blog.html" >BLOG</a> * 
+      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}blog.html" >CODE</a> * 
+      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}blog.html" >PRESENTATIONS</a>
+      <p class="slogan">earn people, not money.</p>
+      <hr>
     </div>
-
 
     {{ content }}
 
+  </div>
 
-</div>
-
-<!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{ page.leadingpath }}assets/js/bootstrap.css"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="{{ page.leadingpath }}assets/js/bootstrap.js"></script>
 
 </body>
 
