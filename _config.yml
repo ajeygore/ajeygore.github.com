@@ -1,6 +1,6 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title 
+permalink: /blog/:year/:month/:day/:title
 
 highlighter: true
 
@@ -40,15 +40,9 @@ exclude:
 
 
 include:
-- _stylesheets
-- _javascript
-- _fonts
+- assets
 
 markdown: rdiscount
-
-sass:
-  sass_dir: assets/vendor/
-  style: :compressed
 
 # Custom site configuration
 lang: en

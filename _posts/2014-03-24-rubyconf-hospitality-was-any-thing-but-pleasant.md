@@ -1,5 +1,4 @@
 ---
-permalink: /rubyconf/the-lalit-goof-up.html
 layout: post
 title: RubyConf India - Hospitality was anything but pleasant at The Lalit resort and spa, Goa
 published: true
