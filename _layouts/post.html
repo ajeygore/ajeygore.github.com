@@ -3,7 +3,7 @@ layout: bare
 ---
 <head>
   <meta charset="utf-8">
-  <title>Code.Deploy.Automatei  - {{page.title}}</title>
+  <title>Code.Deploy.Automate  {{page.title}}</title>
   <meta name="description"
   content="Ajey Gore's personal website and blog"/>
 
@@ -30,13 +30,16 @@ layout: bare
       <div class="page-header">
         <h1>Ajey Gore's blog</h1>
       </div>
-      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}index.html" >HOME</a> * 
-      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}blog.html" >BLOG</a> * 
-      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}blog.html" >CODE</a> * 
-      <a style="text-decoration:none" class="menu-item" href="{{ page.leadingpath }}blog.html" >PRESENTATIONS</a>
+      <a style="text-decoration:none" class="menu-item" href="/{{ page.leadingpath }}index.html" >HOME</a> * 
+      <a style="text-decoration:none" class="menu-item" href="/{{ page.leadingpath }}blog.html" >BLOG</a> * 
+      <a style="text-decoration:none" class="menu-item" href="/{{ page.leadingpath }}blog.html" >CODE</a> * 
+      <a style="ext-decoration:none" class="menu-item" href="/{{ page.leadingpath }}blog.html" >PRESENTATIONS</a>
       <p class="slogan">earn people, not money.</p>
       <hr>
     </div>
+
+    <h1> {{ page.title }} </h1>
+    <hr>
 
     {{ content }}
 
