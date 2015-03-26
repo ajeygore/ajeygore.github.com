@@ -5,10 +5,15 @@ published: true
 categories: [startup]
 ---
 
-While in [Inceptio, 2010, Sci-Fi Movie](http://en.wikipedia.org/wiki/Inception) things slow down when you want to incept, on the contrary, agile inception is more like creating the seed of a project, which will in turn, turn into a systematic project development and production evolution plan, especially if you are not clear on what do you want, it makes sense to invest this time.
+While in [Inception, 2010, Sci-Fi Movie](http://en.wikipedia.org/wiki/Inception) things slow down 
+when you incept. But on the contrary, agile inceptions are more like creating the seed of a project. And they will in turn, 
+turn into a systematic project development and production evolution plan, 
+especially if you are not clear on what do you want, it makes sense to invest this time.
 
 ###So why are we here? 
-Many tried to paint a picture of inception like a bigbang and everything evolved from there, I personally don't agree with that - but a paper published in Agile XP as an experience report from Jonathan Rasmusson kind of summarizes this concpet pretty nice [here](http://www.agilexp.com/Agile200xPapers/Agile2006-ExperienceReports/XR25-rasmusson-AgileInceptionDeckBootCamp.pdf). And in their elevator pitch they quote my favorite quote from Gordon Moore's ["Crossing the Chasm"](http://ewthoff.home.xs4all.nl/Weppage%20documents/Summary%20Crossing%20the%20Chasm.pdf) I am linking excerpts here, if you like it please go ahead and order it. So in short ***an inception is***  to distill the essense of project in following format
+Many tried to paint a picture of inception like a bigbang and everything evolved from there, 
+I personally don't agree with that - but a paper published in Agile XP as an experience report 
+from Jonathan Rasmusson kind of summarizes this concept pretty nicely [here](http://www.agilexp.com/Agile200xPapers/Agile2006-ExperienceReports/XR25-rasmusson-AgileInceptionDeckBootCamp.pdf). And in their elevator pitch they quote my favorite quote from Gordon Moore's ["Crossing the Chasm"](http://ewthoff.home.xs4all.nl/Weppage%20documents/Summary%20Crossing%20the%20Chasm.pdf) I am linking excerpts here, if you like it please go ahead and order it. So in short ***an inception is***  to distill the essense of project in following format
 
 ** "For _[target customer]_ who
 _[statement of the need or opportunity]_ the _[product
