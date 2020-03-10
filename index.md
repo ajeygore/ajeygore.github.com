@@ -30,6 +30,3 @@ became **head of techology** for ThoughtWorks India. in 2012, I decided to take 
 
 Later I decided to start working on cloud infrastructure management startup and **CodeIgnition** was born.
 
-
-
-
