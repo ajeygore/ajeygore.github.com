@@ -1,5 +1,5 @@
 .page-header {
-  font-family: 'Dancing Script', Georgia, serif;
+  font-family: 'EB Garamond', serif;
   font-size: 42pt;
   text-align: center;
   text-shadow: 4px 4px 4px #aaa;
@@ -11,23 +11,17 @@
 
 
 .slogan {
-  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18pt;
 }
 
 .menu-item {
-  font-family: 'Raleway', sans-serif;
   font-size: 12pt;
   font-color: black;
 }
 
-h4 {
-  font-family: 'Raleway', sans-serif;
-}
 h2 {
-  font-family: 'Nunito', sans-serif;
   font-size: 16pt;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
 }
