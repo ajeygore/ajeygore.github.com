@@ -4,8 +4,6 @@ body_class: home
 leadingpath: ./
 ---
 
-#### Passionate about technology, I love solving problems - whether complex or not
-
 ##Work
 I founded CodeIgnition in 2013 with few friends, and now I work for CodeIgnition, a DevOps or infrastructure configuration management and automation startup.
 Our vision is to help startups by providing world class scalable, fault tolerant and highly available 
