@@ -43,7 +43,7 @@ exclude:
 include:
 - assets
 
-markdown: rdiscount
+markdown: kramdown
 
 # Custom site configuration
 lang: en

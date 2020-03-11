@@ -10,6 +10,7 @@
 
 
 .slogan {
+  font-family: 'Kalam', serif;
   font-size: 18pt;
 }
 
@@ -23,5 +24,7 @@ h2 {
 }
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  background-color: #c7e79a;
+  /* background-color: #0081AF; */
+  /* background-color: #90E3F6; */
+  background-color: #62D7F3;
 }
