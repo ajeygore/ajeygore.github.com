@@ -19,12 +19,32 @@
   font-color: black;
 }
 
+#hover-text {
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; 
+}
+
+#hover-text:hover {
+  letter-spacing: 3px; 
+}
+
+#color-div {
+}
+
 h2 {
   font-size: 16pt;
 }
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  /* background-color: #0081AF; */
-  background-color: #90E3F6;
-  /* background-color: #62D7F3; */
+  font-color: black;
 }
+  /* background-color: #0081AF; */
+  /* background-color: #90E3F6; */
+  /* background-color: #CAEDC9; */
+  /* background-color: #E2F9B8; */
+  /* background-color: #00AEEF; */
+  /* background-color: #C7E5E5; */
+  /* background-color: #D0E562; */
+  /* background-color: #62D7F3; */

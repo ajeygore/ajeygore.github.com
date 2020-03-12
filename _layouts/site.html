@@ -22,7 +22,7 @@ layout: bare
 </head>
 
 
-<body>
+<body id="color-div">
 
 
   <div class="container">
@@ -31,11 +31,21 @@ layout: bare
         <img src="{{ page.leadingpath }}assets/images/ajey_trsp.png" width="500px">
       </div>
       <div class="col div-center align-middle">
-        <div class="page-header">
-          Ajey Gore
+        <div class="row">
+          <div class="page-header">
+            Ajey Gore
+          </div>
         </div>
-        <p class="slogan">Ideate, Implement, Iterate</p>
+        <div class="row slogan">Ideate, Implement, Iterate</div>
+        <hr/>
+        <div class="row" id="hover-text">About</div>
+        <div class="row" id="hover-text">Books I read</div>
+        <div class="row" id="hover-text">Talks</div>
+        <div class="row" id="hover-text">People</div>
+        <div class="row" id="hover-text">Topics</div>
+        <div class="row" id="hover-text">Foovar</div>
       </div>
+
     </div>
   </div>
 
@@ -43,8 +53,10 @@ layout: bare
     {{ content }}
   </div>
   <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="{{ page.leadingpath }}assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{{ page.leadingpath }}assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
 </body>
 

@@ -1,4 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-{{ content }}
+  {{ content }}
+
+  <script>
+    $(document).ready(function() {
+      var palettes = [
+        ['#0081AF', ' #90E3F6', '#CAEDC9'],
+        ['#E2F9B8', '#00AEEF', '#C7E5E5'],
+        ['#D0E562', '#62D7F3', '#E06F50']
+      ];
+      var randomPalette = palettes[Math.floor(Math.random() * palettes.length)];
+
+      var new_bgcolor = randomPalette[0];
+      var new_textcolor = randomPalette[1];
+      var new_bordercolor = randomPalette[2];
+
+      $('#color-div').css({
+        'background-color': new_bgcolor,
+        //'color': new_textcolor,
+        //'border-color': new_bordercolor
+      });
+    });
+  </script>
 </html>
