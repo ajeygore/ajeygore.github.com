@@ -3,52 +3,67 @@ layout: bare
 ---
 <head>
   <meta charset="utf-8">
-  <title>Code.Deploy.Automate  {{page.title}}</title>
+  <title>Ajey Gore</title>
   <meta name="description"
-  content="Ajey Gore's personal website and blog"/>
+        content="Ajey Gore"/>
 
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
 
-  <meta name="description" content="Ajey Gore's personal website">
+  <meta name="description" content="Ajey's personal website">
   <meta name="author" content="Ajey Gore">
 
   <!-- Loading Bootstrap -->
-  <link href="/{{ page.leadingpath }}assets/css/bootstrap.css" rel="stylesheet">
+  <link href="/assets/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
 
-  <!-- Loading Flat UI -->
-  <link href="/{{ page.leadingpath }}assets/css/override.css" rel="stylesheet">
+  <!-- Loading Overrides UI -->
+  <link href="/assets/css/override.css" rel="stylesheet">
   {% include fonts.html %}
 
 </head>
 
 
-<body>
-
+<body id="color-div">
   <div class="container">
-
-    <div class="container div-center">
-      <div class="page-header">
-        <h1>Ajey Gore's blog</h1>
+    <div class="row align-items-center text-center">
+      <div class="col-sm-2">
+        <img class="img-fluid" src="/assets/images/ajey_trsp.png" height="150px" >
       </div>
-      <a style="text-decoration:none" class="menu-item" href="/{{ page.leadingpath }}index.html" >HOME</a> * 
-      <a style="text-decoration:none" class="menu-item" href="/{{ page.leadingpath }}blog.html" >BLOG</a> * 
-      <a style="text-decoration:none" class="menu-item" href="/{{ page.leadingpath }}blog.html" >CODE</a> * 
-      <a style="ext-decoration:none" class="menu-item" href="/{{ page.leadingpath }}blog.html" >PRESENTATIONS</a>
-      <p class="slogan">earn people, not money.</p>
-      <hr>
+        <div class="col-sm-10 div-center align-middle">
+          <div class="row">
+            <div class="col-sm-4 align-left page-header-small">
+              <div class="row text-center">
+                <div class="col">
+                Ajey Gore
+                </div>
+              </div>
+              <div class="row slogan-small text-center">
+                <div class="col">
+                Ideate, Implement, Iterate
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8" id="hover-text">
+              About | Books List | Talks | People | Topics | Foovar 
+            </div>
+          </div>
+        </div>
     </div>
-
-    <h1> {{ page.title }} </h1>
+    <p>
     <hr>
-
-    {{ content }}
-
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="align-items-center col-sm-8">
+        {{ content }}
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
   </div>
-
   <!-- Bootstrap core JavaScript
-   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="{{ page.leadingpath }}assets/js/bootstrap.js"></script>
-
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
 </body>
+
 

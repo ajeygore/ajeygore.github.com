@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.page-header-small {
+  font-family: 'EB Garamond', serif;
+  font-size: 18pt;
+  text-align: center;
+}
 .div-center {
   text-align: center;
 }
@@ -12,6 +17,10 @@
 .slogan {
   font-family: 'Kalam', serif;
   font-size: 18pt;
+}
+.slogan-small {
+  font-family: 'Kalam', serif;
+  font-size: 12pt;
 }
 
 .menu-item {
