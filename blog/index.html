@@ -3,8 +3,10 @@ layout: post
 body_class: home
 leadingpath: ./
 ---
+<div class="container">
+<div class="col-md-8 offset-md-2 mr-auto ml-auto">
 {% for post in site.posts %}
-<div class="row">
+<div class="row align-items-center text-center">
   <div class="div-center">
     <h4>{{ post.date |  date: '%B %d, %Y' }}
     </h4>
@@ -25,5 +27,7 @@ leadingpath: ./
 <hr>
 <br>
 {% endfor %}
+</div>
+</div>
 
 
