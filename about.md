@@ -1,3 +1,8 @@
+---
+layout: post
+body_class: home
+leadingpath: ./
+---
 ## Work
 
 I founded CodeIgnition in 2013 with few friends, and now I work for CodeIgnition, a DevOps or infrastructure configuration management and automation startup.
