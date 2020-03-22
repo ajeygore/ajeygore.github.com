@@ -6,7 +6,7 @@
 
 .page-header-small {
   font-family: 'EB Garamond', serif;
-  font-size: 18pt;
+  font-size: 32pt;
   text-align: center;
 }
 .div-center {
@@ -16,15 +16,15 @@
 
 .slogan {
   font-family: 'Kalam', serif;
-  font-size: 18pt;
+  font-size: 24pt;
 }
 .slogan-small {
   font-family: 'Kalam', serif;
-  font-size: 12pt;
+  font-size: 18pt;
 }
 
 .menu-item {
-  font-size: 12pt;
+  font-size: 16pt;
   font-color: black;
 }
 
@@ -46,8 +46,13 @@ h2 {
   font-size: 16pt;
 }
 body {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-color: black;
+  font-size: 12pt;
+}
+
+b {
+  font-weight: 600;
 }
   /* background-color: #0081AF; */
   /* background-color: #90E3F6; */

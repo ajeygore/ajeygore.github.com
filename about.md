@@ -2,31 +2,117 @@
 layout: post
 body_class: home
 leadingpath: ./
+title: About
+permalink: /about
 ---
-## Work
-
-I founded CodeIgnition in 2013 with few friends, and now I work for CodeIgnition, a DevOps or infrastructure configuration management and automation startup.
-Our vision is to help startups by providing world class scalable, fault tolerant and highly available 
-infrastructure. **CodeIgnition** serves budding startups helping them scale and respond to growing 
-end user needs, and we also help big enterprises with transforming their existing team setup to new 
-age environment with help of DevOps Tools and Culture. We primarily work with cloud platforms such as AWS, Azure, Rackspace and Digital Ocean.
 
 
-## Technologies
+# Namaste!
 
-I love working with variety of technologies and tools, I have worked in various languages, frameworks and tools. Now a days I primarily work with Ruby, Go, JavaScript and related frameworks.
-I also work with mobile development environments such as iOS and Android. I play with swift, java, objective c.
+-------
+```
+/ˈnʌməsteɪ/
 
-Apart from languages, my interests include virtualisation, network management and infrastructure management. I have been using containers, virtualisation platforms and configuration management tools such as
-Chef, Puppet, Ansible etc for almost 5 years.
+a respectful greeting said with hands joined together!
+```
+--------
 
-## Personal Journey
 
-I started my career as graphics designer for designing ads, later I helped my brother with his business, selling computers in early 90s and then helping run printing business late 90s. Around mid 90s I got interested in
-programming and started learning languages, starting with C and later joining **National Centre for Software Technology** as student, then technical associate and finally working in r & d unit as staff scientist, mainly working on 
-multilingual software for indian languages. early 2000 I joined a niche agile software consulting firm, **ThoughtWorks** as their first employee in India as developer. I joined as Developer, and went on to work with
-ThoughtWorks for next decade, I worked in multiple countries and helping various clients with solving problems. Primarily a programmer, but having huge interest in infrastructure and configuration management, in 2006 I became **head of global IT operations** for ThoughtWorks and later
-became **head of techology** for ThoughtWorks India. in 2012, I decided to take break from ThoughtWorks, after few months of break, I joined Bharati SoftBank startup, Hoppr, as **chief technology offier**. 
+Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there and studied in Allahabad and Bangalore, In the last 25 years, I setup my own printing business, self learned programming, professionally learned accounting, lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore. I started my career as a graphics designer and love to play strategy games, chess and draw.
 
-Later I decided to start working on cloud infrastructure management startup and **CodeIgnition** was born.
 
+
+I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial)and [Sidu](https://twitter.com/ponnappa). Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
+
+# Ajey's User Manual
+
+* Namaste!
+
+* Contents
+
+* What do I do in gojek
+
+* Best Way to Communicate with Me
+
+* My Work Style
+
+* How I Think I Evaluate People
+
+#### What do I do? 
+
+I&#39;m a Software Engineer at core, My first principle is that **I work for people and people work with me** which results into me talking to many people across gojek in various departments and functions, I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms. I have played various roles in my life and recently at GoJek simultaneously, including
+
+- Managing India office (budget, recruitment, people, operations) along with Sidu
+- Product Engineering HR
+- Product Engineering  Recruiting
+- Managing Engineering Org
+- Setting up technology strategy and making sure that we make the right decision around software engineering at gojek
+
+I&#39;ve been a part of GO-JEK since July 2015.
+
+I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it&#39;s based on human perception, but you are welcome to correct me. Because I know that &quot;Saying I don&#39;t know, and accepting the mistakes&quot; are two most important traits to be a good colleague.
+
+You can reach me on [twitter](https://twitter.com/ajeygore)
+
+My responsiveness in decreasing order if you work at [gojek](http://gojek.com/): Whatsapp, Email, Slack, Telegram
+
+if you want to talk to me or communicate to me publicly then reaching through twitter works for now. :-)
+
+#### Best Way to Communicate with Me
+
+I am converted extrovert, so I sometimes put perceived information through my introverted lense, that means, sometimes I see what I want to see, so I try to confirm with people on what I perceive, the way I want you to tell me what you think is walk up to me and tell me what you feel.
+
+I keep my professional life within the confines of office premise, that means that we can argue, agree to disagree, but still can have an amazing dinner! I don&#39;t bring official matters to any personal meetings or outings.
+
+I don&#39;t initiate one on one conversations, just because I run out of time, in turn I am perceived as one of the most difficult people to get time from, but if you really want to talk to me, just call me! I almost immediately respond to calls, because I know you will call me only if it&#39;s urgent. Sending me an email has response time ETA upto a week. I have gotten feedback that I am difficult to reach over the years, but here you go with my secret to reachability.
+
+So I&#39;m ok with being engaged however **you** are comfortable. Take as long as you need to. Use many words or few. Use chat, email or call me or meet me in person. Whatever works for you. I&#39;ll adjust, and won&#39;t judge.
+
+**Finally, I have strong opinions that I strive to hold as long as I am shown better ways, so I&#39;m always easiest to persuade with logic and always ready to learn, I always look for traits in people who come with problem &amp; solutions with it, always give me options to choose from and always tell their opinions on something before seeking mine.**
+
+
+
+
+#### My Work Style
+
+I really enjoy working on complex strategic engineering and product problems. I have a strong interest in software design, team building and how they work with org design.
+
+I believe that the way software evolves over a period of time, organisation should evolve as well. I have always followed John Ousterhaut and now he has a book around the same topic, please read [A Philosophy of Software Design](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201) by John Ousterhaut. 
+
+(Also, you can checkout the books section, which I maintain about books either I have read it or they are in my queue)
+
+
+I&#39;m equally comfortable working alone, being a part of a team, leading a team or leading a team of teams. I am ok playing any role if I think it&#39;s necessary to achieve a goal. In situations where I&#39;m not the best person for that role, I try to find a replacement better suited than myself, transition and roll off.
+
+
+
+I prefer being reasonable and transparent. I encourage transparency in tech org - especially around [downtimes](https://en.wikipedia.org/wiki/Downtime)  or decisions which affect people, when you ask me a question, I will always ask you the context for the question, that helps give you more elaborate and explainable answers. I also prefer egalitarian meritocracy. As a consequence I work more effectively with people with whom I can [straight-talk](https://www.ribbonfarm.com/2009/11/11/the-gervais-principle-ii-posturetalk-powertalk-babytalk-and-gametalk/).
+
+#### How I Think I Evaluate People
+
+Evaluating performance is often the largest part of a leaders&#39; responsibilities.
+
+I don&#39;t like anyone being judgemental. I don&#39;t like biased or judgemental views, I don&#39;t like people forming opinions about others based on few events or the way they behave. I believe in long term and transparent professional relationships, that means, you will find me very unbiased or aloof towards people.  and I am working on reducing the bias in my own evaluation of any given person; I make a conscious effort to avoid forming an opinion based on what a handful of people tell me about someone.
+
+I&#39;m not great at this, and am always open to feedback. Here&#39;s a list of my people related biases I think matter most.
+
+###### **I am positively-biased toward:**
+
+- people who see their work as creativity and recognise that they need constant improvement.
+- people who believe that what they do is a craft and they keep honing their skills around that.
+- people who dedicate a lot of time deeply caring about other people and their professional success
+- people who demonstrate clarity of purpose. (they always have a crisp answer to &quot;what do you want to make happen?&quot;)
+- people who I see accepting accountability for creating outcomes. (reverse spiderman rule: to those with great responsibility give great power)
+  - people who consistently create outcomes they signed up for
+- people who visibly make their colleagues better at their jobs by teaching them their own skills. (these people are superb team builders)
+- people who argue to find the right answer rather than to win.
+- people who work regardless of who gets the credit for that work.
+- people who are curious and ready to learn all the time
+- people who see success are of the team and failure for themselves
+
+###### **I am negatively-biased against:**
+
+- people without skin flesh in the game that want a say.
+- people who use appeals to authority instead of reason in their arguments.
+- people who cause drama.
+- people who don&#39;t study and iterate but want to be treated as if they do.
