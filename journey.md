@@ -1,7 +1,6 @@
 ---
 layout: post
 body_class: home
-leadingpath: ./
 title: Journey
 permalink: /journey
 ---
