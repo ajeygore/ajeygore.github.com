@@ -21,10 +21,12 @@ a respectful greeting said with hands joined together!
 Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there and studied in Allahabad and Bangalore. 
 In the last 25 years, I had setup my own printing business, self learned programming, professionally learned accounting, 
 lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore. 
-I started my career as a graphics designer, then later ended up writing software for last 25 years. I love to play strategy games (Age of empires, Civilizatio, chess) and draw/paint. Recently I stated to draw again.
+I started my career as a graphics designer, then later ended up writing software for last 25 years. I love to play strategy games (Age of empires, Civilizatio, chess) and draw/paint. 
+Recently I stated to draw again.
 
 
-I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial)and [Sidu](https://twitter.com/ponnappa) for writing this manual. Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
+I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial) and [Sidu](https://twitter.com/ponnappa) for writing this manual. 
+Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
 
 # Ajey's User Manual
 
@@ -55,7 +57,9 @@ I have played various roles in my life and recently at GoJek simultaneously, inc
 
 I&#39;ve been a part of GO-JEK since July 2015.
 
-I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it&#39;s based on human perception, but you are welcome to correct me. Because I know that &quot;Saying I don&#39;t know, and accepting the mistakes&quot; are two most important traits to be a good colleague.
+I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception.
+They might be wrong - because one side of the story is never true, since it&#39;s based on human perception, but you are welcome to correct me. 
+Because I know that **&quot;Saying I don&#39;t know, and accepting the mistakes&quot;** are two most important traits to be a good colleague.
 
 You can reach me on [twitter](https://twitter.com/ajeygore)
 
@@ -65,11 +69,18 @@ if you want to talk to me or communicate to me publicly then reaching through tw
 
 #### Best Way to Communicate with Me
 
-I am converted extrovert, so I sometimes put perceived information through my introverted lense, that means, sometimes I see what I want to see, so I try to confirm with people on what I perceive, the way I want you to tell me what you think is walk up to me and tell me what you feel.
+I am converted extrovert, so I sometimes put perceived information through my introverted lense, that means, sometimes I see what I want to see, 
+so I try to confirm with people on what I perceive, the way I want you to tell me what you think is walk up to me and tell me what you feel.
 
-I keep my professional life within the confines of office premise, that means that we can argue, agree to disagree, but still can have an amazing dinner! I don&#39;t bring official matters to any personal meetings or outings.
+I keep my professional life within the confines of office premise, that means that we can argue, agree to disagree, 
+but still can have an amazing dinner! I don&#39;t bring official matters to any personal meetings or outings.
 
-I don&#39;t initiate one on one conversations, just because I run out of time, in turn I am perceived as one of the most difficult people to get time from, but if you really want to talk to me, just call me! I almost immediately respond to calls, because I know you will call me only if it&#39;s urgent. Sending me an email has response time ETA upto a week. I have gotten feedback that I am difficult to reach over the years, but here you go with my secret to reachability.
+I don&#39;t initiate one on one conversations, just because I run out of time, 
+in turn I am perceived as one of the most difficult people to get time from, 
+but if you really want to talk to me, just call me! I almost immediately respond to calls, 
+because I know you will call me only if it&#39;s urgent. 
+Sending me an email has response time ETA upto a week. 
+I have gotten feedback that I am difficult to reach over the years, but here you go with my secret to reachability.
 
 So I&#39;m ok with being engaged however **you** are comfortable. Take as long as you need to. Use many words or few. Use chat, email or call me or meet me in person. Whatever works for you. I&#39;ll adjust, and won&#39;t judge.
 
@@ -80,26 +91,42 @@ So I&#39;m ok with being engaged however **you** are comfortable. Take as long a
 
 #### My Work Style
 
-I really enjoy working on complex strategic engineering and product problems. I have a strong interest in software design, team building and how they work with org design.
+I really enjoy working on complex strategic engineering and product problems. 
+I have a strong interest in software design, team building and how they work with org design.
 
-I believe that the way software evolves over a period of time, organisation should evolve as well. I have always followed John Ousterhaut and now he has a book around the same topic, please read [A Philosophy of Software Design](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201) by John Ousterhaut. 
+I believe that the way software evolves over a period of time, organisation should evolve as well. 
+I have always followed John Ousterhaut and now he has a book around the same topic, 
+please read [A Philosophy of Software Design](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201) by John Ousterhaut. 
 
-(Also, you can checkout the books section, which I maintain about books either I have read it or they are in my queue)
-
-
-I&#39;m equally comfortable working alone, being a part of a team, leading a team or leading a team of teams. I am ok playing any role if I think it&#39;s necessary to achieve a goal. In situations where I&#39;m not the best person for that role, I try to find a replacement better suited than myself, transition and roll off.
-
+(Also, you can checkout the books section. I maintain about books page for the books; either I have read it or they are in my queue to read)
 
 
-I prefer being reasonable and transparent. I encourage transparency in tech org - especially around [downtimes](https://en.wikipedia.org/wiki/Downtime)  or decisions which affect people, when you ask me a question, I will always ask you the context for the question, that helps give you more elaborate and explainable answers. I also prefer egalitarian meritocracy. As a consequence I work more effectively with people with whom I can [straight-talk](https://www.ribbonfarm.com/2009/11/11/the-gervais-principle-ii-posturetalk-powertalk-babytalk-and-gametalk/).
+I&#39;m equally comfortable working alone, being a part of a team, 
+leading a team or leading a team of teams. I am ok playing any role if I think it&#39;s necessary to achieve a goal.\
+In situations where I&#39;m not the best person for that role, 
+I try to find a replacement better suited than myself, transition and roll off.
+
+
+
+I prefer being reasonable and transparent. I encourage transparency in tech org - 
+especially around [downtimes](https://en.wikipedia.org/wiki/Downtime)  or decisions which affect people,
+when you ask me a question, I will always ask you the context for the question,
+that helps give you more elaborate and explainable answers. I also prefer egalitarian meritocracy. 
+As a consequence I work more effectively with people with whom I can
+[straight-talk](https://www.ribbonfarm.com/2009/11/11/the-gervais-principle-ii-posturetalk-powertalk-babytalk-and-gametalk/).
 
 #### How I Think I Evaluate People
 
 Evaluating performance is often the largest part of a leaders&#39; responsibilities.
 
-I don&#39;t like anyone being judgemental. I don&#39;t like biased or judgemental views, I don&#39;t like people forming opinions about others based on few events or the way they behave. I believe in long term and transparent professional relationships, that means, you will find me very unbiased or aloof towards people.  and I am working on reducing the bias in my own evaluation of any given person; I make a conscious effort to avoid forming an opinion based on what a handful of people tell me about someone.
+I don&#39;t like anyone being judgemental. I don&#39;t like biased or judgemental views, 
+I don&#39;t like people forming opinions about others based on few events or the way they behave.
+I believe in long term and transparent professional relationships, that means, you will find me very unbiased or aloof towards people. 
+and I am working on reducing the bias in my own evaluation of any given person;
+I make a conscious effort to avoid forming an opinion based on what a handful of people tell me about someone.
 
-I&#39;m not great at this, and am always open to feedback. Here&#39;s a list of my people related biases I think matter most.
+I&#39;m not great at this, and am always open to feedback. 
+Here&#39;s a list of my people related biases I think matter most.
 
 ###### **I am positively-biased toward:**
 
