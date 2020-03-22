@@ -18,11 +18,13 @@ a respectful greeting said with hands joined together!
 --------
 
 
-Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there and studied in Allahabad and Bangalore, In the last 25 years, I setup my own printing business, self learned programming, professionally learned accounting, lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore. I started my career as a graphics designer and love to play strategy games, chess and draw.
+Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there and studied in Allahabad and Bangalore. 
+In the last 25 years, I had setup my own printing business, self learned programming, professionally learned accounting, 
+lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore. 
+I started my career as a graphics designer, then later ended up writing software for last 25 years. I love to play strategy games (Age of empires, Civilizatio, chess) and draw/paint. Recently I stated to draw again.
 
 
-
-I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial)and [Sidu](https://twitter.com/ponnappa). Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
+I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial)and [Sidu](https://twitter.com/ponnappa) for writing this manual. Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
 
 # Ajey's User Manual
 
@@ -40,7 +42,10 @@ I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial)and [Sid
 
 #### What do I do? 
 
-I&#39;m a Software Engineer at core, My first principle is that **I work for people and people work with me** which results into me talking to many people across gojek in various departments and functions, I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms. I have played various roles in my life and recently at GoJek simultaneously, including
+I&#39;m a Software Engineer at core, My first principle is that **I work for people and people work with me** 
+which results into me talking to many people across gojek in various departments and functions, 
+I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms. 
+I have played various roles in my life and recently at GoJek simultaneously, including
 
 - Managing India office (budget, recruitment, people, operations) along with Sidu
 - Product Engineering HR
