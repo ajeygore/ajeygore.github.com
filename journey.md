@@ -6,13 +6,13 @@ permalink: /journey
 ---
 ## Personal Journey
 
-YourStory published my [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore) in 2017. It sums up pretty well.
+YourStory published my [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. It sums up pretty well.
 
 #### A thank you note, and little more about my life!
 
 My life, here is my take on it. I have been super fortunate to have an amazing family, who supported me as much as they could.
 My mother has worked tirelessly at both fronts to meet ends, while my brothers & sister have showered unconditional love throughout their life to me.
-I have [an amazing life-partner](https://twitter.com/shraddhagore), who stood by me for everything I did, the crazy rides of life won't be anywhere close to where I am today without her, thanks Shraddha.
+I have [an amazing life-partner](https://twitter.com/shraddhagore){:target="_blank"}, who stood by me for everything I did, the crazy rides of life won't be anywhere close to where I am today without her, thanks Shraddha.
 
 And then there are amazing friends who have shaped my life, The amount of people who have helped me in life, is just endless. I have been super forunate to know them, and have them in my life.
 
@@ -30,7 +30,7 @@ in 2006 I became **head of global IT operations** for ThoughtWorks and later
 became **head of techology** for ThoughtWorks India. 
 
 Given hectic travel schedule and not able to focus on my family, and we had a second addition in our family (Welcome Raaghav)In 2012, 
-I decided to take break from ThoughtWorks, after few months of break, I joined Bharati SoftBank startup, Hoppr, as **chief technology offier**, later Hoppr got acquired by [Hike Messenger](https://hike.in/)
+I decided to take break from ThoughtWorks, after few months of break, I joined Bharati SoftBank startup, Hoppr, as **chief technology offier**, later Hoppr got acquired by [Hike Messenger](https://hike.in/){:target="_blank"}
 
 I have always tried to do something on my own, and that list goes on
 
@@ -42,7 +42,7 @@ I have always tried to do something on my own, and that list goes on
 
 So, given that, Early 2010s cloud and software deployments were two interesting domain to venture in, And in late 2012, early 2013, we, me and my few friends, decided to start another venture, a cloud automation and software deployment startup, CodeIgnition.
 
-Later, [gojek](https://gojek.com) asked us to join them in late 2015.
+Later, [gojek](https://gojek.com){:target="_blank"} asked us to join them in late 2015.
 
 #### Experience
 
