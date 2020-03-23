@@ -1,5 +1,5 @@
 .page-header {
-  font-family: 'Lora', serif;
+  font-family: 'Lora';
   font-size: 42pt;
   text-align: center;
 }
@@ -29,7 +29,7 @@
 }
 
 #hover-text {
-    -webkit-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease; 
@@ -54,11 +54,11 @@ body {
 b {
   font-weight: 800;
 }
-  /* background-color: #0081AF; */
-  /* background-color: #90E3F6; */
-  /* background-color: #CAEDC9; */
-  /* background-color: #E2F9B8; */
-  /* background-color: #00AEEF; */
-  /* background-color: #C7E5E5; */
-  /* background-color: #D0E562; */
-  /* background-color: #62D7F3; */
+/* background-color: #0081AF; */
+/* background-color: #90E3F6; */
+/* background-color: #CAEDC9; */
+/* background-color: #E2F9B8; */
+/* background-color: #00AEEF; */
+/* background-color: #C7E5E5; */
+/* background-color: #D0E562; */
+/* background-color: #62D7F3; */
