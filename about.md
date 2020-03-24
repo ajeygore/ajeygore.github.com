@@ -13,7 +13,7 @@ permalink: /about
 ```
 /ˈnʌməsteɪ/
 
-a respectful greeting said with hands joined together!
+  a respectful greeting said with hands joined together!
 ```
 --------
 
@@ -25,13 +25,13 @@ I started my career as a graphics designer, then later ended up writing software
 Recently I stated to draw again.
 
 
-I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial){:target="_blank"} and [Sidu](https://twitter.com/ponnappa){:target="_blank"} for writing this manual. 
+I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial){:target="_blank"} and [Sidu](https://twitter.com/ponnappa){:target="_blank"} for writing this manual.
 Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
 
 So this "about", is "about" how to deal with me as person! and make our lives much better, because I fundamentally believe that everyone else is right about me 
 and dealing with me is constant expectation mismatch and a cage fight in a very interesting way.
 
-# Ajey's User Manual
+## __Ajey's User Manual__
 
 * Namaste!
 
