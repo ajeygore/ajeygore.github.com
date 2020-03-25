@@ -10,7 +10,7 @@ YourStory published my [Interview](https://yourstory.com/2017/05/techie-tuesdays
 
 #### A thank you note, and little more about my life!
 
-My life, here is my take on it. I have been super fortunate to have an amazing family. They supported me as much as they could.  My mother worked tirelessly at both fronts, home & work, to meet ends, my father did everything possible he could do to make sure that we get our bread.  All my life my elder brothers & elder sister have showered unconditional love throughout their life to me.
+My life, here is my take on it. I have been super fortunate to have an amazing family. They supported me as much as they could.  My mother worked tirelessly at both fronts, home & work, to meet ends, my father did everything possible he could do to make sure that we get our bread.  All my life my elder siblings have showered unconditional love.
 
 I have [an amazing life-partner](https://twitter.com/shraddhagore){:target="_blank"}, who stood by me for everything I did, the crazy rides of life won't be anywhere close to where I am today without her, thanks Shraddha. Shraddha has stood firm ~~behind~~ alongside with me, providing me the support required and adviced on how do we deal with our life together.
 
@@ -18,9 +18,9 @@ In this journey I got many amazing friends, they have shaped my life, in so many
 
 **So _Thank you everyone!_ all of you made me who I am, I can't list all of you here, but I will try to put many of you in my people section.**
 
-#### Work, 20+ years, so on and so forth... 
+#### Work, 20+ years, so on and so forth...
 
-Early 90s I started designing wedding cards, business cards and later advertisements for newspapers. I helped my brother with his Accounting & DTP business. I sold assembled computers in early 90s and then helping run printing business late 90s.  Around mid 90s I got interested in programming; wanted to know how can I write my own software, since purchasing software so was expensive, that got me started learning [programming languages](https://en.wikipedia.org/wiki/Programming_language){:target="blank"}, starting with C and later joining **National Centre for Software Technology** as student, then I worked at NCST as technical associate and finally working in R&D unit as staff scientist, mainly working on multilingual software for indian languages using Unicode.
+I started with designing wedding cards, business cards and later advertisements for newspapers. I helped my brother with his Accounting & DTP business. I sold assembled computers and then helping run printing business late 90s. I got interested in computer programming; curious to know how can I write my own software, sinc software was expensive, that got me started learning [programming languages](https://en.wikipedia.org/wiki/Programming_language){:target="blank"}, starting with C and later joining **National Centre for Software Technology** as student, then I worked at NCST as technical associate and finally working in R&D unit as staff scientist, mainly working on multilingual software for indian languages using Unicode.
 
 #### Corporate world!
 
