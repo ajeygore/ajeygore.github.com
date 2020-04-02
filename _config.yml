@@ -1,8 +1,3 @@
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /blog/:year/:month/:day/:title
-
-highlighter: rouge
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -20,6 +15,15 @@ domain: ajeygore.in
 
 production_url : http://ajeygore.github.io
 collections_dir: collections
+
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+highlighter: rouge
+
+collections:
+  posts:
+    output: true
+    permalink: /writings/:title
 
 exclude:
 - bin

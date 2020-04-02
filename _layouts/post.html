@@ -3,7 +3,7 @@ layout: bare
 ---
 <head>
   <meta charset="utf-8">
-  <title>Ajey Gore</title>
+  <title>Ajey Gore - {{ page.title }} </title>
   <meta name="description"
         content="Ajey Gore"/>
 
@@ -26,7 +26,7 @@ layout: bare
   <div class="container">
     <div class="row align-items-center text-center">
       <div class="col-sm-2">
-        <img class="img-fluid" src="/assets/images/ajey_trsp.png" height="120px" >
+        <img class="img-fluid" src="/assets/images/ajey_trsp.png" height="90px" >
       </div>
         <div class="col-sm-10 div-center align-middle">
           <div class="row">
@@ -42,27 +42,15 @@ layout: bare
                 </div>
               </div>
             </div>
-            <div class="col-sm-1">
-              <a href="/">Home</a> 
+
+            <div class="col-sm-8 text-center"> 
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" id="hover-text" {% if page.url == item.link %}style="color: red; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" %}target="_blank"{%endif%}>
+              {{item.name}}
+            </a>
+            {% endfor %}
             </div>
-            <div class="col-sm-1" id="hover-text"> 
-              <a href="{{ site.baseurl }}{% link about.md %}">About</a> 
-            </div>
-            <div class="col-sm-1" id="hover-text"> 
-              <a href="{{ site.baseurl }}{% link about.md %}">Books</a>  
-            </div>
-            <div class="col-sm-1" id="hover-text">
-              <a href="{{ site.baseurl }}{% link about.md %}">Talks</a>  
-            </div>
-            <div class="col-sm-1" id="hover-text">
-              <a href="{{ site.baseurl }}{% link about.md %}">People</a>  
-            </div> 
-            <div class="col-sm-1" id="hover-text"> 
-              <a href="{{ site.baseurl }}{% link about.md %}">Topics</a> 
-            </div>  
-            <div class="col-sm-1" id="hover-text"> 
-              <a href="{{ site.baseurl }}{% link about.md %}">Foovar</a>  
-            </div>
+
           </div>
         </div>
     </div>
@@ -77,7 +65,6 @@ layout: bare
         </h3>
 
         {{ content }}
-        <hr/>
         {{ page.date |  date: '%b %d, %Y' }}
 
 

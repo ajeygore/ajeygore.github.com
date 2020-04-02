@@ -3,7 +3,7 @@ layout: bare
 ---
 <head>
   <meta charset="utf-8">
-  <title>Ajey Gore</title>
+  <title>Ajey Gore - {{ page.title }}</title>
   <meta name="description"
         content="Ajey Gore"/>
 
@@ -13,54 +13,64 @@ layout: bare
   <meta name="author" content="Ajey Gore">
 
   <!-- Loading Bootstrap -->
-  <link href="{{ page.leadingpath }}assets/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
+  <link href="/assets/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
 
   <!-- Loading Overrides UI -->
-  <link href="{{ page.leadingpath }}assets/css/override.css" rel="stylesheet">
+  <link href="/assets/css/override.css" rel="stylesheet">
   {% include fonts.html %}
 
 </head>
 
 
 <body id="color-div">
-
-
   <div class="container">
     <div class="row align-items-center text-center">
-      <div class="col-sm-6">
-        <img class="img-fluid" src="{{ page.leadingpath }}assets/images/ajey_trsp.png" width="100%">
+      <div class="col-sm-2">
+        <img class="img-fluid" src="/assets/images/ajey_trsp.png" height="90px" >
       </div>
-      <div class="col-sm-6 div-center align-middle">
-        <div class="row">
-          <div class="col page-header">
-            Ajey Gore
+        <div class="col-sm-10 div-center align-middle">
+          <div class="row">
+            <div class="col-sm-4 align-left page-header-small">
+              <div class="row text-center">
+                <div class="col">
+                  Ajey Gore
+                </div>
+              </div>
+              <div class="row slogan-small text-center">
+                <div class="col">
+                  Ideate, Implement, Iterate
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-8 text-center"> 
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" id="hover-text" {% if page.url == item.link %}style="color: red; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" %}target="_blank"{%endif%}>
+              {{item.name}}
+            </a>
+            {% endfor %}
+            </div>
+
           </div>
         </div>
-        <div class="row slogan"><div class="col">Ideate, Implement, Iterate</div></div>
-        <hr/>
-        <div class="row" id="hover-text"><div class="col"><a href="{{ site.baseurl }}{% link about.md %}">About</a></div></div>
-        <div class="row align-items-center" id="hover-text"><div class="col"><a href="{{ site.baseurl }}{% link about.md %}">Books</a></div></div>
-        <div class="row align-items-center" id="hover-text"><div class="col"><a href="{{ site.baseurl }}{% link about.md %}">Talks</a></div></div>
-        <div class="row align-items-center" id="hover-text"><div class="col"><a href="{{ site.baseurl }}{% link about.md %}">People</a></div></div>
-        <div class="row align-items-center" id="hover-text"><div class="col"><a href="{{ site.baseurl }}{% link about.md %}">Topics</a></div></div>
-        <div class="row align-items-center" id="hover-text"><div class="col"><a href="{{ site.baseurl }}{% link about.md %}">Foovar</a></div></div>
-        <hr/>
-        <p>
-        <p>
-        <p>
-  <div class="container div-center">
-    {{ content }}
-  </div>
-      </div>
-
     </div>
   </div>
-
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="{{ page.leadingpath }}assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+  <p>
+    <hr>
+    <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="align-items-center col-sm-8">
+        {{ content }}
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    </div>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
 </body>
+
 

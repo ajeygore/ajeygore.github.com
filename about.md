@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: site
 body_class: home
 leadingpath: ./
-title: About
 permalink: /about
+title: About
 ---
 
 

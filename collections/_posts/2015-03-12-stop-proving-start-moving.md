@@ -2,7 +2,8 @@
 layout: post
 title: Stop proving, start moving
 published: true
-categories: [personality]
+categories: [people]
+section: [thoughts]
 ---
 
 Sometimes, you need to sell yourself. What I mean is that you need to sell your services and make sure that people know what they want. If they do, then its great, but even after meeting you, they keep questioning the stuff, you will feel crap about it. 

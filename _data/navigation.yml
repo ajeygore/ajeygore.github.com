@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: About
+  link: /about
+- name: Writings
+  link: /writings
+- name: Talks
+  link: /talks
+- name: Bookshelf
+  link: /bookshelf
+- name: Life
+  link: /life
+- name: Foowar
+  link: https://foowar.in/

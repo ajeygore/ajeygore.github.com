@@ -1,0 +1,17 @@
+---
+layout: post
+body_class: home
+leadingpath: ./
+permalink: /books
+title: Reading List
+---
+
+<h5><b>This is my rough reading list, I intend to update it and make it better, and most probably put some categories as well.</b></h5>
+
+<ul>
+  {% for book in site.data.books %}
+  <li>
+    {{ book.name }}
+  </li>
+  {% endfor %}
+</ul>

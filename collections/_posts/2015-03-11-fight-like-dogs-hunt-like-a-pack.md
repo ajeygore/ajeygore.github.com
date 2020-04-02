@@ -2,7 +2,8 @@
 layout: post
 title: Fight like dogs, hunt like a pack
 published: true
-categories: [startup]
+categories: startup 
+section: thoughts
 ---
 
 That's the first rule for your startup if you are starting up with few friends. And there are few simple reasons for this, I learned it hardway, I think I should spell out. We started CodeIgnition with friends, few of them stayed, few of them disagreed, but the way we reached some decisions, it was not a nice journey, all of us could have dealt with it in a better fashion. Well, we are learning...

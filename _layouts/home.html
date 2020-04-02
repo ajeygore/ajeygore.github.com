@@ -1,0 +1,66 @@
+---
+layout: bare
+---
+<head>
+  <meta charset="utf-8">
+  <title>Ajey Gore</title>
+  <meta name="description"
+        content="Ajey Gore"/>
+
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+
+  <meta name="description" content="Ajey's personal website">
+  <meta name="author" content="Ajey Gore">
+
+  <!-- Loading Bootstrap -->
+  <link href="{{ page.leadingpath }}assets/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Loading Overrides UI -->
+  <link href="{{ page.leadingpath }}assets/css/override.css" rel="stylesheet">
+  {% include fonts.html %}
+
+</head>
+
+
+<body id="color-div">
+
+
+  <div class="container">
+    <div class="row align-items-center text-center">
+      <div class="col-sm-6">
+        <img class="img-fluid" src="{{ page.leadingpath }}assets/images/ajey_trsp.png" width="100%">
+      </div>
+      <div class="col-sm-6 div-center align-middle">
+        <div class="row">
+          <div class="col page-header">
+            Ajey Gore
+          </div>
+        </div>
+        <div class="row slogan"><div class="col">Ideate, Implement, Iterate</div></div>
+        <hr/>
+        {% for item in site.data.navigation %}
+        <div class="row" id="hover-text">
+          <div class="col">
+            <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red; text-decoration: underline"{% endif %}{% if item.name contains "Foowar" %}target="_blank"{%endif%}>
+              {{item.name}}
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+        <p/>
+          <div class="container div-center">
+            {{ content }}
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="{{ page.leadingpath }}assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+</body>
+
