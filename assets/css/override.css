@@ -82,7 +82,7 @@ html {
 }
 
 .border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 5px solid #A9A9A9; }
+.border-bottom { border-bottom: 5px solid blue; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 /*

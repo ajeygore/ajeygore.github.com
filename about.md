@@ -1,12 +1,10 @@
 ---
-layout: site
+layout: post
 body_class: home
 leadingpath: ./
 permalink: /about
-title: About
+title: About me.
 ---
-
-
 # Namaste!
 
 -------

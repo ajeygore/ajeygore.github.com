@@ -1,10 +1,9 @@
 ---
-layout: site
+layout: post
 body_class: home
-title: Life Journey
+title: Personal Journey
 permalink: /life
 ---
-## Personal Journey
 
 YourStory published my [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. It sums up pretty well.
 
