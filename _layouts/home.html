@@ -26,33 +26,60 @@ layout: bare
 
 
   <div class="container">
-    <div class="row align-items-center text-center">
-      <div class="col-sm-6">
-        <img class="img-fluid" src="{{ page.leadingpath }}assets/images/ajey_trsp.png" width="100%">
-      </div>
-      <div class="col-sm-6 div-center align-middle">
-        <div class="row">
-          <div class="col page-header">
-            Ajey Gore
-          </div>
-        </div>
-        <div class="row slogan"><div class="col">Ideate, Implement, Iterate</div></div>
-        <hr/>
-        {% for item in site.data.navigation %}
-        <div class="row" id="hover-text">
-          <div class="col">
-            <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red; text-decoration: underline"{% endif %}{% if item.name contains "Foowar" %}target="_blank"{%endif%}>
+     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-transparent border-bottom">
+      <h5 class="my-0 mr-md-auto page-header-menu">Ajey Gore</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+          {% for item in site.data.navigation %}
+          {% if item.name != "Home" %}
+            <a id="hover-text" class="p-2 text-dark" href="{{ item.link }}" {% if item.name contains "Foowar" %}target="_blank"{%endif%}>
               {{item.name}}
             </a>
-          </div>
-        </div>
-        {% endfor %}
-        <p/>
-          <div class="container div-center">
-            {{ content }}
-          </div>
-      </div>
+          {% endif %}
+          {% endfor %}
+      </nav>
+    </div>
 
+    <!-- <nav class="navbar navbar&#45;expand&#45;lg navbar&#45;light bg&#45;light"> -->
+    <!--   <div class="collapse navbar&#45;collapse" id="navbarTogglerDemo01"> -->
+    <!--     <ul class="navbar&#45;nav mr&#45;auto mt&#45;2 mt&#45;lg&#45;0 navbar&#45;expand"> -->
+          <!--  -->
+          <!-- {% for item in site.data.navigation %} -->
+          <!-- {% if item.name != "Home" %} -->
+          <!-- <li class="nav&#45;item"> -->
+          <!--   <a id="hover&#45;text" class="nav&#45;link" href="{{ item.link }}" {% if item.name contains "Foowar" %}target="_blank"{%endif%}> -->
+          <!--     {{item.name}} -->
+          <!--   </a> -->
+          <!-- </li> -->
+          <!-- {% endif %} -->
+          <!-- {% endfor %} -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--     </ul> -->
+    <!--   </div> -->
+    <!-- </nav> -->
+
+    <div class="jumbotron">
+      <div class="row align-items-center text-center">
+        <div class="col-sm-6">
+          <img class="img-fluid" src="{{ page.leadingpath }}assets/images/ajey_trsp.png" width="100%">
+        </div>
+        <div class="col-sm-6 div-center align-middle">
+          <div class="row align-items-center text-center">
+            <div class="col-sm-12 page-header">
+              Ajey Gore
+            </div>
+          </div>
+
+          <hr/>
+          <div class="row slogan"><div class="col">Ideate, Implement, Iterate</div></div>
+          <p/>
+            <div class="container div-center">
+              {{ content }}
+            </div>
+        </div>
+
+      </div>
     </div>
   </div>
 

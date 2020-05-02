@@ -9,6 +9,11 @@
   font-size: 32pt;
   text-align: center;
 }
+
+.page-header-menu {
+  font-family: 'Lora', serif;
+  font-size: 16pt;
+}
 .div-center {
   text-align: center;
 }
@@ -49,12 +54,48 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 12pt;
-  padding: 20px;
 }
 
 b {
   font-weight: 800;
 }
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.website-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 5px solid #A9A9A9; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/*
+ * Putting nav-bar in center
+ *
+*/
+/*
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+*/
 /* background-color: #0081AF; */
 /* background-color: #90E3F6; */
 /* background-color: #CAEDC9; */

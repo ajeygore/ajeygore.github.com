@@ -13,7 +13,8 @@ title: About
 ```
 /ˈnʌməsteɪ/
 
-  a respectful greeting said with hands joined together!
+  a respectful greeting 
+  said with hands joined together!
 ```
 --------
 
