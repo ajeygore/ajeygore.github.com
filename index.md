@@ -5,7 +5,7 @@ leadingpath: ./
 permalink: /
 ---
 
-I live in [Singapore](https://en.wikipedia.org/wiki/Singapore){:target="_blank"} and work at [Sequoia Capital](https://www.sequoiacap.com/india){:target="_blank"} as [Operating Partner]
+I live in [Singapore](https://en.wikipedia.org/wiki/Singapore){:target="_blank"} and work at [Sequoia Capital](https://www.sequoiacap.com/india){:target="_blank"} as [Operating Partner](https://en.wikipedia.org/wiki/Operating_partner)
 
 I grew up in a small town, [Banda](https://en.wikipedia.org/wiki/Banda,_Uttar_Pradesh){:target="_blank"}, in the northern India. I studied in Banda, Allahabad & Bangalore. 
 
