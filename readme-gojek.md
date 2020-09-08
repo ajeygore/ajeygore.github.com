@@ -2,7 +2,7 @@
 layout: post
 body_class: home
 leadingpath: ./
-permalink: /about
+permalink: /readme-gojek
 title: About me.
 ---
 # Namaste!
@@ -16,15 +16,15 @@ title: About me.
 ```
 --------
 
-__Note__: This is updated version of my manual. For the old version, you can read it [here](/readme-gojek)
 
-Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there. My studies took me to Allahabad and Bangalore. 
-In the last 25 years, I had setup my own printing business, self learned programming, professionally learned accounting,
-lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore.
-I started my career as a graphics designer, then later ended up writing software for last 25 years. I love to play strategy games (Age of empires, Civilization, Chess) and draw/paint. Recently I stated to draw again.
+Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there and studied in Allahabad and Bangalore. 
+In the last 25 years, I had setup my own printing business, self learned programming, professionally learned accounting, 
+lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore. 
+I started my career as a graphics designer, then later ended up writing software for last 25 years. I love to play strategy games (Age of empires, Civilization, chess) and draw/paint. 
+Recently I stated to draw again.
 
 
-I borrowed many ideas from [Abhinit](https://twitter.com/abhinitial){:target="_blank"} and [Sidu](https://twitter.com/ponnappa){:target="_blank"} for writing this manual.
+I borrowed a lot of ideas from [Abhinit](https://twitter.com/abhinitial){:target="_blank"} and [Sidu](https://twitter.com/ponnappa){:target="_blank"} for writing this manual.
 Sidu/Abhinit pushed me towards it. They got me thinking about what I should write in my readme or user manual. And here it is. :)
 
 So this "about", is "about" how to deal with me as person! and make our lives much better, because I fundamentally believe that everyone else is right about me 
