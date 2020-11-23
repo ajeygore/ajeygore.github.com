@@ -5,16 +5,17 @@ leadingpath: ./
 permalink: /about
 title: About me.
 ---
-# Namaste!
+#### -
 
--------
+
+#### Namaste!
+
 ```
 /ˈnʌməsteɪ/
 
   a respectful greeting 
   said with hands joined together!
 ```
---------
 
 __Note__: This is updated version of my manual. For the old version, you can read it [here](/readme-gojek)
 

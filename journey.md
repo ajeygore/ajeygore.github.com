@@ -4,7 +4,6 @@ body_class: home
 title: Journey
 permalink: /journey
 ---
-## Personal Journey
 
 YourStory published my [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. It sums up pretty well.
 
