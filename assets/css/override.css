@@ -19,10 +19,9 @@
   text-align: center;
 }
 
-h3 {
+em {
   font-family: 'Libre Baskerville';
 }
-
 .slogan {
   font-family: 'Playfair Display SC', serif;
   font-size: 18pt;
@@ -55,7 +54,7 @@ h2 {
   font-size: 16pt;
 }
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   font-size: 12pt;
 }

@@ -5,8 +5,10 @@ leadingpath: ./
 permalink: /
 ---
 
-I live in [Singapore](https://en.wikipedia.org/wiki/Singapore){:target="_blank"} and work at [Sequoia Capital](https://www.sequoiacap.com/india){:target="_blank"} as an [Operating Partner](https://en.wikipedia.org/wiki/Operating_partner)
+[Operating Partner](https://en.wikipedia.org/wiki/Operating_partner)/Techie at [Sequoia Capital](https://www.sequoiacap.com/india){:target="_blank"}
 
-I founded CodeIgnition, a cloud automation startup. Later [CodeIgnition](https://twitter.com/codeignition){:target="_blank"}, along with [C42](https://twitter.com/c42engineering){:target="_blank"} got acquihired by **gojek**. And [Leftshift](https://twitter.com/leftshifters){:target="_blank"} joined us in the following year. I am super proud to serve [gojek](https://gojek.com){:target="_blank"} as their Group CTO.
+We live in [Singapore](https://en.wikipedia.org/wiki/Singapore){:target="_blank"}. 
 
-**Earn people, not money** is my life princeple. That led me meeting many good people and get many good lessons in life so far.
+**We** founded [CodeIgnition](https://twitter.com/codeignition){:target="_blank"}, and later became part of **gojek**. I was at [gojek](https://gojek.com){:target="_blank"} as their first Group CTO.
+
+_**Earn people, not money**_ is one of my beliefs. This _"earning people"_ journey continues, meeting people and learning lessons. 
