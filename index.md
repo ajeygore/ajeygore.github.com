@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: site
 body_class: home
 leadingpath: ./
 permalink: /
