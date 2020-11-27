@@ -35,8 +35,9 @@ em {
   font-size: 14pt;
 }
 
-.menu-item {
-  font-size: 16pt;
+.menu-item, nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10pt;
   font-color: black;
 }
 
