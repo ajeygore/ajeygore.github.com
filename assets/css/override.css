@@ -2,6 +2,7 @@
   font-family: 'Playfair Display SC', serif;
   font-size: 42pt;
   text-align: center;
+  color: '#1695A3';
 }
 
 .page-header-small {
@@ -38,7 +39,7 @@ em {
 .menu-item, nav {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 10pt;
-  font-color: black;
+  font-color: '#1695A3';
 }
 
 #hover-text {
@@ -50,9 +51,6 @@ em {
 
 #hover-text:hover {
   letter-spacing: 3px; 
-}
-
-#color-div {
 }
 
 h2 {
@@ -73,7 +71,7 @@ html {
 }
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -93,22 +91,3 @@ html {
 .border-bottom { border-bottom: 5px solid blue; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-/*
- * Putting nav-bar in center
- *
-*/
-/*
-.navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
-*/
-/* background-color: #0081AF; */
-/* background-color: #90E3F6; */
-/* background-color: #CAEDC9; */
-/* background-color: #E2F9B8; */
-/* background-color: #00AEEF; */
-/* background-color: #C7E5E5; */
-/* background-color: #D0E562; */
-/* background-color: #62D7F3; */

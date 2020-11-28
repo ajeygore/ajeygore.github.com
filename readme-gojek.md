@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: site
 body_class: home
 leadingpath: ./
 permalink: /readme-gojek

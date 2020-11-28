@@ -28,7 +28,7 @@ layout: bare
       <h5 class="my-0 mr-md-auto page-header-menu">Ajey Gore</h5>
       <nav class="my-2 my-md-0 mr-md-3">
         {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" class="p-2"  {% if page.url == item.link %}style="color: red; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" %}target="_blank"{%endif%}>
+        <a href="{{ item.link }}" class="p-2"  {% if page.url == item.link %}style="text-decoration: underline"{% endif %} {% if item.name contains "Foowar" %}target="_blank"{%endif%}>
           {{item.name}}
         </a>
         {% endfor %}

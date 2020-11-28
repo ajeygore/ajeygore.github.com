@@ -1,0 +1,13 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-transparent border-bottom">
+  <h5 class="my-0 mr-md-auto page-header-menu">Ajey Gore</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" class="p-2"  {% if page.url == item.link %}style="color: red; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" %}target="_blank"{%endif%}>
+      <!-- <a class="p&#45;2 text&#45;dark" href="{{ item.link }}" {% if item.name contains "Foowar" %}target="_blank"{%endif%}> -->
+      {{item.name}}
+      </a>
+      {% endfor %}
+  </nav>
+</div>
+
+
