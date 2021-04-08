@@ -1,9 +1,9 @@
 .hero {
-  background: black url(images/hero-1.jpg) center / cover;
+  background: white url(images/hero-1.jpg) center / cover;
 }
 
-@media (max-width: 1024px) { .hero { background: black url(images/hero-2.jpg) center / cover; } }
-@media (max-width:  768px) { .hero { background: black url(images/hero-3.jpg) center / cover; } }
+@media (max-width: 1024px) { .hero { background: white url(images/hero-2.jpg) center / cover; } }
+@media (max-width:  768px) { .hero { background: white url(images/hero-3.jpg) center / cover; } }
 
 
 .emoticon { white-space: pre; }
@@ -32,5 +32,22 @@
 		display: none;
 	}
 }
+
+.top-menu {
+  font-family: 'Nunito', serif;
+  font-weight: 400;
+  font-size: 12pt;
+}
+
+/*! debug.css | MIT License | zaydek.github.com/debug.css */
+*:not(path):not(g) {
+	color:                    hsla(210, 100%, 100%, 0.9) !important;
+	background:               hsla(210, 100%,  50%, 0.5) !important;
+	outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+
+	box-shadow: none !important;
+}
+
+
 
 
