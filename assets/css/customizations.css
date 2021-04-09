@@ -1,9 +1,12 @@
-.hero {
-  background: white url(images/hero-1.jpg) center / cover;
+.lead-image {
+  background: white url("/assets/images/ajeybw-medium.png") center / cover;
+  width: 512px;
+  height: 512px;
+  	align-items: center;
 }
 
-@media (max-width: 1024px) { .hero { background: white url(images/hero-2.jpg) center / cover; } }
-@media (max-width:  768px) { .hero { background: white url(images/hero-3.jpg) center / cover; } }
+@media (max-width: 1024px) { .lead-image { background: white url("/assets/images/ajeybw-medium.png") center / cover; height: 512px; width: 512px;} }
+@media (max-width:  768px) { .lead-image { background: white url("/assets/images/ajeybw-small.png") center / cover; height: 376px; width: 376px; } }
 
 
 .emoticon { white-space: pre; }
@@ -49,6 +52,4 @@
 	box-shadow: none !important;
 }
 */
-
-
 
