@@ -12,6 +12,7 @@ author :
   feedburner : ajeygore
 
 domain: ajeygore.in
+incremental: true
 
 production_url : http://ajeygore.github.io
 collections_dir: collections
