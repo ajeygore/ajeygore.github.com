@@ -1,6 +1,6 @@
-Hello, 
+Hello & Welcome! 
 
-This website mostly talks about software engineering and about creating software based products. 
+This website mostly talks about software engineering and creating products with help from software and technology.
 
 I have been writing in software for more than 2 decades now. And have been curious about software engineering
 as craft, mostly about how to write "good" software.

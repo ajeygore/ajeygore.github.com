@@ -1,8 +1,8 @@
 .name-header {
-  font-size: 16pt;
+  font-size: 20pt;
   text-align: center;
   color: '#1695A3';
-  font-family: "Delius Unicase";
+  font-family: "Bebas Neue";
   text-decoration: none;
 }
 
@@ -71,6 +71,8 @@ h2 {
 body {
   font-family: 'Libre Franklin', serif;
   font-size: 12pt;
+  min-height: 100rem;
+  padding-top: 6.5rem;
 }
 
 b {
