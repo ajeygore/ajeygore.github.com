@@ -1,13 +1,13 @@
 ---
-layout: home
+layout: site
 body_class: home
 leadingpath: ./
 permalink: /about
-title: About me.
+title: About
+subpage: about
 ---
 
-
-#### Namaste!
+###### Namaste!
 
 ```
 /ˈnʌməsteɪ/
@@ -129,3 +129,4 @@ Here&#39;s a list of my people related biases I think matter most.
 - people who use appeals to authority instead of reason in their arguments.
 - people who cause drama.
 - people who don&#39;t study and iterate but want to be treated as if they do.
+

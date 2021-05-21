@@ -1,16 +1,21 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-transparent">
-  <h5 class="mr-md-auto name-header">
-    <a href="/" class="p-2">
-        Ajey Gore
-    </a>
-  </h5>
-  <nav class="my-md-0 mr-md-3">
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" class="p-2"  {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}>
-      {{item.name}}
-      </a>
-      {% endfor %}
-  </nav>
-</div>
+<nav class="navbar container navbar-expand-lg navbar-light bg-white fixed-top rounded" aria-label="Eleventh navbar example">
+  <div class="container-fluid">
+    <a class="navbar-brand name-header" href="/">Ajey Gore</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="navbar-collapse collapse menu-item mr-md-3" id="navbarsExample09" style="">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        {% for item in site.data.navigation %}
+        <li class="nav-item">
+          <a aria-current="page" class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}>
+            {{item.name}}
+          </a>
+        </li>
+        {% endfor %}
 
+      </ul>
+    </div>
+  </div>
+</nav>

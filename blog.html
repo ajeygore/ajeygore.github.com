@@ -3,24 +3,28 @@ layout: site
 body_class: home
 leadingpath: ./
 permalink: /blog
+title: Blog
+subpage: blog
 ---
-{% for post in site.posts %}
-<div class="row align-items-center text-center">
-  <div class="div-center">
-    <h4>{{ post.date |  date: '%B %d, %Y' }}
-    </h4>
-  </div>
+<div class="container">
+  {% for post in site.posts %}
+  <div class="row">
 
-  <div class="div-center">
-    <a href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
-    </a>
+    <div class=>
+      <a href="{{ post.url }}">
+        <h5>{{ post.title }}</h5>
+      </a>
+    </div>
+    {{ post.content | strip_html | truncatewords:75}}
+    <br/>
+    <a href="{{ post.url }}">Read more...</a>
+    <br/>
+    <p>
+      <div>
+        {{ post.date |  date: '%B %d, %Y' }}
+      </div>
+      <br>
+      <hr>
   </div>
-  {{ post.content | strip_html | truncatewords:75}}
-  <br>
-  <a href="{{ post.url }}">Read more...</a>
-  <br>
-  <br>
-  <hr>
+  {% endfor %}
 </div>
-{% endfor %}

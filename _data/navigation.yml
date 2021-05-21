@@ -1,12 +1,8 @@
 - name: About
   link: /about
-- name: Writing
-  link: /writing
-- name: Bookshelf
-  link: /bookshelf
-- name: Life
-  link: /life
+- name: Content
+  link: /content
+- name: Blog
+  link: /blog
 - name: Sequoia
   link: https://sequoiacap.com/
-- name: Foowar
-  link: https://foowar.in/
