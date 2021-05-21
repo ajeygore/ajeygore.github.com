@@ -1,12 +1,12 @@
 <header>
   <div class="container d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-      <span class="name-header">Ajey Gore</span>
+    <a href="/" class="name-header d-flex align-items-center text-dark text-decoration-none">
+      Ajey Gore
     </a>
 
-    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto menu-item">
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
          {% for item in site.data.navigation %} 
-           <a class="me-3 py-2" href="{{ item.link }}" {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}> 
+           <a class="me-3 py-2 menu-item" href="{{ item.link }}" {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}> 
              {{item.name}} 
            </a> 
          {% endfor %} 

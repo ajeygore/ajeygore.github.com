@@ -27,8 +27,8 @@ product.
 
 <blockquote class="blockquote">
 Writing code for computers is an easy task, especially when you have abundance of code samples on the internet. 
-The hard tasks it write code which humans understands and it operates
-on business solutions that provide friction less product experience to end users.
+The hard tasks is to write code that humans understands and the code operates
+your business solutions that in turn provides friction less product experience to end users.
 </blockquote>
 
 Technology is the most effective tool to achieve the impossible, for growth & scale of the technology backed products;

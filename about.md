@@ -37,16 +37,14 @@ I see myself as swiss knife in tactical situations and an empowerment advocate i
 In my role, I  work with the CTOs and CPOs of Sequoia’s portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions. In a crude terms, I tell them what not to do, what has been my mistake and what has been my learnings
 
 <blockquote class="blockquote">
-I fundamentally believe that I am package of success and have cargo of failure with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents I have with me.
+I fundamentally believe that I am a package of success and have a cargo full of failures with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents, I experienced through out last 2 decades or so.
 </blockquote>
 
 I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it&#39;s based on human perception, but you are welcome to correct me. 
 
-Because I know that **&quot;Saying I don&#39;t know, and accepting the mistakes&quot;** are two most important traits to be a good human.
+Because I learned that **&quot;Saying I don&#39;t know, and accepting those mistakes&quot;** are few of many important traits one should have.
 
-My responsiveness in decreasing order if you work at [Sequoia](http://sequoiacap.com/){:target="_blank"} : Whatsapp, Email, Slack
-
-if you want to talk to me or communicate to me publicly then reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now. :-)
+To contact me, reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now.
 
 ###### Best Way to Communicate with Me
 

@@ -2,7 +2,8 @@
   font-size: 16pt;
   text-align: center;
   color: '#1695A3';
-  font-family: "Delius Unicase"
+  font-family: "Delius Unicase";
+  text-decoration: none;
 }
 
 .name-header-small {
@@ -20,6 +21,7 @@
   font-family: 'Caveat', sans-serif;
   font-size: 16pt;
   color: black;
+  text-decoration: none;
 }
 
 #hover-text {
@@ -43,12 +45,10 @@ a {
 
 a:link, a:visited {
   color: black;
-  text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  text-decoration: none;
   color: #3EA055;
   cursor: pointer;
 }
