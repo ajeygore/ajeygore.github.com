@@ -53,9 +53,6 @@ a:hover {
   cursor: pointer;
 }
 
-a:active {
-  background-color: black;
-}
 
 a:visited {
 }
@@ -68,6 +65,9 @@ blockquote {
   color: #3EA055;
 }
 
+h6 {
+  color: #2DA044;
+}
 
 h2 {
   font-size: 16pt;
@@ -77,7 +77,6 @@ body {
   font-size: 12pt;
   min-height: 75rem;
   padding-top: 4.5rem;
-  
 }
 
 b {

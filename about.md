@@ -16,49 +16,39 @@ subpage: about
   said with hands joined together!
 ```
 
-__Note__: This is updated version of my manual. For the old version, you can read it [here](/readme-gojek)
+I am from India. I studied at University of Allahabad and National centre for Software Technology, Bangalore. 
 
-Namaste! I&#39;m Ajey. I was born in Banda, India, a very small town in northern india, grew up there. My studies took me to Allahabad and Bangalore. 
-In the last 25 years, I had setup my own printing business, self learned programming, professionally learned accounting,
-lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad and now live between Singapore, Jakarta and Bangalore.
-I started my career as a graphics designer, then later ended up writing software for last 25 years. I love to play strategy games (Age of empires, Civilization, Chess) and draw/paint. Recently I stated to draw again.
+During last 25 years I have lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad, Jakarta and now live in Singapore.
+
+I started my career as a graphics designer, sold computers, ran a printing press, helped my elder brother in his cell phone and DTP business and finally settled writing writing software for the rest of my career.
+
+I learned many things along the way and met some amazing people over the years, I have been at fault in multiple times, and had many many miscommunications and misunderstandings... So I thought I should write about me and how to deal with me.
 
 
-I borrowed many ideas from [Abhinit](https://twitter.com/abhinitial){:target="_blank"} 
-and [Sidu](https://twitter.com/ponnappa){:target="_blank"} for writing this manual, and here it is.
+So this page is about "how to deal with me" as a person. because I fundamentally believe that everyone else is right about me and dealing with me is constant expectation mismatch and a cage fight in a very interesting way.
 
-So this page is about "how to deal with me" as person. because I fundamentally believe that everyone else is right about me
-and dealing with me is constant expectation mismatch and a cage fight in a very interesting way.
 
-## __Ajey's User Manual__
+###### What do I do? 
 
-* Namaste!
-* Contents
-* What do I do?
-* Best Way to Communicate with Me
-* My Work Style
-* How I Think I Evaluate People
+I&#39;m a Software Engineer at the core. I love building teams and working with people.  **I work for people and people work with me** 
 
-## What do I do? 
+I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms.  I have played various roles in my life and recently at GoJek, now I work with Sequoia Capital as Technology Partner.
 
-I&#39;m a Software Engineer at the core, My first principle is that **I work for people and people work with me** 
-which results into me talking to many people.
-I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms. 
-I have played various roles in my life and recently at GoJek, now I work with Sequoia Capital as Technology Partner.
+In my role, I  work with the CTOs and CPOs of Sequoia’s portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions. In a crude terms, I tell them what not to do, what has been my mistake and what has been my learnings
 
-In my role, I will work with the CTOs and CPOs of Sequoia’s portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions.
+<blockquote class="blockquote">
+I fundamentally believe that I am package of success and have cargo of failure with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents I have with me.
+</blockquote>
 
-I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception.
-They might be wrong - because one side of the story is never true, since it&#39;s based on human perception, but you are welcome to correct me. 
-Because I know that **&quot;Saying I don&#39;t know, and accepting the mistakes&quot;** are two most important traits to be a good colleague.
+I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it&#39;s based on human perception, but you are welcome to correct me. 
 
-You can reach me on [twitter](https://twitter.com/ajeygore){:target="_blank"}
+Because I know that **&quot;Saying I don&#39;t know, and accepting the mistakes&quot;** are two most important traits to be a good human.
 
-My responsiveness in decreasing order if you work at [Sequoia](http://sequoiacap.com/){:target="_blank"} : Whatsapp, Email, Slack, Telegram
+My responsiveness in decreasing order if you work at [Sequoia](http://sequoiacap.com/){:target="_blank"} : Whatsapp, Email, Slack
 
-if you want to talk to me or communicate to me publicly then reaching through twitter works for now. :-)
+if you want to talk to me or communicate to me publicly then reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now. :-)
 
-#### Best Way to Communicate with Me
+###### Best Way to Communicate with Me
 
 I am converted extrovert, so I sometimes put perceived information through my introverted lense, that means, sometimes I see what I want to see, 
 so I try to confirm with people on what I perceive, the way I want you to tell me what you think is walk up to me and tell me what you feel.
@@ -78,7 +68,7 @@ So I&#39;m ok with being engaged however **you** are comfortable. Take as long a
 **Finally, I have strong opinions that I strive to hold as long as I am shown better ways, so I&#39;m always easiest to persuade with logic and always ready to learn, I always look for traits in people who come with problem &amp; solutions with it, always give me options to choose from and always tell their opinions on something before seeking mine.**
 
 
-#### My Work Style
+###### My Work Style
 
 I really enjoy working on complex strategic product problems involving software engineering, design, data science or scaling. 
 
@@ -96,7 +86,7 @@ that helps give you more elaborate and explainable answers. I also prefer egalit
 As a consequence I work more effectively with people with whom I can
 [straight-talk](https://www.ribbonfarm.com/2009/11/11/the-gervais-principle-ii-posturetalk-powertalk-babytalk-and-gametalk/){:target="_blank"}.
 
-#### How I Think I Evaluate People
+###### How I Think I Evaluate People
 
 Evaluating performance is often the largest part of a leaders&#39; responsibilities.
 
