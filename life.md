@@ -1,5 +1,5 @@
 ---
-layout: site
+layout: home
 body_class: home
 title: Personal Journey
 permalink: /life

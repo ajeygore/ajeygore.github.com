@@ -1,40 +1,46 @@
 ---
-layout: site
+layout: home
 body_class: home
 leadingpath: ./
 permalink: /
 ---
-<div class="jumbotron" style="background-color:#FFFFFF">
-  <div class="row align-items-center text-center">
-    <div class="col-sm-6">
-      <img class="img-fluid" src="{{ page.leadingpath }}assets/images/ajeybw.jpeg" width="100%">
-    </div>
-    <div class="col-sm-6 div-center align-middle">
-      <div class="row align-items-center text-center">
-        <div class="col-sm-12 page-header">
-          Ajey Gore
-        </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+      <div class="container text-center home-side-bar">
+        <img class="img-fluid" src="{{ page.leadingpath }}assets/images/ajeybw-small.png" width="250px">
+
+        </br>
+        </br>
+        <p>
+          <a href="https://sequoia.com" target="_blank" class="home-underline" >Sequoia</a>
+          <a href="https://gojek.com" target="_blank" class="home-underline" >gojek</a>
+          <a href="https://twitter.com/codeignition" target="_blank" class="home-underline">CodeIgnition</a>&nbsp;
+          <a href="https://thoughtworks.com" target="_blank" class="home-underline">ThoughtWorks</a>&nbsp;
+          <a href="https://hike.in" target="_blank" class="home-underline">hoppr</a>&nbsp;
+          <a href="https://twitter.com/codeignition" target="_blank" class="home-underline">CodeIgnition</a>&nbsp;
+        </p>
+        <hr/>
+        <p class="text-center slogan"> Earn people, not money
+          <hr/>
+
+          <a href="https://twitter.com/ajeygore" target="_blank">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="https://sg.linkedin.com/in/ajeygore" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
       </div>
 
-      <hr/>
-      <div class="row slogan"><div class="col"><em>Ideate, Implement, Iterate</em></div></div>
-      <p/>
-        <div class="container div-center">
-          <p>
-            <a href="https://en.wikipedia.org/wiki/Operating_partner">Operating Partner</a> at 
-            <a href="https://www.sequoiacap.com/india" target="_blank">Sequoia Capital</a>
-          </p>
-
-          <p>
-            Founder <a href="https://twitter.com/codeignition" target="_blank">CodeIgnition</a>, &nbsp 
-            Previously Ex-Group CTO <a href="https://gojek.com" target="_blank">gojek</a>
-          </p>
-
-          <p>Life thought process <em><strong>"Earn people, not money"</strong></em>
-
-        </div>
     </div>
+    <div class="col-md-8">
+      {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
+      {{ p1 | markdownify }}
 
+    </div>
   </div>
+</div>
 </div>
 
