@@ -44,7 +44,6 @@ I am sure the perspectives I am trying to put you through and context I am tryin
 
 Because I learned that **&quot;Saying I don&#39;t know, and accepting those mistakes&quot;** are few of many important traits one should have.
 
-To contact me, reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now.
 
 ###### Best Way to Communicate with Me
 
@@ -65,14 +64,11 @@ So I&#39;m ok with being engaged however **you** are comfortable. Take as long a
 
 **Finally, I have strong opinions that I strive to hold as long as I am shown better ways, so I&#39;m always easiest to persuade with logic and always ready to learn, I always look for traits in people who come with problem &amp; solutions with it, always give me options to choose from and always tell their opinions on something before seeking mine.**
 
+To contact me, reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now.
 
 ###### My Work Style
 
-I really enjoy working on complex strategic product problems involving software engineering, design, data science or scaling. 
-
-I have a strong interest in software design, team building and how they work with org design.
-
-I believe that the way product evolves over a period of time, organisation should evolve as well. 
+I really enjoy working on complex strategic product problems involving software engineering, design, data science or scaling.  I have a strong interest in software design, team building and how they work with org design.  I believe that the way product evolves over a period of time, organisation should evolve as well. 
 
 I have always followed John Ousterhaut and now he has a book around the same topic, 
 please read [A Philosophy of Software Design](https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201){:target="_blank"} by John Ousterhaut. 
@@ -95,6 +91,7 @@ and I am working on reducing the bias in my own evaluation of any given person;
 I make a conscious effort to avoid forming an opinion based on what a handful of people tell me about someone.
 
 I&#39;m not great at this, and am always open to feedback. 
+
 Here&#39;s a list of my people related biases I think matter most.
 
 ###### **I am positively-biased toward:**
