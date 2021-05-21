@@ -24,7 +24,7 @@ highlighter: rouge
 collections:
   posts:
     output: true
-    permalink: /writings/:title
+    permalink: /content/:title
 
 exclude:
 - bin
@@ -40,8 +40,6 @@ exclude:
 - changelog.md
 - .rvmrc
 - .rbenv-version
-- _includes
-
 
 include:
 - assets

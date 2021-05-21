@@ -97,23 +97,23 @@ html {
 /*
  * Navbar toggle icon
  */
-.navbar-toggle .icon-bar{
-  width: 25 !important;
-  height:2px !important;
-}
+  .navbar-toggle .icon-bar{
+    width: 25 !important;
+    height:2px !important;
+  }
 
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 5px solid blue; }
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 5px solid blue; }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-/* Animate hamburger
- * */
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  /* Animate hamburger
+   * */
 
   .container {
-  max-width: 960px;
-}
+    max-width: 960px;
+  }
 
-.site-header {
-  max-width: 700px;
-}
+  .site-header {
+    max-width: 700px;
+  }
