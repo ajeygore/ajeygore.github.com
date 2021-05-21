@@ -48,7 +48,6 @@ a:link, a:visited {
 }
 
 a:hover {
-  background-color: #C3FDB8;
   text-decoration: none;
   color: #3EA055;
   cursor: pointer;
