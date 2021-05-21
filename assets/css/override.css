@@ -53,10 +53,6 @@ a:hover {
   cursor: pointer;
 }
 
-
-a:visited {
-}
-
 .home-side-bar {
   font-size: 10pt;
 }
@@ -65,7 +61,7 @@ blockquote {
   color: #3EA055;
 }
 
-h6 {
+h6, h4, h2, h3, h5 {
   color: #2DA044;
 }
 
@@ -75,8 +71,6 @@ h2 {
 body {
   font-family: 'Libre Franklin', serif;
   font-size: 12pt;
-  min-height: 75rem;
-  padding-top: 4.5rem;
 }
 
 b {
@@ -113,3 +107,13 @@ html {
 .border-bottom { border-bottom: 5px solid blue; }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/* Animate hamburger
+ * */
+
+  .container {
+  max-width: 960px;
+}
+
+.site-header {
+  max-width: 700px;
+}

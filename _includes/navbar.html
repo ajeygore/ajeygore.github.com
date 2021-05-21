@@ -1,21 +1,15 @@
-<nav class="navbar container navbar-expand-lg navbar-light bg-white fixed-top rounded">
-  <div class="container-fluid">
-    <a class="navbar-brand name-header" href="/">Ajey Gore</a>
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbars_home" aria-controls="navbars_home" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<header>
+  <div class="container d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+      <span class="name-header">Ajey Gore</span>
+    </a>
 
-    <div class="navbar-collapse collapse menu-item mr-md-3" id="navbars_home" style="">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        {% for item in site.data.navigation %}
-        <li class="nav-item">
-          <a aria-current="page" class="nav-link" href="{{ item.link }}" {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}>
-            {{item.name}}
-          </a>
-        </li>
-        {% endfor %}
-
-      </ul>
-    </div>
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto menu-item">
+         {% for item in site.data.navigation %} 
+           <a class="me-3 py-2" href="{{ item.link }}" {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}> 
+             {{item.name}} 
+           </a> 
+         {% endfor %} 
+    </nav>
   </div>
-</nav>
+</header>

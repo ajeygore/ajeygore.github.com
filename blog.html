@@ -8,14 +8,16 @@ subpage: blog
 ---
 <div class="container">
   {% for post in site.posts %}
-  <div class="row">
+  <div class="row container">
 
-    <div class=>
+    <div class= "container">
       <a href="{{ post.url }}">
         <h5>{{ post.title }}</h5>
       </a>
     </div>
+    <div class="container">
     {{ post.content | strip_html | truncatewords:75}}
+    </div>
     <br/>
     <a href="{{ post.url }}">Read more...</a>
     <br/>

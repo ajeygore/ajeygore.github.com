@@ -7,7 +7,7 @@ title: About
 subpage: about
 ---
 
-###### Namaste!
+###### **Namaste!**
 
 ```
 /ˈnʌməsteɪ/
