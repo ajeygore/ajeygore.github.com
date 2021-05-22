@@ -1,6 +1,5 @@
 ---
 layout: home
-body_class: home
 leadingpath: ./
 permalink: /
 title: Hello
@@ -39,6 +38,7 @@ title: Hello
 
     </div>
     <div class="col-md-8">
+
       {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
       {{ p1 | markdownify }}
 

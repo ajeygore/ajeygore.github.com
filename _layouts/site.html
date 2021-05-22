@@ -1,54 +1,10 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180666847-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+---
+layout: bare
+leadingpath: ./
+permalink: /
+---
+<div class="text-center post-title">
+  {{ page.title }}
+</div>
 
-            gtag('config', 'UA-180666847-1');
-    </script>
-
-    <meta charset="utf-8">
-
-    <title>Ajey Gore</title>
-    <meta name="description"
-          content="Ajey Gore"/>
-
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
-
-    <meta name="description" content="Ajey's personal website">
-    <meta name="author" content="Ajey Gore">
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    
-
-
-    <title>Ajey Gore's page</title>
-
-    <link href="{{ page.leadingpath }}assets/css/override.css" rel="stylesheet">
-    {% include fonts.html %}
-  </head>
-  <body>
-    <div class="container">
-
-      {% include navbar.html %}
-      
-
-      <div class="container">
-
-        {{ content }}
-
-      </div>
-    </div>
-      <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  </body>
-</html>
+{{ content }}
