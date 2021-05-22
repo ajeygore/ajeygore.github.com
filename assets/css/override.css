@@ -66,6 +66,10 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
 }
 
+.breadcrumb-item {
+  font-size: 8pt;
+}
+
 h6, h4, h2, h3, h5 {
   color: #2DA044;
 }
