@@ -70,13 +70,29 @@ h2 {
 }
 body {
   font-family: 'Libre Franklin', serif;
-  font-size: 12pt;
-  min-height: 100rem;
-  padding-top: 6.5rem;
+  font-size: 10pt;
 }
 
 b {
   font-weight: 800;
+}
+
+@media (min-width: 1025px){
+  body {
+  font-family: 'Libre Franklin', serif;
+  font-size: 10pt;
+  min-height: 100rem;
+  padding-top: 6.5rem;
+}
+
+           
+  .navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 }
 
 html {
@@ -96,26 +112,3 @@ html {
   max-width: 700px;
 }
 
-/*
- * Navbar toggle icon
- */
-  .navbar-toggle .icon-bar{
-    width: 25 !important;
-    height:2px !important;
-  }
-
-
-  .border-top { border-top: 1px solid #e5e5e5; }
-  .border-bottom { border-bottom: 5px solid blue; }
-
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-  /* Animate hamburger
-   * */
-
-  .container {
-    max-width: 960px;
-  }
-
-  .site-header {
-    max-width: 700px;
-  }
