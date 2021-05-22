@@ -1,0 +1,57 @@
+---
+layout: home
+leadingpath: ./
+permalink: /content
+title: Content
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+      <div class="container text-center side-bar">
+
+        <div class="container">
+          <i class="bi bi-chat-text"></i> Blog
+        </div>
+        <hr/>
+
+        <div class="container">
+          <i class="bi bi-book-half"></i> Books
+        </div>
+        <hr/>
+
+        <div class="container">
+          <i class="bi bi-person-lines-fill"></i> Life
+        </div>
+        <hr/>
+
+        <div class="container">
+          <i class="bi bi-file-earmark-slides"></i> Talks & Presentations
+        </div>
+
+        </p>
+        <hr/>
+        <p class="text-center slogan">Earn people, not money</p>
+        <hr/>
+
+        <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+    <div class="col-md-8">
+
+      {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
+      {{ p1 | markdownify }}
+
+    </div>
+  </div>
+</div>
+</div>
+
+

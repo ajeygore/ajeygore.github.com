@@ -1,7 +1,7 @@
 - name: About
   link: /about
 - name: Content
-  link: /bookshelf
+  link: /content
 - name: Musings
   link: /blog
 - name: Sequoia
