@@ -75,6 +75,7 @@ blockquote {
 
 h6, h4, h2, h3, h5 {
   color: #2DA044;
+  font-weight: 700;
 }
 
 h2 {
@@ -83,18 +84,23 @@ h2 {
 body {
   font-family: 'Libre Franklin', serif;
   font-size: 10pt;
+  line-height: 1.5;
 }
 
 b {
   font-weight: 800;
 }
-
+/*
+ * Static fixed top navbar only on big screens
+ */
 @media (min-width: 1025px){
   body {
     font-family: 'Libre Franklin', serif;
     font-size: 10pt;
     min-height: 100rem;
     padding-top: 6.5rem;
+
+    line-height: 1.5;
   }
 
 
@@ -127,7 +133,7 @@ html {
  * Site
  */
 
-  .post-title {
-    font-family: "Raleway", sans-serif;
-    font-size:20pt;
-  }
+.post-title {
+  font-family: "Crimson Text", sans-serif;
+  font-size:32pt;
+}

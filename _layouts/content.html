@@ -1,0 +1,50 @@
+---
+layout: bare
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+
+      <div class="container text-center side-bar">
+
+        <div class="container">
+          <i class="bi bi-chat-text"></i> 
+          <span class="home-underline">Musings</span>
+        </div>
+        <hr/>
+
+        <div class="container">
+          <i class="bi bi-file-earmark-slides"></i> 
+          <span class="home-underline">Talks </span>
+        </div>
+        <hr/>
+
+        <div class="container">
+          <i class="bi bi-book-half"></i> 
+          <span class="home-underline">Bookshelf</span>
+        </div>
+        <hr/>
+
+        <div class="container">
+          <i class="bi bi-person-lines-fill"></i> 
+          <span class="home-underline">Life journey </span>
+        </div>
+        <hr/>
+
+        {% include social_bar.html %}
+      </div>
+
+    </div>
+    <div class="col-md-8">
+
+
+      {{ content }}
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
