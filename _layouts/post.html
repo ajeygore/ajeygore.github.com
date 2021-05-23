@@ -3,7 +3,7 @@ layout: content
 ---
 
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb bg-transparent p-4">
+  <ol class="breadcrumb bg-transparent">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
     <li class="breadcrumb-item"><a href="/content">Content</a></li>
     <li class="breadcrumb-item active">Musings</li>
@@ -11,10 +11,11 @@ layout: content
   </ol>
 </nav>
 
-<div class="post-title">
+
+<div class="post-title pb-2">
   {{ page.title }}
 </div>
+<p/>
 <div class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }}</div>
-</P>
+<p/>
 {{ content }}
-
