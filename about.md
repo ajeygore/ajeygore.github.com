@@ -3,7 +3,7 @@ layout: site
 body_class: home
 leadingpath: ./
 permalink: /about
-title: "A little intro!"
+title: About me and interacting with me.
 subpage: about
 ---
 <nav aria-label="breadcrumb">
