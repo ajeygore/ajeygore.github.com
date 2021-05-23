@@ -1,19 +1,14 @@
-<div class="container">
-  {% for post in site.posts %}
-  <div class="row container">
+{% for post in site.posts %}
+<div class="row">
 
-    <div class= "container">
-         <h6><a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;">{{ post.title }}</a></h5>        {{ post.date |  date: '%B %d, %Y' }}
-    </div>
-    <p>
-    <div class="container">
-    {{ post.content | strip_html | truncatewords:75}}
-    </div>
-    <p>
-    <p>
-    <a href="{{ post.url }}">Read more</a>
-    <br/>
-      <hr>
+  <div class= "col-md-12">
+    <h6><a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;">{{ post.title }}</a></h5>        {{ post.date |  date: '%B %d, %Y' }}
   </div>
-  {% endfor %}
+  <p>
+    {{ post.content | strip_html | truncatewords:75}}
+    <p>
+      <a href="{{ post.url }}">Read more</a>
+      <br/>
+      <hr>
 </div>
+{% endfor %}
