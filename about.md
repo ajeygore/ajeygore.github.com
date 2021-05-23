@@ -44,7 +44,7 @@ I'm a Software Engineer at the core. I love building teams and working with peop
 
 I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms.  I have played various roles in my life and recently at GoJek, now I work with Sequoia Capital as Technology Partner.
 
-In my role, I  work with the CTOs and CPOs of Sequoia’s portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions. In a crude terms, I tell them what not to do, what has been my mistake and what has been my learnings
+In my role, I  work with the CTOs and CPOs of Sequoia’s portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions. In a crude terms, I tell them what not to do, about my mistake and learnings.
 
 <blockquote class="blockquote">
 I fundamentally believe that I am a package of success and have a cargo full of failures with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents, I experienced through out last 2 decades or so.

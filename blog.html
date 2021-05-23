@@ -11,7 +11,7 @@ subpage: blog
   <div class="row container">
 
     <div class= "container">
-        <h6>{{ post.title }}</h5>
+      <h6><a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;">{{ post.title }}</a></h5>
         {{ post.date |  date: '%B %d, %Y' }}
     </div>
     <p>
