@@ -8,7 +8,6 @@ subpage: blog
 ---
 {% for post in site.posts %}
 <div class="row pb-2">
-
   <div class="container">
     <h6><a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;">{{ post.title }}</a></h5>
     {{ post.date |  date: '%B %d, %Y' }}
