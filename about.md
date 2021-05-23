@@ -6,6 +6,12 @@ permalink: /about
 title: "A little intro!"
 subpage: about
 ---
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent p-4">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+    </ol>
+  </nav>
 
 
 <div class="d-none d-lg-block pb-4 pt-4">
