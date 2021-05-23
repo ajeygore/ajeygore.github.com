@@ -136,4 +136,5 @@ html {
 .post-title {
   font-family: "Crimson Text", sans-serif;
   font-size:32pt;
+  line-height:1;
 }
