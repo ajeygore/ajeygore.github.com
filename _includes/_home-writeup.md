@@ -4,12 +4,10 @@ Hello & Welcome!
 
 This website mostly talks about software engineering and creating products with help from software and technology.
 
-I have been writing in software for more than 2 decades now. And have been curious about software engineering
+I have been writing software for more than 2 decades now. And have been curious about software engineering
 as craft, mostly about how to write "good" software.
 
-Software design and development is still in infancy. It's pretty new field. It has exploded in last
-few year. And one of the reason is that software very flexible, yet writing it, is very rigid procss. Writing
-software requires us to express our intent in a very precise manner.
+Software design and development is still in it's infancy. It's pretty new. Although it has exploded in the  last few years. Writing good software has been a challenge and ever evolving landscape makes it complex. Given software by nature very flexible and maliable, yet writing it in a modular, expandable and pluggable way, is a very complex process. Writing software requires us to express our intent in a very precise manner, and most of the time, we end up writing tactical solutions with no longitivity and scalability. Having tactical yet scalable and strategic yet faster development cycle is a balancing act, that every one needs to learn.
 
 <blockquote class="blockquote">
 Computer languages are very structured, that means, expressing our business logic and intent, is a tough task unless
