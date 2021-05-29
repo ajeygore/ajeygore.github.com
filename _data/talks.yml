@@ -1,3 +1,33 @@
+- title: "Podcast Ngobrolin Startup & Teknologi"
+  link: https://www.youtube.com/embed/Zfk8K-xni3I
+  description: This special episode I will be discussing about becoming better engineering leader with Ajey Gore, Operating Partner of Sequoia Capital and Former Group CTO of Gojek. We discussed how to keep the skills sharp when we are on the highest level of engineering position, hiring, product development and risk 
+  short_description: Podcast Ngobrolin Startup & Teknologi
+  date: 30 May 2019
+
+- title: "Earn People & Leadership Lessons from Hyperscaling Gojek"
+  link: https://www.youtube.com/embed/HnxK1LmtEXM
+  description: In this episode, Ajey shared his deep beliefs and motto of “earn people, not money” in various aspects of his career and life. We started from his sharing of his journey at Thoughtworks and what he learned there that helped shape a lot of his growth and leadership. Ajey eventually made a bold move, starting his startup journey which led him to founding CodeIgnition which was then acquired by Gojek.
+  short_description: Podcast - Tech Lead Journal
+  date: 25 Jan 2021
+
+- title: "Podcast - Shunya One"
+  link: https://www.youtube.com/embed/maAW5mVTh3s
+  description: On Shunya One Podcast this week, We have Ajey Gore Operating Partner - Technology Sequoia Capital, India/Building Companies to IPO and Beyond, Ajey talks to us about how he has always been uncomfortable, how that's what led him from one thing to another and what his next steps will be. 
+  short_description: Podcast - Shunya One
+  date: 26 February 2021
+
+- title: "GoFigure S2 E1 Farewell to Ajey"
+  link: https://www.youtube.com/embed/ut7xG3LeVy0
+  description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
+  short_description: GoFigure - Ajey Gore
+  date: 21 September 2021
+
+- title: "GoFigure S2 E2 Farewell to Ajey"
+  link: https://www.youtube.com/embed/Hxa4GS6Xjsk
+  description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
+  short_description: GoFigure - Ajey Gore
+  date: 21 September 2021
+
 - title: "Go-Everything - Building for nation"
   link: https://www.youtube.com/embed/rF2DyV6417U
   description: With a super-app providing over 20 different services to customers, and fulfilling millions orders a day, Go-Jek understands the true value of connection. Go-Jek Group CTO, Ajey Gore, explores the socio-economic impact Go-Jek is having on ecosystem in Indonesia.
@@ -8,13 +38,7 @@
   link: https://player.vimeo.com/video/347350656
   description: Ajey Gore (Group CTO, gojek) discussed about Gojek SuperApp along with Abheek Anand from Sequoia at Rise Conf 2019, HongKong
   short_description: Ajey Gore at Rise, HongKong 2019
-  date: 9 July 201r
-
-- title: "Podcast - Shunya One"
-  link: https://www.youtube.com/embed/maAW5mVTh3s
-  description: On Shunya One Podcast this week, We have Ajey Gore Operating Partner - Technology Sequoia Capital, India/Building Companies to IPO and Beyond, Ajey talks to us about how he has always been uncomfortable, how that's what led him from one thing to another and what his next steps will be. 
-  short_description: Podcast - Shunya One
-  date: 26 February 2021
+  date: 9 July 2019
 
 - title: "Building Southeast Asia's Next Generation Unicorns"
   link: https://www.youtube.com/embed/5yUNgmWbid4
@@ -28,6 +52,54 @@
   short_description: Google Cloud Next 18
   date: 1 August 2018
 
+- title: "Everything Ruby by Ajey Gore"
+  link: https://www.youtube.com/embed/1_drEHfsob8
+  description: Ruby is a powerful language, Ajey Gore talks about how do you manage software development lifecycle using ruby based tools.
+  short_description: RubyConf India 2012
+  date: 15 May 2012
+
+- title: "Conversation with Monk's Hill ventures"
+  link: https://www.youtube.com/embed/WWaqGWjxuZ8
+  description: Ajey Gore, CTO of GO-JEK is a featured speaker in our event series titled 'A Conversation With', a fireside chat with notable tech figures in the ecosystem. Moderated by MHV Managing Partner Peng T. Ong, the chat talks about Gore's journey and philosophy in his job. A Conversation With was held in Spacemob Gama (WeWork), Jakarta on April 18, 2018.
+  short_description: GardenCity RubyConf 2014
+  date: 1 May 2018
+
+- title: "Touching Lives: The Startup Engineer"
+  link: https://www.youtube.com/embed/9qhaVPmvp4w
+  description: GO-JEK helped drivers, food merchants and small business owners - who deliver everything from beauty services to house cleaning on the platform - earn over $3.1B in 2018. And that’s on top of getting millions of Indonesians where they need to go. GO-JEK’s CTO Ajey Gore talks about what it means to be a startup #10xEngineer, and to help drive innovation & change.
+  short_description: RubyConf India 2012
+  date: 12 March 2018
+
+- title: "Garden City Ruby 2014 - Lorum Ipsum by Ajey Gore"
+  link: https://www.youtube.com/embed/8CqAHH9jp6A
+  description: How to create eco-system, why giving back is important.
+  short_description: GardenCity RubyConf 2014
+  date: 1 July 2014
+
+- title: "Lessons learned while scaling the unicorn"
+  link: https://www.youtube.com/embed/BB0p-96npvw
+  description: I joined GoJek early on when it was small startup, we grew on an average 10% week on week, this came with engineering challenges as well product org challenges, scaling product org, required tweaks and course correction on the way. In this talk I will share my experiences for what we learned while scaling gojek product org
+  short_description: VoxxedDays 2018 Scaling the unicorn
+  date: 1 July 2019
+
+- title: "Voxxed Days Opening Keynote 2019 Searching for silver bullet"
+  link: https://www.youtube.com/embed/BB0p-96npvw
+  description: Software engineering nuances always keeps us on toes, while scaling teams and business, it becomes more apparent that we look through a holistic lens towards problems which present us with solutions with business biases and our own dogmas, Ajey talks about his experiences in bringing all these together with distributed agile teams across geographies.
+  short_description: VoxxedDays 2019 Keynote
+  date: 1 July 2019
+
+- title: "Indigo webinar - Startups Lessons "
+  link: https://www.youtube.com/embed/mWOtf6GUh50
+  description: Want to build a startup but are still confused about the terms or roles needed in the startup ecosystem? In this webinar, Indigo Creative Nation in collaboration with StartupLokal invites Ajey Gore, Operating Partner - Technology at Sequoia Capital, shares his experiences. 
+  short_description: Podcast - Shunya One
+  date: 24 February 2021
+
+- title: "Discussion at I need a break meetup"
+  link: https://www.youtube.com/embed/9dWuyHQF80E
+  description: “I NEED A BREAK!” meetup event, a space where tech enthusiasts from all walks of life gather to chill out, network & forge new connections. Because sometimes, we all just need a break from our lives! (pun intended)
+  short_description: Singapore Meetup Talk
+  date: 1 December 2017
+
 - title: "Refactoring at gojek"
   link: "https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FSequoiahack%2Fvideos%2F1520682354624121%2F&show_text=false&width=476&t=0"
   description: Ajey Gore, GO-JEK Group CTO shares his experiences at constantly improving at gojek while growing at rapid speeds.
@@ -36,7 +108,7 @@
 
 - title: "GO-JEK x GopherCon SG 2018 - GO-JEK gets Go"
   link: https://www.youtube.com/embed/avRCNy9sfWo
-  description: Ajey Gore, GO-JEK Group CTO, recently shared his experience in building the company's capabilities, highlighting that retention, a high bar for hiring and aggressive adoption of new technology were key components of this process.
+  description: Ajey Gore talks about engineering principles for foster culture and productivity.
   short_description: GopherCon SG 18
   date: 7 June 2018
 
@@ -51,5 +123,59 @@
   description: Drawing on his experience at GO-JEK, Ajey Gore explains how a mission of inclusivity impacting millions of people across Indonesia.
   short_description: Strata Data Conference - San Francisco
   date: 22 March 2018
+
+- title: "GopherCon SG 2018 Closing Keynote"
+  link: https://www.youtube.com/embed/avRCNy9sfWo
+  description: Ajey Gore talks about engineering principles for foster culture and productivity.
+  short_description: GopherCon SG 2018
+  date: 22 March 2018
+
+- title: "GopherCon SG 2017 Opening Keynote"
+  link: https://www.youtube.com/embed/3mdwXcFYlqw
+  description: Ajey Gore talks about performance improvements using go.
+  short_description: GopherCon SG 2017
+  date: 1 June 2017
+
+- title: "Why 80% companies fail, Highlights!"
+  link: https://www.youtube.com/embed/YUj1fni2pgQ
+  description: Highlight SWSG Mega startup event
+  short_description: SWSG Mega
+  date: 2 September 2017
+
+- title: "Companies, Ecosystem and Ruby in India"
+  link: https://www.youtube.com/embed/bafQRLUWKAQ
+  description: Ajey Gore discusses technologies, choices developers make and more about how do you implement a strategy for deploying future proof software.
+  short_description: Deccan Ruby Conf
+  date: 2 September 2017
+
+- title: "DevCloud - Enabling Continuous Delivery"
+  link: https://www.youtube.com/embed/pmdy35CEytw
+  description: Companies can leverage the strengths of Cloud Architecture and apply techniques of Infrastructure-as-a-Service within their own data centers. ThoughtWorks' recent project spanning several large data centers in India shows how enterprises can use virtualization and automation to gain strategic business advantages. The capabilities that can be achieved could help those enterprises that for competitive reasons must automate and speed up software deployment processes, or even move to a Continuous Delivery model.
+  short_description: ThoughtWorks - DevCloud/DevOps Webinar
+  date: 21 Dec 2011
+
+- title: "SWSSG Mega 2017 What is startup personality"
+  link: https://www.youtube.com/embed/7GMMlxdMCDE
+  description: Is there such a thing as a ‘start-up personality’? Featuring Chatri Sityodtong, Ajey Gore, Jani Rautianen, Choy Peng Wu, Jacqueline Poh
+  short_description: SWSG Featured Snippet
+  date: 3 November 2017
+
+- title: "The world full of Idiots, Agile Indonesia"
+  link: https://www.youtube.com/embed/FA0mmD0Y8cI
+  description: Ajey Gore talks about importance of test driven development, and techniques, that can help us improve our daily development workflow.
+  short_description: Agile Indonesia 2017
+  date: 20 August 2017
+
+- title: "SWSSG Mega 2017 Advice to your teenage self"
+  link: https://www.youtube.com/embed/SKfj7uD8iGo
+  description: If you could turn back time & advise your teenage self, what would this advice be?  Featuring Chatri Sityodtong, Ajey Gore, Jani Rautianen, Choy Peng Wu, Jacqueline Poh
+  short_description: SWSG Featured Snippet
+  date: 3 November 2017
+
+- title: "Keynote Deccan RubyConf 2017"
+  link: https://www.youtube.com/embed/tsNoYv0P2O0
+  description: Ajey Gore talks about importance of test driven development, and techniques, that can help us improve our daily development workflow.
+  short_description: Deccan RubyConf 2017
+  date: 2 September 2017
 
 
