@@ -1,0 +1,27 @@
+---
+layout: content
+body_class: home
+leadingpath: ./
+permalink: /content/talks
+title: Presentations
+---
+{% for talk in site.data.talks %}
+<div class="container border-bottom mb-auto">
+  <div class="row">
+    <span class="snippet-title p-2">{{ talk.title}}</span>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="260" height="146.5" src="{{ talk.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-md-6 snippet-description">
+
+      {{ talk.description }}
+
+    </div><span class="snippet-description pb-2"> {{ talk.date}}</span>
+  </div>
+</div>
+
+{% endfor %}

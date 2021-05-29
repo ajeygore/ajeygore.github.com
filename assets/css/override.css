@@ -97,6 +97,13 @@ b {
 .website-header {
   max-width: 700px;
 }
+
+.snippet-title {
+  font-weight: 500;
+}
+.snippet-description {
+  font-size: 10pt;
+}
 /*
  * Site
  */
@@ -113,9 +120,10 @@ b {
 @media (min-width: 1025px){
   body {
     font-family: 'Libre Franklin', serif;
-    font-size: 10pt;
+    font-size: 12pt;
     min-height: 100rem;
     padding-top: 6.5rem;
+    font-weight: 300;
 
     line-height: 1.5;
   }
