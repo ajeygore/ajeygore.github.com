@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Security — Vulnerabilities lifecycle at GoJek</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Security — Vulnerabilities lifecycle at GoJek</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Recently, Our friends over at Fallible published a set of vulnerabilities…
+</section>
+<section data-field="body" class="e-content">
+<section name="5129" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1978" id="1978" class="graf graf--h3 graf--leading graf--title">Security — Vulnerabilities lifecycle at GoJek</h3><p name="442b" id="442b" class="graf graf--p graf-after--h3">Recently, Our friends over at Fallible published a set of <a href="https://hackernoon.com/security-vulnerabilities-in-go-jek-a9126b33788c" data-href="https://hackernoon.com/security-vulnerabilities-in-go-jek-a9126b33788c" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">vulnerabilities</a> [https://hackernoon.com/security-vulnerabilities-in-go-jek-a9126b33788c] that they had discovered a while ago, <strong class="markup--strong markup--p-strong">more than a year</strong>, While these are old vulnerabilities does not negate the importance of the discovery or disclosure. We; at GO-JEK take security very seriously and value transparency. At the time that they reported the issues, we were already aware of them and were taking active steps to correct them. But since sometimes perception outlives the reality.</p><p name="3cdb" id="3cdb" class="graf graf--p graf-after--p">Here is the status for the reported vulnerabilities:</p><p name="fbe5" id="fbe5" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Vulnerability #1 Ride History Data Leak</strong></p><p name="6d6e" id="6d6e" class="graf graf--p graf-after--p">This vulnerability has been fixed. The authorization header is checked which means that you must be a valid, active user of GO-JEK and have logged in with the correct credentials. An attacker will have to first guess the unique user id number and only if he gets the correct number will he be able to view the data.</p><p name="ebfe" id="ebfe" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Vulnerability # 2 Order details Leak</strong></p><p name="b79d" id="b79d" class="graf graf--p graf-after--p">This vulnerability has been fixed. Again, this was an incident where the Authorization header was not checked. The Fallible post does not carry any additional information save for a screenshot. The vulnerability does not mention the location of the vulnerability. This was a vulnerability that was isolated to the GO-BOX service. It allowed an attacker to view the order details for GO-BOX orders that has been completed.</p><p name="370f" id="370f" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Vulnerability # 3 Users Data Leak</strong></p><p name="cd76" id="cd76" class="graf graf--p graf-after--p">This vulnerability has been fixed. One more case where the Authorization header isn’t checked. The post does not mention that an attacker must guess the Order number before he was able to call this API. Only on guessing the right order number does the attacker gain access to the specific order information.</p><p name="6d79" id="6d79" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Unconfirmed # 4 Get other user’s Android notifications for GO-JEK</strong></p><p name="dab4" id="dab4" class="graf graf--p graf-after--p">We do not have further information on this vulnerability from Fallible. We are aware that Android and iOS push notifications are not meant for delivering sensitive information to users and therefore do not place either personally identifiable information nor do we send any sensitive data over Push Notifications.</p><p name="3d65" id="3d65" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Unreported Write APIs</strong></p><p name="d92f" id="d92f" class="graf graf--p graf-after--p">Fallible also reports that there are some APIs that they can use to corrupt user data. The mention of the cancellation reason manipulation was again a known bug that has been fixed.</p><p name="5cf5" id="5cf5" class="graf graf--p graf-after--p">Since the bugs were reported we have corrected the vulnerabilities and have increased measures to review and strengthen our security. Some of the steps we have taken are:</p><ol class="postList"><li name="ab79" id="ab79" class="graf graf--li graf-after--p">GO-JEK has a strong in-house red-team that conducts active penetration tests of our infrastructure and application on a daily basis. As our platform continues to grow and evolve, we rely a lot on automation of scans and regular checks on critical areas of information leakage and authentication.</li><li name="1f96" id="1f96" class="graf graf--li graf-after--li">GO-JEK has engaged with two well-known and reputable security consulting companies to conduct in-depth penetration testing projects with us. This is an ongoing exercise at GO-JEK involving more industry leading security consulting companies.</li><li name="28fa" id="28fa" class="graf graf--li graf-after--li">GO-JEK has a private bug bounty program that is run by BugCrowd [<a href="https://bugcrowd.com/" data-href="https://bugcrowd.com/" class="markup--anchor markup--li-anchor" rel="nofollow noopener" target="_blank">https://bugcrowd.com/</a>]. This program invites security researchers from all over the globe to participate in a controlled security assessment exercise where they will be rewarded with cash for reporting weaknesses in our security.</li></ol><p name="1c44" id="1c44" class="graf graf--p graf-after--li">The above steps have proven very effective in discovering and solving security issues quickly. Our commitment to solving security related issues is embodied in our entire technology leadership team and engineers.</p><p name="6ffe" id="6ffe" class="graf graf--p graf-after--p">We would like to point out that the best way <strong class="markup--strong markup--p-strong">to</strong> <strong class="markup--strong markup--p-strong">engage with us is to join our bug bounty program</strong>. Since it is a private program, <strong class="markup--strong markup--p-strong">please email us at </strong><a href="mailto:bugcrowd@go-jek.com" data-href="mailto:bugcrowd@go-jek.com" class="markup--anchor markup--p-anchor" target="_blank"><strong class="markup--strong markup--p-strong">bugcrowd@go-jek.com</strong></a></p><p name="bf1a" id="bf1a" class="graf graf--p graf-after--p">If you have no interest in participating in our bug bounty program but would like<strong class="markup--strong markup--p-strong"> to report vulnerabilities</strong> then please <strong class="markup--strong markup--p-strong">email us at </strong><a href="mailto:security@go-jek.com" data-href="mailto:security@go-jek.com" class="markup--anchor markup--p-anchor" target="_blank"><strong class="markup--strong markup--p-strong">security-bugs@go-jek.com</strong></a><strong class="markup--strong markup--p-strong">.</strong></p><p name="ebb4" id="ebb4" class="graf graf--p graf-after--p">We welcome an opportunity to work with security researchers that practice responsible disclosure. Work with us in a responsible manner in disclosing bugs and we will be happy to acknowledge you and reward you for your findings. Disclosing bugs in systems is a very serious exercise, it is imperative that you conduct yourself in a manner that first do no harm to the greater group of end-users. Also, disclosures should always be specific. Unconfirmed, un-researched, or vague disclosures do not serve any purpose other than to cause panic or uncertainty. We will always be transparent at GO-JEK in dealing with and acknowledging disclosed vulnerabilities.</p><p name="644f" id="644f" class="graf graf--p graf-after--p graf--trailing">For more information or comments please do not hesitate to reach out to us, our CISO <a href="https://www.linkedin.com/in/sheran/" data-href="https://www.linkedin.com/in/sheran/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Sheran Gunasekara</a></p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ajeygore" class="p-author h-card">Ajey Gore</a> on <a href="https://medium.com/p/4fc71b62120c"><time class="dt-published" datetime="2017-03-31T13:25:47.855Z">March 31, 2017</time></a>.</p><p><a href="https://medium.com/@ajeygore/security-vulnerabilities-lifecycle-at-gojek-4fc71b62120c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 30, 2021.</p></footer></article></body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>The Curious Case of the Disappearing GO-JEK App</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">The Curious Case of the Disappearing GO-JEK App</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+On April Fools day our app disappeared from the Apple Store. While this sounds like a prank, it was anything but.
+</section>
+<section data-field="body" class="e-content">
+<section name="6cbe" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="8ef5" id="8ef5" class="graf graf--h3 graf--leading graf--title"><strong class="markup--strong markup--h3-strong">The Curious Case of the Disappearing GO-JEK App</strong></h3><figure name="f7a9" id="f7a9" class="graf graf--figure graf--layoutOutsetLeft graf-after--h3"><img class="graf-image" data-image-id="1*gjPIP4NZLGBf7LfRWKxFrA.png" data-width="1024" data-height="768" src="https://cdn-images-1.medium.com/max/600/1*gjPIP4NZLGBf7LfRWKxFrA.png"><figcaption class="imageCaption">GO-POINTS, GO-JEK’s loyalty program</figcaption></figure><p name="132f" id="132f" class="graf graf--p graf-after--figure">On April Fools day our app disappeared from the Apple Store. While this sounds like a prank, it was anything but.</p><p name="7b5a" id="7b5a" class="graf graf--p graf-after--p">The day before, we discovered we were dealing with a hard-to-reproduce bug on our iOS app that had shipped with our most recent release on March 30th. By the morning of the 31st, our alerts notified us that we were logging out customers more frequently than expected and that login attempts were also on the rise.</p><p name="a6dc" id="a6dc" class="graf graf--p graf-after--p">From a security standpoint, our team has created a series of automated filters and alerts that deal with simple fake signups and password checkers, and scale up to handling some pretty sophisticated attacks on a daily basis. We constantly filter out fake traffic at multiple levels of the system in a manner that’s transparent to legitimate customers using our products.</p><p name="0304" id="0304" class="graf graf--p graf-after--p">It was this security system which was kicking in and logging users out because the bug was causing their activity to look ‘suspicious’.</p><p name="49e4" id="49e4" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">What Changed?</strong></p><p name="804e" id="804e" class="graf graf--p graf-after--p">At our scale, across our sixteen products, we track billions of app activity events daily in order to help us troubleshoot issues and improve our customer’s experience. The bug affected one of these events which then ran afoul of our automated security, resulting in that user being logged out.</p><p name="d821" id="d821" class="graf graf--p graf-after--p">The intersection of events that triggered the bug could happen several times a day for a typical customer.</p><p name="13ad" id="13ad" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">The Dilemma</strong></p><p name="6408" id="6408" class="graf graf--p graf-after--p">The release in question carried several crucial security features to protect our customers that had taken substantial development effort, ones we were unwilling to roll back except as a last resort. But this release <em class="markup--em markup--p-em">also</em> resulted in a non-trivial percentage of our iOS based customers being logged out repeatedly.</p><p name="9d27" id="9d27" class="graf graf--p graf-after--p">So, we decided to unlist the app, and push hard over the weekend and fix the underlying issue.</p><p name="702c" id="702c" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Why did we unlist our app</strong></p><p name="9dad" id="9dad" class="graf graf--p graf-after--p">We could have continued listing our app while we were fixing issues, but that would have made so many more iOS users uncomfortable over the weekend, making it harder for them to get a ride or their favorite food or a cleaner. We always put our customers’ interests first and it is one of the principles that makes us what we are.</p><p name="3629" id="3629" class="graf graf--p graf-after--p graf--trailing">So our app was gone for 16 hours, and we had to face a lot of flak, but in the end, it was all good. We were back in action after 16 hours with a more robust app that protected our user’s security without compromising the experience.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@ajeygore" class="p-author h-card">Ajey Gore</a> on <a href="https://medium.com/p/b583c146f42a"><time class="dt-published" datetime="2017-04-10T21:29:42.822Z">April 10, 2017</time></a>.</p><p><a href="https://medium.com/@ajeygore/the-curious-case-of-the-disappearing-go-jek-app-b583c146f42a" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 30, 2021.</p></footer></article></body></html>
