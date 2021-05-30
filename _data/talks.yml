@@ -58,6 +58,17 @@
   short_description: Google Cloud Next 18
   date: 1 August 2018
 
+- title: "Over 18 months super app Gojek grows 900x bigger with Google Cloud"
+  link: https://www.youtube.com/embed/KOhcXUGfsi8
+  description: "Gojek used Google Cloud to scale up its solution to Indonesia’s traffic problem—fast. The digital payment super app created marketplaces to connect people with different services through ojeks, or motorcycle taxis. With Google Cloud, Gojek scaled up to 900 times its initial size within 18 months. Today, it uses data to let its ojek drivers know where they’re needed the most."
+  short_description: Google Cloud
+
+- title: "GopherCon India 2019 - Keynote - Building engineering teams"
+  link: https://www.youtube.com/embed/93oDpqUcOSw
+  description: Ajey Gore talks about building engineering team and engineering first culture in high scale startup.
+  short_description: GopherCon India 2019
+  date: 19 February 2019
+
 - title: "Everything Ruby by Ajey Gore"
   link: https://www.youtube.com/embed/1_drEHfsob8
   description: Ruby is a powerful language, Ajey Gore talks about how do you manage software development lifecycle using ruby based tools.
