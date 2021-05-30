@@ -9,8 +9,8 @@ subpage: blog
 {% for post in site.posts %}
 <div class="row pb-2">
   <div class="container">
-    <h6><a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;">{{ post.title }}</a></h5>
-    {{ post.date |  date: '%B %d, %Y' }}
+    <a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;"><h6>{{ post.title }}</h6></a>
+    <div class="breadcrumb-item"> {{ post.date |  date: '%B %d, %Y' }}</div>
   </div>
   <p>
   <div class="container bg-light">

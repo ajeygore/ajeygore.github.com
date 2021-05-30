@@ -1,14 +1,14 @@
 {% for post in site.posts %}
-<div class="row">
-
-  <div class= "col-md-12">
-    <h6><a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;">{{ post.title }}</a></h5>        {{ post.date |  date: '%B %d, %Y' }}
+<div class="row pb-2">
+  <div class="container">
+    <a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;"><h6>{{ post.title }}</h6></a>
+    <div class="breadcrumb-item"> {{ post.date |  date: '%B %d, %Y' }}</div>
   </div>
   <p>
+  <div class="container bg-light">
     {{ post.content | strip_html | truncatewords:75}}
-    <p>
-      <a href="{{ post.url }}">Read more</a>
-      <br/>
-      <hr>
+  </div>
+  <p>
+    <div class="container pb-4"><a href="{{ post.url }}">Read more</a> </div>  
 </div>
 {% endfor %}
