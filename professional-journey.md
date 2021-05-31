@@ -12,9 +12,9 @@ permalink: /professional-journey
 
 Ajey is an established technology leader, enterpreneur & public speaker having a career spanning over 23 years. Currently Ajey works at **Sequoia Capital, India & SEA** as an Operating Partner, Technology. In his current role he advises portfolio companies' CTOs and CPOs through his experience, passion, strategic insight and innovative mindset to help companies scale engineering, data science, artificial intelligence, machine learning, products and design functions. He also advises on structurihng product organization, strategy planning and architecture design to bring the most impact in terms of product scale, adaption and growth. 
 
-###### Group CTO, Gojek
+###### Group CTO, Gojek (Now GoTo)
 
-Previously Ajey helped Gojek to scale from 100mn to 10bn company from 2015 - 2020, having sold his startup to Gojek, Ajey took CTO Payments Role at Gojek. Later he took over a role of group CTO at gojek overseeing the development of 20+ products across 4 countries, scaling gojek from 300,000 orders per month to 120million orders per month. 
+Previously Ajey helped Gojek to scale from 100mn to 10bn company from 2015 - 2020, having sold his startup to Gojek. Initially Ajey took CTO, Payments Role at Gojek. Later he took over the role of Group CTO at Gojek overseeing the development of 20+ products across 4 countries, scaling Gojek from 300,000 orders per month to 120 million orders per month. 
 
 **Recognition** Ajey has been named as one of Top 50 Influential CIOs/CTOs in the region by IDG Australlia - https://www.idg.com.au/article/669193/cio50-2019-12-ajey-gore-gojek/ 
 
