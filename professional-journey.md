@@ -10,7 +10,7 @@ permalink: /professional-journey
 ## <u>Ajey Gore</u>
 ###### Operating Partner, Technology, Sequoia Capital India & SEA
 
-Ajey is an established technology leader, enterpreneur & public speaker having a career spanning over 23 years. Currently Ajey work at **Sequoia Capital, India & SEA** as Operating Partner, Technology. In his current role he advises portfolio companies' CTOs and CPOs through his experience, passion, strategic insight and innovative mindset to help companies scale engineering, data science products and design functions. And structurihng product organization, strategy planning and architecture design to bring impact in terms of product scale, adaption and growth. 
+Ajey is an established technology leader, enterpreneur & public speaker having a career spanning over 23 years. Currently Ajey works at **Sequoia Capital, India & SEA** as an Operating Partner, Technology. In his current role he advises portfolio companies' CTOs and CPOs through his experience, passion, strategic insight and innovative mindset to help companies scale engineering, data science, artificial intelligence, machine learning, products and design functions. He also advises on structurihng product organization, strategy planning and architecture design to bring the most impact in terms of product scale, adaption and growth. 
 
 ###### Group CTO, Gojek
 
