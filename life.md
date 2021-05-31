@@ -5,7 +5,7 @@ title: Personal Journey
 permalink: /life
 ---
 
-YourStory published my [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. It sums up pretty well.
+YourStory published my life journey [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. 
 
 #### A thank you note, and little more about my life!
 
