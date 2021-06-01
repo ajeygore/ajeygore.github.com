@@ -3,6 +3,7 @@ layout: post
 body_class: home
 title: Professional Journey
 permalink: /professional-journey
+published: true
 ---
 
 **Note**:YourStory published my life journey [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. 
