@@ -83,7 +83,7 @@ h2 {
 }
 body {
   font-family: 'Libre Franklin', serif;
-  font-size: 10pt;
+  font-size: 12pt;
   line-height: 1.5;
 }
 
@@ -120,7 +120,7 @@ b {
 @media (min-width: 1025px){
   body {
     font-family: 'Libre Franklin', serif;
-    font-size: 12pt;
+    font-size: 10pt;
     min-height: 100rem;
     padding-top: 6.5rem;
     font-weight: 300;
