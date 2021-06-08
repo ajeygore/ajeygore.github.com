@@ -82,8 +82,8 @@ h2 {
   font-size: 16pt;
 }
 body {
-  font-family: 'Libre Franklin', serif;
-  font-size: 12pt;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14pt;
   line-height: 1.5;
 }
 
@@ -99,7 +99,7 @@ b {
 }
 
 .snippet-title {
-  font-weight: 500;
+  font-weight: 700;
 }
 .snippet-description {
   font-size: 10pt;
@@ -120,7 +120,7 @@ b {
 @media (min-width: 1025px){
   body {
     font-family: 'Libre Franklin', serif;
-    font-size: 10pt;
+    font-size: 12pt;
     min-height: 100rem;
     padding-top: 6.5rem;
     font-weight: 300;
