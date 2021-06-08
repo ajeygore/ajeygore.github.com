@@ -1,11 +1,8 @@
 ---
 layout: post
 title: A tale of food stall
-published: true
-categories:
-- tech
-- framework
-- essay
+published: false
+categories: ['lessons', 'essay', architecture']
 ---
 
 #### When a food stall becomes popular...
