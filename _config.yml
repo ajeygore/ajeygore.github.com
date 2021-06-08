@@ -14,7 +14,7 @@ author :
 domain: ajeygore.in
 incremental: true
 
-production_url : http://ajeygore.github.io
+production_url : http://ajeygore.in
 collections_dir: collections
 
 # This is the default format. 
