@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A tale of food stall
-published: false
+published: true
 categories: ['lessons', 'essay', architecture']
 ---
 
