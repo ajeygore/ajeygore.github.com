@@ -38,7 +38,7 @@ Technology is the most effective tool to achieve the impossible.
 </blockquote>
 
 
-After spending amazing, crazy and full of learning journey from 2015 t0 2020, I left _**gojek**_ and joined _**Sequoia Capital**_ to pursue my aim of "doing something for community". One of the main driving force for me was to be able to give back to startup communityby helping companies with their technology and product based challenges and also be able to learn from them to spread that knowledge to others.
+After spending amazing, crazy and full of learning journey from 2015 to 2020, I left _**gojek**_ and joined _**Sequoia Capital**_ to pursue my aim of "doing something for community". One of the main driving force for me was to be able to give back to startup communityby helping companies with their technology and product based challenges and also be able to learn from them to spread that knowledge to others.
 
 If you are working on some interesting startup idea, don't hesitate to reach out to me.
 
