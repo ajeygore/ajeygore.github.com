@@ -46,9 +46,7 @@ I see myself as swiss knife in tactical situations and an empowerment advocate i
 
 In my role, I  work with the CTOs and CPOs of Sequoia’s portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions. In a crude terms, I tell them what not to do, about my mistake and learnings.
 
-<blockquote class="blockquote">
-I fundamentally believe that I am a package of success and have a cargo full of failures with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents, I experienced through out last 2 decades or so.
-</blockquote>
+> I fundamentally believe that I am a package of success and have a cargo full of failures with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents, I experienced through out last 2 decades or so.
 
 I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it's based on human perception, but you are welcome to correct me. 
 
@@ -115,7 +113,6 @@ Here's a list of my people related biases I think matter most.
 ###### **I am negatively-biased against:**
 
 - people without skin flesh in the game that want a say.
-- people who use appeals to authority instead of reason in their arguments.
 - people who cause drama.
 - people who don't study and iterate but want to be treated as if they do.
 

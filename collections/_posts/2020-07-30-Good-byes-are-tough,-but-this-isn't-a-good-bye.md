@@ -8,7 +8,8 @@ categories:
 - work
 - work culture
 ---
-<b>Note:</b>Originally posted on my medium blog, this is my farewell note to all gojek staff when I left gojek.
+
+_Ajey's farewell note to all gojek staff, July 2020_
 
 
 First, a big thank you!
@@ -23,15 +24,27 @@ We created Gojek and Gojek Engineering with the support of countless friends, ou
 
 And yet this isn’t about me; this is about the next chapter of Gojek. For me, it was a very emotional decision to step away. I have always said that when something happens, it’s not spontaneous; my departure has been in the making for months.
 
-Around late 2018, I realised that I can’t keep up with the pace of Gojek. Gojek is fast and an amazing place with 100s of forces propelling it towards an amazing future. And when I talked to Nadiem about me leaving Gojek in early 2019, it was less about my pace and more about me keeping up with Gojek’s (rightly so) fast pace.
+Around late 2018, I realised that I can’t keep up with the pace of Gojek. Gojek is fast and an amazing place with 100s of forces propelling it towards an amazing future. 
+
+> And when I talked to Nadiem about me leaving Gojek in early 2019, it was less about my pace and more about me keeping up with Gojek’s (rightly so) fast pace.
 
 I needed a break, and It was more a requirement than indulgence. But how could I do that without building a solid foundation for the next wave of leaders. Because Gojek needed that, as we should always optimise for the future, the company, the people and the relationships we care about. And to be able to care about myself, my family and friends, I needed to be sure that the people are in good hands. And today I can say that Gojek Engineering is in the right hands. We have amazing leaders who will take Gojek Engineering to the next level. This wouldn’t be possible without constant and relentless support from Andre and Kevin.
 
-Technology is the most important tool to reduce the friction in people’s lives. We have been on this mission, and we have brought so much impact to people’s lives — and this is not yet done! Actually, we have just scratched the surface of the possibilities that are ahead of us.
+> Technology is the most important tool to reduce the friction in people’s lives. 
 
-I am happy that I am leaving behind a family, which I will cherish for all my life. This is an emotional decision, but racing without pitstops is something that wrecks the car itself. I have made that mistake, and this time I need to go slower, need to spend some time with family and kids, and focus on giving back to the community. And most importantly, balance out all the aspects of my life.
+We have been on this mission, and we have brought so much impact to people’s lives — and this is not yet done! Actually, we have just scratched the surface of the possibilities that are ahead of us.
 
-I cannot say bye to all of you. I just want to thank all of you for being there, supporting me, sculpting me to be the person I am today! The position stays or goes away: people and relationships are what matter! I will always be proud of all of you in Gojek and what we achieved together.
+I am happy that I am leaving behind a family, which I will cherish for all my life. 
+
+> This is an emotional decision, but racing without pitstops is something that wrecks the car itself. 
+
+I have made that mistake, and this time I need to go slower, need to spend some time with family and kids, and focus on giving back to the community. And most importantly, balance out all the aspects of my life.
+
+I cannot say bye to all of you. I just want to thank all of you for being there, supporting me, sculpting me to be the person I am today! 
+
+> The position stays or goes away: people and relationships are what matter! 
+
+I will always be proud of all of you in Gojek and what we achieved together.
 
 I know there are only a few companies in the world that have been able to do what we have done, and very few tech leaders who have been able to scale a company from a few million to a 10+ billion dollar company. And it’s not achievable without the people! Gojek is a living testament of that, and I am humbled, honored and privileged to be working with you, and I am proud to call myself a “GoTroop” and call Gojek my home for life.
 
@@ -45,6 +58,8 @@ Ajey
 
 
 \#PastiAdaJalan #gojekforlife #gojek4life
+
+<b>Note: </b>Originally posted on my medium blog, this is my farewell note to all gojek staff when I left gojek.
 
 ---
 Bahasa Indonesia version follows

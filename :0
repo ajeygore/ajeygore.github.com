@@ -1,14 +1,14 @@
 ---
 layout: post
 title: A tale of food stall, a monolith story!
-published: true
+published: false
 categories: ['lessons', 'essay', architecture']
 ---
 
 
 Few cult food outlets start their humble beginnings as hawker. A hawker stall is typically a one person shop. The person knows one thing and one thing better, cooks a truly tasty dish and that brings people to his stall all the time. Over the period of time, their popularity grows and they scale their operations for better customer service, profit and growth. This is the story of Opexill, a foodstall hawker, who started selling fastfood. When her popularity increased, she would exhaust everything in 2 hours. There was opportunity to serve more and earn more. So she starts by increasing her raw material stock, brings more raw material, but she is getting busier day by day, and not able to handle customers. 
 
-> <u>One person show</u> has it's advantages and disadvantages as well. And serving more customers becomes little challenging, and that's a good problem to have.
+> One person show, has it's advantages and disadvantages as well. And serving more customers becomes little challenging, and that's a good problem to have.
 
 Few problems start come up, First, he spent a lot of time in providing change. So he found an elegant solution, keep very rounded to currency notes prices. Like instead of charging 8 or 12 - he started charging 10 or 15, that kind of made the frequented currency notes available, and returning change was easy as well. Friction solved! And he gained some speed there... From there popularity increased and sold much more food. Given the popularity, Opexill had to find a way to make dishes faster, and then he went on to implementing more ways to speed up the 'customer experience' and want them to serve them faster...
 
@@ -69,5 +69,5 @@ Sometime, you can keep a large bunch of functionality at one place, yet, fan out
 
 ###### The age of assemblers
 
-While this post talks about fictional hawker and it's just a story. But on the other hand, as software developers, we should also think about us as Assemblers vs builders. Our job is to provide better consumer experience. It may not be necessary for us to build every part of software ourselves, but the more strategic point of view should be around providing the best experience to our end users. Thinking from that point of view will help us prioritise the feature delivery by either buying off the shelf or building from scratch. I think this requires another post, but I am sure that era of assemblers has arrived.
+While this post talks about fictional hawker and it's just a story. But on the other hand, as software developers, we should also think about us as Assemblers vs builders. Our job is to provide 
 

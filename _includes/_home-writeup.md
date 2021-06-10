@@ -12,10 +12,7 @@ Given software by nature is very flexible and malleable, yet writing it in a mod
 
  
 
-<blockquote class="blockquote">
-Computer languages are very structured, that means, expressing our business logic and intent, is a tough task unless
-we follow certain practices. 
-</blockquote>
+ > Computer languages have very rigid structure. That forces us to express our business logic and intent in a very precise manner. Expressing that is a tough task unless we follow certain practices about the articulation, understanding and explaining the logic with rules and acceptance criteria.
 
 
 Software design is a very creative process and over the years it has resulted in many experiments around different aspects such as design, architecture, languages and paradigms. There seems to be an explosion of trying out new ideas, new languages. We have seen paradigm specific languages and even domain specific languages evolve over the last 40 years.
@@ -24,18 +21,16 @@ We are now setting down in the phase of distributed computing, big data, functio
 
 Yet, I have experienced very few organisations put emphasis on software engineering as craft and software engineers as craftsmen. I hope it changes over a period of time, because it's a very important change for us to make an impactful product.
 
-<blockquote class="blockquote">
-Writing code for computers is an easy task, especially when you have an abundance of code samples on the internet. The hard task is to write code that humans understand and the code operates your business solutions that in turn provides frictionless product experiences to our users 
-</blockquote>
+
+> Writing code for computers is an easy task, especially when you have an abundance of code samples on the internet. The hard task is to write code that humans understand and the code operates your business solutions that in turn provides frictionless product experiences to our users 
+
 
 
 
 Technlogy has become essential for growth & scale of the technology backed products;
 or understanding and solving complex software engineering problems related computer vision, estimation or getting consumer's intent using data, artificial intelligence and machine learning.
 
-<blockquote class="blockquote">
-Technology is the most effective tool to achieve the impossible.
-</blockquote>
+> Technology is the most effective tool to achieve the impossible.
 
 
 After spending amazing, crazy and full of learning journey from 2015 to 2020, I left _**gojek**_ and joined _**Sequoia Capital**_ to pursue my aim of "doing something for community". One of the main driving force for me was to be able to give back to startup communityby helping companies with their technology and product based challenges and also be able to learn from them to spread that knowledge to others.
