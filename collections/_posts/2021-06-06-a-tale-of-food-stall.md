@@ -10,7 +10,7 @@ Few cult food outlets start their humble beginnings as hawker. A hawker stall is
 
 > <u>One person show</u> has it's advantages. But there are disadvantages as well. Mostly around scaling up the opertions. Eventually serving more customers gets little challenging, and that's a good problem to have.
 
-Few problems start come up, First, he spent a lot of time in providing change. So he found an elegant solution, keep very rounded to currency notes prices. Like instead of charging 8 or 12 - he started charging 10 or 15, that kind of made the frequented currency notes available, and returning change was easy as well. Friction solved! And he gained some speed there... From there popularity increased and sold much more food. Given the popularity, Opexill had to find a way to make dishes faster, and then he went on to implementing more ways to speed up the 'customer experience' and want them to serve them faster...
+Few problems start come up, First, he spent a lot of time in providing change. So he found an elegant solution, keep very rounded to currency notes prices. Like instead of charging 8 or 12 - he started charging 10 or 15, that kind of made the frequented currency notes available, and returning change was easy as well. Friction solved! And he gained some speed there... From there popularity increased and sold much more food. Given the popularity, Opexill had to find a way to make dishes faster, and then he went on to implementing more ways to speed up the 'customer experience' and want them to serve them faster.
 
 ###### When your food stall becomes popular!
 
