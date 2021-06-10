@@ -8,7 +8,7 @@ categories: ['lessons', 'essay', architecture']
 
 Few cult food outlets start their humble beginnings as hawker. A hawker stall is typically a one person shop. The person knows one thing and one thing better, cooks a truly tasty dish and that brings people to his stall all the time. Over the period of time, their popularity grows and they scale their operations for better customer service, profit and growth. This is the story of Opexill, a foodstall hawker, who started selling fastfood. When her popularity increased, she would exhaust everything in 2 hours. There was opportunity to serve more and earn more. So she starts by increasing her raw material stock, brings more raw material, but she is getting busier day by day, and not able to handle customers. 
 
-> <u>One person show</u> has it's advantages and disadvantages as well. And serving more customers becomes little challenging, and that's a good problem to have.
+> <u>One person show</u> has it's advantages. But there are disadvantages as well. Mostly around scaling up the opertions. Eventually serving more customers gets little challenging, and that's a good problem to have.
 
 Few problems start come up, First, he spent a lot of time in providing change. So he found an elegant solution, keep very rounded to currency notes prices. Like instead of charging 8 or 12 - he started charging 10 or 15, that kind of made the frequented currency notes available, and returning change was easy as well. Friction solved! And he gained some speed there... From there popularity increased and sold much more food. Given the popularity, Opexill had to find a way to make dishes faster, and then he went on to implementing more ways to speed up the 'customer experience' and want them to serve them faster...
 
