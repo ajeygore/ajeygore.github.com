@@ -6,6 +6,13 @@ categories: ['lessons', 'essay', architecture']
 ---
 
 
+
+![Hawker Center](/assets/images/hawker_stall.jpg)
+<div class="footnote">
+Source : Creative Commons <a href="https://www.flickr.com/photos/25802865@N08/12826250854" width="100%" height="100%"> Flicker </a>
+<p/>
+</div>
+
 Few cult food outlets start their humble beginnings as hawker. A hawker stall is typically a one person shop. The person knows one thing and one thing better, cooks a truly tasty dish and that brings people to his stall all the time. Over the period of time, their popularity grows and they scale their operations for better customer service, profit and growth. This is the story of Opexill, a foodstall hawker, who started selling fastfood. When her popularity increased, she would exhaust everything in 2 hours. There was opportunity to serve more and earn more. So she starts by increasing her raw material stock, brings more raw material, but she is getting busier day by day, and not able to handle customers. 
 
 > <u>One person show</u> has it's advantages. But there are disadvantages as well. Mostly around scaling up the opertions. Eventually serving more customers gets little challenging, and that's a good problem to have.
