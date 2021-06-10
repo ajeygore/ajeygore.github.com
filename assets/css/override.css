@@ -57,6 +57,11 @@ a:hover {
 .side-bar {
   font-size: 10pt;
 }
+
+#share-page {
+  color: #33B2FF;
+  font-size: 10pt;
+}
 blockquote {
   font-family: 'Kalam', serif;
   background: #f9f9f9;

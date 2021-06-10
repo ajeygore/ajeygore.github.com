@@ -18,4 +18,11 @@ layout: content
 <p/>
 <div class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }}</div>
 <p/>
+
+<div id="share-page" class="pb-2">
+        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter" style="color: #33B2FF;">
+     Share 
+ <i class="sharepage bi bi-twitter"></i>
+</a>
+</div>
 {{ content }}
