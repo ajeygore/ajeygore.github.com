@@ -14,9 +14,12 @@ subpage: about
   </nav>
 
 
-<div class="d-none d-lg-block pb-4 pt-4">
-  <img src="/assets/images/ajey-intro-page.png" width="768px" style="display: block; margin-left:auto; margin-right:auto;" alt="Ajey Gore - Courtsey ThoughtWorks">
+<div class="footnote">
+  <img src="/assets/images/ajey-intro-page.png" width="768px" alt="Ajey Gore - Courtsey ThoughtWorks" />
+Source : ThoughtWorks
+<p/>
 </div>
+
 
 ###### **Namaste!**
 
