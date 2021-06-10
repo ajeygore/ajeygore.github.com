@@ -5,42 +5,38 @@ permalink: /
 title: Hello
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
+<div class="row">
+  <div class="col-md-2">
 
-      <div class="container text-center side-bar">
-        <img class="img-fluid" src="/assets/images/ajey_gore.png" width="200px1" alt="Ajey Gore">
+    <div class="container text-center side-bar">
+      <img class="img-fluid" src="/assets/images/ajey_gore.png" width="200px1" alt="Ajey Gore">
 
-        <div class="pb-4"> 
-          Currently at <a href="https://sequoiacap.com" target="_blank" class="home-underline"  style="text-decoration: none">Sequoia</a>
-        </div>
-        <div>Previously </div>
-        <a href="https://gojek.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none" >gojek</a>
-        <a href="https://twitter.com/codeignition" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">CodeIgnition</a>&nbsp;
-        <a href="https://thoughtworks.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">ThoughtWorks</a>&nbsp;
-        <a href="https://hike.in" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">hoppr</a>&nbsp;
-        <a href="https://foowar.in/" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">FooWar</a>&nbsp;
-        <hr/>
-        <p class="text-center slogan">Earn people, not money</p>
-        <hr/>
-
-        <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
-          <i class="bi bi-twitter"></i>
-        </a>
-        <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
-          <i class="bi bi-linkedin"></i>
-        </a>
+      <div class="pb-4"> 
+        Currently at <a href="https://sequoiacap.com" target="_blank" class="home-underline"  style="text-decoration: none">Sequoia</a>
       </div>
+      <div>Previously </div>
+      <a href="https://gojek.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none" >gojek</a>
+      <a href="https://twitter.com/codeignition" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">CodeIgnition</a>&nbsp;
+      <a href="https://thoughtworks.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">ThoughtWorks</a>&nbsp;
+      <a href="https://hike.in" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">hoppr</a>&nbsp;
+      <a href="https://foowar.in/" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">FooWar</a>&nbsp;
+      <hr/>
+      <p class="text-center slogan">Earn people, not money</p>
+      <hr/>
 
+      <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
+        <i class="bi bi-linkedin"></i>
+      </a>
     </div>
-    <div class="col-md-8">
 
-      {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
-      {{ p1 | markdownify }}
+  </div>
+  <div class="col-md-10">
 
-    </div>
+    {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+
   </div>
 </div>
-</div>
-
