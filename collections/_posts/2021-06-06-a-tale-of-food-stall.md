@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A tale of food stall, a monolith story!
+title: A tale of food stall
 published: true
 categories: ['lessons', 'essay', architecture']
 ---

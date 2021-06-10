@@ -16,7 +16,7 @@ layout: content
   {{ page.title }}
 </div>
 <p/>
-<div class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }}</div>
+  <div class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }} • {% include readingtime.erb %}</div>
 <p/>
 
 <div id="share-page" class="pb-2">
