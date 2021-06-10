@@ -15,7 +15,7 @@ subpage: about
 
 
 <div class="d-none d-lg-block pb-4 pt-4">
-  <img src="/assets/images/ajey-intro-page.png" width="100%" alt="Ajey Gore - Courtsey ThoughtWorks">
+  <img src="/assets/images/ajey-intro-page.png" width="768px" style="display: block; margin-left:auto; margin-right:auto;" alt="Ajey Gore - Courtsey ThoughtWorks">
 </div>
 
 ###### **Namaste!**
