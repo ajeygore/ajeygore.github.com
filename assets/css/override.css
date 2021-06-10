@@ -137,32 +137,38 @@ b {
  * Site
  */
 
-.post-title {
-  font-family: "EB Garamond", sans-serif;
-  font-size:32pt;
-  line-height:1;
-}
-
-/*
- * Static fixed top navbar only on big screens
- */
-@media (min-width: 1025px){
-  body {
-    font-family: 'Libre Franklin', serif;
-    font-size: 12pt;
-    min-height: 100rem;
-    padding-top: 6.5rem;
-    font-weight: 300;
-
-    line-height: 1.5;
+  .post-title {
+    font-family: "EB Garamond", sans-serif;
+    font-size:32pt;
+    line-height:1;
   }
 
-
-  .navbar-fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+  img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
   }
-}
+
+  /*
+   * Static fixed top navbar only on big screens
+   */
+  @media (min-width: 1025px){
+    body {
+      font-family: 'Libre Franklin', serif;
+      font-size: 12pt;
+      min-height: 100rem;
+      padding-top: 6.5rem;
+      font-weight: 300;
+
+      line-height: 1.5;
+    }
+
+
+    .navbar-fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+  }
