@@ -4,6 +4,8 @@ body_class: home
 leadingpath: ./
 permalink: /about
 title: About me and interacting with me.
+lead_image: intro_card.png
+description: Ajey Gore's manual or readme file, know him.
 subpage: about
 ---
 <nav aria-label="breadcrumb">
