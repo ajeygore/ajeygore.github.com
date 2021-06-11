@@ -1,5 +1,3 @@
-
-
 Hello & Welcome! 
 
 This website mostly talks about software engineering and creating products with help from software and technology.
