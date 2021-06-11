@@ -3,8 +3,8 @@ layout: post
 title: A tale of food stall
 published: true
 categories: ['lessons', 'essay', architecture']
+description: An evolution journey of a monolith hawker stall to a micro-services enabled restaurant.
 lead_image: food_stall_card.png
-description: A monolith hawker stall to a micro-services restaurant evolution journey.
 ---
 
 
