@@ -1,8 +1,8 @@
-- title: "Podcast Ngobrolin Startup & Teknologi"
-  link: https://www.youtube.com/embed/Zfk8K-xni3I
-  description: This special episode I will be discussing about becoming better engineering leader with Ajey Gore, Operating Partner of Sequoia Capital and Former Group CTO of Gojek. We discussed how to keep the skills sharp when we are on the highest level of engineering position, hiring, product development and risk 
-  short_description: Podcast Ngobrolin Startup & Teknologi
-  date: 11 March 2021
+- title: "Building Southeast Asia's Next Generation Unicorns"
+  link: https://www.youtube.com/embed/5yUNgmWbid4
+  description: The Southeast Asian billion dollar companies, and the things that fosters growth in them.
+  short_description: Freshworks for Startups 2021
+  date: 27 January 2021
 
 - title: "Earn People & Leadership Lessons from Hyperscaling Gojek"
   link: https://www.youtube.com/embed/HnxK1LmtEXM
@@ -22,12 +22,6 @@
   short_description: GoFigure - Ajey Gore
   date: 21 September 2021
 
-- title: "GoFigure S2 E2 Farewell to Ajey"
-  link: https://www.youtube.com/embed/Hxa4GS6Xjsk
-  description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
-  short_description: GoFigure - Ajey Gore
-  date: 21 September 2021
-
 - title: "Go-Everything - Building for nation"
   link: https://www.youtube.com/embed/rF2DyV6417U
   description: With a super-app providing over 20 different services to customers, and fulfilling millions orders a day, Go-Jek understands the true value of connection. Go-Jek Group CTO, Ajey Gore, explores the socio-economic impact Go-Jek is having on ecosystem in Indonesia.
@@ -40,11 +34,25 @@
   short_description: Ajey Gore at Rise, HongKong 2019
   date: 9 July 2019
 
-- title: "Building Southeast Asia's Next Generation Unicorns"
-  link: https://www.youtube.com/embed/5yUNgmWbid4
-  description: The Southeast Asian billion dollar companies, and the things that fosters growth in them.
-  short_description: Freshworks for Startups 2021
-  date: 27 January 2021
+- title: "Podcast Ngobrolin Startup & Teknologi"
+  link: https://www.youtube.com/embed/Zfk8K-xni3I
+  description: This special episode I will be discussing about becoming better engineering leader with Ajey Gore, Operating Partner of Sequoia Capital and Former Group CTO of Gojek. We discussed how to keep the skills sharp when we are on the highest level of engineering position, hiring, product development and risk 
+  short_description: Podcast Ngobrolin Startup & Teknologi
+  date: 11 March 2021
+
+
+- title: "GoFigure S2 E2 Farewell to Ajey"
+  link: https://www.youtube.com/embed/Hxa4GS6Xjsk
+  description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
+  short_description: GoFigure - Ajey Gore
+  date: 21 September 2021
+
+
+- title: "QnA at Rise"
+  link: https://player.vimeo.com/video/348410063
+  description: Ajey Gore, Group CTO of Go-Jek joins us on the Q+A stage from #RISEConf 2019!
+  short_description: Ajey Gore at Rise, HongKong 2019
+  date: 9 July 2019
 
 - title: "GoFigure S1 E7 - Is Bottom Up Innovation Really Possible at GOJEK?"
   link: https://www.youtube.com/embed/XTNZ5-Q2gl4
