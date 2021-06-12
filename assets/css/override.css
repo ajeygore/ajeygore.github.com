@@ -77,7 +77,7 @@ blockquote:before {
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.1;
-  vertical-align: -0.5em;
+  vertical-align: -0.3em;
 }
 
 blockquote:after {
@@ -86,7 +86,7 @@ blockquote:after {
   font-size: 4em;
   line-height: 0.1em;
   margin-right: 0.05em;
-  vertical-align: -0.6em;
+  vertical-align: -0.7em;
   text-align: right;
 }
 
