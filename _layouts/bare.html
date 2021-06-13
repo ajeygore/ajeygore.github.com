@@ -38,13 +38,13 @@
     <meta property="og:title" content="Ajey Gore - {{ page.title }}" />
 
 
-    {% if page.summary %}
+    {% if page.description %}
     <meta property="og:description" content="{{ page.description }}">
     {% else %}
     <meta property="og:description" content="{{ site.description }}">
     {% endif %}
 
-    {% if page.image %}
+    {% if page.lead_image %}
     <meta property="og:image" content="{{ site.production_url}}/assets/images/{{page.lead_image}}">
     {% else %}
     <meta property="og:image" content="{{ site.production_url}}/assets/images/{{site.lead_image}}">
