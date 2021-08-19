@@ -1,28 +1,35 @@
-- title: "Building Southeast Asia's Next Generation Unicorns"
+- title: "Building NextGen Unicorns"
   link: https://www.youtube.com/embed/5yUNgmWbid4
   description: The Southeast Asian billion dollar companies, and the things that fosters growth in them.
   short_description: Freshworks for Startups 2021
   date: 27 January 2021
 
-- title: "Earn People & Leadership Lessons from Hyperscaling Gojek"
+- title: "Hyperscaling Gojek"
   link: https://www.youtube.com/embed/HnxK1LmtEXM
   description: In this episode, Ajey shared his deep beliefs and motto of “earn people, not money” in various aspects of his career and life. We started from his sharing of his journey at Thoughtworks and what he learned there that helped shape a lot of his growth and leadership. Ajey eventually made a bold move, starting his startup journey which led him to founding CodeIgnition which was then acquired by Gojek.
   short_description: Podcast - Tech Lead Journal
   date: 25 Jan 2021
 
-- title: "Podcast - Shunya One"
+- title: "Podcast-Shunya One"
   link: https://www.youtube.com/embed/maAW5mVTh3s
   description: On Shunya One Podcast this week, We have Ajey Gore Operating Partner - Technology Sequoia Capital, India/Building Companies to IPO and Beyond, Ajey talks to us about how he has always been uncomfortable, how that's what led him from one thing to another and what his next steps will be. 
   short_description: Podcast - Shunya One
   date: 26 February 2021
 
-- title: "GoFigure S2 E1 Farewell to Ajey"
+- title: "Bidding goodbye to gojek part 1 "
   link: https://www.youtube.com/embed/ut7xG3LeVy0
   description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
   short_description: GoFigure - Ajey Gore
   date: 21 September 2021
 
-- title: "Go-Everything - Building for nation"
+- title: "Bidding goodbye to gojek part 2"
+  link: https://www.youtube.com/embed/Hxa4GS6Xjsk
+  description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
+  short_description: GoFigure - Ajey Gore
+  date: 21 September 2021
+
+
+- title: "Building for nation"
   link: https://www.youtube.com/embed/rF2DyV6417U
   description: With a super-app providing over 20 different services to customers, and fulfilling millions orders a day, Go-Jek understands the true value of connection. Go-Jek Group CTO, Ajey Gore, explores the socio-economic impact Go-Jek is having on ecosystem in Indonesia.
   short_description: Paradigm Shift - ThoughtWorks
@@ -34,19 +41,11 @@
   short_description: Ajey Gore at Rise, HongKong 2019
   date: 9 July 2019
 
-- title: "Podcast Ngobrolin Startup & Teknologi"
+- title: "Ngobrolin podcast"
   link: https://www.youtube.com/embed/Zfk8K-xni3I
   description: This special episode I will be discussing about becoming better engineering leader with Ajey Gore, Operating Partner of Sequoia Capital and Former Group CTO of Gojek. We discussed how to keep the skills sharp when we are on the highest level of engineering position, hiring, product development and risk 
   short_description: Podcast Ngobrolin Startup & Teknologi
   date: 11 March 2021
-
-
-- title: "GoFigure S2 E2 Farewell to Ajey"
-  link: https://www.youtube.com/embed/Hxa4GS6Xjsk
-  description: We're starting off GoFigure Season Two with a heartfelt goodbye to one of our most beloved leaders at Gojek, Ajey Gore, former Gojek Group Chief Technology Officer (CTO). In this episode, Kevin Aluwi, Andre Soelistyo, and Ajey Gore talk about Gojek’s early days and what it means to be a CTO of Southeast Asia's leading technology group and a pioneer of the integrated super app and ecosystem model.
-  short_description: GoFigure - Ajey Gore
-  date: 21 September 2021
-
 
 - title: "QnA at Rise"
   link: https://player.vimeo.com/video/348410063
@@ -54,24 +53,24 @@
   short_description: Ajey Gore at Rise, HongKong 2019
   date: 9 July 2019
 
-- title: "GoFigure S1 E7 - Is Bottom Up Innovation Really Possible at GOJEK?"
+- title: "Bottom up innovation at GOJEK?"
   link: https://www.youtube.com/embed/XTNZ5-Q2gl4
   description: "Ajey Gore, Group CTO and Sidu Ponnappa, Head of Global Talent Recruitment joins Nadiem to share their thoughts and opinions about why company leaders should spend time being in the trenches irrespective of their seniority. Listen as they debate about what and how company culture is shaped. Should it come from the top or through bottom-up innovation?"
   short_description: GoFigure Podcast
   date: 24 June 2019
 
-- title: "Gojek - Customer keynote at Google Cloud Next '18"
+- title: "Gojek at Google Cloud Next '18"
   link: https://www.youtube.com/embed/hZRqN8VGYdg
   description: "Debuting on stage with a scooter in Google Cloud Next '18, Ajey (our CTO) shared how GO-JEK scaled its impact with the help of Google technology. Ajey shared how Google Maps enabled our driver partners to pick up customers accurately and provide accurate estimates of food delivery times."
   short_description: Google Cloud Next 18
   date: 1 August 2018
 
-- title: "Over 18 months super app Gojek grows 900x bigger with Google Cloud"
+- title: "Gojek grows 900x bigger with Google Cloud"
   link: https://www.youtube.com/embed/KOhcXUGfsi8
   description: "Gojek used Google Cloud to scale up its solution to Indonesia’s traffic problem—fast. The digital payment super app created marketplaces to connect people with different services through ojeks, or motorcycle taxis. With Google Cloud, Gojek scaled up to 900 times its initial size within 18 months. Today, it uses data to let its ojek drivers know where they’re needed the most."
   short_description: Google Cloud
 
-- title: "GopherCon India 2019 - Keynote - Building engineering teams"
+- title: "GopherCon India 2019 - Keynote"
   link: https://www.youtube.com/embed/93oDpqUcOSw
   description: Ajey Gore talks about building engineering team and engineering first culture in high scale startup.
   short_description: GopherCon India 2019
