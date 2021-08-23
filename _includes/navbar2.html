@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-md navbar-light bg-transparent rounded" aria-label="Eleventh navbar example">
+  <div class="container-fluid">
+    <a class="navbar-brand name-header" href="/">Ajey Gore</a>
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar00" aria-controls="navbar00" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbar00" style="">
+      <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+
+          {% for item in site.data.navigation %} 
+          <a class="me-3 py-2 menu-item" href="{{ item.link }}" {% if page.url == item.link %}style="color: #3EA055; text-decoration: underline"{% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"%}target="_blank"{%endif%}> 
+            {{item.name}} 
+          </a> 
+          {% endfor %} 
+
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

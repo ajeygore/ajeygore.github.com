@@ -1,8 +1,9 @@
 .name-header {
-  font-size: 20pt;
+  font-size: 16pt;
   text-align: center;
   color: '#1695A3';
-  font-family: "Lora";
+  font-family: "Roboto";
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -14,12 +15,12 @@
 
 .slogan {
   font-family: 'Roboto', sans-serif;
-  font-size: 18pt;
+  font-size: 12pt;
 }
 
 .menu-item {
   font-family: 'Roboto', sans-serif;
-  font-size: 16pt;
+  font-size: 10pt;
   color: black;
   text-decoration: none;
 }
@@ -63,14 +64,15 @@ a:hover {
   font-size: 10pt;
 }
 blockquote {
-  font-family: 'Kalam', serif;
+  font-family: 'Lora', serif;
   background: #f9f9f9;
   border-left: 5px solid #2DA044;
   margin: 1.5em 10px;
   padding: 1.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  font-size: 16pt;
+  font-size: 14pt;
   color: #414141;
+  font-style: italic;;
   font-style: italic;
 }
 blockquote:before {
@@ -98,7 +100,8 @@ blockquote p {
 }
 
 .breadcrumb-item {
-  font-size: 10pt;
+  font-size: 12pt;
+  background-color: #DDDDDD;
 }
 
 .footnote {
@@ -136,8 +139,9 @@ b {
 
 .post-title {
   font-family: 'Roboto', sans-serif;
-  font-size:28pt;
+  font-size:20pt;
   line-height:1;
+  font-weight:300;
 }
 
 img {
@@ -148,7 +152,7 @@ img {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 1.5;
 }
 
@@ -156,13 +160,12 @@ body {
 /*
  * Static fixed top navbar only on big screens
  */
-@media (min-width: 1025px){
+/*@media (min-width: 1025px){
   body {
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
     min-height: 100rem;
     padding-top: 6.5rem;
-
     line-height: 1.5;
   }
 
@@ -174,4 +177,4 @@ body {
     left: 0;
     z-index: 1030;
   }
-}
+}*/
