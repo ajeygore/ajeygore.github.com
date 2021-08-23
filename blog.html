@@ -1,11 +1,19 @@
 ---
-layout: content
+layout: bare
 body_class: home
 leadingpath: ./
 permalink: /blog
 title: Random musings
 subpage: blog
 ---
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-transparent">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+  </ol>
+</nav>
+
 {% for post in site.posts %}
 <div class="row pb-2">
   <div class="container">
