@@ -2,7 +2,7 @@
   font-size: 20pt;
   text-align: center;
   color: '#1695A3';
-  font-family: "Roboto", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
   text-decoration: none;
 }
@@ -14,12 +14,12 @@
 
 
 .slogan {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 12pt;
 }
 
 .menu-item {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 12pt;
   color: black;
   text-decoration: none;
@@ -140,7 +140,7 @@ b {
  */
 
 .post-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size:20pt;
   line-height:1;
   font-weight:300;
@@ -153,7 +153,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 12pt;
   line-height: 1.5;
   color: #666666;
@@ -165,7 +165,7 @@ body {
  */
 /*@media (min-width: 1025px){
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 12pt;
     min-height: 100rem;
     padding-top: 6.5rem;
