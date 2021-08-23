@@ -1,6 +1,12 @@
-- name: About
+- name: What
+  link: /
+- name: Blog
+  link: /blog
+- name: Talks
+  link: /Content/Talks
+- name: Readme
   link: /about
+- name: Bio
+  link: /professional-journey
 - name: Content
   link: /content
-- name: Sequoia
-  link: https://sequoiacap.com/
