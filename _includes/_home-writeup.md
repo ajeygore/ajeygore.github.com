@@ -10,7 +10,7 @@ I have been writing software for more than two decades. And always have been cur
 
 Software design and development are still in their infancy. It's pretty new, although it has exploded in the last few years. Writing good software has been a challenge, and the ever-evolving landscape makes it complex. 
 
-> While the software is very flexible and malleable, writing it modular, expandable, and pluggable is complex.
+> While the software is very flexible and malleable, writing it in a modular, expandable, and pluggable way is complex.
 
  Writing software requires us to express our intent precisely, and most of the time, we end up writing tactical solutions with no longevity and scalability. Having a tactical yet scalable and strategic yet faster development cycle is a balancing act that everyone needs to learn. 
 
@@ -36,7 +36,7 @@ Technology has become essential for product growth. The scale of the "technology
 > Technology is the most effective tool to achieve the impossible.
 
 
-After spending a uniquely amazing, crazy, and full of learning journey from 2015 to 2020, I left _**gojek**_ and joined _**Sequoia Capital**_ to pursue my aim of "doing something for the community." One of the main driving forces for me was giving back to the startup community by helping companies with their technology and product-based challenges and learning from them to spread that knowledge to others.
+After spending a uniquely amazing, crazy, and full of learning journey from 2015 to 2020, I left _**gojek**_ and joined _**Sequoia Capital**_ to pursue my aim of "doing something for the community." One of the main driving forces was giving back to the startup community by helping companies with their technology and product-based challenges and learning from them to spread that knowledge to others.
 
 So, if you want to talk about building products, software engineering, or just about people, do drop a line. The easiest way to get to me is Twitter.
 

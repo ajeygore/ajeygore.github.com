@@ -1,0 +1,44 @@
+---
+layout: home
+leadingpath: ./
+permalink: /
+title: Introduction, Hello!
+description: Thoughts on technology, product design and software engineering. 
+lead_image: ajey_gore_website_card.png
+---
+
+<div class="row">
+  <div class="col-md-3">
+
+    <div class="container text-center side-bar">
+      <img class="img-fluid" src="/assets/images/ajey_gore_bw_small.png" width="200px1" alt="Ajey Gore">
+
+      <div class="pb-4"> 
+        <a href="https://sequoiacap.com" target="_blank" class="home-underline"  style="text-decoration: none">Operating Partner/CTO, Sequoia India & SEA</a>
+      </div>
+      <div>Previously </div>
+      <a href="https://gojek.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none" >gojek</a>
+      <a href="https://twitter.com/codeignition" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">CodeIgnition</a>&nbsp;
+      <a href="https://thoughtworks.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">ThoughtWorks</a>&nbsp;
+      <a href="https://hike.in" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">hoppr</a>&nbsp;
+      <a href="https://foowar.in/" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">FooWar</a>&nbsp;
+      <hr/>
+      <p class="text-center slogan">Earn people, not money</p>
+      <hr/>
+
+      <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+
+  </div>
+  <div class="col-md-9">
+
+    {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+
+  </div>
+</div>
