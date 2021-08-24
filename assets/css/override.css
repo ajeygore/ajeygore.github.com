@@ -66,7 +66,7 @@ a:hover {
   font-size: 10pt;
 }
 blockquote {
-  font-family: 'Lora', serif;
+  font-family: 'Klee One', cursive;
   background: #f9f9f9;
   border-left: 5px solid #2DA044;
   margin: 1.5em 10px;
@@ -74,8 +74,6 @@ blockquote {
   quotes: "\201C""\201D""\2018""\2019";
   font-size: 14pt;
   color: #414141;
-  font-style: italic;;
-  font-style: italic;
 }
 blockquote:before {
   color: #ccc;
@@ -83,7 +81,7 @@ blockquote:before {
   font-size: 4em;
   line-height: 0.01em;
   margin-right: 0.05em;
-  vertical-align: -0.4em;
+  vertical-align: -0.5em;
 }
 
 blockquote:after {
@@ -92,7 +90,7 @@ blockquote:after {
   font-size: 4em;
   line-height: 0.01em;
   margin-right: 0.05em;
-  vertical-align: -0.6em;
+  vertical-align: -0.5em;
   text-align: right;
 }
 
