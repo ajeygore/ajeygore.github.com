@@ -1,5 +1,5 @@
 .name-header {
-  font-size: 20pt;
+  font-size: 16pt;
   text-align: center;
   color: '#1695A3';
   font-family: "IBM Plex Sans", sans-serif;
@@ -8,7 +8,7 @@
 }
 
 .name-header-small {
-  font-size: 18pt;;
+  font-size: 14pt;;
   text-align: center;
 }
 
@@ -34,9 +34,6 @@
   transition: all 1s ease; 
 }
 
-#hover-text:hover {
-  letter-spacing: 3px; 
-}
 
 .responsive {
   max-width: 100%;
@@ -105,7 +102,7 @@ blockquote p {
 }
 
 .breadcrumb-item {
-  font-size: 12pt;
+  font-size: 10pt;
   background-color: #DDDDDD;
 }
 
@@ -138,7 +135,7 @@ b {
   font-weight: 700;
 }
 .snippet-description {
-  font-size: 12pt;
+  font-size: 10pt;
 }
 /*
  * Site
