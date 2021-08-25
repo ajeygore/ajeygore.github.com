@@ -38,6 +38,11 @@
   letter-spacing: 3px; 
 }
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .home-underline {
   border-bottom: 2px solid #3EA055;
   font-size: 12pt;

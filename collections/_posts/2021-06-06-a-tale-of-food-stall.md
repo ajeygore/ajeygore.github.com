@@ -8,8 +8,7 @@ lead_image: food_stall_card.png
 ---
 
 
-
-![Hawker Center](/assets/images/hawker_stall.jpg)
+<p><img src="/assets/images/hawker_stall.jpg" alt="Hawker Center" class="responsive" /></p>
 <div class="footnote">
 Source : Creative Commons <a href="https://www.flickr.com/photos/25802865@N08/12826250854" width="100%" height="100%"> Flicker </a>
 <p/>
