@@ -4,10 +4,10 @@ title: On being a good team member.
 published: true
 categories: ['lessons', 'essay']
 description: what does it take to shine at a workplace full of hustle, mission and driving positive impact for the next set of end users? what are the important personal traits when you are working with high performance teams.
-lead_image: team_memeber_shining.png
+lead_image: team_member_shining.png
 ---
 
-<p><img src="/assets/images/team_memeber_shining.png" alt="Teams" class="responsive" /></p>
+<p><img src="/assets/images/team_member_shining.png" alt="Teams" class="responsive" /></p>
 
 **Being a good team member and creating a shining team.**
 
