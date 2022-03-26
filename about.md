@@ -3,7 +3,7 @@ layout: site
 body_class: home
 leadingpath: ./
 permalink: /about
-title: About/My Readme
+title: About/Readme
 lead_image: intro_card.png
 description: Ajey Gore's manual or readme file, know him.
 subpage: about
