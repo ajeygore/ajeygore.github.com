@@ -10,7 +10,7 @@ lead_image: team_member_shining.png
 <p><img src="/assets/images/team_member_shining.png" alt="Teams" class="responsive" /></p>
 **Scaling org, scales the tech naturally, here are few tips to scale the org.**
 
-Scaling a startup after finding PMF is a sudden task; you don't prepare yourself for it, but instead, it just happens out of the blue, one day, you wake up, and there are tons of users. No one knows how to serve them. NO ONE! Experienced founders understand that what it takes to scale the product, it takes an excellent scaled-up organization to scale the product, not vice-versa. 
+Scaling a startup after finding PMis a sudden task; you don't prepare yourself for it, but instead, it just happens out of the blue, one day, you wake up, and there are tons of users. No one knows how to serve them. NO ONE! Experienced founders understand that what it takes to scale the product, it takes an excellent scaled-up organization to scale the product, not vice-versa. 
 
 Scaling tech is directly related to scaling the org, we try to scale the technology, without putting proper thoughts in how to scale the org. If you scale the org, making sure that all the functions work smoothly, you need to focus on communication, collaboration and conversations. But when our teams become big, we can't really have conversations with everyone, so we start replacing them with some processes, habits and rituals. Over the years, I learned it hardway, that scaling the org is about removing frictions from people's daily routine life, we can do many things, but this can be a daunting task, we certainly need to make it a vocation, and we can take it as full-time responsibility, the well-oiled machine. Recently I asked on Twitter what it takes to scale up an organization, and I found some answers; I added a few of mine. Here you go...
 
@@ -24,10 +24,10 @@ Scaling tech is directly related to scaling the org, we try to scale the technol
 * More Emphasis on written docs.
 * Bring a checklist driven culture, kind of point and tell (Japanese metros are a good example) 
 * Metrics - uptime is a business metric, product metric - everyone must not push features and timelines if that impacts uptime. Same way, business metrics should become engineering metrics
-* Publish your metrics every day; that helps everyone understand 
-* Make sure everyone in the org spends at least one week a quarter as a customer service agent, which will inculcate product empathy.
+* Publish your metrics every day; that helps everyone understand the journey, growth and progress for product and business.
+* Make sure everyone in the org spends at least one week a quarter as a customer service agent, that inculcates product empathy.
 * Don't do PRs - an open-source development model operates on distributed, async, extended turn-around time mode. 
-* Trust by default allows more autonomy to flow through the org fabric, and more responsibility gets weaved into the cultural fabric. It means many things, including the following...
+* Trust by default allows more autonomy to flow through the org fabric, and more responsibility gets weaved in the cultural fabric. It means many things, including the following...
 	* everyone gets to see the business performance metrics, 
 	* everyone gets to commit to trunk, 
 	* everyone gets to deploy to production, 
