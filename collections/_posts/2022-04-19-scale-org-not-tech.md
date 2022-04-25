@@ -19,7 +19,7 @@ Scaling tech is directly related to scaling the org, we try to scale the technol
 * Write down your first principles on code, product, and documentation - what do you like?
 * Have a mental model about build/buy/outsource, recommended default, buy everything, optimise for time.
 * Automate everything, including QA 
-* Figure out career paths, objectively tell people that you must know "this" in your skillset to earn this 
+* Figure out career paths, objectively tell people that you must know "this" in your skillset to earn your promotion.
 * Make sure your alums are your ambassadors. 
 * More Emphasis on written docs.
 * Bring a checklist driven culture, kind of point and tell (Japanese metros are a good example) 
