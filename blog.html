@@ -15,7 +15,6 @@ subpage: blog
 </nav>
 
 {% for post in site.posts %}
-  {% if post.published %}
 <div class="row pb-2">
   <div class="container">
     <a href="{{ post.url }}" style="text-decoration: none; color:  #3EA055;"><h5>{{ post.title }}</h5></a>
@@ -28,5 +27,4 @@ subpage: blog
   <p>
     <div class="container pb-4"><a href="{{ post.url }}">Read more</a> </div>  
 </div>
-  {% endif %}
 {% endfor %}
