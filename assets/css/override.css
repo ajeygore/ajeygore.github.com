@@ -102,7 +102,7 @@ blockquote p {
 }
 
 .breadcrumb-item {
-  font-size: 10pt;
+  font-size: 12pt;
   background-color: #DDDDDD;
 }
 
@@ -110,10 +110,10 @@ blockquote p {
   font-size: 8pt;
 }
 h6, h4, h2, h3, h5 {
-  color: #2DA055;
-  font-weight: 700;
+  color: #00000;
+  font-weight: 500;
   font-family: 'Lora', serif;
-  line-height:1;
+  line-height:1.5;
 }
 
 h2 {
@@ -135,7 +135,15 @@ b {
   font-weight: 700;
 }
 .snippet-description {
-  font-size: 10pt;
+  font-size: 1em;
+}
+
+.blog-list-title a {
+  text-decoration: none;
+  font-size: 20pt;
+  line-height: 2.5em;
+  font-family: 'Lora', serif;
+  font-weight: 700;
 }
 /*
  * Site
@@ -144,7 +152,7 @@ b {
 .post-title {
   font-family: 'Lora', serif;
   font-size:24pt;
-  line-height:1;
+  line-height:1em;
   font-weight:700;
   color: black;
 }
@@ -156,11 +164,10 @@ img {
 }
 
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12pt;
-  line-height: 1.5;
-  color: #666666;
-  letter-spacing: 0.02em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13pt;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
 }
 
 
