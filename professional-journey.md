@@ -90,10 +90,6 @@ National Center for Software Technology
 Technical Associate
 Staff Scientist
 
-Contact Information:
-Phone: +65 87513767
-Email: ajeygore@gmail.com
-
 
 Education:
 
