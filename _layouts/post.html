@@ -14,16 +14,16 @@ layout: bare
 <div class="post-title pb-2">
   {{ page.title }}
 </div>
-<p/>
-    <span class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }} • {% include readingtime.erb page_content=page.content %}</span>
-<p/>
+<p></p>
+<span class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }} • {% include readingtime.erb page_content=page.content %}</span>
+<p></p>
 
 <div id="share-page" class="pb-2">
-        <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter" style="color: #33B2FF;">
-     Share 
- <i class="sharepage bi bi-twitter"></i>
-</a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter" style="color: #33B2FF;">
+    Share 
+    <i class="sharepage bi bi-twitter"></i>
+  </a>
 </div>
 <div class="pb-4">
-{{ content }}
+  {{ content }}
 </div>
