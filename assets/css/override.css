@@ -75,7 +75,7 @@ blockquote {
   padding: 1.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   font-size: 14pt;
-  color: #414141;
+  color: black;
 }
 blockquote:before {
   color: #ccc;
@@ -165,7 +165,7 @@ img {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 13pt;
+  font-size: 14pt;
   line-height: 1.5em;
   letter-spacing: 0.01em;
 }
