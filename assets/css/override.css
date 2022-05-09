@@ -14,12 +14,12 @@
 
 
 .slogan {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 12pt;
 }
 
 .menu-item {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 12pt;
   color: black;
   text-decoration: none;
@@ -176,7 +176,7 @@ body {
  */
 /*@media (min-width: 1025px){
   body {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     min-height: 100rem;
     padding-top: 6.5rem;
