@@ -1,12 +1,10 @@
-- name: What
-  link: /site-essay
+- name: About
+  link: /about
 - name: Blog
   link: /blog
 - name: Talks
   link: /content/talks
-- name: About
-  link: /about
+- name: What
+  link: /what
 - name: Bio
   link: /professional-journey
-- name: Content
-  link: /content

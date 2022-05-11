@@ -17,19 +17,53 @@ lead_image: ajey_gore_website_card.png
     </p>
   </div>
 </div>
-
 <div class="row">
-  {% for post in site.posts limit:6 %}
-    <div class="col-sm-4 pb-4">
-      <div class="card">
-        <img class="card-img-top" src="/assets/images/{{ post.lead_image }}" alt="{{ post.title }}">
-        <div class="card-body">
-          <a href="{{ post.url }}">
-            <h5 class="card-title" style="text-decoration: none;">{{ post.title}}</h5>
-          </a>
-          <p class="breadcrumb-item">{{ post.date |  date: '%B %d, %Y' }} • {% include readingtime.erb page_content=post.content %}</p>
+  <div class="col-sm-8">
+    <div class="row">
+      {% for post in site.posts limit:4 %}
+      <div class="col-sm-6 pb-4">
+        <div class="card">
+          <img class="card-img-top" src="/assets/images/{{ post.lead_image }}" alt="{{ post.title }}">
+          <div class="card-body">
+            <a href="{{ post.url }}">
+              <h5 class="card-title" style="text-decoration: none;">{{ post.title}}</h5>
+            </a>
+            <p class="breadcrumb-item">{{ post.date |  date: '%B %d, %Y' }} • {% include readingtime.erb page_content=post.content %}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="row">
+      <div class="col-sm-12 my-auto">
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header">Events/Engagements</div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">AWS CTO Forum</h5>
+            June 16, 2022. Singapore
+            <a href="https://aws.amazon.com/events/summits/india/">
+              <h5 class="card-title">AWS India Summit</h5>
+            </a>
+            May 25, 2022. India
+            <a href="goo.gle/3MEutQ3">
+              <h5 class="card-title">Google Born digital</h5>
+            </a>
+            May 12, 2022. Singapore
+
+            <a href="https://themakerssummit.co/">
+              <h5 class="card-title">Inc 42 - The makers summit</h5>
+            </a>
+            April 22, 2022. Singapore
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 my-auto">
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+          <a class="twitter-timeline" data-width="300" data-height="500" data-theme="light" href="https://twitter.com/AjeyGore?ref_src=twsrc%5Etfw">Tweets by AjeyGore</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
     </div>
-  {% endfor %}
+  </div>
 </div>
