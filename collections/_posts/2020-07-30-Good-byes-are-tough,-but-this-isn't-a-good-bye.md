@@ -2,11 +2,9 @@
 layout: post
 title: Good-byes are tough, but this isn’t a good-bye
 published: true
-categories:
-- passion
-- team work
-- work
-- work culture
+categories: ['passion', 'team', 'work', 'work', 'work culture']
+description: Ajey wrote farewell note for his staff at gojek.
+lead_image: good-bye.png
 ---
 
 _Ajey's farewell note to all gojek staff, July 2020_
