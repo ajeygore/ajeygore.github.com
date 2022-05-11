@@ -75,7 +75,8 @@ blockquote {
   padding: 1.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   font-size: 14pt;
-  color: black;
+  font-weight 600;
+  color: darkblue;
 }
 blockquote:before {
   color: #ccc;

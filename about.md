@@ -36,14 +36,14 @@ I am from India. I studied at University of Allahabad and National centre for So
 
 During last 25 years I have lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad, Jakarta and now live in Singapore.
 
-Started my career as a graphics designer, later sold computers, ran a printing press, helped my elder brother in his cell phone and DTP business and finally settled writing writing software for the rest of my career.
+Started my career as a graphics designer, later sold computers, ran a printing press, helped my elder brother in his cell phone and DTP business and finally settled writing  software for the rest of my career.
 
 I learned many things along the way and met some amazing people over the years,
 
 So this page is about "how to deal with me" as a person. because I fundamentally believe that everyone else is right about me and dealing with me is constant expectation mismatch and a cage fight in a very interesting way.
 
 
-###### What do I do? 
+#### What do I do? 
 
 I'm a Software Engineer at the core. I love building teams and working with people.  **I work for people and people work with me** 
 
@@ -58,7 +58,7 @@ I am sure the perspectives I am trying to put you through and context I am tryin
 Because I learned that **&quot;Saying I don't know, and accepting those mistakes&quot;** are few of many important traits one should have apart from being empathetic, curios and ready to learn.
 
 
-###### Best Way to Communicate with Me
+#### Best Way to Communicate with Me
 
 I am converted extrovert, so I sometimes put perceived information through my introverted lense, that means, sometimes I see what I want to see, so I try to confirm with people on what I perceive, the way I want you to tell me what you think is walk up to me and tell me what you feel.
 
@@ -72,7 +72,7 @@ So I'm ok with being engaged however **you** are comfortable. Take as long as yo
 
 To contact me, reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now.
 
-###### My Work Style
+#### My Work Style
 
 I really enjoy working on complex strategic product problems involving software engineering, design, data science or scaling.  I have a strong interest in software design, team building and how they work with org design.  I believe that the way product evolves over a period of time, organisation should evolve as well. 
 
@@ -85,7 +85,7 @@ When you ask me a question, I will always ask you the context for the question,
 that helps give you more elaborate and explainable answers. I also prefer egalitarian meritocracy. As a consequence I work more effectively with people with whom I can
 [straight-talk](https://www.ribbonfarm.com/2009/11/11/the-gervais-principle-ii-posturetalk-powertalk-babytalk-and-gametalk/){:target="_blank"}.
 
-###### How I Think I Evaluate People
+#### How I Think I Evaluate People
 
 Evaluating performance is often the largest part of a leaders' responsibilities.
 
@@ -101,7 +101,7 @@ I'm not great at this, and am always open to feedback.
 
 Here's a list of my people related biases I think matter most.
 
-###### **I am positively-biased toward:**
+#### **I am positively-biased toward:**
 
 - people who see their work as creativity and recognise that they need constant improvement.
 - people who believe that what they do is a craft and they keep honing their skills around that.
@@ -115,7 +115,7 @@ Here's a list of my people related biases I think matter most.
 - people who are curious and ready to learn all the time
 - people who see success are of the team and failure for themselves
 
-###### **I am negatively-biased against:**
+#### **I am negatively-biased against:**
 
 - people without skin flesh in the game that want a say.
 - people who cause drama.
