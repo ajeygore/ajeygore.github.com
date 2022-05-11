@@ -2,7 +2,7 @@
   font-size: 28px;
   text-align: center;
   color: '#1695A3';
-  font-family: "Catamaran", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -14,12 +14,12 @@
 
 
 .slogan {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 12pt;
 }
 
 .menu-item {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 12pt;
   color: black;
   text-decoration: none;
@@ -111,7 +111,7 @@ blockquote p {
 }
 h6, h4, h2, h3, h5 {
   color: #00000;
-  font-family: 'Lora', serif;
+  font-family: 'Raleway', sans-serif;
   line-height:1.5;
 }
 
@@ -140,14 +140,14 @@ b {
 .blog-list-title a {
   text-decoration: none;
   font-size: 28px;
-  font-family: 'Lora', serif;
+  font-family: 'Raleway', sans-serif;
 }
 /*
  * Site
  */
 
 .post-title {
-  font-family: 'Lora', serif;
+  font-family: 'Raleway', sans-serif;
   font-size:40px;
   line-height:1em;
   color: black;
@@ -161,7 +161,7 @@ img {
 }
 
 body {
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5em;
