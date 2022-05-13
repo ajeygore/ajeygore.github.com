@@ -1,5 +1,5 @@
 .name-header {
-  font-size: 28px;
+  font-size: 2rem;
   text-align: center;
   color: '#1695A3';
   font-family: "Lato", serif;
@@ -8,7 +8,7 @@
 }
 
 .name-header-small {
-  font-size: 14pt;;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -139,7 +139,7 @@ b {
 
 .blog-list-title a {
   text-decoration: none;
-  font-size: 28px;
+  font-size: 2rem;
   font-family: 'Raleway', sans-serif;
 }
 /*
@@ -148,7 +148,7 @@ b {
 
 .post-title {
   font-family: 'Raleway', sans-serif;
-  font-size:40px;
+  font-size:2.5rem;
   line-height:1em;
   color: black;
   font-weight: 600;
