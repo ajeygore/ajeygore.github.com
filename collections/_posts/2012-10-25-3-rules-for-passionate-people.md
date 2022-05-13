@@ -37,7 +37,7 @@ Trusting employees for what they can do is the best. Monitoring bandwidth, insta
 #### Rule No 3 - Give them space - create a slack in the system.
 One of the best way to innovate on projects/products is give space so that people can think of solution, right solution, exciting solution, its not easy, for example - years ago when whole basic compiler could fit into less than 200KB to today where a nice language distribution takes like greater than four-hundred megabytes. Software complexity has gone multifold as well, software is not as easy as writing "hello world" any more.. while languages, frameworks and web apps have taken away the many headaches. Software has evolved into complex assembly and configuration management piece - where 100s of services fit together to produce one of them. So if you want some one to innovate in complex software world, you need to give them space, in short, create a slack!
 
->We should out what needs to be done, but not how to do it? We need to creat a slack right there. The difference lies in what and how. If you tell them how to do it as well, in addition to what needs to be done, then you not only limited the view point, you also limited the possibility of better solution.
+>We should out what needs to be done, but not how to do it? We need to create a slack right there. The difference lies in what and how. If you tell them how to do it as well, in addition to what needs to be done, then you not only limited the view point, you also limited the possibility of better solution.
 
 Giving them space also means trust on estimates they provide, if they over estimate, it will get better with iterations. We can always get better with repitition and more expsore to the domain.
 
