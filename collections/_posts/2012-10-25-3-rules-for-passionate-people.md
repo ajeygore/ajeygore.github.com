@@ -43,7 +43,7 @@ Giving them space also means trust on estimates they provide, if they over estim
 
 Poeple can come up with many more rules related to being the best pay master, strategic vs tactical, long shot vs short shot, work hard, party hard.
 
->Creating right team with right mindeded people with logical thinking is just a starter to create an environment where people flourish.
+>Creating right team with right minded people with logical thinking is just a starter to create an environment where people flourish.
 
 And when people see themselves flourish, that's when they get up everyday, come to work, and work passionately.
 
