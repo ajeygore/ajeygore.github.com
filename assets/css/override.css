@@ -166,5 +166,10 @@ body {
   font-size: 18px;
   line-height: 1.5em;
   letter-spacing: 0.01em;
-  color: #404040;
+  color:black ;
+  background: white;
 }
+.dark-mode {
+        background-color: black;
+        color: white;
+      }
