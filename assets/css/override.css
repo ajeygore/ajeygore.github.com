@@ -2,7 +2,7 @@
   font-size: 2rem;
   text-align: center;
   color: '#1695A3';
-  font-family: "Lato", serif;
+  font-family: sans-serif;
   font-weight: 700;
   text-decoration: none;
 }
@@ -14,12 +14,12 @@
 
 
 .slogan {
-  font-family: 'Lato', serif;
+  font-family: sans-serif;
   font-size: 12pt;
 }
 
 .menu-item {
-  font-family: 'Lato', serif;
+  font-family: sans-serif;
   font-size: 12pt;
   color: black;
   text-decoration: none;
@@ -111,7 +111,7 @@ blockquote p {
 }
 h6, h4, h2, h3, h5 {
   color: #00000;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   line-height:1.5;
 }
 
@@ -140,14 +140,14 @@ b {
 .blog-list-title a {
   text-decoration: none;
   font-size: 2rem;
-  font-family: 'Lato', sans-serif;
+  font-family: sans-serif;
 }
 /*
  * Site
  */
 
 .post-title {
-  ont-family: 'Lato', sans-serif;
+  font-family: sans-serif;
   font-size:2.5rem;
   line-height:1em;
   color: black;
@@ -161,11 +161,11 @@ img {
 }
 
 body {
-  font-family: 'Lato', serif;
+  font-family: 'Helvetica Neuve', sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.5em;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   color:black ;
   background: white;
 }
