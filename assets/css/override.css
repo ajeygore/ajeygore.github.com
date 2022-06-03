@@ -161,12 +161,12 @@ img {
 }
 
 body {
-  font-family: 'Helvetica Neuve', sans-serif;
+  font-family: system-ui, 'Helvetica Neuve', sans-serif;
   font-weight: 400;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  color:black ;
+  color: rgb(76, 76, 76);
   background: white;
 }
 .dark-mode {
