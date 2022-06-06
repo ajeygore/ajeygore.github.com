@@ -19,11 +19,17 @@ layout: bare
 <p></p>
 
 <div id="share-page" class="pb-2">
-  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Share on Twitter" style="color: #33B2FF;">
-    Share 
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Liked? Share on Twitter" style="color: #33B2FF;">
+    Liked? Share
     <i class="sharepage bi bi-twitter"></i>
   </a>
 </div>
 <div class="pb-4">
   {{ content }}
+</div>
+<div id="share-page" class="pb-2 mb-4">
+  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Liked? Share on Twitter" style="color: #33B2FF;">
+    Liked? Share
+    <i class="sharepage bi bi-twitter"></i>
+  </a>
 </div>
