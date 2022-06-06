@@ -23,29 +23,28 @@ Source : ThoughtWorks
 </div>
 
 
-###### **Namaste!**
+###### Namaste!
 
 ```
 /ˈnʌməsteɪ/
-
-  a respectful greeting 
+  a respectful greeting.
   said with hands joined together!
 ```
 
-I am from India. I studied at University of Allahabad and National centre for Software Technology, Bangalore. 
+I am from India. I studied commerce, arts and later software engineering.
 
-During last 25 years I have lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad, Jakarta and now live in Singapore.
+I have lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad, Jakarta and now I live in Singapore.
 
-Started my career as a graphics designer, later sold computers, ran a printing press, helped my elder brother in his cell phone and DTP business and finally settled writing  software for the rest of my career.
+Started my career as a graphics designer, sold computers, ran a printing press, helped my elder brother in his cell phone and DTP business and finally settled writing  software for the most of my life.
 
-I learned many things along the way and met some amazing people over the years,
+I learned many things along the way and met some amazing people over the years, I love to talk to people about technology, poeple, team and building organisations.
 
-So this page is about "how to deal with me" as a person. because I fundamentally believe that everyone else is right about me and dealing with me is constant expectation mismatch and a cage fight in a very interesting way.
+So this page is about "how to deal with me" as a person. because I fundamentally believe that everyone else is right about me and dealing with me is constant expectation mismatch and a cage fight in a very interesting way, where I might appear dogmatic and other person think that they are principled :-)
 
 
 #### What do I do? 
 
-I'm a Software Engineer at the core. I love building teams and working with people.  **I work for people and people work with me** 
+I'm a Software Engineer at the core. I love building teams and working with people.  I work for people and people work with me 
 
 I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms.  I have played various roles in my life and recently at GoJek, now I work with Sequoia Capital as Technology Partner.
 
@@ -55,7 +54,7 @@ In my role, I  work with the CTOs and CPOs of Sequoia’s portfolio companies to
 
 I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it's based on human perception, but you are welcome to correct me. 
 
-Because I learned that **&quot;Saying I don't know, and accepting those mistakes&quot;** are few of many important traits one should have apart from being empathetic, curios and ready to learn.
+Because I learned that &quot;Saying I don't know, and accepting those mistakes&quot; are few of many important traits one should have apart from being empathetic, curios and ready to learn.
 
 
 #### Best Way to Communicate with Me
@@ -66,9 +65,9 @@ I keep my professional life within the confines of office premise, that means th
 
 I don't initiate one on one conversations, just because I run out of time, in turn I am perceived as one of the most difficult people to get time from, but if you really want to talk to me, just call me! I almost immediately respond to calls, because I know you will call me only if it's urgent. Sending me an email has response time ETA upto a week. I have gotten feedback that I am difficult to reach over the years, but here you go with my secret to reachability.
 
-So I'm ok with being engaged however **you** are comfortable. Take as long as you need to. Use many words or few. Use chat, email or call me or meet me in person. Whatever works for you. I'll adjust, and won't judge.
+So I'm ok with being engaged however you are comfortable. Take as long as you need to. Use many words or few. Use chat, email or call me or meet me in person. Whatever works for you. I'll adjust, and won't judge.
 
-**Finally, I have strong opinions that I strive to hold as long as I am shown better ways, so I'm always easiest to persuade with logic and always ready to learn, I always look for traits in people who come with problem &amp; solutions with it, always give me options to choose from and always tell their opinions on something before seeking mine.**
+Finally, I have strong opinions that I strive to hold as long as I am shown better ways, so I'm always easiest to persuade with logic and always ready to learn, I always look for traits in people who come with problem &amp; solutions with it, always give me options to choose from and always tell their opinions on something before seeking mine.
 
 To contact me, reaching through [twitter](https://twitter.com/ajeygore){:target="_blank"} works for now.
 
@@ -101,7 +100,7 @@ I'm not great at this, and am always open to feedback.
 
 Here's a list of my people related biases I think matter most.
 
-#### **I am positively-biased toward:**
+#### I am positively-biased towards:
 
 - people who see their work as creativity and recognise that they need constant improvement.
 - people who believe that what they do is a craft and they keep honing their skills around that.
@@ -115,7 +114,7 @@ Here's a list of my people related biases I think matter most.
 - people who are curious and ready to learn all the time
 - people who see success are of the team and failure for themselves
 
-#### **I am negatively-biased against:**
+#### I am negatively-biased against towards:
 
 - people without skin flesh in the game that want a say.
 - people who cause drama.
