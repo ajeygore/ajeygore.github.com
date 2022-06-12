@@ -1,10 +1,8 @@
 Hello Folks! 
 
-My name is Ajey Gore; I currently work at Sequoia Capital (India and SEA) as an Operating partner, technology / CTO.
-
 Over the last 25 years, I have done various things, failed many businesses, and ended up having a lot of lessons.
 
-This website mostly talks about software engineering and creating products with help from software and technology.
+I mostly talks about software engineering and creating products with help from software and technology.
 
 I have been writing software for more than two decades. And always have been curious about software engineering as a craft, mainly regarding how to write "good" software. I feel the quest just got started; and, it has grown into more curiosity, resulting in more reading, studying, and learning about writing better software, creating better products.
 

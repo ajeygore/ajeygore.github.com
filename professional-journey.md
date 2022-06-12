@@ -9,11 +9,11 @@ published: true
 **Note**:YourStory published my life journey [Interview](https://yourstory.com/2017/05/techie-tuesdays-ajey-gore){:target="_blank"} in 2017. 
 
 ## <u>Ajey Gore</u>
-###### Operating Partner, Technology, Sequoia Capital India & SEA
+#### Operating Partner, Technology, Sequoia Capital India & SEA
 
-Ajey is an established technology leader, enterpreneur & public speaker having a career spanning over 23 years. Currently Ajey works at **Sequoia Capital, India & SEA** as an Operating Partner, Technology. In his current role he advises portfolio companies' CTOs and CPOs through his experience, passion, strategic insight and innovative mindset to help companies scale engineering, data science, artificial intelligence, machine learning, products and design functions. He also advises on structurihng product organization, strategy planning and architecture design to bring the most impact in terms of product scale, adaption and growth. 
+Ajey is an established technology leader, enterpreneur & public speaker having a career spanning over 23 years. Currently Ajey works at **Sequoia Capital, India & SEA** as an Operating Partner, Technology. In his current role he advises portfolio companies' CTOs and CPOs through his experience, strategic insight and innovative mindset to help companies scale engineering, data science, artificial intelligence, machine learning, products and design functions. He also advises on structuring product organization, strategy planning and architecture design to bring the most impact in terms of product scale, adaption and growth. 
 
-###### Group CTO, Gojek (Now GoTo)
+#### Group CTO, Gojek (Now GoTo)
 
 Previously Ajey helped Gojek to scale from 100mn to 10bn company from 2015 - 2020, having sold his startup to Gojek. Initially Ajey took CTO, Payments Role at Gojek. Later he took over the role of Group CTO at Gojek overseeing the development of 20+ products across 4 countries, scaling Gojek from 300,000 orders per month to 120 million orders per month. 
 
@@ -23,7 +23,7 @@ Previously Ajey helped Gojek to scale from 100mn to 10bn company from 2015 - 202
 Ajey has been invited by multiple organisations - He has delivered multiple public talks around technology and organisation structure - across the world, to name a few: Strata Data Conference, Customer keynote at Google Next, regional language and technology conferences in the SEA region. He also has been invited to be a judge at the SWSG Mega startup event in 2017 and 2018. He is a well known name in the technology community in the SEA region. More about his talks and presentations is at his website https://ajeygore.in/content/talks
 
 
-###### Founder, CodeIgnition
+#### Founder, CodeIgnition
 
 Ajey founded CodeIgnition in April 2013. CodeIgnition was a boutique consulting service firm specializing in DevOps, infrastructure automation, infrastructure monitoring and development services for back-ends for the new age cloud applications. 
 
@@ -31,11 +31,11 @@ Ajey served CodeIgnition as CEO, chief architect, client relationship manager, b
 
 CodeIgnition consulted with many reputed names such as Tokopedia, Gojek, Byju's, Blueshift Technologies, Emami Limited, Avanti Education and a large multinational security and backup enterprise.
 
-###### CTO, Hoppr (acquired by Hike Messenger)
+#### CTO, Hoppr (acquired by Hike Messenger)
 
 Ajey served Hoppr (a location based mobile app providing local service information to end user, such as eateries, café and service outlets) as Chief Technology Advisor,  as a CTO he was responsible for product technology vision, team growth and product technology roadmap. Scaling product for upto 1 millions checkins and 70+ million users. 
 
-###### Head of Technology, ThoughtWorks India
+#### Head of Technology, ThoughtWorks India
 
 Ajey served ThoughtWorks as the Head of Technology for India, providing technical vision and guidance for our largest region and with focus on Technology strategy and delivery for India operations. He also worked as a Principal Consultant in ThoughtWorks Professional Services, advising clients on configuration management, systems administration, cloud and virtualization, networking, business continuity planning, application performance, scaling & stability. 
 As his last stint, Ajey started snap-ci in ThoughtWorks, helped various client products to move to cloud.
@@ -89,10 +89,6 @@ ThoughtWorks Inc.
 National Center for Software Technology
 Technical Associate
 Staff Scientist
-
-Contact Information:
-Phone: +65 87513767
-Email: ajeygore@gmail.com
 
 
 Education:

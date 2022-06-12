@@ -1,12 +1,6 @@
-- name: What
-  link: /
 - name: Blog
   link: /blog
 - name: Talks
   link: /content/talks
-- name: About
+- name: Readme
   link: /about
-- name: Bio
-  link: /professional-journey
-- name: Content
-  link: /content
