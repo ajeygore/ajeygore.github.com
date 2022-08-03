@@ -18,12 +18,14 @@ title: Presentations
 {% for talk in site.data.talks %}
 <div class="container border-bottom mb-auto">
   <div class="row">
-    <span class="snippet-title p-2"><h5>{{ talk.title}}</h5></span>
+    <div class="snippet-title p-2">
+      <h4>{{ talk.title}}</h4>
+    </div>
   </div>
   <div class="row">
     <div class="col-md-6">
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="360" height="220" src="{{ talk.link }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="360" height="220" src="{{ talk.link }}" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
     <div class="col-md-6 snippet-description">
