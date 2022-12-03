@@ -54,14 +54,31 @@ Have Fun!
 
 <script>
     function renderHTML() {
-        var strategy = wardleyStrategy();
+        var strategy = wardleyStrategyGenerator();
 
-        // call function wardleyWords and store in an array
-        var words = wardleyWords();
-        // if strategy contains words then format html to be bold
-        for (var i = 0; i < words.length; i++) {
-            strategy = strategy.replace(words[i], "<b>" + words[i] + "</b>");
+
+        // get noun, plural noun and adjective from wardleyfunctions and store them in an array
+        var nouns = wardleyNouns();
+        var pluralNouns = wardleyPluralNouns();
+        var adjectives = wardleyAdjectives();
+
+        // store all these in one array
+        var allWords = nouns.concat(pluralNouns, adjectives);
+
+        // if strategy contains words from allwords then highlight them in bold
+
+
+
+        for (var i = 0; i < allWords.length; i++) {
+            var word = allWords[i];
+            var regex = new RegExp(word, "g");
+            strategy = strategy.replace(regex, "<b>" + word + "</b>");
         }
+
+
+        // for (var i = 0; i < words.length; i++) {
+        //     strategy = strategy.replace(words[i], "<b>" + words[i] + "</b>");
+        // }
         return strategy;
     }
 
