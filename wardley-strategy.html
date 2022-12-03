@@ -1,0 +1,103 @@
+---
+layout: bare
+body_class: home
+leadingpath: ./
+permalink: /wardley-strategy
+title: Wardley Strategy
+subpage: wardley-strategy
+description: Simon Wardley's strategy framework
+lead_image: ajey_gore_website_card.png
+---
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-transparent">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/wardley-strategy">Wardley Strategy</a></li>
+    </ol>
+</nav>
+
+
+
+
+<script src="/assets/scripts/wardley-strategy.js"></script>
+
+<div class="post-title pb-2">
+    Simon Wardley's strategy framework
+</div>
+
+<hr/>
+<button id="strategy_button" onclick="renderStrategy()"> Get a Strategy! </button>
+<div id="strategy_text"></div>
+<hr/>
+
+<h4>Back story below, but you can get five strategies at one go.</h4>
+<hr/>
+<button id="strategy_button" onclick="renderFiveStrategies()"> Get five Strategies </button>
+<div id="five_strategy_text">Click the button above to get a strategy</div>
+<hr/>
+Few days back Dan North tweeted about Simon Wardley's business strategy page, that's no longer available
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Oh noes! <a href="https://twitter.com/swardley?ref_src=twsrc%5Etfw">@swardley</a>&#39;s Strategy Generator has fallen off the internets!<a href="https://t.co/5LbIk0xwwt">https://t.co/5LbIk0xwwt</a></p>&mdash; Daniel Terhorst-North (@tastapod) <a href="https://twitter.com/tastapod/status/1598256647948103680?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I was intrigued, but it wasn't hosted on Heroku anymore, and I kind of wanted to play with it. So I decided to host it myself, and also add a few features.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.</p>&mdash; Ajey Gore (@AjeyGore) <a href="https://twitter.com/AjeyGore/status/1598264857790656513?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Simon was kind enough to share the original blog post and then I got on with it.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.</p>&mdash; Ajey Gore (@AjeyGore) <a href="https://twitter.com/AjeyGore/status/1598264857790656513?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+Now, here it is, hosted on my blog. And fantastic thing about it that all this code including most of the text is written by github-copilot.
+
+Have Fun!
+
+<br>
+
+<hr/>
+
+
+
+
+
+
+
+
+
+
+<script>
+    function renderHTML() {
+        var strategy = wardleyStrategy();
+
+        // call function wardleyWords and store in an array
+        var words = wardleyWords();
+        // if strategy contains words then format html to be bold
+        for (var i = 0; i < words.length; i++) {
+            strategy = strategy.replace(words[i], "<b>" + words[i] + "</b>");
+        }
+        return strategy;
+    }
+
+    function renderStrategy() {
+        var strategy = renderHTML();
+
+        document.getElementById("strategy_text").innerHTML = strategy;
+
+    }
+
+
+    function renderFiveStrategies() {
+        //call strategy function 5 times
+        var strategy1 = renderHTML();
+        var strategy2 = renderHTML();
+        var strategy3 = renderHTML();
+        var strategy4 = renderHTML();
+        var strategy5 = renderHTML();
+
+        //concatenate all the strategies with a horizontal line in between
+        var fiveStrategies = strategy1 + "<hr/>" + strategy2 + "<hr/>" + strategy3 + "<hr/>" + strategy4 + "<hr/>" + strategy5;
+        document.getElementById("five_strategy_text").innerHTML = fiveStrategies;
+
+    }
+
+</script>
