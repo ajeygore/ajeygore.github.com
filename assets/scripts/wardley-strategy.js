@@ -74,7 +74,7 @@ function wardleyStrategyGenerator(){
     // and insert unique random words from array into string template and return the string
 
     // take following sentence and templatize with
-    var template = "Our strategy is <%=adjective%>. We will lead <%=indef_adjective%> effort of the market through our use of <%=noun%> and <%=plural_noun%> to build <%=indef_noun%>. By being both <%=adjective%> and <%=adjective%>, our <%=adjective%> approach will drive <%=noun%> throughout the organization. Synergies between our <%=noun%> and <%=noun%> will enable us to capture the upside by becoming <%=adjective%> in <%=indef_adjective%> world. These transformations combined with <%=noun%> due to our <%=plural_noun%> thought-process and mission-oriented approach will create <%=indef_noun%> through <%=noun%> and <%=plural_noun%>.";
+    var template = "Our strategy is <%=adjective%>. We will lead <%=indef_adjective%> effort of the market through our use of <%=noun%> and <%=plural_noun%> to build <%=indef_noun%>. By being both <%=adjective%> and <%=adjective%>, our <%=adjective%> approach will drive <%=noun%> throughout the organization. Synergies between our <%=noun%> and <%=noun%> will enable us to capture the upside by becoming <%=adjective%> in <%=indef_adjective%> world. These transformations combined with <%=noun%> due to our <%=plural_noun%> driven mission-oriented approach will create <%=indef_noun%> through <%=noun%> and <%=plural_noun%>.";
     // and insert unique random words from array into string template and return the string
 
     var nouns = wardleyNouns();
