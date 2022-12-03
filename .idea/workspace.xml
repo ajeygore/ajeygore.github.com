@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Added new generator with indefinite articles and adjectives">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wardley-strategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/wardley-strategy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/wardley-strategy.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/wardley-strategy.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,7 @@
       <workItem from="1669202290941" duration="90000" />
       <workItem from="1669202388730" duration="31000" />
       <workItem from="1670054406005" duration="4636000" />
-      <workItem from="1670059429092" duration="1998000" />
+      <workItem from="1670059429092" duration="2140000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
@@ -259,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670061249792</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added new generator with indefinite articles and adjectives">
+      <created>1670061438096</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670061438096</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
