@@ -17,7 +17,7 @@ function wardleyPluralNouns() {
     // and return the array
 
     //create an with following words
-    var words = ["social media leaders", "data leaders", "digital leaders"];
+    var words = ["social media leaders", "data leaders", "digital leaders", "technology leaders", "hands-on leaders", "passionate leaders"];
     // and return the array
     return words;
 
