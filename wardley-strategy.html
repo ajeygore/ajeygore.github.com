@@ -24,13 +24,20 @@ lead_image: ajey_gore_website_card.png
 
 <hr/>
 <button onclick="renderStrategy()"> Get a Strategy!</button>
-<div id="strategy_text"></div>
+<br/>
+<div id="strategy_text">Click a button above to get a strategy</div>
+
+<button id="copy_strategy_button" onclick="copyStrategyText()" style="display:none;"}>Copy Strategy</button>
 <hr/>
 
-<h4>Back story below, but you can get five strategies at one go.</h4>
+<h4>Back story below, also get <b>ChatGPT prompt</b> as well.</h4>
 <hr/>
-<button onclick="renderFiveStrategies()"> Get five Strategies</button>
-<div id="five_strategy_text">Click the button above to get a strategy</div>
+<button onclick="getChatGPTPrompt()"> Get ChatGPT prompt</button>
+
+<div id="chat_gpt_prompt">Click the button above to get a strategy</div>
+
+<button id="copy_gpt_button" onclick="copyGPTPromptText()" style="display:none;"}>Copy GPT Prompt</button>
+
 <hr/>
 Few days back Dan North tweeted about Simon Wardley's business strategy page, that's no longer available
 
@@ -86,20 +93,34 @@ Simon was kind enough to share the original blog post and then I got on with it.
 
         function renderStrategy() {
             document.getElementById("strategy_text").innerHTML = renderHTML();
+
+            //set element to have purple border and 4px padding on top and bottom
+            document.getElementById("strategy_text").style.border = "4px solid purple";
+            document.getElementById("strategy_text").style.padding = "4px 0px";
+            //show copy button
+            document.getElementById("copy_strategy_button").style.display = "block";
+
         }
 
+        function getChatGPTPrompt() {
+            document.getElementById("chat_gpt_prompt").innerHTML = "Make a more convincing strategy by adding a few words with statistics and growth projections for my business to the prompt below. <br/>" + renderHTML();
+            //set chat_gpt_prompt element to have blue border and 4px padding on top and on bottom
+            document.getElementById("chat_gpt_prompt").style.border = "4px solid blue";
+            document.getElementById("chat_gpt_prompt").style.padding = "4px";
 
-        function renderFiveStrategies() {
-            //call strategy function 5 times
-            var strategy1 = renderHTML();
-            var strategy2 = renderHTML();
-            var strategy3 = renderHTML();
-            var strategy4 = renderHTML();
-            var strategy5 = renderHTML();
+            //add copy button so that text can be copied
+               document.getElementById("copy_gpt_button").style.display = "block";
 
-            //concatenate all the strategies with a horizontal line in between
-            document.getElementById("five_strategy_text").innerHTML = strategy1 + "<hr/>" + strategy2 + "<hr/>" + strategy3 + "<hr/>" + strategy4 + "<hr/>" + strategy5;
+        }
 
+        function copyGPTPromptText(){
+            var text = document.getElementById("chat_gpt_prompt").innerText;
+            navigator.clipboard.writeText(text);
+        }
+
+        function copyStrategyText(){
+            var text = document.getElementById("strategy_text").innerText;
+            navigator.clipboard.writeText(text);
         }
 
     </script>
