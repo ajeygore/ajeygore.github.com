@@ -32,16 +32,8 @@ function wardleyAdjectives() {
     var words = ["digital first", "agile", "open", "innovative", "efficient", "collaborative", "networked", "customer focused", "disruptive", "sustainable", "culture driven", "cloud based", "secure", "platform first"];
     // and return the array
     return words;
-}
 
-function getNounsPluralNounsAndAdjectives(){
-    var nouns = wardleyNouns();
-    var pluralNouns = wardleyPluralNouns();
-    var adjectives = wardleyAdjectives();
-    var result = nouns.concat(pluralNouns, adjectives);
-    return result;
 }
-
 function wardleyStrategyGenerator() {
     // take following sentence and templatize with
     //Our strategy is <%=adjective%>. We will lead <%=indef_adjective%> effort of the market through our use of <%=noun%> and <%=plural_noun%> to build <%=indef_noun%>. By being both <%=adjective%> and <%=adjective%>, our <%=adjective%> approach will drive <%=noun%> throughout the organization. Synergies between our <%=noun%> and <%=noun%> will enable us to capture the upside by becoming <%=adjective%> in <%=indef_adjective%> world. These transformations combined with <%=noun%> due to our <%=plural_noun%> will create <%=indef_noun%> through <%=noun%> and <%=plural_noun%>.
@@ -50,8 +42,6 @@ function wardleyStrategyGenerator() {
     // take following sentence and templatize with
     var template = "Our strategy is <%=adjective%>. We will lead <%=indef_adjective%> effort of the market through our use of <%=noun%> and <%=plural_noun%> to build <%=indef_noun%>. By being both <%=adjective%> and <%=adjective%>, our <%=adjective%> approach will drive <%=noun%> throughout the organization. Synergies between our <%=noun%> and <%=noun%> will enable us to capture the upside by becoming <%=adjective%> in <%=indef_adjective%> world. These transformations combined with <%=noun%> due to our <%=plural_noun%> driven mission-oriented approach will create <%=indef_noun%> through <%=noun%> and <%=plural_noun%>.";
     // and insert unique random words from array into string template and return the string
-
-
 
 
     var nouns = wardleyNouns();

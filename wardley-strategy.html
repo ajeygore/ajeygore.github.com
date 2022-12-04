@@ -76,14 +76,8 @@ Simon was kind enough to share the original blog post and then I got on with it.
             var pluralNouns = wardleyPluralNouns();
             var adjectives = wardleyAdjectives();
             var allWords = nouns.concat(pluralNouns, adjectives);
-            //var allWords = getNounsPluralNounsAndAdjectives();
             // if strategy contains words from allwords then highlight them in bold
 
-            // for (var i = 0; i < allWords.length; i++) {
-            //     var word = allWords[i];
-            //     var regex = new RegExp(word, "g");
-            //     strategy = strategy.replace(regex, "<b>" + word + "</b>");
-            // }
             for (var i = 0; i < allWords.length; i++) {
                 strategy = strategy.replace(allWords[i], "<b>" + allWords[i] + "</b>");
             }
