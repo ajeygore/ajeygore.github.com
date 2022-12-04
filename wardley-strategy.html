@@ -76,13 +76,13 @@ Simon was kind enough to share the original blog post and then I got on with it.
 
     <script>
         function renderHTML() {
-            var strategy = wardleyStrategyGenerator();
+            let strategy = wardleyStrategyGenerator();
             // get all words
 
-            var nouns = wardleyNouns();
-            var pluralNouns = wardleyPluralNouns();
-            var adjectives = wardleyAdjectives();
-            var allWords = nouns.concat(pluralNouns, adjectives);
+            let nouns = wardleyNouns();
+            let pluralNouns = wardleyPluralNouns();
+            let adjectives = wardleyAdjectives();
+            let allWords = nouns.concat(pluralNouns, adjectives);
             // if strategy contains words from allwords then highlight them in bold
 
             for (var i = 0; i < allWords.length; i++) {
