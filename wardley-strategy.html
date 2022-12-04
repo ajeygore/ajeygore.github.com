@@ -23,81 +23,89 @@ lead_image: ajey_gore_website_card.png
 </div>
 
 <hr/>
-<button onclick="renderStrategy()"> Get a Strategy! </button>
+<button onclick="renderStrategy()"> Get a Strategy!</button>
 <div id="strategy_text"></div>
 <hr/>
 
 <h4>Back story below, but you can get five strategies at one go.</h4>
 <hr/>
-<button onclick="renderFiveStrategies()"> Get five Strategies </button>
+<button onclick="renderFiveStrategies()"> Get five Strategies</button>
 <div id="five_strategy_text">Click the button above to get a strategy</div>
 <hr/>
 Few days back Dan North tweeted about Simon Wardley's business strategy page, that's no longer available
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Oh noes! <a href="https://twitter.com/swardley?ref_src=twsrc%5Etfw">@swardley</a>&#39;s Strategy Generator has fallen off the internets!<a href="https://t.co/5LbIk0xwwt">https://t.co/5LbIk0xwwt</a></p>&mdash; Daniel Terhorst-North (@tastapod) <a href="https://twitter.com/tastapod/status/1598256647948103680?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Oh noes! <a
+        href="https://twitter.com/swardley?ref_src=twsrc%5Etfw">@swardley</a>&#39;s Strategy Generator has fallen off
+    the internets!<a href="https://t.co/5LbIk0xwwt">https://t.co/5LbIk0xwwt</a></p>&mdash; Daniel Terhorst-North
+    (@tastapod) <a href="https://twitter.com/tastapod/status/1598256647948103680?ref_src=twsrc%5Etfw">December 1,
+        2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I was intrigued, but it wasn't hosted on Heroku anymore, and I kind of wanted to play with it. So I decided to host it myself, and also add a few features.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.</p>&mdash; Ajey Gore (@AjeyGore) <a href="https://twitter.com/AjeyGore/status/1598264857790656513?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.</p>&mdash; Ajey Gore
+    (@AjeyGore) <a href="https://twitter.com/AjeyGore/status/1598264857790656513?ref_src=twsrc%5Etfw">December 1,
+        2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Simon was kind enough to share the original blog post and then I got on with it.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bill West has the code on github - <a href="https://t.co/N01IUIeg5l">https://t.co/N01IUIeg5l</a><br><br>The original blog post is ... <a href="https://t.co/R16yLoNyz4">https://t.co/R16yLoNyz4</a></p>&mdash; Simon Wardley (@swardley) <a href="https://twitter.com/swardley/status/1598267705970364418?ref_src=twsrc%5Etfw">December 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.
+    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bill West has the code on github - <a
+            href="https://t.co/N01IUIeg5l">https://t.co/N01IUIeg5l</a><br><br>The original blog post is ... <a
+            href="https://t.co/R16yLoNyz4">https://t.co/R16yLoNyz4</a></p>&mdash; Simon Wardley (@swardley) <a
+            href="https://twitter.com/swardley/status/1598267705970364418?ref_src=twsrc%5Etfw">December 1, 2022</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Now, here it is, hosted on my blog. And fantastic thing about it that all this code including most of the text is written by github-copilot.
+    Now, here it is, hosted on my blog. And fantastic thing about it that all this code including most of the text is
+    written by github-copilot.
 
-Have Fun!
+    Have Fun!
 
-<br/>
+    <br/>
 
-<hr/>
+    <hr/>
 
-<script>
-    function renderHTML() {
-        var strategy = wardleyStrategyGenerator();
+    <script>
+        function renderHTML() {
+            var strategy = wardleyStrategyGenerator();
+            // get all words
 
+            var nouns = wardleyNouns();
+            var pluralNouns = wardleyPluralNouns();
+            var adjectives = wardleyAdjectives();
+            var allWords = nouns.concat(pluralNouns, adjectives);
+            //var allWords = getNounsPluralNounsAndAdjectives();
+            // if strategy contains words from allwords then highlight them in bold
 
-        // get noun, plural noun and adjective from wardleyfunctions and store them in an array
-        var nouns = wardleyNouns();
-        var pluralNouns = wardleyPluralNouns();
-        var adjectives = wardleyAdjectives();
+            // for (var i = 0; i < allWords.length; i++) {
+            //     var word = allWords[i];
+            //     var regex = new RegExp(word, "g");
+            //     strategy = strategy.replace(regex, "<b>" + word + "</b>");
+            // }
+            for (var i = 0; i < allWords.length; i++) {
+                strategy = strategy.replace(allWords[i], "<b>" + allWords[i] + "</b>");
+            }
+            return strategy;
+        }
 
-        // store all these in one array
-        var allWords = nouns.concat(pluralNouns, adjectives);
-
-        // if strategy contains words from allwords then highlight them in bold
-
-
-
-        for (var i = 0; i < allWords.length; i++) {
-            var word = allWords[i];
-            var regex = new RegExp(word, "g");
-            strategy = strategy.replace(regex, "<b>" + word + "</b>");
+        function renderStrategy() {
+            document.getElementById("strategy_text").innerHTML = renderHTML();
         }
 
 
-        // for (var i = 0; i < words.length; i++) {
-        //     strategy = strategy.replace(words[i], "<b>" + words[i] + "</b>");
-        // }
-        return strategy;
-    }
+        function renderFiveStrategies() {
+            //call strategy function 5 times
+            var strategy1 = renderHTML();
+            var strategy2 = renderHTML();
+            var strategy3 = renderHTML();
+            var strategy4 = renderHTML();
+            var strategy5 = renderHTML();
 
-    function renderStrategy() {
-        document.getElementById("strategy_text").innerHTML = renderHTML();
-    }
+            //concatenate all the strategies with a horizontal line in between
+            document.getElementById("five_strategy_text").innerHTML = strategy1 + "<hr/>" + strategy2 + "<hr/>" + strategy3 + "<hr/>" + strategy4 + "<hr/>" + strategy5;
 
+        }
 
-    function renderFiveStrategies() {
-        //call strategy function 5 times
-        var strategy1 = renderHTML();
-        var strategy2 = renderHTML();
-        var strategy3 = renderHTML();
-        var strategy4 = renderHTML();
-        var strategy5 = renderHTML();
-
-        //concatenate all the strategies with a horizontal line in between
-        document.getElementById("five_strategy_text").innerHTML = strategy1 + "<hr/>" + strategy2 + "<hr/>" + strategy3 + "<hr/>" + strategy4 + "<hr/>" + strategy5;
-
-    }
-
-</script>
+    </script>
