@@ -7,71 +7,43 @@ description: Thoughts on technology, product design and  software engineering. D
 lead_image: ajey_gore_website_card.png
 ---
 <div class="container-fluid py-5">
-  <h1 >Ideate.Implement.Iterate</h1>
-  <p class="col-md-12 ">
-    Hello there, this website is about <a href="/what">MY</a> experiences with software engineering, creating products, building teams and scaling organisations for fabulous, frictionless and fantastic products.
-  </p>
-  <p class="col-md-12 ">
-    I write about product engineering, technology, and people/teams/organisations. Checkout my <a href="/blog"> BLOGS</a> and <a href="/content/talks">TALKS</a>.
-  </p>
+    <h1>Ideate.Implement.Iterate</h1>
+    <p class="col-md-12 ">
+        I write about  <a href="/what">MY</a> experiences with software engineering, creating
+        products, building teams and scaling organisations for fabulous, frictionless and fantastic products.
+    </p>
+    <p class="col-md-12 ">
+        I write about product engineering, technology, and people/teams/organisations.
+        <br/>
+        Recently I wrote Simon Wardley's strategy generator, and I loved it. Please checkout <a href="/wardley-strategy">Wardley strategy generator</a>.
+    </p>
 </div>
 <div class="row">
-  <div class="col-md-9">
-    <div class="row">
-      {% for post in site.posts limit:6 %}
-      <div class="col-md-4 pb-4">
-        <div class="card">
-          <img class="card-img-top" src="/assets/images/{{ post.lead_image }}" alt="{{ post.title }}">
-          <div class="card-body">
-            <a href="{{ post.url }}">
-              <h5 class="card-title" style="text-decoration: none;">{{ post.title}}</h5>
-            </a>
-            <p class="breadcrumb-item">{{ post.date |  date: '%B %d, %Y' }} • {% include readingtime.erb page_content=post.content %}</p>
-          </div>
+    <div class="col-md-9">
+        <div class="row">
+            {% for post in site.posts limit:6 %}
+            <div class="col-md-4 pb-4">
+                <div class="card">
+                    <img class="card-img-top" src="/assets/images/{{ post.lead_image }}" alt="{{ post.title }}">
+                    <div class="card-body">
+                        <a href="{{ post.url }}">
+                            <h5 class="card-title" style="text-decoration: none;">{{ post.title}}</h5>
+                        </a>
+                        <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
+                            page_content=post.content %}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
-      </div>
-      {% endfor %}
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="row">
-      <div class="col-md-12 my-auto">
+    <div class="col-md-3">
+
         <div class="card border-dark mb-3">
-          <div class="card-header">Events/Engagements</div>
-          <div class="card-body text-dark">
-            <h6 class="card-title">AWS CTO Forum</h6>
-            <div class="breadcrumb-item">
-              June 16, 2022. Singapore
-            </div>
-            <hr/>
-            <a href="https://aws.amazon.com/events/summits/india/">
-              <h6 class="card-title">AWS India Summit</h6>
-            </a>
-            <div class="breadcrumb-item">
-              May 25, 2022. India
-            </div>
-            <hr/>
-            <a href="https://goo.gle/3MEutQ3">
-              <h6 class="card-title">Google Born digital</h6>
-            </a>
-            <div class="breadcrumb-item">
-              May 12, 2022. Singapore
-            </div>
-            <hr/>
-            <a href="https://themakerssummit.co/">
-              <h6 class="card-title">Inc 42 - The makers summit</h6>
-            </a>
-            <div class="breadcrumb-item">
-              April 22, 2022. Singapore
-            </div>
-          </div>
+            <a class="twitter-timeline" data-height="500" data-theme="light"
+               href="https://twitter.com/AjeyGore?ref_src=twsrc%5Etfw">Tweets by AjeyGore</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-      </div>
-      <div class="col-sm-12 my-auto">
-        <div class="card border-dark mb-3">
-          <a class="twitter-timeline"  data-height="500" data-theme="light" href="https://twitter.com/AjeyGore?ref_src=twsrc%5Etfw">Tweets by AjeyGore</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 </div>
