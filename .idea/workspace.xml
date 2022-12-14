@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Borders.... oh those boring borders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wardley-strategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/wardley-strategy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +223,7 @@
       <workItem from="1669202388730" duration="31000" />
       <workItem from="1670054406005" duration="4636000" />
       <workItem from="1670059429092" duration="14476000" />
-      <workItem from="1670973781153" duration="1589000" />
+      <workItem from="1670973781153" duration="2237000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>

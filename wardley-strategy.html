@@ -60,62 +60,62 @@ I was intrigued, but it wasn't hosted on Heroku anymore, and I kind of wanted to
 Simon was kind enough to share the original blog post and then I got on with it.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bill West has the code on github - <a
-            href="https://t.co/N01IUIeg5l">https://t.co/N01IUIeg5l</a><br><br>The original blog post is ... <a
-            href="https://t.co/R16yLoNyz4">https://t.co/R16yLoNyz4</a></p>&mdash; Simon Wardley (@swardley) <a
-            href="https://twitter.com/swardley/status/1598267705970364418?ref_src=twsrc%5Etfw">December 1, 2022</a>
-    </blockquote>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bill West has the code on github - <a
+        href="https://t.co/N01IUIeg5l">https://t.co/N01IUIeg5l</a><br><br>The original blog post is ... <a
+        href="https://t.co/R16yLoNyz4">https://t.co/R16yLoNyz4</a></p>&mdash; Simon Wardley (@swardley) <a
+        href="https://twitter.com/swardley/status/1598267705970364418?ref_src=twsrc%5Etfw">December 1, 2022</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    Now, here it is, hosted on my blog. And fantastic thing about it that all this code including most of the text is
-    written by github-copilot.
+Now, here it is, hosted on my blog. And fantastic thing about it that all this code including most of the text is
+written by github-copilot.
 
-    Have Fun!
+Have Fun!
 
-    <br/>
+<br/>
 
-    <hr/>
+<hr/>
 
-    <script>
-        function renderHTML() {
-            let strategy = wardleyStrategyGenerator();
-            // get all words
+<script>
+    function renderHTML() {
+        let strategy = wardleyStrategyGenerator();
+        // get all words
 
-            let nouns = wardleyNouns();
-            let pluralNouns = wardleyPluralNouns();
-            let adjectives = wardleyAdjectives();
-            let allWords = nouns.concat(pluralNouns, adjectives);
-            // if strategy contains words from allwords then highlight them in bold
+        let nouns = wardleyNouns();
+        let pluralNouns = wardleyPluralNouns();
+        let adjectives = wardleyAdjectives();
+        let allWords = nouns.concat(pluralNouns, adjectives);
+        // if strategy contains words from allwords then highlight them in bold
 
-            for (var i = 0; i < allWords.length; i++) {
-                strategy = strategy.replace(allWords[i], "<b>" + allWords[i] + "</b>");
-            }
-            return strategy;
+        for (var i = 0; i < allWords.length; i++) {
+            strategy = strategy.replace(allWords[i], "<b>" + allWords[i] + "</b>");
         }
+        return strategy;
+    }
 
-        function renderStrategy() {
-            document.getElementById("strategy_text").innerHTML = renderHTML();
+    function renderStrategy() {
+        document.getElementById("strategy_text").innerHTML = renderHTML();
 
-            document.getElementById("copy_strategy_button").style.display = "block";
+        document.getElementById("copy_strategy_button").style.display = "block";
 
-        }
+    }
 
-        function getChatGPTPrompt() {
-            document.getElementById("chat_gpt_prompt").innerHTML = "Make a more convincing strategy by adding a few words with statistics and growth projections for my business to the prompt below. <br/>" + renderHTML();
+    function getChatGPTPrompt() {
+        document.getElementById("chat_gpt_prompt").innerHTML = "Make a more convincing strategy by adding a few words with statistics and growth projections for my business to the prompt below. <br/>" + renderHTML();
 
-            //add copy button so that text can be copied
-            document.getElementById("copy_gpt_button").style.display = "block";
+        //add copy button so that text can be copied
+        document.getElementById("copy_gpt_button").style.display = "block";
 
-        }
+    }
 
-        function copyGPTPromptText() {
-            var text = document.getElementById("chat_gpt_prompt").innerText;
-            navigator.clipboard.writeText(text);
-        }
+    function copyGPTPromptText() {
+        var text = document.getElementById("chat_gpt_prompt").innerText;
+        navigator.clipboard.writeText(text);
+    }
 
-        function copyStrategyText() {
-            var text = document.getElementById("strategy_text").innerText;
-            navigator.clipboard.writeText(text);
-        }
+    function copyStrategyText() {
+        var text = document.getElementById("strategy_text").innerText;
+        navigator.clipboard.writeText(text);
+    }
 
-    </script>
+</script>
