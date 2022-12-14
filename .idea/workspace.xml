@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Added new generator with indefinite articles and adjectives">
+    <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Borders.... oh those boring borders">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/wardley-strategy.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/wardley-strategy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wardley-strategy.html" beforeDir="false" afterPath="$PROJECT_DIR$/wardley-strategy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -60,25 +61,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/agore/workspace/ajeygore.github.com",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.rails.projectView.checked": "true",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/agore/workspace/ajeygore.github.com&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/css" />
@@ -222,7 +223,8 @@
       <workItem from="1669202290941" duration="90000" />
       <workItem from="1669202388730" duration="31000" />
       <workItem from="1670054406005" duration="4636000" />
-      <workItem from="1670059429092" duration="2140000" />
+      <workItem from="1670059429092" duration="14476000" />
+      <workItem from="1670973781153" duration="1589000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
@@ -266,7 +268,70 @@
       <option name="project" value="LOCAL" />
       <updated>1670061438096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added new generator with indefinite articles and adjectives">
+      <created>1670061581107</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670061581107</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Tweaked the sentences">
+      <created>1670061671811</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670061671811</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Tweaked the sentences">
+      <created>1670117908514</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670117908514</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Tweaked the leaders">
+      <created>1670120793660</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670120793660</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed algorithm a bit">
+      <created>1670126646324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670126646324</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Home page">
+      <created>1670127125967</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670127125967</updated>
+    </task>
+    <task id="LOCAL-00013" summary="GPT prompt buttons">
+      <created>1670128368873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670128368873</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Fixed JS Variables declaration">
+      <created>1670129855634</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670129855634</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Borders.... oh those boring borders">
+      <created>1670130578361</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670130578361</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +361,14 @@
     <MESSAGE value="Added Simon Wardley tweet" />
     <MESSAGE value="removed button id" />
     <MESSAGE value="Added new generator with indefinite articles and adjectives" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new generator with indefinite articles and adjectives" />
+    <MESSAGE value="Tweaked the sentences" />
+    <MESSAGE value="Tweaked the leaders" />
+    <MESSAGE value="Changed algorithm a bit" />
+    <MESSAGE value="Home page" />
+    <MESSAGE value="GPT prompt buttons" />
+    <MESSAGE value="Fixed JS Variables declaration" />
+    <MESSAGE value="Borders.... oh those boring borders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Borders.... oh those boring borders" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

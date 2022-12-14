@@ -25,19 +25,21 @@ lead_image: ajey_gore_website_card.png
 <hr/>
 <button onclick="renderStrategy()"> Get a Strategy!</button>
 <br/>
-<div id="strategy_text">Click a button above to get a strategy</div>
 
-<button id="copy_strategy_button" onclick="copyStrategyText()" style="display:none;"}>Copy Strategy</button>
+<br/>
+<div id="strategy_text">Click a button above to get a strategy</div>
+<br/>
+<button id="copy_strategy_button" onclick="copyStrategyText()" style="display:none;" }>Copy Strategy</button>
 <hr/>
 
 <h4>Back story below, also get <b>ChatGPT prompt</b> as well.</h4>
 <hr/>
 <button onclick="getChatGPTPrompt()"> Get ChatGPT prompt</button>
-
+<br/>
+<br/>
 <div id="chat_gpt_prompt">Click the button above to get a strategy</div>
-
-<button id="copy_gpt_button" onclick="copyGPTPromptText()" style="display:none;"}>Copy GPT Prompt</button>
-
+<br/>
+<button id="copy_gpt_button" onclick="copyGPTPromptText()" style="display:none;" }>Copy GPT Prompt</button>
 <hr/>
 Few days back Dan North tweeted about Simon Wardley's business strategy page, that's no longer available
 
@@ -94,31 +96,24 @@ Simon was kind enough to share the original blog post and then I got on with it.
         function renderStrategy() {
             document.getElementById("strategy_text").innerHTML = renderHTML();
 
-            //set element to have purple border and 4px padding on top and bottom
-            document.getElementById("strategy_text").style.border = "1px solid purple";
-            document.getElementById("strategy_text").style.padding = "4px 0px";
-            //show copy button
             document.getElementById("copy_strategy_button").style.display = "block";
 
         }
 
         function getChatGPTPrompt() {
             document.getElementById("chat_gpt_prompt").innerHTML = "Make a more convincing strategy by adding a few words with statistics and growth projections for my business to the prompt below. <br/>" + renderHTML();
-            //set chat_gpt_prompt element to have blue border and 4px padding on top and on bottom
-            document.getElementById("chat_gpt_prompt").style.border = "1px solid blue";
-            document.getElementById("chat_gpt_prompt").style.padding = "4px";
 
             //add copy button so that text can be copied
-               document.getElementById("copy_gpt_button").style.display = "block";
+            document.getElementById("copy_gpt_button").style.display = "block";
 
         }
 
-        function copyGPTPromptText(){
+        function copyGPTPromptText() {
             var text = document.getElementById("chat_gpt_prompt").innerText;
             navigator.clipboard.writeText(text);
         }
 
-        function copyStrategyText(){
+        function copyStrategyText() {
             var text = document.getElementById("strategy_text").innerText;
             navigator.clipboard.writeText(text);
         }
