@@ -18,7 +18,7 @@ Also Running machine learning frameworks on laptops with smaller loads has sever
 
 Apple's M1 arm based chips, which is used in the latest MacBooks, is designed to be a powerful and efficient processor for running machine learning workloads. The macos-metal and macos-tensorflow frameworks enable running TensorFlow 2 on M1 machines, which provides even better performance than running it on traditional x86 processors because it's SoC rather than having different components plugging in together - read more [here](https://www.apple.com/sg/newsroom/2022/03/apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer/)
 
-Anyway, getting it right is little bit tricky, but here are simple things you can do get it write. After tons of experimentation, and of course, stackoverflowing, I was able to get it right.
+Anyway, getting it right is little bit tricky, but here are simple things you can do get it write.
 
 * Follow the [guide](https://developer.apple.com/metal/tensorflow-plugin/) at Apple's Metal page
 * Execute 
@@ -36,7 +36,7 @@ Anyway, getting it right is little bit tricky, but here are simple things you ca
 
       python -m pip install tensorflow-macos==2.9.0
 
-* Next check tensorflow-metal version, it should match up with tensorflow-macos on [this] https://developer.apple.com/metal/tensorflow-plugin/ page under releases section, eg for 2.9.0 it should be 0.5.0
+* Next check tensorflow-metal version, it should match up with tensorflow-macos on [this](https://developer.apple.com/metal/tensorflow-plugin/) page under releases section, eg for 2.9.0 it should be 0.5.0
 
       python -m pip install tensorflow-metal==0.5.0
 
