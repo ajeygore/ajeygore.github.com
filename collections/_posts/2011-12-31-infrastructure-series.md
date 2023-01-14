@@ -2,7 +2,7 @@
 layout: post
 title: Enterprise Infrastructure Series
 categories:
-- Automation
+- Automationword
 - Configuration Management
 - infrastructure
 - Virtualization

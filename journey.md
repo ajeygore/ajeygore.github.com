@@ -1,5 +1,5 @@
 ---
-layout: site
+layout: bare
 body_class: home
 title: Journey
 permalink: /journey
