@@ -12,13 +12,13 @@ lead_image: metal_tensorflow.png
 #### I ran into issues when getting started with Tensorflow 2.0 on macOS M1, this post may help others
 
 macOS M1 machine come with GPU framework, [Metal](https://developer.apple.com/metal/) supports new M1 CPUs with Graphics capabilities as well. 
-Over last 2 years, Apple has been working toward making M1 platform more accessible for Machine Learning. 
+Over the last 2 years, Apple has been working towards making M1 platform more accessible for Machine Learning.
 
-Also Running machine learning frameworks on laptops and smaller loads has several benefits. One of the main benefits is the ability to work on projects on-the-go, without being tied to a dedicated workstation or server. Additionally, on laptops smaller loads typically have less power consumption.
+Also Running machine learning frameworks on laptops with smaller loads has several benefits. One of the main benefits is the ability to work on projects on-the-go, without being tied to a dedicated workstation or server. Additionally, on laptops smaller loads typically have less power consumption.
 
 Apple's M1 arm based chips, which is used in the latest MacBooks, is designed to be a powerful and efficient processor for running machine learning workloads. The macos-metal and macos-tensorflow frameworks enable running TensorFlow 2 on M1 machines, which provides even better performance than running it on traditional x86 processors because it's SoC rather than having different components plugging in together - read more [here](https://www.apple.com/sg/newsroom/2022/03/apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer/)
 
-Anyway, getting it right is little bit tricks, but here are simple things you can do get it write.
+Anyway, getting it right is little bit tricky, but here are simple things you can do get it write. After tons of experimentation, and of course, stackoverflowing, I was able to get it right.
 
 * Follow the [guide](https://developer.apple.com/metal/tensorflow-plugin/) at Apple's Metal page
 * Execute 
