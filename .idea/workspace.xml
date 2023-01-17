@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +232,7 @@
       <workItem from="1673353350321" duration="1911000" />
       <workItem from="1673572994134" duration="5000" />
       <workItem from="1673670166846" duration="4002000" />
+      <workItem from="1673924779820" duration="1137000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
