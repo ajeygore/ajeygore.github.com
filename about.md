@@ -16,7 +16,7 @@ subpage: about
 </nav>
 
 <div class="footnote">
-  <img src="/assets/images/ajey-intro-page.png" width="768px" alt="Ajey Gore - Courtsey ThoughtWorks" />
+  <img src="/assets/images/ajey-intro-page.png" width="75%" alt="Ajey Gore - Courtsey ThoughtWorks" />
 Source : ThoughtWorks
 <p/>
 </div>
