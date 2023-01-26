@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/bare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/bare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/base_override.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/override.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/override.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +234,7 @@
       <workItem from="1673670166846" duration="4002000" />
       <workItem from="1673924779820" duration="1737000" />
       <workItem from="1674612810793" duration="655000" />
-      <workItem from="1674619326449" duration="2076000" />
+      <workItem from="1674619326449" duration="2262000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
