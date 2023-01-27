@@ -6,48 +6,58 @@ title: Hello!
 description: Thoughts on technology, product design and  software engineering. Discover content on building impactful teams, org and software products.
 lead_image: ajey_gore_website_card.png
 ---
-<br/>
-<div class="container-md-12">
-    <h1>Ideate.Implement.Iterate</h1>
-    <p class="col-md-12 ">
-        I write about <a href="/what">MY</a> experiences with software engineering, creating
-        products, building teams and scaling organisations for fabulous, frictionless and fantastic products.
-    </p>
-    <p class="col-md-12 ">
-        I write about product engineering, technology, and people/teams/organisations.
-        <br/>
-        Recently I wrote Simon Wardley's strategy generator, and I loved it. Please checkout <a
-            href="/wardley-strategy">Wardley strategy generator</a>.
-    </p>
-</div>
-<br/>
-<br/>
 <div class="row">
     <div class="col-md-9">
-        <div class="row">
-            {% for post in site.posts limit:6 %}
-            <div class="col-md-4 pb-4">
-                <div class="card">
-                    <img class="card-img-top" src="/assets/images/{{ post.lead_image }}" alt="{{ post.title }}">
-                    <div class="card-body">
-                        <a href="{{ post.url }}">
-                            <h5 class="card-title" style="text-decoration: none;">{{ post.title}}</h5>
-                        </a>
-                        <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
-                            page_content=post.content %}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-    <div class="col-md-3">
 
+        <div class="col-md-12">
+            <div class="name-header">IDEATE ⁕ IMPLEMENT ⁕ ITERATE</div>
+            <br/>
+            <p class="col-md-12 ">
+                I write about <a href="/what">MY</a> experiences with software engineering, creating
+                products, building teams and scaling organisations for fabulous, frictionless and fantastic
+                products.
+            </p>
+            <p class="col-md-12 ">
+                I write about product engineering, technology, and people/teams/organisations.
+                <br/>
+                Recently I wrote Simon Wardley's strategy generator, and I loved it. Please checkout <a
+                    href="/wardley-strategy">Wardley strategy generator</a>.
+            </p>
+        </div>
+
+        <br/>
+
+        <div class="row">
+
+            <h2>Posts</h2>
+
+        </div>
+        {% for post in site.posts %}
+        <div class="row pb-2 pt-2">
+            <div class="col-6">
+                <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}">
+            </div>
+            <div class="col-6">
+                <a href="{{ post.url }}">
+                    <h5 style="text-decoration: none;">{{ post.title}}</h5>
+                </a>
+                <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
+                    page_content=post.content %}</p>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+
+    <div class="col-md-3">
         <div class="card border-dark mb-3">
-            <a class="twitter-timeline" data-height="500" data-theme="light"
+            <a class="twitter-timeline" data-height="700px" data-theme="light"
                href="https://twitter.com/AjeyGore?ref_src=twsrc%5Etfw">Tweets by AjeyGore</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
 </div>
-</div>
+
+
+
