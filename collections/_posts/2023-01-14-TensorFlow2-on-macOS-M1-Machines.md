@@ -21,6 +21,9 @@ Apple's M1 arm based chips, which is used in the latest MacBooks, is designed to
 
 Anyway, getting it right is little bit tricky, but here are simple things you can do get it write.
 
+NOTE: Please note that Code snippets wrap in small screen, and also take care that code snippets are for reference only, and may not work as is in the future.
+
+
 * Follow the [guide](https://developer.apple.com/metal/tensorflow-plugin/) at Apple's Metal page
 * Execute 
 
