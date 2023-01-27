@@ -1,5 +1,3 @@
-- name: Blog
-  link: /blog
 - name: Talks
   link: /content/talks
 - name: Readme
