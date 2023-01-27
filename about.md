@@ -9,26 +9,23 @@ description: Ajey Gore's manual or readme file, know him.
 subpage: about
 ---
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-transparent p-4">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">About</li>
-    </ol>
-  </nav>
-
+  <ol class="breadcrumb bg-transparent">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/about">About</a></li>
+  </ol>
+</nav>
 
 <div class="footnote">
-  <img src="/assets/images/ajey-intro-page.png" width="768px" alt="Ajey Gore - Courtsey ThoughtWorks" />
+  <img src="/assets/images/ajey-intro-page.png" width="75%" alt="Ajey Gore - Courtsey ThoughtWorks" />
 Source : ThoughtWorks
 <p/>
 </div>
 
 
-###### Namaste!
+##### Namaste!
 
 ```
-/ˈnʌməsteɪ/
-  a respectful greeting.
-  said with hands joined together!
+IPA /ˈnʌməsteɪ/ means a respectful greeting, said with hands joined together!
 ```
 
 I am from India. I studied commerce, arts and later software engineering.
