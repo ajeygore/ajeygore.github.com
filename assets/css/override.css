@@ -6,6 +6,13 @@
     text-decoration: none;
 }
 
+.site-headline {
+    font-size: 3.5em;
+    text-align: left;
+    font-family: "Raleway", "Inter", sans-serif;
+    font-weight: 200;
+}
+
 .navbar {
     background-color: whitesmoke;
 }
@@ -177,14 +184,14 @@ img {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, sans-serif;
+    font-family: "Inter",sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5em;
     letter-spacing: 0.02em;
     color: rgb(76, 76, 76);
     background: white;
-    padding-top: 60px;
+    padding-top: 70px;
 }
 
 .dark-mode {
