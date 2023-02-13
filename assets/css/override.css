@@ -186,18 +186,10 @@ img {
 
 body {
     font-family: "Inter",sans-serif;
-    font-weight: 400;
     font-size: 1em;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
-    color: rgb(76, 76, 76);
-    background: white;
+    line-height: 1.25em;
+    letter-spacing: 0.01em;
     padding-top: 70px;
-}
-
-.dark-mode {
-    background-color: black;
-    color: white;
 }
 
 pre,
