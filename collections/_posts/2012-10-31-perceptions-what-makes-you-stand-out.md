@@ -20,7 +20,7 @@ Every time I look at people judging others and creating perceptions about them. 
 
 Everyone judges someone else because they want them to behave like or become better than them - that's the perceived image. On the other hand, they want people to know "what they are rather than who they are," and that's the projected image.
 
-> We are continuously trying to project better version of ourselvesi. The mismatch between "projected" vs. "perceived" image causes misjudgment about the person.
+> We are continuously trying to project better version of ourselves. The mismatch between "projected" vs. "perceived" image causes misjudgment about the person.
 
 Over the period of time this mismatch grows beyond the appropriate tolerance levels because people are already getting trained/annoyed/pleased over time. This tends to make "highly" biased, resulting in the judgment of every action being biased. People make up their minds about the person as useless or a superstar.
 
