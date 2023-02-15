@@ -2,11 +2,15 @@
 layout: post
 title: Perceptions - what makes you stand out?
 published: true
-categories:
-- people behavior
-- people perceptions
-- thought process
+lead_image: blog/eye_projection.png
 ---
+
+
+<p><img src="/assets/images/blog/eye_projection.png" alt="Perceived vs Projected Image" class="responsive" /></p>
+<div class="footnote">
+Source : Stable Diffusion 
+<p/>
+</div>
 
 (Revised on 13/02/2023)
 
