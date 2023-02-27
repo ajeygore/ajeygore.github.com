@@ -7,9 +7,8 @@
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/readingtime.erb" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/readingtime.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/override.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/override.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/_posts/2023-01-14-TensorFlow2-on-macOS-M1-Machines.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections/_posts/2023-01-14-TensorFlow2-on-macOS-M1-Machines.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -262,7 +261,7 @@
       <workItem from="1676954606811" duration="506000" />
       <workItem from="1676955144244" duration="827000" />
       <workItem from="1677118148089" duration="504000" />
-      <workItem from="1677480031887" duration="312000" />
+      <workItem from="1677480031887" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
