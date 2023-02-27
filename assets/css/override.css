@@ -185,6 +185,12 @@ b {
     line-height: 1em;
     color: black;
     font-weight: 600;
+
+}
+
+.post-title-small:hover {
+    color:#3EA055;
+
 }
 
 img {
