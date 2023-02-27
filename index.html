@@ -36,11 +36,11 @@ lead_image: ajey_gore_website_card.png
                 <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}">
             </div>
             <div class="col-8">
-                <a href="{{ post.url }}">
-                    <h5 style="text-decoration: none;">{{ post.title}}</h5>
-                </a>
                 <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
                     page_content=post.content %}</p>
+                <a href="{{ post.url }}">
+                    <div class="post-title-small">{{ post.title}}</div>
+                </a>
             </div>
         </div>
 

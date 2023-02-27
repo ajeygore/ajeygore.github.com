@@ -178,6 +178,13 @@ b {
     color: black;
     font-weight: 600;
 }
+.post-title-small {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 1em;
+    color: black;
+    font-weight: 600;
+}
 
 img {
     display: block;
