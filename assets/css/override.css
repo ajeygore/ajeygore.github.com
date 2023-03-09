@@ -87,7 +87,7 @@ a:hover {
 }
 
 blockquote {
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Shantell Neue', cursive;
     background: #f9f9f9;
     border-left: 5px solid #2DA044;
     margin: 1.5em 10px;
@@ -132,19 +132,10 @@ blockquote p {
 }
 
 h6, h4, h2, h3, h5 {
-    color: #000;
-    font-family: "Inter", sans-serif;
-    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
 }
 
-h2 {
-    font-size: 16pt;
-}
-
-b {
-    font-weight: 800;
-}
 
 .container {
     max-width: 960px;
@@ -171,6 +162,10 @@ b {
 /*
  * Site
  */
+
+.post-title-link {
+    text-decoration: none;
+}
 
 .post-title {
     font-family: "Raleway";
@@ -201,7 +196,7 @@ img {
 
 body {
     font-family: "Inter",sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.25em;
     letter-spacing: 0.01em;
     padding-top: 70px;

@@ -38,7 +38,7 @@ lead_image: ajey_gore_website_card.png
             <div class="col-8">
                 <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
                     page_content=post.content %}</p>
-                <a href="{{ post.url }}">
+                <a class="post-title-link" href="{{ post.url }}">
                     <div class="post-title-small">{{ post.title}}</div>
                 </a>
             </div>
