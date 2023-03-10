@@ -7,7 +7,7 @@ description: Thoughts on technology, product design and  software engineering. D
 lead_image: ajey_gore_website_card.png
 ---
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-12">
         <div class="col-md-12">
 
             <div class="post-title">Ideate Implement Iterate</div>
@@ -34,7 +34,7 @@ lead_image: ajey_gore_website_card.png
         <div class="row pb-2 pt-2">
             <div class="col-4">
                 <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}">
-            </div>
+            </div >
             <div class="col-8">
                 <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
                     page_content=post.content %}</p>
@@ -48,13 +48,13 @@ lead_image: ajey_gore_website_card.png
     </div>
 
 
-    <div class="col-md-3">
-        <div class="card border-dark mb-3">
-            <a class="twitter-timeline" data-height="700px" data-theme="light"
-               href="https://twitter.com/AjeyGore?ref_src=twsrc%5Etfw">Tweets by AjeyGore</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </div>
+    <!-- <div class="col-md-3"> -->
+    <!--     <div class="card border-dark mb-3"> -->
+    <!--         <a class="twitter-timeline" data-height="700px" data-theme="light" -->
+    <!--            href="https://twitter.com/AjeyGore?ref_src=twsrc%5Etfw">Tweets by AjeyGore</a> -->
+    <!--         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    <!--     </div> -->
+    <!-- </div> -->
 </div>
 
 

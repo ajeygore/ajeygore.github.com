@@ -16,7 +16,7 @@
 }
 
 .navbar {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
 }
 
 .name-header-small {
@@ -37,13 +37,13 @@ pre {
     font-size: 12pt;
 }
 
-.menu-item {
+.menu-section {
     font-family: "Raleway", sans-serif;
     font-size: 12pt;
-    color: black;
     text-decoration: none;
     font-weight: bold;
-    text-spacing: 1.5;
+    color: #4B0082;
+    letter-spacing: 2.5;
 }
 
 #hover-text {
@@ -62,10 +62,6 @@ pre {
 .home-underline {
     border-bottom: 2px solid #3EA055;
     font-size: 12pt;
-}
-
-a {
-    color: black;
 }
 
 a:link, a:visited {
@@ -201,7 +197,6 @@ body {
     font-size: 1.1em;
     line-height: 1.25em;
     letter-spacing: 0.01em;
-    padding-top: 70px;
 }
 
 pre,
