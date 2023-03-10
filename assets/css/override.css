@@ -4,13 +4,14 @@
     color: #1695A3;
     font-family: "Raleway", sans-serif;
     text-decoration: none;
+    font-weight: 800;
 }
 
 .site-headline {
     font-size: 2.5em;
     text-align: left;
     font-family: "Raleway", "Inter", sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     line-height: 2em;
 }
 
@@ -156,7 +157,8 @@ h6, h4, h2, h3, h5 {
 .blog-list-title a {
     text-decoration: none;
     font-size: 2rem;
-    font-family: sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
 }
 
 /*
@@ -172,14 +174,14 @@ h6, h4, h2, h3, h5 {
     font-size: 48px;
     line-height: 1em;
     color: black;
-    font-weight: 400;
+    font-weight: 600;
 }
 .post-title-small {
     font-family: "Raleway";
     font-size: 32px;
     line-height: 1em;
     color: black;
-    font-weight: 400;
+    font-weight: 600;
 
 }
 
