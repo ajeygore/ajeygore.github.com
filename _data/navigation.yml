@@ -1,3 +1,5 @@
+- name: Blog
+  link: /
 - name: Talks
   link: /content/talks
 - name: Readme
