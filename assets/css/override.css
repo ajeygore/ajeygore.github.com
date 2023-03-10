@@ -1,10 +1,15 @@
 .name-header {
     font-size: 3rem;
     text-align: center;
-    color: #1695A3;
+    color: white;
     font-family: "Raleway", sans-serif;
     text-decoration: none;
     font-weight: 800;
+    -webkit-text-stroke: 1px #23430C;
+	  text-shadow: -1px 1px 2px #23430C,
+				  1px 1px 2px #23430C,
+				  1px -1px 0 #23430C,
+				  -1px -1px 0 #23430C;
 }
 
 .site-headline {
@@ -65,7 +70,6 @@ pre {
 }
 
 a:link, a:visited {
-    color: black;
     cursor: pointer;
 }
 
