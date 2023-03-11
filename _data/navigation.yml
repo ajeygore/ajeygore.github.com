@@ -2,7 +2,11 @@
   link: /
 - name: Talks
   link: /content/talks
-- name: Readme
+- name: Who
   link: /about
-- name: Sequoia
+- name: What
+  link: /what
+- name: Showcase
+  link: /showcase
+- name: <i class="bi bi-globe"></i> Sequoia
   link: https://sequoiacap.com

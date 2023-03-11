@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installing & Running TensorFlow 2 on Apple M1/M2 Macs 
+title: Running TensorFlow 2 on Apple M1/M2 Macs 
 published: true
 categories: tech
 description: Getting started with TensorFlow2. Installing and Running it on Apple M1 (ARM) (ARM64) Machines.
