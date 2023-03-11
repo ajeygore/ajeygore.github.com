@@ -1,5 +1,5 @@
 .name-header {
-    font-size: 3rem;
+    font-size: 2.5em;
     text-align: center;
     color: #1695A3;
     font-family: "Raleway", sans-serif;
@@ -8,11 +8,11 @@
 }
 
 .site-headline {
-    font-size: 2.5em;
+    font-size: 2em;
     text-align: left;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
-    line-height: 2em;
+    line-height: 1em;
 }
 
 .navbar {
