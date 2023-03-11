@@ -6,7 +6,5 @@
   link: /about
 - name: What
   link: /what
-- name: Showcase
-  link: /showcase
-- name: <i class="bi bi-globe"></i> Sequoia
-  link: https://sequoiacap.com
+- name: Experiments
+  link: /experiments

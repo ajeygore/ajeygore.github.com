@@ -43,7 +43,8 @@ pre {
     text-decoration: none;
     color: #4B0082;
     font-weight: 600;
-    letter-spacing: 2.5;
+    letter-spacing: 0.07rem;
+    line-height: 2em;
 }
 
 #hover-text {

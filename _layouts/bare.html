@@ -65,21 +65,25 @@
             <div class="row pt-4">
                 <div class="col-lg-auto pb-3">
                     <a class="name-header" href="/">ajey gore</a>
-                    &nbsp
+                    &nbsp;
                     <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
                         <i class="bi bi-twitter"></i>
                     </a>
-                    &nbsp
+                    &nbsp;
                     <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    &nbsp
+                    &nbsp;
                     <a href="https://github.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
                         <i class="bi bi-github"></i>
                     </a>
+                    &nbsp;
+                    <a href="https://www.sequoiacap.com/india/" target="_blank" style="text-decoration: none; font-size: 16pt">
+                        <i class="bi bi-globe"></i>
+                    </a>
                 </div>
 
-                <div class="col-lg-8 pt-2">
+                <div class="col-lg-8 pt-1">
                     {% for item in site.data.navigation %}
                     <a class="menu-section" href="{{ item.link }}" {% if page.url== item.link
                                             %}style="color: #3EA055; text-decoration: underline" {% endif %} {% if item.name contains
