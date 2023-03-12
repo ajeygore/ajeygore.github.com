@@ -2,9 +2,7 @@
   link: /
 - name: Talks
   link: /content/talks
-- name: Who
-  link: /about
-- name: What
-  link: /what
 - name: Experiments
   link: /experiments
+- name: About
+  link: /about
