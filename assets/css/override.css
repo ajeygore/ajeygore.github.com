@@ -123,6 +123,7 @@ blockquote p {
 
 .breadcrumb-item {
     font-size: 16px;
+    line-height: 1.3em;
 }
 
 .footnote {

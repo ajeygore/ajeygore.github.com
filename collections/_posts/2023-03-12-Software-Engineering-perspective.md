@@ -52,6 +52,9 @@ estimation, or getting consumer's intent using data, artificial intelligence, an
 
 > Technology is the most effective tool to achieve the impossible.
 
+As an engineer, I thought about "Code" "Deploy" "Automate" as engineering excellence, and especially automate part so that we can be lazy not to repeat same thing again again.
+but when building products, I believe much better way to put it is to ideate then implement, and finally iterate over and over, to go back to the ideation step.
+
 After spending a uniquely amazing, crazy, and full of learning journey from 2015 to 2020, I hung up my boots at **gojek** and 
 joined **Sequoia Capital** to pursue my aim of "doing something for the community." 
 One of the main driving forces was giving back to the startup community by helping companies with their technology and product-based challenges and learning from them to spread that knowledge to others.
