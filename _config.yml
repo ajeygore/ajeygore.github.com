@@ -27,6 +27,9 @@ collections:
   posts:
     output: true
     permalink: /content/:title
+  experiments:
+    output: true
+    permalink: /content/:title
 
 exclude:
 - bin
