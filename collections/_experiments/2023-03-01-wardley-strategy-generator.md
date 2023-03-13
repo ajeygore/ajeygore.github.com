@@ -6,7 +6,6 @@ categories: tech
 description: Pun on StratBros
 lead_image: blog/software_perspective.png
 ---
-
 <script src="/assets/scripts/wardley-strategy.js"></script>
 
 <br/>
