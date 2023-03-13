@@ -1,50 +1,41 @@
 ---
 layout: experiments
-title: Strategy Generation with Fun
+title: Fun with strategy generation
 published: true
 categories: tech
-description: Pun on StratBros.
+description: Pun on StratBros
 lead_image: blog/software_perspective.png
 ---
 <script src="/assets/scripts/wardley-strategy.js"></script>
 
-<div class="post-title pb-2">
-    Simon Wardley's strategy generator
-</div>
-<br/>
 
+<b>Need a strategy? Can't be bothered to understand your landscape? Don't care about situational awareness or gameplay? Need it fast? Minimal effort? No problem! </b>
+(From Simon's [blog](https://blog.gardeviance.org/2014/07/a-quick-route-to-building-strategy.html))
 
-One day Simon Wardley's Heroku hosted Strategy Generator went out of action. The strategy generator is a pun on many stratbros who come in
-as strategic advisor and come up with something that seems very reasonable and extremely convincing.
+Please read his [blog](https://blog.gardeviance.org/2014/07/a-quick-route-to-building-strategy.html) for more information, The strategy generator is a pun on many stratbros who come in as strategic advisor and come up with something that seems very reasonable and extremely convincing.
 
-So here is machine, helping you with that. Click on button below to get a strategy for your company, and if you don't like it, press the button again.
-This button generators random convincingly appropriate strategy.
+So here is a machine, helping you with that. Click on buttons below to get a strategy for your company, and if you don't like it, press the button again.
+Theses buttons generators random convincingly appropriate strategy.
 
-On top of that, I have wrote a prompt engineered strategy to be used with Chat GPT3, you can copy this prompt and use as input for ChatGPT and it will give you an eleaborate strategy.
+I also wrote ChatGPT prompt engineered strategy code You can copy this prompt and use as input for ChatGPT and it will give you an eleaborate strategy.
 
-PS: This was a 2 hours fun with JavaScript.
-
-
+PS: This is only a joke and not a real strategy generator.
 <hr/>
 <button onclick="renderStrategy()"> Get a Strategy!</button>
 <br/>
-
-<br/>
 <div id="strategy_text">Click a button above to get a strategy</div>
 <br/>
-<button id="copy_strategy_button" onclick="copyStrategyText()" style="display:none;" }>Copy Strategy</button>
+<button id="copy_strategy_button" onclick="copyStrategyText()" style="display:none;">Copy Strategy</button>
 <hr/>
-
-<h4>Back story below, also get <b>ChatGPT prompt</b> as well.</h4>
-<hr/>
-<button onclick="getChatGPTPrompt()"> Get ChatGPT prompt</button>
-<br/>
+<button onclick="getChatGPTPrompt()"> Get ChatGPT prompt </button>
 <br/>
 <div id="chat_gpt_prompt">Click the button above to get a strategy</div>
 <br/>
-<button id="copy_gpt_button" onclick="copyGPTPromptText()" style="display:none;" }>Copy GPT Prompt</button>
+<button id="copy_gpt_button" onclick="copyGPTPromptText()" style="display:none;">Copy GPT Prompt</button>
+<br/>
 <hr/>
-Few days back Dan North tweeted about Simon Wardley's business strategy page, that's no longer available
+
+**Back story**
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Oh noes! <a
         href="https://twitter.com/swardley?ref_src=twsrc%5Etfw">@swardley</a>&#39;s Strategy Generator has fallen off
