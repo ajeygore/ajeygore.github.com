@@ -8,30 +8,26 @@ lead_image: ajey_gore_website_card.png
 ---
 <div class="row">
     <div class="col-md-12">
-        <div class="col-md-12">
-
+        <div class="row pb-2">
             <div class="site-headline">Ideate Implement Iterate</div>
             <br/>
-            <p class="col-md-12 ">
-                Hey folks, I am Ajey Gore, I work at <a href="https://sequoiacap.com/india" target="_blank"><b>Sequoia Capital</b></a> as an Operating Partner - Technology. I work with Founders, CTOs, CPOs to help them create and deliver beautiful, functional products.
-                I am passionate about engineering, product, design and people.
-
+            <p class="pt-3">
+                Hey folks, I am Ajey Gore, I work as CTO/Operating Partner at <a href="https://sequoiacap.com/india" target="_blank"><b>Sequoia
+                Capital</b></a>. I work with Founders, CTOs, CPOs to advice them on product, engineering and organisations.
+                I also <a href="/exporiments"><b>experiments</b></a> technology from time to time.
             </p>
-
         </div>
-
         <br/>
-
         <div class="row">
-
             <h2>Posts</h2>
-
         </div>
+
         {% for post in site.posts %}
         <div class="row pb-5 pt-3">
             <div class="col-sm-4">
-                <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}">
-            </div >
+                <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}"
+                     alt="{{ post.title }}">
+            </div>
             <div class="col-sm-8">
                 <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
                     page_content=post.content %}</p>
@@ -40,11 +36,8 @@ lead_image: ajey_gore_website_card.png
                 </a>
             </div>
         </div>
-
         {% endfor %}
     </div>
-
-
     <!-- <div class="col-md-3"> -->
     <!--     <div class="card border-dark mb-3"> -->
     <!--         <a class="twitter-timeline" data-height="700px" data-theme="light" -->

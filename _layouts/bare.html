@@ -62,7 +62,7 @@
     <body>
         <div class="container-lg pt-4">
             <div class="row pt-4">
-                <div class="col-lg-auto">
+                <div class="col-sm-auto pb-2">
                     <a class="name-header" href="/">ajey gore</a>
                     &nbsp;
                     &nbsp;
@@ -84,11 +84,8 @@
                         <i class="bi bi-globe"></i>
                     </a>
                 </div>
-                &nbsp;&nbsp;
 
-
-
-                <div class="col-lg-8 pt-1">
+                <div class="col-sm-6">
                     {% for item in site.data.navigation %}
                     <a class="menu-section" href="{{ item.link }}" {% if page.url== item.link
                                             %}style="color: #3EA055; text-decoration: underline" {% endif %} {% if item.name contains
