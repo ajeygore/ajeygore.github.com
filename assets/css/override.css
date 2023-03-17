@@ -184,14 +184,14 @@ h6, h4, h2, h3, h5 {
 
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 32px */
 @media screen and (min-width: 761px) {
   div.post-title-small {
     font-size: 32px;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 24px */
 @media screen and (max-width: 760px) {
   div.post-title-small {
     font-size: 24px;

@@ -15,7 +15,7 @@ subpage: blog
 </nav>
 
 <div class="row">
-  {% for post in site.posts  %}
+  {% for post in site.posts %}
   <div class="col-sm-3 pb-3">
     <div class="card">
       <img class="card-img-top" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}">
