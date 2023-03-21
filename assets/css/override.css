@@ -1,5 +1,5 @@
 .name-header {
-    font-size: 2.5em;
+    font-size: 2.25em;
     text-align: center;
     color: black;
     font-family: "Raleway", sans-serif;
@@ -39,7 +39,7 @@ pre {
 
 .menu-section {
     font-family: "Raleway", sans-serif;
-    font-size: 12pt;
+    font-size: 10pt;
     text-decoration: none;
     color: #4B0082;
     font-weight: 600;
@@ -81,7 +81,7 @@ a:hover {
 
 #share-page {
     color: #33B2FF;
-    font-size: 18px;
+    font-size: 0.9em;
 }
 
 blockquote {
@@ -122,8 +122,8 @@ blockquote p {
 }
 
 .breadcrumb-item {
-    font-size: 16px;
-    line-height: 1.2em;
+    font-size: 0.9em;
+    line-height: 1.1em;
 }
 
 .footnote {
@@ -171,8 +171,8 @@ h6, h4, h2, h3, h5 {
 
 .post-title {
     font-family: "Raleway", sans-serif;
-    font-size: 48px;
-    line-height: 1em;
+    font-size: 2.5em;
+    line-height: 1.2em;
     color: #555555;
     font-weight:800;
 }
@@ -211,8 +211,8 @@ img {
 
 body {
     font-family: "Inter",sans-serif;
-    font-size: 1.05em;
-    line-height: 1.25em;
+    font-size: 1.0em;
+    line-height: 1.5em;
     letter-spacing: 0.01em;
 }
 
