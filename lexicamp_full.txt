@@ -1,0 +1,1103 @@
+S07 Fox, thank you very much for joining us this morning, and Jean, thank you for making time
+S07 in the evening.
+S07 Jean is the Head of Revenue and Growth for the Americas at Stripe, and we all know Stripe,
+S07 they build economic infrastructure for the internet.
+S07 She leads teams that drive new business acquisition, customer success, technical sales, and platform
+S07 partnerships for customers ranging from seed stage, like most of us in this room, to global
+S07 100 corporations.
+S07 I'm going to let Jean just talk about the work she's done in the past, and then we will
+S07 do a round of intros and get started.
+S07 Jean, over to you.
+S07 Thank you for joining us today.
+S03 Yeah, thanks for having me.
+S03 Really excited to chat with everybody.
+S03 So quick background on me, and thanks for the overview there, Joy.
+S03 So I started my career in tech at Google.
+S03 First product I ever worked on was Gmail about two months after it had launched.
+S03 Actually, my first job was answering support emails, so people writing in being like, are
+S03 you reading my emails?
+S03 Why don't you have this feature?
+S03 So on and so forth.
+S03 That was me who answered you.
+S03 So did that for four years, ended up managing the team, sort of the big things I learned
+S03 there, Google being very engineering-centric company at the time, was how to work really
+S03 effectively with product and engineering teams to kind of bring your frontline user insights
+S03 to the table.
+S03 After four years, I left Google and got my MBA at Stanford and then came back to Google.
+S03 This was in 2010, joined what is now the Google Cloud team.
+S03 But in 2010, believe it or not, cloud wasn't yet totally an industry term.
+S03 So I was helping sell what's now G Suite, at the time it was called Google Apps.
+S03 So helped them build out their S&B sales team.
+S03 And then I went out and ran S&B in mid-market in the APAC region.
+S03 So Joy and I were talking before you all arrived.
+S03 One of the things I drove while I was out there was actually an expanded investment
+S03 in India, which was a market that was high growth for us, but we were not appropriately
+S03 serving.
+S03 So after that, I came back and ran S&B in mid-market for the Americas at Google.
+S03 And then after four years left and joined a Series B SaaS communications startup, sort
+S03 of like Google Voice for Business effectively, I was their chief revenue officer, so did
+S03 all of sales, marketing, business development.
+S03 And then after a year and a half of that, ended up going to Stripe, where Stripe's COO
+S03 was actually my first boss when I was 22.
+S03 So she gave me a call when she joined Stripe.
+S03 And I joined in 2016, almost exactly five years ago, to help them build, at that time,
+S03 their new customer acquisition.
+S03 So just focused on building the teams that would go out and get customers we weren't
+S03 working with yet.
+S03 And so over the course of the last five years, have helped us build our sales motion from
+S03 really only selling to like Series A companies, to Series B company would have been like a
+S03 whale for us back in 2016, to now working with global 1000 type companies, and have
+S03 built out sort of all your sales functions along the way.
+S03 When I arrived at Stripe, we had account executives, and we had account managers, and nothing in
+S03 between, didn't have anybody doing prospecting, technical sales, integration, anything like
+S03 that.
+S03 So built all of those out too.
+S03 So happy to chat about anything along those journeys that you might have questions about.
+S03 Awesome.
+S07 Awesome.
+S07 Thanks.
+S07 Thanks, Jean.
+S07 Just so that you know, Jean has a sense of your companies as well.
+S07 We'll start with Binny.
+S04 Sure.
+S04 Hi, Jean.
+S04 Good evening.
+S04 So I'm Binny, I'm the co founder of Project Pro.
+S04 We help data scientists get their work done faster.
+S04 And the way we do that is we give them these ready made templates that they can reuse.
+S04 About 70% of our customers are in the US, 30% in India and Southeast Asia.
+S04 And the business model is largely a B2C to B2B, bottoms up evangelizing kind of sales
+S04 where we first build a loyal base of B2C customers, and then we work with them to sell it to their
+S04 teams.
+S04 Yeah, that's that's at a high level.
+S04 Yeah.
+S07 Yeah.
+S07 Thank you.
+S07 You are on mute.
+S02 Okay.
+S02 That's what we're trying to do.
+S02 We spent a lot of time coaching them in the sales call, the selling process.
+S02 That's what we're doing.
+S02 That is a team that we are trying to build right now.
+S02 So we brought on some SDRs, we brought on some BDRs.
+S07 Thanks Durai.
+S07 I can see Saurabh and Abhishek from Plum.
+S07 So I'm going to hand over to one of them to introduce quickly.
+S01 Go ahead, Abhishek.
+S01 Hey, this is Abhishek here from Plum.
+S01 With Plum, we are making employee health insurance accessible, affordable and usable for companies
+S01 as small as five employees.
+S01 What we are changing in India is the employee health insurance as a product was generally
+S01 available to mid to large sized companies.
+S01 We are changing that in terms of how it is underwritten and how it is distributed.
+S01 We have a good traction in certain segments of the market.
+S01 These are tech first companies, early adopters of employees with five to a few hundred employees.
+S01 We are on the path to scale up that sales slash marketing that we have.
+S01 And we are figuring out what kind of leadership that we build in that segment.
+S01 In addition, we are figuring out the next set of segments that we can reach out to.
+S01 Jean, good to see you.
+S01 Just a bit of background.
+S01 I also did a lot of SMB work at Google.
+S01 This was back in 2013, 14, 15 on the product side.
+S03 Oh, awesome.
+S03 Good stuff.
+S03 Nice.
+S07 We have Asad and Jay from LambdaTest.
+S07 Asad.
+S07 Asad.
+S11 We are building the tool for developers and testers to perform testing, test execution
+S11 online.
+S11 It's an in-flight service company.
+S11 We are doing bottom-up sales since last two years, and we have organic traction.
+S11 And we just started top-down as well, outbound sales reaching out to the enterprises.
+S11 We're excited to have you in this session to understand how it works for you in Google
+S11 as well as in Stripe.
+S11 Looking forward.
+S11 Thank you.
+S11 Indus?
+S11 Indus?
+S09 We are a spend management for SaaS purchases.
+S09 We do this by optimizing SaaS consumption, consolidating invoices, and providing an expense
+S09 card to pay for ad hoc SaaS purchases.
+S09 We're still in private beta for most six to eight months now, launching actually in March.
+S09 Awesome.
+S03 Awesome.
+S03 Are you a Stripe issuing user?
+S08 Sorry?
+S09 We are using Marketa, Jean.
+S03 Oh, no.
+S03 You and I have to talk after this.
+S03 Yes.
+S03 I like this.
+S07 I like this.
+S07 Always be selling.
+S07 Yeah, exactly.
+S07 All right.
+S07 I'll withhold.
+S07 All right.
+S07 Folks, let's just do this quickly.
+S07 So we have Deepak from Slintel.
+S07 Would you like to go next?
+S07 And then we do Gaurav, Saurabh, and Nishant.
+S07 And Divyesh, yes.
+S07 Yeah.
+S07 Go ahead.
+S07 Hi, Deepak.
+S07 Hi, Jean.
+S07 This is Deepak, founder, CEO of Slintel.
+S07 So Slintel is a go-to-market intelligence platform for basically for sales and marketing
+S07 teams.
+S07 teams.
+S07 We focus a lot on buyer intent and uncovering buyer journeys, buyer purchase behavior, buying
+S07 patterns, and buyer themes.
+S07 And we've been doing this for over a year now.
+S08 And we've been doing this for over a year now.
+S08 And we're still in private beta for most six to eight months now, launching actually
+S08 in March.
+S07 in March.
+S07 Awesome.
+S07 All right.
+S08 All right.
+S08 Folks, let's just do this quickly.
+S08 So we have Deepak from Slintel.
+S08 Would you like to go next?
+S08 And then we do Gaurav, Saurabh, and Nishant.
+S08 And Divyesh, yes.
+S08 Go ahead.
+S08 Hi, Jean.
+S08 This is Deepak, founder, CEO of Slintel.
+S08 So Slintel is a go-to-market intelligence platform for basically for sales and marketing
+S08 teams.
+S08 We focus a lot on buyer intent and uncovering buyer journeys, buyer purchase behavior, buying
+S08 patterns, and buyer themes.
+S08 We believe the world is moving more towards buyer-powered approaches than seller-driven
+S08 approaches.
+S08 So that's the context.
+S08 80% of our customers are in the U.S.
+S08 Most of them are SMB and mid-market customers.
+S08 And we're slowly growing enterprise.
+S08 So what I would like to learn is, when you talked about the initial sales team at Stripe,
+S08 so we are pretty similar.
+S08 We have a sales team at Stripe.
+S08 We have a sales team at Stripe.
+S08 We have a sales team at Stripe.
+S08 We have a sales team at Stripe.
+S08 We have a sales team at Stripe.
+S08 We have a sales team at Stripe.
+S05 I'm the founder of Procall.
+S05 Procall is a procurement technology company.
+S05 We provide a source to award SaaS platform for large enterprises to optimize their prices,
+S05 bidding, and just negotiations.
+S05 We have something called dynamic negotiations, where you can create online negotiation strategies.
+S05 Right now, we are probably one of the leading technology procurement startups in India and
+S05 used by about 10 or 15 Fortune 500s in the country.
+S05 We are yet to go out in the U.S. and get exploring how do we see what sort of platform or customer
+S03 In the procurement department, in the salesperson's least favorite, or?
+S03 Okay.
+S03 I'm definitely going to have to go check out your product.
+S07 Nishant, of Last9, yeah.
+S01 Yeah.
+S01 Hey, Jean.
+S01 I'm Nishant, founder of Last9.
+S01 We're building a reliability engineering platform to help SREs remove the toil in their everyday
+S01 life.
+S01 It's a job that probably expects 40% engineering and 60% operations, but they end up doing
+S01 about 80% operations and 20% sleeping because they never have enough of it.
+S01 So we're trying to empower them to have enough productive time and regain their lives.
+S01 We're early.
+S01 We're just a year into the journey, have built out the product, and are looking at the U.S.
+S01 GTM in a more active way.
+S01 We've got enough interest organically, trying to see how do we go ahead building that out
+S01 with a good GTM.
+S00 Awesome.
+S00 Thanks.
+S07 Thanks.
+S07 Awesome.
+S07 Go for it, Saurabh.
+S10 Hi, everyone.
+S10 I am the founder of Mesh.
+S10 So Mesh is a performance management system for enterprises.
+S10 So we usually target companies between 300 employees to 2,000 employees.
+S10 We are also very early stage, one year into our journey, and at this point, it's primarily
+S10 And we have just hired a couple of SDRs because we have figured out to some extent LinkedIn
+S10 So that's the early start.
+S10 in India.
+S10 And in U.S., we have seen that 200 to 2,000 employees is the sweet segment in U.S. at
+S10 this point.
+S07 And Saurabh, Divyash?
+S10 Yes.
+S10 Hi, everyone.
+S10 I'm Divyash from Gumball.
+S10 We are image and video optimization service.
+S10 So how we differentiate is that instead of giving developers API and letting them build
+S10 their own pipelines, we have a plugin-based approach which automates developer pipelines
+S10 with minimum integration.
+S10 So kind of like what Stripe did for payment that no one else will use anything after that
+S10 simplicity is there.
+S10 We want to do that for image and video management.
+S10 And because of pandemic and the growth of online, we were able to grow 10x last year.
+S10 And in India, we follow direct sales strategy for enterprises.
+S10 And outside India, we have very good referral rates and inbound traffic.
+S10 I would like to know more about how to scale this up effectively in combination or one
+S10 after another in the outside Indian market.
+S07 Thank you.
+S07 Do we have anyone else?
+S07 I think Karthik is here.
+S07 Karthik?
+S07 Incredible?
+S07 Dev?
+S06 Dev?
+S06 Hey.
+S06 I'm Karthik, founder of Incredible.Dev.
+S06 And we are trying to simplify the process of technical video content creation.
+S06 And we are at a super, super early stage.
+S06 In fact, it's been just a week since we closed the pre-seed check from Sequoia.
+S06 And we are at a pre-PMF stage.
+S06 We are still figuring out our GTM.
+S06 us to focus on the niche and conquer the niche before we target the broader audience.
+S06 I think we would love to understand more on what is the strategy at this super early stage
+S06 for a startup to identify that niche they want to go after.
+S07 Awesome.
+S07 Thank you.
+S07 All right.
+S07 Thank you, everybody.
+S07 Let's get right into it.
+S07 And I think, Jean, as you would have seen, most of our companies focus on the bottoms-up
+S07 And I think Stripe started there, right?
+S07 Just when they hit the market, massively self-serve, huge bottoms-up distribution.
+S07 So then how did sales come into the picture?
+S07 And then where did sales start off?
+S03 Yeah.
+S03 So the interesting thing about Stripe is we've had a really powerful self-service business.
+S03 But I wouldn't say, actually, we had a bottoms-up one.
+S03 Because if you think about it, in order to use Stripe, you've got to give us your bank
+S03 account, which isn't the same as developer going and putting down their credit card.
+S03 So we started out mostly serving Series A, Series B, C, seed stage companies where the
+S03 founder would come in and do that.
+S03 But actually, one of the things that I think we realized relatively early on was the buyer
+S03 of our product was actually going to be pretty senior.
+S03 At the end of the day, it was probably going to be a CFO, someone in finance, when you
+S03 moved into sort of a Series C and on up into enterprise account.
+S03 And those people wanted to negotiate rates, wanted to redline contracts, wanted to feel
+S03 confident that we weren't going to lose their money.
+S03 And so to do all that, you really had to talk to a person.
+S03 So I think for us, and it sounds like a lot of you have this dynamic, too, of actually
+S03 having some relatively robust inbound.
+S03 We started really focusing on serving inbound better.
+S03 I think at the start, this isn't uncommon, but the first sales people at Stripe were
+S03 actually in our support organization and basically were doing sales via email.
+S03 And then we hired some actual sales people who still kept doing stuff via email.
+S03 And then I showed up and said, we will never negotiate a contract over email ever again.
+S03 You're going to talk to a human.
+S03 So within that, then we looked for patterns.
+S03 And so as you all are thinking about, hey, inbound is great, but I want to scale that
+S03 much more rapidly.
+S03 I want to layer in sales.
+S03 The key is to direct those resources.
+S03 And so we started trying to figure out what was a pattern within the inbound that we
+S03 were getting.
+S03 Was it certain verticals, certain buyer personas, certain sizes of companies?
+S03 A lot of you have referenced the size that seems to be your sweet spot.
+S03 Because then that was the type of person we could go or company we could go and
+S03 prospect into more efficiently as you wanted to augment what was happening
+S03 electronically.
+S07 Got it.
+S07 I had a follow-up question, but I think Binny's question overlaps with that,
+S07 which is when you have self-serve and sales, how do you balance that?
+S07 And Binny, do you want to ask your question?
+S04 Thanks.
+S04 Thanks, Joy.
+S04 Hey, Sheen.
+S04 Like I was saying, most of our customers today are the B2C, the individual
+S04 developers paying for it.
+S04 And it's completely self-serve, there's zero touch.
+S04 Now, we're trying to decide if adding a couple of inside sales reps,
+S04 trying to balance out the potential increase in conversion versus the change
+S04 it does to our CAC economic structure.
+S04 Also, in terms of a small team's focus, do we invest behind the product and
+S04 enable more self-side or put resources behind like putting more inside sales
+S04 people?
+S03 So, when I was at Google on G Suite, we had this super, super robust
+S03 online self-serve SMB model.
+S03 And so, there were a couple of things we did.
+S03 So, I should start by saying, and actually, yeah, Binny, it's you because
+S03 you were talking about data scientists.
+S03 So, I am like a very hardcore data-driven salesperson.
+S03 I really only want to put humans against something that's going to drive
+S03 exactly what you're saying, incremental uplift.
+S03 So, at Google, we had this, which was you had all these people signing up
+S03 online and X percent would convert to paid and then others would drop off.
+S03 And so, we did a bunch of work with our data science team to actually
+S03 figure out what were the activities within that account that were
+S03 predictive of this is obviously going to convert, no point in talking to
+S03 them.
+S03 And then similarly, this is obviously not going to convert.
+S03 Similarly, no point in talking to them because we really only wanted to
+S03 put humans against the part in the middle, which is like this will convert
+S03 if you talk to them and convince them, right?
+S03 So, that was sort of one thing is like how do you basically pull that
+S03 middle tier people out and have your sales people work on those where
+S03 it's not a waste of their time, but it also is going to drive incremental
+S03 lift.
+S03 Now, in your case, you have a slightly different scenario, right, because
+S03 your signups aren't necessarily companies, they're people.
+S03 So, I mean, one of the things I'd probably consider doing if I were you
+S03 would be like one, just run an A-B test, right?
+S03 So, siphon your signups into two groups and put sales people against
+S03 some and not against the others and see how much lift you get and does it
+S03 pay for itself.
+S03 But then two, you can just goal your sales people on something that is
+S03 definitely incremental, right?
+S03 So, you know, you only get higher quota if you add a minimum of 20 seats
+S03 or if you sign an enterprise level agreement, right?
+S03 So, you maybe like one of the things Slack did here was you would lock
+S03 them into like an annual agreement where they agreed to purchase a
+S03 minimum number of licenses versus being able to just come and go as
+S03 they please, right?
+S03 So, that way you know you're getting something for what you're paying
+S03 for.
+S03 Uplift.
+S03 Yep.
+S00 Yep.
+S08 Uplift.
+S08 Uplift.
+S08 Okay.
+S00 Okay.
+S00 Great.
+S00 Thanks.
+S08 Thanks.
+S04 sales development, especially for Outrun.
+S07 How did you think about that?
+S07 How did that come about?
+S07 And how do you think about how you're going to be able to do that?
+S07 And how do you think about how you're going to be able to do that
+S07 with Outrun?
+S07 How did you think about that?
+S07 How did that come about?
+S07 Yeah, I would love to know more.
+S07 Yeah.
+S07 And how are you thinking about data science and Outrun sales?
+S03 Yeah.
+S03 So, we, what we, there's a, if some, if folks are super interested
+S03 in this, you can like Google me and there's a podcast specifically
+S03 on all the data, like deep data-driven stuff we've done around
+S03 outbound prospecting.
+S03 But basically, when I joined Stripe, John and Patrick were very,
+S03 very concerned about doing any sort of outbound prospecting,
+S03 because as I'm sure all of you had experienced,
+S03 it can be pretty darn spammy, right?
+S03 And they were really concerned about damaging the Stripe brand
+S03 by having some random salesperson go email, you know,
+S03 a Sequoia-backed company with, you know, lame content, right?
+S03 And so basically, and then on top of that,
+S03 Stripe just didn't fund a very large sales team.
+S03 So I knew that there was no way I was ever going to be able to go to
+S03 John and Patrick and say, hey, you know, I've got 20 sales reps.
+S03 I need 10 SDRs.
+S03 Like that just wasn't going to happen.
+S03 So I needed to find a way to drive more scale and really be able to
+S03 control the message so that it was always on brand.
+S03 And so what we did was we started to develop what we were calling the
+S03 company universe.
+S03 And so you can think of it as basically there's a row for every single
+S03 company in the universe.
+S03 And then columns are a bunch of different attributes.
+S03 And those attributes are things, my cat is about to join.
+S03 Those attributes are things that you would use to determine propensity
+S03 to buy or determine what you might say to them.
+S03 You know, so their industry might be,
+S03 help you figure out higher propensity to buy,
+S03 but it also might help you figure out what are the reference customers or
+S03 the value proposition I should mention.
+S03 And so the thinking was, you know,
+S03 we would run a bunch of campaigns and experiments and, you know, see,
+S03 see what turned into opportunities and not,
+S03 and use that to feed this learning model.
+S03 And then meanwhile,
+S03 be able to sort of automate a bunch of the messaging by almost creating
+S03 like a Mad Libs, right?
+S03 So like a pre-written paragraph,
+S03 but we'd pull in different snippets or data sort of based on these
+S03 attributes.
+S03 So that's what we've been pursuing and how I sort of got the data science
+S03 investment was also because you can imagine that this company universe is
+S03 wildly useful to the product team, to the marketing team, et cetera,
+S03 as we try to understand, you know, our,
+S03 our customer base and what to do with it.
+S03 Now, what I will say is I think that this is like a grand vision and it
+S03 probably will take us five years to actually get it into like a truly oiled
+S03 machine,
+S03 which was probably my mistake at the outset of being like a little too
+S03 audacious on how quickly we might turn this into something.
+S03 And so my learning was that you want to couple that with some SDRs and
+S03 basically have your SDRs go out and do traditional outbound prospecting,
+S03 but be very hypothesis driven.
+S03 So rather than being like here are 500 accounts, you know,
+S03 please just go spray and pray, you know, we would have them do, you know,
+S03 target this specific set of accounts that we think have, you know,
+S03 are within our ideal customer profile, use message one, message two,
+S03 message three, you know, and we'll test different things.
+S03 And that way we could one,
+S03 generate some pipeline a little bit more rapidly and then have more to kind
+S03 of feed into this ongoing database.
+S07 Well, awesome.
+S07 So you actually had like a marketing campaign where you just pulled in
+S07 paragraphs and lines based on who the customer was.
+S03 Yeah, exactly.
+S03 Basically, you know, sort of like, you know,
+S03 if an industry X pull these three reference customer references,
+S03 if Y these ones, you know,
+S03 if industry X put these three bullet points of value proposition,
+S03 if it's buyer X put, you know, this term, not that term.
+S03 And so you can actually create a ton of variations that feel hyper
+S03 customized, but you know, we wrote them on mass.
+S07 That's pretty cool. Folks, any questions here?
+S02 So if we could elaborate a little bit more on that outbound campaigns,
+S02 right, what we are trying to do right now,
+S02 we used to have, as we said, fully vertical stack sales guys,
+S02 they had to do everything. We kind of realized that's not working.
+S02 It was working because we said, wait, the founders did it. You can do it.
+S02 Right.
+S02 But so then we started,
+S02 then we got into a lot of issues on message going out,
+S02 like because they would select some outbound campaigns.
+S02 We did it more on the base of installed base. If they're on Zendesk,
+S02 craft a message like that. If they're on Gorgias, craft a message like that.
+S02 So that's, that's what we were trying to do.
+S02 So now what we're trying to do is
+S02 kind of create a BDR team
+S02 and say,
+S02 we'll give you the messages for these kinds of installed base.
+S02 So you will run the campaign.
+S02 and they're not running the campaigns when they,
+S02 when they got a deal that's down the pipeline, you know?
+S02 Yep.
+S00 Yep.
+S00 So that's the approach we are taking.
+S02 Any suggestions on how we might want to set that up?
+S02 Because what we are struggling with right now is we got the sales guys.
+S02 Yeah.
+S02 We got the, on the SDR side, one person,
+S02 we got a couple of BDRs coming in.
+S02 What is the sequence in which we might want to hire the product marketing or
+S02 the growth marketing role? You know,
+S02 do we separate the roles into product marketing and growth marketing?
+S02 Do we try to bring in a very senior person so we could kind of hand the
+S02 task to them? You know, the founders,
+S02 Hey, you guys kind of go hire all these people under marketing.
+S02 Or do we go for a junior marketing role for each of the functions and the
+S02 founder stays still in control of it? Like
+S02 the founder is leading the marketing and product for us and I'm leading
+S02 sales and success for us. So we're trying to figure that out.
+S02 And we've been kind of going back and forth.
+S02 There are days we say, let's hire the functional people.
+S02 We'll do something like that.
+S02 And then we'll do something like that.
+S02 And then we'll do something like that.
+S02 We'll hire the functional people.
+S02 We'll do somebody for growth, you know, like a search.
+S02 We'll just hire a bunch of content writers and then we'll wait on the VP of
+S02 marketing.
+S02 And then there are other days where we say,
+S02 let's get a good VP of marketing.
+S00 Yeah.
+S02 Yeah.
+S02 So it's very related to the industry you are in.
+S02 We are going after the e-comm vertical.
+S02 So, you know, you might've gone after the same vertical yourself.
+S03 Yeah.
+S03 Yeah. Well, there are a lot of questions in there.
+S03 So.
+S03 I, I mean, look, there's no one right answer to that, but I probably.
+S03 If you, the challenge with hiring somebody super senior,
+S03 when you don't really know what you want is you're unlikely to get what you
+S03 want in that super senior person.
+S03 And probably they haven't done an actual job in a long time.
+S03 So they won't be valuable to you at all unless you then put a team under
+S03 them. So if you're going to go the super senior route,
+S03 I feel like you have to have a strong point of view on the skills they need
+S03 to really spike in.
+S03 And you also need to then be willing to give them a legitimate team.
+S03 You know, versus if you're still sort of trying to figure out like,
+S03 where are the right investments?
+S03 I would probably lean for more of like a mid-level person, you know,
+S03 not super junior where you've got the blind leading the blind,
+S03 but not necessarily somebody who's been a VP for 10 years. And frankly,
+S03 like their job has been to attend meetings probably for the last five of
+S03 them.
+S03 So I'd probably be trying to go for something in the middle while you
+S03 figure out really what it is that you need.
+S03 And, you know,
+S03 and then you can go super senior once you have a stronger point of view and
+S03 are ready to make the investment.
+S00 Yeah.
+S03 That's that's sort of, I mean, at dial pad,
+S03 that was kind of what we did. I mean, senior people are also expensive
+S03 and it often takes a while to figure out, you know, like a year, if,
+S03 if you got a good one or, or a bad one. Right.
+S03 And so I just see a lot of startups sort of like churn through senior,
+S03 go-to-market people. And it's also really hard,
+S03 I think sometimes to isolate when do you have a function, you know,
+S03 you're a problem with your functional leader versus you're actually having a
+S03 product market fit problem.
+S03 And so it just sort of creates this like vicious cycle.
+S03 So that's sort of my bias when,
+S03 when you're in the early stages sort of grow into some of those super senior
+S03 Sorry, you're muted.
+S02 And I think that's where we are coming out after this, you know,
+S02 it looks like that's kind of seems to be where we seem to be coming out as
+S02 well.
+S02 Yeah.
+S08 Yeah.
+S00 Yeah. You know, not the real senior person,
+S02 not the blind leading the blind.
+S02 Yeah. You know, people that could actually do the work.
+S02 Take, take the direction and kind of figure out the task rather than
+S02 Yeah. I mean, I do think there's a little bit, you know,
+S02 with tech companies,
+S03 general athletes and go-to-market is a skill just like writing code is a
+S03 skill.
+S03 So I think a mistake people commonly make is,
+S03 is leaning too long on smart general athletes.
+S03 And really, if you get somebody that's, you know,
+S03 in those like 10 years of experience, they know some stuff,
+S03 but they don't know how to do it.
+S03 You know, I think that helps people get through some of these earlier
+S03 stages.
+S03 So, thank you.
+S03 Jay, you had a question.
+S07 On setting a date. Yeah.
+S07 Okay.
+S03 Okay.
+S03 The, the, the, the, the, the, the, the, the, the, the, the, the,
+S00 the, the, the, the, the, the, the, the, the, the, the, the, the, the,
+S00 the, the, the, the.
+S00 Nice to meet you.
+S00 I just wanted to get some more insights on what kind of metrics do you
+S03 how does it change when you start scaling this outbound efforts?
+S03 And similar to the inbound as well.
+S03 Yeah.
+S03 I mean, so.
+S03 I think I'm going to go with the, the first answer ever, but.
+S03 So it can depend on the segment you're going after and,
+S03 and what you think is more most important,
+S03 sort of given the complexity of your sale. So let,
+S03 let me give you an example.
+S03 If you're mostly going after S and B's,
+S03 I would probably be looking at opportunity creation.
+S03 So that's a, that's a, that's a,
+S03 that's a really good opportunity to create.
+S03 And then you're looking at potential opportunities to, you know,
+S03 be, be worth pursuing.
+S03 If you're going after a larger account,
+S03 you actually may be more interested in just get me meetings with
+S03 
+S03 And then you want to pass the baton off to the E to do any sort of
+S03 qualification discovery because, you know,
+S03 there's enough complexity there.
+S03 So having pipeline associated with what the outbound person did,
+S03 isn't necessary.
+S03 So, and then also I think it can be, what do you, you know, what are,
+S03 where are you in your learning curve? Right.
+S03 So if like really right now you're trying to get a lot of at bats to
+S03 actually figure out how to do this again,
+S03 you might want to do something more like meetings.
+S03 Versus if you're now scaling and want to feel confident that this is
+S03 going to fund itself,
+S03 then I do something a little bit further down the funnel, right.
+S03 And then you're going to be more in tune with what the pipeline is
+S00 going to be.
+S03 So you're going to be more interested in figuring out what's going to
+S03 fund itself.
+S03 And then you're going to be more like closer to an opportunity.
+S03 To get.
+S03 Some context here. So like at that stripe.
+S03 We started out just with,
+S03 we were mostly.
+S03 Doing outbound and sort of like a lower mid market segment.
+S03 And so we gold on opportunities created.
+S03 But we didn't go on pipeline because you know,
+S03 we weren't totally sure what.
+S03 What we wanted to do.
+S03 And we wanted to keep it super simple. And after 18 months,
+S03 we've now added in.
+S03 The pipeline creation target to make sure people are really pursuing,
+S03 you know, the.
+S03 The size of opportunity that's worth us.
+S00 Putting an outbound head against.
+S03 That helps. Thanks a lot.
+S07 But you know, before that I was reading how,
+S07 when you set up a sales team at stripe, for example,
+S07 you didn't try to differentiate between SDRs.
+S07 And you actually had reps who carried through the entire.
+S07 Process.
+S07 Talk us through that.
+S07 I think we'll use that as a segue into sales teams.
+S03 I will also I'll talk through what we did at stripe, which.
+S03 Had its pros. I would not say it's like,
+S03 probably the industry best practice standard way of doing things.
+S03 So, like I said, when we started.
+S03 We basically had account executives.
+S03 Their job was to get brand new business.
+S03 On the stripe. And then you had account managers.
+S03 Who are mostly customer success. Honestly,
+S03 it wasn't a particularly commercial job.
+S03 They would do renewals, which as we got bigger, got.
+S03 Harder over time.
+S03 So I think that simplicity worked when we were mostly again,
+S03 selling to series a and series B companies.
+S03 I think the takeaway I would,
+S03 I would have is like just because you hear in sales, like, Oh,
+S03 you should have an SDR. You should have an AE.
+S03 You should have a sales engineer, right?
+S03 You'll hear all these roles you should have.
+S03 You need to figure out what your S your sales motion actually requires.
+S03 So to, to give you a sense, right, we're selling an API.
+S03 It is a technical product.
+S03 We did not hire a single sales engineer.
+S03 Until we had like 30 salespeople.
+S03 And the reason we didn't was because we were selling to founder
+S03 developers.
+S03 You know, at series a and series B companies who would just read the
+S03 docs and figure it out on their own.
+S03 And so because Stripe had invested so much in our docs, like,
+S03 we just didn't need a sales engineer.
+S03 Whereas when I walked in the door at Stripe, I was like,
+S03 We're selling an API and we have no SEs. Like how is this humanly possible?
+S03 My knee jerk reaction was like,
+S03 the first thing I got to do is go hire SEs.
+S03 And then when I went and I listened on a bunch of calls, it turned out,
+S03 Hey, if you ran your smart AEs through, you know,
+S03 for training sessions on how APIs and, you know, work, they could,
+S03 you know, be relatively credible.
+S03 So it wasn't actually until we started getting into these larger
+S03 accounts where they were going to rip something out and put Stripe in
+S03 and needed confidence that they could replicate their architecture on
+S03 Stripe, that we actually needed a sales engineer.
+S03 So, so basically kind of what I,
+S03 I kept doing over the course of time,
+S03 if you really want to understand your sales funnel, right.
+S03 So you've got to create pipeline.
+S03 Then you've got to convert those to close deals.
+S03 You got to get them live and you've got to expand them and renew them.
+S03 And if you look at the different metrics along those,
+S03 you can start to see where your funnel is breaking.
+S03 So, like I said, as we started moving up market,
+S03 the integrations got more complicated.
+S03 So historically our AEs had helped companies onboard, you know,
+S03 a company would write in, I don't know how to do XYZ.
+S03 Our smart account executive would troll through the docs,
+S03 figure out the right point thing to point them through, you know,
+S03 send it to them. And they, you know, since they were a founder developer,
+S03 they'd figure it out.
+S03 When we got into the series C and series D size companies,
+S03 those questions were too complicated.
+S03 So all our time to live started ballooning and we had a lot of cases
+S03 where we'd sign a deal and it would never deploy.
+S03 And so at that point I was like, huh,
+S03 we probably now need an integration function.
+S03 And so basically what we've been doing each year is more specializing of
+S03 the types of functions and the types of accounts you talk to, you know,
+S03 which is typically associated with either going up market, you know,
+S03 or broadening product suite that gets more complicated.
+S07 Do you want to go in?
+S08 Yeah, I think a part of it was answered just now by Jin, but you know,
+S08 there's also a part of it that I'm a little curious about.
+S08 So, you know,
+S08 we sell majorly to SMB mid-market and we're trying to go up market.
+S08 I think like you mentioned Stripe did, but also there's also the skepticism
+S08 that, you know, you need to be SOC 2 certified.
+S08 You need to have the right team in place.
+S08 Enterprise EEs have different skillset compared to SMB EEs.
+S08 So just wanted to understand what are prerequisites that are required before
+S08 going and starting, start targeting enterprise accounts in US.
+S03 Yeah.
+S03 So definitely things like SOC 2, like there's a bunch of certifications.
+S03 They'll differ slightly, you know,
+S03 based on exactly what industries you're selling into.
+S03 I bet folks at Sequoia could give you like a quick rundown of typical
+S03 certifications.
+S03 But there are some of those that are just going to be table stakes.
+S03 I remember when I was at Dow pad and we first started selling into
+S03 enterprise, we didn't have those yet. And so literally on the first call,
+S03 I basically would try to DQ them, you know, be like,
+S03 we don't have any of these things.
+S03 So I don't think you're going to buy from us because you're an enterprise and
+S03 you're not going to be willing to buy without, you know, a SOC 2 audit.
+S03 You know, is that going to be a blocker? Because if it is like,
+S03 I'm happy to talk to you in a year,
+S03 but that was basically kind of what we would do in Dow pad is just like,
+S03 you know,
+S03 you'd give them a pitch so that they're excited enough and then be like,
+S03 here are the 10 reasons I don't think you'll buy from me.
+S03 You sell me on why you think you're going to buy from me.
+S03 And then I will proceed, but you'll,
+S03 you'll waste cycles on these types of things. So, so those that's,
+S03 that's a set of things.
+S03 The second thing is you're going to have to redline contracts.
+S03 So if you haven't, you know,
+S03 taken a look at your enterprise agreement and sort of understand typical
+S03 things that go in there and have a lawyer who can edit it for you.
+S03 There's no way an enterprise is going to sign your online terms.
+S03 So that's another big one that comes up. You know,
+S03 it depends on your product,
+S03 but certainly your security requirements and your uptime requirements are
+S03 going to be higher. You know,
+S03 you'll have to figure out from your buyer exactly where the line in the
+S03 sand is going to be.
+S03 But I would expect that it is higher than what your current requirements
+S03 are today.
+S03 And then from an, from an AE perspective you know,
+S03 I think you can, you need somebody who's sold before most likely,
+S03 but you don't need to go out and like buy somebody's Rolodex necessarily
+S03 because you're still in learning mode.
+S03 So I sort of like when you're first trying to get into enterprise,
+S03 these like BD like salespeople, right.
+S03 Who are one part salesperson and one part R and D right.
+S03 Their job is just as much to help you understand, you know, what,
+S03 what is and isn't working as it is to actually make money. You know,
+S03 like I'm not that into going out and getting just like a, you know,
+S03 20 year vet mercenary wants to make a million dollars by blowing it out.
+S03 And you're one, you can get that. Once you have,
+S03 you think you have something like your first goal should be to learn.
+S03 But don't let that learning phase go on too long because sales is a skill.
+S03 And so at certain point,
+S03 unless you have enough people internally to train them,
+S03 you've got to hire people with the skill.
+S08 Sure.
+S08 So just one follow up question to that Jen is when you bring these
+S08 enterprise customers on board,
+S08 would you talk about how the customer success team,
+S08 like did you have implementation specialists who would separate from
+S08 account managers to customer success managers and how,
+S08 how was the post sale team looking like?
+S03 Yep. Yeah. So I think this one, again,
+S03 it can depend on your level of technical complexity. So for Stripe,
+S03 you know, the implementation itself is quite technical. You know,
+S03 you're, you're sitting in somebody's production code base.
+S03 And so we actually use integration engineers or,
+S03 or in my organization. And these are folks with CS degrees in many cases,
+S03 they were engineers before they decided they wanted to be in the sales
+S03 organization. And so that role needed to be hyper-technical,
+S03 but once deployed,
+S03 you then could have a less technical CSM type role still is like more
+S03 product oriented than I would say your typical CSM, but that,
+S03 that was true of Stripe, right?
+S03 There are a lot of companies where the person who implements can be the
+S03 exact same as the person who then does customer success type work.
+S03 So just sort of depends. And then in a lot of cases, you know, you,
+S03 once you've sort of mastered the craft of what's the approach to deploying
+S03 that can be a good opportunity for partner. You know,
+S03 not everybody wants to spend their head count on, you know,
+S03 building out a more professional services oriented role.
+S03 So we always had at Google the saying of master the craft,
+S03 create the assets, scale through partners.
+S03 So you needed to do it in-house first to like get it really down pat,
+S03 know how to do it. Then you codify it, right? Like create the assets,
+S03 document it, all that.
+S03 And then we normally would start building out a partner ecosystem to do the
+S03 deployments, you know, going forward.
+S08 Sure. Thank you.
+S10 we love using Stripe with that.
+S10 When Stripe launched in India next month,
+S10 we were the first customer because it just makes things very easy for us.
+S10 So that's where the question comes in.
+S10 So, I mean,
+S10 Stripe is definitely pursuing the PLG growth, right?
+S10 The product led growth. People buy Stripe because product is so good,
+S10 but at the same time, it doesn't mean that Stripe is going to be the
+S10 same.
+S10 It's just that the product is so good, but at the same time,
+S10 it does not have that inherent virality that some other PLG companies have
+S10 like Calendly, et cetera.
+S10 And so I guess that is why there is also sales function at Stripe.
+S10 Fine.
+S10 So given that what are the right channel pairings when you are pursuing
+S10 PLG,
+S10 when your marketing is entirely focused on showing that the product is
+S10 great and 10X better than whatever alternative is available,
+S10 at the same time,
+S10 what would be the right channel in sales side to pursue pair with this kind
+S10 of marketing?
+S03 Yeah. I mean, so again, it sort of depends.
+S03 And let me give you like an example here, which is, you know, Stripe,
+S03 we want to market to startups, but not necessarily SMBs, right?
+S03 So for us,
+S03 like a typical company selling to SMBs might invest a lot in search SEM,
+S03 like AdWords, you know, search engine marketing for us, that's,
+S03 that's going to cast too broad of a net. And, you know,
+S03 most of the money we would spend an SMB would end up clicking on seeing
+S03 and we'd pay for rather than the folks like you all in this room.
+S03 So we've actually ended up having to do just hyper targeted marketing,
+S03 you know, like an event like this.
+S03 So I actually think it depends on who you're trying to market to.
+S03 Like, so where, where do you,
+S03 what are you guys targeting at your company?
+S03 Cause I think you guys have a decent amount of overlap in some of the.
+S10 Yeah. So fine. We have two sort of market segments.
+S10 So our product is such that it can be used widely.
+S10 So there is one WordPress segment,
+S10 where WordPress having large number of SMB websites,
+S10 we have a click and install plugin, which does everything.
+S10 So that is one segment for which we do mostly go with referrals and
+S10 ratings and, you know, influencer based marketing.
+S10 And then there is a mid to high tier enterprise.
+S10 So publishers and e-commerce who have lots of images and lots of,
+S10 people visiting the ideal customers for them.
+S10 As of now we do the direct sales, but that works because in India that works.
+S10 I mean, when we go cross border, we go, when we go global, the feed,
+S10 actually in India, we follow the same template that you say,
+S10 we create a company universe, calculate propensity and role.
+S10 And based on role and vertical, we use templates.
+S10 But when we go globally, I guess sending LinkedIn messages or,
+S10 or sending cold emails may not work.
+S10 So what are the right sales channels which can go along with the
+S10 marketing?
+S10 Yeah. I mean, if you're going more after that mid market segment,
+S10 again, it's sort of,
+S03 again, it's sort of,
+S03 you can do broad based tactics that everyone's doing, right.
+S03 Like different types of, of online marketing,
+S03 search marketing, et cetera.
+S03 A lot of what we try to do are like integrated campaigns, right?
+S03 So you'll at the same time have your BDRs or SDRs sending a set of
+S03 messages to a set of accounts that your marketing team is specifically
+S03 plugging into LinkedIn to target with, you know, ads there.
+S03 You know, then you're,
+S03 you're doing retargeting based on your website when you get people to show
+S03 up. Right.
+S03 So we also do a lot of,
+S03 we do a lot of, you know,
+S03 You know,
+S03 I think is important is actually thinking through these umbrella campaigns
+S03 that can last for a longer period and you can keep building on, right.
+S03 Rather than sort of like, you know, we're going to do some narrow,
+S03 you know, quick thing.
+S03 So an example here would be like Stripe this summer launched the,
+S03 you know,
+S03 the new, you know,
+S03 the new, you know,
+S03 the new, you know,
+S03 the new, you know,
+S03 the new, you know,
+S03 the new, you know,
+S03 the new, you know,
+S03 I think is important is actually thinking through these umbrella campaigns
+S03 that can last for a longer period and you can keep building on,
+S03 right.
+S03 Rather than sort of like, you know,
+S03 I think is important is actually thinking through these umbrella campaigns
+S03 that can last for a longer period and you can keep building on,
+S03 right.
+S03 So an example here would be like Stripe this summer launched the adaptive
+S03 business campaign, which is sort of like, you know,
+S03 piggybacks on historically there've been, you know,
+S03 everyone focused on digital transformation,
+S03 right.
+S03 And so we've had a variety of LinkedIn campaigns.
+S03 We've had specific webinars where we've highlighted different.
+S03 You know, types of adaptation that might be relevant to people,
+S03 but it's like a campaign that now has been building on itself for six
+S03 plus months.
+S03 So again, like there's no one perfect answer.
+S03 It's sort of like, where do you think your buyer is hanging out?
+S03 What are some of the messages that you need to get in front of them?
+S03 And then, you know, what's the right media for that?
+S03 Given there's, you know,
+S03 the complicatedness of the, you know, of the message.
+S07 I get it. Thanks.
+S10 Okay.
+S07 Books. Any other questions here?
+S10 I'm following up on the last question that Vivesh had.
+S10 So you mentioned that the multi-prod strategy works well,
+S10 but you're trying to target even campaign ads by LinkedIn.
+S10 You're sending inmates on LinkedIn.
+S10 You're running these webinars targeting the same audience early on.
+S10 Do you happen to remember early on at Stripe?
+S10 Were you focusing on multi-prod strategy at that point as well?
+S10 Was it slightly more expensive on the pocket to kind of experiment
+S10 across what channels are working well before narrowing down?
+S10 And what was the sweet stage?
+S10 Or let me rephrase.
+S10 Did you do this post product market fit or did you even try it even
+S10 early on the same strategies?
+S03 Yeah.
+S03 Okay. So on product market fit, I mean,
+S03 I think Stripe basically had product market fit from day one.
+S03 So I would say by the time I showed up that, you know,
+S03 it was doing a fair amount of revenue, but at Dialpad, that was different.
+S03 I would say we had to fight for everything we sold.
+S03 And so we started out, you know,
+S03 with just the email tactics because that was relatively, you know,
+S03 inexpensive if you had a couple SDRs or BDRs,
+S03 whatever you want to call outbound folks.
+S03 So we started out only with that and doing campaigns.
+S03 And then we did a layer in the integrated approach,
+S03 somewhat similar to what we did at Stripe, actually the exact same at Stripe.
+S03 When we first did outbound,
+S03 it was sales driven because we actually Stripe didn't have a marketing team
+S03 at that point. And so we just did, you know, multi-touch email campaigns.
+S03 And then when marketing came, we layered in LinkedIn. And for us,
+S03 the reason LinkedIn made a lot of sense was it, you know,
+S03 the buyer for us in these larger companies is typically the CFO.
+S03 And so they were very targetable on LinkedIn. It's a very obvious title.
+S03 And so that made a lot of sense for us versus like,
+S03 we basically never advertised on like Facebook or Twitter. It just doesn't,
+S03 it's not a great place for us,
+S03 even though it can be great advertising for a lot of folks. So mostly like,
+S03 I think thinking through, you know,
+S03 who is your buyer and what is the company and where do those people hang out
+S03 is probably the broadest useful advice I can give.
+S03 And then, you know, we,
+S03 we tried to do like different tactics independently to see where we were
+S03 getting ROI. Stripe still doesn't spend very much money on marketing at all.
+S03 But and our founders have been like very careful as we've added budget that
+S03 you have to prove that it actually has a return. So, you know,
+S03 with these campaigns, we test a lot of different tactics. So, I mean,
+S03 generic as well, but that honestly would be my other recommendation is,
+S03 is testing, you know,
+S03 does doing an online webinar or something like that actually work, you know,
+S03 versus just a cold email versus needing some sort of other asset.
+S03 I haven't found that there's universally one answer in anything I've done.
+S10 Got it. Thanks. One more slide to follow up on this one.
+S10 or what is the ideal cost per click on LinkedIn ads?
+S10 This will go across all companies.
+S10 Like we get a response rate of around 5% but we don't know,
+S10 are we good enough? Are we bad enough on that particular front?
+S10 Should we aim from rather than 5% should it be 20% or should it be higher or
+S10 what is that ideal?
+S03 but it is low single digits is the industry standard.
+S03 And then cost per click that there isn't a generic answer to that.
+S03 Cause it's basically kind of like,
+S03 what can you spend from like a CAC perspective?
+S03 So like to give an example at Dialpad,
+S03 like we had certain words that were so key keywords that were so well
+S03 targeted that actually we could spend a hundred dollars on those versus
+S03 other like long tailed ads.
+S03 You know, we basically couldn't spend more than 50 cents on.
+S03 So it is sort of specific to, to what you are selling.
+S03 The only other thing I would add to on like the response rates and you
+S03 actually can,
+S03 most of these things you can just download white papers on that give you
+S03 all of the benchmarks.
+S03 But like at Stripe, as an example,
+S03 when we do campaigns to the startup community,
+S03 we don't have a specific response rate.
+S03 Like at Stripe as an example,
+S03 when we do campaigns to the startup community,
+S03 if we don't have super high response rates, you know,
+S03 we find find that problematic.
+S03 So like our response rate might actually be double the industry standard,
+S03 but we still consider it too low because we really, really,
+S03 really want it to be the case that anytime we put content in front of a
+S03 startup, it's exceptionally high quality.
+S03 So some of it also is like, what are you optimizing for? Right.
+S03 Cause you can spray it,
+S03 cast a really broad net if you just want revenue and then maybe you don't
+S03 care that you're only getting a 1% response rate,
+S03 but that might be somewhat brand damaging. Right.
+S03 So some of it I think also is, is what are you looking to do?
+S10 Thank you. Thanks.
+S07 Folks, any other questions?
+S07 I have a question on how Stripe thinks about building out sales teams in
+S07 new markets.
+S07 But before that,
+S07 But before that,
+S07 if anyone has questions,
+S07 if anyone has questions,
+S07 I know we're almost out of time.
+S07 I know we're almost out of time.
+S07 So I'm also cognizant of that, but Jean, you know, this is a question,
+S07 right? You guys have hyper-local teams in many markets.
+S07 And how do you think about this?
+S07 How do you think of the sales team and process when it comes to launching
+S07 in new markets? Do you think of inside sales first?
+S07 Is it feet on the street first?
+S07 How do you think of the profile, the cost effectiveness?
+S07 And when do you think is that,
+S07 is that the right time to hire a sales team in new and especially
+S07 unproven markets? Right. How do you think of that?
+S07 Yeah, that's a great question.
+S03 And something that I think most people at Stripe would agree,
+S03 we have not necessarily consistently gotten right.
+S03 So Stripe has bias towards putting people in market because payments is so
+S03 hyper-local.
+S03 But some of the mistakes I think we've made, you know,
+S03 one is when you are putting people in market,
+S03 typically it's because, you know, COVID aside,
+S03 like you need to meet face-to-face. So a lot of times, you know,
+S03 sales can be done inside, right over the phone or, or Zoom or whatever.
+S03 So we've increasingly moved to like a hub and spoke model.
+S03 So we have a hub, you know, in SF and Chicago in the U S,
+S03 Dublin, none of, you know, these are all pretty typical Dublin for EMEA,
+S03 Singapore for APAC, Mexico city for Latiam.
+S03 And so the bulk of sales can be done inside.
+S03 And, and so you'll do them from that hub.
+S03 When it comes to the spoke,
+S03 one of the big learnings that we've had is when you're going to go put
+S03 them in a quote in the field.
+S03 So when we put people in France, as an example,
+S03 you really need to think of them, you know,
+S03 you really need to think of them.
+S03 You've got to deploy them with what we call a minimum deployable unit which is
+S03 to say, if you let's,
+S03 let's say you know your sales motion in the United States and it takes an
+S03 account executive,
+S03 a sales engineer and a customer success manager.
+S03 If you now go into France,
+S03 but you don't also have a French speaking sales engineer,
+S03 your account executive in France, isn't going to be very successful.
+S03 And so we were consistently, you know, adding a ease into markets,
+S03 but then just not giving them the types of resources that they needed to be
+S03 successful. And so we basically decided, you know,
+S03 if we don't think a market has enough potential that we're willing to do,
+S03 you know, one minimum deployable unit,
+S03 it's not time to enter it yet.
+S03 And we should just be doing inside sales from a different country.
+S03 The other thing that would happen when we sent people into region too
+S03 quickly was inevitably they had product asks that you were never going to
+S03 prioritize. And so, you know, you,
+S03 they get really great, you know, not to pick on France, but like,
+S03 so in France, right.
+S03 We'd be able to talk to the number one company in France that you would of
+S03 course want to land. But they would have a set of requirements, you know,
+S03 and so either, you know,
+S03 you'd wind up with them on your roadmap when you didn't really want that,
+S03 or you'd wind up losing the deal.
+S03 So that was the other thing that I don't think we were very good at was
+S03 being super clear about,
+S03 do you have enough product market fit to have somebody in that country?
+S03 Right. And then it's related to that too.
+S03 Do you have enough traction or do you think there's enough market
+S03 opportunity that you're willing to fund the set of roles that you need to
+S03 actually be successful?
+S03 Well, that's, I think super helpful. And I know we are a minute over,
+S07 over here.
+S07 Well, I did want to close by saying we're, we're obviously Stripe is a,
+S03 a very close, I don't know if partner's the right word,
+S03 but Sequoia has been very influential at Stripe.
+S03 And if any of you are, you know,
+S03 on Stripe or considering using Stripe,
+S03 we do have a startup partnership with Sequoia.
+S03 And so if you're not availing of, you know, office hours,
+S03 discounts, implementation services, et cetera,
+S03 you should do that from us. You can email Sagar at Stripe.
+S03 He is our APAC startup partner person,
+S03 and we'd love to engage with you all to make you sure you have an amazing
+S03 Stripe experience.
+S03 But I'm thrilled to have him on the call.
+S03 This is actually my first event with Sequoia. So hopefully, you know,
+S03 one of many more.
+S03 No, this is great. Thank you so much for doing this, Jean.
+S03 This was super helpful.
+S07 We may have follow-up questions from founders,
+S07 in which case I'd probably just forward them to you. Yeah. Okay.
+S07 Yeah. I'm Jean at stripe.com. So feel free to shoot me an email.
+S07 And thank you everybody for joining us today. Thank you.
+S03 Thank you. Have a great day.
+S03 Thank you.
+S03 Bye.
+S07 Have a great day.
+S07 Thank you.
+S07 Bye.
+S10 Bye.
