@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_layouts/bare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/bare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/override.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/override.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -271,6 +269,12 @@
       <workItem from="1677488433893" duration="122000" />
       <workItem from="1678508846885" duration="19545000" />
       <workItem from="1678804346193" duration="4306000" />
+      <workItem from="1681054338315" duration="973000" />
+      <workItem from="1681090904599" duration="737000" />
+      <workItem from="1681200793263" duration="2431000" />
+      <workItem from="1681317232578" duration="463000" />
+      <workItem from="1682006796625" duration="663000" />
+      <workItem from="1682912489418" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
