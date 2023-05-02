@@ -7,7 +7,6 @@
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/bare.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/bare.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -274,7 +273,7 @@
       <workItem from="1681200793263" duration="2431000" />
       <workItem from="1681317232578" duration="463000" />
       <workItem from="1682006796625" duration="663000" />
-      <workItem from="1682912489418" duration="11000" />
+      <workItem from="1682912489418" duration="1395000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
