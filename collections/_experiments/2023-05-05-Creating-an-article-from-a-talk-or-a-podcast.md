@@ -1,6 +1,6 @@
 ---
 layout: experiments
-title: Create blog from a conversation
+title: Create a blog from a conversation
 categories: tech
 description: Creating a blog post from a talk or podcast.
 lead_image: blog/video_to_blog.png
