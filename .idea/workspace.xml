@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/torch_apple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/torch_configuration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collections/_experiments/2023-05-04-Running-PyTorch-on-M1-M2-arm.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/blog/ajey_gore_website_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/blog/video_to_blog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collections/_experiments/2023-05-05-Creating-an-article-from-a-talk-or-a-podcast.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/Users/ajey/workspace/ajeygore.github.com/collections/_experiments",
+    "last_opened_file_path": "/Users/ajey/workspace/ajeygore.github.com/assets/images/blog",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -94,11 +95,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images/blog" />
       <recent name="$PROJECT_DIR$/collections/_experiments" />
       <recent name="$PROJECT_DIR$/_layouts" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/css" />
-      <recent name="$PROJECT_DIR$/assets/fonts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/fonts" />
@@ -277,7 +278,7 @@
       <workItem from="1683168377155" duration="4958000" />
       <workItem from="1683187818269" duration="27000" />
       <workItem from="1683187851102" duration="877000" />
-      <workItem from="1683189264118" duration="2216000" />
+      <workItem from="1683189264118" duration="8667000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>

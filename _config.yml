@@ -29,7 +29,7 @@ collections:
     permalink: /content/:title
   experiments:
     output: true
-    permalink: /content/:title
+    permalink: /experiments/:title
 
 exclude:
 - bin
