@@ -141,11 +141,11 @@ Second step step is to create individual speaker segments, so that we can pass t
 
 I have used code from various palces, but here is incomplete list of the articles I went through.
 - Article for speaker diarization
-  - https://www.assemblyai.com/blog/top-speaker-diarization-libraries-and-apis/
-  - https://lablab.ai/t/whisper-transcription-and-speaker-identification
+  - [Speaker Diarization](https://www.assemblyai.com/blog/top-speaker-diarization-libraries-and-apis/)
+  - [LabLab Article](https://lablab.ai/t/whisper-transcription-and-speaker-identification)
 - Whisper
-  - https://github.com/openai/whisper
-  - https://github.com/lablab-ai/Whisper-transcription_and_diarization-speaker-identification-/blob/main/transcribtion_diarization.ipynb
+  - [OpenAI Whisper](https://github.com/openai/whisper)
+  - [Jupyter notebook doing almost same things](https://github.com/lablab-ai/Whisper-transcription_and_diarization-speaker-identification-/blob/main/transcribtion_diarization.ipynb)
 - Diarization
   - https://blog.ml6.eu/who-spoke-when-choosing-the-right-speaker-diarization-tool-3d7a115c524b
   - https://www.ml6.eu/knowhow/who-spoke-when-choosing-the-right-speaker-diarization-tool
