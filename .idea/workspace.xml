@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
-      <change beforePath="$PROJECT_DIR$/collections/_experiments/2023-05-05-Creating-an-article-from-a-talk-or-a-podcast.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections/_experiments/2023-05-05-Creating-an-article-from-a-talk-or-a-podcast.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/_experiments/2023-01-14-TensorFlow2-on-macOS-M1-Machines.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections/_experiments/2023-01-14-TensorFlow2-on-macOS-M1-Machines.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/_experiments/2023-05-04-Running-PyTorch-on-M1-M2-arm.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections/_experiments/2023-05-04-Running-PyTorch-on-M1-M2-arm.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +276,7 @@
       <workItem from="1683168377155" duration="4958000" />
       <workItem from="1683187818269" duration="27000" />
       <workItem from="1683187851102" duration="877000" />
-      <workItem from="1683189264118" duration="8911000" />
+      <workItem from="1683189264118" duration="10020000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>

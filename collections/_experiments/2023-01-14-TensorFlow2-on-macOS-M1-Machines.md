@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: experiments
 title: TensorFlow 2 on M1/M2 Macs 
 published: true
 categories: tech

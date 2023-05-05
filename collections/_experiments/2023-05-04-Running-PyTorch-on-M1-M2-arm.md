@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: experiments
 title: PyTorch on M1/M2 ARM
 published: true
 categories: tech
