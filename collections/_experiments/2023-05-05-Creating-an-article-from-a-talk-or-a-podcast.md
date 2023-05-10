@@ -115,7 +115,7 @@ But for now following code snippets should do the trick.
 
 ### Create individual speaker segments
 
-Second step step is to create individual speaker segments, so that we can pass them to Whisper model.
+Second step is to create individual speaker segments, so that we can pass them to Whisper model.
 
     from pydub import AudioSegment
     from pydub.silence import split_on_silence
