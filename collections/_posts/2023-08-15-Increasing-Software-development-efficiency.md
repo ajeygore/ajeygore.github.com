@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Untangling developer velocity
-published: true
+published: false
 categories: Culture, Software Engineering
 description: Essay on software engineering.
 lead_image: blog/software_perspective.png
