@@ -59,4 +59,4 @@ Absense of a sensible test suite is more common that ever.
 
 Not only this, we try to copy org structures, we tried to copy the way their engineering managers work - while we do not need engineering managers in early stages, we immediately go hire CTO or CPO - while founders have to play these roles. Anyway! enough of whining about this, lets focus back on untangling software development.
 
-
+Vast majoritity of people don't understand their work as Engineering managers, your hands are tied, because you know that nobody loves their job and theY dont lke their jobs, 
