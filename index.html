@@ -9,7 +9,7 @@ lead_image: ajey_gore_website_card.png
 <div class="row">
     <div class="col-md-12">
         <div class="row pb-2">
-            <div class="site-headline">Ajey Gore</div>
+            <div class="site-headline">AJEY GORE</div>
             <br/>
             <p class="pt-3">
                 I work as CTO/Operating Partner at <a href="https://peakxv.com" target="_blank"><b>PeakXV partners 
@@ -18,11 +18,7 @@ lead_image: ajey_gore_website_card.png
             </p>
 
             <p class="pt-3">
-                <b>Two loops for product building</b>
-                <br/>
-                Ideate, Implement, Iterate
-                <br/>
-                Code, Deploy, Automate.
+               When building products we should be in <b>Ideate, Implement, Iterate</b> loop, and in <b>Code, Deploy, Automate</b> loop when writing software.
             </p>
         </div>
         <br/>
@@ -33,8 +29,10 @@ lead_image: ajey_gore_website_card.png
         {% for post in site.posts %}
         <div class="row pb-5 pt-3">
             <div class="col-sm-4">
-                <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}"
-                                  alt="{{ post.title }}">
+                <a class="post-title-link" href="{{ post.url }}">
+                    <img width="100%" src="/assets/images/{{ post.lead_image | default: site.lead_image }}"
+                         alt="{{ post.title }}">
+                </a>
             </div>
             <div class="col-sm-8">
                 <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} • {% include readingtime.erb
