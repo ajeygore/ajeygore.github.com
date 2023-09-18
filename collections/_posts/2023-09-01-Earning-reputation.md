@@ -4,10 +4,10 @@ title: Earning reputation?
 published: true
 categories: Essay
 description: How do you build brand?
-lead_image: blog/software_perspective.png
+lead_image: blog/reputation.png
 ---
 
-<p><img src="/assets/images/blog/software_perspective.png" alt="Software generation" class="responsive" />
+<p><img src="/assets/images/blog/reputation.png" alt="Software generation" class="responsive" />
 </p>
 
 <p>
