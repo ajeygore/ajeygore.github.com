@@ -24,7 +24,7 @@ Read on...
     </a></p>
 </blockquote>
 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
 
 Reputation is about what you do - do it well, or do it badly, you earn reputation around that. 
 

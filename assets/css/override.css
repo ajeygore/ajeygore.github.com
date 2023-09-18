@@ -1,18 +1,10 @@
 .name-header {
-    font-size: 2.25em;
+    font-size: 2.2em;
     text-align: center;
     color: black;
     font-family: sans-serif;
     text-decoration: none;
     font-weight: 800;
-}
-
-.site-headline {
-    font-size: 2em;
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    line-height: 1em;
-    color: #555555;
 }
 
 .navbar {
@@ -38,8 +30,8 @@ pre {
 }
 
 .menu-section {
-    font-family: "Raleway", sans-serif;
-    font-size: 10pt;
+    font-family: sans-serif;
+    font-size: 12pt;
     text-decoration: none;
     color: #4B0082;
     font-weight: 600;
@@ -169,9 +161,8 @@ h6, h4, h2, h3, h5 {
 
 .post-title {
     font-family: "Raleway", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.9em;
     line-height: 1.2em;
-    color: #555555;
     font-weight:800;
 }
 .post-title-small {
