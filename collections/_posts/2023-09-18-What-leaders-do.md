@@ -13,6 +13,8 @@ lead_image: blog/tech_leader.png
 <p>
 Few days ago, Jacky asked me two questions, one of them was What leaders do?
 
+> Product engineering is a  team sport. You are a sports team manager and your job is make them shine.
+
 <blockquote class="twitter-tweet "><p lang="en" dir="ltr">
     <a href="https://twitter.com/jackyfat2fit/status/1697812843528405339?s=20">
     </a></p>
@@ -57,6 +59,6 @@ Go attend meetups, give talks, write blogs. This not only tells the world what a
 
 At the end if team wins then we win. And if we fail in enabling them, nurturing them, providing them with the right environment then team fails. You never win alone.
 
-> Product engineering is a  team sport, and you are a sport team manager where your job is make them shine.
+> Product engineering is a  team sport. You are a sports team manager and your job is make them shine.
 
 Also, while they are building a product, your **product** is amazing working environment, where people learn, flourish and give their best. 
