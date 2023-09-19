@@ -20,7 +20,7 @@ Few days ago, Jacky asked me two questions, one of them was What leaders do?
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
 
-> At the core Product engineering is a  team sport. You are a sports team manager and your job is make them shine.
+</p>
 
 
 **What does it mean to be a leader** What roles do leaders play? In any org, in my view leaders are tasked with helping with following one of four themes
@@ -28,6 +28,8 @@ Few days ago, Jacky asked me two questions, one of them was What leaders do?
 * Collaborate
 * Communicate
 * Connect
+
+> At the core Product engineering is a  team sport. You are a sports team manager and your job is make them shine.
 
 
 Well, We look at these themes just like that you might immediately ask - where is mentorship? where is leading by example? or do leaders not do walk the talk?
