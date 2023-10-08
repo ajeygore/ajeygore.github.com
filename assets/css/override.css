@@ -1,5 +1,5 @@
 .name-header {
-    font-size: 2.2em;
+    font-size: 2em;
     text-align: center;
     color: black;
     font-family: sans-serif;
@@ -161,7 +161,7 @@ h6, h4, h2, h3, h5 {
 }
 
 .post-title {
-    font-family:"Inter", sans-serif;
+    font-family:sans-serif;
     font-size: 1.9em;
     line-height: 1.2em;
     font-weight:800;
@@ -170,7 +170,7 @@ h6, h4, h2, h3, h5 {
     font-family: "Inter", sans-serif;
     line-height: 1.5em;
     color: black;
-    font-weight:400;
+    font-weight:800;
 
 }
 
@@ -200,7 +200,7 @@ img {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.1em;
     line-height: 1.5em;
     letter-spacing: 0.01em;
