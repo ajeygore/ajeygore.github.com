@@ -31,11 +31,10 @@ pre {
 
 .menu-section {
     font-family: sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
     text-decoration: none;
-    color: #4B0082;
-    font-weight: 600;
-    letter-spacing: 0.07rem;
+    color: #8A2BE2;
+    font-weight: 400;
     line-height: 2em;
 }
 
@@ -53,7 +52,7 @@ pre {
 }
 
 .home-underline {
-    border-bottom: 2px solid #3EA055;
+    border-bottom: 2px solid #8A2BE2;
     font-size: 12pt;
 }
 
@@ -63,7 +62,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: #3EA055;
+    color:  #8A2BE2;
     cursor: pointer;
 }
 
@@ -80,7 +79,7 @@ blockquote {
     font-family: serif;
     font-style: italic;
     background: #f9f9f9;
-    border-left: 5px solid #2DA044;
+    border-left: 5px solid #8A2BE2;
     margin: 1.5em 10px;
     padding: 1.5em 10px;
     line-height: 1.8em;
@@ -125,7 +124,7 @@ blockquote p {
 
 h6, h4, h2, h3, h5 {
     font-family: "Inter", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 
@@ -189,7 +188,7 @@ h6, h4, h2, h3, h5 {
 }
 
 .post-title-small:hover {
-    color:#3EA055;
+    color: #8A2BE2;
 
 }
 
@@ -200,10 +199,10 @@ img {
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    font-size: 1.1em;
+    font-family: "Libre Baskerville", serif;
+    font-size: 1em;
     line-height: 1.5em;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.005em;
 }
 
 pre,

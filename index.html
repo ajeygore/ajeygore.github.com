@@ -39,7 +39,7 @@ lead_image: ajey_gore_website_card.png
             {% for post in site.posts %}
             <div class="col-sm-3 pb-4 pe-4">
                 <div class="card">
-                    <img class="card-img-top" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}">
+                    <a href="{{ post.url }}"><img class="card-img-top" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}"></a>
                     <div class="card-body">
                         <a href="{{ post.url }}">
                             <h5 class="card-title" style="text-decoration: none;">{{ post.title}}</h5>
