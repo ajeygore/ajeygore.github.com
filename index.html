@@ -8,16 +8,16 @@ lead_image: ajey_gore_website_card.png
 ---
 <div class="row">
     <div class="col-md-12">
-        <div class="row pb-2">
+        <div class="row">
             <div class="post-title-small">ajey gore</div>
             <br/>
-            <p class="pt-3">
+            <p>
                 I work as CTO/Operating Partner at <a href="https://peakxv.com" target="_blank"><b>PeakXV partners 
                     </b></a> (FKA Sequoia Capital India & SEA). I work with Founders, CTOs, CPOs to help them with various subjects related to product management, software engineering and building & scaling product engineering organisation.
                     And I <a href="/experiments"><b>experiment</b></a> with tech..
             </p>
 
-            <p class="pt-3">
+            <p>
                When building products we should be in <b>Ideate, Implement, Iterate</b> loop, and in <b>Code, Deploy, Automate</b> loop when writing software.
             </p>
         </div>
@@ -35,9 +35,9 @@ lead_image: ajey_gore_website_card.png
             </ol>
         </nav>
 
-        <div class="row pe-4">
+        <div class="row">
             {% for post in site.posts %}
-            <div class="col-sm-3 pb-4 pe-4">
+            <div class="col-sm-3">
                 <div class="card">
                     <a href="{{ post.url }}"><img class="card-img-top" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}"></a>
                     <div class="card-body">
