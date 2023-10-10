@@ -199,10 +199,10 @@ img {
 }
 
 body {
-    font-family: "Libre Baskerville", serif;
-    font-size: 1em;
+    font-family: "Lora", serif;
+    font-size: 1.05em;
     line-height: 1.5em;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.02em;
 }
 
 pre,
