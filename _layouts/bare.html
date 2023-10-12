@@ -60,11 +60,11 @@
 
     </head>
     <body>
-    <div class="container-flex pt-4 ps-4 pb-4 d-flex justify-content-start align-self-center">
-            <div class="col-md-4 float-start">
+    <div class="container-flex pt-4 ps-4 pb-4 d-flex flex-wrap">
+            <div class="col-md-4 float-start align-self-baseline flex-wrap">
                 <a class="name-header" href="/">ENTANGLING EXUBERANCE</a>
             </div>
-            <div class="col-md-8 d-flex justify-content-end pe-4 align-self-center">
+            <div class="col-md-8 d-flex justify-content-end pe-4 align-self-baseline flex-wrap">
                 {% for item in site.data.navigation %}
                 <a class="menu-section" href="{{ item.link }}" {% if page.url== item.link
                                             %}style="color: #8A2BE2; text-decoration: underline" {% endif %} {% if item.name contains
@@ -79,7 +79,7 @@
     <div class="container pt-4">
         {{ content }}
     </div>
-    <div class="fixed-bottom pb-4 pt-2 ps-4">
+    <div class="fixed-bottom pb-2 pt-2 ps-4 bg-white">
         <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
             <i class="bi bi-twitter"></i>
         </a>
