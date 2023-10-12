@@ -2,27 +2,21 @@
 layout: bare
 ---
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb bg-transparent">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
-    <li class="breadcrumb-item active">{{ page.title }}</li>
-  </ol>
-</nav>
+<!--<nav aria-label="breadcrumb align-content-center">-->
+<!--  <ol class="breadcrumb bg-transparent">-->
+<!--    <li class="breadcrumb-item"><a href="/">Home</a></li>-->
+<!--    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>-->
+<!--    <li class="breadcrumb-item active">{{ page.title }}</li>-->
+<!--  </ol>-->
+<!--</nav>-->
+<div class="text-center">
+  <div class="post-title">
+    {{ page.title }}
+  </div>
 
-<div class="post-title">
-  {{ page.title }}
+  <span class="breadcrumb-item text-center">{{ page.date | date: '%B %d, %Y' }} • {% include readingtime.erb page_content=page.content %}</span>
 </div>
-<p>
-<span class="breadcrumb-item">{{ page.date | date: '%B %d, %Y' }} • {% include readingtime.erb page_content=page.content %}</span>
-<p></p>
 
-<div id="share-page" class="pb-2">
-  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Liked? Share on Twitter" style="color: #33B2FF;">
-    Share
-    <i class="bi bi-twitter"></i>
-  </a>
-</div>
 <div class="pb-4">
   {{ content }}
 </div>
