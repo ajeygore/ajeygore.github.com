@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jekyll-metadata" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/override.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/override.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +296,7 @@
       <workItem from="1696634766175" duration="7009000" />
       <workItem from="1696900161022" duration="1166000" />
       <workItem from="1696996461967" duration="33000" />
-      <workItem from="1697095120288" duration="6380000" />
+      <workItem from="1697095120288" duration="6948000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
