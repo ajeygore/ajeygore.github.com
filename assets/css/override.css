@@ -4,7 +4,7 @@
     color: black;
     font-family: "Source Sans 3", sans-serif;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 200;
 }
 
 .navbar {
@@ -167,7 +167,7 @@ h6, h4, h2, h3, h5 {
     font-weight:600;
 }
 .post-title-small {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Lora", serif;
     line-height: 1.5em;
     color: black;
     font-weight:800;
