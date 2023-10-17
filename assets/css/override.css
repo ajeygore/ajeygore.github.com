@@ -161,14 +161,15 @@ h6, h4, h2, h3, h5 {
 }
 
 .post-title {
-    font-family:"Lora", serif;
-    font-size: 2.6em;
+    font-family:"Playfair Display", serif;
+    font-size: 3em;
     line-height: 1.2em;
     font-weight:600;
+    color: black;
 }
 .post-title-small {
-    font-family: "Lora", serif;
-    line-height: 1.5em;
+    font-family: "Playfair Display", serif;
+    line-height: 2em;
     color: black;
     font-weight:800;
 
@@ -184,7 +185,8 @@ h6, h4, h2, h3, h5 {
 /* If the screen size is 600px wide or less, set the font-size of <div> to 24px */
 @media screen and (max-width: 760px) {
   div.post-title-small {
-    font-size: 24px;
+      font-size: 3em;
+      font-family: "Playfair Display", serif;
   }
 }
 
