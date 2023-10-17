@@ -1,5 +1,5 @@
 .name-header {
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     color: black;
     font-family: "Source Sans 3", sans-serif;
@@ -124,8 +124,9 @@ blockquote p {
 }
 
 h6, h4, h2, h3, h5 {
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-weight: 600;
+    color:black;
 }
 
 
