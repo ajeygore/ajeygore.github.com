@@ -1,5 +1,5 @@
 .name-header {
-    font-size: 1.8em;
+    font-size: 1.5em;
     text-align: center;
     color: black;
     font-family: "Source Sans 3", sans-serif;
@@ -8,7 +8,7 @@
 }
 
 .navbar {
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke; 
 }
 
 .name-header-small {

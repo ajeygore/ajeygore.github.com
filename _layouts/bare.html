@@ -60,11 +60,11 @@
 
     </head>
     <body>
-    <div class="container-flex pt-4 ps-4 pb-4 d-flex flex-wrap">
+    <div class="container-flex pt-4 ps-2 d-flex flex-wrap">
             <div class="col-md-4 float-start align-self-baseline flex-wrap">
                 <a class="name-header" href="/">ENTANGLING EXUBERANCE</a>
             </div>
-            <div class="col-md-8 d-flex justify-content-end pe-4 align-self-baseline flex-wrap">
+            <div class="col-md-8 d-flex justify-content-end pe-2 align-self-baseline flex-wrap">
                 {% for item in site.data.navigation %}
                 <a class="menu-section" href="{{ item.link }}" {% if page.url== item.link
                                             %}style="color: #8A2BE2; text-decoration: underline" {% endif %} {% if item.name contains
