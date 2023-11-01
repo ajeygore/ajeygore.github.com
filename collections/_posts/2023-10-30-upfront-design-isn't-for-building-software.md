@@ -16,13 +16,21 @@ Source : Dall-E by OpenAI
 
 ##### THIS IS A DRAFT
 
+Reflecting on the significance of software architecture is paramount in today's dynamic landscape.
+We have transitioned from adhering strictly to substantial upfront design to recognizing that
+software architecture cannot be entirely predefined; rather, it necessitates an evolutionary approach,
+adapting and maturing in tandem with time and circumstances.
+While we have borrowed the concept of architecture from the realm of civil engineering,
+there exists a fundamental distinction between the two disciplines.
 
-When we discuss software architecture and the role of software architects, the typical image that comes to mind is that of complex diagrams, filled with boxes and arrows, pointing in every conceivable direction. This visualization is a ubiquitous sight across organizations. However, it is crucial to question the efficacy of such depictions in truly capturing the essence of software architecture. In my experience, I have often encountered these architecture diagrams—whether they be on wikis, shared folders, documents, or even mind maps—sprawled across the company's knowledge base. There are even specialized tools designed specifically for crafting these diagrams. While these diagrams may appear logically sound and coherent at the surface level, in practical application, they often fall short, resulting in “half-baked” solutions and “incomplete implementations” that deviate significantly from their initial intent.
+When we discuss software architecture and the role of software architects, the typical image that comes to mind is that of complex diagrams, filled with boxes and arrows, pointing in every conceivable direction. 
+This visualization is a ubiquitous sight across organizations. However, it is crucial to question the efficacy of such depictions in truly capturing the essence of software architecture. 
+
+In my experience, I have often encountered these architecture diagrams—whether they be on wikis, shared folders, documents, or even mind maps—sprawled across the company's knowledge base. There are even specialized tools designed specifically for crafting these diagrams. While these diagrams may appear logically sound and coherent at the surface level, in practical application, they often fall short, resulting in “half-baked” solutions and “incomplete implementations” that deviate significantly from their initial intent.
 Often when these architecture depictions and diagrams don’t get into action in the way they are inked, the question becomes pretty apparent, what is this software architecture? And does it matter?
 
-Reflecting on the significance of software architecture is paramount in today's dynamic landscape. We have transitioned from adhering strictly to substantial upfront design to recognizing that software architecture cannot be entirely predefined; rather, it necessitates an evolutionary approach, adapting and maturing in tandem with time and circumstances. 
-While we have borrowed the concept of architecture from the realm of civil engineering, there exists a fundamental distinction between the two disciplines. 
-In civil architecture, once a design has been finalized and construction initiated, there is little room for structural alterations or deviations from the original blueprint. 
+In civil architecture, once a design has been finalized and construction initiated, there is little room for structural alterations 
+or deviations from the original blueprint. 
 The integrity of the structure hinges on strict adherence to the predetermined design specifications. 
 
 > While there may be flexibility concerning the construction of additional floors or independent structures within the skyscraper, deviation from the established architectural plan is not a viable option. On the other hand, this is what building software excels at.
@@ -86,17 +94,17 @@ This analogy prompts the question: What strategic decisions and considerations m
 </p>
 
 
-
-In the hallowed gardens of software development, akin to the meticulous tending of a thriving grove, the collective wisdom of the gardeners - our esteemed architects and developers - must converge upon the sacred rituals that sustain our tree, our software. 
-The elixir of life, water, symbolizes our continuous integration, ensuring our creation is ever-flourishing. The sheltering shade, akin to our strategic refactoring, protects our tree from the scorching rays of technical debt. 
-The life-giving nutrients from the fertilizer represent the infusion of innovative technologies and methodologies that invigorate our tree's roots, fostering robust growth. 
-And just as the gardener maintains the optimal moisture level, we too must diligently balance agility with stability, ensuring our tree stands tall and steadfast, a testament to the symbiotic harmony between nature and technology. 
-This philosophical alignment is our guiding beacon in front of a technical audience, a testament to our understanding that the real world is our garden, and our software, the most precious tree within it.
-
+Just as gardeners must have a common understanding of the essential tasks such as watering, shading, 
+and fertilizing to ensure the healthy growth of a tree, software teams must align on fundamental practices within their architecture. 
+This includes having a shared comprehension of the tech stack, agreeing upon a consistent programming style, 
+and maintaining a unified approach to problem-solving. Just as the gardener's practices contribute to the tree's flourishing, 
+these aligned processes in software architecture are crucial to the success and efficiency of a project, 
+ensuring that each team member is contributing effectively towards a common goal.
+ 
 > The most important decisions to help grow a tree among gardeners is to have a shared understanding of when we water, when do we move it to shade, 
 when to put fertiliser, how much moisture we need to maintain?
 
-These are important decisions and if we don’t have a common understanding about what to do when in someone else’s absence, 
+And if we don’t have a common understanding about what to do when in someone else’s absence, 
 not only it creates a truck factor but also creates a possibility of death for that sapling. Software architecture is similar, 
 it does not have to big, but mostly this is early days important decisions that everyone can take if they agree upon what to do.
 
