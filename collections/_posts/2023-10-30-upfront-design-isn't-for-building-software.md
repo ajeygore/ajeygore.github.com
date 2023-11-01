@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upfront design isn't for building software?
+title: Upfront design isn't for building software
 published: true
 categories: Essay
 description: The transformative journey from chaotic, disparate tech stacks to a harmonious, unified, and standardized software building.
@@ -25,7 +25,7 @@ While we have borrowed the concept of architecture from the realm of civil engin
 In civil architecture, once a design has been finalized and construction initiated, there is little room for structural alterations or deviations from the original blueprint. 
 The integrity of the structure hinges on strict adherence to the predetermined design specifications. 
 
-> While there may be flexibility concerning the construction of additional floors or independent structures within the skyscraper, deviation from the established architectural plan is not a viable option.
+> While there may be flexibility concerning the construction of additional floors or independent structures within the skyscraper, deviation from the established architectural plan is not a viable option. On the other hand, this is what building software excels at.
 
 In the endeavor to define and create a robust software architecture, it is imperative to acknowledge the inherently flexible nature of software engineering. Although deviating from an initial design can present challenges, it remains a feasible option within the realm of software development. By its very definition, architecture serves as a foundational blueprint, delineating key considerations and charting a course for their practical implementation during the construction of the final product. Given that software development is characterized by incremental progression, as opposed to a comprehensive upfront design, it logically follows that the creation of extensive presentation materials and intricate architecture diagrams is an unnecessary and potentially counterproductive exercise. This perspective is aligned with the principles of agile methodology, which emphasizes the importance of maintaining flexibility and adaptability as the system evolves and expands over time.
 
