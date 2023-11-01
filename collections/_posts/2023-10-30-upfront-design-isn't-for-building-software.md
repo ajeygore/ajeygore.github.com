@@ -38,7 +38,7 @@ In the endeavor to define and create a robust software architecture, it is imper
 
 The process does not look like taking a blueprint and converting that to building, but rather looks like growing a tree from sapling, much like we grow our teams and orgs. The way we adopt and change team building decisions based on people. Because we  really do not know exactly who will join in the future, but we do know what where they should head in terms of direction.
 
-Melvin Conway depicted this, when he talked about “Conway’s Law” https://en.wikipedia.org/wiki/Conway%27s_law. 
+Melvin Conway depicted this, when he talked about [“Conway’s Law”](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 > “Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.”
 
@@ -99,7 +99,7 @@ These are important decisions and if we don’t have a common understanding abou
 not only it creates a truck factor but also creates a possibility of death for that sapling. Software architecture is similar, 
 it does not have to big, but mostly this is early days important decisions that everyone can take if they agree upon what to do.
 
-Martin Fowler discussed this in his keynote in OSCON 2015 (https://www.youtube.com/watch?v=DngAZyWMGR0), I remember once discussing many kind of MVC patterns with him during his one of his visits to India, 
+Martin Fowler discussed this in [his keynote in OSCON 2015](https://www.youtube.com/watch?v=DngAZyWMGR0), I remember once discussing many kind of MVC patterns with him during his one of his visits to India, 
 and he said 
 
 > as long as Model, View and Controller are doing what they are doing, 
@@ -111,7 +111,12 @@ If we think from this lens, and if we start writing down our principles on how w
 Going back to the tree example, you might have to cut off branches to keep the tree in shape, same way, you might have to discard or reimplement some part of software without getting worried about sunk cost fallacy.
 Another example can be to provide support by a small stick to strengthen the tree, and allow growth. Same way we can think about a lot of software as a service products (SaaS) in the early days, to provide strength in the early days and not worry about building it out.
 
-If we think about these decisions -- **these are one way decisions** (https://www.inc.com/jeff-haden/amazon-founder-jeff-bezos-this-is-how-successful-people-make-such-smart-decisions.html) These decisions aren’t easily replaceable, eg, hiring people is usually one way decision, working on your tech strategy becomes super important because it’s again mostly consists off one way decisions, those of course can be change, but change is costly. For example, choosing tech stack, programming language, databases, automation tools and even SaaS tools, all are one way decisions, but writing those down as your tech strategy helps immensely and eventually results in better software. This can be called a “tech constitution” for your product engineering org, and in many sense, this shared understanding of an important early stage one way decision is your software architecture.
+If we think about these decisions -- **these are one way decisions** [Jeff Bezos has some views on this as well](https://www.inc.com/jeff-haden/amazon-founder-jeff-bezos-this-is-how-successful-people-make-such-smart-decisions.html)
+
+These decisions aren’t easily replaceable, eg, hiring people is usually one way decision, working on your tech strategy becomes super important because it’s again mostly consists off one way decisions, 
+those of course can be change, but change is costly. For example, choosing tech stack, programming language, databases, automation tools and even SaaS tools, all are one way decisions, 
+but writing those down as your tech strategy helps immensely and eventually results in better software. 
+This can be called a “tech constitution” for your product engineering org, and in many sense, this shared understanding of an important early stage one way decision is your software architecture.
 
 So how do we achieve this? Few of the ways we can employ are the following:
 
