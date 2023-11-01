@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Perspective on Software Architecture
+title: Upfront design isn't for building software?
 published: true
 categories: Essay
 description: The transformative journey from chaotic, disparate tech stacks to a harmonious, unified, and standardized software building.
