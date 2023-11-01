@@ -90,9 +90,10 @@ This analogy prompts the question: What strategic decisions and considerations m
 In the hallowed gardens of software development, akin to the meticulous tending of a thriving grove, the collective wisdom of the gardeners - our esteemed architects and developers - must converge upon the sacred rituals that sustain our tree, our software. 
 The elixir of life, water, symbolizes our continuous integration, ensuring our creation is ever-flourishing. The sheltering shade, akin to our strategic refactoring, protects our tree from the scorching rays of technical debt. 
 The life-giving nutrients from the fertilizer represent the infusion of innovative technologies and methodologies that invigorate our tree's roots, fostering robust growth. 
-And just as the gardener maintains the optimal moisture level, we too must diligently balance agility with stability, ensuring our tree stands tall and steadfast, a testament to the symbiotic harmony between nature and technology. This philosophical alignment is our guiding beacon in front of a technical audience, a testament to our understanding that the real world is our garden, and our software, the most precious tree within it.
+And just as the gardener maintains the optimal moisture level, we too must diligently balance agility with stability, ensuring our tree stands tall and steadfast, a testament to the symbiotic harmony between nature and technology. 
+This philosophical alignment is our guiding beacon in front of a technical audience, a testament to our understanding that the real world is our garden, and our software, the most precious tree within it.
 
-The most important decisions to help grow a tree among gardeners is to have a shared understanding of when we water, when do we move it to shade, 
+> The most important decisions to help grow a tree among gardeners is to have a shared understanding of when we water, when do we move it to shade, 
 when to put fertiliser, how much moisture we need to maintain?
 
 These are important decisions and if we don’t have a common understanding about what to do when in someone else’s absence, 
