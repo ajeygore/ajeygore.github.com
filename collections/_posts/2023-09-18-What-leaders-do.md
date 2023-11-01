@@ -64,4 +64,6 @@ At the end if team wins then we win. And if we fail in enabling them, nurturing 
 
 > Product engineering is a  team sport. You are a sports team manager and your job is make them shine.
 
-Also, while they are building a product, your **product** is amazing working environment, where people learn, flourish and give their best. 
+Also, while they are building a product, your **product** is amazing working environment, where people learn, flourish and give their best.
+
+
