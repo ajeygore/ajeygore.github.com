@@ -43,8 +43,8 @@ lead_image: ajey_gore_website_card.png
                 <div class="card">
                     <a href="{{ post.url }}"><img class="card-img-top" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}"></a>
                     <div class="card-body">
-                        <a href="{{ post.url }}">
-                            <h5 class="card-title" style="text-decoration: none;text-align: center;">{{ post.title}}</h5>
+                        <a style="text-decoration:none!important;" href="{{ post.url }}">
+                            <h5 style="text-decoration: none;text-align: center;">{{ post.title}}</h5>
                         </a>
                         <p class="breadcrumb-item">{{ post.date | date: '%B %d, %Y' }} •  {% include readingtime.erb page_content=post.content %}</p>
                     </div>

@@ -84,7 +84,7 @@ blockquote {
     padding: 1.5em 10px;
     line-height: 1.8em;
     quotes: "\201C" "\201D" "\2018" "\2019";
-    font-size: 15pt;
+    font-size: 1.1em;
     font-weight: 600;
     color: darkblue;
 }
@@ -124,7 +124,7 @@ blockquote p {
 }
 
 h6, h4, h2, h3, h5 {
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Lora", sans-serif;
     font-weight: 600;
     color:black;
 }
@@ -162,14 +162,14 @@ h6, h4, h2, h3, h5 {
 }
 
 .post-title {
-    font-family:"Playfair Display", serif;
+    font-family:"Lora", serif;
     font-size: 3em;
     line-height: 1.2em;
     font-weight:600;
     color: black;
 }
 .post-title-small {
-    font-family: "Playfair Display", serif;
+    font-family: "Lora", serif;
     line-height: 2em;
     color: black;
     font-weight:800;
@@ -203,10 +203,10 @@ img {
 }
 
 body {
-    font-family: "Lora", serif;
-    font-size: 1em;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.15em;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
     color: #333;
 }
 

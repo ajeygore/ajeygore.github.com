@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upfront design isn't for building software
+title: Upfront architecture isn't for building software
 published: true
 categories: Essay
 description: The transformative journey from chaotic, disparate tech stacks to a harmonious, unified, and standardized software building.
