@@ -35,7 +35,8 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Source+Sans+3:wght@200;400;600;700;800&family=Lora:wght@200;300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<!--        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Source+Sans+3:wght@200;400;600;700;800&family=Lora:wght@200;300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Lora:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Twitter cards -->
         <meta name="twitter:card" content="summary_large_image"/>
@@ -60,11 +61,11 @@
 
     </head>
     <body>
-    <div class="container-flex pt-4 ps-2 d-flex flex-wrap">
-            <div class="col-md-4 float-start align-self-baseline flex-wrap">
+    <div class="container pt-4 ps-2 flex-wrap">
+            <div class="col-md-6 float-start align-self-baseline flex-wrap">
                 <a class="name-header" href="/">ENTANGLING EXUBERANCE</a>
             </div>
-            <div class="col-md-8 d-flex justify-content-end pe-2 align-self-baseline flex-wrap">
+            <div class="col-md-6 d-flex justify-content-end pe-2 align-self-baseline flex-wrap">
                 {% for item in site.data.navigation %}
                 <a class="menu-section" href="{{ item.link }}" {% if page.url== item.link
                                             %}style="color: #8A2BE2; text-decoration: underline" {% endif %} {% if item.name contains
@@ -79,7 +80,7 @@
     <div class="container pt-4">
         {{ content }}
     </div>
-    <div class="fixed-bottom pb-2 pt-2 ps-4 bg-white">
+    <div class="container fixed-bottom pb-2 pt-2 ps-4 bg-white">
         <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
             <i class="bi bi-twitter"></i>
         </a>

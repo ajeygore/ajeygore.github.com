@@ -2,9 +2,9 @@
     font-size: 1.5em;
     text-align: center;
     color: black;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: "Noto", sans-serif;
     text-decoration: none;
-    font-weight: 200;
+
 }
 
 .navbar {
@@ -57,7 +57,7 @@ pre {
 }
 
 a:link, a:visited {
-    color: black;
+    color: #005fbe;
     cursor: pointer;
 }
 

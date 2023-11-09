@@ -1,8 +1,6 @@
-- name: BLOG
-  link: /blog
-- name: TALKS
+- name: talks
   link: /content/talks
-- name: EXPERIMENTS
+- name: experiments
   link: /experiments
-- name: ABOUT
+- name: journey
   link: /about
