@@ -16,14 +16,14 @@ Source : Dall-E by OpenAI
 
 ##### THIS POST has ongoing contribution
 
-I was discussing with bunch of my friends, and two things come up constantly
+Almost in every discussion around product engineering culture following two or three things come up constantly
 
 * Code without tests or writing test cases is not developer's responsibility.
 * People keep wasting time on PRs (I will write another blog post about "Unbranching software, unleashing productivity")
 * Many people keep asking me how to measure developer productivity.
 
 I said "all this is hopeless", unless people change fundamental behaviors, and then I thought about
-what else is "hopeless" and here is the initial list.
+what else is **"hopeless"** and here is the initial list.
 
 
 - having code without tests is hopeless
@@ -53,3 +53,6 @@ what else is "hopeless" and here is the initial list.
 
 I will keep adding to this list, and I am sure there are many more things that are hopeless, if you have any, please do share with me on X (Twitter)
 
+<div class="footnote"> 
+<b>With Contributions from:</b> Deepesh Naini, Sahil Kharb, Mahesh Lal, Ranjan Sakalley
+</div>
