@@ -31,7 +31,7 @@ what else is **"hopeless"** and here is the initial list.
 - relying on qa and not on the test automation is hopeless
 - thinking qa is quality assurance and not quality automation is hopeless
 - treating product manager as project manager, and not giving them autonomy is hopeless
-- instituting managed to manage people in product engineering is hopeless
+- instituting managers to manage people in product engineering is hopeless
 - trying to measure product engineering productivity is hopeless
 - work life balance is hopeless
 - As startup founders expecting a 9-5 life is hopeless
