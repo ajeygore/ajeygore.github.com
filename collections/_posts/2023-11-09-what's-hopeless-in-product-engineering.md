@@ -7,7 +7,7 @@ description: The transformative journey from chaotic, disparate tech stacks to a
 lead_image: blog/hopeless.png
 ---
 
-<p><img src="/assets/images/blog/hopeless.png" alt="Perspective on software architecture" class="responsive" />
+<p><img src="/assets/images/blog/hopeless.png" alt="Hopelessness, as experessed by a sage" class="responsive" />
 </p>
 
 <div class="footnote">
