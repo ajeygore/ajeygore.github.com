@@ -50,6 +50,7 @@ what else is **"hopeless"** and here is the initial list.
 - treating an estimate as anything other than an estimate is hopeless
 - having meeting with more than 4 people is hopeless
 - having a meeting without an agenda is hopeless
+- not treating engineering, product, and design teams as a one team is hopeless
 
 I will keep adding to this list, and I am sure there are many more things that are hopeless, if you have any, please do share with me on X (Twitter)
 
