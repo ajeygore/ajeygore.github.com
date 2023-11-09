@@ -43,13 +43,13 @@ what else is **"hopeless"** and here is the initial list.
 - having a separate team for devops is hopeless (devops is a culture, not a team)
 - Using the wrong language to express a problem is hopeless. (Think resources vs people)
 - Everyone has agenda, either you fit your colleagues agenda, or they fit your agenda, having no agenda is hopeless :-)
-- Having a team that doesn’t understand the business is hopeless
-- Having a team that doesn’t understand the customer is hopeless
-- Having a team that doesn’t understand the product is hopeless
+- having a team that doesn’t understand the business is hopeless
+- having a team that doesn’t understand the customer is hopeless
+- having a team that doesn’t understand the product is hopeless
 - calling/treating people as resources is hopeless.
-- Treating an estimate as anything other than an estimate is hopeless
-- Having meeting with more than 4 people is hopeless
-- Having a meeting without an agenda is hopeless
+- treating an estimate as anything other than an estimate is hopeless
+- having meeting with more than 4 people is hopeless
+- having a meeting without an agenda is hopeless
 
 I will keep adding to this list, and I am sure there are many more things that are hopeless, if you have any, please do share with me on X (Twitter)
 

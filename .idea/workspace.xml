@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/_posts/2023-11-09-what's-hopeless-in-product-engineering.md" beforeDir="false" afterPath="$PROJECT_DIR$/collections/_posts/2023-11-09-what's-hopeless-in-product-engineering.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -301,7 +302,7 @@
       <workItem from="1697782795438" duration="2329000" />
       <workItem from="1698817440615" duration="13587000" />
       <workItem from="1699335876204" duration="299000" />
-      <workItem from="1699515501210" duration="6355000" />
+      <workItem from="1699515501210" duration="6590000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
