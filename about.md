@@ -27,6 +27,7 @@ Source : ThoughtWorks
 ```
 IPA /ˈnʌməsteɪ/ means a respectful greeting, said with hands joined together!
 ```
+This is my readme file. I am Ajey Gore, and this is my manual or readme file, know me.
 
 I am from India. I studied commerce, arts and later software engineering.
 
@@ -116,4 +117,9 @@ Here's a list of my people related biases I think matter most.
 - people without skin flesh in the game that want a say.
 - people who cause drama.
 - people who don't study and iterate but want to be treated as if they do.
+- people who try to pull emotional levers to get their way, rather than using logic and practicality.
+
+---
+
+
 
