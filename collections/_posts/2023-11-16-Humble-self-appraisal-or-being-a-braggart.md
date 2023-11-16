@@ -15,7 +15,7 @@ Source : Dall-E by OpenAI
 </div>
 
 Time for self appraisal, the time I dread, because I need to write self appraisal, and I really find myself in a fix, my self-critical attitude
-tells me that you did what you were supposed to do, and you did not do anything extra ordinary, so what do you write in self appraisal?
+tells me that you did what you were supposed to do, and you did not do anything extra ordinary, so why? And what do you write in self appraisal?
 
 > Embracing Self-Appraisal with a balanced approach might be daunting task for many of us. It certainly is for me.
 
