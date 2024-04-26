@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/start_jekyll.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start_jekyll.sh" afterDir="false" />
-    </list>
+    <list default="true" id="52974ac8-2568-4d9e-9b89-f09750ca2698" name="Default" comment="Fixing new layouts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -323,7 +320,7 @@
       <workItem from="1713631505562" duration="659000" />
       <workItem from="1713740442952" duration="1304000" />
       <workItem from="1713971114438" duration="249000" />
-      <workItem from="1714095750818" duration="198000" />
+      <workItem from="1714095750818" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="Added Simon Wardley's strategy">
       <created>1670058212691</created>
