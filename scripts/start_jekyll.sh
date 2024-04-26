@@ -1,4 +1,3 @@
 #!/bin/zsh
-
-rvm use 2.7.3
+rbenv local 3.2.2
 bundle exec jekyll serve
