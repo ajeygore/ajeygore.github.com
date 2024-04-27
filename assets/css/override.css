@@ -1,14 +1,15 @@
 .name-header {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
-    color: black;
-    font-family: "Noto", sans-serif;
+    color: #0275d8;
+    font-family: "Inter", sans-serif;
     text-decoration: none;
 
 }
 
 .navbar {
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
+    color:#0275d8;
 }
 
 .name-header-small {
@@ -30,7 +31,7 @@ pre {
 }
 
 .menu-section {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 11pt;
     text-decoration: none;
     color: #8A2BE2;
@@ -62,7 +63,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    color:  #8A2BE2;
+    color:  #0275d8;
     cursor: pointer;
 }
 
@@ -124,8 +125,8 @@ blockquote p {
 }
 
 h6, h4, h2, h3, h5 {
-    font-family: "Lora", sans-serif;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
     color:black;
 }
 
@@ -149,8 +150,8 @@ h6, h4, h2, h3, h5 {
 .blog-list-title a {
     text-decoration: none;
     font-size: 2rem;
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 800;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 }
 
 /*
@@ -162,14 +163,14 @@ h6, h4, h2, h3, h5 {
 }
 
 .post-title {
-    font-family:"Lora", serif;
+    font-family:"Inter", serif;
     font-size: 2.5em;
     line-height: 1.2em;
     font-weight:600;
     color: black;
 }
 .post-title-small {
-    font-family: "Lora", serif;
+    font-family: "Inter", serif;
     line-height: 2em;
     color: black;
     font-weight:800;
@@ -203,9 +204,9 @@ img {
 }
 
 body {
-    font-family: "Georgia", serif;
-    font-size: 1.1em;
-    line-height: 1.6em;
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    line-height: 1.62em;
     letter-spacing: 0.03em;
     color: #333;
 }

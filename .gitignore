@@ -11,7 +11,7 @@ _site/
 Session.vim
 .netrwhist
 *~
-
+./.idea
 .jekyll-metadata
 .idea/workspace.xml
 .idea/workspace.xml
