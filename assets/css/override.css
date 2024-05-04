@@ -124,9 +124,9 @@ blockquote p {
     font-size: 10pt;
 }
 
-h6, h4, h2, h3, h5 {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 600;
     color:black;
 }
 
