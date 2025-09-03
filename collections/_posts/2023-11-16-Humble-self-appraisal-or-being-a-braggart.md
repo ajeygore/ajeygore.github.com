@@ -7,9 +7,6 @@ description: Discover the art of self-appraisal that highlights your achievement
 lead_image: blog/humble-achievement.svg
 ---
 
-<p><img src="/assets/images/blog/humble-achievement.svg" alt="Finding balance between humility and showcasing achievements" class="responsive" />
-</p>
-
 <div class="footnote">
 Source : Dall-E by OpenAI
 </div>

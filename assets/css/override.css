@@ -100,6 +100,24 @@ body {
     background: var(--bg-primary);
 }
 
+/* Blog Post Images */
+.post-content img,
+.responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    box-shadow: var(--shadow);
+}
+
+.blog-post-featured-image {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
 .card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
@@ -262,6 +280,7 @@ body {
     border-radius: 0.75rem;
     padding: 0.75rem 1.25rem;
     margin-bottom: 2rem;
+    justify-content: flex-start !important;
 }
 
 .breadcrumb-item a {
@@ -325,6 +344,7 @@ footer a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -340,15 +360,15 @@ footer a:hover {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.125rem;
     }
-    
+
     .section-title {
         font-size: 1.75rem;
     }
-    
+
     .card-body {
         padding: 1.25rem;
     }
@@ -438,6 +458,8 @@ a:hover {
 .post-content {
     font-size: 1.125rem;
     line-height: 1.8;
+    max-width: 75ch;
+    margin: 0 auto;
 }
 
 .post-content h1,
@@ -587,10 +609,15 @@ blockquote p {
     font-size: 10pt;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 600;
-    color:black;
+    color: black;
 }
 
 
@@ -626,33 +653,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-title {
-    font-family:"Inter", serif;
+    font-family: "Inter", serif;
     font-size: 2.5em;
     line-height: 1.2em;
-    font-weight:600;
+    font-weight: 600;
     color: black;
 }
+
 .post-title-small {
     font-family: "Inter", serif;
     line-height: 2em;
     color: black;
-    font-weight:800;
+    font-weight: 800;
 
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 32px */
 @media screen and (min-width: 761px) {
-  div.post-title-small {
-    font-size: 32px;
-  }
+    div.post-title-small {
+        font-size: 32px;
+    }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 24px */
 @media screen and (max-width: 760px) {
-  div.post-title-small {
-      font-size: 3em;
-      font-family: "Playfair Display", serif;
-  }
+    div.post-title-small {
+        font-size: 3em;
+        font-family: "Playfair Display", serif;
+    }
 }
 
 .post-title-small:hover {

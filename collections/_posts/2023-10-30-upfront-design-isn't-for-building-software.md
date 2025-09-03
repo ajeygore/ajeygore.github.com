@@ -7,9 +7,6 @@ description: The transformative journey from chaotic, disparate tech stacks to a
 lead_image: blog/architecture-thinking.svg
 ---
 
-<p><img src="/assets/images/blog/architecture-thinking.svg" alt="Software architecture thinking process" class="responsive" />
-</p>
-
 <div class="footnote">
 Source : Dall-E by OpenAI
 </div>

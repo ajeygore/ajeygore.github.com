@@ -7,8 +7,6 @@ description: Getting started with TensorFlow2. Installing and Running it on Appl
 lead_image: metal_tensorflow.png
 ---
 
-<p><img src="/assets/images/metal_tensorflow.png" alt="Teams" class="responsive" /></p>
-
 <hr>
 ##### I ran into issues when getting started with Tensorflow 2.0 on macOS M1, this post may help others who are trying to get started with TensorFlow 2.0 on Apple M1 Macs. This post is a work in progress and will be updated as I learn more. 
 <hr>

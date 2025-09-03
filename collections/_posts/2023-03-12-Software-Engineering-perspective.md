@@ -7,8 +7,6 @@ description: Essay on software engineering.
 lead_image: blog/software_perspective.png
 ---
 
-<p><img src="/assets/images/blog/software_perspective.png" alt="Software generation" class="responsive" /></p>
-
 I have been writing software for more than two decades. And always have been curious about software engineering. 
 Now, I mostly view writing software as a craft. The eternal question is how to write "good" software. 
 Because thinking "software engineering" as a craft, then we must improve it. I feel the quest just got started; 

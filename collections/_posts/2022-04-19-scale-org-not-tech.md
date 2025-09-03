@@ -6,9 +6,6 @@ categories: Essay
 description: My notes and observations on scaling orgs
 lead_image: blog/org-scaling.svg
 ---
-
-<p><img src="/assets/images/blog/org-scaling.svg" alt="Organizational scaling growth structure" class="responsive" />
-</p>
 **Scaling org, scales the tech naturally, here are few tips to scale the org.**
 
 Scaling a startup after finding "product-market-fit" (PMF) is a sudden task; you don't prepare yourself for it, but instead, it just happens out of the blue, one day, you wake up, and there are tons of users. No one knows how to serve them. NO ONE! Experienced founders understand that what it takes to scale the product, it takes an excellent scaled-up organization to scale the product, not vice-versa. 

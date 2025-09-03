@@ -7,8 +7,6 @@ description: How do you build brand?
 lead_image: blog/ui_kits.png
 ---
 
-<p><img src="/assets/images/blog/ui_kits.png" alt="Software generation" class="responsive" /></p>
-
 
 ### Why use UI kits instead of creating custom CSS?
 

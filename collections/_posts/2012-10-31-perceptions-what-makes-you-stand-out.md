@@ -6,7 +6,7 @@ lead_image: blog/eye_projection.png
 ---
 
 
-<p><img src="/assets/images/blog/eye_projection.png" alt="Perceived vs Projected Image" class="responsive" /></p>
+---
 <div class="footnote">
 Source : Stable Diffusion 
 <p/>

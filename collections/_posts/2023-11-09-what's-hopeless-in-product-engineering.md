@@ -7,13 +7,6 @@ description: The transformative journey from chaotic, disparate tech stacks to a
 lead_image: blog/hopeless.jpg
 ---
 
-<p><img src="/assets/images/blog/hopeless.jpg" alt="Hopelessness, as experessed by a sage" class="responsive" />
-</p>
-
-<div class="footnote">
-Source : Dall-E by OpenAI
-</div>
-
 ##### THIS POST has ongoing contribution
 
 Almost in every discussion around product engineering culture following two or three things come up constantly

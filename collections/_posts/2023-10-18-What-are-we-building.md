@@ -7,9 +7,6 @@ description: If startups think in Modular and abstraction based systems as ident
 lead_image: blog/what_are_we_building.png
 ---
 
-<p><img src="/assets/images/blog/what_are_we_building.png" alt="Software generation" class="responsive" />
-</p>
-
 ##### THIS IS A DRAFT
 
 Engineers over-engineer, not because they want to but because they want to have a perfect, future proof, scalable and modular system. 

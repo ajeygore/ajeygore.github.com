@@ -7,9 +7,6 @@ description: What does it mean by being a leader.
 lead_image: blog/leadership-vision.svg
 ---
 
-<p><img src="/assets/images/blog/leadership-vision.svg" alt="Leadership vision and team dynamics" class="responsive" />
-</p>
-
 <p>
 Few days ago, Jacky asked me two questions, one of them was What leaders do?
 

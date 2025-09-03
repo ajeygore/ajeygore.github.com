@@ -7,9 +7,6 @@ description: How do you build brand?
 lead_image: blog/reputation.png
 ---
 
-<p><img src="/assets/images/blog/reputation.png" alt="Software generation" class="responsive" />
-</p>
-
 <p>
 Few days ago, Jacky asked me two questions, one of them was how to earn reputation? 
 </p>

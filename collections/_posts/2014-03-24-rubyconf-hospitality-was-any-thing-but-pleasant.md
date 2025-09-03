@@ -7,7 +7,7 @@ categories:
 - Configuration Management
 - infrastructure
 - Virtualization
-lead_image: '/assets/images/blog/rubyconf-hospitality-experience.svg'
+lead_image: blog/rubyconf-hospitality-experience.svg
 ---
 RubyConf India 14 - Hospitality was anything but pleasant at The Lalit resort and spa, Goa, we had pretty bitter experience and would like to capture it here. And please suggest me where else can we do this, send us email at team at the rubyconfindia.org
 

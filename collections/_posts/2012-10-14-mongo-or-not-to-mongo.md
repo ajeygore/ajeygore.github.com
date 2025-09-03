@@ -3,6 +3,7 @@ layout: post
 title: mongo or not to mongo
 published: true
 categories: []
+lead_image: blog/mongo-decision.svg
 ---
 Literally means - to ask or not :-) But over here my context is bit different.
 

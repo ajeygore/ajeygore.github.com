@@ -7,8 +7,6 @@ description: what does it take to shine at a workplace full of hustle, mission a
 lead_image: blog/team-member-excellence.svg
 ---
 
-<p><img src="/assets/images/blog/team-member-excellence.svg" alt="Team member excellence and collaboration" class="responsive" /></p>
-
 **Being a good team member and creating a shining team.**
 
 **Note:** *I earlier published this post as part of Gojek Blog, This is updated more generic write up.*

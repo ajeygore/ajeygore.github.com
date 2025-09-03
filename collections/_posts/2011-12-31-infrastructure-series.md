@@ -6,6 +6,7 @@ categories:
 - Configuration Management
 - infrastructure
 - Virtualization
+lead_image: blog/infrastructure-series.svg
 ---
 I have been working on setting up internal cloud with my team, we have been using many technologies to build all these things together.
 

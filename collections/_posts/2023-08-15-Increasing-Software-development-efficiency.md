@@ -7,8 +7,6 @@ description: Essay on software engineering.
 lead_image: blog/software_perspective.png
 ---
 
-<p><img src="/assets/images/blog/software_perspective.png" alt="Untangling developer velocity generation" class="responsive" /></p>
-
 One of the most common question I get asked is how do we release software reliably? 
 
 Reliable software does not fail, changes are applied gracefully and we have confidence that our changes won't break anything.
