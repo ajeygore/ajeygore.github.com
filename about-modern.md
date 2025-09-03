@@ -37,111 +37,130 @@ subpage: about
             <p class="text-muted small mt-2">Source: ThoughtWorks</p>
         </div>
 
-        <!-- Greeting Section -->
+        <!-- Introduction Section -->
         <div class="mb-5">
-            <h2 class="section-title">Namaste! 🙏</h2>
+            <h2 class="section-title">Namaste 🙏, I am Ajey</h2>
             <div class="bg-light rounded-3 p-4 mb-4">
-                <code class="fs-6">IPA /ˈnʌməsteɪ/ means a respectful greeting, said with hands joined together!</code>
+             <code class="fs-6">IPA /ˈnʌməsteɪ/ means a respectful greeting, said with hands joined together!</code>
+                <code class="fs-6">def ajey_gore(): return "Earn People, Not money!"</code>
             </div>
             
-            <p class="lead">This is my readme file. I am Ajey Gore, and this is my manual or readme file, know me.</p>
+            <p class="lead">I'm a software engineer who believes technology should serve people, not the other way around.</p>
             
-            <p>I am from India. I studied commerce, arts and later software engineering.</p>
+            <p>Born in India, I've had the privilege of living across continents—from Bangalore to London, Chicago to Jakarta, and now Singapore. My journey began in commerce and arts before finding my calling in software engineering. Along the way, I've worn many hats: graphics designer, computer salesman, printing press operator, and even helped run my brother's mobile phone business.</p>
             
-            <p>I have lived in Bangalore, London, Chicago, Pune, Gurgaon, Ghaziabad, Jakarta and now I live in Singapore.</p>
+            <p>What I've learned is this: every detour taught me something valuable about people, business, and building things that matter. I've spent the last two decades writing software, building teams, and helping organizations grow—but at heart, I'm still that curious person who loves understanding how things work and why people do what they do.</p>
             
-            <p>Started my career as a graphics designer, sold computers, ran a printing press, helped my elder brother in his cell phone and DTP business and finally settled writing software for most of my life.</p>
-            
-            <p>I learned many things along the way and met some amazing people over the years. I love to talk to people about technology, people, teams and building organizations.</p>
-            
-            <p>So this page is about "how to deal with me" as a person, because I fundamentally believe that everyone else is right about me and dealing with me is constant expectation mismatch and a cage fight in a very interesting way, where I might appear dogmatic and other person think that they are principled :-)</p>
+            <p>This page is my attempt to give you a user manual for working with me. Think of it as documentation—because everyone deserves to know what they're getting into. 😊</p>
         </div>
 
         <!-- What I Do Section -->
         <div class="mb-5">
-            <h3 class="section-title">What do I do?</h3>
+            <h3 class="section-title">What I Do</h3>
             
-            <p>I'm a Software Engineer at the core. I love building teams and working with people. I work for people and people work with me.</p>
+            <p>I'm a software engineer at heart, but my work extends far beyond code. I build teams, mentor leaders, and help organizations navigate the complexities of scaling technology and culture together.</p>
             
-            <p>I see myself as swiss knife in tactical situations and an empowerment advocate in strategic terms. I have played various roles in my life and recently at GoJek, now I work with Sequoia Capital as Technology Partner.</p>
+            <p>Currently, I work as an Operating Partner - Technology at Sequoia Capital, where I collaborate with CTOs and CPOs across our portfolio companies. My role is part strategic advisor, part engineering consultant, and part storyteller—sharing lessons learned from two decades of building, breaking, and rebuilding systems and teams.</p>
             
-            <p>In my role, I work with the CTOs and CPOs of Sequoia's portfolio companies to provide insight and expertise in building and scaling engineering, data science, product, and design functions. In crude terms, I tell them what not to do, about my mistakes and learnings.</p>
+            <p>Before Sequoia, I served as Group CTO at Gojek, where I helped scale a startup from a few engineers to over 2,000 people across multiple countries. It was simultaneously the most challenging and rewarding experience of my career—watching something grow from serving thousands to serving millions of people daily.</p>
+            
+            <p>My approach is pragmatic: I prefer being the Swiss Army knife in tactical situations and an empowerment advocate in strategic ones. I've learned that the best solutions often come from the people closest to the problems, not from the corner offices.</p>
         </div>
 
         <!-- Philosophy Section -->
         <div class="mb-5">
+            <h3 class="section-title">My Philosophy</h3>
+            
             <blockquote class="blockquote">
-                I fundamentally believe that I am a package of success and have a cargo full of failures with me, I might have 1 or 2 good success stories, but most of the time I will tell one of the failures from 100s of stories and incidents, I experienced through out last 2 decades or so.
+                "I carry a small collection of successes and a large library of failures. The failures teach me more, and I'm happy to share them so others can avoid the same mistakes."
             </blockquote>
             
-            <p>I am sure the perspectives I am trying to put you through and context I am trying to give you are my side of stories and perception. They might be wrong - because one side of the story is never true, since it's based on human perception, but you are welcome to correct me.</p>
+            <p>I believe in intellectual honesty above all else. My perspectives are shaped by my experiences, which means they're inherently biased and potentially incomplete. I welcome being corrected—it's how I learn and grow.</p>
             
-            <p>Because I learned that "Saying I don't know, and accepting those mistakes" are few of many important traits one should have apart from being empathetic, curious and ready to learn.</p>
+            <p>Three principles guide my work:</p>
+            
+            <ul class="mb-4">
+                <li><strong>People First:</strong> Technology serves people, not shareholders' quarterly reports. The best engineering decisions consider human impact.</li>
+                <li><strong>Embrace "I Don't Know":</strong> These three words have opened more doors for learning than any certification or degree ever could.</li>
+                <li><strong>Simple Wins:</strong> Complexity is often just poorly understood simplicity. The most elegant solutions are usually the most straightforward ones.</li>
+            </ul>
+            
+            <p>I'm fundamentally optimistic about people and technology's potential to make life better. But I'm also realistic about the hard work required to get there.</p>
         </div>
 
         <!-- Communication Section -->
         <div class="mb-5">
-            <h3 class="section-title">Best Way to Communicate with Me</h3>
+            <h3 class="section-title">How to Work with Me</h3>
             
-            <p>I am converted extrovert, so I sometimes put perceived information through my introverted lens, that means, sometimes I see what I want to see, so I try to confirm with people on what I perceive, the way I want you to tell me what you think is walk up to me and tell me what you feel.</p>
-            
-            <p>I keep my professional life within the confines of office premise, that means that we can argue, agree to disagree, but still can have an amazing dinner! I don't bring official matters to any personal meetings or outings.</p>
+            <p>I'm a converted extrovert, which means I process information through conversation but also need time to think. I prefer direct communication—tell me what you think, disagree when you disagree, and don't worry about being diplomatic. I can separate professional discussions from personal relationships.</p>
             
             <div class="row g-4 mb-4">
                 <div class="col-md-4">
                     <div class="p-4 bg-light rounded-3 h-100 text-center">
                         <i class="bi bi-telephone text-primary fs-1 mb-3 d-block"></i>
                         <h5 class="fw-bold">Call Me</h5>
-                        <p class="small text-muted">Fastest way to reach me - I respond almost immediately</p>
+                        <p class="small text-muted">For urgent matters or complex discussions—I respond almost immediately</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 bg-light rounded-3 h-100 text-center">
                         <i class="bi bi-twitter text-primary fs-1 mb-3 d-block"></i>
                         <h5 class="fw-bold">Twitter</h5>
-                        <p class="small text-muted">Best for quick questions and interactions</p>
+                        <p class="small text-muted">Best for quick questions, ideas, and public discussions</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="p-4 bg-light rounded-3 h-100 text-center">
                         <i class="bi bi-envelope text-primary fs-1 mb-3 d-block"></i>
                         <h5 class="fw-bold">Email</h5>
-                        <p class="small text-muted">Response time up to a week</p>
+                        <p class="small text-muted">For detailed discussions—expect response within a week</p>
                     </div>
                 </div>
             </div>
             
-            <p>I don't initiate one on one conversations, just because I run out of time, in turn I am perceived as one of the most difficult people to get time from, but if you really want to talk to me, just call me!</p>
+            <div class="bg-light rounded-3 p-4 mb-4">
+                <p class="mb-2"><strong>Pro tip:</strong> I don't schedule many one-on-ones because I'm terrible at time management, but I'm always available for impromptu conversations. If you need to talk, just reach out—I'll make time.</p>
+            </div>
             
-            <p>So I'm ok with being engaged however you are comfortable. Take as long as you need to. Use many words or few. Use chat, email or call me or meet me in person. Whatever works for you. I'll adjust, and won't judge.</p>
+            <p><strong>What works best with me:</strong></p>
+            <ul class="mb-4">
+                <li>Come with problems and proposed solutions (I love options to choose from)</li>
+                <li>Share your opinion before asking for mine</li>
+                <li>Be patient with my learning process—I ask a lot of questions</li>
+                <li>Don't take my strong opinions personally—they're held lightly and change with new evidence</li>
+            </ul>
             
-            <p>Finally, I have strong opinions that I strive to hold as long as I am shown better ways, so I'm always easiest to persuade with logic and always ready to learn. I always look for traits in people who come with problem & solutions with it, always give me options to choose from and always tell their opinions on something before seeking mine.</p>
-            
-            <p>To contact me, reaching through <a href="https://twitter.com/ajeygore" target="_blank" rel="noopener noreferrer">twitter</a> works for now.</p>
+            <p>I communicate however you're comfortable—many words or few, formal or casual, in person or digital. I'll adapt to what works for you.</p>
         </div>
 
         <!-- Work Style Section -->
         <div class="mb-5">
-            <h3 class="section-title">My Work Style</h3>
+            <h3 class="section-title">What Drives Me</h3>
             
-            <p>I really enjoy working on complex strategic product problems involving software engineering, design, data science or scaling. I have a strong interest in software design, team building and how they work with org design. I believe that the way product evolves over a period of time, organization should evolve as well.</p>
+            <p>I'm energized by complex problems that sit at the intersection of technology, people, and business. Whether it's scaling engineering teams, designing systems architecture, or helping organizations evolve with their products—I love challenges that don't have obvious solutions.</p>
             
             <div class="bg-light rounded-3 p-4 mb-4">
-                <p class="mb-2"><strong>Recommended Reading:</strong></p>
-                <p class="mb-0">I have always followed John Ousterhaut and now he has a book around the same topic, please read <a href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201" target="_blank" rel="noopener noreferrer">A Philosophy of Software Design</a> by John Ousterhout.</p>
+                <p class="mb-2"><strong>Current Reading:</strong></p>
+                <p class="mb-0">I highly recommend <a href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201" target="_blank" rel="noopener noreferrer">"A Philosophy of Software Design"</a> by John Ousterhout. It captures much of what I believe about building software that lasts.</p>
             </div>
             
-            <p>I prefer being reasonable and transparent. I encourage transparency in general - especially around <a href="https://en.wikipedia.org/wiki/Communication" target="_blank" rel="noopener noreferrer">communication</a>.</p>
+            <p><strong>My core beliefs about building things:</strong></p>
+            <ul class="mb-4">
+                <li><strong>Transparency over diplomacy:</strong> Clear communication prevents more problems than it creates</li>
+                <li><strong>KISS principle:</strong> Simple solutions scale better and break less often—complexity is often just poorly understood simplicity</li>
+                <li><strong>Solutions over features:</strong> I prefer working with people who solve problems rather than just ship code</li>
+                <li><strong>Action over analysis:</strong> Doers who volunteer for unfamiliar challenges make the best leaders</li>
+            </ul>
             
-            <p>I really believe in <strong>KISS (Keep It Simple Stupid)</strong> principle - one my great mentors at <a href="https://www.thoughtworks.com/" target="_blank" rel="noopener noreferrer">ThoughtWorks</a> taught me. Simple is always powerful. Simple means you can always build upon it.</p>
+            <p>I believe organizations should evolve with their products. The team structure that works for a startup won't work for a scale-up, and what works at scale might kill innovation. The art is knowing when and how to change.</p>
             
-            <p>I like people building solutions, not features. I have strong bias towards doers than talkers. People who step up and volunteer to solve problems that they have never done before always get my vote for leadership roles.</p>
+            <p>At the end of the day, I'm just someone who enjoys learning, building things that matter, and working with people who care about their craft. The technology industry has given me incredible opportunities—I try to pay it forward however I can.</p>
         </div>
 
         <!-- Contact Section -->
         <div class="text-center">
-            <h3 class="section-title text-center">Let's Connect</h3>
-            <p class="mb-4">I'd love to hear from you and learn about what you're working on!</p>
+            <h3 class="section-title">Let's Connect</h3>
+            <p class="mb-4">I'm always interested in hearing about interesting problems and the people solving them. Whether you're building something new, scaling something existing, or just want to chat about technology and teams—I'd love to hear from you.</p>
             <div class="d-flex gap-3 justify-content-center">
                 <a href="https://twitter.com/ajeygore" target="_blank" rel="noopener noreferrer" class="btn btn-modern btn-modern-primary">
                     <i class="bi bi-twitter"></i>
