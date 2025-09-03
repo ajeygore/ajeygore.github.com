@@ -16,8 +16,18 @@ description: A site about product and software engineering. Read & Discover abou
 domain: ajeygore.in
 incremental: true
 
+# GitHub Pages compatible settings
 production_url : https://ajeygore.in
+url: https://ajeygore.in
+baseurl: ""
+
 collections_dir: collections
+
+# GitHub Pages compatible plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks

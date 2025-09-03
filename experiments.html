@@ -37,7 +37,7 @@ subpage: Experiments
             <article class="card blog-featured-card fade-in-up">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="/assets/images/{{ featured_experiment.lead_image | default: site.lead_image }}"
+                        <img src="{% if featured_experiment.lead_image %}{{ '/assets/images/' | append: featured_experiment.lead_image | relative_url }}{% else %}{{ '/assets/images/' | append: site.lead_image | relative_url }}{% endif %}"
                             class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ featured_experiment.title }}"
                             loading="lazy">
                     </div>
@@ -93,7 +93,7 @@ subpage: Experiments
                 <article class="card blog-post-card h-100 fade-in-up">
                     <div class="position-relative overflow-hidden">
                         <img class="card-img-top blog-card-image"
-                            src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}"
+                            src="{% if post.lead_image %}{{ '/assets/images/' | append: post.lead_image | relative_url }}{% else %}{{ '/assets/images/' | append: site.lead_image | relative_url }}{% endif %}" alt="{{ post.title }}"
                             loading="lazy">
                         <div class="blog-card-overlay">
                             <a href="{{ post.url }}" class="btn btn-modern btn-modern-primary btn-sm">

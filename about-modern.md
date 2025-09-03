@@ -25,7 +25,8 @@ subpage: about
 </nav>
 
 <div class="row fade-in-up">
-    <div class="col-lg-8 mx-auto">
+    <div class="col-12">
+        <div class="content-container">
         
         <!-- Image Section -->
         <div class="text-center mb-5">

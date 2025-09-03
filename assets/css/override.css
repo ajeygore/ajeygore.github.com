@@ -158,6 +158,13 @@ body {
     padding: 0 2rem;
 }
 
+/* Content container to match hero width */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
