@@ -4,7 +4,7 @@ title: What's "hopeless" in product engineering?
 published: true
 categories: Essay
 description: Why product engineering teams get stuck in cycles of dysfunction, and the transformative journey from chaos to clarity.
-lead_image: blog/hopeless-product-engineering.svg
+lead_image: blog/hopeless-product-engineering-white-bg.svg
 ---
 
 ##### THIS POST has ongoing contribution

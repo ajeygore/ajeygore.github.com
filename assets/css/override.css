@@ -116,6 +116,9 @@ body {
     object-fit: cover;
     border-radius: 1rem;
     margin-bottom: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
 }
 
 .card:hover {

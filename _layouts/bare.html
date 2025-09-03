@@ -243,6 +243,19 @@
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="{{site.author.twitter}}"/>
         <meta name="twitter:creator" content="{{site.author.twitter}}"/>
+        <meta name="twitter:title" content="{% if page.url == '/' %}Ajey Gore - Operating Partner at PeakXV Partners | Technology Leader{% else %}{{ page.title }} - Ajey Gore{% endif %}"/>
+        {% if page.description %}
+        <meta name="twitter:description" content="{{ page.description }}">
+        {% else %}
+        <meta name="twitter:description" content="{{ site.description }}">
+        {% endif %}
+        {% if page.lead_image %}
+        <meta name="twitter:image" content="{{ site.production_url}}/assets/images/{{page.lead_image}}">
+        <meta name="twitter:image:alt" content="{{ page.title }}">
+        {% else %}
+        <meta name="twitter:image" content="{{ site.production_url}}/assets/images/{{site.lead_image}}">
+        <meta name="twitter:image:alt" content="Ajey Gore">
+        {% endif %}
 
         <meta property="og:url" content="{{ site.production_url }}{{page.url}}"/>
         <meta property="og:title" content="{% if page.url == '/' %}Ajey Gore - Operating Partner at PeakXV Partners | Technology Leader{% else %}{{ page.title }} - Ajey Gore{% endif %}"/>
