@@ -1,0 +1,79 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="memberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <linearGradient id="shineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="spotlightGradient" cx="50%" cy="40%">
+      <stop offset="0%" style="stop-color:#fbbf24" stop-opacity="0.4"/>
+      <stop offset="100%" style="stop-color:#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Spotlight effect -->
+  <ellipse cx="200" cy="120" rx="120" ry="80" fill="url(#spotlightGradient)"/>
+  
+  <!-- Team formation -->
+  <circle cx="200" cy="130" r="25" fill="url(#shineGradient)" opacity="0.9"/>
+  <circle cx="200" cy="130" r="18" fill="#ffffff" opacity="0.5"/>
+  
+  <!-- Supporting team members -->
+  <circle cx="160" cy="160" r="18" fill="url(#memberGradient)" opacity="0.8"/>
+  <circle cx="240" cy="160" r="18" fill="url(#memberGradient)" opacity="0.8"/>
+  <circle cx="130" cy="190" r="15" fill="url(#teamGradient)" opacity="0.7"/>
+  <circle cx="270" cy="190" r="15" fill="url(#teamGradient)" opacity="0.7"/>
+  <circle cx="200" cy="200" r="16" fill="url(#memberGradient)" opacity="0.7"/>
+  
+  <!-- Connection lines showing collaboration -->
+  <line x1="200" y1="155" x2="160" y2="160" stroke="url(#shineGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="155" x2="240" y2="160" stroke="url(#shineGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="160" y1="178" x2="130" y2="190" stroke="url(#memberGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="240" y1="178" x2="270" y2="190" stroke="url(#memberGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="184" x2="200" y2="200" stroke="url(#teamGradient)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Excellence indicators -->
+  <path d="M 180 100 L 185 108 L 195 105 L 190 115 L 200 112 L 185 118 Z" fill="url(#shineGradient)" opacity="0.7"/>
+  <path d="M 205 95 L 210 103 L 220 100 L 215 110 L 225 107 L 210 113 Z" fill="url(#shineGradient)" opacity="0.6"/>
+  
+  <!-- Performance indicators -->
+  <rect x="320" y="80" width="60" height="80" rx="8" fill="url(#teamGradient)" opacity="0.1"/>
+  <rect x="325" y="90" width="50" height="6" fill="url(#memberGradient)" opacity="0.4" rx="3"/>
+  <rect x="325" y="90" width="40" height="6" fill="url(#memberGradient)" rx="3"/>
+  
+  <rect x="325" y="110" width="50" height="6" fill="url(#shineGradient)" opacity="0.4" rx="3"/>
+  <rect x="325" y="110" width="45" height="6" fill="url(#shineGradient)" rx="3"/>
+  
+  <rect x="325" y="130" width="50" height="6" fill="url(#teamGradient)" opacity="0.4" rx="3"/>
+  <rect x="325" y="130" width="35" height="6" fill="url(#teamGradient)" rx="3"/>
+  
+  <!-- Workplace elements -->
+  <rect x="50" y="240" width="300" height="20" rx="10" fill="url(#teamGradient)" opacity="0.2"/>
+  <circle cx="80" cy="250" r="6" fill="url(#memberGradient)" opacity="0.8"/>
+  <circle cx="150" cy="250" r="8" fill="url(#shineGradient)" opacity="0.8"/>
+  <circle cx="220" cy="250" r="6" fill="url(#memberGradient)" opacity="0.8"/>
+  <circle cx="290" cy="250" r="6" fill="url(#teamGradient)" opacity="0.8"/>
+  <circle cx="320" cy="250" r="5" fill="url(#teamGradient)" opacity="0.7"/>
+  
+  <!-- Abstract elements -->
+  <path d="M 30 70 Q 60 50 90 70" stroke="url(#shineGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 310 40 Q 340 20 370 40" stroke="url(#memberGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#374151">
+    Team Excellence
+  </text>
+  <text x="200" y="285" text-anchor="middle" font-family="system-ui" font-size="12" fill="#6b7280">
+    Being a Good Team Member
+  </text>
+</svg>

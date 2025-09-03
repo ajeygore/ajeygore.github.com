@@ -3,6 +3,7 @@ layout: post
 title: Inception, to speed up, to shape up.
 published: true
 categories: [startup]
+lead_image: blog/agile-inception.svg
 ---
 
 While in [Inception, 2010, Sci-Fi Movie](http://en.wikipedia.org/wiki/Inception) things slow down 

@@ -3,6 +3,7 @@ layout: post
 title: Change for eventual failure
 published: true
 categories: []
+lead_image: '/assets/images/blog/change-eventual-failure.svg'
 ---
 
 I have always believed in software functionality being ZERO or ONE. It means that either it will work or it will not, very well..! people argue that software should be like phone - should be able to make calls 'always', it should be like your alarm clock - should go off at certain pre-defined time occurence or like car remote, will lock on unlock the car given it has batteries with enough power - it will always function - software is also expected to work like that. Well why not and when you put this question infront of software techie - he will either get frustratred or will be looking around twiddling his thumbs on thinking on how to explain it better.

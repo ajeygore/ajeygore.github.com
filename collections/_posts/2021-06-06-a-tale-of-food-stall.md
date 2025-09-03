@@ -4,11 +4,10 @@ title: A tale of a food stall, from monolith to microservices
 published: true
 categories: ['lessons', 'essay', 'architecture']
 description: An evolution journey of a monolith hawker stall to a micro-services enabled restaurant.
-lead_image: food_stall_card.png
+lead_image: blog/food-stall-evolution.svg
 ---
 
-
-<p><img src="/assets/images/hawker_stall.jpg" alt="Hawker Center" class="responsive" /></p>
+<p><img src="/assets/images/blog/food-stall-evolution.svg" alt="Evolution from monolithic food stall to microservices restaurant" class="responsive" /></p>
 <div class="footnote">
 Source : Creative Commons <a href="https://www.flickr.com/photos/25802865@N08/12826250854" width="100%" height="100%"> Flicker </a>
 <p/>

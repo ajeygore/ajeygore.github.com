@@ -2,27 +2,75 @@
 layout: bare
 ---
 
-<!--<nav aria-label="breadcrumb align-content-center">-->
-<!--  <ol class="breadcrumb bg-transparent">-->
-<!--    <li class="breadcrumb-item"><a href="/">Home</a></li>-->
-<!--    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>-->
-<!--    <li class="breadcrumb-item active">{{ page.title }}</li>-->
-<!--  </ol>-->
-<!--</nav>-->
-<div class="text-center pb-4">
-  <div class="post-title">
-    {{ page.title }}
+<!-- Modern Post Header -->
+<article class="fade-in-up">
+  <header class="text-center mb-5">
+    <div class="bg-light rounded-3 p-4 mb-4">
+      <h1 class="section-title mb-3">{{ page.title }}</h1>
+      <div class="d-flex justify-content-center align-items-center gap-4 flex-wrap">
+        <span class="text-muted">
+          <i class="bi bi-calendar3 me-2"></i>
+          {{ page.date | date: '%B %d, %Y' }}
+        </span>
+        <span class="text-muted">
+          <i class="bi bi-clock me-2"></i>
+          {% include readingtime.erb page_content=page.content %}
+        </span>
+        {% if page.tags %}
+        <div class="d-flex gap-1">
+          {% for tag in page.tags %}
+          <span class="badge bg-primary">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item active">{{ page.title | truncate: 50 }}</li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Post Content -->
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <div class="post-content mb-5">
+        {{ content }}
+      </div>
+    </div>
   </div>
 
-  <span class="breadcrumb-item text-center">{{ page.date | date: '%b %d, %Y' }} • {% include readingtime.erb page_content=page.content %}</span>
-</div>
-
-<div class="pb-4">
-  {{ content }}
-</div>
-<div id="share-page" class="pb-4 mb-4">
-  <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}" rel="nofollow" target="_blank" title="Liked? Share on Twitter" style="color: #33B2FF;">
-    Share
-    <i class="sharepage bi bi-twitter"></i>
-  </a>
-</div>
+  <!-- Share Section -->
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <div class="bg-light rounded-3 p-4 text-center">
+        <h5 class="mb-3">Enjoyed this post? Share it!</h5>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.production_url }}{{ page.url }}&via={{ site.author.twitter }}&related={{ site.author.twitter }}"
+            rel="nofollow noopener" target="_blank" class="btn btn-modern btn-modern-outline btn-sm"
+            title="Share on Twitter">
+            <i class="bi bi-twitter me-2"></i>
+            Share on Twitter
+          </a>
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.production_url }}{{ page.url }}"
+            rel="nofollow noopener" target="_blank" class="btn btn-modern btn-modern-outline btn-sm"
+            title="Share on LinkedIn">
+            <i class="bi bi-linkedin me-2"></i>
+            Share on LinkedIn
+          </a>
+          <button
+            onclick="navigator.share ? navigator.share({title: '{{ page.title | escape }}', url: window.location.href}) : navigator.clipboard.writeText(window.location.href)"
+            class="btn btn-modern btn-modern-outline btn-sm" title="Share or copy link">
+            <i class="bi bi-share me-2"></i>
+            Share Link
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

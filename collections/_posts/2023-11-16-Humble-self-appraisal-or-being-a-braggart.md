@@ -4,10 +4,10 @@ title: Humble self-appraisal or being a braggart?
 published: true
 categories: Essay
 description: Discover the art of self-appraisal that highlights your achievements without sounding like a boast – it's simpler than you think!
-lead_image: blog/bragging.jpg
+lead_image: blog/humble-achievement.svg
 ---
 
-<p><img src="/assets/images/blog/bragging.jpg" alt="Braggarts or humble proclaimation of self attitutde" class="responsive" />
+<p><img src="/assets/images/blog/humble-achievement.svg" alt="Finding balance between humility and showcasing achievements" class="responsive" />
 </p>
 
 <div class="footnote">

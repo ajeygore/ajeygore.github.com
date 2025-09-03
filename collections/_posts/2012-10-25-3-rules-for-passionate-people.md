@@ -3,6 +3,7 @@ layout: post
 title: 3 Rules for passionate people
 published: true
 categories: ['passion', 'teams', 'work culture']
+lead_image: '/assets/images/blog/passionate-people-rules.svg'
 ---
 
 In the past, I have been in discussion with people - where we tried to answer following questions

@@ -1,3 +1,5 @@
+- name: brain chatter
+  link: /blog
 - name: talks
   link: /content/talks
 - name: experiments

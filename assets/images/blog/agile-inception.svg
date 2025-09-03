@@ -1,0 +1,69 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rocketGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="50%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#ec4899"/>
+    </linearGradient>
+    <linearGradient id="ideaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  
+  <!-- Central glow effect -->
+  <circle cx="200" cy="150" r="80" fill="url(#glowGradient)" opacity="0.4"/>
+  
+  <!-- Inception concept - nested idea layers -->
+  <circle cx="200" cy="150" r="60" fill="url(#ideaGradient)" opacity="0.2"/>
+  <circle cx="200" cy="150" r="45" fill="url(#ideaGradient)" opacity="0.3"/>
+  <circle cx="200" cy="150" r="30" fill="url(#ideaGradient)" opacity="0.4"/>
+  <circle cx="200" cy="150" r="15" fill="url(#rocketGradient)" opacity="0.8"/>
+  
+  <!-- Idea sparks -->
+  <circle cx="170" cy="120" r="4" fill="url(#rocketGradient)" opacity="0.7"/>
+  <circle cx="230" cy="125" r="5" fill="url(#rocketGradient)" opacity="0.6"/>
+  <circle cx="160" cy="180" r="3" fill="url(#ideaGradient)" opacity="0.8"/>
+  <circle cx="240" cy="175" r="4" fill="url(#ideaGradient)" opacity="0.7"/>
+  
+  <!-- Speed lines radiating outward -->
+  <path d="M 140 110 L 120 90" stroke="url(#rocketGradient)" stroke-width="2" opacity="0.6"/>
+  <path d="M 260 110 L 280 90" stroke="url(#rocketGradient)" stroke-width="2" opacity="0.6"/>
+  <path d="M 140 190 L 120 210" stroke="url(#ideaGradient)" stroke-width="2" opacity="0.6"/>
+  <path d="M 260 190 L 280 210" stroke="url(#ideaGradient)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Project timeline -->
+  <rect x="50" y="250" width="300" height="8" fill="url(#ideaGradient)" opacity="0.3" rx="4"/>
+  <rect x="50" y="250" width="120" height="8" fill="url(#rocketGradient)" rx="4"/>
+  
+  <!-- Phase markers -->
+  <circle cx="110" cy="254" r="6" fill="url(#rocketGradient)"/>
+  <circle cx="170" cy="254" r="6" fill="url(#ideaGradient)" opacity="0.7"/>
+  <circle cx="230" cy="254" r="6" fill="url(#ideaGradient)" opacity="0.5"/>
+  <circle cx="290" cy="254" r="6" fill="url(#ideaGradient)" opacity="0.3"/>
+  
+  <!-- Agile/Sprint elements -->
+  <rect x="320" y="80" width="60" height="40" rx="8" fill="url(#ideaGradient)" opacity="0.2"/>
+  <rect x="325" y="90" width="50" height="4" fill="url(#ideaGradient)" opacity="0.6" rx="2"/>
+  <rect x="325" y="100" width="35" height="4" fill="url(#rocketGradient)" opacity="0.6" rx="2"/>
+  <rect x="325" y="110" width="25" height="4" fill="url(#rocketGradient)" opacity="0.8" rx="2"/>
+  
+  <!-- Abstract elements -->
+  <path d="M 30 60 Q 60 40 90 60" stroke="url(#ideaGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 310 240 Q 340 220 370 240" stroke="url(#rocketGradient)" stroke-width="2" fill="none" opacity="0.4"/>
+  
+  <!-- Title -->
+  <text x="200" y="35" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#374151">
+    Agile Inception
+  </text>
+  <text x="200" y="285" text-anchor="middle" font-family="system-ui" font-size="12" fill="#6b7280">
+    Where Ideas Speed Up
+  </text>
+</svg>

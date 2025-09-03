@@ -1,0 +1,79 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="passionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#be185d"/>
+    </linearGradient>
+    <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <radialGradient id="glowGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#fbbf24" stop-opacity="0.6"/>
+      <stop offset="100%" style="stop-color:#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Central passion core -->
+  <circle cx="200" cy="150" r="60" fill="url(#glowGradient)"/>
+  <circle cx="200" cy="150" r="35" fill="url(#passionGradient)" opacity="0.8"/>
+  <text x="200" y="155" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="600" fill="white">
+    PASSION
+  </text>
+  
+  <!-- Rule 1 - Energy -->
+  <circle cx="120" cy="100" r="25" fill="url(#energyGradient)" opacity="0.7"/>
+  <text x="120" y="95" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">1</text>
+  <text x="120" y="110" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">Energy</text>
+  
+  <!-- Rule 2 - Team -->
+  <circle cx="280" cy="100" r="25" fill="url(#teamGradient)" opacity="0.7"/>
+  <text x="280" y="95" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">2</text>
+  <text x="280" y="110" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">Team</text>
+  
+  <!-- Rule 3 - Solutions -->
+  <circle cx="200" cy="220" r="25" fill="url(#passionGradient)" opacity="0.7"/>
+  <text x="200" y="215" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="white">3</text>
+  <text x="200" y="230" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">Solutions</text>
+  
+  <!-- Connection lines -->
+  <line x1="145" y1="115" x2="175" y2="135" stroke="url(#energyGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="255" y1="115" x2="225" y2="135" stroke="url(#teamGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="185" x2="200" y2="195" stroke="url(#passionGradient)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Excited indicators -->
+  <path d="M 80 80 L 85 75 L 90 85 L 95 75 L 100 85" stroke="url(#energyGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 300 80 L 305 75 L 310 85 L 315 75 L 320 85" stroke="url(#teamGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Work culture elements -->
+  <rect x="50" y="250" width="300" height="30" rx="15" fill="url(#passionGradient)" opacity="0.2"/>
+  <circle cx="80" cy="265" r="8" fill="url(#energyGradient)" opacity="0.6"/>
+  <circle cx="150" cy="265" r="8" fill="url(#teamGradient)" opacity="0.6"/>
+  <circle cx="200" cy="265" r="8" fill="url(#passionGradient)" opacity="0.8"/>
+  <circle cx="250" cy="265" r="8" fill="url(#teamGradient)" opacity="0.6"/>
+  <circle cx="320" cy="265" r="8" fill="url(#energyGradient)" opacity="0.6"/>
+  
+  <!-- Excitement sparks -->
+  <circle cx="70" cy="60" r="3" fill="url(#energyGradient)" opacity="0.8"/>
+  <circle cx="90" cy="50" r="2" fill="url(#passionGradient)" opacity="0.7"/>
+  <circle cx="110" cy="65" r="2.5" fill="url(#energyGradient)" opacity="0.6"/>
+  
+  <circle cx="290" cy="60" r="3" fill="url(#teamGradient)" opacity="0.8"/>
+  <circle cx="310" cy="50" r="2" fill="url(#passionGradient)" opacity="0.7"/>
+  <circle cx="330" cy="65" r="2.5" fill="url(#teamGradient)" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#374151">
+    3 Rules for Passionate People
+  </text>
+  <text x="200" y="50" text-anchor="middle" font-family="system-ui" font-size="12" fill="#6b7280">
+    Building Passionate Work Culture
+  </text>
+</svg>

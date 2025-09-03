@@ -1,0 +1,112 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="changeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="complexityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="failureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <linearGradient id="solutionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <radialGradient id="pauseGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#3b82f6" stop-opacity="0.6"/>
+      <stop offset="100%" style="stop-color:#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8fafc"/>
+  
+  <!-- Simple start (top left) -->
+  <circle cx="80" cy="80" r="20" fill="url(#solutionGradient)" opacity="0.8"/>
+  <text x="80" y="85" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">
+    Simple
+  </text>
+  
+  <!-- Branching complexity paths -->
+  <path d="M 100 80 Q 140 60 180 80" stroke="url(#changeGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M 100 80 Q 140 80 180 80" stroke="url(#changeGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M 100 80 Q 140 100 180 80" stroke="url(#changeGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  
+  <!-- Complexity node -->
+  <circle cx="180" cy="80" r="25" fill="url(#complexityGradient)" opacity="0.8"/>
+  <text x="180" y="85" text-anchor="middle" font-family="system-ui" font-size="9" font-weight="600" fill="white">
+    Complex
+  </text>
+  
+  <!-- More branching -->
+  <path d="M 205 80 Q 240 50 280 60" stroke="url(#complexityGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 205 80 Q 240 70 280 80" stroke="url(#complexityGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 205 80 Q 240 90 280 100" stroke="url(#complexityGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M 205 80 Q 240 110 280 120" stroke="url(#complexityGradient)" stroke-width="2" fill="none" opacity="0.7"/>
+  
+  <!-- Eventual failure points -->
+  <circle cx="280" cy="60" r="12" fill="url(#failureGradient)" opacity="0.8"/>
+  <circle cx="280" cy="80" r="12" fill="url(#failureGradient)" opacity="0.8"/>
+  <circle cx="280" cy="100" r="12" fill="url(#failureGradient)" opacity="0.8"/>
+  <circle cx="280" cy="120" r="12" fill="url(#failureGradient)" opacity="0.8"/>
+  
+  <!-- Failure text -->
+  <text x="330" y="85" font-family="system-ui" font-size="11" font-weight="600" fill="#dc2626">
+    Eventual
+  </text>
+  <text x="330" y="100" font-family="system-ui" font-size="11" font-weight="600" fill="#dc2626">
+    Failure
+  </text>
+  
+  <!-- The Pause solution (bottom) -->
+  <circle cx="200" cy="200" r="40" fill="url(#pauseGradient)"/>
+  <circle cx="200" cy="200" r="25" fill="url(#solutionGradient)" opacity="0.8"/>
+  <rect x="190" y="190" width="8" height="20" rx="2" fill="white"/>
+  <rect x="202" y="190" width="8" height="20" rx="2" fill="white"/>
+  <text x="200" y="240" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="600" fill="#059669">
+    PAUSE
+  </text>
+  <text x="200" y="255" text-anchor="middle" font-family="system-ui" font-size="10" fill="#6b7280">
+    "I am not done, I will never be done,
+  </text>
+  <text x="200" y="270" text-anchor="middle" font-family="system-ui" font-size="10" fill="#6b7280">
+    it's the pause I cherish"
+  </text>
+  
+  <!-- Software lifecycle curve -->
+  <path d="M 50 150 Q 100 130 150 140 Q 200 150 250 170 Q 300 190 350 220" 
+        stroke="url(#changeGradient)" stroke-width="3" fill="none" opacity="0.6"/>
+  
+  <!-- Quality indicators -->
+  <circle cx="80" cy="140" r="6" fill="url(#solutionGradient)" opacity="0.8"/>
+  <circle cx="120" cy="135" r="6" fill="url(#changeGradient)" opacity="0.8"/>
+  <circle cx="160" cy="145" r="6" fill="url(#complexityGradient)" opacity="0.8"/>
+  <circle cx="200" cy="155" r="6" fill="url(#failureGradient)" opacity="0.8"/>
+  
+  <!-- Change arrows -->
+  <path d="M 50 170 L 70 160 L 70 165 L 90 165 L 90 175 L 70 175 L 70 180 Z" 
+        fill="url(#changeGradient)" opacity="0.6"/>
+  <path d="M 120 170 L 140 160 L 140 165 L 160 165 L 160 175 L 140 175 L 140 180 Z" 
+        fill="url(#changeGradient)" opacity="0.6"/>
+  <path d="M 190 170 L 210 160 L 210 165 L 230 165 L 230 175 L 210 175 L 210 180 Z" 
+        fill="url(#changeGradient)" opacity="0.6"/>
+  
+  <!-- Re-engineer solution arrow -->
+  <path d="M 250 190 Q 200 180 160 190" stroke="url(#solutionGradient)" stroke-width="3" 
+        fill="none" opacity="0.7" stroke-dasharray="5,5"/>
+  <text x="200" y="180" text-anchor="middle" font-family="system-ui" font-size="9" fill="#059669">
+    Re-engineer
+  </text>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#374151">
+    Change for Eventual Failure
+  </text>
+  <text x="200" y="50" text-anchor="middle" font-family="system-ui" font-size="12" fill="#6b7280">
+    Software Evolution & Complexity Management
+  </text>
+</svg>

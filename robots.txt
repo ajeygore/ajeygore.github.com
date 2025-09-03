@@ -1,0 +1,22 @@
+---
+layout: null
+---
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /_site/
+Disallow: /collections/
+Disallow: /assets/css/
+Disallow: /assets/scripts/
+
+# Allow crawling of important pages
+Allow: /about
+Allow: /blog
+Allow: /content/talks
+Allow: /experiments
+
+# Sitemap location
+Sitemap: {{ site.production_url }}/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1

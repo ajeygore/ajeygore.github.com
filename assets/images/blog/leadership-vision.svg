@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb"/>
+      <stop offset="100%" style="stop-color:#f5576c"/>
+    </linearGradient>
+    <linearGradient id="leaderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe"/>
+      <stop offset="100%" style="stop-color:#00f2fe"/>
+    </linearGradient>
+    <radialGradient id="spotlightGradient" cx="50%" cy="30%">
+      <stop offset="0%" style="stop-color:#ffffff" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f1f5f9"/>
+  
+  <!-- Spotlight effect -->
+  <ellipse cx="200" cy="100" rx="150" ry="80" fill="url(#spotlightGradient)"/>
+  
+  <!-- Team members (circles) -->
+  <circle cx="120" cy="150" r="18" fill="url(#teamGradient)" opacity="0.8"/>
+  <circle cx="180" cy="170" r="16" fill="url(#teamGradient)" opacity="0.7"/>
+  <circle cx="220" cy="165" r="17" fill="url(#teamGradient)" opacity="0.8"/>
+  <circle cx="280" cy="155" r="15" fill="url(#teamGradient)" opacity="0.7"/>
+  <circle cx="160" cy="200" r="14" fill="url(#teamGradient)" opacity="0.6"/>
+  <circle cx="240" cy="195" r="16" fill="url(#teamGradient)" opacity="0.7"/>
+  
+  <!-- Leader (distinct, elevated) -->
+  <circle cx="200" cy="110" r="25" fill="url(#leaderGradient)" opacity="0.9"/>
+  <circle cx="200" cy="110" r="18" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Connection lines showing influence -->
+  <line x1="200" y1="135" x2="120" y2="150" stroke="url(#leaderGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="135" x2="180" y2="170" stroke="url(#leaderGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="135" x2="220" y2="165" stroke="url(#leaderGradient)" stroke-width="2" opacity="0.5"/>
+  <line x1="200" y1="135" x2="280" y2="155" stroke="url(#leaderGradient)" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Vision arrows -->
+  <path d="M 200 90 L 190 80 M 200 90 L 210 80 M 200 90 L 200 70" stroke="url(#leaderGradient)" stroke-width="3" opacity="0.7" fill="none"/>
+  
+  <!-- Abstract elements -->
+  <rect x="50" y="50" width="4" height="20" fill="url(#teamGradient)" opacity="0.4" rx="2"/>
+  <rect x="340" y="60" width="6" height="15" fill="url(#leaderGradient)" opacity="0.4" rx="3"/>
+  <circle cx="80" cy="250" r="5" fill="url(#teamGradient)" opacity="0.3"/>
+  <circle cx="320" cy="240" r="7" fill="url(#leaderGradient)" opacity="0.3"/>
+  
+  <!-- Title -->
+  <text x="200" y="260" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#334155">
+    Leadership Dynamics
+  </text>
+</svg>

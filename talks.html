@@ -5,35 +5,66 @@ leadingpath: ./
 permalink: /content/talks
 title: Presentations
 ---
+
+<!-- Hero Section for Talks -->
+<div class="hero-section fade-in-up">
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <i class="bi bi-play-circle me-3"></i>
+      Presentations
+    </h1>
+    <p class="hero-subtitle">Talks and presentations on technology, product design, and software engineering</p>
+  </div>
+</div>
+
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb bg-transparent">
+  <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
     <li class="breadcrumb-item"><a href="/content">Content</a></li>
     <li class="breadcrumb-item active">Talks</li>
   </ol>
 </nav>
 
-
-
-{% for talk in site.data.talks %}
-<div class="container border-bottom mb-auto">
-  <div class="row">
-    <div class="snippet-title p-2">
-      <h4>{{ talk.title}}</h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="360" height="220" src="{{ talk.link }}" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="row fade-in-up">
+  <div class="col-lg-10 mx-auto">
+    {% for talk in site.data.talks %}
+    <article class="card mb-5 fade-in-up">
+      <div class="card-body">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow">
+              <iframe src="{{ talk.link }}" title="{{ talk.title }}" class="border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-4">
+            <h3 class="section-title">{{ talk.title }}</h3>
+            <div class="text-muted mb-3">
+              <i class="bi bi-calendar3 me-2"></i>
+              {{ talk.date }}
+            </div>
+            <div class="talk-description mb-4">
+              {{ talk.description | markdownify }}
+            </div>
+            <a href="{{ talk.link }}" target="_blank" rel="noopener noreferrer"
+              class="btn btn-modern btn-modern-primary">
+              <i class="bi bi-play-circle me-2"></i>
+              Watch Full Video
+            </a>
+          </div>
+        </div>
       </div>
+    </article>
+    {% endfor %}
+
+    {% if site.data.talks.size == 0 %}
+    <div class="text-center py-5">
+      <i class="bi bi-play-circle text-muted fs-4rem"></i>
+      <h3 class="text-muted mt-3">No talks available</h3>
+      <p class="text-muted">Check back later for new presentations!</p>
     </div>
-    <div class="col-md-6 snippet-description">
-
-      {{ talk.description }}
-
-    </div><span class="snippet-description pb-2"> {{ talk.date}}</span>
+    {% endif %}
   </div>
 </div>
-
-{% endfor %}

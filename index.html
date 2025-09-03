@@ -2,59 +2,194 @@
 layout: bare
 leadingpath: ./
 permalink: /
-title: Entangling Exuberance
-description: Thoughts on technology, product design and  software engineering. Discover content on building impactful teams, org and software products.
+title: Home
+description: Ajey Gore is Operating Partner (Technology) at PeakXV Partners, former Group CTO at Gojek, and Head of Technology at ThoughtWorks. Expert in scaling engineering teams and software architecture for startups.
 lead_image: ajey_gore_website_card.png
 ---
-<div class="row">
-    <div class="col-md-12">
-        <div class="row">
-            <div class="pb-2"><h2>Ajey Gore</h2></div>
-            <p>
-                I am CTO/Operating Partner at
-                <a href="https://peakxv.com" target="_blank">
-                    <b>PeakXV partners</b>
-                </a>
-                (FKA Sequoia Capital India & SEA).
-                <br>
-                I work with Founders, CTOs, CPOs to help them with various subjects related to product and software engineering. I also help them build & scale product engineering organisation.
 
-            </p>
-
-            <p>
-               Think product, think <b>Ideate, Implement, Iterate</b>
-                <br>
-                Think engineering, think <b>Code, Deploy, Automate</b>
-            </p>
+<!-- Hero Section -->
+<div class="hero-section fade-in-up">
+    <div class="hero-content">
+        <h1 class="hero-title">Ajey Gore</h1>
+        <p class="hero-subtitle">Operating Partner, Technology at <strong>PeakXV Partners</strong> (FKA Sequoia Capital India &
+            SEA)</p>
+        <p class="mb-3">My journey spans Group CTO at Gojek (GoTo Group), Head of Technology at ThoughtWorks, and founding CodeIgnition which was acquired by Gojek. This diverse experience across hypergrowth startups, consulting, and entrepreneurship gives me unique insights into building technology organizations.</p>
+        <p class="mb-4">I help startups navigate the complexities of scaling engineering teams, establishing robust software architecture, and implementing sustainable engineering practices. Whether it's designing distributed systems, building high-performance teams, or establishing engineering culture, I bring both strategic vision and tactical execution. Most importantly, I remain a hands-on coder who believes great technology leaders never stop writing production-ready code - because the best architectural decisions come from understanding the real challenges developers face.</p>
+        <div class="d-flex gap-3 flex-wrap mt-4">
+            <a href="/about" class="btn btn-modern btn-modern-primary">
+                <i class="bi bi-person-circle"></i>
+                More about me
+            </a>
+            <a href="/blog" class="btn btn-modern btn-modern-secondary">
+                <i class="bi bi-journal-text"></i>
+                Brain chatter
+            </a>
+            <a href="/content/talks" class="btn btn-modern btn-modern-outline">
+                <i class="bi bi-play-circle"></i>
+                Watch Talks
+            </a>
         </div>
-        <br/>
-        <div class="row">
-            <h3>Posts</h3>
-        </div>
+    </div>
+</div>
 
-
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb bg-transparent">
-                <li class="breadcrumb-item"><a href="/">Home</a></li>
-                <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
-            </ol>
-        </nav>
-
-        <div class="row">
-            {% for post in site.posts %}
-            <div class="col-sm-4 pb-4">
-                <div class="card border-0">
-                    <a href="{{ post.url }}"><img class="card-img-top" src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}"></a>
-                    <div class="card-body">
-                        <a style="text-decoration:none!important;" href="{{ post.url }}">
-                            <h5 style="text-decoration: none;text-align: center;">{{ post.title}}</h5>
-                        </a>
-                        <p class="breadcrumb-item">{{ post.date | date: '%b %d, %Y' }} •  {% include readingtime.erb page_content=post.content %}</p>
+<div class="row fade-in-up">
+    <div class="col-lg-8 mx-auto">
+        <!-- Philosophy Section -->
+        <div class="mb-5">
+            <div class="row text-center">
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-light rounded-3 h-100">
+                        <i class="bi bi-lightbulb text-primary fs-1 mb-3 d-block"></i>
+                        <h5 class="fw-bold">Think Product</h5>
+                        <p class="text-muted mb-0"><strong>Ideate, Implement, Iterate</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-light rounded-3 h-100">
+                        <i class="bi bi-code-slash text-primary fs-1 mb-3 d-block"></i>
+                        <h5 class="fw-bold">Think Engineering</h5>
+                        <p class="text-muted mb-0"><strong>Code, Deploy, Automate</strong></p>
                     </div>
                 </div>
             </div>
-            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Blog Posts Section - Full Width -->
+<div class="row fade-in-up">
+    <div class="col-12">
+        <div class="mb-5">
+            <h2 class="section-title">Latest Posts</h2>
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+                </ol>
+            </nav>
+
+            {% if site.posts.size > 0 %}
+            <!-- Featured Post -->
+            {% assign featured_post = site.posts.first %}
+            <div class="mb-5">
+              <article class="card blog-featured-card fade-in-up">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/assets/images/{{ featured_post.lead_image | default: site.lead_image }}"
+                      class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ featured_post.title }}" loading="lazy">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body h-100 d-flex flex-column">
+                      <div class="mb-2">
+                        <span class="badge bg-primary">Featured</span>
+                        {% if featured_post.categories %}
+                        {% for category in featured_post.categories limit:1 %}
+                        <span class="badge bg-secondary">{{ category }}</span>
+                        {% endfor %}
+                        {% endif %}
+                      </div>
+                      <h3 class="card-title">
+                        <a href="{{ featured_post.url }}" class="text-decoration-none">
+                          {{ featured_post.title }}
+                        </a>
+                      </h3>
+                      {% if featured_post.description %}
+                      <p class="card-text text-muted">{{ featured_post.description }}</p>
+                      {% elsif featured_post.excerpt %}
+                      <p class="card-text text-muted">{{ featured_post.excerpt | strip_html | truncate: 160 }}</p>
+                      {% endif %}
+                      <div class="mt-auto">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex align-items-center gap-3">
+                            <small class="text-muted">
+                              <i class="bi bi-calendar3"></i>
+                              {{ featured_post.date | date: '%b %d, %Y' }}
+                            </small>
+                            <small class="text-muted">
+                              <i class="bi bi-clock"></i>
+                              {% include readingtime.erb page_content=featured_post.content %}
+                            </small>
+                          </div>
+                          <a href="{{ featured_post.url }}" class="btn btn-modern btn-modern-primary">
+                            Read More
+                            <i class="bi bi-arrow-right"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- Recent Posts Grid -->
+            <div class="row g-4">
+              {% for post in site.posts offset:1 limit:4 %}
+              <div class="col-lg-6">
+                <article class="card blog-post-card h-100 fade-in-up">
+                  <div class="position-relative overflow-hidden">
+                    <img class="card-img-top blog-card-image"
+                      src="/assets/images/{{ post.lead_image | default: site.lead_image }}" alt="{{ post.title }}"
+                      loading="lazy">
+                    <div class="blog-card-overlay">
+                      <a href="{{ post.url }}" class="btn btn-modern btn-modern-primary btn-sm">
+                        <i class="bi bi-arrow-right"></i>
+                        Read
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <div class="mb-2 d-flex flex-wrap gap-1">
+                      {% if post.categories %}
+                      {% for category in post.categories limit:2 %}
+                      <span class="badge bg-secondary small">{{ category }}</span>
+                      {% endfor %}
+                      {% endif %}
+                    </div>
+                    <h5 class="card-title">
+                      <a href="{{ post.url }}" class="text-decoration-none">
+                        {{ post.title }}
+                      </a>
+                    </h5>
+                    {% if post.description %}
+                    <p class="card-text text-muted flex-grow-1 small">{{ post.description | truncate: 100 }}</p>
+                    {% elsif post.excerpt %}
+                    <p class="card-text text-muted flex-grow-1 small">{{ post.excerpt | strip_html | truncate: 100 }}</p>
+                    {% endif %}
+                    <div class="mt-auto pt-3 border-top">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">
+                          <i class="bi bi-calendar3"></i>
+                          {{ post.date | date: '%b %Y' }}
+                        </small>
+                        <small class="text-muted">
+                          <i class="bi bi-clock"></i>
+                          {% include readingtime.erb page_content=post.content %}
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              {% endfor %}
+            </div>
+
+            {% if site.posts.size > 5 %}
+            <div class="text-center mt-4">
+                <a href="/blog" class="btn btn-modern btn-modern-primary">
+                    <i class="bi bi-journal-text"></i>
+                    View All Posts
+                </a>
+            </div>
+            {% endif %}
+            {% else %}
+            <div class="text-center py-5">
+              <i class="bi bi-journal-text text-muted fs-4rem"></i>
+              <h3 class="text-muted mt-3">No posts yet</h3>
+              <p class="text-muted">Check back later for new blog posts!</p>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

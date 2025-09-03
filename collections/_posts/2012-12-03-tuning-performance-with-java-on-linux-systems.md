@@ -3,6 +3,7 @@ layout: post
 title: Tuning performance with Java - on Linux systems
 published: true
 categories: []
+lead_image: '/assets/images/blog/java-performance-tuning.svg'
 ---
 
 I love java, rather jvm - well, as technology and have been making use of it. Java world is full of rock solid implementations about technologies and have a huge software library eco system to deliver things with rock solid performance. It also makes a very good candidate for dependable technology. Recently, we choose java at backend for everything we do in ruby :-) So everything ruby becomes everything java at the backend. There are many advantages of this approach - a nice language to work with (ruby) and nice dependable technology at production environment (jvm) - in short, we use jruby with torquebox. But there are caveats and as its true with every tool - "if you didn't use it right, it won't give you right results"

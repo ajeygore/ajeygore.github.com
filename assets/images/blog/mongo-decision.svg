@@ -1,0 +1,86 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mongoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10aa50"/>
+      <stop offset="100%" style="stop-color:#13aa52"/>
+    </linearGradient>
+    <linearGradient id="decisionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="questionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f9fafb"/>
+  
+  <!-- Central decision point -->
+  <circle cx="200" cy="150" r="40" fill="url(#questionGradient)" opacity="0.3"/>
+  <text x="200" y="155" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="600" fill="#374151">
+    ?
+  </text>
+  
+  <!-- MongoDB logo representation -->
+  <ellipse cx="120" cy="100" rx="30" ry="20" fill="url(#mongoGradient)" opacity="0.8"/>
+  <ellipse cx="120" cy="95" rx="20" ry="12" fill="url(#mongoGradient)" opacity="0.9"/>
+  <text x="120" y="135" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="600" fill="#374151">
+    MongoDB
+  </text>
+  
+  <!-- Alternative databases -->
+  <rect x="260" y="80" width="50" height="30" rx="8" fill="url(#decisionGradient)" opacity="0.7"/>
+  <text x="285" y="99" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">
+    SQL
+  </text>
+  
+  <rect x="260" y="120" width="50" height="30" rx="8" fill="url(#decisionGradient)" opacity="0.6"/>
+  <text x="285" y="139" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">
+    NoSQL
+  </text>
+  
+  <!-- Decision paths -->
+  <path d="M 160 120 Q 180 130 190 150" stroke="url(#mongoGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M 260 100 Q 240 120 210 140" stroke="url(#decisionGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  <path d="M 260 140 Q 240 145 210 150" stroke="url(#decisionGradient)" stroke-width="3" fill="none" opacity="0.7"/>
+  
+  <!-- Pros and Cons indicators -->
+  <circle cx="80" cy="180" r="12" fill="url(#mongoGradient)" opacity="0.6"/>
+  <text x="80" y="185" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">✓</text>
+  <text x="80" y="205" text-anchor="middle" font-family="system-ui" font-size="8" fill="#6b7280">Flexible</text>
+  
+  <circle cx="120" cy="180" r="12" fill="url(#mongoGradient)" opacity="0.6"/>
+  <text x="120" y="185" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">✓</text>
+  <text x="120" y="205" text-anchor="middle" font-family="system-ui" font-size="8" fill="#6b7280">Scale</text>
+  
+  <circle cx="280" cy="180" r="12" fill="url(#questionGradient)" opacity="0.6"/>
+  <text x="280" y="185" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">!</text>
+  <text x="280" y="205" text-anchor="middle" font-family="system-ui" font-size="8" fill="#6b7280">Complex</text>
+  
+  <circle cx="320" cy="180" r="12" fill="url(#questionGradient)" opacity="0.6"/>
+  <text x="320" y="185" text-anchor="middle" font-family="system-ui" font-size="10" font-weight="600" fill="white">!</text>
+  <text x="320" y="205" text-anchor="middle" font-family="system-ui" font-size="8" fill="#6b7280">Learning</text>
+  
+  <!-- Tech stack elements -->
+  <rect x="50" y="240" width="40" height="20" rx="4" fill="url(#decisionGradient)" opacity="0.5"/>
+  <text x="70" y="253" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">JRuby</text>
+  
+  <rect x="100" y="240" width="40" height="20" rx="4" fill="url(#decisionGradient)" opacity="0.5"/>
+  <text x="120" y="253" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">Rails</text>
+  
+  <rect x="150" y="240" width="50" height="20" rx="4" fill="url(#mongoGradient)" opacity="0.5"/>
+  <text x="175" y="253" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">MongoDB</text>
+  
+  <rect x="210" y="240" width="40" height="20" rx="4" fill="url(#decisionGradient)" opacity="0.5"/>
+  <text x="230" y="253" text-anchor="middle" font-family="system-ui" font-size="8" fill="white">HornetQ</text>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="system-ui" font-size="18" font-weight="600" fill="#374151">
+    Database Decision
+  </text>
+  <text x="200" y="50" text-anchor="middle" font-family="system-ui" font-size="12" fill="#6b7280">
+    To Mongo or Not to Mongo
+  </text>
+</svg>

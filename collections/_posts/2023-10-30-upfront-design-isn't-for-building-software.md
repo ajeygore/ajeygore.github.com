@@ -4,10 +4,10 @@ title: Upfront architecture isn't for building software
 published: true
 categories: Essay
 description: The transformative journey from chaotic, disparate tech stacks to a harmonious, unified, and standardized software building.
-lead_image: blog/software_architecture.png
+lead_image: blog/architecture-thinking.svg
 ---
 
-<p><img src="/assets/images/blog/software_architecture.png" alt="Perspective on software architecture" class="responsive" />
+<p><img src="/assets/images/blog/architecture-thinking.svg" alt="Software architecture thinking process" class="responsive" />
 </p>
 
 <div class="footnote">
