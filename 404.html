@@ -1,28 +1,410 @@
 ---
-layout: post
-body_class: home
+layout: home
+leadingpath: ./
+title: 404 - Page Not Found | Ajey Gore
+description: Oops! This page seems to have wandered off into the digital abyss. Let's get you back on track to explore technology insights and engineering wisdom.
 ---
-<head>
-  <title>Uh oh! you landed on a hidden page! this page doesn't exist</title>
-</head>
-<body>
-<pre>
-=====================================
-OOPS THIS PAGE DOES NOT EXIST? WHY?
 
-Most probably you clicked a link
-which links on this domain and 
-Ajey has removed it :-)
+<!-- 404 Hero Section -->
+<section class="hero-section py-5 mb-4" style="background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%); min-height: 70vh; display: flex; align-items: center;">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <!-- Animated 404 -->
+        <div class="error-code mb-4">
+          <h1 class="display-1 fw-bold text-primary mb-0 glitch" data-text="404" style="font-size: 8rem; line-height: 1; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+            404
+          </h1>
+          <div class="error-subtitle">
+            <h2 class="h3 fw-semibold mb-3" style="color: var(--heading-color);">
+              🤔 Well, this is awkward...
+            </h2>
+          </div>
+        </div>
 
-So that's something you don't need
-anymore!
-=====================================
+        <!-- Witty Message -->
+        <div class="error-message mb-4">
+          <div class="card shadow-lg border-0 p-4" style="background: var(--bg-primary); border: 2px solid var(--primary-color) !important; border-radius: 1rem;">
+            <div class="card-body">
+              <h3 class="h4 fw-bold text-primary mb-3">
+                🚀 Houston, We Have a Problem!
+              </h3>
+              <p class="lead text-secondary mb-3" style="font-size: 1.2rem;">
+                The page you're looking for has probably been <strong>refactored into oblivion</strong>, 
+                <strong>migrated to the cloud</strong>, or is currently being <strong>dockerized</strong> 
+                in a parallel universe. 
+              </p>
+              <p class="text-muted mb-0">
+                As a technology leader, I believe in <em>continuous deployment</em> – 
+                sometimes that means continuously deploying pages to the <strong>/dev/null</strong> endpoint. 😄
+              </p>
+            </div>
+          </div>
+        </div>
 
-                 OR
+        <!-- Fun Stats -->
+        <div class="error-stats mb-4">
+          <div class="row g-3">
+            <div class="col-6 col-md-3">
+              <div class="stat-card p-3 rounded" style="background: var(--bg-secondary); border: 1px solid var(--border-color); transition: var(--transition);">
+                <div class="h5 fw-bold text-primary mb-1">∞</div>
+                <small class="text-muted">Possible URLs</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card p-3 rounded" style="background: var(--bg-secondary); border: 1px solid var(--border-color); transition: var(--transition);">
+                <div class="h5 fw-bold text-primary mb-1">1</div>
+                <small class="text-muted">You Found</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card p-3 rounded" style="background: var(--bg-secondary); border: 1px solid var(--border-color); transition: var(--transition);">
+                <div class="h5 fw-bold text-primary mb-1">404</div>
+                <small class="text-muted">Error Code</small>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card p-3 rounded" style="background: var(--bg-secondary); border: 1px solid var(--border-color); transition: var(--transition);">
+                <div class="h5 fw-bold text-primary mb-1">🎯</div>
+                <small class="text-muted">Redirect Needed</small>
+              </div>
+            </div>
+          </div>
+        </div>
 
-He is still building out this page! 
-So be patient and come back later...
-</pre>
+        <!-- Action Buttons -->
+        <div class="error-actions">
+          <div class="d-flex gap-3 flex-wrap justify-content-center mb-4">
+            <a href="/" class="btn btn-modern btn-modern-primary btn-lg">
+              <i class="bi bi-house-door"></i>
+              Take Me Home
+            </a>
+            <a href="/blog" class="btn btn-modern btn-modern-secondary btn-lg">
+              <i class="bi bi-journal-text"></i>
+              Read My Thoughts
+            </a>
+            <a href="/what" class="btn btn-modern btn-modern-outline btn-lg">
+              <i class="bi bi-person-circle"></i>
+              About Me
+            </a>
+          </div>
+          
+          <!-- Search Box -->
+          <div class="search-suggestion">
+            <p class="text-muted mb-2">Or search for something specific:</p>
+            <div class="input-group mb-3" style="max-width: 400px; margin: 0 auto;">
+              <input type="text" class="form-control" placeholder="Try: 'engineering', 'talks', 'gojek'..." 
+                     id="search404" style="border-color: var(--border-color);">
+              <button class="btn btn-outline-primary" type="button" onclick="search404()">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<a href="/">Back to home!</a>
-</body>
+<!-- Fun Suggestions Section -->
+<section class="py-4" style="background: var(--bg-secondary);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h3 class="h4 fw-bold text-center mb-4" style="color: var(--heading-color);">
+          🤷‍♂️ While You're Here, Maybe Check These Out?
+        </h3>
+        
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="suggestion-card p-4 h-100 rounded text-center" style="background: var(--bg-primary); border: 1px solid var(--border-color); transition: var(--transition);">
+              <i class="bi bi-lightbulb text-primary fs-1 mb-3 d-block"></i>
+              <h4 class="h6 fw-bold mb-2">Latest Insights</h4>
+              <p class="text-muted small mb-3">Technology thoughts and engineering wisdom</p>
+              <a href="/blog" class="btn btn-sm btn-outline-primary">Explore Blog</a>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="suggestion-card p-4 h-100 rounded text-center" style="background: var(--bg-primary); border: 1px solid var(--border-color); transition: var(--transition);">
+              <i class="bi bi-play-circle text-primary fs-1 mb-3 d-block"></i>
+              <h4 class="h6 fw-bold mb-2">Conference Talks</h4>
+              <p class="text-muted small mb-3">Speaking at global technology events</p>
+              <a href="/content/talks" class="btn btn-sm btn-outline-primary">Watch Talks</a>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="suggestion-card p-4 h-100 rounded text-center" style="background: var(--bg-primary); border: 1px solid var(--border-color); transition: var(--transition);">
+              <i class="bi bi-briefcase text-primary fs-1 mb-3 d-block"></i>
+              <h4 class="h6 fw-bold mb-2">Professional Journey</h4>
+              <p class="text-muted small mb-3">25+ years in technology leadership</p>
+              <a href="/professional-journey" class="btn btn-sm btn-outline-primary">View Journey</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Console Code Section -->
+<section class="py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="console-wrapper p-4 rounded" style="background: #1a1a1a; border: 1px solid var(--border-color); font-family: 'Courier New', monospace;">
+          <div class="console-header mb-3">
+            <div class="d-flex align-items-center gap-2">
+              <div class="console-dot" style="width: 12px; height: 12px; background: #ff5f57; border-radius: 50%;"></div>
+              <div class="console-dot" style="width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%;"></div>
+              <div class="console-dot" style="width: 12px; height: 12px; background: #28ca42; border-radius: 50%;"></div>
+              <span class="text-light ms-2 small">ajey@terminal:~$</span>
+            </div>
+          </div>
+          <div class="console-content text-light">
+            <div class="typing-effect">
+              <span style="color: #50fa7b;">ajey@server</span><span style="color: #f8f8f2;">:</span><span style="color: #8be9fd;">~</span><span style="color: #f8f8f2;">$ </span><span class="typed-text"></span>
+            </div>
+            <div class="console-output mt-2" style="color: #ff79c6;">
+              <div>HTTP/1.1 404 Not Found</div>
+              <div>Content-Type: text/humor</div>
+              <div>X-Powered-By: Coffee & Code</div>
+              <div>X-Message: "It's not a bug, it's an undocumented feature!"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Glitch Effect for 404 */
+  .glitch {
+    position: relative;
+    animation: glitch 2s infinite;
+  }
+  
+  .glitch:before,
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch:before {
+    animation: glitch-1 0.5s infinite;
+    color: #ff0000;
+    z-index: -1;
+  }
+  
+  .glitch:after {
+    animation: glitch-2 0.5s infinite;
+    color: #00ff00;
+    z-index: -2;
+  }
+  
+  @keyframes glitch {
+    0%, 100% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+  }
+  
+  @keyframes glitch-1 {
+    0%, 100% { transform: translate(0); }
+    10% { transform: translate(-2px, -2px); }
+    20% { transform: translate(-2px, -2px); }
+    30% { transform: translate(2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    50% { transform: translate(-2px, 2px); }
+    60% { transform: translate(-2px, -2px); }
+    70% { transform: translate(2px, 2px); }
+    80% { transform: translate(-2px, -2px); }
+    90% { transform: translate(2px, 2px); }
+  }
+  
+  @keyframes glitch-2 {
+    0%, 100% { transform: translate(0); }
+    10% { transform: translate(2px, 2px); }
+    20% { transform: translate(2px, 2px); }
+    30% { transform: translate(-2px, -2px); }
+    40% { transform: translate(-2px, 2px); }
+    50% { transform: translate(2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    70% { transform: translate(-2px, -2px); }
+    80% { transform: translate(2px, 2px); }
+    90% { transform: translate(-2px, -2px); }
+  }
+  
+  /* Stat Cards - Consistent Height and Alignment */
+  .stat-card {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stat-card .h5 {
+    line-height: 1.2;
+    margin-bottom: 0.5rem !important;
+    font-size: 1.5rem;
+  }
+  
+  .stat-card small {
+    font-size: 0.75rem;
+    line-height: 1.2;
+  }
+  
+  /* Hover effects */
+  .stat-card:hover,
+  .suggestion-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  /* Typing Effect */
+  .typing-effect {
+    font-size: 14px;
+  }
+  
+  .typed-text {
+    border-right: 2px solid #50fa7b;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: #50fa7b; }
+  }
+  
+  /* Dark Mode Adjustments */
+  [data-bs-theme="dark"] .console-wrapper {
+    background: #0d1117 !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  [data-bs-theme="dark"] .card {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  [data-bs-theme="dark"] .stat-card,
+  [data-bs-theme="dark"] .suggestion-card {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .display-1 {
+      font-size: 6rem !important;
+    }
+    
+    .hero-section {
+      min-height: 60vh !important;
+    }
+    
+    .stat-card {
+      height: 80px;
+    }
+    
+    .stat-card .h5 {
+      font-size: 1.25rem;
+    }
+    
+    .stat-card small {
+      font-size: 0.7rem;
+    }
+  }
+</style>
+
+<script>
+  // Typing effect for console
+  document.addEventListener('DOMContentLoaded', function() {
+    const commands = [
+      'curl -I https://ajeygore.in' + window.location.pathname,
+      'git checkout main',
+      'npm run deploy --fix-404',
+      'docker logs website-container',
+      'kubectl get pods --show-broken-links'
+    ];
+    
+    let currentCommand = 0;
+    const typedTextElement = document.querySelector('.typed-text');
+    
+    if (typedTextElement) {
+      function typeCommand() {
+        const command = commands[currentCommand];
+        let i = 0;
+        
+        function typeChar() {
+          if (i < command.length) {
+            typedTextElement.textContent += command.charAt(i);
+            i++;
+            setTimeout(typeChar, 100);
+          } else {
+            setTimeout(() => {
+              typedTextElement.textContent = '';
+              currentCommand = (currentCommand + 1) % commands.length;
+              setTimeout(typeCommand, 500);
+            }, 2000);
+          }
+        }
+        
+        typeChar();
+      }
+      
+      setTimeout(typeCommand, 1000);
+    }
+  });
+  
+  // Search functionality
+  function search404() {
+    const searchInput = document.getElementById('search404');
+    if (!searchInput) return;
+    
+    const searchTerm = searchInput.value.toLowerCase();
+    
+    // Simple search suggestions
+    const suggestions = {
+      'engineering': '/what',
+      'talks': '/content/talks',
+      'blog': '/blog',
+      'gojek': '/professional-journey',
+      'sequoia': '/professional-journey',
+      'thoughtworks': '/professional-journey',
+      'about': '/what',
+      'journey': '/professional-journey'
+    };
+    
+    for (const [key, url] of Object.entries(suggestions)) {
+      if (searchTerm.includes(key)) {
+        window.location.href = url;
+        return;
+      }
+    }
+    
+    // Default fallback
+    window.location.href = '/';
+  }
+  
+  // Enter key support for search
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search404');
+    if (searchInput) {
+      searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          search404();
+        }
+      });
+    }
+  });
+</script>
