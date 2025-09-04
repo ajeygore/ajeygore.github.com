@@ -1,9 +1,9 @@
 /* Modern CSS Variables for Theme Support */
 :root {
-    --primary-color: #3b82f6;
-    --primary-hover: #2563eb;
-    --accent-color: #a78bfa;
-    --accent-hover: #8b5cf6;
+    --primary-color: #6b7280;      /* 70% grey instead of blue */
+    --primary-hover: #4b5563;      /* Darker grey for hover */
+    --accent-color: #9ca3af;       /* Light grey accent */
+    --accent-hover: #6b7280;       /* Medium grey for accent hover */
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --text-muted: #9ca3af;
@@ -15,21 +15,27 @@
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --gradient-primary: linear-gradient(135deg, #60a5fa 0%, #c084fc 100%);
-    --gradient-accent: linear-gradient(135deg, #a78bfa 0%, #ec4899 100%);
+    --gradient-primary: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
+    --gradient-accent: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Dark theme variables */
 [data-bs-theme="dark"] {
-    --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
-    --text-muted: #9ca3af;
-    --heading-color: #ffffff;  /* White headings in dark mode */
+    --text-primary: #e5e7eb;   /* Muted light grey instead of bright white */
+    --text-secondary: #9ca3af; /* Medium grey for secondary text */
+    --text-muted: #6b7280;     /* Darker grey for muted text */
+    --heading-color: #f3f4f6;  /* Slightly muted white for headings */
+    --primary-color: #9ca3af;  /* Light grey for dark mode */
+    --primary-hover: #d1d5db;  /* Lighter grey for hover in dark mode */
+    --accent-color: #6b7280;   /* Medium grey accent in dark mode */
+    --accent-hover: #9ca3af;   /* Light grey for accent hover in dark mode */
     --bg-primary: #111827;
     --bg-secondary: #1f2937;
     --bg-tertiary: #374151;
     --border-color: #374151;
+    --gradient-primary: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+    --gradient-accent: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
 }
 
 /* Base Typography */
@@ -471,6 +477,261 @@ a:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: white;
+}
+
+/* Additional dark mode fixes for hero and other sections */
+[data-bs-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%) !important;
+}
+
+[data-bs-theme="dark"] .career-journey {
+    background: var(--bg-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-bs-theme="dark"] .hero-stat {
+    background: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .hero-stat .text-primary {
+    color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .hero-stat .text-muted {
+    color: var(--text-muted) !important;
+}
+
+[data-bs-theme="dark"] .text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+[data-bs-theme="dark"] .text-muted {
+    color: var(--text-muted) !important;
+}
+
+[data-bs-theme="dark"] .blockquote {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .blockquote p {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .prose blockquote {
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .prose blockquote p {
+    color: var(--text-primary) !important;
+}
+
+/* Fix header background in dark mode */
+[data-bs-theme="dark"] header {
+    background-color: var(--bg-primary) !important;
+}
+
+[data-bs-theme="dark"] .sticky-top {
+    background-color: var(--bg-primary) !important;
+}
+
+/* Fix navbar elements */
+[data-bs-theme="dark"] .navbar-brand {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .menu-section {
+    color: var(--text-secondary) !important;
+}
+
+[data-bs-theme="dark"] .menu-section:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--bg-secondary) !important;
+}
+
+[data-bs-theme="dark"] .menu-section[data-active="true"] {
+    color: var(--primary-color) !important;
+    background-color: var(--bg-secondary) !important;
+}
+
+/* Override Bootstrap defaults in dark mode */
+[data-bs-theme="dark"] .bg-white {
+    background-color: var(--bg-primary) !important;
+}
+
+[data-bs-theme="dark"] .bg-secondary {
+    background-color: var(--bg-secondary) !important;
+}
+
+[data-bs-theme="dark"] .text-dark {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .border {
+    border-color: var(--border-color) !important;
+}
+
+[data-bs-theme="dark"] .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgb(255 255 255 / 0.05) !important;
+}
+
+[data-bs-theme="dark"] .shadow {
+    box-shadow: 0 1px 3px 0 rgb(255 255 255 / 0.1), 0 1px 2px -1px rgb(255 255 255 / 0.1) !important;
+}
+
+[data-bs-theme="dark"] .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1) !important;
+}
+
+/* Main hero section dark mode */
+[data-bs-theme="dark"] .hero-section {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-bs-theme="dark"] .hero-section::before {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%239ca3af" opacity="0.04"/></svg>') !important;
+}
+
+[data-bs-theme="dark"] .hero-title {
+    color: var(--heading-color) !important;
+}
+
+[data-bs-theme="dark"] .hero-subtitle {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .hero-subtitle strong {
+    color: var(--heading-color) !important;
+}
+
+[data-bs-theme="dark"] .hero-content p {
+    color: var(--text-primary) !important;
+}
+
+/* Button dark mode fixes */
+[data-bs-theme="dark"] .btn-modern-primary {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+[data-bs-theme="dark"] .btn-modern-primary:hover {
+    background: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    color: white !important;
+}
+
+[data-bs-theme="dark"] .btn-modern-secondary {
+    background: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-bs-theme="dark"] .btn-modern-secondary:hover {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+[data-bs-theme="dark"] .btn-modern-outline {
+    background: transparent !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .btn-modern-outline:hover {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Blog post and content text fixes */
+[data-bs-theme="dark"] .prose,
+[data-bs-theme="dark"] .post-content,
+[data-bs-theme="dark"] .content {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .prose p,
+[data-bs-theme="dark"] .post-content p,
+[data-bs-theme="dark"] .content p {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .prose li,
+[data-bs-theme="dark"] .post-content li,
+[data-bs-theme="dark"] .content li {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .prose h1,
+[data-bs-theme="dark"] .prose h2,
+[data-bs-theme="dark"] .prose h3,
+[data-bs-theme="dark"] .prose h4,
+[data-bs-theme="dark"] .prose h5,
+[data-bs-theme="dark"] .prose h6 {
+    color: var(--heading-color) !important;
+}
+
+[data-bs-theme="dark"] .post-content h1,
+[data-bs-theme="dark"] .post-content h2,
+[data-bs-theme="dark"] .post-content h3,
+[data-bs-theme="dark"] .post-content h4,
+[data-bs-theme="dark"] .post-content h5,
+[data-bs-theme="dark"] .post-content h6 {
+    color: var(--heading-color) !important;
+}
+
+/* Fix any remaining text elements */
+[data-bs-theme="dark"] .blog-list-title a {
+    color: var(--heading-color) !important;
+}
+
+[data-bs-theme="dark"] .blog-list-title a:hover {
+    color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .card-text {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] .lead {
+    color: var(--text-primary) !important;
+}
+
+/* General text content fixes for dark mode */
+[data-bs-theme="dark"] article,
+[data-bs-theme="dark"] .article-content,
+[data-bs-theme="dark"] main {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] article p,
+[data-bs-theme="dark"] .article-content p,
+[data-bs-theme="dark"] main p {
+    color: var(--text-primary) !important;
+}
+
+/* Ensure all paragraph text is readable */
+[data-bs-theme="dark"] body {
+    color: var(--text-primary) !important;
+}
+
+/* Fix any remaining dark text */
+[data-bs-theme="dark"] .text-dark {
+    color: var(--text-primary) !important;
+}
+
+[data-bs-theme="dark"] * {
+    /* This is a catch-all, but we'll be specific about what we want to override */
+}
+
+/* Fix navbar brand and menu text */
+[data-bs-theme="dark"] .navbar-brand {
+    color: var(--heading-color) !important;
 }
 
 /* Utility Classes */
