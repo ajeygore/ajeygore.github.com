@@ -2,43 +2,189 @@
 layout: home
 leadingpath: ./
 permalink: /what
-title: Introduction, Hello!
-description: Thoughts on technology, product design and software engineering. 
+title: About Ajey Gore - Technology Leadership & Engineering Excellence
+description: Operating Partner at PeakXV Partners, former Group CTO at Gojek. Expert in scaling engineering teams, software architecture, and technology strategy for startups.
 lead_image: ajey_gore_website_card.png
 ---
 
-<div class="row">
-  <div class="col-md-3">
-
-    <div class="container text-center side-bar">
-      <img class="img-fluid" src="{{ '/assets/images/ajey_gore_bw_small.png' | relative_url }}" width="200px1" alt="Ajey Gore">
-
-      <div class="pb-4"> Operating Partner/CTO <br>
-        <a href="https://sequoiacap.com" target="_blank" class="home-underline"  style="text-decoration: none">Sequoia India & SEA</a>
+<div class="container-fluid py-5">
+  <div class="row align-items-start">
+    <!-- Professional Profile Sidebar -->
+    <div class="col-lg-4 col-md-5 mb-5">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body text-center p-4">
+          <!-- Profile Image -->
+          <div class="mb-4">
+            <img class="img-fluid rounded-circle shadow-sm" 
+                 src="{{ '/assets/images/ajey_gore_bw_small.png' | relative_url }}" 
+                 width="160" 
+                 alt="Ajey Gore - Technology Leader"
+                 style="object-fit: cover; width: 160px; height: 160px;">
+          </div>
+          
+          <!-- Current Role -->
+          <div class="mb-4">
+            <h3 class="h5 fw-bold text-primary mb-2">Operating Partner (Technology)</h3>
+            <a href="https://peakxv.com" target="_blank" rel="noopener" 
+               class="text-decoration-none h6 text-muted">
+              PeakXV Partners
+              <small class="d-block text-muted">(formerly Sequoia Capital India & SEA)</small>
+            </a>
+          </div>
+          
+          <!-- Career Journey -->
+          <div class="mb-4">
+            <h4 class="h6 fw-semibold mb-3 text-secondary">Career Journey</h4>
+            <div class="d-flex flex-column gap-2">
+              <a href="https://gojek.com" target="_blank" rel="noopener" 
+                 class="btn btn-sm btn-outline-secondary text-start">
+                <strong>Gojek</strong> <small class="text-muted">• Group CTO</small>
+              </a>
+              <a href="https://twitter.com/codeignition" target="_blank" rel="noopener" 
+                 class="btn btn-sm btn-outline-secondary text-start">
+                <strong>CodeIgnition</strong> <small class="text-muted">• Founder</small>
+              </a>
+              <a href="https://thoughtworks.com" target="_blank" rel="noopener" 
+                 class="btn btn-sm btn-outline-secondary text-start">
+                <strong>ThoughtWorks</strong> <small class="text-muted">• Head of Technology</small>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Philosophy -->
+          <div class="mb-4">
+            <div class="border-top border-bottom py-3">
+              <blockquote class="mb-0 fst-italic text-primary">
+                "Earn people, not money"
+              </blockquote>
+            </div>
+          </div>
+          
+          <!-- Social Links -->
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://twitter.com/ajeygore" target="_blank" rel="noopener" 
+               class="btn btn-outline-primary btn-sm rounded-circle p-2"
+               aria-label="Twitter Profile">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" rel="noopener" 
+               class="btn btn-outline-primary btn-sm rounded-circle p-2"
+               aria-label="LinkedIn Profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/ajeygore" target="_blank" rel="noopener" 
+               class="btn btn-outline-primary btn-sm rounded-circle p-2"
+               aria-label="GitHub Profile">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div>Previously </div>
-      <a href="https://gojek.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none" >gojek</a>
-      <a href="https://twitter.com/codeignition" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">CodeIgnition</a>&nbsp;
-      <a href="https://thoughtworks.com" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">ThoughtWorks</a>&nbsp;
-      <a href="https://hike.in" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">hoppr</a>&nbsp;
-      <a href="https://foowar.in/" target="_blank" class="home-underline" style="color: #595959; text-decoration: none">FooWar</a>&nbsp;
-      <hr/>
-      <p class="text-center slogan">Earn people, not money</p>
-      <hr/>
-
-      <a href="https://twitter.com/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
-        <i class="bi bi-twitter"></i>
-      </a>
-      <a href="https://sg.linkedin.com/in/ajeygore" target="_blank" style="text-decoration: none; font-size: 16pt">
-        <i class="bi bi-linkedin"></i>
-      </a>
     </div>
-
-  </div>
-  <div class="col-md-9">
-
-    {% capture p1 %}{% include _home-writeup.md %}{% endcapture %}
-    {{ p1 | markdownify }}
-
+    
+    <!-- Main Content -->
+    <div class="col-lg-8 col-md-7">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4 p-lg-5">
+          <article class="prose">
+            {% capture content_md %}{% include _home-writeup.md %}{% endcapture %}
+            {{ content_md | markdownify }}
+          </article>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<!-- Additional CSS for enhanced typography -->
+<style>
+  .prose h1, .prose h2 {
+    color: var(--heading-color);
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .prose h3 {
+    color: var(--heading-color);
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .prose p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  
+  .prose blockquote {
+    border-left: 4px solid var(--primary-color);
+    background: var(--bg-secondary);
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+  }
+  
+  .prose blockquote p {
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  
+  .prose a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .prose a:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+  }
+  
+  .prose strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  
+  .prose hr {
+    border: none;
+    border-top: 2px solid var(--border-color);
+    margin: 2rem 0;
+  }
+  
+  .prose ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .prose li {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card {
+    transition: var(--transition);
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  @media (max-width: 768px) {
+    .prose h1 {
+      font-size: 1.75rem;
+    }
+    
+    .prose h2 {
+      font-size: 1.5rem;
+    }
+    
+    .card-body.p-lg-5 {
+      padding: 1.5rem !important;
+    }
+  }
+</style>

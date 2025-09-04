@@ -278,9 +278,9 @@
         {% endif %}
 
     </head>
-    <body data-bs-theme="light">
+    <body>
     <!-- Modern Header -->
-    <header class="sticky-top bg-white shadow-sm border-bottom">
+    <header class="sticky-top shadow-sm border-bottom" style="background-color: var(--bg-primary);">
         <div class="container py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
@@ -413,18 +413,28 @@
     }
 
         </script>
+        <!-- Initialize theme immediately to prevent flash -->
+        <script>
+            (function() {
+                const savedTheme = localStorage.getItem('theme') || 'light';
+                document.documentElement.setAttribute('data-bs-theme', savedTheme);
+                document.body.setAttribute('data-bs-theme', savedTheme);
+            })();
+        </script>
         <script>
             // Enhanced dark mode functionality
             function toggleTheme() {
                 const htmlElement = document.documentElement;
+                const bodyElement = document.body;
                 const themeToggle = document.getElementById('theme-toggle');
                 const icon = themeToggle.querySelector('i');
                 
-                const currentTheme = htmlElement.getAttribute('data-bs-theme');
+                const currentTheme = htmlElement.getAttribute('data-bs-theme') || 'light';
                 const newTheme = currentTheme === 'light' ? 'dark' : 'light';
                 
+                // Apply theme to both html and body elements
                 htmlElement.setAttribute('data-bs-theme', newTheme);
-                document.body.setAttribute('data-bs-theme', newTheme);
+                bodyElement.setAttribute('data-bs-theme', newTheme);
                 
                 // Update icon
                 if (newTheme === 'dark') {
@@ -441,11 +451,13 @@
             document.addEventListener('DOMContentLoaded', function() {
                 const savedTheme = localStorage.getItem('theme') || 'light';
                 const htmlElement = document.documentElement;
+                const bodyElement = document.body;
                 const themeToggle = document.getElementById('theme-toggle');
                 const icon = themeToggle?.querySelector('i');
                 
+                // Apply theme to both html and body elements
                 htmlElement.setAttribute('data-bs-theme', savedTheme);
-                document.body.setAttribute('data-bs-theme', savedTheme);
+                bodyElement.setAttribute('data-bs-theme', savedTheme);
                 
                 if (icon) {
                     if (savedTheme === 'dark') {

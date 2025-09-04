@@ -7,7 +7,8 @@
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --text-muted: #9ca3af;
-    --bg-primary: #ffffff;
+    --heading-color: #111827;  /* Dark headings instead of blue */
+    --bg-primary: #fefefe;     /* Off-white background */
     --bg-secondary: #f8fafc;
     --bg-tertiary: #f1f5f9;
     --border-color: #e5e7eb;
@@ -24,6 +25,7 @@
     --text-primary: #f9fafb;
     --text-secondary: #d1d5db;
     --text-muted: #9ca3af;
+    --heading-color: #ffffff;  /* White headings in dark mode */
     --bg-primary: #111827;
     --bg-secondary: #1f2937;
     --bg-tertiary: #374151;
@@ -260,7 +262,7 @@ body {
 .section-title {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--heading-color);
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
@@ -444,6 +446,33 @@ a:hover {
     border-color: var(--border-color) !important;
 }
 
+[data-bs-theme="dark"] .card {
+    background-color: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .btn-outline-secondary {
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+[data-bs-theme="dark"] .btn-outline-secondary:hover {
+    background-color: var(--bg-tertiary);
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+}
+
+[data-bs-theme="dark"] .btn-outline-primary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+[data-bs-theme="dark"] .btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
 /* Utility Classes */
 .fs-4rem {
     font-size: 4rem !important;
@@ -474,7 +503,7 @@ a:hover {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--heading-color);
 }
 
 .post-content h1 {
@@ -620,7 +649,7 @@ h5,
 h6 {
     font-family: "Hanken Grotesk", sans-serif;
     font-weight: 600;
-    color: black;
+    color: var(--heading-color);
 }
 
 

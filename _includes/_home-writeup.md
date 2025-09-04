@@ -1,41 +1,65 @@
-Hello Folks! 
+# Technology Leadership & Engineering Excellence
 
-Over the last 25 years, I have done various things, failed many businesses, and ended up having a lot of lessons.
+## About Me
 
-I mostly talks about software engineering and creating products with help from software and technology.
+With over **25 years of experience** in technology and software engineering, I've had the privilege of building, scaling, and leading engineering organizations across diverse industries and geographies. My journey spans from hands-on software development to executive technology leadership, with a consistent focus on creating impactful products and fostering engineering excellence.
 
-I have been writing software for more than two decades. And always have been curious about software engineering as a craft, mainly regarding how to write "good" software. I feel the quest just got started; and, it has grown into more curiosity, resulting in more reading, studying, and learning about writing better software, creating better products.
+Currently serving as **Operating Partner (Technology)** at **PeakXV Partners** (formerly Sequoia Capital India & SEA), I work with portfolio companies to solve complex technology challenges, scale engineering teams, and build sustainable technology organizations.
 
-Software design and development are still in their infancy. It's pretty new, although it has exploded in the last few years. Writing good software has been a challenge, and the ever-evolving landscape makes it complex. 
+## Core Focus Areas
 
-> While the software is very flexible and malleable, writing it in a modular, expandable, and pluggable way is complex.
+### Software Engineering as a Craft
 
- Writing software requires us to express our intent precisely, and most of the time, we end up writing tactical solutions with no longevity and scalability. Having a tactical yet scalable and strategic yet faster development cycle is a balancing act that everyone needs to learn. 
+I believe deeply in software engineering as a discipline and craft. After two decades of writing code, my curiosity about creating "good" software has only intensified. This pursuit has led me to continuously explore better methodologies, architectural patterns, and development practices.
 
- 
+> **"While software is inherently flexible and malleable, designing it to be modular, expandable, and maintainable requires intentional architectural thinking and disciplined engineering practices."**
 
- > Computer languages have a very rigid structure. That forces us to express our business logic and intent precisely. Defining that is an arduous task unless we follow specific articulation, understanding, and reasoning practices with rules and acceptance criteria.
+### Balancing Strategy and Execution
 
+One of the most critical challenges in modern software development is achieving the right balance between tactical delivery and strategic architecture. Organizations need systems that can evolve rapidly while maintaining scalability, reliability, and maintainability.
 
-Software design is a very creative process. Over the years, it has resulted in many experiments around different aspects such as design, architecture, languages, and paradigms. There seems to be an explosion of trying out new ideas, new languages. We have seen paradigm-specific and even domain-specific languages evolve over the last 40 years.
+> **"The art lies in expressing business intent precisely through code while building systems that can adapt to changing requirements without compromising on engineering principles."**
 
-We are now settling down in the phase of distributed computing, big data, functional programming, and many more exciting ideas extending into the field of artificial intelligence - the use cases which seemed distant now have become a commodity. And these evolutions led software engineering to be a very creative field.
+### Technology-Driven Product Innovation
 
-Yet, I have experienced very few organizations emphasize software engineering as craft and software engineers as craftsmen. I hope it changes over time because it's a fundamental change to make an impactful product.
+Modern products increasingly depend on sophisticated technology stacks involving distributed computing, data engineering, machine learning, and artificial intelligence. My experience spans building systems that handle massive scale while delivering exceptional user experiences.
 
+> **"Technology serves as the most powerful enabler for achieving what once seemed impossible, transforming ambitious product visions into reality."**
 
-> Writing code for computers is an easy task, especially when you have an abundance of code samples on the internet. The arduous task is to write code that humans understand. The code operates your business solutions that, in turn, provide frictionless product experiences to our users. 
+## Philosophy & Approach
 
+### Engineering Excellence
 
+I advocate for treating software engineers as craftspeople and software engineering as a creative discipline. Too few organizations recognize this, yet it's fundamental to building products that truly make an impact.
 
+### Human-Centric Code
 
-Technology has become essential for product growth. The scale of the "technology-backed" products goes into multiple areas: understanding and solving complex software engineering problems related to computer vision, estimation, or getting consumer's intent using data, artificial intelligence, and machine learning.
+While writing code for computers is straightforward, the real challenge lies in writing code that humans can understand, maintain, and evolve. This is especially critical when code embodies complex business logic that drives user experiences.
 
-> Technology is the most effective tool to achieve the impossible.
+### Continuous Learning
 
+The software engineering landscape evolves continuously—from new programming paradigms and languages to revolutionary approaches in distributed systems and AI. Staying current while applying proven principles remains a key focus.
 
-After spending a uniquely amazing, crazy, and full of learning journey from 2015 to 2020, I left _**gojek**_ and joined _**Sequoia Capital**_ to pursue my aim of "doing something for the community." One of the main driving forces was giving back to the startup community by helping companies with their technology and product-based challenges and learning from them to spread that knowledge to others.
+## Current Mission
 
-So, if you want to talk about building products, software engineering, or just about people, do drop a line. The easiest way to get to me is Twitter.
+At **PeakXV Partners**, I'm dedicated to giving back to the startup ecosystem by:
 
+- **Advising** portfolio companies on technology strategy and architecture decisions
+- **Helping** scale engineering teams and build strong engineering cultures  
+- **Sharing** learnings and best practices across the startup community
+- **Mentoring** technology leaders and engineering teams
 
+This role allows me to combine my operational experience with a broader mission of nurturing the next generation of technology companies.
+
+---
+
+## Let's Connect
+
+I'm always interested in discussions about technology leadership, software architecture, team building, and product engineering. Whether you're scaling an engineering team, architecting complex systems, or building innovative products, I'd be happy to share perspectives.
+
+**Reach out via:**
+
+- **Twitter**: [@ajeygore](https://twitter.com/ajeygore)
+- **LinkedIn**: [in/ajeygore](https://sg.linkedin.com/in/ajeygore)
+
+*Let's explore how technology can drive your next breakthrough.*
