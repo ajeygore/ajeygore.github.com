@@ -11,10 +11,10 @@
     --bg-primary: #fefefe;     /* Off-white background */
     --bg-secondary: #f8fafc;
     --bg-tertiary: #f1f5f9;
-    --border-color: #e5e7eb;
+    --border-color: #d1d5db;   /* More visible border color - darker grey */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.12), 0 1px 2px -1px rgb(0 0 0 / 0.12);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.12), 0 4px 6px -4px rgb(0 0 0 / 0.12);
     --gradient-primary: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
     --gradient-accent: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,7 +100,7 @@ body {
 
 /* Modern Card Styling */
 .card {
-    border: none;
+    border: 1px solid var(--border-color);
     border-radius: 1rem;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -809,7 +809,7 @@ a:hover {
 
 /* Blog Card Styling */
 .blog-featured-card {
-    border: none;
+    border: 1px solid var(--border-color);
     box-shadow: var(--shadow-lg);
     border-radius: 1.5rem;
     overflow: hidden;
@@ -823,7 +823,7 @@ a:hover {
 }
 
 .blog-post-card {
-    border: none;
+    border: 1px solid var(--border-color);
     box-shadow: var(--shadow);
     border-radius: 1rem;
     overflow: hidden;
