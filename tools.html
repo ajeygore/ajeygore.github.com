@@ -92,70 +92,38 @@ lead_image: ajey_gore_website_card.png
                 <div class="tools-grid">
                     <h3 class="h3 fw-bold text-primary text-center mb-4">More Tools & Experiments</h3>
 
+                    {% assign other_experiments = site.experiments | sort: 'date' | reverse %}
+                    {% if other_experiments.size > 0 %}
                     <div class="row g-4">
-
-                        <!-- TensorFlow Tool -->
+                        {% for experiment in other_experiments %}
+                        {% unless experiment.title contains 'wardley-strategy-generator' or experiment.title contains 'Wardley' %}
                         <div class="col-md-6 col-lg-4">
                             <div class="tool-card h-100">
                                 <div class="card border-0 shadow h-100"
                                     style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
                                     <div class="card-body p-4 text-center">
                                         <div class="tool-icon mb-3">
+                                            {% if experiment.title contains 'TensorFlow' or experiment.title contains 'Tensor' %}
                                             <i class="bi bi-cpu display-4 text-warning"></i>
-                                        </div>
-                                        <h4 class="h5 fw-bold text-primary mb-3">TensorFlow on M1/M2</h4>
-                                        <p class="text-secondary mb-3">
-                                            Complete guide for running TensorFlow 2 on Apple Silicon Macs with optimal
-                                            performance.
-                                        </p>
-                                        <a href="/experiments/TensorFlow-2-on-M1-M2-Macs"
-                                            class="btn-modern btn-modern-outline btn-sm">
-                                            <i class="bi bi-arrow-right"></i>
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- PyTorch Tool -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="tool-card h-100">
-                                <div class="card border-0 shadow h-100"
-                                    style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
-                                    <div class="card-body p-4 text-center">
-                                        <div class="tool-icon mb-3">
+                                            {% elsif experiment.title contains 'PyTorch' or experiment.title contains 'Torch' %}
                                             <i class="bi bi-fire display-4 text-danger"></i>
-                                        </div>
-                                        <h4 class="h5 fw-bold text-primary mb-3">PyTorch on ARM</h4>
-                                        <p class="text-secondary mb-3">
-                                            Setup and optimization guide for PyTorch on M1/M2 ARM-based Apple Silicon.
-                                        </p>
-                                        <a href="/experiments/PyTorch-on-M1-M2-ARM"
-                                            class="btn-modern btn-modern-outline btn-sm">
-                                            <i class="bi bi-arrow-right"></i>
-                                            Learn More
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Content Creator Tool -->
-                        <div class="col-md-6 col-lg-4">
-                            <div class="tool-card h-100">
-                                <div class="card border-0 shadow h-100"
-                                    style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
-                                    <div class="card-body p-4 text-center">
-                                        <div class="tool-icon mb-3">
+                                            {% elsif experiment.title contains 'article' or experiment.title contains 'blog' or experiment.title contains 'conversation' or experiment.title contains 'talk' %}
                                             <i class="bi bi-mic display-4 text-success"></i>
+                                            {% elsif experiment.categories contains 'tech' %}
+                                            <i class="bi bi-gear display-4 text-info"></i>
+                                            {% else %}
+                                            <i class="bi bi-flask display-4 text-primary"></i>
+                                            {% endif %}
                                         </div>
-                                        <h4 class="h5 fw-bold text-primary mb-3">Talk to Article</h4>
+                                        <h4 class="h5 fw-bold text-primary mb-3">{{ experiment.title }}</h4>
                                         <p class="text-secondary mb-3">
-                                            Convert talks and podcasts into well-structured articles using AI
-                                            assistance.
+                                            {% if experiment.description %}
+                                                {{ experiment.description | truncate: 120 }}
+                                            {% else %}
+                                                {{ experiment.excerpt | strip_html | truncate: 120 }}
+                                            {% endif %}
                                         </p>
-                                        <a href="/experiments/Create-a-blog-from-a-conversation"
+                                        <a href="{{ experiment.url }}"
                                             class="btn-modern btn-modern-outline btn-sm">
                                             <i class="bi bi-arrow-right"></i>
                                             Learn More
@@ -164,8 +132,15 @@ lead_image: ajey_gore_website_card.png
                                 </div>
                             </div>
                         </div>
-
+                        {% endunless %}
+                        {% endfor %}
                     </div>
+                    {% else %}
+                    <div class="text-center py-4">
+                        <i class="bi bi-flask text-muted display-4"></i>
+                        <p class="text-muted mt-3">No tools available yet. Check back soon!</p>
+                    </div>
+                    {% endif %}
                 </div>
 
             </div>
