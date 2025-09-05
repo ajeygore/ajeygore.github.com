@@ -2,130 +2,607 @@
 layout: bare
 body_class: home
 leadingpath: ./
-permalink: /wardley-strategy
+permalink: /wardley-strategy-generator
 title: Wardley Strategy Generator - Ajey Gore
 subpage: wardley-strategy
-description: Simon Wardley's strategy framework
+description: "The ultimate corporate strategy buzzword generator - because who needs real insight when you have synergies?"
 lead_image: ajey_gore_website_card.png
 ---
 
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb bg-transparent">
-        <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item"><a href="/wardley-strategy">Wardley Strategy</a></li>
-    </ol>
-</nav>
-
 <script src="/assets/scripts/wardley-strategy.js"></script>
 
-<div class="post-title pb-2">
-    Simon Wardley's strategy generator
-</div>
+<!-- Hero Section with Immediate Strategy Demo -->
+<section class="hero-section py-4"
+    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-10">
+                <!-- Compact Title -->
+                <div class="strategy-hero mb-4">
+                    <h1 class="display-4 fw-bold text-white mb-2" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                        🎯 Wardley Strategy Generator
+                    </h1>
+                    <p class="h5 text-white-50 mb-4" id="rotating-subtitle">
+                        Enterprise-Grade Strategic Consulting at Light Speed! ⚡
+                    </p>
+                </div>
 
-<b>Need a strategy? Can't be bothered to understand your landscape? Don't care about situational awareness or gameplay?
-    Need it fast? Minimal effort? No problem! </b>
-<p>
-    Please read his <a href="https://blog.gardeviance.org/2014/07/a-quick-route-to-building-strategy.html">blog</a> for more information.
-</p>
-<p>The strategy generator is a pun on many stratbros who come in as strategic advisor and come up with something that seems very reasonable and extremely convincing.
-</p>
-So here is a machine, helping you with that. Click on buttons below to get a strategy for your company, and if you don't like it, press the button again.
-Theses buttons generators random convincingly appropriate strategy.
-<p>
-    I also wrote ChatGPT prompt engineered strategy code You can copy this prompt and use as input for ChatGPT and it will give you an eleaborate strategy.
-</p>
-PS: This is only a joke and not a real strategy generator.
-<hr/>
-<button onclick="renderStrategy()"> Get a Strategy!</button>
-<br/>
-<div id="strategy_text">Click a button above to get a strategy</div>
-<br/>
-<button id="copy_strategy_button" onclick="copyStrategyText()" style="display:none;">Copy Strategy</button>
-<hr/>
-<button onclick="getChatGPTPrompt()"> Get ChatGPT prompt</button>
-<br/>
-<div id="chat_gpt_prompt">Click the button above to get a strategy</div>
-<br/>
-<button id="copy_gpt_button" onclick="copyGPTPromptText()" style="display:none;">Copy GPT Prompt</button>
-<br/>
-<hr/>
+                <!-- Immediate Strategy Demo Card -->
+                <div class="demo-strategy-card">
+                    <div class="card shadow-lg border-0"
+                        style="background: rgba(255,255,255,0.95); border-radius: 1.5rem; backdrop-filter: blur(10px);">
+                        <div class="card-header text-center py-3"
+                            style="background: var(--primary-color); border-radius: 1.5rem 1.5rem 0 0;">
+                            <h3 class="h5 fw-bold text-white mb-0">
+                                📋 Your Enterprise Strategy
+                            </h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <div id="strategy_text" class="strategy-text py-3">
+                                <!-- This will be populated by JavaScript with an initial strategy -->
+                            </div>
+                            <div class="text-center">
+                                <button onclick="renderStrategy()" class="btn-modern btn-modern-primary btn-lg strategy-btn me-3"
+                                    style="position: relative; overflow: hidden;">
+                                    <i class="bi bi-refresh"></i>
+                                    <span>Generate New Strategy!</span>
+                                    <div class="sparkle-effect"></div>
+                                </button>
+                                <button id="copy_strategy_button" onclick="copyStrategyText()"
+                                    class="btn-modern btn-modern-outline">
+                                    <i class="bi bi-clipboard"></i>
+                                    Copy Strategy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-**Back story**
+            </div>
+        </div>
+    </div>
+</section>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Oh noes! <a
-        href="https://twitter.com/swardley?ref_src=twsrc%5Etfw">@swardley</a>&#39;s Strategy Generator has fallen off
-    the internets!<a href="https://t.co/5LbIk0xwwt">https://t.co/5LbIk0xwwt</a></p>&mdash; Daniel Terhorst-North
-    (@tastapod) <a href="https://twitter.com/tastapod/status/1598256647948103680?ref_src=twsrc%5Etfw">December 1,
-        2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- Quick Explanation Section -->
+<section class="py-4" style="background: var(--bg-secondary);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="quick-explanation text-center">
+                    <h3 class="h4 fw-bold text-primary mb-3">
+                        🤔 Wait, What Just Happened?
+                    </h3>
+                    <p class="lead text-secondary mb-4">
+                        You just witnessed the magic of <strong>enterprise strategy generation</strong>! 
+                        This tool creates convincing corporate strategies using the finest buzzwords 
+                        money can't buy. Perfect for impressing stakeholders while saying absolutely nothing.
+                    </p>
+                    
+                    <!-- Additional Action -->
+                    <div class="additional-actions">
+                        <button onclick="getChatGPTPrompt()" class="btn-modern btn-modern-secondary btn-lg">
+                            <i class="bi bi-robot"></i>
+                            Get ChatGPT Enhancement
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-I was intrigued, but it wasn't hosted on Heroku anymore, and I kind of wanted to play with it. So I decided to host it myself, and also add a few features.
+<!-- ChatGPT Prompt Section (Initially Hidden) -->
+<section class="py-5" style="background: var(--bg-primary); display: none;" id="gpt-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="gpt-output">
+                    <div class="card shadow-lg border-0" style="background: var(--bg-primary); border-radius: 1.5rem;">
+                        <div class="card-header text-center py-4"
+                            style="background: linear-gradient(135deg, #ff6b6b, #ffa500); border-radius: 1.5rem 1.5rem 0 0;">
+                            <h3 class="h4 fw-bold text-white mb-0">
+                                🤖 ChatGPT Prompt Enhancement
+                            </h3>
+                        </div>
+                        <div class="card-body p-5" style="color: var(--text-primary);">
+                            <div id="chat_gpt_prompt" class="gpt-text py-4">
+                                <!-- ChatGPT prompt content will go here -->
+                            </div>
+                            <div class="text-center">
+                                <button id="copy_gpt_button" onclick="copyGPTPromptText()" class="btn-modern btn-modern-outline">
+                                    <i class="bi bi-clipboard"></i>
+                                    Copy GPT Prompt
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.</p>&mdash; Ajey Gore
-    (@AjeyGore) <a href="https://twitter.com/AjeyGore/status/1598264857790656513?ref_src=twsrc%5Etfw">December 1,
-        2022</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!-- About Section -->
+<section class="py-5" style="background: var(--bg-primary);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="about-section text-center mb-5">
+                    <h3 class="h2 fw-bold text-primary mb-4">🎭 The Backstory</h3>
+                    <p class="lead text-secondary mb-4">
+                        This delightful satire was originally created by <strong>Simon Wardley</strong> as a brilliant
+                        commentary
+                        on the corporate strategy consulting industry. When his original generator went offline, I
+                        couldn't
+                        resist bringing it back to life with some modern flair!
+                    </p>
+                </div>
 
-Simon was kind enough to share the original blog post and then I got on with it.
+                <!-- Simon's Original Context -->
+                <div class="context-card mb-4">
+                    <div class="card border-0 shadow" style="background: var(--bg-secondary); border-radius: 1rem;">
+                        <div class="card-body p-4">
+                            <h4 class="h5 fw-bold text-primary mb-3">📖 Simon's Original Blog Post</h4>
+                            <p class="text-secondary mb-3">
+                                Want to understand the methodology behind this masterpiece of strategic satire?
+                                Check out Simon's original explanation of why this generator exists.
+                            </p>
+                            <a href="https://blog.gardeviance.org/2014/07/a-quick-route-to-building-strategy.html"
+                                class="btn-modern btn-modern-outline btn-sm" target="_blank">
+                                <i class="bi bi-book"></i>
+                                Read Simon's Blog
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Which blogpost? I might write it for you.
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Bill West has the code on github - <a
-            href="https://t.co/N01IUIeg5l">https://t.co/N01IUIeg5l</a><br><br>The original blog post is ... <a
-            href="https://t.co/R16yLoNyz4">https://t.co/R16yLoNyz4</a></p>&mdash; Simon Wardley (@swardley) <a
-            href="https://twitter.com/swardley/status/1598267705970364418?ref_src=twsrc%5Etfw">December 1, 2022</a>
-    </blockquote>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- Twitter Backstory -->
+                <div class="twitter-story mb-4">
+                    <h4 class="h5 fw-bold text-primary mb-3">🐦 How This Got Resurrected</h4>
+                    
+                    <!-- First Tweet - The Problem -->
+                    <div class="card border-0 shadow-sm mb-3" style="background: var(--bg-secondary); border-radius: 1rem;">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="tweet-avatar me-3">
+                                    <div class="rounded-circle bg-primary d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                        <i class="bi bi-twitter text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <strong class="text-primary me-2">Daniel Terhorst-North</strong>
+                                        <span class="text-muted small">@tastapod</span>
+                                    </div>
+                                    <p class="mb-2 text-secondary">
+                                        Oh noes! @swardley's Strategy Generator has fallen off the internets! 
+                                        <a href="https://t.co/5LbIk0xwwt" target="_blank" class="text-primary">https://t.co/5LbIk0xwwt</a>
+                                    </p>
+                                    <span class="text-muted small">December 1, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-Now, here it is, hosted on my blog. And fantastic thing about it that all this code including most of the text is
-written by github-copilot.
+                    <!-- Second Tweet - The Response -->
+                    <div class="card border-0 shadow-sm mb-3" style="background: var(--bg-secondary); border-radius: 1rem;">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="tweet-avatar me-3">
+                                    <div class="rounded-circle bg-success d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                        <i class="bi bi-code-slash text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <strong class="text-success me-2">Ajey Gore</strong>
+                                        <span class="text-muted small">@AjeyGore</span>
+                                    </div>
+                                    <p class="mb-2 text-secondary">
+                                        Which blogpost? I might write it for you.
+                                    </p>
+                                    <span class="text-muted small">December 1, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-Have Fun!
+                    <!-- Third Tweet - Simon's Response -->
+                    <div class="card border-0 shadow-sm" style="background: var(--bg-secondary); border-radius: 1rem;">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-start">
+                                <div class="tweet-avatar me-3">
+                                    <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                        <i class="bi bi-lightbulb text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <strong class="text-warning me-2">Simon Wardley</strong>
+                                        <span class="text-muted small">@swardley</span>
+                                    </div>
+                                    <p class="mb-2 text-secondary">
+                                        Bill West has the code on github - <a href="https://t.co/N01IUIeg5l" target="_blank" class="text-primary">https://t.co/N01IUIeg5l</a><br><br>
+                                        The original blog post is ... <a href="https://t.co/R16yLoNyz4" target="_blank" class="text-primary">https://t.co/R16yLoNyz4</a>
+                                    </p>
+                                    <span class="text-muted small">December 1, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<br/>
+                <!-- Disclaimer -->
+                <div class="disclaimer-card">
+                    <div class="card border-0"
+                        style="background: linear-gradient(135deg, #ffeaa7, #fab1a0); border-radius: 1rem;">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="h5 fw-bold text-dark mb-3">⚠️ Important Disclaimer</h4>
+                            <p class="text-dark mb-0">
+                                This is <strong>100% satire</strong>! Please don't use this for actual business
+                                strategy.
+                                Real strategic thinking requires understanding your landscape, not just mixing
+                                buzzwords.
+                                But hey, if your competitors use this... 🤫
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-<hr/>
+            </div>
+    </div>
+  </div>
+</section><style>
+    /* Custom Animations and Styling */
+    @keyframes sparkle {
+
+        0%,
+        100% {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        50% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes pulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05);
+        }
+    }
+
+    .strategy-btn {
+        animation: pulse 2s infinite;
+        transition: all 0.3s ease;
+    }
+
+    .strategy-btn:hover {
+        animation: none;
+        transform: translateY(-2px);
+    }
+
+    .sparkle-effect {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 4px;
+        background: white;
+        border-radius: 50%;
+        animation: sparkle 1.5s infinite;
+        transform: translate(-50%, -50%);
+    }
+
+    .strategy-text,
+    .gpt-text {
+        min-height: 150px;
+        padding: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .strategy-text.generated,
+    .gpt-text.generated {
+        animation: fadeInUp 0.6s ease-out;
+        display: block;
+    }
+
+    .strategy-text .placeholder-content,
+    .gpt-text .placeholder-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 150px;
+        opacity: 0.7;
+    }
+
+    /* Rotating subtitle effect */
+    #rotating-subtitle {
+        transition: all 0.5s ease;
+    }
+
+/* Make buzzwords pop */
+.strategy-text b, .gpt-text b {
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Strategy content formatting */
+.strategy-content, .gpt-prompt-content {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.strategy-template {
+  font-style: italic;
+}
+
+/* Dark mode strategy text fixes */
+[data-bs-theme="dark"] .hero-section .card {
+  background: rgba(255,255,255,0.98) !important;
+  color: var(--bs-dark) !important;
+}
+
+[data-bs-theme="dark"] .hero-section .strategy-text {
+  color: var(--bs-dark) !important;
+}
+
+[data-bs-theme="dark"] .hero-section .strategy-text b {
+  color: var(--primary-color) !important;
+}
+
+[data-bs-theme="dark"] .strategy-content {
+  color: var(--bs-dark) !important;
+}
+
+[data-bs-theme="dark"] .gpt-section .strategy-content {
+  color: var(--text-primary) !important;
+}
+
+/* Tweet-like styling */
+.tweet-avatar {
+  flex-shrink: 0;
+}
+
+.twitter-story .card:hover {
+  transform: translateY(-2px);
+}    /* Card hover effects */
+    .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Button enhanced styling */
+    .btn-modern {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-modern::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
+    }
+
+    .btn-modern:hover::before {
+        left: 100%;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .display-4 {
+            font-size: 2rem;
+        }
+
+        .strategy-text,
+        .gpt-text {
+            font-size: 0.9rem;
+            min-height: 100px;
+        }
+        
+        .hero-section .card-body {
+            padding: 1.5rem;
+        }
+        
+        .btn-modern.btn-lg {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.5rem;
+        }
+        
+        .hero-section {
+            padding: 2rem 0;
+        }
+    }
+</style>
 
 <script>
-    function renderHTML() {
-        let strategy = wardleyStrategyGenerator();
-        // get all words
-
-        let nouns = wardleyNouns();
-        let pluralNouns = wardleyPluralNouns();
-        let adjectives = wardleyAdjectives();
-        let allWords = nouns.concat(pluralNouns, adjectives);
-        // if strategy contains words from allwords then highlight them in bold
-
-        for (var i = 0; i < allWords.length; i++) {
-            strategy = strategy.replace(allWords[i], "<b>" + allWords[i] + "</b>");
-        }
-        return strategy;
+// Enhanced functionality with modern UX
+function renderHTML() {
+    let strategy = wardleyStrategyGenerator();
+    let nouns = wardleyNouns();
+    let pluralNouns = wardleyPluralNouns();
+    let adjectives = wardleyAdjectives();
+    let allWords = nouns.concat(pluralNouns, adjectives);
+    
+    // Enhanced highlighting with better styling
+    for (var i = 0; i < allWords.length; i++) {
+        const regex = new RegExp('\\b' + allWords[i].replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'gi');
+        strategy = strategy.replace(regex, "<b>" + allWords[i] + "</b>");
     }
+    return `<div class="strategy-content">${strategy}</div>`;
+}
 
-    function renderStrategy() {
-        document.getElementById("strategy_text").innerHTML = renderHTML();
+function renderStrategy() {
+    const strategyElement = document.getElementById("strategy_text");
+    const copyButton = document.getElementById("copy_strategy_button");
+    
+    // Add loading state
+    strategyElement.innerHTML = `
+        <div class="placeholder-content">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary me-3" role="status">
+                    <span class="visually-hidden">Generating strategy...</span>
+                </div>
+                <span class="text-primary">Consulting the corporate oracle...</span>
+            </div>
+        </div>
+    `;
+    
+    // Simulate thinking time for dramatic effect
+    setTimeout(() => {
+        strategyElement.innerHTML = renderHTML();
+        strategyElement.classList.add('generated');
+        copyButton.style.display = "inline-flex";
+        
+        // Add success notification
+        showNotification("🎉 Premium strategy generated! Your stakeholders will be impressed.", "success");
+    }, 1500);
+}
 
-        document.getElementById("copy_strategy_button").style.display = "block";
-
-    }
-
-    function getChatGPTPrompt() {
-        document.getElementById("chat_gpt_prompt").innerHTML = "Make a more convincing strategy by adding a few words with statistics and growth projections for my business to the prompt below. <br/>" + renderHTML();
-
-        //add copy button so that text can be copied
-        document.getElementById("copy_gpt_button").style.display = "block";
-
-    }
-
-    function copyGPTPromptText() {
-        var text = document.getElementById("chat_gpt_prompt").innerText;
-        navigator.clipboard.writeText(text);
+function getChatGPTPrompt() {
+    const promptElement = document.getElementById("chat_gpt_prompt");
+    const copyButton = document.getElementById("copy_gpt_button");
+    const gptSection = document.getElementById("gpt-section");
+    
+    // Show the GPT section
+    gptSection.style.display = "block";
+    
+    // Scroll to the GPT section
+    gptSection.scrollIntoView({ behavior: 'smooth' });
+    
+    // Add loading state
+    promptElement.innerHTML = `
+        <div class="placeholder-content">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-warning me-3" role="status">
+                    <span class="visually-hidden">Preparing prompt...</span>
+                </div>
+                <span class="text-warning">Enhancing with AI magic...</span>
+            </div>
+        </div>
+    `;
+    
+    setTimeout(() => {
+        const strategyHTML = renderHTML();
+        promptElement.innerHTML = `
+            <div class="gpt-prompt-content">
+                <p class="fw-bold text-primary mb-3">📝 Enhanced ChatGPT Prompt:</p>
+                <div class="p-3 rounded" style="background: var(--bg-secondary); border-left: 4px solid var(--primary-color);">
+                    <p class="mb-2"><strong>Instructions:</strong> Make a more convincing strategy by adding statistics, growth projections, and market analysis to this corporate strategy template:</p>
+                    <div class="strategy-template mt-3 p-3 rounded" style="background: var(--bg-primary); border: 1px dashed var(--border-color);">
+                        ${strategyHTML}
+                    </div>
+                </div>
+            </div>
+        `;
+        promptElement.classList.add('generated');
+        copyButton.style.display = "inline-flex";
+        
+        showNotification("🤖 ChatGPT prompt ready! Now you can generate infinite variations.", "info");
+    }, 1200);
+}    function copyGPTPromptText() {
+        const text = document.getElementById("chat_gpt_prompt").innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            showNotification("📋 ChatGPT prompt copied to clipboard!", "success");
+        });
     }
 
     function copyStrategyText() {
-        var text = document.getElementById("strategy_text").innerText;
-        navigator.clipboard.writeText(text);
+        const text = document.getElementById("strategy_text").innerText;
+        navigator.clipboard.writeText(text).then(() => {
+            showNotification("📋 Strategy copied! Ready to revolutionize your business.", "success");
+        });
     }
 
+    // Notification system
+    function showNotification(message, type = "info") {
+        const notification = document.createElement('div');
+        notification.className = `alert alert-${type === 'success' ? 'success' : type === 'info' ? 'info' : 'warning'} alert-dismissible fade show position-fixed`;
+        notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; max-width: 350px;';
+        notification.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    `;
+
+        document.body.appendChild(notification);
+
+        // Auto-remove after 4 seconds
+        setTimeout(() => {
+            if (notification.parentNode) {
+                notification.remove();
+            }
+        }, 4000);
+    }
+
+    // Rotating subtitle effect and auto-load strategy
+    document.addEventListener('DOMContentLoaded', function () {
+        const subtitles = [
+            "Enterprise-Grade Strategic Consulting at Light Speed! ⚡",
+            "Why Think When You Can Generate? 🤖",
+            "Buzzword Bingo Champion Since 2014! 🏆",
+            "Disrupting Strategic Thinking Since Forever! 🚀",
+            "Making Consultants Obsolete, One Click at a Time! 💼"
+        ];
+
+        let currentIndex = 0;
+        const subtitleElement = document.getElementById('rotating-subtitle');
+
+        if (subtitleElement) {
+            setInterval(() => {
+                subtitleElement.style.opacity = '0';
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % subtitles.length;
+                    subtitleElement.textContent = subtitles[currentIndex];
+                    subtitleElement.style.opacity = '1';
+                }, 250);
+            }, 3000);
+        }
+        
+        // Auto-generate initial strategy on page load
+        const strategyElement = document.getElementById("strategy_text");
+        const copyButton = document.getElementById("copy_strategy_button");
+        
+        if (strategyElement && copyButton) {
+            // Generate initial strategy immediately
+            strategyElement.innerHTML = renderHTML();
+            strategyElement.classList.add('generated');
+            copyButton.style.display = "inline-flex";
+        }
+    });
 </script>
