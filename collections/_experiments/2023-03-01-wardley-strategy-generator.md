@@ -6,6 +6,27 @@ categories: tech
 description: Pun on StratBros
 lead_image: blog/software_perspective.png
 ---
+
+<!-- Upgrade Notice -->
+<div class="alert alert-info border-0 shadow-sm" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 1rem; margin-bottom: 2rem;">
+    <div class="d-flex align-items-center">
+        <div class="me-3">
+            <i class="bi bi-rocket-takeoff display-6 text-white"></i>
+        </div>
+        <div class="flex-grow-1">
+            <h4 class="alert-heading text-white fw-bold mb-2">🎯 New & Improved Version Available!</h4>
+            <p class="text-white mb-3">
+                This strategy generator has been completely redesigned with a modern UI, 
+                instant demos, and enhanced features. Experience the future of corporate buzzword generation!
+            </p>
+            <a href="/wardley-strategy-generator" class="btn btn-light btn-lg fw-bold">
+                <i class="bi bi-arrow-right-circle me-2"></i>
+                Try the New Strategy Generator
+            </a>
+        </div>
+    </div>
+</div>
+
 <script src="/assets/scripts/wardley-strategy.js"></script>
 
 

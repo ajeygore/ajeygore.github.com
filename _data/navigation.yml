@@ -2,6 +2,8 @@
   link: /blog
 - name: talks
   link: /content/talks
+- name: tools
+  link: /tools
 - name: experiments
   link: /experiments
 - name: about
