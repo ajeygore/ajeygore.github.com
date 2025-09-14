@@ -4,7 +4,8 @@ body_class: home
 leadingpath: ./
 permalink: /life
 title: Life in Weeks - Visualize Your Life Journey
-description: Interactive tool to visualize your entire life as a grid of weeks, calculate remaining time, and make every moment count.
+description: Interactive tool to visualize your entire life as a grid of weeks, calculate remaining time, and make every
+moment count.
 ---
 
 <style>
@@ -30,7 +31,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
     /* Navbar - Light Blue-Purple Gradient */
     .navbar {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
     }
 
     .navbar-brand,
@@ -41,7 +42,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
 
     .navbar-nav .nav-link:hover {
         color: #f8f9fa !important;
-        background: rgba(255,255,255,0.1) !important;
+        background: rgba(255, 255, 255, 0.1) !important;
         border-radius: 4px !important;
     }
 
@@ -64,7 +65,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
         background: var(--bg-secondary) !important;
         border: 1px solid var(--border-color) !important;
         border-radius: 8px !important;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
     }
 
     .card-title {
@@ -559,13 +560,8 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="dob" class="form-label">Date of Birth</label>
-                                <input type="text" 
-                                       id="dob" 
-                                       name="dob" 
-                                       class="form-control date-input" 
-                                       placeholder="YYYY-MM-DD (e.g., 1990-05-15)"
-                                       maxlength="10"
-                                       autocomplete="bday">
+                                <input type="text" id="dob" name="dob" class="form-control date-input"
+                                    placeholder="YYYY-MM-DD (e.g., 1990-05-15)" maxlength="10" autocomplete="bday">
                                 <small class="form-text text-muted">Enter your birth date in YYYY-MM-DD format</small>
                             </div>
                             <div class="col-md-6">
@@ -957,7 +953,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
             function formatDateInput(value) {
                 // Remove all non-numeric characters
                 const numbers = value.replace(/\D/g, '');
-                
+
                 // Apply formatting: YYYY-MM-DD
                 if (numbers.length >= 8) {
                     return numbers.slice(0, 4) + '-' + numbers.slice(4, 6) + '-' + numbers.slice(6, 8);
@@ -975,7 +971,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
                 if (!dateString || dateString.length !== 10) return false;
                 const date = new Date(dateString);
                 if (isNaN(date.getTime())) return false;
-                
+
                 // Check if it's a reasonable birth date (between 1900 and today)
                 const year = date.getFullYear();
                 const currentYear = new Date().getFullYear();
@@ -993,15 +989,15 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
                 const cursorPosition = e.target.selectionStart;
                 const oldValue = e.target.value;
                 const formattedValue = formatDateInput(e.target.value);
-                
+
                 // Update the input value with formatting
                 e.target.value = formattedValue;
-                
+
                 // Adjust cursor position after formatting
                 const lengthDiff = formattedValue.length - oldValue.length;
                 const newCursorPosition = cursorPosition + lengthDiff;
                 e.target.setSelectionRange(newCursorPosition, newCursorPosition);
-                
+
                 // Visual feedback based on validation
                 if (formattedValue.length === 10) {
                     if (isValidCompleteDate(formattedValue)) {
@@ -1014,7 +1010,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
                 } else {
                     e.target.classList.remove('is-valid', 'is-invalid');
                 }
-                
+
                 // Only trigger calculation when we have 4 year digits AND it's a complete valid date
                 if (hasFourYearDigits(formattedValue) && isValidCompleteDate(formattedValue)) {
                     console.log('Complete date entered:', formattedValue);
@@ -1030,12 +1026,12 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
                     (e.ctrlKey === true && [65, 67, 86, 88, 90].indexOf(e.keyCode) !== -1)) {
                     return;
                 }
-                
+
                 // Ensure that it is a number and stop the keypress if it's not
                 if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
                     e.preventDefault();
                 }
-                
+
                 // Limit to 8 digits total (YYYYMMDD)
                 const numbers = this.value.replace(/\D/g, '');
                 if (numbers.length >= 8 && e.keyCode >= 48 && e.keyCode <= 57) {
@@ -1049,7 +1045,7 @@ description: Interactive tool to visualize your entire life as a grid of weeks, 
                     calculateLife();
                 }
             });
-        }        if (locationSelect) {
+        } if (locationSelect) {
             locationSelect.addEventListener('change', function () {
                 if (isValidCompleteDate(dobInput.value)) {
                     calculateLife();
