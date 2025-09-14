@@ -95,14 +95,17 @@ lead_image: ajey_gore_website_card.png
                         <!-- Life Card -->
                         <div class="col-md-6 col-lg-4">
                             <div class="tool-card h-100">
-                                <div class="card border-0 shadow h-100" style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
+                                <div class="card border-0 shadow h-100"
+                                    style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
                                     <div class="card-body p-4 text-center">
                                         <div class="tool-icon mb-3">
                                             <i class="bi bi-calendar-heart display-4 text-success"></i>
                                         </div>
                                         <h4 class="h5 fw-bold text-primary mb-3">Life Grid & Stats</h4>
                                         <p class="text-secondary mb-3">
-                                            Visualize your life in weeks, see stats on sleep, work, eating, and weekends left for family and vacations. Enter your date of birth and get a unique perspective on your time!
+                                            Visualize your life in weeks, see stats on sleep, work, eating, and weekends
+                                            left for family and vacations. Enter your date of birth and get a unique
+                                            perspective on your time!
                                         </p>
                                         <a href="/life.html" class="btn-modern btn-modern-outline btn-sm">
                                             <i class="bi bi-arrow-right"></i>
@@ -116,18 +119,23 @@ lead_image: ajey_gore_website_card.png
                         {% assign other_experiments = site.experiments | sort: 'date' | reverse %}
                         {% if other_experiments.size > 0 %}
                         {% for experiment in other_experiments %}
-                        {% unless experiment.title contains 'wardley-strategy-generator' or experiment.title contains 'Wardley' %}
+                        {% unless experiment.title contains 'wardley-strategy-generator' or experiment.title contains
+                        'Wardley' %}
                         <div class="col-md-6 col-lg-4">
                             <div class="tool-card h-100">
                                 <div class="card border-0 shadow h-100"
                                     style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
                                     <div class="card-body p-4 text-center">
                                         <div class="tool-icon mb-3">
-                                            {% if experiment.title contains 'TensorFlow' or experiment.title contains 'Tensor' %}
+                                            {% if experiment.title contains 'TensorFlow' or experiment.title contains
+                                            'Tensor' %}
                                             <i class="bi bi-cpu display-4 text-warning"></i>
-                                            {% elsif experiment.title contains 'PyTorch' or experiment.title contains 'Torch' %}
+                                            {% elsif experiment.title contains 'PyTorch' or experiment.title contains
+                                            'Torch' %}
                                             <i class="bi bi-fire display-4 text-danger"></i>
-                                            {% elsif experiment.title contains 'article' or experiment.title contains 'blog' or experiment.title contains 'conversation' or experiment.title contains 'talk' %}
+                                            {% elsif experiment.title contains 'article' or experiment.title contains
+                                            'blog' or experiment.title contains 'conversation' or experiment.title
+                                            contains 'talk' %}
                                             <i class="bi bi-mic display-4 text-success"></i>
                                             {% elsif experiment.categories contains 'tech' %}
                                             <i class="bi bi-gear display-4 text-info"></i>
@@ -138,13 +146,12 @@ lead_image: ajey_gore_website_card.png
                                         <h4 class="h5 fw-bold text-primary mb-3">{{ experiment.title }}</h4>
                                         <p class="text-secondary mb-3">
                                             {% if experiment.description %}
-                                                {{ experiment.description | truncate: 120 }}
+                                            {{ experiment.description | truncate: 120 }}
                                             {% else %}
-                                                {{ experiment.excerpt | strip_html | truncate: 120 }}
+                                            {{ experiment.excerpt | strip_html | truncate: 120 }}
                                             {% endif %}
                                         </p>
-                                        <a href="{{ experiment.url }}"
-                                            class="btn-modern btn-modern-outline btn-sm">
+                                        <a href="{{ experiment.url }}" class="btn-modern btn-modern-outline btn-sm">
                                             <i class="bi bi-arrow-right"></i>
                                             Learn More
                                         </a>
@@ -155,11 +162,11 @@ lead_image: ajey_gore_website_card.png
                         {% endunless %}
                         {% endfor %}
                         {% endif %}
-                </div>
+                    </div>
 
+                </div>
             </div>
         </div>
-    </div>
 </section>
 
 <!-- Call to Action -->

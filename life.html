@@ -5,7 +5,8 @@ leadingpath: ./
 permalink: /life
 title: Life in Weeks - Visualize Your Time - Ajey Gore
 subpage: life
-description: "Visualize your entire life as a grid of weeks and see how you spend your time. Enter your date of birth and get insights into your life's journey."
+description: "Visualize your entire life as a grid of weeks and see how you spend your time. Enter your date of birth
+and get insights into your life's journey."
 lead_image: ajey_gore_website_card.png
 ---
 
@@ -21,38 +22,38 @@ lead_image: ajey_gore_website_card.png
         --border-color: #dee2e6;
         --accent-color: #0d6efd;
     }
-    
+
     body {
         background: var(--bg-primary) !important;
         color: var(--text-primary) !important;
         min-height: 100vh;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
     }
-    
+
     /* Modern light blue-purple gradient navbar */
     header.sticky-top {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #a8edea 50%, #fed6e3 100%) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
         box-shadow: 0 2px 10px rgba(102, 126, 234, 0.1) !important;
     }
-    
+
     /* Navbar text styling for gradient background */
     header .name-header {
         color: white !important;
         font-weight: 600 !important;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
     }
-    
+
     header .menu-section {
         color: #2d3748 !important;
         font-weight: 600 !important;
         text-shadow: none !important;
     }
-    
+
     header .menu-section:hover {
         color: #1a202c !important;
     }
-    
+
     /* Hero Section with gradient background for text visibility */
     .hero-section {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
@@ -60,13 +61,15 @@ lead_image: ajey_gore_website_card.png
         padding: 3rem 0;
         text-align: center;
     }
-    
+
     /* Ensure hero text is visible */
-    .hero-section h1, .hero-section p, .hero-section .text-white {
+    .hero-section h1,
+    .hero-section p,
+    .hero-section .text-white {
         color: white !important;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
     }
-    
+
     /* Flat Cards */
     .card {
         background: var(--bg-secondary) !important;
@@ -74,24 +77,25 @@ lead_image: ajey_gore_website_card.png
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
         border-radius: 8px !important;
     }
-    
+
     /* Input Fields - Flat Style */
-    .form-control, .form-select {
+    .form-control,
+    .form-select {
         background: var(--bg-secondary) !important;
         border: 1px solid var(--border-color) !important;
         color: var(--text-primary) !important;
         border-radius: 4px !important;
     }
-    
+
     .form-control::placeholder {
         color: var(--text-secondary) !important;
     }
-    
+
     .form-label {
         color: var(--text-primary) !important;
         font-weight: 600 !important;
     }
-    
+
     /* Flat Life Bar Design */
     .life-bar {
         height: 24px !important;
@@ -101,14 +105,14 @@ lead_image: ajey_gore_website_card.png
         position: relative;
         border: 1px solid var(--border-color) !important;
     }
-    
+
     .life-bar-lived {
         background: #28a745 !important;
         height: 100% !important;
         position: relative;
         transition: width 0.3s ease;
     }
-    
+
     .life-bar-remaining {
         background: #007bff !important;
         height: 100% !important;
@@ -116,7 +120,7 @@ lead_image: ajey_gore_website_card.png
         top: 0;
         right: 0;
     }
-    
+
     .life-bar-current {
         position: absolute;
         top: 0;
@@ -125,51 +129,60 @@ lead_image: ajey_gore_website_card.png
         background: #ffc107 !important;
         z-index: 10;
     }
-    
+
     /* Flat Life Grid Design */
-    .life-grid { 
-        display: grid; 
-        grid-template-columns: repeat(52, 8px); 
-        gap: 1px; 
+    .life-grid {
+        display: grid;
+        grid-template-columns: repeat(52, 8px);
+        gap: 1px;
         justify-content: center;
         max-width: 100%;
         overflow-x: auto;
         padding: 2em 1em;
     }
-    
-    .week-square { 
-        width: 8px; 
-        height: 8px; 
-        border-radius: 1px; 
+
+    .week-square {
+        width: 8px;
+        height: 8px;
+        border-radius: 1px;
         border: none;
         cursor: pointer;
     }
+
     .week-square:hover {
         transform: scale(1.5) !important;
         z-index: 10;
         border: 1px solid var(--text-primary) !important;
     }
-    
-    .week-past { 
+
+    .week-past {
         background: #28a745 !important;
     }
-    
-    .week-current { 
+
+    .week-current {
         background: #ffc107 !important;
         animation: currentWeekBlink 1s infinite;
     }
-    
-    .week-future { 
+
+    .week-future {
         background: #007bff !important;
         opacity: 0.7;
     }
-    
+
     /* Current week blink animation */
     @keyframes currentWeekBlink {
-        0%, 50% { opacity: 1; }
-        51%, 100% { opacity: 0.3; }
+
+        0%,
+        50% {
+            opacity: 1;
+        }
+
+        51%,
+        100% {
+            opacity: 0.3;
+        }
     }
-    
+
     /* Flat Statistics Cards */
     .stats-card {
         background: var(--bg-secondary) !important;
@@ -177,59 +190,67 @@ lead_image: ajey_gore_website_card.png
         transition: transform 0.2s ease;
         border-radius: 8px !important;
     }
-    
+
     .stats-card:hover {
         transform: translateY(-2px) !important;
-    .stat-number {
-        font-size: 2.5em !important;
-        font-weight: 800 !important;
-        color: var(--text-primary) !important;
-    }
-    
-    .stat-label {
-        color: var(--text-secondary) !important;
-        font-weight: 500 !important;
-    }
-    
-    /* Text Colors */
-    .text-white, h1, h2, h3, h4, h5 {
-        color: var(--text-primary) !important;
-    }
-    
-    .text-muted, .text-secondary {
-        color: var(--text-secondary) !important;
-    }
-    
-    /* Button Styling */
-    .btn-primary {
-        background: var(--accent-color) !important;
-        border: 1px solid var(--accent-color) !important;
-        color: white !important;
-        border-radius: 4px !important;
-    }
-    
-    .btn-primary:hover {
-        background: #0056b3 !important;
-        border-color: #0056b3 !important;
-        transform: translateY(-1px) !important;
-        color: white !important;
-    }
+
+        .stat-number {
+            font-size: 2.5em !important;
+            font-weight: 800 !important;
+            color: var(--text-primary) !important;
+        }
+
+        .stat-label {
+            color: var(--text-secondary) !important;
+            font-weight: 500 !important;
+        }
+
+        /* Text Colors */
+        .text-white,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: var(--text-primary) !important;
+        }
+
+        .text-muted,
+        .text-secondary {
+            color: var(--text-secondary) !important;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background: var(--accent-color) !important;
+            border: 1px solid var(--accent-color) !important;
+            color: white !important;
+            border-radius: 4px !important;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3 !important;
+            border-color: #0056b3 !important;
+            transform: translateY(-1px) !important;
+            color: white !important;
+        }
+
         transform: translate(-50%, -50%);
         font-weight: 700;
         font-size: 0.9em;
         color: white !important;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         z-index: 20;
     }
-    
+
     .progress-labels {
         display: flex;
         justify-content: space-between;
         margin-top: 0.5em;
         font-size: 0.9em;
-        color: rgba(255,255,255,0.8);
+        color: rgba(255, 255, 255, 0.8);
     }
-    
+
     /* Health Checkboxes */
     .health-checkboxes {
         display: grid;
@@ -237,16 +258,16 @@ lead_image: ajey_gore_website_card.png
         gap: 1em;
         margin: 1em 0;
     }
-    
+
     .form-check-input {
         background: var(--bg-secondary) !important;
         border: 1px solid var(--border-color) !important;
     }
-    
+
     .form-check-label {
         color: var(--text-primary) !important;
     }
-    
+
     /* Weekend Display */
     .weekend-number {
         font-size: 4em;
@@ -254,32 +275,34 @@ lead_image: ajey_gore_website_card.png
         color: var(--accent-color);
         margin-bottom: 0.5em;
     }
-    
+
     /* Responsive Adjustments */
     @media (max-width: 768px) {
-        .life-grid { 
-            grid-template-columns: repeat(52, 6px); 
+        .life-grid {
+            grid-template-columns: repeat(52, 6px);
             padding: 1em 0.5em;
         }
-        .week-square { 
-            width: 6px; 
-            height: 6px; 
+
+        .week-square {
+            width: 6px;
+            height: 6px;
         }
     }
-    
+
     @media (max-width: 576px) {
-        .life-grid { 
-            grid-template-columns: repeat(52, 5px); 
+        .life-grid {
+            grid-template-columns: repeat(52, 5px);
         }
-        .week-square { 
-            width: 5px; 
-            height: 5px; 
+
+        .week-square {
+            width: 5px;
+            height: 5px;
         }
     }
-    
+
     /* Utility Classes */
-    .hidden { 
-        display: none !important; 
+    .hidden {
+        display: none !important;
     }
 </style>
 
@@ -306,12 +329,12 @@ lead_image: ajey_gore_website_card.png
     <div class="content-container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                
+
                 <!-- Input Section -->
                 <div class="card shadow-lg border-0 mb-4">
                     <div class="card-body p-4">
                         <h4 class="card-title text-center mb-4">Enter Your Information</h4>
-                        
+
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="dob" class="form-label">Date of Birth</label>
@@ -354,7 +377,7 @@ lead_image: ajey_gore_website_card.png
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="text-center mt-4">
                             <button class="btn btn-primary btn-lg px-5" onclick="calculateLife()">
                                 ✨ Visualize My Life ✨
@@ -367,8 +390,9 @@ lead_image: ajey_gore_website_card.png
                 <div class="card shadow-lg border-0 mb-4" id="health-factors">
                     <div class="card-body p-4">
                         <h4 class="card-title text-center mb-4">Health Factors (Optional)</h4>
-                        <p class="text-center text-muted mb-4">Select any that apply to get a more accurate life expectancy</p>
-                        
+                        <p class="text-center text-muted mb-4">Select any that apply to get a more accurate life
+                            expectancy</p>
+
                         <div class="health-checkboxes">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="tobacco">
@@ -405,17 +429,18 @@ lead_image: ajey_gore_website_card.png
                             <span id="life-expectancy-display">Life Expectancy</span>
                         </div>
                     </div>
-                    
+
                     <div class="card-body p-4">
                         <h4 class="card-title text-center mb-2">Your Life in Weeks</h4>
                         <p class="text-center text-muted mb-4" id="completion-info">
                             <!-- Completion percentage will be inserted here -->
                         </p>
-                        
+
                         <div id="life-grid" class="life-grid"></div>
-                        
+
                         <p class="text-center text-muted mt-4">
-                            Each square represents one week of your life. Green = lived, Yellow = current week, Blue = future.
+                            Each square represents one week of your life. Green = lived, Yellow = current week, Blue =
+                            future.
                         </p>
                     </div>
                 </div>
@@ -424,8 +449,9 @@ lead_image: ajey_gore_website_card.png
                 <div class="card shadow-lg border-0 mb-4 hidden" id="stats-section">
                     <div class="card-body p-4">
                         <h4 class="card-title text-center mb-4">✨ How You've Spent Your Life ✨</h4>
-                        <p class="text-center text-muted mb-4">Every hour counts - here's your time breakdown in style!</p>
-                        
+                        <p class="text-center text-muted mb-4">Every hour counts - here's your time breakdown in style!
+                        </p>
+
                         <div id="stats-grid" class="row g-3"></div>
                     </div>
                 </div>
@@ -446,7 +472,7 @@ lead_image: ajey_gore_website_card.png
     // Performance optimization - cache grid state
     let lastGridConfig = null;
     let gridGenerated = false;
-    
+
     // Life expectancy data by location
     const lifeExpectancyData = {
         'global': 73,
@@ -594,7 +620,7 @@ lead_image: ajey_gore_website_card.png
 
         // Optimized grid generation - only recreate if parameters changed
         const gridConfig = `${totalWeeks}-${currentWeek}`;
-        
+
         if (!gridGenerated || lastGridConfig !== gridConfig) {
             generateLifeGrid(totalWeeks, currentWeek);
             lastGridConfig = gridConfig;
@@ -630,23 +656,23 @@ lead_image: ajey_gore_website_card.png
     function generateLifeGrid(totalWeeks, currentWeek) {
         const gridContainer = document.getElementById('life-grid');
         const fragment = document.createDocumentFragment();
-        
+
         for (let i = 0; i < totalWeeks; i++) {
             const square = document.createElement('div');
             square.className = getWeekClass(i, currentWeek);
             square.dataset.week = i;
-            
+
             const year = Math.floor(i / 52) + 1;
             const week = (i % 52) + 1;
             square.title = `Year ${year}, Week ${week}`;
-            
+
             fragment.appendChild(square);
         }
-        
+
         gridContainer.innerHTML = '';
         gridContainer.appendChild(fragment);
     }
-    
+
     // Update existing grid classes without recreating HTML
     function updateGridClasses(totalWeeks, currentWeek) {
         const squares = document.querySelectorAll('.week-square');
@@ -654,7 +680,7 @@ lead_image: ajey_gore_website_card.png
             square.className = getWeekClass(i, currentWeek);
         });
     }
-    
+
     // Helper function to get week class
     function getWeekClass(weekIndex, currentWeek) {
         let cls = 'week-square';
@@ -672,46 +698,46 @@ lead_image: ajey_gore_website_card.png
     function drawLifeGrid() {
         const grid = document.getElementById('life-grid');
         const squares = grid.querySelectorAll('.week-square');
-        
+
         // Just show all squares immediately
         squares.forEach((square) => {
             square.style.opacity = '1';
             square.style.transform = 'scale(1)';
         });
-        
+
         // Show the grid container
         grid.style.opacity = '1';
         grid.style.transform = 'translateY(0)';
     }
-    
+
     // Set up automatic recalculation when inputs change
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const dobInput = document.getElementById('dob');
         const locationSelect = document.getElementById('location');
         const healthCheckboxes = ['tobacco', 'alcohol', 'diabetes', 'heart'];
-        
+
         // Add event listeners for automatic recalculation
         if (dobInput) {
-            dobInput.addEventListener('change', function() {
+            dobInput.addEventListener('change', function () {
                 if (this.value) {
                     calculateLife();
                 }
             });
         }
-        
+
         if (locationSelect) {
-            locationSelect.addEventListener('change', function() {
+            locationSelect.addEventListener('change', function () {
                 if (dobInput.value) {
                     calculateLife();
                 }
             });
         }
-        
+
         // Add listeners for health factor checkboxes
         healthCheckboxes.forEach(checkboxId => {
             const checkbox = document.getElementById(checkboxId);
             if (checkbox) {
-                checkbox.addEventListener('change', function() {
+                checkbox.addEventListener('change', function () {
                     if (dobInput.value) {
                         calculateLife();
                     }
