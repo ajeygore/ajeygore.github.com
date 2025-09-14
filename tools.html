@@ -91,10 +91,30 @@ lead_image: ajey_gore_website_card.png
                 <!-- Other Tools Grid -->
                 <div class="tools-grid">
                     <h3 class="h3 fw-bold text-primary text-center mb-4">More Tools & Experiments</h3>
-
-                    {% assign other_experiments = site.experiments | sort: 'date' | reverse %}
-                    {% if other_experiments.size > 0 %}
                     <div class="row g-4">
+                        <!-- Life Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="tool-card h-100">
+                                <div class="card border-0 shadow h-100" style="background: var(--bg-primary); border-radius: 1rem; transition: all 0.3s ease;">
+                                    <div class="card-body p-4 text-center">
+                                        <div class="tool-icon mb-3">
+                                            <i class="bi bi-calendar-heart display-4 text-success"></i>
+                                        </div>
+                                        <h4 class="h5 fw-bold text-primary mb-3">Life Grid & Stats</h4>
+                                        <p class="text-secondary mb-3">
+                                            Visualize your life in weeks, see stats on sleep, work, eating, and weekends left for family and vacations. Enter your date of birth and get a unique perspective on your time!
+                                        </p>
+                                        <a href="/life.html" class="btn-modern btn-modern-outline btn-sm">
+                                            <i class="bi bi-arrow-right"></i>
+                                            Try Life Grid
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ...existing code... -->
+                        {% assign other_experiments = site.experiments | sort: 'date' | reverse %}
+                        {% if other_experiments.size > 0 %}
                         {% for experiment in other_experiments %}
                         {% unless experiment.title contains 'wardley-strategy-generator' or experiment.title contains 'Wardley' %}
                         <div class="col-md-6 col-lg-4">
@@ -134,13 +154,7 @@ lead_image: ajey_gore_website_card.png
                         </div>
                         {% endunless %}
                         {% endfor %}
-                    </div>
-                    {% else %}
-                    <div class="text-center py-4">
-                        <i class="bi bi-flask text-muted display-4"></i>
-                        <p class="text-muted mt-3">No tools available yet. Check back soon!</p>
-                    </div>
-                    {% endif %}
+                        {% endif %}
                 </div>
 
             </div>
