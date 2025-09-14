@@ -3,24 +3,210 @@ layout: bare
 body_class: home
 leadingpath: ./
 permalink: /life
-title: Life in Weeks - Visualize Your Time - Ajey Gore
-subpage: life
-description: "Visualize your entire life as a grid of weeks and see how you spend your time. Enter your date of birth
-and get insights into your life's journey."
-lead_image: ajey_gore_website_card.png
+title: Life in Weeks - Visualize Your Life Journey
+description: Interactive tool to visualize your entire life as a grid of weeks, calculate remaining time, and make every moment count.
 ---
 
-<!-- Custom Life Page Styling -->
 <style>
-    /* Consistent off-white theme variables */
+    /* Custom CSS Variables for Consistent Theme */
     :root {
-        --bg-primary: #f8f9fa;
+        --bg-primary: #fafafa;
         --bg-secondary: #ffffff;
-        --primary-color: #6c757d;
-        --text-primary: #212529;
-        --text-secondary: #6c757d;
-        --border-color: #dee2e6;
-        --accent-color: #0d6efd;
+        --border-color: #e0e0e0;
+        --text-primary: #2c3e50;
+        --text-secondary: #7f8c8d;
+        --accent-color: #3498db;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+    }
+
+    /* Global Styles */
+    body {
+        background: var(--bg-primary) !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        color: var(--text-primary) !important;
+    }
+
+    /* Navbar - Light Blue-Purple Gradient */
+    .navbar {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-weight: 500 !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa !important;
+        background: rgba(255,255,255,0.1) !important;
+        border-radius: 4px !important;
+    }
+
+    /* Hero Section */
+    .life-hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        border-radius: 12px !important;
+        padding: 3rem 2rem !important;
+    }
+
+    /* Content Container */
+    .content-container {
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        padding: 0 15px !important;
+    }
+
+    /* Card Styles */
+    .card {
+        background: var(--bg-secondary) !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+    }
+
+    .card-title {
+        color: var(--text-primary) !important;
+        font-weight: 700 !important;
+    }
+
+    /* Input Fields - Flat Style */
+    .form-control,
+    .form-select {
+        background: var(--bg-secondary) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-primary) !important;
+        border-radius: 4px !important;
+    }
+
+    .form-control::placeholder {
+        color: var(--text-secondary) !important;
+    }
+
+    .form-label {
+        color: var(--text-primary) !important;
+        font-weight: 600 !important;
+    }
+
+    .input-group-text {
+        background: var(--bg-secondary) !important;
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-primary) !important;
+        border-left: none !important;
+    }
+
+    /* Date Input Styling */
+    .date-input {
+        font-family: 'Courier New', monospace;
+        letter-spacing: 0.5px;
+        font-size: 1rem;
+    }
+
+    .date-input:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .date-input.is-valid {
+        border-color: #198754;
+    }
+
+    .date-input.is-invalid {
+        border-color: #dc3545;
+    }
+
+    /* Flat Life Bar Design */
+    .life-bar {
+        background: linear-gradient(90deg, var(--success-color) 0%, var(--accent-color) 100%);
+        height: 8px;
+        border-radius: 4px;
+        margin: 1rem 0;
+    }
+
+    /* Grid Styles */
+    .life-grid {
+        display: grid;
+        grid-template-columns: repeat(52, 1fr);
+        gap: 1px;
+        background: var(--border-color);
+        padding: 2px;
+        border-radius: 8px;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .week-cell {
+        width: 8px;
+        height: 8px;
+        background: var(--bg-secondary);
+        border-radius: 1px;
+    }
+
+    .week-cell.lived {
+        background: var(--success-color);
+    }
+
+    .week-cell.current {
+        background: var(--warning-color);
+        box-shadow: 0 0 0 1px var(--warning-color);
+    }
+
+    .week-cell.future {
+        background: var(--border-color);
+    }
+
+    /* Form Check Styling */
+    .form-check-input {
+        width: 1rem;
+        height: 1rem;
+        cursor: pointer;
+        border: 2px solid var(--border-color);
+        background: var(--bg-secondary);
+    }
+
+    .form-check-input:checked {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .form-check-label {
+        cursor: pointer;
+        font-weight: 500;
+        color: var(--text-primary);
+    }
+
+    /* Flat Statistics Cards */
+    .stats-card {
+        background: var(--bg-secondary) !important;
+        border: 1px solid var(--border-color) !important;
+        transition: transform 0.2s ease;
+        border-radius: 8px !important;
+    }
+
+    .stats-card:hover {
+        transform: translateY(-2px) !important;
+    }
+
+    .stat-number {
+        font-size: 2.5em !important;
+        font-weight: 800 !important;
+        color: var(--text-primary) !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .stat-label {
+        font-size: 0.9em !important;
+        color: var(--text-secondary) !important;
+        font-weight: 500 !important;
     }
 
     body {
@@ -104,7 +290,7 @@ lead_image: ajey_gore_website_card.png
         border-left: none !important;
     }
 
-    .date-input:focus + .input-group-text {
+    .date-input:focus+.input-group-text {
         border-color: #86b7fe !important;
         box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
     }
@@ -285,12 +471,12 @@ lead_image: ajey_gore_website_card.png
         margin-right: 0.5rem !important;
         cursor: pointer !important;
     }
-    
+
     .form-check-input:checked {
         background-color: var(--accent-color) !important;
         border-color: var(--accent-color) !important;
     }
-    
+
     .form-check {
         display: flex !important;
         align-items: center !important;
@@ -373,18 +559,14 @@ lead_image: ajey_gore_website_card.png
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="dob" class="form-label">Date of Birth</label>
-                                <div class="input-group">
-                                    <input type="text" 
-                                           id="dob" 
-                                           name="dob" 
-                                           class="form-control date-input" 
-                                           placeholder="YYYY-MM-DD (e.g., 1990-05-15)"
-                                           pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-                                           maxlength="10"
-                                           title="Please enter a valid date in YYYY-MM-DD format">
-                                    <span class="input-group-text">📅</span>
-                                </div>
-                                <small class="form-text text-muted">Format: Year-Month-Day (YYYY-MM-DD)</small>
+                                <input type="text" 
+                                       id="dob" 
+                                       name="dob" 
+                                       class="form-control date-input" 
+                                       placeholder="YYYY-MM-DD (e.g., 1990-05-15)"
+                                       maxlength="10"
+                                       autocomplete="bday">
+                                <small class="form-text text-muted">Enter your birth date in YYYY-MM-DD format</small>
                             </div>
                             <div class="col-md-6">
                                 <label for="location" class="form-label">Location (Life Expectancy)</label>
@@ -576,12 +758,12 @@ lead_image: ajey_gore_website_card.png
         const alcoholChecked = document.getElementById('alcohol').checked;
         const diabetesChecked = document.getElementById('diabetes').checked;
         const heartChecked = document.getElementById('heart').checked;
-        
+
         if (tobaccoChecked) healthReduction += 7;
         if (alcoholChecked) healthReduction += 3;
         if (diabetesChecked) healthReduction += 4;
         if (heartChecked) healthReduction += 6;
-        
+
         console.log('Health factors:', { tobaccoChecked, alcoholChecked, diabetesChecked, heartChecked, healthReduction });
 
         const adjustedLifeExpectancy = Math.max(40, baseLifeExpectancy - healthReduction);
@@ -769,16 +951,9 @@ lead_image: ajey_gore_website_card.png
         const locationSelect = document.getElementById('location');
         const healthCheckboxes = ['tobacco', 'alcohol', 'diabetes', 'heart'];
 
-        // Add event listeners for automatic recalculation
+        // Clean date input handling - only triggers when complete date is entered
         if (dobInput) {
-            // Function to validate if date is complete and valid
-            function isValidCompleteDate(dateString) {
-                if (!dateString || dateString.length < 10) return false; // YYYY-MM-DD format
-                const date = new Date(dateString);
-                return date instanceof Date && !isNaN(date) && dateString === date.toISOString().split('T')[0];
-            }
-
-            // Function to format date input automatically
+            // Function to format date input as user types
             function formatDateInput(value) {
                 // Remove all non-numeric characters
                 const numbers = value.replace(/\D/g, '');
@@ -795,24 +970,31 @@ lead_image: ajey_gore_website_card.png
                 }
             }
 
-            // Function to validate date range
-            function isDateInValidRange(dateString) {
-                if (!isValidCompleteDate(dateString)) return true; // Let other validation handle incomplete dates
+            // Function to validate if date is complete and valid
+            function isValidCompleteDate(dateString) {
+                if (!dateString || dateString.length !== 10) return false;
+                const date = new Date(dateString);
+                if (isNaN(date.getTime())) return false;
                 
-                const inputDate = new Date(dateString);
-                const today = new Date();
-                const minDate = new Date('1900-01-01');
-                
-                return inputDate >= minDate && inputDate <= today;
+                // Check if it's a reasonable birth date (between 1900 and today)
+                const year = date.getFullYear();
+                const currentYear = new Date().getFullYear();
+                return year >= 1900 && year <= currentYear;
             }
 
-            // Add 'input' event for real-time formatting and feedback
+            // Function to check if we have 4 complete year digits
+            function hasFourYearDigits(value) {
+                const numbers = value.replace(/\D/g, '');
+                return numbers.length >= 4;
+            }
+
+            // Input event for real-time formatting and validation
             dobInput.addEventListener('input', function (e) {
                 const cursorPosition = e.target.selectionStart;
                 const oldValue = e.target.value;
                 const formattedValue = formatDateInput(e.target.value);
                 
-                // Update the input value
+                // Update the input value with formatting
                 e.target.value = formattedValue;
                 
                 // Adjust cursor position after formatting
@@ -820,64 +1002,54 @@ lead_image: ajey_gore_website_card.png
                 const newCursorPosition = cursorPosition + lengthDiff;
                 e.target.setSelectionRange(newCursorPosition, newCursorPosition);
                 
-                // Validate date range and show feedback
+                // Visual feedback based on validation
                 if (formattedValue.length === 10) {
-                    if (!isDateInValidRange(formattedValue)) {
-                        e.target.setCustomValidity('Please enter a date between 1900-01-01 and today');
-                        e.target.classList.add('is-invalid');
-                    } else {
-                        e.target.setCustomValidity('');
+                    if (isValidCompleteDate(formattedValue)) {
                         e.target.classList.remove('is-invalid');
                         e.target.classList.add('is-valid');
+                    } else {
+                        e.target.classList.remove('is-valid');
+                        e.target.classList.add('is-invalid');
                     }
                 } else {
-                    e.target.setCustomValidity('');
-                    e.target.classList.remove('is-invalid', 'is-valid');
+                    e.target.classList.remove('is-valid', 'is-invalid');
                 }
                 
-                console.log('Date input value:', formattedValue);
+                // Only trigger calculation when we have 4 year digits AND it's a complete valid date
+                if (hasFourYearDigits(formattedValue) && isValidCompleteDate(formattedValue)) {
+                    console.log('Complete date entered:', formattedValue);
+                    calculateLife();
+                }
             });
 
-            // Add keydown event to handle special keys
+            // Keydown event to restrict input to numbers only
             dobInput.addEventListener('keydown', function (e) {
-                // Allow: backspace, delete, tab, escape, enter
-                if ([8, 9, 27, 13, 46].indexOf(e.keyCode) !== -1 ||
-                    // Allow: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X
-                    (e.keyCode === 65 && e.ctrlKey === true) ||
-                    (e.keyCode === 67 && e.ctrlKey === true) ||
-                    (e.keyCode === 86 && e.ctrlKey === true) ||
-                    (e.keyCode === 88 && e.ctrlKey === true)) {
+                // Allow: backspace, delete, tab, escape, enter, home, end, arrows
+                if ([8, 9, 27, 13, 46, 35, 36, 37, 38, 39, 40].indexOf(e.keyCode) !== -1 ||
+                    // Allow: Ctrl+A, Ctrl+C, Ctrl+V, Ctrl+X, Ctrl+Z
+                    (e.ctrlKey === true && [65, 67, 86, 88, 90].indexOf(e.keyCode) !== -1)) {
                     return;
                 }
                 
-                // Ensure that it is a number and stop the keypress
+                // Ensure that it is a number and stop the keypress if it's not
                 if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
                     e.preventDefault();
                 }
                 
-                // Stop input if we already have 8 digits (YYYYMMDD)
+                // Limit to 8 digits total (YYYYMMDD)
                 const numbers = this.value.replace(/\D/g, '');
                 if (numbers.length >= 8 && e.keyCode >= 48 && e.keyCode <= 57) {
                     e.preventDefault();
                 }
             });
 
-            // Use 'change' event for when user finishes editing (clicks away or tabs out)
-            dobInput.addEventListener('change', function () {
-                if (isValidCompleteDate(this.value) && isDateInValidRange(this.value)) {
-                    calculateLife();
-                }
-            });
-
-            // Optional: Add 'blur' event as backup for when user clicks away
+            // Blur event as backup to trigger calculation if user clicks away
             dobInput.addEventListener('blur', function () {
-                if (isValidCompleteDate(this.value) && isDateInValidRange(this.value)) {
+                if (isValidCompleteDate(this.value)) {
                     calculateLife();
                 }
             });
-        }
-
-        if (locationSelect) {
+        }        if (locationSelect) {
             locationSelect.addEventListener('change', function () {
                 if (isValidCompleteDate(dobInput.value)) {
                     calculateLife();
@@ -896,7 +1068,7 @@ lead_image: ajey_gore_website_card.png
                         calculateLife();
                     }
                 });
-                
+
                 // Also add click event as backup
                 checkbox.addEventListener('click', function () {
                     console.log(`${checkboxId} clicked, checked:`, this.checked);
