@@ -7,63 +7,70 @@ title: Presentations
 ---
 
 <div class="content-container py-5">
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
-            
-            <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Stage Time & Mic Drops</h1>
-            
-            <!-- Intro -->
-            <section class="mb-5">
-                <p>I speak at conferences about scaling product engineering teams, startup tech strategy, and building systems that don't break at 3 AM.</p>
-                <p>Most talks include war stories from building teams at scale, practical advice on tech leadership, and the occasional debugging horror story that makes everyone feel better about their own code.</p>
-            </section>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
 
-            <!-- Recent Talks -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Recent Talks</h2>
-                {% for talk in site.data.talks_updated %}
-                <div class="mb-4 pb-3 border-bottom">
-                    <h3 class="h5 mb-2">
-                        {% if talk.link %}
-                        <a href="{{ talk.link }}" target="_blank" class="text-decoration-none">{{ talk.title }}</a>
-                        {% else %}
-                        {{ talk.title }}
-                        {% endif %}
-                    </h3>
-                    <p class="text-muted small mb-2">{{ talk.date }}</p>
-                    <p class="mb-2">{{ talk.description | strip_html | truncate: 120 }}</p>
-                    {% if talk.link or talk.slides %}
-                    <div class="small">
-                        {% if talk.link %}<a href="{{ talk.link }}" target="_blank" class="text-decoration-none me-3">→ Watch</a>{% endif %}
-                        {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank" class="text-decoration-none">→ Slides</a>{% endif %}
-                    </div>
-                    {% endif %}
-                </div>
-                {% endfor %}
-                
-                {% if site.data.talks_updated.size == 0 %}
-                <p class="text-muted">More talks coming soon. Check back later!</p>
-                {% endif %}
-            </section>
+      <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Stage Time & Mic Drops</h1>
 
-            <!-- Speaking Topics -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Speaking Topics</h2>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><strong>Scaling Engineering Teams</strong> — from 5 to 500 engineers without losing your sanity</li>
-                    <li class="mb-2"><strong>Product Engineering</strong> — building teams that ship value, not just code</li>
-                    <li class="mb-2"><strong>Startup Tech Strategy</strong> — making technical decisions when everything is on fire</li>
-                    <li class="mb-2"><strong>Systems Thinking</strong> — designing for scale, failure, and human error</li>
-                </ul>
-            </section>
+      <!-- Intro -->
+      <section class="mb-5">
+        <p>I speak at conferences about scaling product engineering teams, startup tech strategy, and building systems
+          that don't break at 3 AM.</p>
+        <p>Most talks include war stories from building teams at scale, practical advice on tech leadership, and the
+          occasional debugging horror story that makes everyone feel better about their own code.</p>
+      </section>
 
-            <!-- Book Me -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Book Me to Speak</h2>
-                <p>Available for conferences, company events, and team workshops. I prefer interactive sessions over one-way presentations.</p>
-                <p>Email me: <strong>ajey.gore@gmail.com</strong></p>
-            </section>
-
+      <!-- Recent Talks -->
+      <section class="mb-5">
+        <h2 class="h4 text-primary mb-3">Recent Talks</h2>
+        {% for talk in site.data.talks_updated %}
+        <div class="mb-4 pb-3 border-bottom">
+          <h3 class="h5 mb-2">
+            {% if talk.link %}
+            <a href="{{ talk.link }}" target="_blank" class="text-decoration-none">{{ talk.title }}</a>
+            {% else %}
+            {{ talk.title }}
+            {% endif %}
+          </h3>
+          <p class="text-muted small mb-2">{{ talk.date }}</p>
+          <p class="mb-2">{{ talk.description | strip_html | truncate: 120 }}</p>
+          {% if talk.link or talk.slides %}
+          <div class="small">
+            {% if talk.link %}<a href="{{ talk.link }}" target="_blank" class="text-decoration-none me-3">→ Watch</a>{%
+            endif %}
+            {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank" class="text-decoration-none">→ Slides</a>{%
+            endif %}
+          </div>
+          {% endif %}
         </div>
+        {% endfor %}
+
+        {% if site.data.talks_updated.size == 0 %}
+        <p class="text-muted">More talks coming soon. Check back later!</p>
+        {% endif %}
+      </section>
+
+      <!-- Speaking Topics -->
+      <section class="mb-5">
+        <h2 class="h4 text-primary mb-3">Speaking Topics</h2>
+        <ul class="list-unstyled">
+          <li class="mb-2"><strong>Scaling Engineering Teams</strong> — from 5 to 500 engineers without losing your
+            sanity</li>
+          <li class="mb-2"><strong>Product Engineering</strong> — building teams that ship value, not just code</li>
+          <li class="mb-2"><strong>Startup Tech Strategy</strong> — making technical decisions when everything is on
+            fire</li>
+          <li class="mb-2"><strong>Systems Thinking</strong> — designing for scale, failure, and human error</li>
+        </ul>
+      </section>
+
+      <!-- Book Me -->
+      <section class="mb-5">
+        <h2 class="h4 text-primary mb-3">Book Me to Speak</h2>
+        <p>Available for conferences, company events, and team workshops. I prefer interactive sessions over one-way
+          presentations.</p>
+        <p>Email me: <strong>ajey.gore@gmail.com</strong></p>
+      </section>
+
     </div>
+  </div>
 </div>
