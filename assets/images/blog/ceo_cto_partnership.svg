@@ -1,0 +1,63 @@
+<!-- Lead image created for CEO-CTO partnership blog post -->
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#faf7f0"/>
+  
+  <!-- Background pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f0ecdf" stroke-width="1" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#grid)"/>
+  
+  <!-- Partnership illustration -->
+  <!-- Two figures representing CEO and CTO -->
+  
+  <!-- CEO figure (left) -->
+  <circle cx="250" cy="150" r="35" fill="#a0756d" opacity="0.8"/>
+  <rect x="230" y="180" width="40" height="60" rx="5" fill="#7a8471" opacity="0.7"/>
+  <!-- Business symbols around CEO -->
+  <circle cx="200" cy="120" r="8" fill="#9b8b7a" opacity="0.6"/>
+  <text x="200" y="126" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">$</text>
+  
+  <!-- CTO figure (right) -->
+  <circle cx="550" cy="150" r="35" fill="#a0756d" opacity="0.8"/>
+  <rect x="530" y="180" width="40" height="60" rx="5" fill="#7a8471" opacity="0.7"/>
+  <!-- Tech symbols around CTO -->
+  <rect x="590" y="115" width="15" height="15" rx="2" fill="#9b8b7a" opacity="0.6"/>
+  <text x="597" y="126" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">&lt;/&gt;</text>
+  
+  <!-- Bridge/connection between them -->
+  <path d="M 290 200 Q 400 160 510 200" stroke="#a0756d" stroke-width="4" fill="none" opacity="0.7"/>
+  <circle cx="400" cy="175" r="6" fill="#7a8471"/>
+  <circle cx="350" cy="185" r="4" fill="#9b8b7a" opacity="0.8"/>
+  <circle cx="450" cy="185" r="4" fill="#9b8b7a" opacity="0.8"/>
+  
+  <!-- Title area -->
+  <rect x="50" y="280" width="700" height="100" rx="10" fill="#f5f2e8" opacity="0.8"/>
+  
+  <!-- Main title -->
+  <text x="400" y="310" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#2d2926">
+    CEO-CTO Partnership
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="340" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle" fill="#5c5853">
+    Beyond Budgets: Building Strategic Partnerships
+  </text>
+  
+  <!-- Key elements labels -->
+  <text x="250" y="270" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#7a8471">
+    Business Context
+  </text>
+  <text x="550" y="270" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="#7a8471">
+    Technical Excellence
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="80" r="3" fill="#a0756d" opacity="0.4"/>
+  <circle cx="700" cy="90" r="2" fill="#7a8471" opacity="0.5"/>
+  <circle cx="120" cy="320" r="2" fill="#9b8b7a" opacity="0.4"/>
+  <circle cx="680" cy="310" r="3" fill="#a0756d" opacity="0.3"/>
+</svg>
