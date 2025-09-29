@@ -7,142 +7,97 @@ description: Ajey Gore is Operating Partner (Technology) at PeakXV Partners, for
 lead_image: ajey_gore_website_card.png
 ---
 
-<!-- Hero Section with Picture and Bio -->
-<div class="hero-section fade-in-up">
-    <div class="hero-content">
-        <div class="row align-items-center">
-            <div class="col-lg-8 order-lg-1 order-2">
-                <h1 class="hero-title">Ajey Gore</h1>
-                <p class="hero-subtitle">Operating Partner, Technology at <strong>PeakXV Partners</strong> (FKA Sequoia Capital India & SEA)</p>
-                <p class="mb-3">My journey spans Group CTO at Gojek (GoTo Group), Head of Technology at ThoughtWorks, and founding CodeIgnition which was acquired by Gojek. This diverse experience across hypergrowth startups, consulting, and entrepreneurship gives me unique insights into building technology organizations.</p>
-                <p class="mb-4">I help startups navigate the complexities of scaling engineering teams, establishing robust software architecture, and implementing sustainable engineering practices. Whether it's designing distributed systems, building high-performance teams, or establishing engineering culture, I bring both strategic vision and tactical execution. Most importantly, I remain a hands-on coder who believes great technology leaders never stop writing production-ready code - because the best architectural decisions come from understanding the real challenges developers face.</p>
-                <div class="d-flex gap-3 flex-wrap mt-4">
-                    <a href="/about" class="btn btn-modern btn-modern-primary">
-                        <i class="bi bi-person-circle"></i>
-                        More about me
-                    </a>
-                    <a href="/blog" class="btn btn-modern btn-modern-secondary">
-                        <i class="bi bi-journal-text"></i>
-                        Brain chatter
-                    </a>
-                    <a href="/content/talks" class="btn btn-modern btn-modern-outline">
-                        <i class="bi bi-play-circle"></i>
-                        Watch Talks
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 order-lg-2 order-1 text-center mb-4 mb-lg-0">
-                <div class="profile-image-container">
-                    <img src="/assets/images/ajey_gore.png" alt="Ajey Gore" 
-                         class="profile-image img-fluid rounded-circle shadow-lg"
-                         style="max-width: 280px; width: 100%; border: 4px solid var(--bg-primary);">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row fade-in-up">
-    <div class="col-lg-10 mx-auto">
-        <!-- Philosophy Section -->
-        <div class="mb-5">
-            <div class="row text-center">
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 bg-light rounded-3 h-100">
-                        <i class="bi bi-lightbulb text-primary fs-1 mb-3 d-block"></i>
-                        <h5 class="fw-bold">Think Product</h5>
-                        <p class="text-muted mb-0"><strong>Ideate, Implement, Iterate</strong></p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 bg-light rounded-3 h-100">
-                        <i class="bi bi-code-slash text-primary fs-1 mb-3 d-block"></i>
-                        <h5 class="fw-bold">Think Engineering</h5>
-                        <p class="text-muted mb-0"><strong>Code, Deploy, Automate</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Single Random Blog Post Section -->
-<div class="row fade-in-up">
-    <div class="col-12">
-        <div class="mb-5">
-            <h2 class="section-title">From the Blog</h2>
-
-            {% if site.posts.size > 0 %}
-            {% assign random_offset = site.time | date: "%s" | modulo: site.posts.size %}
-            {% assign random_post = site.posts[random_offset] %}
+<div class="content-container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
             
-            <!-- Single Featured Post -->
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <article class="card blog-featured-card fade-in-up">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="{% if random_post.lead_image %}{{ '/assets/images/' | append: random_post.lead_image | relative_url }}{% else %}{{ '/assets/images/' | append: site.lead_image | relative_url }}{% endif %}"
-                                    class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ random_post.title }}" loading="lazy">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body h-100 d-flex flex-column">
-                                    <div class="mb-2">
-                                        <span class="badge bg-primary">Featured Read</span>
-                                        {% if random_post.categories %}
-                                        {% for category in random_post.categories limit:1 %}
-                                        <span class="badge bg-secondary">{{ category }}</span>
-                                        {% endfor %}
-                                        {% endif %}
-                                    </div>
-                                    <h3 class="card-title">
-                                        <a href="{{ random_post.url }}" class="text-decoration-none">
-                                            {{ random_post.title }}
-                                        </a>
-                                    </h3>
-                                    {% if random_post.description %}
-                                    <p class="card-text text-muted">{{ random_post.description }}</p>
-                                    {% elsif random_post.excerpt %}
-                                    <p class="card-text text-muted">{{ random_post.excerpt | strip_html | truncate: 160 }}</p>
-                                    {% endif %}
-                                    <div class="mt-auto">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center gap-3">
-                                                <small class="text-muted">
-                                                    <i class="bi bi-calendar3"></i>
-                                                    {{ random_post.date | date: '%b %d, %Y' }}
-                                                </small>
-                                                <small class="text-muted">
-                                                    <i class="bi bi-clock"></i>
-                                                    {% include readingtime.erb page_content=random_post.content %}
-                                                </small>
-                                            </div>
-                                            <a href="{{ random_post.url }}" class="btn btn-modern btn-modern-primary">
-                                                Read More
-                                                <i class="bi bi-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
+            <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Ajey Gore</h1>
+            
+            <!-- Handshake Intro -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Handshake Intro</h2>
+                <p>I've been a <a href="/about" class="text-decoration-none">Group CTO building tech teams</a>, <a href="/content/talks" class="text-decoration-none">speaker on product strategy</a>, <a href="/blog" class="text-decoration-none">writer</a>, and <a href="https://github.com/ajeygore" class="text-decoration-none">hands-on coder</a>.</p>
+                
+                <p>I'm a <a href="/blog" class="text-decoration-none">systems thinker</a>, <a href="/about" class="text-decoration-none">startup advisor</a>, tech investor, and I love <a href="/tools" class="text-decoration-none">building product teams that ship</a>.</p>
+                
+                <p>Indian native, I now work globally with startups from my base in Singapore.</p>
+            </section>
 
-            <div class="text-center mt-4">
-                <a href="/blog" class="btn btn-modern btn-modern-outline">
-                    <i class="bi bi-journal-text"></i>
-                    Explore All Posts
-                </a>
-            </div>
-            {% else %}
-            <div class="text-center py-5">
-                <i class="bi bi-journal-text text-muted fs-4rem"></i>
-                <h3 class="text-muted mt-3">No posts yet</h3>
-                <p class="text-muted">Check back later for new blog posts!</p>
-            </div>
-            {% endif %}
+            <!-- Coffee Chat Deep Dive -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3"><a href="/about" class="text-decoration-none text-primary">Coffee Chat Deep Dive?</a></h2>
+                <p>See <a href="/about" class="text-decoration-none">my "about" page</a> for the full story of building teams, scaling product, and navigating tech leadership.</p>
+            </section>
+
+            <!-- Daily Grind -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3"><a href="/journey" class="text-decoration-none text-primary">Daily Grind</a></h2>
+                <p>Operating Partner (Technology) at <strong>PeakXV Partners</strong> (FKA Sequoia Capital India & SEA). I help portfolio companies build high-performing engineering teams, nail their product-market fit, and scale their tech foundations.</p>
+            </section>
+
+            <!-- Recent Writing -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Recent Writing <a href="/blog" class="small text-muted text-decoration-none">[see all]</a></h2>
+                {% if site.posts.size > 0 %}
+                    <ul class="list-unstyled">
+                        {% for post in site.posts limit:3 %}
+                        <li class="mb-2">
+                            <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p class="text-muted">No posts yet. Check back soon!</p>
+                {% endif %}
+            </section>
+
+            <!-- Mental Models -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Mental Models</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Product Mindset:</strong> <em>Ideate, Implement, Iterate — always ship value</em></li>
+                    <li class="mb-2"><strong>Tech Leadership:</strong> <em>Code, Deploy, Automate — stay hands-on while scaling</em></li>
+                    <li class="mb-2"><strong>Team Dynamics:</strong> <em>Hire, Inspire, Retire (technical debt) — people before process</em></li>
+                </ul>
+            </section>
+
+            <!-- Side Hustles & Lab Experiments -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Side Hustles & Lab Experiments</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong><a href="/tools/wardley-strategy-generator" class="text-decoration-none">Wardley Strategy Generator</a></strong> — AI-powered product strategy mapping tool</li>
+                    <li class="mb-2"><strong><a href="/tools" class="text-decoration-none">Developer Utilities</a></strong> — tech stack helpers for TensorFlow, PyTorch, and team productivity</li>
+                    <li class="mb-2"><strong><a href="/experiments" class="text-decoration-none">Weekend Projects</a></strong> — technical explorations and proof-of-concepts that didn't make it to production</li>
+                </ul>
+            </section>
+
+            <!-- Intellectual Fuel -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Intellectual Fuel</h2>
+                <p>I maintain a <a href="/books" class="text-decoration-none">curated bookshelf</a> of recommended reads on building product teams, tech strategy, and startup leadership.</p>
+            </section>
+
+            <!-- Stage Time & Mic Drops -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Stage Time & Mic Drops</h2>
+                <p>I speak at conferences about scaling product engineering teams, startup tech strategy, and building systems that don't break at 3 AM. See <a href="/content/talks" class="text-decoration-none">my talks</a>.</p>
+            </section>
+
+            <!-- Slide Into My DMs -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">Slide Into My DMs</h2>
+                <p>I love meeting product builders, tech founders, and anyone trying to scale engineering teams without losing their sanity. Email me: <strong>ajey.gore@gmail.com</strong></p>
+            </section>
+
+            <!-- Footer note -->
+            <section class="mt-5 pt-4 border-top">
+                <p class="text-muted small">Everything here is written by me, personally, not an AI. Updated regularly with new thoughts and projects.</p>
+            </section>
+
+        </div>
+    </div>
+</div>
+
         </div>
     </div>
 </div>

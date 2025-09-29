@@ -7,137 +7,51 @@ title: Random musings
 subpage: blog
 ---
 
-<!-- Hero Section for Blog -->
-<div class="hero-section fade-in-up">
-  <div class="hero-content">
-    <h1 class="hero-title">
-      <i class="bi bi-journal-text me-3"></i>
-      Blog
-    </h1>
-    <p class="hero-subtitle">Random musings on technology, product design, and software engineering</p>
-  </div>
-</div>
+<div class="content-container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            
+            <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Brain Chatter</h1>
+            
+            <!-- Intro -->
+            <section class="mb-5">
+                <p>Random musings on technology, product engineering, and the art of building teams that actually ship things.</p>
+                <p>Most posts are born from 3 AM debugging sessions, team retrospectives that went sideways, or those shower thoughts about why software is still hard after all these years.</p>
+            </section>
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item active">Blog</li>
-  </ol>
-</nav>
-
-<div class="row fade-in-up">
-  <div class="col-12">
-    {% if site.posts.size > 0 %}
-    <!-- Featured Post -->
-    {% assign featured_post = site.posts.first %}
-    <div class="mb-5">
-      <article class="card blog-featured-card fade-in-up">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="{% if featured_post.lead_image %}{% if featured_post.lead_image contains '/assets/images/' %}{{ featured_post.lead_image | relative_url }}{% else %}{{ '/assets/images/' | append: featured_post.lead_image | relative_url }}{% endif %}{% else %}{{ '/assets/images/' | append: site.lead_image | relative_url }}{% endif %}"
-              class="img-fluid rounded-start h-100 object-fit-cover" alt="{{ featured_post.title }}" loading="lazy">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body h-100 d-flex flex-column">
-              <div class="mb-2">
-                <span class="badge bg-primary">Featured</span>
-                {% if featured_post.categories %}
-                {% for category in featured_post.categories limit:1 %}
-                <span class="badge bg-secondary">{{ category }}</span>
-                {% endfor %}
+            <!-- All Posts -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">All Posts</h2>
+                {% if site.posts.size > 0 %}
+                    {% for post in site.posts %}
+                    <div class="mb-3 pb-3 border-bottom">
+                        <h3 class="h6 mb-2">
+                            <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+                        </h3>
+                        <p class="text-muted small mb-2">{{ post.date | date: '%B %d, %Y' }}</p>
+                        {% if post.description %}
+                        <p class="small mb-0">{{ post.description | truncate: 150 }}</p>
+                        {% elsif post.excerpt %}
+                        <p class="small mb-0">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="text-muted">No posts yet. The debugging stories are still being written.</p>
                 {% endif %}
-              </div>
-              <h3 class="card-title">
-                <a href="{{ featured_post.url }}" class="text-decoration-none">
-                  {{ featured_post.title }}
-                </a>
-              </h3>
-              {% if featured_post.description %}
-              <p class="card-text text-muted">{{ featured_post.description }}</p>
-              {% elsif featured_post.excerpt %}
-              <p class="card-text text-muted">{{ featured_post.excerpt | strip_html | truncate: 160 }}</p>
-              {% endif %}
-              <div class="mt-auto">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="d-flex align-items-center gap-3">
-                    <small class="text-muted">
-                      <i class="bi bi-calendar3"></i>
-                      {{ featured_post.date | date: '%b %d, %Y' }}
-                    </small>
-                    <small class="text-muted">
-                      <i class="bi bi-clock"></i>
-                      {% include readingtime.erb page_content=featured_post.content %}
-                    </small>
-                  </div>
-                  <a href="{{ featured_post.url }}" class="btn btn-modern btn-modern-primary">
-                    Read More
-                    <i class="bi bi-arrow-right"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
+            </section>
 
-    <!-- Blog Posts Grid -->
-    <div class="row g-4">
-      {% for post in site.posts offset:1 %}
-      <div class="col-lg-6">
-        <article class="card blog-post-card h-100 fade-in-up">
-          <div class="position-relative overflow-hidden">
-            <img class="card-img-top blog-card-image"
-              src="{% if post.lead_image %}{% if post.lead_image contains '/assets/images/' %}{{ post.lead_image | relative_url }}{% else %}{{ '/assets/images/' | append: post.lead_image | relative_url }}{% endif %}{% else %}{{ '/assets/images/' | append: site.lead_image | relative_url }}{% endif %}" alt="{{ post.title }}"
-              loading="lazy">
-            <div class="blog-card-overlay">
-              <a href="{{ post.url }}" class="btn btn-modern btn-modern-primary btn-sm">
-                <i class="bi bi-arrow-right"></i>
-                Read
-              </a>
-            </div>
-          </div>
-          <div class="card-body d-flex flex-column">
-            <div class="mb-2 d-flex flex-wrap gap-1">
-              {% if post.categories %}
-              {% for category in post.categories limit:2 %}
-              <span class="badge bg-secondary small">{{ category }}</span>
-              {% endfor %}
-              {% endif %}
-            </div>
-            <h5 class="card-title">
-              <a href="{{ post.url }}" class="text-decoration-none">
-                {{ post.title }}
-              </a>
-            </h5>
-            {% if post.description %}
-            <p class="card-text text-muted flex-grow-1 small">{{ post.description | truncate: 100 }}</p>
-            {% elsif post.excerpt %}
-            <p class="card-text text-muted flex-grow-1 small">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-            {% endif %}
-            <div class="mt-auto pt-3 border-top">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">
-                  <i class="bi bi-calendar3"></i>
-                  {{ post.date | date: '%b %Y' }}
-                </small>
-                <small class="text-muted">
-                  <i class="bi bi-clock"></i>
-                  {% include readingtime.erb page_content=post.content %}
-                </small>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-      {% endfor %}
+            <!-- Categories -->
+            <section class="mb-5">
+                <h2 class="h4 text-primary mb-3">What I Write About</h2>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><strong>Engineering Leadership</strong> — scaling teams, managing technical debt, and staying sane</li>
+                    <li class="mb-2"><strong>Product Engineering</strong> — building the right thing, the right way, at the right time</li>
+                    <li class="mb-2"><strong>Startup Stories</strong> — lessons learned from building at hypergrowth companies</li>
+                    <li class="mb-2"><strong>Systems Thinking</strong> — designing for failure, scale, and human behavior</li>
+                </ul>
+            </section>
+
+        </div>
     </div>
-    {% else %}
-    <div class="text-center py-5">
-      <i class="bi bi-journal-text text-muted fs-4rem"></i>
-      <h3 class="text-muted mt-3">No posts yet</h3>
-      <p class="text-muted">Check back later for new blog posts!</p>
-    </div>
-    {% endif %}
-  </div>
 </div>

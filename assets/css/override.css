@@ -1,50 +1,63 @@
-/* Modern CSS Variables for Theme Support */
+/* Sophisticated Pastel Theme - Warm Terracotta & Sage Palette */
 :root {
-    --primary-color: #6b7280;
-    /* 70% grey instead of blue */
-    --primary-hover: #4b5563;
-    /* Darker grey for hover */
-    --accent-color: #9ca3af;
-    /* Light grey accent */
-    --accent-hover: #6b7280;
-    /* Medium grey for accent hover */
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
-    --text-muted: #9ca3af;
-    --heading-color: #111827;
-    /* Dark headings instead of blue */
-    --bg-primary: #fefefe;
-    /* Off-white background */
-    --bg-secondary: #f8fafc;
-    --bg-tertiary: #f1f5f9;
-    --border-color: #d1d5db;
-    /* More visible border color - darker grey */
-    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.12), 0 1px 2px -1px rgb(0 0 0 / 0.12);
-    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.12), 0 4px 6px -4px rgb(0 0 0 / 0.12);
-    --gradient-primary: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
-    --gradient-accent: linear-gradient(135deg, #9ca3af 0%, #6b7280 100%);
+    --primary-color: #a0756d;
+    /* Warm terracotta for primary links - elegant and readable */
+    --primary-hover: #8b6459;
+    /* Deeper terracotta for hover */
+    --accent-color: #7a8471;
+    /* Sage green accent - sophisticated complement */
+    --accent-hover: #6b7362;
+    /* Deeper sage for hover */
+    --secondary-color: #9b8b7a;
+    /* Warm taupe for secondary elements */
+    --secondary-hover: #8a7a69;
+    /* Deeper taupe for hover */
+    --text-primary: #2d2926;
+    /* Rich dark brown for excellent contrast */
+    --text-secondary: #5c5853;
+    /* Medium brown for secondary text */
+    --text-muted: #8b8680;
+    /* Light brown for muted text */
+    --heading-color: #1f1d1b;
+    /* Deep brown for headings */
+    --bg-primary: #faf7f0;
+    /* Light sepia background */
+    --bg-secondary: #f5f2e8;
+    /* Slightly deeper sepia */
+    --bg-tertiary: #f0ecdf;
+    /* Warmest sepia */
+    --border-color: #d4cfc4;
+    /* Warm beige borders */
+    --shadow-sm: 0 1px 2px 0 rgb(45 41 38 / 0.08);
+    --shadow: 0 1px 3px 0 rgb(45 41 38 / 0.15), 0 1px 2px -1px rgb(45 41 38 / 0.15);
+    --shadow-lg: 0 10px 15px -3px rgb(45 41 38 / 0.15), 0 4px 6px -4px rgb(45 41 38 / 0.15);
+    --gradient-primary: linear-gradient(135deg, #a0756d 0%, #7a8471 100%);
+    --gradient-accent: linear-gradient(135deg, #7a8471 0%, #9b8b7a 100%);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark theme variables */
+/* Dark theme variables - Sophisticated Muted Pastels */
 [data-bs-theme="dark"] {
-    --text-primary: #e5e7eb;
-    /* Muted light grey instead of bright white */
-    --text-secondary: #9ca3af;
-    /* Medium grey for secondary text */
-    --text-muted: #6b7280;
-    /* Darker grey for muted text */
-    --heading-color: #f3f4f6;
-    /* Slightly muted white for headings */
-    --primary-color: #9ca3af;
-    /* Light grey for dark mode */
-    --primary-hover: #d1d5db;
-    /* Lighter grey for hover in dark mode */
-    --accent-color: #6b7280;
-    /* Medium grey accent in dark mode */
-    --accent-hover: #9ca3af;
-    /* Light grey for accent hover in dark mode */
+    --text-primary: #e8e4dc;
+    /* Warm off-white for better readability */
+    --text-secondary: #b8b3ab;
+    /* Warm grey for secondary text */
+    --text-muted: #8b8680;
+    /* Muted brown-grey */
+    --heading-color: #f0ede5;
+    /* Warmer white for headings */
+    --primary-color: #d4a69a;
+    /* Soft coral-terracotta for dark mode links */
+    --primary-hover: #e8b8ac;
+    /* Lighter coral for hover */
+    --accent-color: #a8b89f;
+    /* Soft sage green accent */
+    --accent-hover: #bac9b1;
+    /* Lighter sage for hover */
+    --secondary-color: #c4b8a8;
+    /* Warm taupe for secondary elements */
+    --secondary-hover: #d0c4b4;
+    /* Lighter taupe for hover */
     --bg-primary: #111827;
     --bg-secondary: #1f2937;
     --bg-tertiary: #374151;
@@ -64,6 +77,22 @@ body {
     /* Reduced 10% from 0.95rem */
     /* Smaller base font size */
     transition: var(--transition);
+}
+
+/* Reduce paragraph spacing */
+p {
+    margin-bottom: 0.75rem;
+    /* Reduced from default 1rem */
+}
+
+.content-container p {
+    margin-bottom: 0.5rem;
+    /* Even tighter in content areas */
+}
+
+section {
+    margin-bottom: 2rem !important;
+    /* Reduce section spacing */
 }
 
 /* Improved line-height for larger screens */
@@ -515,15 +544,45 @@ pre code {
     padding: 0;
 }
 
-/* Links */
+/* Links - Cohesive Color System */
 a {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     text-decoration: none;
     transition: var(--transition);
 }
 
 a:hover {
-    color: var(--primary-hover);
+    color: var(--primary-hover) !important;
+}
+
+/* Ensure Bootstrap text-primary class uses our colors */
+.text-primary,
+h1.text-primary,
+h2.text-primary,
+h3.text-primary,
+h4.text-primary,
+h5.text-primary {
+    color: var(--accent-color) !important;
+}
+
+.text-primary:hover,
+h1.text-primary:hover,
+h2.text-primary:hover,
+h3.text-primary:hover,
+h4.text-primary:hover,
+h5.text-primary:hover {
+    color: var(--accent-hover) !important;
+}
+
+/* Secondary links for variety */
+a.text-secondary,
+.nav-link {
+    color: var(--secondary-color) !important;
+}
+
+a.text-secondary:hover,
+.nav-link:hover {
+    color: var(--secondary-hover) !important;
 }
 
 /* Form elements for dark mode compatibility */
