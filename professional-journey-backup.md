@@ -38,10 +38,10 @@ Ajey served Hoppr (a location based mobile app providing local service informati
 
 #### Head of Technology, ThoughtWorks India
 
-Ajey served ThoughtWorks as the Head of Technology for India, providing technical vision and guidance for our largest region and with focus on Technology strategy and delivery for India operations. He also worked as a Principal Consultant in ThoughtWorks Professional Services, advising clients on configuration management, systems administration, cloud and virtualization, networking, business continuity planning, application performance, scaling & stability. 
+Ajey served ThoughtWorks as the Head of Technology for India, providing technical vision and guidance for our largest region and with focus on Technology strategy and delivery for India operations. He also worked as a Principal Consultant in ThoughtWorks Professional Services, advising clients on configuration management, systems administration, cloud and virtualization, networking, business continuity planning, application performance, scaling & stability.
 As his last stint, Ajey started snap-ci in ThoughtWorks, helped various client products to move to cloud.
 
-Ajey was a member of Technology Advisory Board of ThoughtWorks and part of office of CTO.  Prior to moving to Head of Technology Role, Ajey headed Global IT operations for ThoughtWorks. In his role Ajey was responsible for overall IT operations and technical leadership for executing internal projects for ThoughtWorks. His overall responsibility includes both technical and operations side of IS such as security, vpn, budgeting, resources, data centre operations and responsibility around people management and internal project executions. He managed the global IT team of 45+ people in 22 offices across 6 countries.
+Ajey was a member of Technology Advisory Board of ThoughtWorks and part of office of CTO.Prior to moving to Head of Technology Role, Ajey headed Global IT operations for ThoughtWorks. In his role Ajey was responsible for overall IT operations and technical leadership for executing internal projects for ThoughtWorks. His overall responsibility includes both technical and operations side of IS such as security, vpn, budgeting, resources, data centre operations and responsibility around people management and internal project executions. He managed the global IT team of 45+ people in 22 offices across 6 countries.
 
 He is passionate about Continuous Delivery, DevOps, Visualization, Cloud, Virtualization strategies, Networks and Secruity. He speaks and writes about these subjects.
 
