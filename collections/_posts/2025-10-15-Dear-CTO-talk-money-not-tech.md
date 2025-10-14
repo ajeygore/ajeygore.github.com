@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Dear CTO:: Talk Money, Not Tech
+title: Dear CTO; Talk Money, Not Tech
 published: true
 categories: [Leadership, Engineering Management, Startup Strategy]
 description: "CTOs often struggle to get CEO buy-in because they're speaking the wrong language. Learn why translating technical work into business impact—revenue, growth, and risk—is the key to being heard, trusted, and effective. Stop talking tech. Start talking money."
-lead_image:
+lead_image: blog/cto_talk_money.png
 ---
 
 Dear CTO,
