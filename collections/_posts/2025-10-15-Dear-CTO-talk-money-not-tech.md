@@ -19,7 +19,7 @@ And this is where we, as CTOs, often fail. We walk into boardrooms armed with di
 
 ⸻
 
-## Speak Impact, Not Implementation
+#### Speak Impact, Not Implementation
 
 Think of it like this. If your dentist tells you, "We shaved two millimeters off a cavity," you smile politely and wait for them to finish. But if they say, **"We saved your tooth—no $5,000 root canal needed,"** suddenly you care deeply. Same truth. Different framing. One is technical. The other is *consequential*.
 
@@ -29,7 +29,7 @@ Your CEO doesn't need to understand *how* the system works. They need to underst
 
 ⸻
 
-## Tech Debt Is a Home Loan, Not a Credit Card
+#### Tech Debt Is a Home Loan, Not a Credit Card
 
 Here's another mistake I see you make over and over: waiting for crisis. You push features, debt piles up, the system starts creaking like an old ship, and then one day you announce: **"We need to stop everything for six months and rewrite this."**
 
@@ -43,7 +43,7 @@ Your CEO doesn't want to hear about open-heart surgery. They want to know you're
 
 ⸻
 
-## Empathy Goes Both Ways
+#### Empathy Goes Both Ways
 
 But let me remind you of something: **empathy goes both ways.**
 
@@ -57,7 +57,7 @@ When you show empathy, you usually get it back. Your CEO isn't the enemy. They'r
 
 ⸻
 
-## The Greatest Value Is Often Invisible
+#### The Greatest Value Is Often Invisible
 
 Here's the thing about being a great CTO: **your greatest value is often invisible.** The deal that didn't fall apart because the system didn't crash during the demo. The customer who didn't churn because performance quietly improved. The engineer who didn't quit because the environment was sane, not a dumpster fire.
 
@@ -69,7 +69,7 @@ Stop waiting for permission to maintain the system. Stop asking if it's okay to 
 
 ⸻
 
-## Your True Value
+#### Your True Value
 
 So, dear CTO, here's what I need you to hear: your CEO gives you freedom, but that freedom comes with responsibility. Don't squander it by hiding behind jargon, diagrams, and excuses. **Stop waiting for permission. Earn trust by making outcomes visible.** Pay debt down like a home loan. Keep hygiene daily. Translate every decision—every architecture choice, every refactor, every hire—into revenue, growth, or risk.
 
@@ -84,3 +84,7 @@ Because when you do, you stop being misunderstood. You become indispensable.
 ⸻
 
 **In summary**, here's what I need you to internalize: **Speak impact, not implementation.** Translate your technical work into revenue, growth, or risk—the only language that resonates with CEOs and boards. **Treat tech debt like a home loan,** paying it down steadily and predictably, not in one catastrophic rewrite. **Show empathy for business pressure**—your CEO isn't asking for speed because they're naive; they're balancing survival, competition, and investor expectations. **Make your value visible** by connecting engineering wins to business outcomes. And above all, **talk sense, talk business, talk money.** When you master this, you stop being the person who slows things down and become the partner who makes ambition achievable. That's the real role of a CTO.
+
+Your's truly
+
+Scarred/Slapped/Wise CTO
