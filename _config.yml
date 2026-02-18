@@ -14,7 +14,8 @@ author :
 lead_image: ajey_gore_website_card.png
 description: A site about product and software engineering. Read & Discover about building teams, org and impactful software products.
 domain: ajeygore.in
-incremental: true
+future: true
+timezone: Asia/Singapore
 
 # GitHub Pages compatible settings
 production_url : https://ajeygore.in

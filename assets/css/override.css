@@ -73,41 +73,102 @@ body {
     font-family: "Inter", system-ui, -apple-system, sans-serif;
     color: var(--text-primary);
     background-color: var(--bg-primary);
-    line-height: 1.5;
+    line-height: 1.7;
     font-size: 1rem;
     transition: var(--transition);
 }
 
-/* Optimized spacing */
+/* Base spacing */
 p {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.2rem;
 }
 
 .content-container p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.1rem;
 }
 
 section {
-    margin-bottom: 2rem !important;
+    margin-bottom: 2.5rem !important;
+}
+
+/* ============================================ */
+/* POST CONTENT — the reading experience        */
+/* ============================================ */
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    letter-spacing: 0.008em;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-content p {
+    margin-bottom: 1.65em;
+}
+
+.post-content h3,
+.post-content h4 {
+    margin-top: 2.8em;
+    margin-bottom: 1em;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+.post-content h3:first-child,
+.post-content h4:first-child {
+    margin-top: 0;
+}
+
+.post-content blockquote {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1.5rem 1.75rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.post-content blockquote p {
+    margin-bottom: 0;
+}
+
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.65em;
+    padding-left: 1.5em;
+}
+
+.post-content li {
+    margin-bottom: 0.6em;
+    line-height: 1.8;
+}
+
+.post-content .footnote {
+    font-size: 1.15rem;
+    line-height: 1.65;
+    margin-bottom: 2.5em;
+}
+
+.post-content a {
+    text-decoration: underline;
+    text-decoration-color: var(--border-color);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease;
+}
+
+.post-content a:hover {
+    text-decoration-color: var(--primary-color);
 }
 
 /* Responsive typography */
 @media (min-width: 992px) {
-    body {
-        line-height: 1.4;
-    }
-
     .hero-subtitle {
-        line-height: 1.4;
+        line-height: 1.5;
     }
 
     p,
     .card-text {
-        line-height: 1.45;
-    }
-
-    .post-content {
-        line-height: 1.6;
+        line-height: 1.65;
     }
 
     header .container-fluid {
@@ -384,12 +445,13 @@ button:hover {
 
 /* Blockquotes */
 blockquote {
-    border-left: 4px solid var(--primary-color);
+    border-left: 3px solid var(--primary-color);
     background: var(--bg-secondary);
-    padding: 1.25rem;
+    padding: 1.5rem 1.75rem;
     border-radius: 0.5rem;
-    margin: 1.75rem 0;
+    margin: 2rem 0;
     font-style: italic;
+    line-height: 1.8;
 }
 
 /* Blog Post Images */
@@ -627,7 +689,12 @@ blockquote {
 
 @media (max-width: 576px) {
     body {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .post-content {
+        font-size: 1.02rem;
+        line-height: 1.8;
     }
 
     .btn-modern {

@@ -1,0 +1,138 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm sunrise gradient for the sky -->
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="40%" style="stop-color:#fde68a"/>
+      <stop offset="70%" style="stop-color:#f1f5f9"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Soft golden glow -->
+    <radialGradient id="sunGlow" cx="50%" cy="35%">
+      <stop offset="0%" style="stop-color:#fbbf24" stop-opacity="0.4"/>
+      <stop offset="40%" style="stop-color:#fbbf24" stop-opacity="0.1"/>
+      <stop offset="100%" style="stop-color:#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Path gradient - past chapters -->
+    <linearGradient id="pastPath" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#94a3b8"/>
+      <stop offset="100%" style="stop-color:#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Path gradient - future, fading -->
+    <linearGradient id="futurePath" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="60%" style="stop-color:#fcd34d" stop-opacity="0.5"/>
+      <stop offset="100%" style="stop-color:#fef3c7" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Book gradient -->
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+
+    <!-- Warm accent -->
+    <linearGradient id="warmAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+
+    <!-- Leaf gradient -->
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#86efac"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="800" height="450" fill="url(#skyGradient)"/>
+
+  <!-- Sun glow -->
+  <ellipse cx="400" cy="140" rx="250" ry="160" fill="url(#sunGlow)"/>
+
+  <!-- Distant hills / horizon -->
+  <path d="M 0 320 Q 100 280 200 300 Q 300 260 400 290 Q 500 270 600 295 Q 700 275 800 310 L 800 450 L 0 450 Z" fill="#e2e8f0" opacity="0.5"/>
+  <path d="M 0 340 Q 150 310 300 330 Q 450 305 600 335 Q 700 320 800 340 L 800 450 L 0 450 Z" fill="#cbd5e1" opacity="0.4"/>
+
+  <!-- Ground -->
+  <path d="M 0 370 Q 200 355 400 365 Q 600 350 800 370 L 800 450 L 0 450 Z" fill="#f1f5f9"/>
+
+  <!-- The winding path - past (left, solid) -->
+  <path d="M 30 390 Q 80 375 130 380 Q 180 385 220 370 Q 260 355 300 360 Q 340 365 370 355"
+        stroke="url(#pastPath)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <!-- Small footsteps on past path -->
+  <circle cx="60" cy="383" r="1.5" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="75" cy="380" r="1.5" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="110" cy="379" r="1.5" fill="#94a3b8" opacity="0.5"/>
+  <circle cx="125" cy="381" r="1.5" fill="#94a3b8" opacity="0.5"/>
+  <circle cx="160" cy="382" r="1.5" fill="#94a3b8" opacity="0.4"/>
+  <circle cx="175" cy="379" r="1.5" fill="#94a3b8" opacity="0.4"/>
+  <circle cx="210" cy="373" r="1.5" fill="#94a3b8" opacity="0.35"/>
+  <circle cx="225" cy="370" r="1.5" fill="#94a3b8" opacity="0.35"/>
+  <circle cx="260" cy="360" r="1.5" fill="#94a3b8" opacity="0.3"/>
+  <circle cx="275" cy="358" r="1.5" fill="#94a3b8" opacity="0.3"/>
+
+  <!-- The space - a clearing with the figure standing still -->
+  <!-- Soft circle of warmth around the figure -->
+  <circle cx="400" cy="340" r="60" fill="#fbbf24" opacity="0.08"/>
+  <circle cx="400" cy="340" r="40" fill="#fbbf24" opacity="0.06"/>
+
+  <!-- Human figure - standing still, looking at horizon -->
+  <!-- Body -->
+  <line x1="400" y1="315" x2="400" y2="350" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+  <!-- Head -->
+  <circle cx="400" cy="308" r="8" fill="#475569"/>
+  <!-- Arms relaxed, slightly open -->
+  <line x1="400" y1="325" x2="385" y2="338" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="400" y1="325" x2="415" y2="338" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="400" y1="350" x2="393" y2="368" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="400" y1="350" x2="407" y2="368" stroke="#475569" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- The path ahead - future (right, fading, dotted) -->
+  <path d="M 430 355 Q 470 348 510 352 Q 560 345 610 340 Q 670 335 740 330 Q 780 328 800 325"
+        stroke="url(#futurePath)" stroke-width="3.5" fill="none" stroke-linecap="round"
+        stroke-dasharray="8 6"/>
+
+  <!-- Closed book resting on the ground near the figure -->
+  <rect x="418" y="358" width="22" height="16" rx="1" fill="url(#bookGrad)" transform="rotate(-8 429 366)"/>
+  <line x1="429" y1="358" x2="428" y2="374" stroke="#334155" stroke-width="1.5" transform="rotate(-8 429 366)"/>
+
+  <!-- Coffee cup nearby -->
+  <rect x="370" y="360" width="10" height="8" rx="1" fill="#d97706" opacity="0.7"/>
+  <path d="M 380 363 Q 384 362 384 366 Q 384 370 380 368" stroke="#d97706" fill="none" stroke-width="1" opacity="0.7"/>
+  <!-- Steam wisps -->
+  <path d="M 373 358 Q 374 354 372 350" stroke="#94a3b8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M 376 357 Q 378 352 376 348" stroke="#94a3b8" stroke-width="0.8" fill="none" opacity="0.3"/>
+
+  <!-- Small plant/seedling growing near the figure - new beginnings -->
+  <line x1="445" y1="370" x2="445" y2="360" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round"/>
+  <ellipse cx="441" cy="358" rx="4" ry="3" fill="url(#leafGrad)" opacity="0.7" transform="rotate(-25 441 358)"/>
+  <ellipse cx="449" cy="360" rx="3.5" ry="2.5" fill="url(#leafGrad)" opacity="0.6" transform="rotate(20 449 360)"/>
+
+  <!-- Birds in the distance - freedom -->
+  <path d="M 520 180 Q 525 175 530 178" stroke="#64748b" stroke-width="1.2" fill="none" opacity="0.4"/>
+  <path d="M 545 170 Q 550 165 555 168" stroke="#64748b" stroke-width="1.2" fill="none" opacity="0.35"/>
+  <path d="M 505 190 Q 509 186 513 189" stroke="#64748b" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Floating particles - ideas, possibilities -->
+  <circle cx="460" cy="280" r="2" fill="#fbbf24" opacity="0.3"/>
+  <circle cx="490" cy="260" r="1.5" fill="#fbbf24" opacity="0.25"/>
+  <circle cx="440" cy="270" r="1.8" fill="#fbbf24" opacity="0.2"/>
+  <circle cx="510" cy="290" r="1.2" fill="#fbbf24" opacity="0.2"/>
+  <circle cx="470" cy="250" r="1" fill="#f59e0b" opacity="0.2"/>
+
+  <!-- Milestone markers on the past path - chapters lived -->
+  <rect x="95" y="372" width="3" height="10" rx="1" fill="#64748b" opacity="0.5"/>
+  <rect x="195" y="364" width="3" height="10" rx="1" fill="#64748b" opacity="0.45"/>
+  <rect x="285" y="354" width="3" height="10" rx="1" fill="#64748b" opacity="0.4"/>
+
+  <!-- Title text -->
+  <text x="400" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="400" fill="#475569" letter-spacing="1">
+    The Space Between Chapters
+  </text>
+</svg>

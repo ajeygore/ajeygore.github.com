@@ -3,130 +3,79 @@ layout: bare
 leadingpath: ./
 permalink: /
 title: Home
-description: "Ajey Gore is Operating Partner (Technology) at PeakXV Partners, former Group CTO at Gojek, and Head of
-Technology at ThoughtWorks. Expert in scaling engineering teams and software architecture for startups."
+description: "Ajey Gore — former Group CTO at Gojek, Head of Technology at ThoughtWorks, and Operating Partner at PeakXV Partners. Currently exploring, advising, and following curiosity."
 lead_image: ajey_gore_website_card.png
 ---
 
 <div class="content-container py-5 position-relative">
-    <!-- Subtle techie background with profile picture -->
     <div class="hero-background-image"></div>
 
     <div class="row justify-content-center">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
 
             <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Ajey Gore</h1>
 
             <!-- Handshake Intro -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Handshake Intro</h2>
-                <p>I've been a <a href="/about" class="text-decoration-none">Group CTO building tech teams</a>, <a
-                        href="/content/talks" class="text-decoration-none">speaker on product strategy</a>, <a
-                        href="/blog" class="text-decoration-none">writer</a>, and <a href="https://github.com/ajeygore"
-                        class="text-decoration-none">hands-on coder</a>.</p>
-
-                <p>I'm a <a href="/blog" class="text-decoration-none">systems thinker</a>, <a href="/about"
-                        class="text-decoration-none">startup advisor</a>, tech investor, and I love <a href="/tools"
-                        class="text-decoration-none">building product teams that ship</a>.</p>
-
-                <p>Indian native, I now work globally with startups from my base in Singapore.</p>
+            <section class="mb-4">
+                <p>I've been a <a href="/about" class="text-decoration-none">Group CTO building tech teams</a>, <a href="/content/talks" class="text-decoration-none">speaker on product strategy</a>, <a href="/blog" class="text-decoration-none">writer</a>, and <a href="https://github.com/ajeygore" target="_blank" class="text-decoration-none">hands-on coder</a>. I'm a <a href="/about" class="text-decoration-none">startup advisor</a>, systems thinker, and I love <a href="/tools" class="text-decoration-none">building product teams that ship</a>. Indian native, I now work globally with startups from my base in Singapore.</p>
             </section>
 
-            <!-- Coffee Chat Deep Dive -->
+            <!-- Journey strip -->
+            <p class="text-muted mb-5" style="font-size: 0.85rem; letter-spacing: 0.06em;">PeakXV &middot; Sequoia &middot; Gojek &middot; GoTo &middot; CodeIgnition &middot; Hoppr &middot; ThoughtWorks &middot; NCST</p>
+
+            <!-- What I'm Up To -->
             <section class="mb-5">
-                <h2 class="h4 text-primary mb-3"><a href="/about" class="text-decoration-none text-primary">Coffee Chat
-                        Deep Dive?</a></h2>
-                <p>See <a href="/about" class="text-decoration-none">my "about" page</a> for the full story of building
-                    teams, scaling product, and navigating tech leadership.</p>
+                <h2 class="h5 mb-3" style="color: var(--heading-color);">What I'm up to</h2>
+
+                <p>I'm on a break — but still helping people and organisations create impact and magnificent outcomes. Spending time with family, advising founders selectively, and working with <strong><a href="https://helloally.ai" target="_blank" class="text-decoration-none">Ally</a></strong> on mental health — a cause I care about deeply. My calendar is friendlier than it's been in years. <a href="/meetme" class="text-decoration-none">Book a conversation</a>.</p>
             </section>
 
-            <!-- Daily Grind -->
+            <!-- The story so far -->
             <section class="mb-5">
-                <h2 class="h4 text-primary mb-3"><a href="/journey" class="text-decoration-none text-primary">Daily
-                        Grind</a></h2>
-                <p>Operating Partner (Technology) at <strong>PeakXV Partners</strong> (FKA Sequoia Capital India & SEA).
-                    I help portfolio companies build high-performing engineering teams, nail their product-market fit,
-                    and scale their tech foundations.</p>
+                <h2 class="h5 mb-3" style="color: var(--heading-color);">The story so far</h2>
+
+                <p>Most recently, I was Operating Partner (Technology) at <strong>PeakXV Partners</strong> (FKA Sequoia Capital India & SEA), working with portfolio companies on engineering culture, product-market fit, and scaling technology foundations. That chapter concluded in January 2026.</p>
+
+                <p>Before PeakXV, I was Group CTO at <strong>Gojek</strong>, where I helped scale the engineering team from a handful of people to over 2,000 across multiple countries. And before that, I spent a decade at <strong>ThoughtWorks</strong> — starting as their first India office employee and eventually leading technology for the India region.</p>
+
+                <p>Along the way, I co-founded <strong>CodeIgnition</strong> (acquired by Gojek), ran a startup called <strong>Hoppr</strong> (acquired by Hike), and tried my hand at everything from selling computers to running a printing press. <a href="/about" class="text-decoration-none">The longer version is here</a>.</p>
             </section>
 
-            <!-- Recent Writing -->
+            <!-- Writing -->
             <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Recent Writing <a href="/blog"
-                        class="small text-muted text-decoration-none">[see all]</a></h2>
+                <h2 class="h5 mb-3" style="color: var(--heading-color);">Writing</h2>
                 {% if site.posts.size > 0 %}
                 <ul class="list-unstyled">
                     {% for post in site.posts limit:3 %}
-                    <li class="mb-2">
+                    <li class="mb-3">
                         <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+                        <span class="text-muted small d-block">{{ post.date | date: '%B %Y' }}</span>
                     </li>
                     {% endfor %}
                 </ul>
-                {% else %}
-                <p class="text-muted">No posts yet. Check back soon!</p>
+                <p><a href="/blog" class="text-decoration-none">All posts →</a></p>
                 {% endif %}
             </section>
 
-            <!-- Mental Models -->
+            <!-- Explore -->
             <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Mental Models</h2>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><strong>Product Mindset:</strong> <em>Ideate, Implement, Iterate — always ship
-                            value</em></li>
-                    <li class="mb-2"><strong>Tech Leadership:</strong> <em>Code, Deploy, Automate — stay hands-on while
-                            scaling</em></li>
-                    <li class="mb-2"><strong>Team Dynamics:</strong> <em>Hire, Inspire, Retire (technical debt) — people
-                            before process</em></li>
-                </ul>
+                <h2 class="h5 mb-3" style="color: var(--heading-color);">Explore</h2>
+                <p><a href="/content/talks" class="text-decoration-none">Talks</a> — conferences on scaling engineering teams and startup tech strategy.</p>
+                <p><a href="/books" class="text-decoration-none">Bookshelf</a> — what I've been reading and recommending.</p>
+                <p><a href="/tools" class="text-decoration-none">Tools & experiments</a> — side projects, developer utilities, and things I've built on weekends.</p>
             </section>
 
-            <!-- Side Hustles & Lab Experiments -->
+            <!-- Get in touch -->
             <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Side Hustles & Lab Experiments</h2>
-                <ul class="list-unstyled">
-                    <li class="mb-2"><strong><a href="/tools/wardley-strategy-generator"
-                                class="text-decoration-none">Wardley Strategy Generator</a></strong> — AI-powered
-                        product strategy mapping tool</li>
-                    <li class="mb-2"><strong><a href="/tools" class="text-decoration-none">Developer
-                                Utilities</a></strong> — tech stack helpers for TensorFlow, PyTorch, and team
-                        productivity</li>
-                    <li class="mb-2"><strong><a href="/experiments" class="text-decoration-none">Weekend
-                                Projects</a></strong> — technical explorations and proof-of-concepts that didn't make it
-                        to production</li>
-                </ul>
-            </section>
-
-            <!-- Intellectual Fuel -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Intellectual Fuel</h2>
-                <p>I maintain a <a href="/books" class="text-decoration-none">curated bookshelf</a> of recommended reads
-                    on building product teams, tech strategy, and startup leadership.</p>
-            </section>
-
-            <!-- Stage Time & Mic Drops -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Stage Time & Mic Drops</h2>
-                <p>I speak at conferences about scaling product engineering teams, startup tech strategy, and building
-                    systems that don't break at 3 AM. See <a href="/content/talks" class="text-decoration-none">my
-                        talks</a>.</p>
-            </section>
-
-            <!-- Slide Into My DMs -->
-            <section class="mb-5">
-                <h2 class="h4 text-primary mb-3">Slide Into My DMs</h2>
-                <p>I love meeting product builders, tech founders, and anyone trying to scale engineering teams without
-                    losing their sanity. Just write to me.</p>
+                <h2 class="h5 mb-3" style="color: var(--heading-color);">Get in touch</h2>
+                <p>If you're building something interesting, thinking through a hard problem, or just want to catch up over coffee — I'd love to hear from you. <a href="/meetme" class="text-decoration-none">Book a time</a>.</p>
             </section>
 
             <!-- Footer note -->
             <section class="mt-5 pt-4 border-top">
-                <p class="text-muted small">Everything here is written by me, personally, not an AI. Updated regularly
-                    with new thoughts and projects.</p>
+                <p class="text-muted small">Written by me. Updated when something worth saying comes along.</p>
             </section>
 
         </div>
     </div>
-</div>
-
-</div>
-</div>
 </div>

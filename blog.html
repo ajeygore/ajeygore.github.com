@@ -9,55 +9,33 @@ subpage: blog
 
 <div class="content-container py-5">
   <div class="row justify-content-center">
-    <div class="col-lg-8">
+    <div class="col-lg-7">
 
-      <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Brain Chatter</h1>
+      <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">Writing</h1>
 
-      <!-- Intro -->
       <section class="mb-5">
-        <p>Random musings on technology, product engineering, and the art of building teams that actually ship things.
-        </p>
-        <p>Most posts are born from 3 AM debugging sessions, team retrospectives that went sideways, or those shower
-          thoughts about why software is still hard after all these years.</p>
+        <p>Thoughts on technology, leadership, building teams, and the lessons that come from getting things wrong. Most of what I know, I learned by doing it badly first.</p>
       </section>
 
-      <!-- Categories -->
-      <section class="mb-5">
-        <h2 class="h4 text-primary mb-3">What I Write About</h2>
-        <ul class="list-unstyled">
-          <li class="mb-2"><strong>Engineering Leadership</strong> — scaling teams, managing technical debt, and staying
-            sane</li>
-          <li class="mb-2"><strong>Product Engineering</strong> — building the right thing, the right way, at the right
-            time</li>
-          <li class="mb-2"><strong>Startup Stories</strong> — lessons learned from building at hypergrowth companies
-          </li>
-          <li class="mb-2"><strong>Systems Thinking</strong> — designing for failure, scale, and human behavior</li>
-        </ul>
-      </section>
-
-
-      <!-- All Posts -->
-      <section class="mb-5">
-        <h2 class="h4 text-primary mb-3">All Posts</h2>
+      <section>
         {% if site.posts.size > 0 %}
         {% for post in site.posts %}
-        <div class="mb-3 pb-3 border-bottom">
+        <div class="mb-4 pb-4 border-bottom">
           <h3 class="h6 mb-2">
             <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
           </h3>
           <p class="text-muted small mb-2">{{ post.date | date: '%B %d, %Y' }}</p>
           {% if post.description %}
-          <p class="small mb-0">{{ post.description | truncate: 150 }}</p>
+          <p class="small mb-0">{{ post.description | truncate: 160 }}</p>
           {% elsif post.excerpt %}
-          <p class="small mb-0">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          <p class="small mb-0">{{ post.excerpt | strip_html | truncate: 160 }}</p>
           {% endif %}
         </div>
         {% endfor %}
         {% else %}
-        <p class="text-muted">No posts yet. The debugging stories are still being written.</p>
+        <p class="text-muted">Nothing here yet.</p>
         {% endif %}
       </section>
-
 
     </div>
   </div>

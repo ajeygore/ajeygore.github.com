@@ -4,7 +4,7 @@
 
 With over **25 years of experience** in technology and software engineering, I've had the privilege of building, scaling, and leading engineering organizations across diverse industries and geographies. My journey spans from hands-on software development to executive technology leadership, with a consistent focus on creating impactful products and fostering engineering excellence.
 
-Currently serving as **Operating Partner (Technology)** at **PeakXV Partners** (formerly Sequoia Capital India & SEA), I work with portfolio companies to solve complex technology challenges, scale engineering teams, and build sustainable technology organizations.
+Most recently, I served as **Operating Partner (Technology)** at **PeakXV Partners** (formerly Sequoia Capital India & SEA), where I worked with portfolio companies to solve complex technology challenges and scale engineering teams. I'm now taking a deliberate pause — exploring ideas, advising selectively, and staying open to what comes next.
 
 ## Core Focus Areas
 
@@ -40,16 +40,11 @@ While writing code for computers is straightforward, the real challenge lies in 
 
 The software engineering landscape evolves continuously—from new programming paradigms and languages to revolutionary approaches in distributed systems and AI. Staying current while applying proven principles remains a key focus.
 
-## Current Mission
+## What I'm Up To Now
 
-At **PeakXV Partners**, I'm dedicated to giving back to the startup ecosystem by:
+After years of building and advising at scale, I'm in a quieter chapter — one I'm genuinely enjoying. I'm spending time with family, reading without an agenda, and letting curiosity lead. I'm also advising founders and teams where I feel I can genuinely help, including work with **[Ally](https://helloally.ai){:target="_blank"}**, a not-for-profit focused on mental health, and a few other high-impact initiatives I care about deeply.
 
-- **Advising** portfolio companies on technology strategy and architecture decisions
-- **Helping** scale engineering teams and build strong engineering cultures  
-- **Sharing** learnings and best practices across the startup community
-- **Mentoring** technology leaders and engineering teams
-
-This role allows me to combine my operational experience with a broader mission of nurturing the next generation of technology companies.
+I haven't mapped out the professional journey ahead, and that feels refreshing rather than unsettling.
 
 ---
 
@@ -62,4 +57,4 @@ I'm always interested in discussions about technology leadership, software archi
 - **Twitter**: [@ajeygore](https://twitter.com/ajeygore)
 - **LinkedIn**: [in/ajeygore](https://sg.linkedin.com/in/ajeygore)
 
-*Let's explore how technology can drive your next breakthrough.*
+*If you're building something interesting, or just want to catch up over coffee — I'd love to hear from you.*
