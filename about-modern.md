@@ -13,7 +13,7 @@ subpage: about
     <div class="row justify-content-center">
         <div class="col-lg-8">
             
-            <h1 class="mb-4" style="font-weight: 300; font-size: 2.5rem;">User Manual</h1>
+            <h1 class="mb-4" style="font-weight: 500; font-size: 2.5rem;">User Manual</h1>
             
             <!-- Me in 10 seconds -->
             <section class="mb-5">
