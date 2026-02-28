@@ -517,10 +517,16 @@ blockquote {
 }
 
 /* Navigation and UI elements use Inter */
-header, header a, .menu-section, .breadcrumb, .btn, .btn-modern, .badge,
+header.sticky-top, header.sticky-top a, .menu-section, .breadcrumb, .btn, .btn-modern, .badge,
 footer, footer a, .offcanvas {
     font-family: "Inter", system-ui, -apple-system, sans-serif;
     font-size: 1rem;
+}
+
+/* Post header meta (date, duration) uses serif */
+article header, article header span {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.1rem;
 }
 
 /* Name header in nav */
