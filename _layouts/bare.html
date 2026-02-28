@@ -297,19 +297,20 @@
                 <div class="d-flex align-items-center gap-4">
                     <nav class="d-none d-md-flex gap-4">
                         {% for item in site.data.navigation %}
-                        <a class="menu-section text-decoration-none" href="{{ item.link }}" {% if page.url==item.link
-                            %}data-active="true" {% endif %} {% if item.name contains "Foowar" or item.name
-                            contains "Sequoia" %}target="_blank" {% endif %}>
+                        <a class="menu-section text-decoration-none" href="{{ item.link }}" {% if page.url == item.link or page.url contains item.link %}data-active="true" {% endif %}>
                             {{ item.name }}
                         </a>
                         {% endfor %}
                     </nav>
 
                     <!-- Dark mode toggle -->
-                    <button class="btn btn-outline-secondary btn-sm d-flex align-items-center" onclick="toggleTheme()"
-                        id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
-                        <i class="bi bi-sun"></i>
-                    </button>
+                    <label class="theme-switch" title="Toggle dark mode" aria-label="Toggle dark mode">
+                        <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+                        <span class="theme-slider">
+                            <i class="bi bi-lightbulb-fill light-on"></i>
+                            <i class="bi bi-lightbulb-off light-off"></i>
+                        </span>
+                    </label>
 
                     <!-- Mobile menu button -->
                     <button class="btn btn-outline-secondary d-md-none" type="button" data-bs-toggle="offcanvas"
@@ -331,9 +332,7 @@
         <div class="offcanvas-body">
             <nav class="d-flex flex-column gap-3">
                 {% for item in site.data.navigation %}
-                <a class="menu-section text-decoration-none" href="{{ item.link }}" {% if page.url==item.link
-                    %}data-active="true" {% endif %} {% if item.name contains "Foowar" or item.name contains "Sequoia"
-                    %}target="_blank" {% endif %}>
+                <a class="menu-section text-decoration-none" href="{{ item.link }}" {% if page.url == item.link or page.url contains item.link %}data-active="true" {% endif %}>
                     {{ item.name }}
                 </a>
                 {% endfor %}
@@ -412,24 +411,15 @@
         function toggleTheme() {
             const htmlElement = document.documentElement;
             const bodyElement = document.body;
-            const themeToggle = document.getElementById('theme-toggle');
-            const icon = themeToggle.querySelector('i');
+            const toggle = document.getElementById('theme-toggle');
 
             const currentTheme = htmlElement.getAttribute('data-bs-theme') || 'light';
             const newTheme = currentTheme === 'light' ? 'dark' : 'light';
 
-            // Apply theme to both html and body elements
             htmlElement.setAttribute('data-bs-theme', newTheme);
             bodyElement.setAttribute('data-bs-theme', newTheme);
+            toggle.checked = (newTheme === 'dark');
 
-            // Update icon
-            if (newTheme === 'dark') {
-                icon.classList.replace('bi-sun', 'bi-moon');
-            } else {
-                icon.classList.replace('bi-moon', 'bi-sun');
-            }
-
-            // Save preference
             localStorage.setItem('theme', newTheme);
         }
 
@@ -438,20 +428,11 @@
             const savedTheme = localStorage.getItem('theme') || 'light';
             const htmlElement = document.documentElement;
             const bodyElement = document.body;
-            const themeToggle = document.getElementById('theme-toggle');
-            const icon = themeToggle?.querySelector('i');
+            const toggle = document.getElementById('theme-toggle');
 
-            // Apply theme to both html and body elements
             htmlElement.setAttribute('data-bs-theme', savedTheme);
             bodyElement.setAttribute('data-bs-theme', savedTheme);
-
-            if (icon) {
-                if (savedTheme === 'dark') {
-                    icon.classList.replace('bi-sun', 'bi-moon');
-                } else {
-                    icon.classList.replace('bi-moon', 'bi-sun');
-                }
-            }
+            if (toggle) toggle.checked = (savedTheme === 'dark');
 
             // Initialize tooltips
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
