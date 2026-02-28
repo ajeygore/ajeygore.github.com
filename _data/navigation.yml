@@ -1,8 +1,8 @@
-- name: brain chatter
+- name: Blog
   link: /blog
-- name: talks
+- name: Talks
   link: /content/talks
-- name: tools
+- name: Tools
   link: /tools
-- name: about
+- name: About
   link: /about
