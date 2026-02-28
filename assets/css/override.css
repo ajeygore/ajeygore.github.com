@@ -105,7 +105,7 @@ section {
 
 .post-title {
     font-family: "Newsreader", "Times New Roman", serif;
-    font-size: 20pt;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.15;
     color: var(--heading-color);
@@ -539,7 +539,7 @@ blockquote {
 /* Navigation uses serif, bold, lowercase with underline */
 header.sticky-top, header.sticky-top a, .menu-section, .offcanvas, .offcanvas a {
     font-family: "Newsreader", "Times New Roman", serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .menu-section {
