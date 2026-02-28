@@ -98,15 +98,15 @@ section {
 /* POST HEADER — newspaper headline style       */
 /* ============================================ */
 .post-header {
-    max-width: 38.75rem;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .post-title {
     font-family: "Newsreader", "Times New Roman", serif;
-    font-size: 2.1rem;
-    font-weight: 700;
+    font-size: 1.89rem;
+    font-weight: 600;
     line-height: 1.15;
     color: var(--heading-color);
     margin-bottom: 0.4em;
@@ -125,7 +125,7 @@ section {
     font-size: 1.25rem;
     line-height: 1.6;
     letter-spacing: 0em;
-    max-width: 38.75rem;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
