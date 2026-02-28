@@ -95,6 +95,30 @@ section {
 }
 
 /* ============================================ */
+/* POST HEADER — newspaper headline style       */
+/* ============================================ */
+.post-header {
+    max-width: 38.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--heading-color);
+    margin-bottom: 0.4em;
+}
+
+.post-meta {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* ============================================ */
 /* POST CONTENT — the reading experience        */
 /* ============================================ */
 .post-content {
