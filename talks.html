@@ -33,7 +33,7 @@ title: Presentations
             {% endif %}
           </h3>
           <p class="text-muted small mb-2">{{ talk.date }}</p>
-          <p class="mb-2">{{ talk.description | strip_html | truncate: 120 }}</p>
+          <p class="mb-2">{{ talk.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
           {% if talk.link or talk.slides %}
           <div class="small">
             {% if talk.link %}<a href="{{ talk.link }}" target="_blank" class="text-decoration-none me-3">→ Watch</a>{%
