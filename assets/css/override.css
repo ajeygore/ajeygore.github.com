@@ -75,6 +75,7 @@ body {
     background-color: var(--bg-primary);
     line-height: 1.6;
     font-size: 1.25rem;
+    font-weight: 450;
     transition: var(--transition);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -114,7 +115,7 @@ section {
     margin-bottom: 0.5em;
     line-height: 1.2;
     letter-spacing: 0em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .post-content h3,
@@ -123,7 +124,7 @@ section {
     margin-bottom: 0.7em;
     line-height: 1.2;
     letter-spacing: 0em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .post-content h3:first-child,
@@ -173,6 +174,7 @@ h1, h2, h3, h4, h5, h6,
 .post-content h3,
 .post-content h4 {
     text-wrap: balance;
+    font-weight: 700;
 }
 
 .post-content a:hover {
@@ -530,7 +532,7 @@ footer, footer a, .offcanvas {
 /* Section titles */
 .section-title {
     font-size: 1.62rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 1.5rem;
     text-align: center;
