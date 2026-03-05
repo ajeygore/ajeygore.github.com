@@ -64,3 +64,15 @@ markdown: kramdown
 
 # Custom site configuration
 lang: en
+
+# Giscus comments configuration
+# To set up: https://giscus.app — fill in repo name, pick a category, copy the IDs below
+giscus:
+  repo: "ajeygore/ajeygore.github.com"
+  repo_id: "MDEwOlJlcG9zaXRvcnk5MDc5ODMw"
+  category: "General"
+  category_id: "DIC_kwDOAIqMFs4C3u2e"
+  mapping: "pathname"
+  reactions_enabled: "1"
+  input_position: "bottom"
+  lang: "en"

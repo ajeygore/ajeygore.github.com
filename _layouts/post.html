@@ -49,4 +49,72 @@ layout: bare
       </div>
     </div>
   </div>
+
+  <!-- Comments Section (Giscus) -->
+  <div class="row mt-5">
+    <div class="col-lg-12 col-xl-10 mx-auto">
+      <div class="d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-4">
+        <h5 class="mb-0" style="color: var(--heading-color);">Comments</h5>
+        <span class="text-muted" style="font-size: 0.85rem;">
+          Commenting via GitHub &middot; No account?
+          <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" style="color: var(--primary-color);">Tweet at me</a>
+        </span>
+      </div>
+      <div id="giscus-container">
+        <script src="https://giscus.app/client.js"
+          data-repo="{{ site.giscus.repo }}"
+          data-repo-id="{{ site.giscus.repo_id }}"
+          data-category="{{ site.giscus.category }}"
+          data-category-id="{{ site.giscus.category_id }}"
+          data-mapping="{{ site.giscus.mapping }}"
+          data-strict="0"
+          data-reactions-enabled="{{ site.giscus.reactions_enabled }}"
+          data-emit-metadata="0"
+          data-input-position="{{ site.giscus.input_position }}"
+          data-theme="light"
+          data-lang="{{ site.giscus.lang }}"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+    </div>
+  </div>
 </article>
+
+<!-- Giscus dark mode sync -->
+<script>
+  (function () {
+    function getGiscusTheme() {
+      return document.documentElement.getAttribute('data-bs-theme') === 'dark'
+        ? 'dark'
+        : 'light';
+    }
+
+    function sendGiscusTheme(theme) {
+      var iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: theme } } },
+        'https://giscus.app'
+      );
+    }
+
+    // Set initial theme once Giscus iframe loads
+    window.addEventListener('message', function onFirstLoad(event) {
+      if (event.origin !== 'https://giscus.app') return;
+      if (event.data && event.data.giscus) {
+        sendGiscusTheme(getGiscusTheme());
+        window.removeEventListener('message', onFirstLoad);
+      }
+    });
+
+    // Watch for dark mode toggle (Bootstrap uses data-bs-theme on <html>)
+    var observer = new MutationObserver(function () {
+      sendGiscusTheme(getGiscusTheme());
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-bs-theme']
+    });
+  })();
+</script>
