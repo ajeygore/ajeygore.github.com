@@ -1,17 +1,55 @@
 ---
-layout: post
+layout: bare
 body_class: home
 leadingpath: ./
 permalink: /books
-title: Reading List
+title: Bookshelf
+subpage: books
 ---
 
-<h5><b>This is my rough reading list, I intend to update it and make it better, and most probably put some categories as well.</b></h5>
+<div class="content-container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
 
-<ul>
-  {% for book in site.data.books %}
-  <li>
-    {{ book.name }}
-  </li>
-  {% endfor %}
-</ul>
+      <h1 class="mb-4" style="font-weight: 500; font-size: 2.5rem;">Bookshelf</h1>
+
+      <section class="mb-5">
+        <p>Books that shaped how I think about technology, leadership, life, and everything in between. Roughly organized by when I read them — some titles are exact, others are from memory.</p>
+      </section>
+
+      {% assign books_by_year = site.data.books | sort: "year" | reverse | group_by: "year" %}
+
+      {% for year_group in books_by_year %}
+      <section class="mb-5">
+        <h2 class="bookshelf-year">~{{ year_group.name }}</h2>
+
+        {% for book in year_group.items %}
+        <div class="book-card">
+          <div class="book-cover">
+            {% if book.isbn %}
+            <img src="https://covers.openlibrary.org/b/isbn/{{ book.isbn }}-M.jpg"
+                 alt="{{ book.name }}"
+                 loading="lazy"
+                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'book-cover-placeholder\'><i class=\'bi bi-book\'></i></div>';">
+            {% else %}
+            <div class="book-cover-placeholder">
+              <i class="bi bi-book"></i>
+            </div>
+            {% endif %}
+          </div>
+          <div class="book-info">
+            <h3 class="book-title">{{ book.name }}</h3>
+            <p class="book-author">{{ book.author }}</p>
+            {% if book.description %}
+            <p class="book-description">{{ book.description }}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+
+      </section>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

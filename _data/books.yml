@@ -1,45 +1,236 @@
-- name: Three body problem
-- name: Broken earth
-- name: Watership down
-- name: Never let me go
-- name: Final space
-- name: Power of now
-- name: The biology of belief
-- name: Power vs Force 
-- name: Finite and infinite games - James P
-- name: Engineering infinity
-- name: Children of time
-- name: Clayton Christian how will mearure your life
-- name: Children of ruin
-- name: Stories of your life and others
-- name: Rules of longitivity
-- name: Atomic Habits
-- name: Second mountain
-- name: Tuxedo Park
-- name: A velocity of being
-- name: Innovators dilemma 
-- name: Spiritual autobiography of man
-- name: The Fountainhead
-- name: The Last Lecture
-- name: A man called Ove
-- name: Born a Crime
-- name: Elegant Puzzle
-- name: Effective engineer
-- name: The 4 hour body
-- name: The alliance
-- name: The culture
-- name: 1984 George Orwell
-- name: Brave new world
-- name: Now
-- name: Extreme ownership
-- name: Business-do Rakutan founder
-- name: talking to strangers 
-- name: i gen questionnaires 
-- name: Prince by machiavelli
-- name: Tom Clancy 
-- name: Magician Raymond vice
-- name: money masters the game
-- name: Josh bersen 
-- name: Elegant Puzzle
-- name: Man search got meaning
-- name: Alexander and gymnosophist
+- name: "Man's Search for Meaning"
+  author: "Viktor E. Frankl"
+  description: "A psychiatrist's account of surviving the Holocaust and finding purpose through suffering. Frankl's logotherapy argues that meaning is the primary drive in human life."
+  year: 2008
+  isbn: "9780807014295"
+
+- name: "The Fountainhead"
+  author: "Ayn Rand"
+  description: "The story of Howard Roark, an individualistic architect who refuses to compromise his artistic vision. A novel about integrity, creativity, and standing alone."
+  year: 2008
+  isbn: "9780451191151"
+
+- name: "1984"
+  author: "George Orwell"
+  description: "A dystopian masterpiece about totalitarian surveillance, thought control, and the destruction of truth. Winston Smith's rebellion against Big Brother remains chillingly relevant."
+  year: 2008
+  isbn: "9780451524935"
+
+- name: "Brave New World"
+  author: "Aldous Huxley"
+  description: "A society engineered for stability through genetic conditioning, consumerism, and a pleasure drug called soma. Huxley's warning about trading freedom for comfort."
+  year: 2008
+  isbn: "9780060850524"
+
+- name: "The Prince"
+  author: "Niccolò Machiavelli"
+  description: "The foundational text on political power and pragmatic leadership. Machiavelli's treatise on how rulers acquire, maintain, and wield authority."
+  year: 2008
+  isbn: "9780486272740"
+
+- name: "The Last Lecture"
+  author: "Randy Pausch"
+  description: "A terminally ill professor's final talk on achieving childhood dreams. Pausch's wisdom on overcoming obstacles, enabling others' dreams, and seizing every moment."
+  year: 2008
+  isbn: "9781401323257"
+
+- name: "Watership Down"
+  author: "Richard Adams"
+  description: "A band of rabbits journey to find a new home after their warren is threatened. An adventure story that is really about leadership, courage, and the nature of societies."
+  year: 2009
+  isbn: "9780743277709"
+
+- name: "Never Let Me Go"
+  author: "Kazuo Ishiguro"
+  description: "Three friends grow up at a mysterious English boarding school, slowly uncovering the heartbreaking truth about their existence. A quiet meditation on mortality and what it means to be human."
+  year: 2009
+  isbn: "9781400078776"
+
+- name: "The Power of Now"
+  author: "Eckhart Tolle"
+  description: "A guide to spiritual enlightenment through present-moment awareness. Tolle argues that identification with the mind is the root of suffering."
+  year: 2009
+  isbn: "9781577314806"
+
+- name: "The Biology of Belief"
+  author: "Bruce H. Lipton"
+  description: "A cell biologist's argument that beliefs and perceptions control biology, not DNA. Explores how consciousness, environment, and energy influence our cells."
+  year: 2009
+  isbn: "9781401923112"
+
+- name: "Power vs. Force"
+  author: "David R. Hawkins"
+  description: "A map of human consciousness from shame to enlightenment. Hawkins introduces muscle testing as a way to distinguish truth from falsehood across all domains."
+  year: 2009
+  isbn: "9781401945077"
+
+- name: "Magician"
+  author: "Raymond E. Feist"
+  description: "An orphan boy discovers he has magical abilities as his world faces invasion from another dimension. The beginning of the epic Riftwar saga."
+  year: 2009
+  isbn: "9780553564945"
+
+- name: "Tuxedo Park"
+  author: "Jennet Conant"
+  description: "The story of Alfred Lee Loomis, the Wall Street tycoon who built a secret lab and helped win WWII by pioneering radar technology. Science, wealth, and wartime secrecy."
+  year: 2009
+  isbn: "9780684872889"
+
+- name: "The Innovator's Dilemma"
+  author: "Clayton M. Christensen"
+  description: "Why great companies fail by doing everything right. Christensen's theory of disruptive innovation explains how new entrants topple established industry leaders."
+  year: 2010
+  isbn: "9780062060242"
+
+- name: "Stories of Your Life and Others"
+  author: "Ted Chiang"
+  description: "Brilliant science fiction short stories exploring language, mathematics, free will, and what it means to know the future. The basis for the film Arrival."
+  year: 2010
+  isbn: "9781101972120"
+
+- name: "Finite and Infinite Games"
+  author: "James P. Carse"
+  description: "A philosophical exploration of two kinds of games: finite games played to win, and infinite games played to keep playing. Changes how you see competition, culture, and life."
+  year: 2010
+  isbn: "9781476731711"
+
+- name: "Alexander and the Gymnosophists"
+  author: "Classical tradition"
+  description: "The legendary encounter between Alexander the Great and the naked philosophers of India. A dialogue about power, wisdom, and the limits of conquest."
+  year: 2010
+
+- name: "Engineering Infinity"
+  author: "Jonathan Strahan (ed.)"
+  description: "A collection of hard science fiction stories pushing the boundaries of engineering and physics. Stories about building the impossible at cosmic scales."
+  year: 2011
+  isbn: "9781907519529"
+
+- name: "The 4-Hour Body"
+  author: "Timothy Ferriss"
+  description: "An unconventional guide to rapid body transformation through self-experimentation. Ferriss shares shortcuts for fat loss, muscle gain, sleep optimization, and more."
+  year: 2011
+  isbn: "9780307463630"
+
+- name: "How Will You Measure Your Life?"
+  author: "Clayton M. Christensen"
+  description: "A Harvard professor applies business theories to life's most important questions — career fulfillment, relationships, and integrity. Strategy for a meaningful life."
+  year: 2012
+  isbn: "9780062102416"
+
+- name: "Spiritual Autobiography"
+  author: "Various traditions"
+  description: "Exploring the inner journey through autobiographical accounts of spiritual awakening and transformation. The quest for meaning beyond the material."
+  year: 2012
+
+- name: "Three Body Problem"
+  author: "Cixin Liu"
+  description: "During China's Cultural Revolution, a secret military project sends signals into space, making first contact with an alien civilization on the brink of destruction. Hard sci-fi at its most ambitious."
+  year: 2014
+  isbn: "9780765382030"
+
+- name: "The Alliance"
+  author: "Reid Hoffman"
+  description: "A new framework for the employer-employee relationship. LinkedIn's co-founder proposes treating employment as an alliance of mutual investment rather than a family or transaction."
+  year: 2015
+  isbn: "9781625275776"
+
+- name: "The Broken Earth"
+  author: "N.K. Jemisin"
+  description: "On a planet wracked by catastrophic seismic events, a woman with the power to control earthquakes searches for her kidnapped daughter. Won the Hugo three years running."
+  year: 2015
+  isbn: "9780316229296"
+
+- name: "Children of Time"
+  author: "Adrian Tchaikovsky"
+  description: "The last survivors of Earth arrive at a terraformed planet, only to find it claimed by an evolved spider civilization. A sweeping tale of evolution, intelligence, and coexistence."
+  year: 2016
+  isbn: "9780316452502"
+
+- name: "The Effective Engineer"
+  author: "Edmond Lau"
+  description: "A practical guide to maximizing impact as a software engineer. Focus on high-leverage activities, iterate quickly, and invest in tools that multiply your output."
+  year: 2016
+  isbn: "9780996128100"
+
+- name: "Extreme Ownership"
+  author: "Jocko Willink & Leif Babin"
+  description: "Navy SEAL combat lessons applied to business leadership. The core principle: leaders must own everything in their world — no excuses, no blame."
+  year: 2016
+  isbn: "9781250183866"
+
+- name: "Born a Crime"
+  author: "Trevor Noah"
+  description: "Growing up mixed-race in apartheid South Africa, where his very existence was illegal. Trevor Noah's memoir is funny, moving, and a testament to a mother's unconditional love."
+  year: 2017
+  isbn: "9780399588174"
+
+- name: "A Man Called Ove"
+  author: "Fredrik Backman"
+  description: "A grumpy old man who's given up on life finds it upended by new neighbors who won't leave him alone. A heartwarming story about community, loss, and unexpected friendship."
+  year: 2017
+  isbn: "9781476738024"
+
+- name: "iGen"
+  author: "Jean M. Twenge"
+  description: "How the smartphone generation is reshaping adolescence. Data-driven research on why teens raised with phones are more anxious, less rebellious, and slower to grow up."
+  year: 2018
+  isbn: "9781501151989"
+
+- name: "Atomic Habits"
+  author: "James Clear"
+  description: "Small changes, remarkable results. A practical system for building good habits and breaking bad ones through the four laws of behavior change."
+  year: 2019
+  isbn: "9780735211292"
+
+- name: "An Elegant Puzzle"
+  author: "Will Larson"
+  description: "Systems of engineering management. Larson shares frameworks for sizing teams, managing technical debt, running migrations, and navigating organizational design."
+  year: 2019
+  isbn: "9781732265189"
+
+- name: "The Second Mountain"
+  author: "David Brooks"
+  description: "After achieving worldly success comes a deeper journey toward commitment, community, and moral purpose. Brooks argues the second mountain is where real joy lives."
+  year: 2019
+  isbn: "9780812993264"
+
+- name: "A Velocity of Being"
+  author: "Maria Popova & Claudia Bedrick (eds.)"
+  description: "121 illustrated love letters to reading, from artists and writers to the children of the world. A celebration of why books matter."
+  year: 2019
+  isbn: "9781592702282"
+
+- name: "Talking to Strangers"
+  author: "Malcolm Gladwell"
+  description: "Why we're terrible at understanding people we don't know. Gladwell explores how our default to trust and transparency leads to catastrophic misjudgments."
+  year: 2019
+  isbn: "9780316478526"
+
+- name: "Children of Ruin"
+  author: "Adrian Tchaikovsky"
+  description: "The sequel to Children of Time ventures to a water world where humanity and its spider allies encounter an utterly alien intelligence evolved from octopuses."
+  year: 2019
+  isbn: "9780316452533"
+
+- name: "Money: Master the Game"
+  author: "Tony Robbins"
+  description: "Seven steps to financial freedom distilled from interviews with the world's greatest investors. Robbins simplifies wealth-building into an actionable playbook."
+  year: 2015
+  isbn: "9781476757803"
+
+- name: "Business-Do"
+  author: "Hiroshi Mikitani"
+  description: "The Rakuten founder's philosophy on business, innovation, and the power of optimism. Lessons from building Japan's largest e-commerce company."
+  year: 2015
+
+- name: "The Culture Series"
+  author: "Iain M. Banks"
+  description: "A post-scarcity civilization run by benevolent AI minds navigates the moral complexities of galactic politics. Space opera that grapples with utopia's edges."
+  year: 2010
+  isbn: "9780316005388"
+
+- name: "Now: The Physics of Time"
+  author: "Richard A. Muller"
+  description: "A physicist's radical new theory of time — why 'now' is special, why time flows, and what the Big Bang has to do with the direction of the arrow of time."
+  year: 2016
+  isbn: "9780393354805"
