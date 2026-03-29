@@ -577,6 +577,18 @@ footer, footer a {
     font-size: 1rem;
 }
 
+/* Blog listing post links */
+.blog-post-link {
+    color: var(--primary-color) !important;
+    transition: var(--transition);
+}
+
+.blog-post-link:hover {
+    color: var(--primary-hover) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px;
+}
+
 /* Post header meta (date, duration) uses serif */
 .post-meta {
     font-family: "Newsreader", "Times New Roman", serif;
