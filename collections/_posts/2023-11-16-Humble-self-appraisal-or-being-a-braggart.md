@@ -43,3 +43,9 @@ Finally do not think that self-appraisal is adreaded task or feel like boasting.
 you create a balanced and honest self-appraisal. 
 
 And it's not bragging if it's based on facts and shared with humility and gratitude. And that's how your professional growth and recognition will be.
+
+⸻
+
+**Self-appraisal isn't bragging. It's the annual reminder that you were there, you did the work, and you grew.**
+
+Tell the story — with facts, with gratitude, with your team in it. Tell it to yourself first. The rest is just paperwork.

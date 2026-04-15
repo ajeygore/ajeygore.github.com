@@ -38,6 +38,12 @@ You can’t be fully empathetic to your end users, if you don’t understand how
 
 Please reach out to me if you want to discuss more about company, culture and building teams, I would be happy to talk to you about it.
 
+⸻
+
+**The best team members I've worked with had one thing in common — they made the team better by being there.** Not louder. Not more visible. Just better.
+
+That's the bar. Everything else on this list is a variation on the theme.
+
 
 
 

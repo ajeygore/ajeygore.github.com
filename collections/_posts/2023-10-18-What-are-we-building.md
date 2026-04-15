@@ -3,68 +3,98 @@ layout: post
 title: What are we building?
 published: true
 categories: Essay
-description: If startups think in Modular and abstraction based systems as identified above they can build simpler product with the most efficiency.
+description: Most early-stage products are built custom, one line of code at a time, when they could be assembled from a small set of well-understood building blocks. The question that forces that shift is the same one, asked again and again — what are we building?
 lead_image: blog/what_are_we_building.png
 ---
 
-##### THIS IS A DRAFT
+<div class="footnote">
+<strong>&ldquo;Most of what you think you need to build has already been figured out. You just need to know which blocks to pick up.&rdquo;</strong>
+<p/>
+</div>
 
-Engineers over-engineer, not because they want to but because they want to have a perfect, future proof, scalable and modular system. 
-It should be able to scale up and down in future, and also it should have feature friendly modular design.
+#### The question that keeps simplifying things
 
+Engineers over-engineer. Not because we want to — because we want a perfect, future-proof, scalable, modular system. Something that will handle whatever comes, however it comes, for as long as anyone might need it.
 
-Many times this over-engineering is the result of intent to achieve technical excellence, while they are looking to build a tech-enabled business, 
-it's not something that should be the primary focus, having a tech co-founder, having a view on building the best tech, or thinking about creating unique intellectual property. At times, this has proven to be counter-intuitive. 
+Which sounds great, until you notice that almost no one asked for any of that. You were hired to build a tech-enabled business. Not a technology showcase. Somewhere between "we need a pricing page" and the third architecture diagram, the original business got quietly demoted.
 
-One of the ways to avoid this to ask a question - at a basic abstraction level, I used to think myself "What are we building?" and now I turn to our founders and people who ask for my opinions -  "What are you building?"
-I have always asked this question to my teams, and now since I work with many founders, I ask the same question to the founders - "What are you building?"
+There's one question I keep coming back to. I used to ask it of myself. Now I ask it of founders who want my opinion on their stack. It sounds almost naïve, which is exactly why it works.
 
-"What are you building" can be a great question, it's like asking [five WHYs](https://en.wikipedia.org/wiki/Five_whys)?
-* **Five Whys** help us navigate through a problem to it's solution, I think applying **Absolute WHAT** might help us in understanding the startup journey, core-idea and how we think about building and navigating prioritisation in early days.
+*What are we building?*
 
-So back to the question, When I ask "what are you building" again and again, the intent it to simplify what are we building - we can start with saying that we are building a market place to connect sellers to consumers, if you ask that question again, "but what are you really building?" we might say that we are building an e-commerce portal
-**The Absolute WHATs are something equivalent to a discovery of core idea, and helps you decide multiple things**
-* It tells you as to what are you building?
-* It also helps you creating a guideline around build vs buy thought process
-* It also tells you what's the core product, and how can we always get focussed 
+⸻
 
-Dumbing it down, what are you building, what are you NOT building and also what are things that  matter while building, because they play a crucial role in your ability to deliver faster or better? Things such as
-* Essential complexity vs Accidental complexity
-* CAP Theorem
+#### The Absolute WHAT
 
-And many time we end up in their quick-sand and it's tough to come out without a major rewrite or firebreak, and that's not something you want to get into in early days.
+You know the [Five Whys](https://en.wikipedia.org/wiki/Five_whys) — the technique for tracing a problem to its root cause by asking "why?" until you can't. This is its sibling. Call it the **Absolute WHAT**. You ask "what are we building?" and then you ask it again about the answer. And again.
 
-So how do we think about what are you building? Essentially we are building some kind of systems, think about a B2C idea about selling pet food, chocolates, bed-sheets, gifts? What's the common minimum system we can find as pattern across all these business ideas? All these systems require a **content management system**, an **order management system**,  a **payment system** and a **logistics system**
+*"We're building a marketplace to connect sellers and consumers."*
 
-Let's just elaborate this a bit.
-* **Content Management System** will provide the features for listing your SKUs, and limited product availability information - when we start, we do not have to worry about warehousing, because we are just starting up, few things can be extension on CMS but at the scale, we might choose to put them in a separate module.
-* **Order Management System** takes care of orders that may involve shopping cart, pricing, discounts and promotions etc.
-* **Payment System** is pretty obvious - it manages the payments, at the start it just integrates with a payment gateway, and tells the order management system that order payment has been fulfilled and ready for the next step.
-* **Logistics System** handles order shipping - physical or virtual.
+What are we actually building?
 
-Many startups go through similar systems, many startups are powerhouse of innovation. And in these times people often underestimate the **The Power of Modular and Abstraction-Based Systems**
-In the throes of innovation, it's easy for startups to get swept away by buzz words, complex systems or just by latest toy in the market, eg by microservices, they often take the center stage. Not because they are the best, but because every scaled system uses them in some form.
-While there's no denying the potential benefits of such structures, it's crucial to first consider a simpler and more effective approach: modular and abstraction-based systems. This philosophy can guide startups to design efficient products that seamlessly integrate essential components like OMS (Order Management System), CMS (Content Management System), CRM (Customer Relationship Management), and payment systems.
-*  #### 0. **Identifying the WHATS**
-    The first step towards building a scalable and modular system is identifying the components - that build up your entire product. It can be few, or many, but you need to be able to figure out basic building blocks. And most of the time, that's the step **ZERO**
-*  #### 1. **Focus on Core Needs First**
-    While it's tempting to jump on the latest architectural trend, startups need to consider their immediate and core requirements. Often, these involve basic functions like order processing, content management, customer management, and payments. By first designing systems around these core components, startups can ensure they are serving the most immediate customer needs efficiently.
-* #### 2. **Scalability Through Simplicity**
-    A modular system is akin to building with LEGO blocks. Each module, or "block," is designed to perform a specific function and can be plugged into the larger system. This approach ensures that as the startup grows, new modules can be easily added or current ones can be enhanced without disturbing the entire system.
-* #### 3. **Cost and Time Efficiency**
-    In the early stages, resources are limited. Building complex systems can be resource-intensive, both in terms of time and money. In contrast, a modular approach allows for the incremental development of functionalities, letting startups deploy vital features faster and at a lower cost.
-* #### 4. **Reduced Complexity = Reduced Maintenance**
-    Every software system requires maintenance, but complex architectures intensify this need. With modular systems, problems can be isolated to specific modules, making troubleshooting and updates more straightforward.
-* #### 5. **Enhanced Flexibility for Future Adaptations**
-    The digital landscape is continually evolving. With an abstraction-based system, startups can easily swap out, update, or integrate new technologies and platforms as they emerge, without overhauling their entire software framework.
-* #### 6. **Business-Unit-Centric Design**
-    By focusing on core modules that cater directly to business to serve customers needs effectively (like OMS, CMS, CRM, etc.), startups inherently prioritise the internal workflow experience and thus end up with resulting frictionless user experience experience. This can lead to a more intuitive simpler and efficient features. And simple and smoother user journeys.
-* #### 7. **Avoiding the Microservices Trap**
-    One of the most important architecture advise I give to people is While microservices can offer scalability and flexibility, they come with their own set of challenges, especially for young startups. They often demand extensive coordination, infrastructure overhead, and can lead to intricacies in managing inter-service communications. Starting simple with a modular design can give startups the breathing space they need to understand if and when to transition to a microservices architecture. And another reason is that **Microservices** are bound by **CAP Theorem**, and you do not want to deal with this early on.
+*"An e-commerce portal."*
 
-For startups, the initial stages are all about finding product-market fit, catering to user needs, and doing so efficiently. While it's essential to keep an eye on future scalability and flexibility, the immediate goal should be to provide value. Embracing a modular and abstraction-based approach can be the key to achieving this balance, allowing startups to build efficient, adaptable, and customer-centric B2C products.
+What are we actually building?
 
-So next time when are you in a building journey, ask this to yourself and your teammates - What are we building? We are building a e-commerce platform for teens and their needs. That's fine, but what are we building underneath as tech platform? and then watch out for those answers, and that's where you start your tech building journey!
+*"A catalog. A cart. A way to take payment. A way to get the thing to the person."*
+
+And now you're somewhere useful. Every time you ask the question, the answer gets smaller, more concrete, more honest. Buzzwords fall off. The thing you're really making becomes visible. That clarity is the difference between shipping in six weeks and rewriting in six months.
+
+⸻
+
+#### The pattern hiding in plain sight
+
+Here's the part most founders are surprised by. Once you've asked "what are we building?" enough times, you stop seeing your business as unique at the component level. It isn't. Almost no B2C business is.
+
+Think about it. You could be selling pet food, chocolates, bedsheets, or gifts. Underneath, you need the same four things:
+
+*A **content system** — to list what you have and describe it. A **order system** — to handle cart, pricing, discounts, promotions. A **payment system** — to take money and tell the order system it's done. A **logistics system** — to move the thing, physical or virtual, from you to the customer.*
+
+That's it. That's 80% of a B2C product, sketched on the back of a napkin. Your unique thing lives in how you combine these blocks, in the customer you serve, in the story you tell. Not in whether you built your own payments layer from scratch.
+
+I've watched teams spend a quarter building bespoke payments infrastructure because they were convinced their case was special. It wasn't. It never is. The special part was upstream.
+
+⸻
+
+#### Software as abstracted building blocks
+
+This is the shift. Stop thinking of software as lines of code you write, and start thinking of it as a small set of **abstracted building blocks** you pick up, connect, and extend when necessary.
+
+Each block has a clear input, a clear output, and a single job to do well. Your CMS is a block. Your OMS is a block. Your payment gateway integration is a block. Authentication is a block. Notifications are a block. Each one knows nothing about the others beyond what it's told.
+
+When you build this way, four things happen quietly:
+
+*You move faster, because most of your first release is assembly rather than invention. You stay flexible, because swapping one block for another is a small change, not a rewrite. You debug faster, because when something breaks it breaks inside a single block. And you can hire simpler people, because a clean block is a clean thing to understand.*
+
+None of this requires microservices. None of it requires Kubernetes. A well-structured monolith with clean module boundaries is a pile of abstracted building blocks with fewer failure modes. The modularity is in your head and in your code, not in your infrastructure.
+
+⸻
+
+#### What people get wrong
+
+Two mistakes I see all the time.
+
+**The first — treating every module as custom.** A team says "we're different, our orders flow differently, we need a custom OMS." They spend three months building what Shopify, Medusa, or a fifty-line service could have given them on day one. Then they hit the actual business problem they were avoiding — which was never the OMS.
+
+**The second — jumping to microservices to prove the modularity.** Microservices are a deployment choice, not a design choice. They buy you independent scaling and independent deployment at the cost of network complexity, eventual consistency, and a distributed systems problem you didn't sign up for. [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) doesn't care about your pitch deck. Start with modules. Graduate to services only when a specific piece of your product genuinely needs its own scaling envelope. Usually that's year two or three, not week six.
+
+The point of modular thinking is to keep your *options* open, not to pre-commit to the most complex option available.
+
+⸻
+
+#### How to actually use this
+
+Next time you're in a planning session — yours or someone else's — try this. Take whatever is on the whiteboard and ask the question. *What are we building?* Listen to the answer, and ask it again.
+
+Keep going until the answer is small enough to fit in one breath. That's your spine. Then ask — *which blocks make this up?* You'll usually find four or five. Some you'll build. Most you'll buy or pull off the shelf. The one or two that are genuinely unique to your business — that's where your engineering time should go.
+
+Everything else is a block. Treat it like one.
+
+⸻
+
+**Most of what you think you need to build has already been figured out.** Someone, somewhere, has built a version of it and made it available. Your job isn't to rebuild it. Your job is to know which blocks to pick up, where to put them, and what to build between them that no one else can.
+
+That's the whole game.
 
 #### References
 * [Five Whys](https://en.wikipedia.org/wiki/Five_whys)

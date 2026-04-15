@@ -39,4 +39,8 @@ Scaling tech is directly related to scaling the org, we try to scale the technol
 Making a ritual is the easiest way to get everyone on board. Weave these things into cultural traditions. These become first-class tenets of your organization and thus result in a frictional less experience in scaling the org.
 There are many more engineering-specific, product planning-specific tips, but these are the ones I especially like. I may write more about deeper topics such as "Why we shouldn't do PRs" or why "Engineering metrics should be business metrics" for some more time to come.
 
-There are many more engineering-specific, product planning-specific tips, but these are the ones I especially like. I may write more about deeper topics such as "Why we shouldn't do PRs" or why "Engineering metrics should be business metrics" for some more time to come.
+⸻
+
+**You can't scale tech out of an un-scaled org.** Every time I've seen a team try, the tech scaled for a quarter and the org cracked everywhere else. Get the org right — the communication, the trust, the rituals — and the tech scales with you, almost by itself.
+
+That's the shortcut nobody wants to take. It's also the only one that works.

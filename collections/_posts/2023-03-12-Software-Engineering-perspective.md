@@ -59,4 +59,10 @@ One of the main driving forces was giving back to the startup community by helpi
 
 So, if you want to talk about building products, software engineering, or just about people, do drop a line. The easiest way to get to me is Twitter.
 
+⸻
+
+**Writing code for computers is the easy part. Writing code for humans — the colleagues who'll read it next year, the future-you who'll debug it at 2 AM — that's the craft.**
+
+Simple beats clever. Tests beat promises. And the code that's still readable in three years quietly wins every argument you thought you were having today.
+
 

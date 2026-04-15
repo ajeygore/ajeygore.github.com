@@ -76,3 +76,9 @@ Sometime, you can keep a large bunch of functionality at one place, yet, fan out
 
 While this post talks about fictional hawker and it's just a story. But on the other hand, as software developers, we should also think about us as Assemblers vs builders. Our job is to provide better consumer experience. It may not be necessary for us to build every part of software ourselves, but the more strategic point of view should be around providing the best experience to our end users. Thinking from that point of view will help us prioritise the feature delivery by either buying off the shelf or building from scratch. I think this requires another post, but I am sure that era of assemblers has arrived.
 
+⸻
+
+**Opexill never set out to build microservices. She set out to feed more people without making them wait.**
+
+That's the right order. Build for the customer, and the architecture will follow you there — monolith, services, assemblers, whatever it takes. The other way around is how you end up with beautiful systems that nobody uses.
+
