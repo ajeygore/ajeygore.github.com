@@ -15,13 +15,29 @@ lead_image: ajey_gore_website_card.png
 
             <h1 class="mb-4" style="font-weight: 500; font-size: 2.5rem;">Ajey Gore</h1>
 
-            <!-- Handshake Intro -->
+            <!-- Intro -->
             <section class="mb-4">
-                <p>I've been a <a href="/about" class="text-decoration-none">Group CTO building tech teams</a>, <a href="/content/talks" class="text-decoration-none">speaker on product strategy</a>, <a href="/blog" class="text-decoration-none">writer</a>, and <a href="https://github.com/ajeygore" target="_blank" class="text-decoration-none">hands-on coder</a>. I'm a <a href="/about" class="text-decoration-none">startup advisor</a>, systems thinker, and I love <a href="/tools" class="text-decoration-none">building product teams that ship</a>. Indian native, I now work globally with startups from my base in Singapore.</p>
+                <p>Software engineer turned <a href="/about" class="text-decoration-none">startup CTO</a> turned VC operating partner. I've spent over two decades <a href="/tools" class="text-decoration-none">building products</a>, <a href="/content/talks" class="text-decoration-none">scaling engineering teams</a>, and helping founders figure out the technology side of growing fast without breaking everything. I <a href="/blog" class="text-decoration-none">write</a>, <a href="https://github.com/ajeygore" target="_blank" class="text-decoration-none">code</a>, and <a href="/meetme" class="text-decoration-none">advise</a> from Singapore.</p>
             </section>
 
             <!-- Journey strip -->
             <p class="text-muted mb-5" style="font-size: 0.85rem; letter-spacing: 0.06em;">PeakXV &middot; Sequoia &middot; Gojek &middot; GoTo &middot; CodeIgnition &middot; Hoppr &middot; ThoughtWorks &middot; NCST</p>
+
+            <!-- Writing -->
+            <section class="mb-5">
+                <h2 class="h5 mb-3" style="color: var(--heading-color);">Writing</h2>
+                {% if site.posts.size > 0 %}
+                <ul class="list-unstyled">
+                    {% for post in site.posts limit:3 %}
+                    <li class="mb-3">
+                        <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+                        <span class="text-muted small d-block">{{ post.date | date: '%B %Y' }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p><a href="/blog" class="text-decoration-none">All posts →</a></p>
+                {% endif %}
+            </section>
 
             <!-- What I'm Up To -->
             <section class="mb-5">
@@ -39,22 +55,6 @@ lead_image: ajey_gore_website_card.png
                 <p>Before PeakXV, I was Group CTO at <strong>Gojek</strong>, where I helped scale the engineering team from a handful of people to over 2,000 across multiple countries. And before that, I spent a decade at <strong>ThoughtWorks</strong> — starting as their first India office employee and eventually leading technology for the India region.</p>
 
                 <p>Along the way, I co-founded <strong>CodeIgnition</strong> (acquired by Gojek), ran a startup called <strong>Hoppr</strong> (acquired by Hike), and tried my hand at everything from selling computers to running a printing press. <a href="/about" class="text-decoration-none">The longer version is here</a>.</p>
-            </section>
-
-            <!-- Writing -->
-            <section class="mb-5">
-                <h2 class="h5 mb-3" style="color: var(--heading-color);">Writing</h2>
-                {% if site.posts.size > 0 %}
-                <ul class="list-unstyled">
-                    {% for post in site.posts limit:3 %}
-                    <li class="mb-3">
-                        <a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
-                        <span class="text-muted small d-block">{{ post.date | date: '%B %Y' }}</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-                <p><a href="/blog" class="text-decoration-none">All posts →</a></p>
-                {% endif %}
             </section>
 
             <!-- Explore -->
