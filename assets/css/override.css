@@ -75,7 +75,7 @@ body {
     background-color: var(--bg-primary);
     line-height: 1.6;
     font-size: 1.25rem;
-    font-weight: 450;
+    font-weight: 500;
     transition: var(--transition);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -98,7 +98,7 @@ section {
 /* POST HEADER — newspaper headline style       */
 /* ============================================ */
 .post-header {
-    max-width: 720px;
+    max-width: 820px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -106,7 +106,7 @@ section {
 .post-title {
     font-family: "Newsreader", "Times New Roman", serif;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.15;
     color: var(--heading-color);
     margin-bottom: 0.4em;
@@ -115,7 +115,7 @@ section {
 .post-meta {
     font-family: "Newsreader", "Times New Roman", serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 450;
 }
 
 /* ============================================ */
@@ -125,7 +125,7 @@ section {
     font-size: 1.25rem;
     line-height: 1.6;
     letter-spacing: 0em;
-    max-width: 720px;
+    max-width: 820px;
     margin-left: auto;
     margin-right: auto;
 }
