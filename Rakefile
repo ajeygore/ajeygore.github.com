@@ -307,3 +307,19 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
+
+desc "Generate social-preview cards (og:image) for blog posts"
+task :og do
+  load File.expand_path('_scripts/generate_og_cards.rb', __dir__)
+  OgCardGenerator.new.run
+end
+
+namespace :og do
+  desc "Remove all generated social-preview cards"
+  task :clean do
+    out = File.expand_path('assets/images/blog/og', __dir__)
+    files = Dir[File.join(out, '*.png')]
+    files.each { |f| File.delete(f) }
+    puts "Removed #{files.size} card(s) from #{out}"
+  end
+end

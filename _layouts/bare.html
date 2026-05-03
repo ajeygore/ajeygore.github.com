@@ -196,6 +196,25 @@
     <meta name="googlebot" content="index, follow">
     <link rel="canonical" href="{{ site.production_url }}{{ page.url }}">
 
+    {%- comment -%}
+      Resolve og:image / twitter:image / JSON-LD image once.
+      Order: raster lead_image override > auto-generated post card > site default.
+    {%- endcomment -%}
+    {%- assign _has_raster_lead = false -%}
+    {%- if page.lead_image -%}
+      {%- assign _ext = page.lead_image | split: '.' | last | downcase -%}
+      {%- if _ext == 'png' or _ext == 'jpg' or _ext == 'jpeg' -%}
+        {%- assign _has_raster_lead = true -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- if _has_raster_lead -%}
+      {%- capture og_image -%}{{ site.production_url }}/assets/images/{{ page.lead_image }}{%- endcapture -%}
+    {%- elsif page.layout == 'post' -%}
+      {%- capture og_image -%}{{ site.production_url }}/assets/images/blog/og/{{ page.slug | downcase }}.png{%- endcapture -%}
+    {%- else -%}
+      {%- capture og_image -%}{{ site.production_url }}/assets/images/{{ site.lead_image }}{%- endcapture -%}
+    {%- endif -%}
+
     <!-- Article/Blog specific structured data -->
     {% if page.layout == 'post' %}
     <script type="application/ld+json">
@@ -218,11 +237,7 @@
             },
             "datePublished": "{{ page.date | date_to_xmlschema }}",
             "dateModified": "{{ page.date | date_to_xmlschema }}",
-            {% if page.lead_image %}
-            "image": "{{ site.production_url}}/assets/images/{{page.lead_image}}",
-            {% else %}
-            "image": "{{ site.production_url}}/assets/images/{{site.lead_image}}",
-            {% endif %}
+            "image": "{{ og_image }}",
             "description": "{% if page.description %}{{ page.description | escape }}{% else %}{{ page.excerpt | strip_html | strip_newlines | escape }}{% endif %}",
             "mainEntityOfPage": {
                 "@type": "WebPage",
@@ -256,13 +271,8 @@
     {% else %}
     <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
-    {% if page.lead_image %}
-    <meta name="twitter:image" content="{{ site.production_url}}/assets/images/{{page.lead_image}}">
-    <meta name="twitter:image:alt" content="{{ page.title }}">
-    {% else %}
-    <meta name="twitter:image" content="{{ site.production_url}}/assets/images/{{site.lead_image}}">
-    <meta name="twitter:image:alt" content="Ajey Gore">
-    {% endif %}
+    <meta name="twitter:image" content="{{ og_image }}">
+    <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title }}{% else %}Ajey Gore{% endif %}">
 
     <meta property="og:url" content="{{ site.production_url }}{{page.url}}" />
     <meta property="og:title"
@@ -279,11 +289,9 @@
     <meta property="og:description" content="{{ site.description }}">
     {% endif %}
 
-    {% if page.lead_image %}
-    <meta property="og:image" content="{{ site.production_url}}/assets/images/{{page.lead_image}}">
-    {% else %}
-    <meta property="og:image" content="{{ site.production_url}}/assets/images/{{site.lead_image}}">
-    {% endif %}
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
 </head>
 <body>

@@ -17,7 +17,9 @@
       "Bash(bundle exec:*)",
       "Bash(git:*)",
       "Bash(ls:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(rm /tmp/verify_og_liquid.rb /tmp/verify_bare_render.rb /tmp/chrome-og-test*.html /tmp/chrome-og-test*.png /tmp/og-test*.html /tmp/og-test*.png /tmp/og-test/* /tmp/og-1200x690.png /tmp/og-final.html /tmp/og-final.png /tmp/og-resampled.png /tmp/og-design.html /tmp/og-crop-test.png /tmp/ruler*.html /tmp/ruler*.png /tmp/c-*.png)",
+      "Bash(rmdir /tmp/og-test)"
     ],
     "deny": [],
     "ask": []
