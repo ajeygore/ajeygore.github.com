@@ -207,10 +207,12 @@
         {%- assign _has_raster_lead = true -%}
       {%- endif -%}
     {%- endif -%}
+    {%- assign _og_is_autocard = false -%}
     {%- if _has_raster_lead -%}
       {%- capture og_image -%}{{ site.production_url }}/assets/images/{{ page.lead_image }}{%- endcapture -%}
     {%- elsif page.layout == 'post' -%}
       {%- capture og_image -%}{{ site.production_url }}/assets/images/blog/og/{{ page.slug | downcase }}.png{%- endcapture -%}
+      {%- assign _og_is_autocard = true -%}
     {%- else -%}
       {%- capture og_image -%}{{ site.production_url }}/assets/images/{{ site.lead_image }}{%- endcapture -%}
     {%- endif -%}
@@ -290,8 +292,8 @@
     {% endif %}
 
     <meta property="og:image" content="{{ og_image }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    {% if _og_is_autocard %}<meta property="og:image:width" content="2400">
+    <meta property="og:image:height" content="1260">{% endif %}
 
 </head>
 <body>

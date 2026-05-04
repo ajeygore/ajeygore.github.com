@@ -16,7 +16,7 @@ ROOT = File.expand_path('..', __dir__)
 POSTS_DIR = File.join(ROOT, 'collections', '_posts')
 OUT_DIR = File.join(ROOT, 'assets', 'images', 'blog', 'og')
 TEMPLATE = File.join(ROOT, '_data', 'og_template.html')
-PHOTO = File.join(ROOT, 'assets', 'images', 'ajey_gore.png')
+PHOTO = File.join(ROOT, 'assets', 'images', 'ajey_bw.png')
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 class OgCardGenerator
@@ -114,13 +114,14 @@ class OgCardGenerator
 
       cmd = [
         CHROME, '--headless=new', '--disable-gpu', '--hide-scrollbars',
-        '--window-size=1200,690', '--default-background-color=fafafaff',
+        '--window-size=1200,690', '--force-device-scale-factor=2',
+        '--default-background-color=fafafaff',
         "--screenshot=#{png_path}", "file://#{html_path}"
       ]
       ok = system(*cmd, out: File::NULL, err: File::NULL)
       raise "Chrome render failed for #{slug}" unless ok && File.exist?(png_path)
 
-      ok = system('sips', '-c', '630', '1200', '--cropOffset', '-30', '0',
+      ok = system('sips', '-c', '1260', '2400', '--cropOffset', '-60', '0',
                   png_path, out: File::NULL, err: File::NULL)
       raise "sips crop failed for #{slug}" unless ok
 
