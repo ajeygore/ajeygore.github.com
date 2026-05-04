@@ -16,7 +16,7 @@ ROOT = File.expand_path('..', __dir__)
 POSTS_DIR = File.join(ROOT, 'collections', '_posts')
 OUT_DIR = File.join(ROOT, 'assets', 'images', 'blog', 'og')
 TEMPLATE = File.join(ROOT, '_data', 'og_template.html')
-PHOTO = File.join(ROOT, 'assets', 'images', 'ajey_bw.png')
+PHOTO = File.join(ROOT, 'assets', 'images', 'blog_sketch.png')
 CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
 
 class OgCardGenerator
