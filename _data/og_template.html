@@ -5,28 +5,28 @@
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   html,body{width:1200px;height:630px;overflow:hidden;background:#fafafa;}
-  .card{position:relative;width:1200px;height:630px;background:#fafafa;font-family:Georgia,'Times New Roman',serif;}
-  .left{position:absolute;top:0;left:0;width:540px;height:630px;display:flex;align-items:center;justify-content:center;}
-  .left img{width:540px;height:540px;object-fit:contain;display:block;}
-  .right{position:absolute;top:0;left:540px;width:660px;height:630px;}
-  .top{position:absolute;top:90px;left:30px;right:60px;}
+  .card{position:relative;width:1200px;height:630px;background:#fafafa;font-family:Georgia,'Times New Roman',serif;border:2px solid #111;}
+  .sketch{position:absolute;top:8px;left:8px;width:610px;height:610px;}
+  .sketch img{width:100%;height:100%;object-fit:contain;display:block;}
+  .pane{position:absolute;top:8px;left:626px;right:8px;bottom:8px;}
+  .title-wrap{position:absolute;top:90px;left:0;right:0;}
   .title{color:#111;font-style:italic;font-weight:400;letter-spacing:-0.012em;}
-  .title.s1{font-size:62px;line-height:1.1;}
+  .title.s1{font-size:60px;line-height:1.1;}
   .title.s2{font-size:48px;line-height:1.14;}
   .title.s3{font-size:36px;line-height:1.18;}
-  .bot{position:absolute;bottom:60px;left:30px;right:60px;display:flex;justify-content:space-between;align-items:flex-end;}
+  .footer{position:absolute;bottom:50px;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-end;}
   .name{color:#111;font-weight:700;font-size:22px;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:0.1em;text-transform:uppercase;font-style:normal;}
   .url{color:#888;font-size:20px;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:0.04em;font-style:normal;}
 </style>
 </head>
 <body>
   <div class="card">
-    <div class="left"><img src="{{IMAGE_PATH}}" alt=""/></div>
-    <div class="right">
-      <div class="top"><div class="title {{TITLE_CLASS}}">{{TITLE}}</div></div>
-      <div class="bot">
+    <div class="sketch"><img src="{{IMAGE_PATH}}" alt=""/></div>
+    <div class="pane">
+      <div class="title-wrap"><div class="title {{TITLE_CLASS}}">{{TITLE}}</div></div>
+      <div class="footer">
         <div class="name">Ajey Gore</div>
-        <div class="url">ajeygore.com</div>
+        <div class="url">ajeygore.in</div>
       </div>
     </div>
   </div>
