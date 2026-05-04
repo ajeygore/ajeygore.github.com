@@ -21,6 +21,7 @@ timezone: Asia/Singapore
 production_url : https://ajeygore.in
 url: https://ajeygore.in
 baseurl: ""
+repository: ajeygore/ajeygore.github.com
 
 collections_dir: collections
 
