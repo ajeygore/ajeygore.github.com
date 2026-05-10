@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="New org shape: small Why at top, larger What as the dominant middle, smaller harder How below, and an Agents foundation doing the conversion work.">
+  <defs>
+    <linearGradient id="newBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="55%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="newWhy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="newWhat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="newHow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="newAgents" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <radialGradient id="newGlow" cx="50%" cy="22%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#newBg)"/>
+  <ellipse cx="400" cy="120" rx="320" ry="140" fill="url(#newGlow)"/>
+
+  <text x="400" y="44" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#1e293b">The New Shape</text>
+  <text x="400" y="68" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">Why stays. What grows. How shrinks but gets harder. Agents do the conversion.</text>
+
+  <!-- WHY: still small at top -->
+  <polygon points="380,110 420,110 425,150 375,150" fill="url(#newWhy)"/>
+  <text x="400" y="136" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="2">WHY</text>
+
+  <!-- WHAT: now wider — the new dominant middle -->
+  <polygon points="375,150 425,150 560,260 240,260" fill="url(#newWhat)"/>
+  <text x="400" y="212" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#ffffff" letter-spacing="2">WHAT</text>
+  <text x="400" y="236" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.9">taste · judgement · defining "good"</text>
+
+  <!-- HOW: smaller but harder -->
+  <polygon points="240,260 560,260 510,360 290,360" fill="url(#newHow)"/>
+  <text x="400" y="304" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="2">HOW</text>
+  <text x="400" y="328" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.9">architecture · trust systems · the harness</text>
+
+  <!-- AGENTS: the new foundation -->
+  <rect x="180" y="380" width="440" height="62" rx="6" fill="url(#newAgents)"/>
+  <text x="400" y="408" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="2">AGENTS</text>
+  <text x="400" y="427" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.9">writing · reviewing · drafting · filing · translating</text>
+
+  <!-- Footer caption -->
+  <text x="400" y="476" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#475569" font-style="italic">"The middle thinned. The ends thickened. Coordination collapsed. Contribution went up."</text>
+</svg>

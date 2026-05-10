@@ -18,6 +18,8 @@ If you draw the org chart of any software company built in the last thirty years
 
 There's a small group at the top deciding *why* — why we exist, why this market, why now. Below them, a slightly larger group deciding *what* — what to build, what to ship, what to cut. And underneath both of those, the broad middle of the company, the part where the headcount actually lives — the *how*. Engineers, project managers, scrum masters, tech leads, engineering managers, program managers, who took the *what* and translated it into code, into tickets, into deployments, into release notes, into Slack messages in #releases.
 
+<p><img src="/assets/images/blog/the-why-and-the-what-old-org.svg" alt="The old org chart pyramid — small Why at top, larger What in the middle, broad How at the base where most of the headcount lives" class="responsive" /></p>
+
 I've been part of every layer. I've sat in the *why* room. I've run the *what* meetings. I've shipped a lot of *how*. I've also argued, for a long time and in a lot of rooms, that the middle of that pyramid was bigger than it needed to be — that leaders should be co-workers, not reviewers, and that managers who only managed were a tax the team paid for the privilege of having a status meeting. That argument never quite landed either. Same shape as [the one I lost about tests](/content/the-tests-we-skipped) — the cost was paid in slow, distributed ways that nobody in the room wanted to add up.
 
 What's on my mind a year into the agent shift is that the bill is finally getting itemised. And the line that's getting cut is the one I've been pointing at for years.
@@ -75,6 +77,8 @@ A much smaller group of people doing *how* — and the *how* people who remain a
 And then the agents themselves, doing the bulk of the conversion work. Writing the PR. Updating the doc. Filing the ticket. Drafting the release note. Reviewing each other's outputs.
 
 The team that's left is smaller in headcount and broader in skill at every level. The middle thinned. The ends thickened. Coordination collapsed. Contribution went up.
+
+<p><img src="/assets/images/blog/the-why-and-the-what-new-org.svg" alt="The new org shape — Why stays small, What grows into the dominant middle, How shrinks but gets harder, and Agents form the foundation doing the conversion work" class="responsive" /></p>
 
 ⸻
 

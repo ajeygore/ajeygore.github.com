@@ -1,0 +1,49 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Traditional org chart pyramid: small Why at top, slightly larger What in the middle, and a broad How layer at the base where most of the headcount lives.">
+  <defs>
+    <linearGradient id="oldBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef3c7"/>
+      <stop offset="55%" stop-color="#fef9e7"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="oldWhy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="oldWhat" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="oldHow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <radialGradient id="oldGlow" cx="50%" cy="22%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#oldBg)"/>
+  <ellipse cx="400" cy="120" rx="320" ry="140" fill="url(#oldGlow)"/>
+
+  <text x="400" y="44" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#1e293b">The Old Org Chart</text>
+  <text x="400" y="68" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748b">A translation pipeline. Why → What → How.</text>
+
+  <!-- WHY: small triangle at apex -->
+  <polygon points="380,110 420,110 425,150 375,150" fill="url(#oldWhy)"/>
+  <text x="400" y="136" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#ffffff" letter-spacing="2">WHY</text>
+
+  <!-- WHAT: medium trapezoid -->
+  <polygon points="375,150 425,150 460,230 340,230" fill="url(#oldWhat)"/>
+  <text x="400" y="196" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff" letter-spacing="2">WHAT</text>
+
+  <!-- HOW: broad trapezoid base -->
+  <polygon points="340,230 460,230 620,440 180,440" fill="url(#oldHow)"/>
+  <text x="400" y="298" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#ffffff" letter-spacing="2">HOW</text>
+  <text x="400" y="328" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.9">Engineers · PMs · Scrum Masters · Tech Leads</text>
+  <text x="400" y="346" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffffff" opacity="0.9">Engineering Managers · Program Managers</text>
+  <text x="400" y="392" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-style="italic" fill="#ffffff" opacity="0.7">intent → spec → ticket → branch → PR → deployment → release note</text>
+
+  <!-- Footer caption -->
+  <text x="400" y="476" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#475569" font-style="italic">"The middle is where the headcount lives."</text>
+</svg>
