@@ -8,7 +8,7 @@ lead_image: blog/og/the-anatomy-of-an-ai-native-org.png
 ---
 
 <div class="footnote">
-<strong>&ldquo;The middle of the org chart was always translation work. Translation just got cheap.&rdquo;</strong>
+<strong>&ldquo;For thirty years we were glorified translators — business asked why, product defined what, engineering translated to how. AI just ate the translation step.&rdquo;</strong>
 <p/>
 </div>
 
@@ -48,7 +48,7 @@ Hold that honestly. Not as a doom story. As a fact about the shape of work.
 
 #### The manager who doesn't contribute
 
-Here's a hard one, because it's about people I've worked with and respected. I've also been making this argument, in less direct language, for years — so this isn't a new position, it's an old one with sharper teeth.
+Here's a hard one, because it's about people I've worked with and respected.
 
 A lot of engineering managers exist to coordinate translation. They run the standup. They unblock the ticket. They negotiate priority across teams. They write the status update. They translate engineering progress upward into business language and business priorities downward into engineering language.
 
@@ -72,7 +72,7 @@ A small group of people defining *why*, mostly unchanged. The *why* layer was al
 
 A larger group than before defining *what*. Not "product managers" in the old sense — not the ticket-writing, JIRA-grooming, sprint-planning archetype. People who can sit between the *why* and the agent, hold the context of what's actually being built, and make the dozens of small calls per day about what "good" looks like. This is taste work. This is judgement work. This is what [The Expensive Thing](/content/the-expensive-thing) was about. The ratio of *what* people to *how* people is going to flip in the next two years, and most teams are not ready for it.
 
-A much smaller group of people doing *how* — and the *how* people who remain are doing the hardest *how* work. Not ticket conversion. Architecture. Trust systems. Performance. The 5% of the codebase the agent shouldn't touch unsupervised. The harness from [The Tests We Skipped](/content/the-tests-we-skipped) — the specs, the eval suites, the golden builds, the agent-of-agent review patterns. Someone has to design that harness. That someone is an engineer with deep judgement, and there are fewer of them on each team than there used to be, but each of them is doing dramatically more.
+A much smaller group of people doing *how* — and the *how* people who remain are doing the hardest *how* work. Not ticket conversion. Architecture. Trust systems. Performance. The 5% of the codebase the agent shouldn't touch unsupervised. The harness — the specs, the eval suites, the golden builds, the agent-of-agent review patterns. Someone has to design that harness. That someone is an engineer with deep judgement, and there are fewer of them on each team than there used to be, but each of them is doing dramatically more.
 
 And then the agents themselves, doing the bulk of the conversion work. Writing the PR. Updating the doc. Filing the ticket. Drafting the release note. Reviewing each other's outputs.
 
@@ -86,7 +86,7 @@ The team that's left is smaller in headcount and broader in skill at every level
 
 The phrase "hands-on" used to mean writing code. It still does, sometimes. But the deeper meaning is being in the work — close enough to the output that you can see when it's wrong, opinionated enough about the input that you can define what right looks like.
 
-A founder writing prompts that drive an agent's product roadmap is hands-on. A CTO designing the eval suite that gates production deploys is hands-on. A staff engineer specifying the contracts an agent must respect when modifying core code is hands-on. None of them are necessarily writing the code anymore. All of them are in the work. This is what I said years ago when I wrote that leaders should be co-workers, not reviewers — that *passing down comments* was the cheap version of leadership, and the real version was *showing what's possible by doing it.* The agent era doesn't change the principle. It removes the alibi.
+A founder writing prompts that drive an agent's product roadmap is hands-on. A CTO designing the eval suite that gates production deploys is hands-on. A staff engineer specifying the contracts an agent must respect when modifying core code is hands-on. None of them are necessarily writing the code anymore. All of them are in the work. The principle was always the same — *passing down comments* is the cheap version of leadership, and the real version is *showing what's possible by doing it.* The agent era doesn't change the principle. It removes the alibi.
 
 What's *not* hands-on is approving JIRA tickets in batches. Running a status meeting where everyone reads off their updates. Writing a strategy doc that nobody operates from. Sitting in the layer above the work, translating between what the team did this week and what the business wants next week. That layer is shrinking. The hands-on layer is the layer that survives.
 
@@ -96,13 +96,13 @@ This is uncomfortable for a lot of senior people. It was uncomfortable for me, w
 
 #### What this means if you're hiring
 
-Stop hiring for translation. Stop writing job descriptions that read like they were generated from a 2018 engineering ladder. Senior engineers whose pitch is "I can convert tickets to PRs faster than the next person" are going to be very confused, very soon, about what they're doing every day. You don't need them. You need engineers who can define a harness, hold the line on quality, and design systems an agent can safely operate inside.
+The hard thing to say out loud is also the first thing to get right: you're going to hire fewer people. The team that does the same amount of work next year is going to be meaningfully smaller. Not because the people were bad. Because the translation layer collapsed. Every org that pretends otherwise is going to end up with the worst of both worlds — more tools, more headcount, slower output.
 
-Stop hiring engineering managers whose primary skill is coordination. Hire managers who can contribute — to design, to definition, to the trust system. The standup-runner archetype is over.
+Once you've accepted that, the rest gets clearer. Stop writing job descriptions that read like they were generated from a 2018 engineering ladder. The senior engineer whose pitch is "I can convert tickets to PRs faster than the next person" is going to be very confused, very soon, about what they're doing every day. You need engineers who can define a harness, hold the line on quality, and design systems an agent can safely operate inside.
 
-Hire more *what* people. Not product managers as ticket factories. *What* people who can hold a thesis, define "good" in ambiguous situations, and operate the agent themselves rather than handing intent over a wall to someone else.
+The standup-runner archetype of engineering manager is over. The managers who survive are the ones who contribute — to design, to definition, to the trust system. Coordination on its own doesn't justify the seat anymore.
 
-Hire fewer people total. This is the hard one to say out loud. The team that does the same amount of work next year is going to have meaningfully fewer people. Not because the people were bad. Because the translation layer collapsed. Pretending otherwise leads to bloated orgs that move slower despite better tools, which is the worst of both worlds.
+And hire more *what* people. Not product managers as ticket factories. People who can hold a thesis, define "good" in ambiguous situations, and operate the agent themselves rather than handing intent over a wall. The ratio of *what* to *how* is about to flip. Most teams aren't ready for it.
 
 ⸻
 
@@ -114,7 +114,7 @@ Pick up the work the agent can't do. Define what "correct" means. Build the harn
 
 The middle is the dangerous place to be right now. Not because middle people are bad. Because the middle is where the translation work was concentrated, and the translation work is the work that's going.
 
-The good news — and I keep saying this because I believe it — is that this is a paradigm shift, not a job crisis. The work that's left is more interesting and more valuable than the work that's leaving. Defining the *why* and the *what* is more rewarding than running the standup. Designing the harness is more rewarding than approving the ticket. The shape of the team is changing because the shape of the work is changing, and the work is getting closer to what we always said we wanted it to be — judgement-heavy, hands-on, outcome-owning.
+The work that's left is more interesting and more valuable than the work that's leaving. Defining the *why* and the *what* is more rewarding than running the standup. Designing the harness is more rewarding than approving the ticket. The shape of the team is changing because the shape of the work is changing, and the work is getting closer to what we always said we wanted — judgement-heavy, hands-on, outcome-owning. That's not spin. It's what happens when you strip out the translation layer and look at what's underneath it.
 
 ⸻
 
@@ -130,6 +130,6 @@ The work was always the *why* and the *what*. We just spent thirty years pretend
 
 The teams that figure out the new shape first are going to look unrecognisable to their competitors. Smaller. Stranger. More opinionated. Closer to the work. The harness from [The Tests We Skipped](/content/the-tests-we-skipped) is what makes this shape safe to operate — without it, the small team plus agents is a faster way to ship the wrong thing. With it, the small team plus agents is what the rest of the org chart used to look like before we built the translation pipeline on top of it.
 
-That's the shape I'm watching for. That's the shape I think wins. And — for what it's worth — that's the shape I've been arguing for in different language for a long time. The agents are the deadline that finally makes the room move.
+That's the shape I'm watching for. That's the shape I think wins.
 
-More to come.
+The agents are the deadline that finally makes the room move.
