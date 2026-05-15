@@ -970,3 +970,82 @@ footer, footer a {
         font-size: 0.85rem;
     }
 }
+
+/* ============================================ */
+/* ANCHOR SCROLL OFFSET (clears sticky nav) */
+/* ============================================ */
+
+.post-content [id] {
+    scroll-margin-top: 70px;
+}
+
+/* ============================================ */
+/* TABLES IN POST CONTENT */
+/* ============================================ */
+
+.post-content table {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.75em 0 2em 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--text-primary);
+}
+
+.post-content thead th {
+    text-align: left;
+    font-weight: 600;
+    padding: 0.85rem 1rem;
+    border-bottom: 2px solid var(--text-primary);
+    background: var(--bg-secondary);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.post-content tbody tr {
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.15s ease;
+}
+
+.post-content tbody tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+.post-content tbody tr:last-child {
+    border-bottom: 1.5px solid var(--text-primary);
+}
+
+.post-content tbody td {
+    padding: 0.9rem 1rem;
+    vertical-align: top;
+}
+
+.post-content tbody td:first-child {
+    font-weight: 600;
+}
+
+.post-content tbody td:first-child a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+}
+
+.post-content tbody td:first-child a:hover {
+    border-bottom-style: solid;
+}
+
+@media (max-width: 768px) {
+    .post-content table {
+        font-size: 0.85rem;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .post-content thead th,
+    .post-content tbody td {
+        padding: 0.7rem 0.65rem;
+    }
+}
