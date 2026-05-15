@@ -4,7 +4,7 @@ title: "AI ate my role! What's next?"
 published: true
 categories: [AI, Leadership, Teams, Careers]
 description: "The Anatomy of an AI-Native Org argued that the middle of the org chart collapses because translation work is the work that gets eaten. This is the role-by-role walkthrough for anyone who asked the obvious next question — what happens to my job specifically?"
-lead_image: blog/og/after-the-translators.png
+lead_image: blog/og/ai-ate-my-role-whats-next.png
 ---
 
 <div class="footnote">
