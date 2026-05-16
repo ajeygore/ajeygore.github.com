@@ -4,6 +4,12 @@
   short_description: Surge 07 / Peak XV
   date: 1 November 2022
 
+- title: "Acknowledging and addressing technical debt in startups and scale-ups"
+  link: https://www.thoughtworks.com/insights/podcasts/technology-podcasts/acknowledging-addressing-technical-debt-startups-scale-ups
+  description: "**Tech Debt Reality** - A Thoughtworks Technology Podcast with Rebecca Parsons and Tim Cochran on the three faces of technical debt - innocent, reckless, and overconfident - and how to remediate without freezing the roadmap. Pit stops over full stops."
+  short_description: Thoughtworks Technology Podcast
+  date: 22 September 2022
+
 - title: "Culture and Code: Hiring with Hands Tied"
   link: https://www.youtube.com/embed/VOdRwKqjcfc
   description: "**Hiring at Scale** - How do you hire great engineers when the odds are stacked against you? Episode 1 of the Culture and Code series produced during Ajey's time at Sequoia India & SEA."
