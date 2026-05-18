@@ -12,6 +12,20 @@ Frontmatter knobs:
 {%- assign source_content = include.rendered_content | default: page.content -%}
 {%- assign first_p_html = source_content | lede_paragraph -%}
 {%- assign body_epigraph = source_content | extract_epigraph -%}
+
+{%- comment -%}
+  Defensive: if the lede_paragraph filter isn't registered (Jekyll safe
+  mode silently skips _plugins), Liquid passes the input through and
+  first_p_html ends up being the entire rendered post body. Detect that
+  by looking for block-level tags and drop the lede rather than wrap the
+  whole article in <p class="post-lede">.
+{%- endcomment -%}
+{%- if first_p_html contains '<h2' or first_p_html contains '<h3' or first_p_html contains '<div' or first_p_html contains '<hr' -%}
+  {%- assign first_p_html = '' -%}
+{%- endif -%}
+{%- if body_epigraph contains '<h2' or body_epigraph contains '<h3' or body_epigraph contains '<p>' -%}
+  {%- assign body_epigraph = '' -%}
+{%- endif -%}
 {%- assign show_dropcap = true -%}
 {%- if page.dropcap == false -%}{%- assign show_dropcap = false -%}{%- endif -%}
 

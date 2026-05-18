@@ -26,7 +26,12 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-          cache-version: 0
+          # Bumped to invalidate the cached bundle that still had github-pages.
+          # The github-pages gem forces Jekyll into safe mode, which silently
+          # disables _plugins/*.rb — so post_helpers.rb wouldn't register and
+          # the post layout broke (reading_minutes passing the entire post
+          # body through unchanged into the <span class="post-reading-time">).
+          cache-version: 1
           
       - name: Setup Pages
         id: pages
