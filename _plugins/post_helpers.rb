@@ -11,6 +11,12 @@ require 'nokogiri'
 module PostHelpers
   WORDS_PER_MINUTE = 220
 
+  # Probe: returns a sentinel string. If this filter doesn't render the
+  # expected value in the page, the plugin didn't load.
+  def plugin_loaded_probe(_input)
+    'PLUGIN_LOADED_OK'
+  end
+
   def reading_minutes(input)
     return 0 if input.nil?
     text = input.is_a?(String) ? input : input.to_s
