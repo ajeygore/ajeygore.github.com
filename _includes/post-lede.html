@@ -1,31 +1,13 @@
 {%- comment -%}
 Renders the post's lede — an optional epigraph plus the first paragraph
-treated with a drop cap. Pulls the first <p> out of the rendered content so
-post.html can render the remainder separately. Falls back to nothing if the
-post has no body paragraphs (e.g. a stub).
+treated with a drop cap. Values are pre-computed by the editorial Jekyll
+hook (see _plugins/post_helpers.rb) and live under page.editorial.*.
 
 Frontmatter knobs:
   epigraph: "Short quotation that sits above the lede"
-  dropcap: false   # opt out of the drop cap (useful for posts that start with an image)
+  dropcap: false   # opt out of the drop cap
 {%- endcomment -%}
 
-{%- assign source_content = include.rendered_content | default: page.content -%}
-{%- assign first_p_html = source_content | lede_paragraph -%}
-{%- assign body_epigraph = source_content | extract_epigraph -%}
-
-{%- comment -%}
-  Defensive: if the lede_paragraph filter isn't registered (Jekyll safe
-  mode silently skips _plugins), Liquid passes the input through and
-  first_p_html ends up being the entire rendered post body. Detect that
-  by looking for block-level tags and drop the lede rather than wrap the
-  whole article in <p class="post-lede">.
-{%- endcomment -%}
-{%- if first_p_html contains '<h2' or first_p_html contains '<h3' or first_p_html contains '<div' or first_p_html contains '<hr' -%}
-  {%- assign first_p_html = '' -%}
-{%- endif -%}
-{%- if body_epigraph contains '<h2' or body_epigraph contains '<h3' or body_epigraph contains '<p>' -%}
-  {%- assign body_epigraph = '' -%}
-{%- endif -%}
 {%- assign show_dropcap = true -%}
 {%- if page.dropcap == false -%}{%- assign show_dropcap = false -%}{%- endif -%}
 
@@ -33,13 +15,12 @@ Frontmatter knobs:
 <aside class="post-epigraph">
   <p>{{ page.epigraph }}</p>
 </aside>
-{%- elsif body_epigraph != '' -%}
+{%- elsif page.editorial.epigraph_html -%}
 <aside class="post-epigraph">
-  <p>{{ body_epigraph }}</p>
+  <p>{{ page.editorial.epigraph_html }}</p>
 </aside>
 {%- endif -%}
 
-{%- assign first_p_size = first_p_html | size -%}
-{%- if first_p_size > 0 -%}
-<p class="post-lede{% if show_dropcap %} has-dropcap{% endif %}">{{ first_p_html }}</p>
+{%- if page.editorial.lede_html -%}
+<p class="post-lede{% if show_dropcap %} has-dropcap{% endif %}">{{ page.editorial.lede_html }}</p>
 {%- endif -%}

@@ -2,39 +2,30 @@
 layout: bare
 ---
 
-{%- comment -%}
-  `content` is the rendered HTML of the post (markdown already converted).
-  `page.content` would still be the raw markdown, so we capture and pass down.
-{%- endcomment -%}
-{%- capture rendered_content -%}{{ content }}{%- endcapture -%}
-
 <div class="reading-progress" role="presentation" aria-hidden="true">
   <span class="reading-progress__bar" data-reading-progress></span>
 </div>
 
-<!-- plugin-probe: {{ '' | plugin_loaded_probe }} -->
-{%- assign _diag_content = content -%}
-<!-- diag-content-size: {{ _diag_content | size }} -->
-<!-- diag-actual-wc: {{ _diag_content | word_count }} -->
-<!-- diag-actual-rm: {{ _diag_content | reading_minutes }} -->
-<!-- diag-actual-toc-first-300: {{ _diag_content | extract_toc | slice: 0, 300 | escape }} -->
 <article class="post fade-in-up" data-post-article>
   {% include post-hero.html %}
 
   <header class="post-header">
-    {% include post-meta.html rendered_content=rendered_content %}
+    {% include post-meta.html %}
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.description %}
     <p class="post-deck">{{ page.description }}</p>
     {% endif %}
   </header>
 
-  {% include post-lede.html rendered_content=rendered_content %}
-
-  {% include post-toc.html rendered_content=rendered_content %}
+  {% include post-lede.html %}
+  {% include post-toc.html %}
 
   <div class="post-content">
-    {{ rendered_content | content_without_lede }}
+    {%- if page.editorial.content_html -%}
+      {{ page.editorial.content_html }}
+    {%- else -%}
+      {{ content }}
+    {%- endif -%}
   </div>
 
   <hr class="ornament post-content__end-ornament" />

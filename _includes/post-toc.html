@@ -2,20 +2,17 @@
 Sticky table of contents. Renders only when:
   * page.toc == true (explicit opt-in), OR
   * word count >= 1500 (auto for long-form essays)
-Also requires at least 3 H2/H3 anchors in the body — otherwise it's noise.
-The data is emitted as JSON in a data attribute and rendered/decorated by
-assets/scripts/post.js (so we don't need a Liquid for-loop in two places).
+Data is pre-computed by the editorial hook into page.editorial.toc_json.
 {%- endcomment -%}
 
-{%- assign source_content = include.rendered_content | default: page.content -%}
-{%- assign word_total = source_content | word_count | plus: 0 -%}
+{%- assign word_total = page.editorial.word_count | default: 0 -%}
 {%- assign show_toc = false -%}
 {%- if page.toc == true -%}{%- assign show_toc = true -%}{%- endif -%}
 {%- if page.toc == nil and word_total >= 1500 -%}{%- assign show_toc = true -%}{%- endif -%}
 {%- if page.toc == false -%}{%- assign show_toc = false -%}{%- endif -%}
 
 {%- if show_toc -%}
-  {%- assign toc_json = source_content | extract_toc -%}
+  {%- assign toc_json = page.editorial.toc_json | default: '[]' -%}
   {%- unless toc_json == '[]' -%}
 <aside class="post-toc" data-post-toc='{{ toc_json | escape }}' aria-label="On this page">
   <button class="post-toc__toggle" type="button" aria-expanded="false" aria-controls="post-toc-list">

@@ -1,14 +1,5 @@
 {%- assign cats = page.categories | post_categories_normalized -%}
-{%- assign source_content = include.rendered_content | default: page.content -%}
-{%- assign minutes = source_content | reading_minutes -%}
-{%- comment -%}
-  Defensive: if the reading_minutes filter ever fails to register (e.g.
-  Jekyll safe mode), Liquid passes the input through unchanged. That would
-  dump the entire post HTML into the byline. Detect a non-numeric result
-  and fall back to nothing rather than corrupting the markup.
-{%- endcomment -%}
-{%- assign _minutes_num = minutes | plus: 0 -%}
-{%- if _minutes_num == 0 -%}{%- assign minutes = nil -%}{%- endif -%}
+{%- assign minutes = page.editorial.reading_minutes -%}
 
 <div class="post-meta">
   {%- if cats.size > 0 -%}
