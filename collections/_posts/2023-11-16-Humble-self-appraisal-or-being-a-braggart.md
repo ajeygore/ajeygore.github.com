@@ -44,7 +44,7 @@ you create a balanced and honest self-appraisal.
 
 And it's not bragging if it's based on facts and shared with humility and gratitude. And that's how your professional growth and recognition will be.
 
-⸻
+<hr class="ornament" />
 
 **Self-appraisal isn't bragging. It's the annual reminder that you were there, you did the work, and you grew.**
 

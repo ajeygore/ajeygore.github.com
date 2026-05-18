@@ -7,12 +7,11 @@ description: "It started with a friend weighing a dedicated Mac against a VM ful
 lead_image: blog/why_clawstation.svg
 ---
 
-<div class="footnote">
-<strong>&ldquo;The tool is free. The friction is not.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>The tool is free. The friction is not.</p>
 </div>
 
-#### It started with a friend
+## It started with a friend
 
 Few months ago, a friend pinged me late one evening. He's a founder — not a developer, but deeply tech-first. The kind of person who reads release notes for fun, runs Homebrew updates on a Sunday, tries every new AI tool the week it drops. He'd been playing with OpenClaw for a while. Getting the Gateway up, wiring Telegram, experimenting with skills. He loves this stuff.
 
@@ -28,9 +27,9 @@ We spent the afternoon doing the VM path anyway. We got it working. He was happy
 
 *Why is this so much work? It shouldn't be.*
 
-⸻
+<hr class="ornament" />
 
-#### The first version was small
+## The first version was small
 
 That week, I started writing a tiny script to automate what we'd done manually. Provision a server. Install OpenClaw. Wire up Telegram. Give him back a URL and a dashboard. I wasn't trying to build a company. I was trying to save the next friend who asked.
 
@@ -46,9 +45,9 @@ Not in a grand startup pitch way. In a small, "this seems useful, let's make it 
 
 No market analysis. No pitch deck. No competitive landscape slide. Just — if I can take the hard part out of this for one friend, I can take it out for a lot of people. Including, eventually, my son.
 
-⸻
+<hr class="ornament" />
 
-#### What I kept seeing
+## What I kept seeing
 
 Something funny happens when you put a product in front of real people. They tell you things the product teams and the Twitter threads and the hot takes never quite capture.
 
@@ -64,9 +63,9 @@ I started keeping a list. Not because I needed a feature roadmap, but because I 
 
 Each of these, on its own, is a solvable problem. The people I was helping could solve any one of them if they really had to. But **none of them signed up to solve solvable problems.** They signed up to play with AI. To build something. To see what was possible. The agent was supposed to be the point. Instead, **the agent was the small island of delight surrounded by a sea of ops work.**
 
-⸻
+<hr class="ornament" />
 
-#### The bigger thing
+## The bigger thing
 
 I've been thinking about something for a while — and wrote about it in my [last post](/content/the-expensive-thing). When execution gets cheap, judgment becomes the expensive thing. Agents compress execution to nearly zero. The question is what you actually do with that.
 
@@ -78,9 +77,9 @@ I've seen this pattern my whole career. At Gojek we scaled from 300,000 to 120 m
 
 AI agents have the exact same problem. And right now, the plumbing is eating the time of exactly the people who should be out there exploring what these tools can actually do.
 
-⸻
+<hr class="ornament" />
 
-#### So what are we actually doing?
+## So what are we actually doing?
 
 Honestly, I'm still figuring it out. ClawStation today is a simple thing — you sign in with Google, pick a model, connect a messaging channel, and in under a minute you have a personal AI assistant running on dedicated, secured infrastructure. No Docker. No YAML. No TLS renewal at 2 AM. It just works, and you still get SSH, a terminal, file access — the keys to the kingdom, if and when you want them.
 
@@ -96,9 +95,9 @@ That's the mission I'm slowly growing into. Not "let's build another AI platform
 
 And when I say everyone, I mean it. Founders. Investors. Curious tinkerers. Small teams. My son, eventually. Anyone who wants to find out what they can do with a thinking, tool-using, always-on assistant — without first becoming their own IT department.
 
-⸻
+<hr class="ornament" />
 
-#### Why this, why now
+## Why this, why now
 
 I took a pause this year. Wrote about [that too](/content/the-space-between-chapters). One of the unexpected things about slowing down is that it makes space for the small ideas — the ones that start with a friend's question on a random evening, not with a strategy document.
 
@@ -108,9 +107,9 @@ And I know the direction. Each wall people hit is a blocker between them and the
 
 That seems worth doing.
 
-⸻
+<hr class="ornament" />
 
-#### Back to shipping
+## Back to shipping
 
 If you're someone who's been wrangling with OpenClaw and hit a wall — I'd love to hear where you got stuck. If you're someone who got it running and is now wrestling with memory or cost or security — I want to hear that too. These are the conversations that have shaped ClawStation so far, and they'll keep shaping it.
 

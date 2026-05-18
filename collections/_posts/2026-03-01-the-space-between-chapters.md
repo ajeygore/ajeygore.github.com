@@ -7,12 +7,11 @@ description: "After concluding my chapter at PeakXV Partners, I'm learning what 
 lead_image: blog/space_between_chapters.svg
 ---
 
-<div class="footnote">
-<strong>&ldquo;Sometimes the bravest thing you can do is stop running.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>Sometimes the bravest thing you can do is stop running.</p>
 </div>
 
-#### Catching a breath
+## Catching a breath
 
 Sometime ago, I decided to take a pause.
 
@@ -24,7 +23,7 @@ If you've read my earlier post about [joining Sequoia](/content/a-new-home), you
 
 I have nothing but gratitude. But there comes a time when even gratitude isn't enough reason to stay. You have to listen to that quieter voice.
 
-#### The people who made it extraordinary
+## The people who made it extraordinary
 
 I'm extremely grateful to Shailendra for bringing me into this journey. The mandate was clear from day one — help portfolio companies build and scale engineering teams, work closely with founders, be useful. Simple in words, enormous in practice.
 
@@ -34,7 +33,7 @@ And then there were the conversations. Some of the most candid, unfiltered discu
 
 To the founders I've had the honour of walking alongside — your curiosity, your grit, your relentless pursuit of what's possible — you inspire more than you know. I'm cheering for every single one of you.
 
-#### Why pause? Why now?
+## Why pause? Why now?
 
 I've been working since I was sixteen. Professionally since twenty-two. That's decades of building, shipping, fixing, hiring, scaling, advising — decades of waking up with a to-do list that never got shorter. I loved it. Most days, I still love it. But somewhere along the way, the running became the default mode, and I forgot what it felt like to walk.
 
@@ -46,7 +45,7 @@ Shraddha has been my anchor through every crazy ride. She's stood alongside me �
 
 **So I decided to stop. Not forever. Just long enough to remember what stillness feels like.**
 
-#### What slowing down actually looks like
+## What slowing down actually looks like
 
 I won't romanticise it. The first few weeks were uncomfortable. When you've spent your entire adult life with a packed calendar, an empty one feels almost threatening. I kept reaching for my phone, checking emails that weren't urgent, looking for fires that didn't exist.
 
@@ -58,7 +57,7 @@ But then something shifted.
 
 The most surprising thing? Ideas started showing up uninvited. When you stop cramming every minute with productivity, your brain does something wonderful — it wanders. And in that wandering, it finds things you'd never have discovered while sprinting.
 
-#### Not sitting still
+## Not sitting still
 
 I want to be clear: this isn't retirement. I'm not done. I'm just being more intentional about what I say yes to.
 
@@ -66,7 +65,7 @@ I'm continuing to work with people and teams where I feel I can genuinely help. 
 
 I'm also advising a few founders, organisations and teams on things I care about — engineering culture, product-market fit, new tech adoption, keeping things simple, the "how not to fail" conversations, and the messy human side of scaling. But I'm doing it at my pace, on my terms. Choosing based on impact, not obligation.
 
-#### Gratitude, the real kind
+## Gratitude, the real kind
 
 There are so many people I want to thank — colleagues, ex-colleagues, friends who somewhere along the way became all three. I know that even if I try very hard, I'll miss names. So I won't try. You know who you are, and you know what you've meant to this journey.
 
@@ -76,7 +75,7 @@ To the ThoughtWorks family that gave me my foundation. To CodeIgnition, which be
 
 And to my family — my mother who worked tirelessly on both fronts, my siblings who showered unconditional love, Shraddha who made all of this possible, and my kids who remind me every day what actually matters. They're also my harshest critics — which sometimes leads to unpleasant conversations, but that's life. As Sadhguru says, "Isn't it?" hahaha.
 
-#### What's next?
+## What's next?
 
 Honestly? I don't know. And for the first time in a very long time, that feels refreshing rather than unsettling. Right now it's just daily tinkering...
 

@@ -7,12 +7,11 @@ description: Most early-stage products are built custom, one line of code at a t
 lead_image: blog/what_are_we_building.png
 ---
 
-<div class="footnote">
-<strong>&ldquo;Most of what you think you need to build has already been figured out. You just need to know which blocks to pick up.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>Most of what you think you need to build has already been figured out. You just need to know which blocks to pick up.</p>
 </div>
 
-#### The question that keeps simplifying things
+## The question that keeps simplifying things
 
 Engineers over-engineer. Not because we want to — because we want a perfect, future-proof, scalable, modular system. Something that will handle whatever comes, however it comes, for as long as anyone might need it.
 
@@ -22,9 +21,9 @@ There's one question I keep coming back to. I used to ask it of myself. Now I as
 
 *What are we building?*
 
-⸻
+<hr class="ornament" />
 
-#### The Absolute WHAT
+## The Absolute WHAT
 
 You know the [Five Whys](https://en.wikipedia.org/wiki/Five_whys) — the technique for tracing a problem to its root cause by asking "why?" until you can't. This is its sibling. Call it the **Absolute WHAT**. You ask "what are we building?" and then you ask it again about the answer. And again.
 
@@ -40,9 +39,9 @@ What are we actually building?
 
 And now you're somewhere useful. Every time you ask the question, the answer gets smaller, more concrete, more honest. Buzzwords fall off. The thing you're really making becomes visible. That clarity is the difference between shipping in six weeks and rewriting in six months.
 
-⸻
+<hr class="ornament" />
 
-#### The pattern hiding in plain sight
+## The pattern hiding in plain sight
 
 Here's the part most founders are surprised by. Once you've asked "what are we building?" enough times, you stop seeing your business as unique at the component level. It isn't. Almost no B2C business is.
 
@@ -54,9 +53,9 @@ That's it. That's 80% of a B2C product, sketched on the back of a napkin. Your u
 
 I've watched teams spend a quarter building bespoke payments infrastructure because they were convinced their case was special. It wasn't. It never is. The special part was upstream.
 
-⸻
+<hr class="ornament" />
 
-#### Software as abstracted building blocks
+## Software as abstracted building blocks
 
 This is the shift. Stop thinking of software as lines of code you write, and start thinking of it as a small set of **abstracted building blocks** you pick up, connect, and extend when necessary.
 
@@ -68,9 +67,9 @@ When you build this way, four things happen quietly:
 
 None of this requires microservices. None of it requires Kubernetes. A well-structured monolith with clean module boundaries is a pile of abstracted building blocks with fewer failure modes. The modularity is in your head and in your code, not in your infrastructure.
 
-⸻
+<hr class="ornament" />
 
-#### What people get wrong
+## What people get wrong
 
 Two mistakes I see all the time.
 
@@ -80,9 +79,9 @@ Two mistakes I see all the time.
 
 The point of modular thinking is to keep your *options* open, not to pre-commit to the most complex option available.
 
-⸻
+<hr class="ornament" />
 
-#### How to actually use this
+## How to actually use this
 
 Next time you're in a planning session — yours or someone else's — try this. Take whatever is on the whiteboard and ask the question. *What are we building?* Listen to the answer, and ask it again.
 
@@ -90,13 +89,13 @@ Keep going until the answer is small enough to fit in one breath. That's your sp
 
 Everything else is a block. Treat it like one.
 
-⸻
+<hr class="ornament" />
 
 **Most of what you think you need to build has already been figured out.** Someone, somewhere, has built a version of it and made it available. Your job isn't to rebuild it. Your job is to know which blocks to pick up, where to put them, and what to build between them that no one else can.
 
 That's the whole game.
 
-#### References
+## References
 * [Five Whys](https://en.wikipedia.org/wiki/Five_whys)
 * [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
 * [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem)

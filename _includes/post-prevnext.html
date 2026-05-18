@@ -1,0 +1,29 @@
+{%- comment -%}
+Previous / Next post navigation based on chronological order in site.posts.
+site.posts is reverse-chronological in Jekyll, so page.previous is the newer post
+and page.next is the older one. We flip the labels to match what readers expect.
+{%- endcomment -%}
+
+{%- assign newer = page.previous -%}
+{%- assign older = page.next -%}
+
+{%- if newer or older -%}
+<nav class="post-prevnext" aria-label="Article navigation">
+  <div class="post-prevnext__col post-prevnext__col--prev">
+    {%- if older -%}
+    <a href="{{ older.url | relative_url }}" rel="prev">
+      <span class="post-prevnext__label">← Previous</span>
+      <span class="post-prevnext__title">{{ older.title }}</span>
+    </a>
+    {%- endif -%}
+  </div>
+  <div class="post-prevnext__col post-prevnext__col--next">
+    {%- if newer -%}
+    <a href="{{ newer.url | relative_url }}" rel="next">
+      <span class="post-prevnext__label">Next →</span>
+      <span class="post-prevnext__title">{{ newer.title }}</span>
+    </a>
+    {%- endif -%}
+  </div>
+</nav>
+{%- endif -%}

@@ -7,12 +7,11 @@ description: "For thirty years we were glorified translators — business asked 
 lead_image: blog/og/the-anatomy-of-an-ai-native-org.png
 ---
 
-<div class="footnote">
-<strong>&ldquo;For thirty years we were glorified translators — business asked why, product defined what, engineering translated to how. AI just ate the translation step.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>For thirty years we were glorified translators — business asked why, product defined what, engineering translated to how. AI just ate the translation step.</p>
 </div>
 
-#### The org chart we never named
+## The org chart we never named
 
 If you draw the org chart of any software company built in the last thirty years and squint, the same shape shows up.
 
@@ -30,9 +29,9 @@ Business intent translated into product spec. Product spec translated into JIRA 
 
 We were, mostly, glorified translators. I include myself in that. I include most of the best engineers I've worked with. The work was real and hard and required taste, but the *shape* of it was conversion. Take the thing in this language, output the thing in that language. Repeat.
 
-⸻
+<hr class="ornament" />
 
-#### What AI actually ate
+## What AI actually ate
 
 The agent conversation keeps getting framed as "AI replaces engineers" or "AI replaces customer service" or "AI replaces analysts." All of those framings are slightly wrong. AI didn't come for a job title. AI came for a *task type*, and the task type it came for was translation.
 
@@ -44,9 +43,9 @@ The middle is what got eaten. And the middle is where most of the org chart live
 
 Hold that honestly. Not as a doom story. As a fact about the shape of work.
 
-⸻
+<hr class="ornament" />
 
-#### The manager who doesn't contribute
+## The manager who doesn't contribute
 
 Here's a hard one, because it's about people I've worked with and respected.
 
@@ -62,9 +61,9 @@ I don't think every manager needs to write code. I do think every manager needs 
 
 This isn't a vendetta against managers. I've been one. I've hired dozens. The ones I'm most worried about are the ones who optimised so hard for being good at the translation pipeline that they forgot how to do the work that sat underneath the pipeline. The pipeline is getting smaller. The work underneath is getting bigger.
 
-⸻
+<hr class="ornament" />
 
-#### What the new team actually looks like
+## What the new team actually looks like
 
 I've been sketching this on whiteboards with founders for months. Here's the rough shape that keeps showing up.
 
@@ -80,9 +79,9 @@ The team that's left is smaller in headcount and broader in skill at every level
 
 <p><img src="/assets/images/blog/the-anatomy-of-an-ai-native-org-new.svg" alt="The new org shape — Why stays small, What grows into the dominant middle, How shrinks but gets harder, and Agents form the foundation doing the conversion work" class="responsive" /></p>
 
-⸻
+<hr class="ornament" />
 
-#### Hands-on, redefined
+## Hands-on, redefined
 
 The phrase "hands-on" used to mean writing code. It still does, sometimes. But the deeper meaning is being in the work — close enough to the output that you can see when it's wrong, opinionated enough about the input that you can define what right looks like.
 
@@ -92,9 +91,9 @@ What's *not* hands-on is approving JIRA tickets in batches. Running a status mee
 
 This is uncomfortable for a lot of senior people. It was uncomfortable for me, when I started really sitting with it during the sabbatical. There's an emotional reflex to defend the role you spent a decade earning. But the role *was* the org chart — and the org chart is changing.
 
-⸻
+<hr class="ornament" />
 
-#### What this means if you're hiring
+## What this means if you're hiring
 
 The hard thing to say out loud is also the first thing to get right: you're going to hire fewer people. The team that does the same amount of work next year is going to be meaningfully smaller. Not because the people were bad. Because the translation layer collapsed. Every org that pretends otherwise is going to end up with the worst of both worlds — more tools, more headcount, slower output.
 
@@ -104,9 +103,9 @@ The standup-runner archetype of engineering manager is over. The managers who su
 
 And hire more *what* people. Not product managers as ticket factories. People who can hold a thesis, define "good" in ambiguous situations, and operate the agent themselves rather than handing intent over a wall. The ratio of *what* to *how* is about to flip. Most teams aren't ready for it.
 
-⸻
+<hr class="ornament" />
 
-#### What this means if you're an engineer
+## What this means if you're an engineer
 
 Don't compete with the agent on translation. The agent will win. The agent will keep winning, faster, every quarter.
 
@@ -116,9 +115,9 @@ The middle is the dangerous place to be right now. Not because middle people are
 
 The work that's left is more interesting and more valuable than the work that's leaving. Defining the *why* and the *what* is more rewarding than running the standup. Designing the harness is more rewarding than approving the ticket. The shape of the team is changing because the shape of the work is changing, and the work is getting closer to what we always said we wanted — judgement-heavy, hands-on, outcome-owning. That's not spin. It's what happens when you strip out the translation layer and look at what's underneath it.
 
-⸻
+<hr class="ornament" />
 
-#### The org chart, finally
+## The org chart, finally
 
 I started this post with the shape of the old org chart. *Why* at the top, *what* in the middle, *how* in the broad bottom layer, with a manager class running the seams.
 

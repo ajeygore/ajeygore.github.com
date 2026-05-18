@@ -7,12 +7,11 @@ description: "In my last post I wrote about the small island of delight — the 
 lead_image: blog/the_ten_walls.svg
 ---
 
-<div class="footnote">
-<strong>&ldquo;Each wall, on its own, is solvable. That's the problem.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>Each wall, on its own, is solvable. That's the problem.</p>
 </div>
 
-#### Drawing the map
+## Drawing the map
 
 In my [last post](/content/the-small-island-of-delight) I wrote about the small island of delight — the agent itself — surrounded by a sea of ops work. The note that followed that post was the most common: *okay, I feel this. What are the walls, exactly? Name them. Make me a list so I can tell whether I'm about to hit one.*
 
@@ -22,9 +21,9 @@ This is that list. Ten things I keep seeing people run into when they try to run
 
 A small note before we start. Most of these walls look trivial in isolation. Docker, right? TLS, sure. Memory, obviously. None of them is the problem. The *accumulation* is the problem. When you hit one, you lose an evening. When you hit six in a quarter, you lose the habit of using the agent.
 
-⸻
+<hr class="ornament" />
 
-#### 1. Infrastructure turns into a second job
+## 1. Infrastructure turns into a second job
 
 This is the first and loudest complaint, and it's not even close. People spend more hours on Docker, YAML, SSH, uptime, VPS sizing, and restart scripts than they spend talking to their agent. The official Docker setup needs at least 2GB of RAM. Cheap $5 hosts get OOM-killed in the middle of the night. You open a DigitalOcean community thread and watch people literally write "gave up."
 
@@ -32,9 +31,9 @@ What hurts here isn't that the infrastructure is hard. It's that you're doing in
 
 **The test:** if a power cut or a kernel update would silently take your agent down and you wouldn't know for a day, you're on the wrong side of this wall.
 
-⸻
+<hr class="ornament" />
 
-#### 2. The agent's memory quietly gives up
+## 2. The agent's memory quietly gives up
 
 Everyone's favourite bug. OpenClaw gives you 100-200K tokens of context window, which sounds like a lot until you realise tool calls and file reads eat it in an afternoon. When the window fills, compaction kicks in — summarising older messages to free up space. And anything that wasn't already written to long-term memory gets smoothed into a summary or disappears.
 
@@ -44,9 +43,9 @@ People solve this by bolting on Mem0, Cognee, QMD, knowledge graphs — pick you
 
 **The test:** ask your agent, today, about something you told it three weeks ago. If it stumbles, this is the wall you're hitting.
 
-⸻
+<hr class="ornament" />
 
-#### 3. Security is a moving target you didn't sign up to track
+## 3. Security is a moving target you didn't sign up to track
 
 138 CVEs in 63 days. 135,000 exposed OpenClaw instances found on public IPs. 824 malicious skills planted in ClawHub, with around 12% of the registry compromised at some point. None of this is hypothetical. These are numbers from February and March of this year.
 
@@ -56,9 +55,9 @@ Most people I talk to have no idea their gateway is bound to `0.0.0.0`. They don
 
 **The test:** if you were breached last Tuesday, how long until you'd know?
 
-⸻
+<hr class="ornament" />
 
-#### 4. Token bills arrive with a personality
+## 4. Token bills arrive with a personality
 
 This one bites quietly and then all at once. OpenClaw's heartbeat feature wakes the agent every thirty minutes by default, and every heartbeat carries the full session context. Add tool calls, long context windows, and a premium model, and you can burn a million tokens in an afternoon without trying.
 
@@ -68,9 +67,9 @@ The fix is routing — cheap models for easy tasks, premium for complex ones —
 
 **The test:** can you tell me, within 10%, what your agent cost you yesterday?
 
-⸻
+<hr class="ornament" />
 
-#### 5. The skills marketplace is a minefield with good lighting
+## 5. The skills marketplace is a minefield with good lighting
 
 OpenClaw's skills are MCP servers, which means they're essentially little programs that run with full access to whatever you give them. The public marketplace — ClawHub — is open to anyone. One security study found 36.82% of community skills contained vulnerabilities. Another found 824 skills that were straight-up malicious, dressed up with professional documentation and innocent names.
 
@@ -78,9 +77,9 @@ The tricky part is that skills are the *good* thing about OpenClaw. The whole po
 
 **The test:** name the last three skills you installed, and tell me who maintains them.
 
-⸻
+<hr class="ornament" />
 
-#### 6. Multi-agent setups collapse under their own weight
+## 6. Multi-agent setups collapse under their own weight
 
 This one surprises people. Once your morning briefing works, it's natural to think — *what if I had one agent for writing, one for research, one for ops?* Seems obvious. Seems like the future.
 
@@ -90,9 +89,9 @@ Most "multi-agent" stories you read online are really one agent with better prom
 
 **The test:** if two of your agents had to hand work off to each other, could you trace the handoff when it broke?
 
-⸻
+<hr class="ornament" />
 
-#### 7. Observability is three weekends you didn't know you owed
+## 7. Observability is three weekends you didn't know you owed
 
 OpenClaw added OpenTelemetry support in v2026.2, which is wonderful, and means you can now wire up your own observability stack. Prometheus. Grafana. Tempo or Jaeger for traces. A log aggregator. Dashboards. Alerts.
 
@@ -102,9 +101,9 @@ This is the oldest story in ops. The tools are open and free. The time to make t
 
 **The test:** if your agent took an action you didn't expect last week, could you find out what and why, in under 15 minutes?
 
-⸻
+<hr class="ornament" />
 
-#### 8. Upgrades force an ugly choice
+## 8. Upgrades force an ugly choice
 
 OpenClaw ships fast. v2026.3.22 alone landed 13 breaking changes along with 45+ new features. Old directory structures (`.moltbot`), old environment variable names (`CLAWDBOT_*`, `MOLTBOT_*`) get deprecated without fallback paths. If you're on a version with known security issues, you have to upgrade. If you upgrade, something in your setup breaks.
 
@@ -114,9 +113,9 @@ This is the classic unowned-maintenance problem. The agent is core to your workf
 
 **The test:** what version are you on, and when did you last check for updates?
 
-⸻
+<hr class="ornament" />
 
-#### 9. The moment you want to share, you can't
+## 9. The moment you want to share, you can't
 
 Solo use is the default assumption. Everything about OpenClaw — auth, config, channels, skills — assumes one person, one agent, one machine. The moment someone on your team says "can I have access too?" you discover that the answer is an hour of manual allowlists, Discord role hacks, and per-channel DM scopes.
 
@@ -126,9 +125,9 @@ Most real use cases become team use cases eventually. The agent that drafts your
 
 **The test:** how would you give a colleague access to your agent for one week, then take it back?
 
-⸻
+<hr class="ornament" />
 
-#### 10. You don't know when the agent is wrong
+## 10. You don't know when the agent is wrong
 
 This is the quietest wall, and in some ways the scariest. Agents hallucinate tool calls. They drift from goals in long sessions. They pattern-match on things that look like the user's intent but aren't. And you often don't know it happened until someone downstream points it out.
 
@@ -138,9 +137,9 @@ The DIY answer is to build your own evals, approval gates, dry-run modes. Each o
 
 **The test:** the last time your agent did something for you, how confident were you that it did the right thing — not the thing that looked like the right thing?
 
-⸻
+<hr class="ornament" />
 
-#### Why I keep writing this down
+## Why I keep writing this down
 
 I don't list these to be dramatic. I list them because every single person I've helped with OpenClaw has hit at least three of these walls, and most have hit six or seven. The failure mode isn't hitting a wall — it's hitting several, losing motivation, and quietly giving up on the agent.
 
@@ -154,7 +153,7 @@ That's the bet I'm making with ClawStation. Take the walls down, one by one, in 
 
 The island should get bigger. The sea should get smaller. And the interesting work — the thing you wanted when you first got excited about agents — should be most of what you do.
 
-⸻
+<hr class="ornament" />
 
 If you're hitting one of these walls right now, or you've hit one and walked away, I'd love to hear which one. The map gets better every time someone tells me where they got stuck.
 

@@ -1,0 +1,65 @@
+{%- comment -%}
+Renders a hero image above the article header.
+
+Priority:
+  1. page.hero_image (raster: png/jpg/jpeg/webp/avif/svg) — explicit hero
+  2. page.lead_image when it's a raster — reuse the social card image
+  3. Auto-generated OG card at /assets/images/blog/og/<slug>.png — fallback
+  4. Nothing — if page.hero == false explicitly, skip everything
+
+Frontmatter knobs:
+  hero: false        # opt-out, even if lead_image exists
+  hero_image: path/foo.png
+  hero_caption: "Optional caption shown beneath the hero image"
+{%- endcomment -%}
+
+{%- assign show_hero = true -%}
+{%- if page.hero == false -%}
+  {%- assign show_hero = false -%}
+{%- endif -%}
+
+{%- assign hero_src = nil -%}
+{%- assign is_og_fallback = false -%}
+
+{%- comment -%} Helper paths {%- endcomment -%}
+{%- capture _og_rel -%}assets/images/blog/og/{{ page.slug | downcase }}.png{%- endcapture -%}
+{%- capture _og_abs -%}/{{ _og_rel }}{%- endcapture -%}
+
+{%- comment -%} 1. Explicit hero_image wins if file exists {%- endcomment -%}
+{%- if page.hero_image -%}
+  {%- capture _hero_rel -%}assets/images/{{ page.hero_image }}{%- endcapture -%}
+  {%- assign _hero_ok = _hero_rel | asset_exists -%}
+  {%- if _hero_ok -%}
+    {%- assign hero_src = _hero_rel | prepend: '/' -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 2. lead_image (raster or svg), only if file exists {%- endcomment -%}
+{%- if hero_src == nil and page.lead_image -%}
+  {%- assign _ext = page.lead_image | split: '.' | last | downcase -%}
+  {%- if _ext == 'png' or _ext == 'jpg' or _ext == 'jpeg' or _ext == 'webp' or _ext == 'avif' or _ext == 'svg' -%}
+    {%- capture _lead_rel -%}assets/images/{{ page.lead_image }}{%- endcapture -%}
+    {%- assign _lead_ok = _lead_rel | asset_exists -%}
+    {%- if _lead_ok -%}
+      {%- assign hero_src = _lead_rel | prepend: '/' -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} 3. Fall back to auto OG card if it exists on disk {%- endcomment -%}
+{%- if hero_src == nil -%}
+  {%- assign _og_ok = _og_rel | asset_exists -%}
+  {%- if _og_ok -%}
+    {%- assign hero_src = _og_abs -%}
+    {%- assign is_og_fallback = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if show_hero and hero_src -%}
+<figure class="post-hero{% if is_og_fallback %} post-hero--og{% endif %}">
+  <img src="{{ hero_src | relative_url }}" alt="{{ page.title | escape }}" loading="eager" />
+  {%- if page.hero_caption -%}
+  <figcaption>{{ page.hero_caption }}</figcaption>
+  {%- endif -%}
+</figure>
+{%- endif -%}

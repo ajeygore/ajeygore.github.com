@@ -14,7 +14,7 @@ Source : Stable Diffusion
 
 (Revised on 13/02/2023)
 
-##### Thought Experiment on Perceived Image vs Projected Image
+## Thought Experiment on Perceived Image vs Projected Image
 
 Every time I look at people judging others and creating perceptions about them. They "judge" people on their behavior, actions, and speech. What appears to them differs from what others intend to do, act, or talk about. This difference between perception and intention causes confusion. But one's act rarely gets closure, the person who is committing an act or the person who perceives or is at the receiving end of the action. For years I have pondered on this topic in two ways; what people think about me and how I feel about them and vice versa.
 

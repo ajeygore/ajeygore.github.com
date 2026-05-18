@@ -1,0 +1,47 @@
+{%- comment -%}
+Related reading. Two sources:
+  1. page.related: ["post-slug", "post-slug"]  — curated by hand (preferred)
+  2. Same-category posts (most recent 3) — fallback
+Skip rendering if neither yields results.
+{%- endcomment -%}
+
+{%- assign related_posts = "" | split: "" -%}
+
+{%- if page.related and page.related.size > 0 -%}
+  {%- for slug in page.related -%}
+    {%- for p in site.posts -%}
+      {%- if p.slug == slug -%}
+        {%- assign related_posts = related_posts | push: p -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- assign primary_cat = page.categories | first -%}
+  {%- if primary_cat -%}
+    {%- for p in site.posts -%}
+      {%- if p.url != page.url and p.categories contains primary_cat -%}
+        {%- assign related_posts = related_posts | push: p -%}
+        {%- if related_posts.size >= 3 -%}{%- break -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- if related_posts.size > 0 -%}
+<section class="post-related" aria-labelledby="post-related-title">
+  <h2 id="post-related-title" class="post-related__title">More to read</h2>
+  <ul class="post-related__list">
+    {%- for p in related_posts limit:3 -%}
+    <li class="post-related__item">
+      <a href="{{ p.url | relative_url }}">
+        <span class="post-related__date">{{ p.date | date: '%B %Y' }}</span>
+        <span class="post-related__post-title">{{ p.title }}</span>
+        {%- if p.description -%}
+        <span class="post-related__excerpt">{{ p.description | truncate: 140 }}</span>
+        {%- endif -%}
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}

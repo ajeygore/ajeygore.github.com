@@ -1,0 +1,31 @@
+{%- comment -%}
+Renders the post's lede — an optional epigraph plus the first paragraph
+treated with a drop cap. Pulls the first <p> out of the rendered content so
+post.html can render the remainder separately. Falls back to nothing if the
+post has no body paragraphs (e.g. a stub).
+
+Frontmatter knobs:
+  epigraph: "Short quotation that sits above the lede"
+  dropcap: false   # opt out of the drop cap (useful for posts that start with an image)
+{%- endcomment -%}
+
+{%- assign source_content = include.rendered_content | default: page.content -%}
+{%- assign first_p_html = source_content | lede_paragraph -%}
+{%- assign body_epigraph = source_content | extract_epigraph -%}
+{%- assign show_dropcap = true -%}
+{%- if page.dropcap == false -%}{%- assign show_dropcap = false -%}{%- endif -%}
+
+{%- if page.epigraph -%}
+<aside class="post-epigraph">
+  <p>{{ page.epigraph }}</p>
+</aside>
+{%- elsif body_epigraph != '' -%}
+<aside class="post-epigraph">
+  <p>{{ body_epigraph }}</p>
+</aside>
+{%- endif -%}
+
+{%- assign first_p_size = first_p_html | size -%}
+{%- if first_p_size > 0 -%}
+<p class="post-lede{% if show_dropcap %} has-dropcap{% endif %}">{{ first_p_html }}</p>
+{%- endif -%}

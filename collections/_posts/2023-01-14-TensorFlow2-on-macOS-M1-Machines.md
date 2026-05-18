@@ -8,7 +8,7 @@ lead_image: metal_tensorflow.png
 ---
 
 <hr>
-##### I ran into issues when getting started with Tensorflow 2.0 on macOS M1, this post may help others who are trying to get started with TensorFlow 2.0 on Apple M1 Macs. This post is a work in progress and will be updated as I learn more. 
+## I ran into issues when getting started with Tensorflow 2.0 on macOS M1, this post may help others who are trying to get started with TensorFlow 2.0 on Apple M1 Macs. This post is a work in progress and will be updated as I learn more. 
 <hr>
 
 macOS M1 machine come with GPU framework, [Metal](https://developer.apple.com/metal/) supports new M1 CPUs with Graphics capabilities as well. 

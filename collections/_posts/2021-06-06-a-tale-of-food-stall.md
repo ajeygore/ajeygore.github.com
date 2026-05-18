@@ -26,13 +26,13 @@ Few problems start come up, First, he spent a lot of time in providing change. S
 
 But all these could not solve the problem in a holistic way, all these measures meant buying more time to ramp up operations. But She needed to do something more drastic. The customer service time was getting impacted, the popularity was increasing but having a customers' wait time increased to upto 90 minutes, long queue, caused frustration, she could not multitask sometime, some time cooking multiple dishes caused few dished to get served undercooked (bad response) or some of them needed to redo entire things, we kind of messed up (internal server error) or few times, she could not update the availability of certain food items, and after receiving the order she realiesed she does not have it anymore (resource not available) - oh man, while it was amazing to see the growth, the frustration started coming in. She was a solo warrior and working in monolith mode... And certainly wanted to make sure that she keep serving. Oh what needs to be done?
 
-###### The responsibilities
+## The responsibilities
 
 It was very evident and clear that she can't keep up with everything, she needed help, what if she hired a help who can do exactly same thing as she does, and so that they can serve customers but one person needs to do only 1/2 the customers. That sounded like an idea which could work, she roped in her brother, who just graduated from college, and was looking to do something parttime. She realised that she needs extra capacity only during the rush hour, this worked out perfectly. Things changed, circumstances changed, life became little easier, and they could serve more customers, word of mouth did the magic. People were startled with sudden improvement in customer service. 
 
 > Better performance such as time to serve, brings better customer experience, in turn brings more customers.
 
-###### Sharing responsibilities and resources
+## Sharing responsibilities and resources
 
 So sharing all work loads helped. More customers means Opexill needed more 'servers' to serve. She roped in her cousins, friends, and they were doing amazing... but over time, it was clear that few tasks were getting some conflicts. Since there were not many cash registers, everyone accessing cash registers, made others wait to just give change out... or shared resources such as cooking pans, because two or more people waiting to perform the same task - but unless one can finish it others can't do anything - for example, if they needed to grill the burger, they were holding the patty and standing there while others were flipping the burgers. This wasn't good, suddenly, a solution which brought speed, was bringing slowdowns, and some bottlenecks in the system were pretty visible.
 
@@ -48,7 +48,7 @@ Opexill wanted to increase the businesss by properly utilizing the resources and
 
 > They scaled by repeating the entire workflow while this wasn't sustainable, it served their customer well, but now, it was time to think through something better.
 
-###### From builder to assemblers
+## From builder to assemblers
 
 What if we can define steps to cook all dishes, and everyone cooks part of it, She has seen it working fast-food pasta shops, or even at fast food chains. "That could work", She thought. "Why not give it a shot", she sat down, defined the process to cook various ingredients separately and at the end someone would assemble the dish with all pre-cooked ingredients, or provide more, if we run out of hands there, we will add more assemblers. May be, we can give it a try. May be it will work. May be...
 
@@ -72,11 +72,11 @@ So now everyone had their role to play, from taking orders, to provide cooked/ch
 Sometime, you can keep a large bunch of functionality at one place, yet, fan out very small (micro) but highly utilised functionality.
 
 
-###### The age of assemblers
+## The age of assemblers
 
 While this post talks about fictional hawker and it's just a story. But on the other hand, as software developers, we should also think about us as Assemblers vs builders. Our job is to provide better consumer experience. It may not be necessary for us to build every part of software ourselves, but the more strategic point of view should be around providing the best experience to our end users. Thinking from that point of view will help us prioritise the feature delivery by either buying off the shelf or building from scratch. I think this requires another post, but I am sure that era of assemblers has arrived.
 
-⸻
+<hr class="ornament" />
 
 **Opexill never set out to build microservices. She set out to feed more people without making them wait.**
 

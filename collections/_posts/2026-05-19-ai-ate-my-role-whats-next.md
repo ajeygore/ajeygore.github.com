@@ -7,12 +7,11 @@ description: "The Anatomy of an AI-Native Org argued that the middle of the org 
 lead_image: blog/og/ai-ate-my-role-whats-next.png
 ---
 
-<div class="footnote">
-<strong>&ldquo;The question isn't whether AI will eat your job. It's which half.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>The question isn't whether AI will eat your job. It's which half.</p>
 </div>
 
-#### It happened faster than anyone expected
+## It happened faster than anyone expected
 
 Something in your role changed this year. The task that used to take an afternoon now takes an agent ten minutes. The report you wrote every Friday? There's a pipeline for that. The coordination work, the status updates, the ticket grooming — it didn't disappear, exactly. It got absorbed.
 
@@ -22,9 +21,9 @@ AI ate part of your role. Maybe a big part. The question in the air is the obvio
 
 This is the answer.
 
-⸻
+<hr class="ornament" />
 
-#### The cut that runs through every role
+## The cut that runs through every role
 
 Before I go role by role, one principle does most of the work.
 
@@ -38,9 +37,9 @@ When you read the role sections below, the underlying question is always the sam
 
 Now, role by role.
 
-⸻
+<hr class="ornament" />
 
-#### At a glance
+## At a glance
 
 Two arcs run through what follows. Some roles **evolve** — the work sharpens, the leverage grows, but you're still doing a version of what you were doing, with much bigger tools. Other roles **transform** — the job becomes a different job with the old name still attached. Knowing which arc you're on changes everything about how you prepare.
 
@@ -64,9 +63,9 @@ Two arcs run through what follows. Some roles **evolve** — the work sharpens, 
 
 Jump to your role, or read straight through.
 
-⸻
+<hr class="ornament" />
 
-#### Product Managers
+## Product Managers
 {: #product}
 
 *Evolution — but only if you already had a thesis.*
@@ -101,9 +100,9 @@ The agent can do the synthesis. Only you can have the conviction. Both lanes are
 
 > The era of "let me find out what to build" is closing. The era of "I know what we should build, and here's why" is opening.
 
-⸻
+<hr class="ornament" />
 
-#### Senior / Staff / Principal Engineers
+## Senior / Staff / Principal Engineers
 {: #senior}
 
 *Evolution — bigger leverage, fewer trophies.*
@@ -120,9 +119,9 @@ The 10x engineer trope was always mythical. The 100x engineer pattern — one se
 
 What I'd do if I were senior today: stop coding everything yourself. Start designing the system the agents operate inside. Your role moves from *writing the hard code* to *defining what good means in the hard places.* That's a bigger job, not a smaller one. It's also harder than it sounds, because writing the code was the comfortable part — the part with visible output and immediate dopamine. The new work — specs, evals, architectural reviews of agent-generated code, harness design — produces fewer trophies and more leverage. That trade is worth making.
 
-⸻
+<hr class="ornament" />
 
-#### Project / Program Managers
+## Project / Program Managers
 {: #project}
 
 *Evolution — but the most aggressive one in the post.*
@@ -147,9 +146,9 @@ What I'd do if I were a Project / Program Manager today: pick a lane and start v
 
 And the math nobody wants to say out loud: the total number of seats in this role is going to shrink. The seats that remain will be senior, lane-specialised, and will go to the people who started shifting six months ago. The hardest version of this advice is the simplest — start now, in one specific lane, with one specific artefact.
 
-⸻
+<hr class="ornament" />
 
-#### Engineering Managers
+## Engineering Managers
 {: #em}
 
 *Evolution — if you keep your hands on the work.*
@@ -166,9 +165,9 @@ What survives and grows: people development; hiring; design contribution — the
 
 What I'd do if I were an EM today: get hands back on the work. Not all the work — but enough that you're in the design conversation, not just facilitating it. Read the codebase. Read the agent's PRs. Push back on architecture decisions with actual evidence. There's no rule that says you have to be the loudest contributor. But you do have to be a contributor.
 
-⸻
+<hr class="ornament" />
 
-#### Junior Engineers
+## Junior Engineers
 {: #junior}
 
 *Transformation — and the industry hasn't built the new path yet.*
@@ -197,9 +196,9 @@ Look hard at whether your company is actually investing in juniors. Is there a r
 
 Worth saying out loud — the industry owes juniors a better answer than "use the AI and figure it out." We're going to lose a generation if we don't think harder about this. I'm working on it.
 
-⸻
+<hr class="ornament" />
 
-#### Designers
+## Designers
 {: #designer}
 
 *Transformation — from making volume to defining good.*
@@ -218,9 +217,9 @@ What I'd do if I were a designer today: lean into the parts of design that requi
 
 Stop optimising your portfolio for output volume. Start optimising for what I'd call *judgement artifacts* — design rationale documents, critiques of other people's work, brand voice guides, taste essays. These are the things that prove you can decide *what's good*, not just *make a lot of things.* The market for that has never been bigger.
 
-⸻
+<hr class="ornament" />
 
-#### QA
+## QA
 {: #qa}
 
 *Transformation — from downstream service to embedded quality engineering.*
@@ -245,9 +244,9 @@ The differentiator, for the QA people who move up, is domain knowledge. The QA f
 
 What I'd do if I were in QA today: stop thinking of this as your moment of arrival, and start thinking of it as a role change. Build eval suites. Design acceptance criteria templates that PMs and engineers can both work from. Make your domain knowledge visible — write internal docs about how this product actually behaves, where it fails, what *correct* means in your specific context. Move *into* the engineering organisation, not alongside it.
 
-⸻
+<hr class="ornament" />
 
-#### Customer Success
+## Customer Success
 {: #cs}
 
 *Transformation — into product strategist with a customer specialty.*
@@ -264,9 +263,9 @@ CS people who make this transition start to look like product strategists with a
 
 What I'd do if I were in CS today: pick up product-call authority. Earn the right to be in the room when product decisions get made. The CS person who can synthesise a customer trend into a product change is the new version of the role, and most CS leaders haven't figured out how to develop people into it yet. Be the person who shows them what it looks like.
 
-⸻
+<hr class="ornament" />
 
-#### The pattern, again
+## The pattern, again
 
 You'll have noticed every section above ends with some version of the same advice: move toward judgement, away from translation. That isn't laziness on my part. It's the pattern.
 
@@ -282,9 +281,9 @@ The opportunity is real and very large. The work that's left — judgement, tast
 
 The transition belongs to the people who started six months ago, not the people who start six months from now.
 
-⸻
+<hr class="ornament" />
 
-#### If I got your role wrong
+## If I got your role wrong
 
 If you read the section that applies to you and thought *that's not quite how my work breaks down*, I want to hear about it. The macro framework is the framework. The role-by-role walkthrough is my best read on it based on the conversations I've had this year.
 
@@ -292,9 +291,9 @@ The roles you don't see here yet — data, ML, security, sales engineering, recr
 
 Tell me where the map is wrong. That's how it gets better.
 
-⸻
+<hr class="ornament" />
 
-#### What's next
+## What's next
 
 The same answer, in every role. The translation work is gone — or going. The judgement work is yours, and it's growing.
 

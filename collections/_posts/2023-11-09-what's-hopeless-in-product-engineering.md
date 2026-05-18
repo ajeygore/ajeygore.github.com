@@ -7,7 +7,7 @@ description: Why product engineering teams get stuck in cycles of dysfunction, a
 lead_image: blog/hopeless-product-engineering-white-bg.svg
 ---
 
-##### THIS POST has ongoing contribution
+## THIS POST has ongoing contribution
 
 **Why do we keep having the same conversations?** 
 

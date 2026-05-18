@@ -1,0 +1,23 @@
+{%- assign cats = page.categories | post_categories_normalized -%}
+{%- assign source_content = include.rendered_content | default: page.content -%}
+{%- assign minutes = source_content | reading_minutes -%}
+
+<div class="post-meta">
+  {%- if cats.size > 0 -%}
+  <div class="post-categories">
+    {%- for cat in cats limit:4 -%}
+    <span class="post-category-chip">{{ cat }}</span>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
+  <div class="post-byline">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+    <span class="post-byline-dot" aria-hidden="true">·</span>
+    <span class="post-reading-time">{{ minutes }} min read</span>
+    {%- if page.updated -%}
+    <span class="post-byline-dot" aria-hidden="true">·</span>
+    <span class="post-updated">Updated {{ page.updated | date: '%B %-d, %Y' }}</span>
+    {%- endif -%}
+  </div>
+</div>

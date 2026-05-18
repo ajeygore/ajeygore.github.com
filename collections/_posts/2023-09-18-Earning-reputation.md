@@ -36,7 +36,7 @@ In my view, there are few obvious things you can do about earning good reputatio
 
 And lastly, reflect and adjust as you go, no one is perfect and tech field is always about learning something everyday.
 
-⸻
+<hr class="ornament" />
 
 **Reputation isn't something you go out and earn. It's the residue of how you worked and who you helped when no one was watching.**
 

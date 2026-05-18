@@ -7,12 +7,11 @@ description: "Three months into a sabbatical, six things became obvious. Most of
 lead_image: blog/the-comfortable-lie.svg
 ---
 
-<div class="footnote">
-<strong>&ldquo;We lie to ourselves most convincingly when we call it discipline.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>We lie to ourselves most convincingly when we call it discipline.</p>
 </div>
 
-#### Three months of notes
+## Three months of notes
 
 Three months ago I wrote [The Space Between Chapters](/content/the-space-between-chapters). That was about the decision to stop. This one is about what happened after.
 
@@ -20,9 +19,9 @@ I've been advising founders, having long conversations with people I respect, an
 
 These are six of those stories. I'm calling them comfortable lies because that's what they are — things we tell ourselves that feel like ambition or discipline or strategy, but are really just habits we never bothered to examine. They're comfortable because they sound right. They're lies because they quietly do damage while we nod along.
 
-⸻
+<hr class="ornament" />
 
-#### Perfection is a spiral
+## Perfection is a spiral
 
 Here's what happens when you suddenly have time: you start perfecting things. That draft you never polished. That product idea you never fully fleshed out. That skill you always meant to sharpen. And because there's no deadline forcing you to stop, you don't stop.
 
@@ -32,9 +31,9 @@ I see this in founders too. The ones with runway and breathing room sometimes pr
 
 **"Done" is a decision you make. Perfection never makes it for you.**
 
-⸻
+<hr class="ornament" />
 
-#### Stop matching your potential
+## Stop matching your potential
 
 People love overdrive. Especially the best ones.
 
@@ -48,9 +47,9 @@ What if you deliberately lived a little below your known potential? Not laziness
 
 The ceiling you know about is not the only ceiling that exists. You just can't see the other one while you're pressed flat against this one.
 
-⸻
+<hr class="ornament" />
 
-#### Goals are byproducts
+## Goals are byproducts
 
 We've been taught to set big goals and reverse-engineer our way to them. Become healthy. Build a great company. Be a better parent.
 
@@ -62,9 +61,9 @@ This changes how I think about strategy too. Strategic thinking doesn't come fro
 
 I keep telling founders this and watching their faces when it clicks. Stop measuring yourself against the identity. Start measuring yourself against the actions. Did you do the thing today? That's the only question that matters.
 
-⸻
+<hr class="ornament" />
 
-#### Stopping lets you see
+## Stopping lets you see
 
 This one is personal.
 
@@ -76,9 +75,9 @@ I watched this in myself at every stage of my career — ThoughtWorks, CodeIgnit
 
 The most important realisations I've had in three months came from weeks where I did almost nothing. Your receptors open when you stop. You start hearing what was always there. Not because nothing is productive — but because nothing got out of the way.
 
-⸻
+<hr class="ornament" />
 
-#### This is a cognitive revolution, not a job crisis
+## This is a cognitive revolution, not a job crisis
 
 There's a growing anxiety that tech jobs are going away. That AI is making people irrelevant. I talk to people every week who believe this, and I understand why they do — the pace of change is genuinely unsettling.
 
@@ -88,9 +87,9 @@ I wrote about this in [The Expensive Thing](/content/the-expensive-thing) — wh
 
 I see massive opportunity here. I see a need for people to recognise their own importance in this new era. Humans will be required more, not less — but the nature of what they're required for is shifting. The tools got dramatically better. The need for people who know what to build with those tools got even greater. If you're paying attention, this is one of the most exciting times to be building anything.
 
-⸻
+<hr class="ornament" />
 
-#### Patience is the thing I'm worst at
+## Patience is the thing I'm worst at
 
 I'll be honest about this one — I haven't figured it out.
 
@@ -100,9 +99,9 @@ I'm learning — slowly, badly — that I can't execute everything on my own. Th
 
 Patience isn't waiting. That's the wrong definition. Patience is choosing what to do next without panicking about everything you're choosing not to do. Three months of space have at least made me aware that this is the real work — not the tasks, but the calm required to sequence them.
 
-⸻
+<hr class="ornament" />
 
-#### The comfortable lie
+## The comfortable lie
 
 Three months is not a long time. But it's long enough to see something clearly: we are extraordinary storytellers — especially to ourselves.
 

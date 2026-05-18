@@ -11,7 +11,7 @@ lead_image: blog/architecture-thinking.svg
 Source : Dall-E by OpenAI
 </div>
 
-##### THIS IS A DRAFT
+## THIS IS A DRAFT
 
 Reflecting on the significance of software architecture is paramount in today's dynamic landscape.
 We have transitioned from adhering strictly to substantial upfront design to recognizing that

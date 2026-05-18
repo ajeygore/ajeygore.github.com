@@ -7,12 +7,11 @@ description: "Every conversation about AI agents celebrates speed. But the harde
 lead_image: blog/the_expensive_thing.svg
 ---
 
-<div class="footnote">
-<strong>&ldquo;If expertise is approaching free, what becomes expensive?&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>If expertise is approaching free, what becomes expensive?</p>
 </div>
 
-#### What everyone in the agent conversation is missing
+## What everyone in the agent conversation is missing
 
 Every conversation I've had in the past few months — with founders, board members, investors, government leaders — lands on the same narrative. Agents are here. They write code, handle customer calls, compress drug discovery from months to hours. Move fast or die.
 
@@ -22,9 +21,9 @@ There's a heuristic making the rounds: *AI agents can replace human execution wh
 
 This sounds clean. It's also the most dangerous idea in tech right now — not because it's wrong, but because it hides the real question. The hardest problem in the age of agents isn't building them. It's deciding what "correct" means.
 
-⸻
+<hr class="ornament" />
 
-#### Verification is the work
+## Verification is the work
 
 I spent years scaling a platform from about 300,000 to 120 million monthly orders across Southeast Asia. At peak, we were running ~900 microservices, pushing thousands of deployments a week, with hundreds of engineers making changes every day — sometimes every hour. The engineering was hard. But the hardest part was never writing the code. It was defining what "working correctly" meant across all of that surface area.
 
@@ -38,9 +37,9 @@ Agents are the same. Everyone celebrates the agent that writes the fix, runs the
 
 **The danger isn't that agents will fail to execute. They're getting scary good at execution. The danger is that organisations will deploy agents against poorly defined problems and mistake fast for correct.**
 
-⸻
+<hr class="ornament" />
 
-#### It's not a tech problem. It's a management problem.
+## It's not a tech problem. It's a management problem.
 
 The prevailing narrative frames this as adopters versus laggards. I think the real split is different. It's between organisations that can change how decisions get made and those that can't.
 
@@ -52,9 +51,9 @@ Most organisations aren't built for this. They have approval chains designed for
 
 Agents don't fix any of this. They amplify it. Good decisions get executed faster. Bad decisions — or the more common disease, *no* decisions — also get executed faster. If your organisation struggles to define what success looks like today, agents will just help you fail at speed.
 
-⸻
+<hr class="ornament" />
 
-#### The legacy delusion
+## The legacy delusion
 
 One more thing, because I keep hearing it — especially in Singapore: *agentic coding will finally crack legacy modernisation.*
 
@@ -62,9 +61,9 @@ I've spent a career in legacy systems. The productivity claims are probably true
 
 **The bottleneck was never writing code. It was the courage to commit to change and the patience to understand what the existing system actually does.** Agents don't solve courage. They don't solve consensus.
 
-⸻
+<hr class="ornament" />
 
-#### So what actually plays?
+## So what actually plays?
 
 If verification is the key insight, then the strategic question isn't "where can I deploy agents?" It's "where have I already built the infrastructure that makes agent deployment safe?"
 
@@ -76,9 +75,9 @@ If verification is the key insight, then the strategic question isn't "where can
 
 **Be sceptical of speed.** Everyone's celebrating compression — months to hours, years to days. Speed matters, but only downstream of correctness. Compressing timelines without compressing the validation process is just faster failure.
 
-⸻
+<hr class="ornament" />
 
-#### The builder's edge
+## The builder's edge
 
 Here's the thing the current conversation gets right, even if nobody says it quite this way: the age of agents rewards builders.
 

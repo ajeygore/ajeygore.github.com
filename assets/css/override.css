@@ -37,33 +37,26 @@
 }
 
 /* ============================================ */
-/* DARK THEME VARIABLES */
+/* DARK THEME VARIABLES — warm coffee dark       */
 /* ============================================ */
 [data-bs-theme="dark"] {
     --text-primary: #e8e4dc;
-    /* Warm off-white */
     --text-secondary: #b8b3ab;
-    /* Warm grey for secondary text */
     --text-muted: #8b8680;
-    /* Muted brown-grey */
     --heading-color: #f0ede5;
-    /* Warmer white for headings */
     --primary-color: #d4a69a;
-    /* Soft coral-terracotta */
     --primary-hover: #e8b8ac;
-    /* Lighter coral for hover */
     --accent-color: #a8b89f;
-    /* Soft sage green accent */
     --accent-hover: #bac9b1;
-    /* Lighter sage for hover */
     --secondary-color: #c4b8a8;
-    /* Warm taupe */
     --secondary-hover: #d0c4b4;
-    /* Lighter taupe for hover */
-    --bg-primary: #111827;
-    --bg-secondary: #1f2937;
-    --bg-tertiary: #374151;
-    --border-color: #374151;
+    --bg-primary: #1c1814;
+    --bg-secondary: #26201c;
+    --bg-tertiary: #332c26;
+    --border-color: #3a322c;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.25);
+    --shadow: 0 2px 4px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 20px -3px rgb(0 0 0 / 0.5), 0 4px 8px -4px rgb(0 0 0 / 0.4);
 }
 
 /* ============================================ */
@@ -95,92 +88,123 @@ section {
 }
 
 /* ============================================ */
-/* POST HEADER — newspaper headline style       */
+/* EDITORIAL READING COLUMN — narrower, longer-lined         */
 /* ============================================ */
-.post-header {
-    max-width: 820px;
+:root {
+    --reading-column: 680px;
+    --reading-column-wide: 760px;
+    --post-font-size: 1.2rem;
+    --post-line-height: 1.7;
+}
+
+.post-header,
+.post-content,
+.post-lede,
+.post-epigraph,
+.post-deck,
+.post-prevnext,
+.post-related,
+.post-share,
+.post-comments,
+.post-content__end-ornament {
+    max-width: var(--reading-column);
     margin-left: auto;
     margin-right: auto;
 }
 
-.post-title {
-    font-family: "Newsreader", "Times New Roman", serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.15;
-    color: var(--heading-color);
-    margin-bottom: 0.4em;
+.post-header {
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
 }
 
-.post-meta {
+.post-title {
     font-family: "Newsreader", "Times New Roman", serif;
-    font-size: 1rem;
-    font-weight: 450;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: var(--heading-color);
+    margin: 0.4em 0 0.4em;
+    text-wrap: balance;
+}
+
+.post-deck {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin: 0 0 0.5em;
+    text-wrap: pretty;
 }
 
 /* ============================================ */
 /* POST CONTENT — the reading experience        */
 /* ============================================ */
 .post-content {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    letter-spacing: 0em;
-    max-width: 820px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: var(--post-font-size);
+    line-height: var(--post-line-height);
+    letter-spacing: 0;
 }
 
 .post-content p {
-    margin-bottom: 1em;
+    margin: 0 0 1.1em;
+    text-wrap: pretty;
 }
 
 .post-content h2 {
-    margin-top: 2em;
-    margin-bottom: 0.5em;
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.65rem;
+    font-weight: 600;
     line-height: 1.2;
-    letter-spacing: 0em;
-    font-weight: 700;
+    letter-spacing: -0.005em;
+    color: var(--heading-color);
+    margin: 2.4em 0 0.5em;
+    text-wrap: balance;
 }
 
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
-    margin-top: 1.8em;
-    margin-bottom: 0.7em;
-    line-height: 1.2;
-    letter-spacing: 0em;
-    font-weight: 700;
-}
-
-.post-content h3:first-child,
-.post-content h4:first-child,
-.post-content h5:first-child,
-.post-content h6:first-child {
+.post-content h2:first-child {
     margin-top: 0;
 }
 
-.post-content blockquote {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding: 1.25rem 1.5rem;
-    line-height: 1.6;
-    font-size: 1.1em;
+.post-content h3 {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--heading-color);
+    margin: 1.8em 0 0.6em;
+    text-wrap: balance;
 }
 
-.post-content blockquote p {
-    margin-bottom: 0;
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--heading-color);
+    margin: 1.5em 0 0.5em;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.post-content h3:first-child,
+.post-content h4:first-child {
+    margin-top: 0;
 }
 
 .post-content ul,
 .post-content ol {
-    margin-bottom: 1em;
+    margin: 0 0 1.1em;
     padding-left: 1.5em;
 }
 
 .post-content li {
     margin-bottom: 0.4em;
-    line-height: 1.6;
+    line-height: var(--post-line-height);
 }
 
 .post-content .footnote {
@@ -1047,5 +1071,632 @@ footer, footer a {
     .post-content thead th,
     .post-content tbody td {
         padding: 0.7rem 0.65rem;
+    }
+}
+/* ============================================ */
+/* EDITORIAL — hero, lede, meta, ornament, etc. */
+/* ============================================ */
+
+/* --- Hero image --- */
+.post-hero {
+    max-width: var(--reading-column-wide);
+    margin: 0 auto 2.25rem;
+    padding: 0;
+}
+
+.post-hero img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow);
+    display: block;
+}
+
+.post-hero figcaption {
+    margin-top: 0.6rem;
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* OG-card fallback gets a slightly softer presentation */
+.post-hero--og img {
+    max-height: 360px;
+    object-position: center;
+}
+
+/* --- Category chips + meta byline --- */
+.post-meta {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-muted);
+}
+
+.post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.post-category-chip {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    padding: 0.18em 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-byline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.post-byline-dot {
+    opacity: 0.6;
+}
+
+.post-byline time,
+.post-reading-time,
+.post-updated {
+    font-variant-numeric: tabular-nums;
+}
+
+/* --- Epigraph + drop-cap lede --- */
+.post-epigraph {
+    display: flex;
+    justify-content: center;
+    max-width: var(--reading-column);
+    margin: 1.5rem auto 1.75rem;
+    padding: 0;
+    border: none;
+    font-family: "Newsreader", "Times New Roman", serif;
+}
+
+.post-epigraph p {
+    margin: 0 auto;
+    max-width: 32rem;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    text-align: center;
+    text-wrap: balance;
+}
+
+.post-epigraph p::before { content: "“"; margin-right: 0.05em; color: var(--text-muted); }
+.post-epigraph p::after  { content: "”"; margin-left: 0.05em;  color: var(--text-muted); }
+
+.post-lede {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.32rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 1.25rem auto;
+    text-wrap: pretty;
+    overflow: hidden; /* contains the float so trailing text doesn't slip beneath */
+}
+
+.post-lede.has-dropcap::first-letter {
+    font-family: var(--dropcap-font, "Playfair Display"), "Newsreader", "Times New Roman", serif;
+    font-weight: 700;
+    /* Tuned so the cap spans roughly 3 lines at the lede's 1.32rem / 1.6 metrics. */
+    font-size: 3.4em;
+    line-height: 0.9;
+    float: left;
+    padding: 0.04em 0.1em 0 0;
+    margin-top: 0.08em;
+    color: var(--primary-color);
+}
+
+/* Font experiment — swap the var to try different display faces:
+   --dropcap-font: "Playfair Display"  (default, dramatic high-contrast serif)
+   --dropcap-font: "Newsreader"        (matches body, subtler)
+   --dropcap-font: "Cormorant Garamond" (would need to add font import)
+*/
+
+/* --- Ornament separator (replaces literal ⸻) --- */
+hr.ornament {
+    border: 0;
+    background: none;
+    height: auto;
+    text-align: center;
+    margin: 2.5rem auto;
+    max-width: var(--reading-column);
+    overflow: visible;
+    /* Compensates for the trailing letter-spacing on ::before so the asterism
+       is visually centered, not just text-aligned. */
+    text-indent: 0.6em;
+}
+
+hr.ornament::before {
+    content: "✦ ✦ ✦";
+    display: inline-block;
+    font-family: "Newsreader", "Times New Roman", serif;
+    color: var(--text-secondary);
+    letter-spacing: 0.6em;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+[data-bs-theme="dark"] hr.ornament::before {
+    color: var(--text-secondary);
+}
+
+.post-content__end-ornament {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Magazine pull-quote --- */
+.post-content blockquote {
+    margin: 1.75rem 0;
+    padding: 0.25rem 0 0.25rem 1.4rem;
+    border: none;
+    border-left: 3px solid var(--accent-color);
+    background: transparent;
+    border-radius: 0;
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.15em;
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.post-content blockquote p {
+    margin-bottom: 0.6em;
+}
+.post-content blockquote p:last-child { margin-bottom: 0; }
+
+/* Short single-paragraph blockquotes get the magazine pull-quote treatment */
+.post-content blockquote.pullquote,
+.post-content blockquote:has(> p:only-child) {
+    border-left: none;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin: 2.25rem auto;
+    max-width: 90%;
+    font-size: 1.45em;
+    font-style: italic;
+    color: var(--heading-color);
+    position: relative;
+}
+
+.post-content blockquote.pullquote::before,
+.post-content blockquote:has(> p:only-child)::before,
+.post-content blockquote.pullquote::after,
+.post-content blockquote:has(> p:only-child)::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: var(--border-color);
+    margin: 0.7rem auto;
+}
+
+/* --- Sticky / collapsible Table of Contents --- */
+.post-toc {
+    max-width: var(--reading-column);
+    margin: 0 auto 1.75rem;
+    padding: 0;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 0.9rem;
+}
+
+.post-toc__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary) !important;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.post-toc__toggle:hover {
+    background: var(--bg-tertiary);
+}
+
+.post-toc__toggle i {
+    transition: transform 0.2s ease;
+}
+
+.post-toc__toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+.post-toc__nav {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.post-toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post-toc__list li {
+    margin: 0;
+    padding: 0.25rem 0 0.25rem 0.75rem;
+    border-left: 2px solid var(--border-color);
+    transition: border-color 0.15s ease;
+}
+
+.post-toc__list li.is-active {
+    border-left-color: var(--primary-color);
+}
+
+.post-toc__list li.level-3 {
+    padding-left: 1.75rem;
+    font-size: 0.85em;
+}
+
+.post-toc__list a {
+    color: var(--text-secondary) !important;
+    text-decoration: none;
+}
+
+.post-toc__list a:hover,
+.post-toc__list li.is-active > a {
+    color: var(--primary-color) !important;
+}
+
+/* On wide screens the TOC docks to the left of the content column */
+@media (min-width: 1200px) {
+    .post-toc {
+        position: sticky;
+        top: 80px;
+        float: left;
+        width: 220px;
+        margin-left: calc((var(--reading-column) / -2) - 240px);
+        margin-right: 20px;
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+    }
+
+    .post-toc__toggle {
+        display: none;
+    }
+
+    .post-toc__nav {
+        display: block !important;
+        margin-top: 0;
+    }
+
+    .post-toc__nav[hidden] {
+        display: block !important;
+    }
+}
+
+/* --- Reading-progress bar --- */
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: transparent;
+    z-index: 1100;
+    pointer-events: none;
+}
+
+.reading-progress__bar {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: var(--primary-color);
+    transition: width 0.08s linear;
+}
+
+/* --- Prev / Next --- */
+.post-prevnext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2.5rem auto 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.post-prevnext__col a {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--text-primary) !important;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: color 0.15s ease;
+}
+
+.post-prevnext__col a:hover {
+    color: var(--primary-color) !important;
+}
+
+.post-prevnext__col--next {
+    text-align: right;
+}
+
+.post-prevnext__label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.25rem;
+}
+
+.post-prevnext__title {
+    display: block;
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* --- Related reading --- */
+.post-related {
+    margin: 2.5rem auto 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.post-related__title {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 1rem;
+}
+
+.post-related__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.post-related__item a {
+    display: block;
+    padding: 0.5rem 0;
+    color: var(--text-primary) !important;
+    text-decoration: none;
+}
+
+.post-related__item a:hover .post-related__post-title {
+    color: var(--primary-color);
+}
+
+.post-related__date {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 0.15rem;
+}
+
+.post-related__post-title {
+    display: block;
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--heading-color);
+    transition: color 0.15s ease;
+}
+
+.post-related__excerpt {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* --- Share row --- */
+.post-share {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin: 1rem auto 2rem;
+    padding: 1rem 0;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-share__label {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.post-share__buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.post-share__btn {
+    background: transparent !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem !important;
+    padding: 0.4rem 0.8rem !important;
+    border-radius: 0.4rem !important;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.post-share__btn:hover {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    background: var(--bg-secondary) !important;
+    transform: none;
+    box-shadow: none;
+}
+
+.post-share__btn i {
+    font-size: 1em;
+}
+
+/* --- Comments --- */
+.post-comments {
+    margin: 1.5rem auto 3rem;
+}
+
+.post-comments__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-comments__title {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.post-comments__hint {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* --- Tables — soften to match editorial voice --- */
+.post-content table {
+    font-family: "Newsreader", "Times New Roman", serif;
+    font-size: 1rem;
+    margin: 1.75em 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.post-content thead th {
+    background: transparent;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--heading-color);
+    padding: 0.6rem 0.85rem 0.6rem 0;
+    border-bottom: 2px solid var(--text-primary);
+}
+
+.post-content tbody tr {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.post-content tbody tr:hover {
+    background-color: transparent;
+}
+
+.post-content tbody td {
+    padding: 0.85rem 0.85rem 0.85rem 0;
+    vertical-align: top;
+}
+
+.post-content tbody td:first-child {
+    font-weight: 500;
+}
+
+/* --- Footnote sidenotes (Tufte-style) on wide viewports --- */
+.post-content .footnotes {
+    font-size: 0.92em;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 1400px) {
+    .post-content sup[id^="fnref"] {
+        cursor: pointer;
+    }
+}
+
+/* --- Mobile adjustments --- */
+@media (max-width: 768px) {
+    :root {
+        --post-font-size: 1.15rem;
+        --post-line-height: 1.65;
+    }
+
+    .post-title {
+        font-size: clamp(1.75rem, 7vw, 2.4rem);
+    }
+
+    .post-deck {
+        font-size: 1.05rem;
+    }
+
+    .post-lede {
+        font-size: 1.2rem;
+    }
+
+    .post-lede.has-dropcap::first-letter {
+        font-size: 3em;
+    }
+
+    .post-hero img {
+        max-height: 320px;
+        border-radius: 0.5rem;
+    }
+
+    .post-prevnext {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .post-prevnext__col--next {
+        text-align: left;
+    }
+
+    .post-share {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Override prior smaller-mobile rule so post-content uses the new variables */
+@media (max-width: 576px) {
+    .post-content {
+        font-size: var(--post-font-size);
+        line-height: var(--post-line-height);
     }
 }

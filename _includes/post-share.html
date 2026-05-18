@@ -1,0 +1,25 @@
+{%- assign share_url = site.production_url | append: page.url -%}
+<div class="post-share">
+  <span class="post-share__label">Share</span>
+  <div class="post-share__buttons">
+    <a class="post-share__btn"
+       href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ share_url }}&via={{ site.author.twitter }}"
+       rel="nofollow noopener" target="_blank" aria-label="Share on Twitter">
+      <i class="bi bi-twitter" aria-hidden="true"></i>
+      <span>Twitter</span>
+    </a>
+    <a class="post-share__btn"
+       href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}"
+       rel="nofollow noopener" target="_blank" aria-label="Share on LinkedIn">
+      <i class="bi bi-linkedin" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+    <button class="post-share__btn"
+            type="button"
+            data-copy-url="{{ share_url }}"
+            aria-label="Copy link">
+      <i class="bi bi-link-45deg" aria-hidden="true"></i>
+      <span>Copy link</span>
+    </button>
+  </div>
+</div>

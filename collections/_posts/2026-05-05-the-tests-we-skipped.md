@@ -7,12 +7,11 @@ description: "I argued for tests, trunk-based development, and against the PR-ru
 lead_image: blog/the-tests-we-skipped.svg
 ---
 
-<div class="footnote">
-<strong>&ldquo;The argument I lost for twenty years is the argument the industry is now winning, by accident, through the back door.&rdquo;</strong>
-<p/>
+<div class="post-epigraph">
+  <p>The argument I lost for twenty years is the argument the industry is now winning, by accident, through the back door.</p>
 </div>
 
-#### A position I held for twenty years
+## A position I held for twenty years
 
 For most of my career I argued *for* writing tests.
 
@@ -24,9 +23,9 @@ That's not a complaint. That's the starting condition. The conversation about AI
 
 This time, the industry doesn't have a choice.
 
-⸻
+<hr class="ornament" />
 
-#### The argument for tests, in plain language
+## The argument for tests, in plain language
 
 The argument was always simple, and I've made it a thousand times.
 
@@ -40,9 +39,9 @@ What that argument always dropped was the time on the other side of the ledger. 
 
 You weren't saving time. You were deferring it onto people you weren't counting in the same column. Often QA. Often support. Often the on-call engineer at 2am. The cost was always paid. The lie was that it wasn't.
 
-⸻
+<hr class="ornament" />
 
-#### The PR ritual, and the responsibility it quietly moved
+## The PR ritual, and the responsibility it quietly moved
 
 This is the other position I lost for twenty years. The agent conversation is finally surfacing it.
 
@@ -58,9 +57,9 @@ I argued for years that this was upside down. That the right model was simpler: 
 
 The PR-as-rubber-stamp pattern was a comfortable lie that let everyone feel good about the process without anyone doing the work the process was supposed to be doing. It was a way to look like we cared about quality without paying the cost. I lost that argument too. Most teams kept the ritual. Most teams kept being surprised when production broke.
 
-⸻
+<hr class="ornament" />
 
-#### What the AI conversation is finally surfacing
+## What the AI conversation is finally surfacing
 
 Here's the part that's funny, in a tired way. Watch the AI safety conversation closely for a minute. Eval suites. Tool-call sandboxes. Approval gates. Agent-of-agent review patterns where one agent writes the code and another reviews it and a third runs the tests. Specs as a first-class artifact. Spec-driven development.
 
@@ -76,9 +75,9 @@ The teams that argued against tests for two decades are now standing up eval sui
 
 **The agents didn't break the system. The agents just ran fast enough that the broken system stopped being invisible.**
 
-⸻
+<hr class="ornament" />
 
-#### The harness was always the work
+## The harness was always the work
 
 You can put a harness on AI. You should. Eval suites, sandboxes, approval gates, dry-run modes, agent-of-agent review — all of it good, all of it necessary.
 
@@ -88,9 +87,9 @@ The argument I lost for twenty years is the argument the industry is now winning
 
 I'm not bitter about this. I'm relieved. The work I always wanted teams to do is the work teams are finally doing — not because they were convinced, but because the loop got short enough that they had no choice. I'll take wins however they come.
 
-⸻
+<hr class="ornament" />
 
-#### Spec-driven development, and other rediscoveries
+## Spec-driven development, and other rediscoveries
 
 I keep getting sent posts about spec-driven development as if it were a revelation. The first time someone DM'd me a thread on it, I laughed for a minute and then I felt old.
 
@@ -100,9 +99,9 @@ Now the spec is the thing the agent reads. It's also the thing the test suite is
 
 I'll take it. I don't care what we call it. If the rebrand is what it takes for teams to finally take specs seriously, I'll cheer the rebrand. Some of the best ideas in software take twenty years to get accepted, and they usually need a new name to get there.
 
-⸻
+<hr class="ornament" />
 
-#### The tests we skipped
+## The tests we skipped
 
 I think about the engineers who argued with me, in standups, ten years ago, about whether we should have a test for this. I think about the teams that picked the PR ritual over actual review. I think about the people who said *we don't have time for tests* and meant *we don't have time for the work of being right.*
 
