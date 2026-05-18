@@ -13,6 +13,10 @@ layout: bare
 </div>
 
 <!-- plugin-probe: {{ '' | plugin_loaded_probe }} -->
+<!-- diag-rm: [{{ '<p>This is at least sixty characters of plain prose, more than enough to qualify as a lede.</p>' | reading_minutes }}] -->
+<!-- diag-lp: [{{ '<p>This is at least sixty characters of plain prose, more than enough to qualify as a lede.</p>' | lede_paragraph | strip_html }}] -->
+<!-- diag-wc: [{{ 'one two three four five' | word_count }}] -->
+<!-- diag-toc: [{{ '<h2 id="x">X</h2><p>y</p>' | extract_toc }}] -->
 <article class="post fade-in-up" data-post-article>
   {% include post-hero.html %}
 
