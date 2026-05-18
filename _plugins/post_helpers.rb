@@ -130,6 +130,7 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
     end
   post.data['editorial'] = PostEditorial.compute(rendered, post, post.site)
   post.data['editorial']['rendered_html'] = rendered
+  post.data['editorial']['_hook_fired'] = 'EDITORIAL_HOOK_RAN'
 end
 
 # Provide a "force registration" of a tiny filter set as a belt-and-braces
