@@ -1598,10 +1598,11 @@ hr.ornament::before {
     color: var(--text-muted);
 }
 
-/* --- Tables — soften to match editorial voice --- */
+/* --- Tables — sans-serif for tabular data, contrasts with serif prose --- */
 .post-content table {
-    font-family: "Newsreader", "Times New Roman", serif;
-    font-size: 1rem;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
     margin: 1.75em 0;
     border-collapse: collapse;
     width: 100%;
@@ -1609,11 +1610,11 @@ hr.ornament::before {
 
 .post-content thead th {
     background: transparent;
-    text-transform: none;
-    letter-spacing: 0;
-    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.75rem;
     font-weight: 600;
-    color: var(--heading-color);
+    color: var(--text-secondary);
     padding: 0.6rem 0.85rem 0.6rem 0;
     border-bottom: 2px solid var(--text-primary);
 }
