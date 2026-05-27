@@ -128,8 +128,13 @@ Jekyll::Hooks.register :posts, :pre_render do |post|
     else
       post.content
     end
-  post.data['editorial'] = PostEditorial.compute(rendered, post, post.site)
+  result = PostEditorial.compute(rendered, post, post.site)
+  $stderr.puts "[editorial] #{File.basename(post.relative_path)}: hero_src=#{result['hero_src'].inspect} lede=#{result['lede_html'] ? result['lede_html'][0,40].inspect : 'nil'}"
+  post.data['editorial'] = result
   post.data['editorial']['rendered_html'] = rendered
+rescue => e
+  $stderr.puts "[editorial] ERROR on #{File.basename(post.relative_path)}: #{e.class}: #{e.message}"
+  $stderr.puts e.backtrace.first(3).join("\n")
 end
 
 # Provide a "force registration" of a tiny filter set as a belt-and-braces
