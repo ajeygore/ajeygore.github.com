@@ -19,15 +19,11 @@ Here's the thing most people forget about Free Solo, or maybe never noticed. Hon
 
 The harness didn't disappear. It moved inward.
 
-> Honnold didn't remove the harness. He internalised it until the external gear became redundant.
-
 Everyone watched that film and took the wrong lesson. What people perceived: *you can climb without protection if you're good enough.* What the film actually depicts, if you watch it with any thoughtfulness: *to climb without external protection, you first have to build internal protection so thorough that nothing on the wall can catch you unprepared.* Honnold's years of roped climbing weren't the cautious version of the climb. They were the harness — just built into his body and his preparation rather than clipped to his belt.
 
 The teams that genuinely run at 100x — the solo senior plus agents doing the work of eight, the small team that ships like a large one — they didn't remove the harness. They built a different kind, and they built it first. That's the half the romance never shows.
 
-If you read [The Anatomy of an AI-Native Org](/content/the-anatomy-of-an-ai-native-org) and felt the pull of it, I get it. I felt it too, and I've watched it work this year on teams I respect. But most of the teams I talk to who want that shape are attempting the free solo without doing what Honnold did first.
-
-This post is about what Honnold actually did. What the harness is. What it has to hold. Where it snaps. What "strong enough" actually means when the climber is one person plus agents, and the team that used to catch the fall isn't on the wall anymore.
+Most of the teams I talk to who want that shape are attempting the free solo without doing what Honnold did first.
 
 <hr class="ornament" />
 
@@ -41,15 +37,11 @@ Load-bearing means: when an agent opens a PR at 11pm on a Friday, and the senior
 
 That is the load. Everything else — the dashboards, the rituals, the post-incident retros — is what you do *after* the harness has already failed.
 
-> Load-bearing means: when the change goes wrong and nobody is awake, the harness either holds or doesn't.
-
 You can see why most teams' "harness" isn't load-bearing. A test suite that passes 90% of the time isn't a harness. A spec document nobody operates from isn't a harness. A staging environment the team has stopped trusting isn't a harness. None of those held the human team either — they just got papered over by review meetings and manual QA passes. The agent removes the paper.
 
 <hr class="ornament" />
 
 ## The solo climb is the load test
-
-*The reason this matters now and didn't matter as much before.*
 
 The old org had a lot of redundancy in it. I argued [for twenty years](/content/the-tests-we-skipped) that the redundancy was hiding a missing harness. Most teams disagreed, quietly, by carrying on. The disagreement was tenable because the redundancy was real. A weak harness, plus six engineers plus a QA team plus a manager who knew the codebase plus a long release cycle, is a system that mostly catches mistakes. Not elegantly. Not cheaply. But catches them.
 
@@ -67,13 +59,11 @@ I keep getting asked by founders and senior engineers whether the 100x shape is 
 
 ## The invisible load
 
-*Why software engineers skip the gear check that climbers never do.*
-
 A climber two hundred feet up a granite face knows exactly what the harness is for. The consequence of bad gear is immediate, physical, and irreversible. Nobody argues about whether to clip in. Nobody says "let's skip the gear check this sprint." The feedback loop is closed in the worst possible way, and everyone on the wall knows it.
 
 Software doesn't work like that. The consequence of a missing eval suite is a bug in production three weeks from now, found by a user who emails support, turned into a ticket, escalated eventually to engineering, assigned to someone, debugged across a few days, fixed in a PR nobody reviews carefully because the pressure is on to close the sprint. Distributed. Invisible at each step. Nobody felt the fall. The load was spread across twelve people and thirty days until it became noise.
 
-This is the strategic gap most leaders I talk to can't quite name. They understand risk in the abstract. They've read the incident reports. But software risk doesn't register the way physical risk does, because the feedback loop is too slow and the consequence too diffuse. You skip the harness and nothing happens today. Nothing happens this sprint. The cost is real and it's being paid — it's just being paid by people you're not counting in the same column.
+This is the strategic gap most leaders I talk to can't quite name. Software risk doesn't register the way physical risk does — the feedback loop is too slow and the consequence too diffuse. You skip the harness and nothing happens today. Nothing happens this sprint. The cost is real and it's being paid — it's just being paid by people you're not counting in the same column.
 
 I felt this clearly when building [clawstation.ai](https://clawstation.ai). There's a moment in every serious build where the harness stops being best practice and becomes concrete — the actual difference between shipping and explaining. The failure doesn't announce itself as failure. It arrives as slowness. The release that takes longer than expected. The agent that shipped something technically correct and completely wrong. The bug in a place nobody was watching. The invisible load was always there. The harness is what makes it visible before it becomes a disaster.
 
@@ -107,7 +97,7 @@ Notice none of these failures are about the agent. All of them existed in the hu
 
 ## The gear list
 
-If you're a senior engineer or an EM or a founder thinking about what a real harness looks like — the kind that holds when the climb is solo — here is what I'd insist on. Not as a checklist for compliance. As gear I'd inspect before I let the climb begin.
+Here is what I'd insist on. Not as a checklist for compliance. As gear I'd inspect before I let the climb begin.
 
 **Specs that are operated from.** Not specs that live in a Notion page nobody opens. Specs that are the input to the agent, the source for the eval suite, and the artefact the team reviews when something breaks. If the spec isn't load-bearing in the system itself, it isn't a spec. It's documentation.
 
