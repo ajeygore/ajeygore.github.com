@@ -115,26 +115,24 @@ module PostEditorial
   end
 end
 
-# Pre-render hook: convert the post's markdown source to HTML ourselves so
-# we can analyze it and attach editorial data BEFORE the layout renders.
-# (At :pre_render time, post.content is still raw markdown — we need the
-# converted HTML to find the lede paragraph, ToC anchors, etc.)
-Jekyll::Hooks.register :posts, :pre_render do |post|
-  ext = File.extname(post.relative_path)
-  converter = post.site.find_converter_instance(Jekyll::Converters::Markdown)
-  rendered =
-    if converter.matches(ext)
-      converter.convert(post.content)
-    else
-      post.content
+# Generator runs during site-generation phase, before any Liquid payload is
+# frozen. This ensures post.data['editorial'] is present when Jekyll calls
+# document.to_liquid() — fixing the production bug where :pre_render fired
+# after the page variable snapshot was already taken.
+class EditorialGenerator < Jekyll::Generator
+  safe true
+  priority :high
+
+  def generate(site)
+    converter = site.find_converter_instance(Jekyll::Converters::Markdown)
+    site.posts.docs.each do |post|
+      ext = File.extname(post.relative_path)
+      rendered = converter.matches(ext) ? converter.convert(post.content) : post.content
+      result = PostEditorial.compute(rendered, post, site)
+      post.data['editorial'] = result
+      post.data['editorial']['rendered_html'] = rendered
     end
-  result = PostEditorial.compute(rendered, post, post.site)
-  $stderr.puts "[editorial] #{File.basename(post.relative_path)}: hero_src=#{result['hero_src'].inspect} lede=#{result['lede_html'] ? result['lede_html'][0,40].inspect : 'nil'}"
-  post.data['editorial'] = result
-  post.data['editorial']['rendered_html'] = rendered
-rescue => e
-  $stderr.puts "[editorial] ERROR on #{File.basename(post.relative_path)}: #{e.class}: #{e.message}"
-  $stderr.puts e.backtrace.first(3).join("\n")
+  end
 end
 
 # Provide a "force registration" of a tiny filter set as a belt-and-braces
