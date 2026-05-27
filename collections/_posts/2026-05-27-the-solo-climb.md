@@ -11,11 +11,9 @@ lead_image: blog/og/the-solo-climb.png
   <p>Everyone in engineering started using the word "harness" around the same time. I think I know where it came from.</p>
 </div>
 
+We all watched Free Solo. If you haven't: Alex Honnold climbed El Capitan — three thousand feet of vertical granite in Yosemite — without a rope. No protection. Nothing between him and the ground. The documentary won an Oscar and, somewhere in the years that followed, quietly handed the word "harness" to every engineering conversation I've been part of. *We need a harness. The harness isn't strong enough. Who owns the harness?* I can't prove the etymology but I'd bet on it.
+
 ## The part nobody wants to build
-
-We all watched Free Solo.
-
-If you haven't: Alex Honnold climbed El Capitan — three thousand feet of vertical granite in Yosemite — without a rope. No protection. Nothing between him and the ground. The documentary won an Oscar and, somewhere in the years that followed, quietly handed the word "harness" to every engineering conversation I've been part of. *We need a harness. The harness isn't strong enough. Who owns the harness?* I can't prove the etymology but I'd bet on it.
 
 Here's the thing most people forget about Free Solo, or maybe never noticed. Honnold didn't decide one morning to climb without a rope. He spent years on that exact route — with the rope, with the harness, with all the protection — until he had memorised every hold, every transition, every sequence across three thousand feet of rock. He rehearsed the crux sections until his body could execute them in the dark. He didn't remove the external safety until he'd built something harder to see and far harder to build: internal safety, so thorough that nothing on the wall could surprise him.
 
@@ -23,7 +21,7 @@ The harness didn't disappear. It moved inward.
 
 > Honnold didn't remove the harness. He internalised it until the external gear became redundant.
 
-The software industry watched that film and took the wrong lesson. What people heard: *you can climb without protection if you're good enough.* What the film actually shows: *to climb without external protection, you first build internal protection so thorough that nothing can catch you unprepared.* Honnold's years of roped climbing weren't the cautious version of the climb. They were the harness — just built into his body and his preparation rather than clipped to his belt.
+Everyone watched that film and took the wrong lesson. What people perceived: *you can climb without protection if you're good enough.* What the film actually depicts, if you watch it with any thoughtfulness: *to climb without external protection, you first have to build internal protection so thorough that nothing on the wall can catch you unprepared.* Honnold's years of roped climbing weren't the cautious version of the climb. They were the harness — just built into his body and his preparation rather than clipped to his belt.
 
 The teams that genuinely run at 100x — the solo senior plus agents doing the work of eight, the small team that ships like a large one — they didn't remove the harness. They built a different kind, and they built it first. That's the half the romance never shows.
 
