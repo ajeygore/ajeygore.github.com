@@ -1106,7 +1106,7 @@ footer, footer a {
 /* OG-card fallback gets a slightly softer presentation */
 .post-hero--og img {
     max-height: 360px;
-    object-position: center;
+    object-position: top;
 }
 
 /* --- Category chips + meta byline --- */
