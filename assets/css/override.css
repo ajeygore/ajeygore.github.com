@@ -1368,7 +1368,7 @@ hr.ornament::before {
         top: 80px;
         float: left;
         width: 220px;
-        margin-left: -240px;
+        margin-left: calc((1136px - var(--reading-column)) / 2 - 240px);
         margin-right: 20px;
         max-height: calc(100vh - 120px);
         overflow-y: auto;
