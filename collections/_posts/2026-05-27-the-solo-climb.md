@@ -2,8 +2,9 @@
 layout: post
 title: "The Solo Climb"
 published: true
-categories: [AI, Engineering, Engineering Practices]
-description: "We all watched Free Solo and took the wrong lesson. Honnold didn't remove the harness — he internalised it until the external gear became redundant. Most teams attempting the 100x shape are trying to skip that part. This is about what Honnold actually did."
+categories: [AI, Engineering, Engineering Practices, Testing]
+description: "Alex Honnold didn't remove the harness — he internalised it. For 100x engineering teams using AI agents, a load-bearing harness is the only way to climb safely."
+keywords: "AI agents, engineering productivity, software testing harness, 100x engineer, LLM evals, Alex Honnold Free Solo, engineering leadership, automated testing"
 lead_image: blog/og/the-solo-climb.png
 ---
 
@@ -87,7 +88,7 @@ I've watched enough of these systems get stress-tested this year to have an opin
 
 **The harness has no eval for *what good means*.** Tests can tell you the function returned the right value. Tests cannot tell you the feature actually solved the user's problem. A real harness includes the eval layer — the one above the unit tests that asks, *did this change accomplish the thing it was meant to accomplish?* Most teams don't have this layer. Most teams have never built it. The Harness PM lane [I wrote about last week](/content/ai-ate-my-role-whats-next) exists precisely because this gap is real and someone has to own it.
 
-**The harness has no safe failure mode.** When the harness catches something, what happens? In a healthy system, the change doesn't ship and the author finds out fast. In most systems I see, the harness flags something, the alert goes to a channel nobody watches, and the change ships anyway because the gate isn't actually a gate. A harness that warns but doesn't stop is not a harness. It's a notification.
+**The harness has no safe failure mode.** When the harness catches something, what happens? In a healthy system, the change doesn't ship and the author finds out fast. In most systems I see, the harness flags something, the alert goes to a channel nobody watches, and the change ships anyway because the gate isn't actually a gate. A harness that warns but doesn't stop is not a harness. It's a notification. In climbing terms, this is gear that unclips the moment you put weight on it. A real harness requires the software equivalent of a circuit breaker or an automated rollback — a mechanism that physically stops the fall before it hits the ground.
 
 > A harness that warns but doesn't stop is not a harness. It's a notification.
 
@@ -109,7 +110,7 @@ Here is what I'd insist on. Not as a checklist for compliance. As gear I'd inspe
 
 **Gates that actually gate.** The build either goes to production or it doesn't. The eval either passes or it doesn't. The approval either fires or it doesn't. No "we'll let it through this time." Every soft gate is a hole, and every hole gets exploited eventually — not maliciously, just statistically.
 
-**Agent-of-agent review.** One agent writes. Another reviews. A third runs the tests. None of them are the senior engineer, who is doing the work the [Anatomy](/content/the-anatomy-of-an-ai-native-org) post said survives — designing the system, holding judgement, owning the outcome. The agent-on-agent layer is what makes the climb scalable. It's also the layer most teams haven't built yet, because they're still pretending the senior engineer can review every PR by hand.
+**Agent-of-agent review.** One agent writes. Another reviews. A third runs the tests. This isn't just about replacing a human; it's an automated layer designed to scale technical judgment at the same velocity as the code being generated. None of them are the senior engineer, who is doing the work the [Anatomy](/content/the-anatomy-of-an-ai-native-org) post said survives — designing the system, holding judgement, owning the outcome. The agent-on-agent layer is what makes the climb scalable. It's also the layer most teams haven't built yet, because they're still pretending the senior engineer can review every PR by hand.
 
 **Observability the senior engineer actually reads.** Not dashboards. Not alerts that fire into dead channels. The five or six signals that, if any of them moves, the senior wants to know inside the hour. The harness only protects you if you can see when it's about to fail.
 

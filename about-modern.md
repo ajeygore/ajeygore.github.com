@@ -65,7 +65,7 @@ subpage: about
                 <ul class="list-unstyled">
                     <li class="mb-2"><strong><a href="https://twitter.com/ajeygore">Twitter</a></strong> — best for quick questions and public discussions</li>
                     <li class="mb-2"><strong><a href="https://sg.linkedin.com/in/ajeygore">LinkedIn</a></strong> — professional networking and longer thoughts</li>
-                    <li class="mb-2"><strong><a href="mailto:ajey@peakxv.com">Email</a></strong> — detailed discussions (expect response within a week)</li>
+                    <li class="mb-2"><strong><a href="https://github.com/ajeygore">GitHub</a></strong> — code, experiments, and the occasional issue thread</li>
                 </ul>
             </section>
 
