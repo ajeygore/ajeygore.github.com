@@ -4,7 +4,7 @@ title: "The Expensive Thing"
 published: true
 categories: [AI, Leadership, Engineering Management]
 description: "Every conversation about AI agents celebrates speed. But the hardest problem isn't building agents — it's deciding what 'correct' means. When execution is nearly free, judgment becomes the expensive thing."
-lead_image: blog/the_expensive_thing.svg
+lead_image: blog/og/the-expensive-thing.png
 ---
 
 <div class="post-epigraph">

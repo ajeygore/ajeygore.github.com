@@ -17,7 +17,7 @@ require 'nokogiri'
 require 'json'
 
 module PostEditorial
-  WORDS_PER_MINUTE = 220
+  WORDS_PER_MINUTE = 265
   RASTER_EXTS      = %w[.png .jpg .jpeg .webp .avif .svg].freeze
 
   module_function

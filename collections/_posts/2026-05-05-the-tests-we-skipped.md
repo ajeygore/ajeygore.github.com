@@ -4,7 +4,7 @@ title: "The Tests We Skipped"
 published: true
 categories: [AI, Engineering, Engineering Practices]
 description: "I argued for tests, trunk-based development, and against the PR-rubber-stamp ritual for twenty years. Most teams didn't listen. Now AI is shipping in hours, the bugs are shipping in hours, and the industry is rediscovering — under new names — every practice we used to skip."
-lead_image: blog/the-tests-we-skipped.svg
+lead_image: blog/og/the-tests-we-skipped.png
 ---
 
 <div class="post-epigraph">

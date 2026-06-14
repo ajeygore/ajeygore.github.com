@@ -1,12 +1,4 @@
-{% capture words %}
-  {{ include.page_content | number_of_words | minus: 180 }}
-{% endcapture %}
-{% unless words contains "-" %}
-  {% assign minutes = words | plus: 180 | divided_by: 180 %}
-  {{ minutes }}
-  {% if minutes == 1 %}
-    {{ " minute" }}
-  {% else %}
-    {{ " minutes" }}
-  {% endif %}
-{% endunless %}
+{%- assign rt_words = include.page_content | number_of_words -%}
+{%- assign rt_minutes = rt_words | plus: 264 | divided_by: 265 -%}
+{%- if rt_minutes < 1 %}{% assign rt_minutes = 1 %}{% endif -%}
+{{ rt_minutes }}{% if rt_minutes == 1 %} minute{% else %} minutes{% endif %}
