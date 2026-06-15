@@ -3,102 +3,98 @@ layout: post
 title: What's "hopeless" in product engineering?
 published: true
 categories: Essay
-description: Why product engineering teams get stuck in cycles of dysfunction, and the transformative journey from chaos to clarity.
+description: "A running list of what's hopeless in product engineering — skipped tests, PR theatre, measuring productivity, managers managing managers — and the comfortable reason we keep doing each one anyway."
 lead_image: blog/hopeless-product-engineering-white-bg.svg
 ---
 
-## THIS POST has ongoing contribution
+<div class="post-epigraph">
+  <p>We don't keep these problems because they're hard to solve. We keep them because solving them means admitting we were wrong.</p>
+</div>
 
-**Why do we keep having the same conversations?** 
+For most of my career, the same conversations have come back around in every product engineering team I've built or advised. Different companies, different stacks, the same mistakes. Three complaints come up almost every time:
 
-In every product engineering discussion I've had over the past decade, the same frustrating patterns emerge. Teams everywhere are wrestling with identical problems, asking the same questions, and getting trapped in the same dysfunction cycles. It's like watching different companies make the exact same mistakes, over and over again.
+* Writing tests isn't the developer's job.
+* Pull requests are a waste of time. (More on that in a future post: "Unbranching software, unleashing productivity.")
+* How do we measure developer productivity?
 
-Almost in every discussion around product engineering culture following two or three things come up constantly:
+My answer is usually one word: hopeless. The people aren't the problem — most are smart and capable. The fix is. Every one of these asks the team to change a behaviour it has quietly agreed not to touch, and we circle them for years because solving them means admitting we've been wrong, sometimes for a decade.
 
-* Code without tests or writing test cases is not developer's responsibility.
-* People keep wasting time on PRs (I will write another blog post about "Unbranching software, unleashing productivity")
-* Many people keep asking me how to measure developer productivity.
+So here is my running list of what's actually hopeless in product engineering, and the comfortable reason we keep doing each one anyway.
 
-When I hear these conversations, I said "all this is hopeless" - unless people change fundamental behaviors. But then I started wondering: **Why do smart, capable people keep getting stuck in these patterns?** What makes these problems so persistent that they appear in company after company, team after team?
+<hr class="ornament" />
 
-The answer lies in our collective reluctance to confront uncomfortable truths. We ponder these issues because deep down, we know something is fundamentally broken, but changing it requires admitting we've been doing things wrong - sometimes for years.
+## The quality delusion
 
-Here's what I've observed as truly **"hopeless"** - and why these patterns persist:
+**Shipping code without tests is hopeless.** *We skip them because tests feel like extra work, right up until the bug they'd have caught ships to a customer.*
 
+**Outsourcing quality to a QA team instead of to automation is hopeless.** *It's easier to hire someone to find bugs than to build quality into the work.*
 
-- having code without tests is hopeless
-### **The Quality Delusion**
-* **Having code without tests is hopeless** - *Yet teams do this because writing tests feels like "extra work" when deadlines loom*
-* **Relying on QA instead of test automation is hopeless** - *But it's easier to hire someone to "find bugs" than build quality into the process*
-* **Thinking QA is quality assurance and not quality automation is hopeless** - *Because we prefer the illusion of safety over actual safety*
+**Treating QA as "quality assurance" rather than quality automation is hopeless.** *We prefer the feeling of safety to the cost of the real thing.*
 
-### **The Product Management Confusion**  
-* **A PM who doesn't work stories with research and acceptance criteria is hopeless** - *Yet many PMs become glorified feature factories because that's what leadership rewards*
-* **Treating product manager as project manager is hopeless** - *But controlling delivery dates feels more manageable than empowering product decisions*
+## The product management confusion
 
-### **The Organizational Dysfunction**
-* **Instituting managers to manage people in product engineering is hopeless** - *Though we do it because traditional hierarchies feel familiar and safe*
-* **Having CTO and CPO both is hopeless** - *Yet companies create these roles to avoid hard decisions about unified leadership*
-* **Treating product and engineering as separate teams is hopeless** - *But silos provide clear blame boundaries when things go wrong*
+**A PM who doesn't shape stories with research and acceptance criteria is hopeless.** *Leadership rewards feature output, so PMs quietly become feature factories.*
 
-### **The Measurement Trap**
-* **Trying to measure product engineering productivity is hopeless** - *We attempt this because executives demand metrics they can understand, even when they're meaningless*
-* **Treating estimates as commitments is hopeless** - *Yet we do it because uncertainty makes stakeholders uncomfortable*
+**Treating a product manager as a project manager is hopeless.** *Controlling dates feels safer than trusting product decisions.*
 
-### **The Communication Breakdown**
-* **Having meetings with more than 4 people is hopeless** - *But large meetings let everyone feel "included" without actually contributing*
-* **Having meetings without agendas is hopeless** - *Though unstructured time feels collaborative even when it's wasteful*
-* **Using wrong language to express problems is hopeless** - *(Think "resources" vs "people" - dehumanizing language reflects dehumanizing thinking)*
+## The organisational dysfunction
 
-### **The Knowledge Gaps**
-* **Having product engineers who don't understand data is hopeless** - *Yet we hire for technical skills alone, ignoring business acumen*
-* **Having a team that doesn't understand the business, customer, or product is hopeless** - *But keeping teams "focused on code" seems more efficient*
-* **Having data science without data foundation is hopeless** - *Though ML and AI sound impressive in board meetings*
+**Adding managers whose only job is to manage people is hopeless.** *A familiar hierarchy feels safer than a team that has to lead itself.*
 
-### **The Culture Problems**
-* **Work-life balance is hopeless** - *We say we want it while rewarding those who sacrifice everything for work*
-* **As startup founders, expecting a 9-5 life is hopeless** - *Yet we're surprised when this expectation burns out our teams*
-* **Everyone has an agenda - having no agenda is hopeless** - *Because politics emerge whether we acknowledge them or not*
+**Having both a CTO and a CPO is hopeless.** *Two titles are how a company avoids one hard decision about who leads.*
 
-### **The Technical Decisions**
-* **Not having hands-on engineering leadership is hopeless** - *But promoting good engineers into pure management roles feels like career progression*
-* **Having a separate DevOps team is hopeless** - *(DevOps is culture, not a team, but creating a team is easier than changing culture)*
-* **Calling/treating people as resources is hopeless** - *Because viewing humans as interchangeable parts makes planning feel simpler*
-* **Not treating engineering, product, and design teams as one team is hopeless** - *Yet separate teams provide clear accountability boundaries*
+**Running product and engineering as separate teams is hopeless.** *Silos hand everyone a clean boundary to point at when things break.*
 
-**Why do we ponder these problems endlessly instead of fixing them?** 
+## The measurement trap
 
-Because each represents a fundamental tension between what we know works and what feels safe, familiar, or politically expedient. We discuss them in circles because the solutions require uncomfortable changes - admitting we've been wrong, restructuring teams, having difficult conversations, or challenging established power structures.
+**Trying to measure product engineering productivity is hopeless.** *Executives want a number they can read, even when the number means nothing.*
 
-The hopelessness isn't in the problems themselves - it's in our collective unwillingness to make the hard changes needed to solve them.
+**Treating estimates as commitments is hopeless.** *Certainty is comforting; the work stays uncertain anyway.*
 
-*What "hopeless" pattern have you observed in your organization? Share your thoughts - this list grows with every honest conversation.*
-- relying on qa and not on the test automation is hopeless
-- thinking qa is quality assurance and not quality automation is hopeless
-- treating product manager as project manager, and not giving them autonomy is hopeless
-- instituting managers to manage people in product engineering is hopeless
-- trying to measure product engineering productivity is hopeless
-- work life balance is hopeless
-- As startup founders expecting a 9-5 life is hopeless
-- not having hands on engineering leader is hopeless
-- having CTO and CPO both is hopeless
-- treating product and engineering as separate teams is hopeless
-- having product engineers who don’t understand data is hopeless
-- having data science without data foundation is hopeless
-- having a separate team for devops is hopeless (devops is a culture, not a team)
-- Using the wrong language to express a problem is hopeless. (Think resources vs people)
-- Everyone has agenda, either you fit your colleagues agenda, or they fit your agenda, having no agenda is hopeless :-)
-- having a team that doesn’t understand the business is hopeless
-- having a team that doesn’t understand the customer is hopeless
-- having a team that doesn’t understand the product is hopeless
-- calling/treating people as resources is hopeless.
-- treating an estimate as anything other than an estimate is hopeless
-- having meeting with more than 4 people is hopeless
-- having a meeting without an agenda is hopeless
-- not treating engineering, product, and design teams as a one team is hopeless
+## The communication breakdown
 
-I will keep adding to this list, and I am sure there are many more things that are hopeless, if you have any, please do share with me on X (Twitter)
+**Meetings with more than four people are hopeless.** *A big room lets everyone feel included without anyone contributing.*
 
-<div class="footnote"> 
-<b>With Contributions from:</b> Deepesh Naini, Sahil Kharb, Mahesh Lal, Ranjan Sakalley
+**Meetings without an agenda are hopeless.** *Unstructured time feels collaborative while it wastes everyone's.*
+
+**Using the wrong words for a problem is hopeless.** *Call people "resources" long enough and you start treating them like one.*
+
+## The knowledge gaps
+
+**Product engineers who don't understand data are hopeless.** *We hire for technical skill and quietly ignore business sense.*
+
+**A team that doesn't understand the business, the customer, or the product is hopeless.** *Keeping people "focused on code" looks efficient on paper.*
+
+**Data science without a data foundation is hopeless.** *ML and AI sound impressive in a board meeting; the plumbing underneath doesn't.*
+
+## The culture problems
+
+**Claiming to value work-life balance while rewarding burnout is hopeless.** *We promote the people who sacrifice everything, then wonder why no one rests.*
+
+**Expecting a 9-to-5 as a startup founder is hopeless.** *We're surprised when that expectation burns the team down.*
+
+**Pretending you have no agenda is hopeless.** *Either you fit your colleagues' agenda or they fit yours; the politics arrive whether you name them or not.*
+
+## The technical decisions
+
+**Engineering leadership that isn't hands-on is hopeless.** *We promote great engineers into pure management and call it a promotion.*
+
+**A separate DevOps team is hopeless.** *DevOps is a culture; standing up a team is easier than changing one.*
+
+**Calling people "resources" is hopeless.** *Interchangeable parts are easier to plan around than humans.*
+
+**Not treating engineering, product, and design as one team is hopeless.** *Separate teams give you clean accountability lines and a broken product.*
+
+<hr class="ornament" />
+
+## Why we circle instead of fix
+
+Every item on this list is the same shape: a tension between what we know works and what feels safe, familiar, or politically convenient. The solution is almost never technical. It's admitting we were wrong, restructuring a team, having the conversation nobody wants, or challenging whoever benefits from things staying exactly as they are.
+
+The hopelessness was never in the problems. It's in our unwillingness to pay the discomfort of fixing them.
+
+This list is alive — I add to it after every honest conversation. If you're carrying a hopeless pattern I've missed, send it to me on X.
+
+<div class="footnote">
+<b>With contributions from:</b> Deepesh Naini, Sahil Kharb, Mahesh Lal, Ranjan Sakalley
 </div>
