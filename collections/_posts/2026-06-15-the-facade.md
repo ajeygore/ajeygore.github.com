@@ -50,13 +50,17 @@ That's the trap, and it's ours. Every engineering discipline is a ritual that on
 
 ## The planes the rituals used to bring
 
-I'm working with a team right now that wants to transform itself with agents. Smart people, real ambition, roadmap pointed at autonomy. Every time I get under the hood I find the same thing: the basics are gone. Not missing. Gone, the way a habit goes when nobody remembers why they had it.
+I'm working with a team that wants to transform itself with agents. Smart people, real ambition, roadmap pointed at autonomy. The best models are already in their editors, and everyone is prompt-engineering their way to features. Everyone is doing AI. Almost nobody is doing engineering with AI. Every time I get under the hood, I find the same thing: the basics are gone. Not missing. Gone, the way a habit goes when nobody remembers why they had it.
 
-I asked one of their senior engineers what would happen if we dropped the PR review step. He didn't hesitate. "Oh, that would put so many bugs into the system." So I asked the obvious next question. You review every change today, carefully, you tell me, and you still ship plenty of bugs. So what is the review catching?
+I asked one of their senior engineers what would happen if we dropped the PR review step.
 
-No answer.
+**"Oh, that would put so many bugs into the system."**
 
-That's the whole post in one exchange. A ritual everyone defends and nobody can connect to the outcome it's meant to produce. It's the wooden headphones. The form is perfect, the planes don't land, and when you ask why, the room goes quiet. Not because anyone's hiding something. Because nobody has asked the question in years.
+**"But you review every change today, carefully. You still ship plenty of bugs. So what is the review actually catching?"**
+
+**No answer. Silence!**
+
+That's the whole post in one exchange. A ritual everyone defends and nobody can connect to the outcome it's meant to produce. It's the wooden headphones. The silence isn't anyone hiding something — it's that nobody has asked the question in years.
 
 So before anyone in that building talks to me about agents, I make them walk the rituals back to the plane each one used to signal. Coverage was a signal that someone understood how the code breaks; "get it to ninety percent" buys the number and tests that assert a function was called, not that its answer was right. Review was a second mind reasoning about a change; *LGTM* on four hundred unread lines is the posture with the function gone. Continuous integration was proof the system still fit together; a long-lived branch with a green badge is a fire lit for a plane that isn't coming. I've called this [hopeless](/content/what's-hopeless-in-product-engineering) for a decade.
 
