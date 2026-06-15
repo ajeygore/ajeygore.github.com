@@ -4,7 +4,7 @@ title: What's "hopeless" in product engineering?
 published: true
 categories: Essay
 description: "A running list of what's hopeless in product engineering — skipped tests, PR theatre, measuring productivity, managers managing managers — and the comfortable reason we keep doing each one anyway."
-lead_image: blog/hopeless-product-engineering-white-bg.svg
+lead_image: blog/og/what's-hopeless-in-product-engineering.png
 ---
 
 <div class="post-epigraph">
