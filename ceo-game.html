@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO Game</title>
+<style>
+  :root {
+    --bg: #0f1226;
+    --panel: #1a1e3a;
+    --accent: #6c5ce7;
+    --accent-2: #00cec9;
+    --text: #f5f6fa;
+    --muted: #9aa0c0;
+    --danger: #ff6b6b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #2a2f5a, var(--bg));
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .app {
+    width: 100%;
+    max-width: 560px;
+    background: var(--panel);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    border: 1px solid rgba(255,255,255,.06);
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: .5px;
+    margin-bottom: 4px;
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .count { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+  .count b { color: var(--accent-2); }
+
+  .entry { display: flex; gap: 10px; margin-bottom: 18px; }
+  input[type="text"] {
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+    transition: border .2s;
+  }
+  input[type="text"]:focus { border-color: var(--accent); }
+  input[type="text"]::placeholder { color: var(--muted); }
+
+  button {
+    border: none;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .1s, opacity .2s, background .2s;
+    color: #fff;
+  }
+  button:active { transform: scale(.96); }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  .btn-add { background: var(--accent); }
+  .btn-reveal { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 16px; font-size: 16px; }
+  .btn-ghost {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,.15);
+    color: var(--muted);
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .status {
+    background: rgba(108,92,231,.12);
+    border: 1px dashed rgba(108,92,231,.5);
+    border-radius: 14px;
+    padding: 28px 20px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .status .big { font-size: 40px; margin-bottom: 8px; }
+  .status .added-flash { color: var(--accent-2); font-weight: 600; }
+
+  .names { list-style: none; }
+  .names li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.04);
+    margin-bottom: 10px;
+    font-size: 17px;
+    animation: pop .35s ease both;
+  }
+  .names li .num {
+    width: 28px; height: 28px;
+    flex: 0 0 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700;
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: translateY(12px) scale(.95); }
+    to { opacity: 1; transform: none; }
+  }
+
+  .actions { display: flex; gap: 10px; margin-top: 20px; }
+  .actions button { flex: 1; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+  <div class="app">
+    <h1>👔 CEO Game</h1>
+    <p class="subtitle">Everyone enters a name in secret. Reveal them all at the end.</p>
+
+    <!-- ENTRY PHASE -->
+    <div id="entryPhase">
+      <p class="count"><b id="countNum">0</b> name(s) entered so far</p>
+
+      <div class="entry">
+        <input type="text" id="nameInput" placeholder="Type a name, then press Enter" autocomplete="off">
+        <button class="btn-add" id="addBtn">Add</button>
+      </div>
+
+      <div class="status">
+        <div class="big">🤫</div>
+        <div id="statusText">Names stay hidden until the big reveal.</div>
+      </div>
+
+      <button class="btn-reveal" id="revealBtn" disabled style="margin-top:20px;">Reveal All Names</button>
+      <div class="actions">
+        <button class="btn-ghost" id="resetBtn">Reset Game</button>
+      </div>
+    </div>
+
+    <!-- REVEAL PHASE -->
+    <div id="revealPhase" class="hidden">
+      <p class="count">The reveal — <b id="revealCount">0</b> name(s)</p>
+      <ul class="names" id="namesList"></ul>
+      <div class="actions">
+        <button class="btn-ghost" id="backBtn">Keep Adding</button>
+        <button class="btn-ghost" id="resetBtn2">New Game</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const KEY = 'ceo-game-names';
+  let names = JSON.parse(localStorage.getItem(KEY) || '[]');
+
+  const $ = id => document.getElementById(id);
+  const nameInput = $('nameInput');
+  const countNum = $('countNum');
+  const statusText = $('statusText');
+  const revealBtn = $('revealBtn');
+
+  function save() { localStorage.setItem(KEY, JSON.stringify(names)); }
+
+  function refreshEntry() {
+    countNum.textContent = names.length;
+    revealBtn.disabled = names.length === 0;
+  }
+
+  function addName() {
+    const val = nameInput.value.trim();
+    if (!val) return;
+    names.push(val);
+    save();
+    nameInput.value = '';
+    nameInput.focus();
+    refreshEntry();
+    statusText.innerHTML = '<span class="added-flash">✓ Added!</span> Pass it to the next player.';
+  }
+
+  function reveal() {
+    const list = $('namesList');
+    list.innerHTML = '';
+    // shuffle so order of entry doesn't give it away
+    const shuffled = [...names].sort(() => Math.random() - 0.5);
+    shuffled.forEach((name, i) => {
+      const li = document.createElement('li');
+      li.style.animationDelay = (i * 0.08) + 's';
+      li.innerHTML = `<span class="num">${i + 1}</span><span>${escapeHtml(name)}</span>`;
+      list.appendChild(li);
+    });
+    $('revealCount').textContent = names.length;
+    $('entryPhase').classList.add('hidden');
+    $('revealPhase').classList.remove('hidden');
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function reset() {
+    if (names.length && !confirm('Clear all names and start over?')) return;
+    names = [];
+    save();
+    refreshEntry();
+    statusText.textContent = 'Names stay hidden until the big reveal.';
+    $('revealPhase').classList.add('hidden');
+    $('entryPhase').classList.remove('hidden');
+    nameInput.focus();
+  }
+
+  $('addBtn').addEventListener('click', addName);
+  nameInput.addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
+  revealBtn.addEventListener('click', reveal);
+  $('resetBtn').addEventListener('click', reset);
+  $('resetBtn2').addEventListener('click', reset);
+  $('backBtn').addEventListener('click', () => {
+    $('revealPhase').classList.add('hidden');
+    $('entryPhase').classList.remove('hidden');
+    nameInput.focus();
+  });
+
+  refreshEntry();
+  nameInput.focus();
+</script>
+</body>
+</html>
