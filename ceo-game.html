@@ -47,9 +47,12 @@
   .count { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
   .count b { color: var(--accent-2); }
 
+  label { display: block; color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+
   .entry { display: flex; gap: 10px; margin-bottom: 18px; }
-  input[type="text"] {
+  input[type="text"], input[type="number"] {
     flex: 1;
+    width: 100%;
     padding: 14px 16px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,.1);
@@ -59,8 +62,8 @@
     outline: none;
     transition: border .2s;
   }
-  input[type="text"]:focus { border-color: var(--accent); }
-  input[type="text"]::placeholder { color: var(--muted); }
+  input:focus { border-color: var(--accent); }
+  input::placeholder { color: var(--muted); }
 
   button {
     border: none;
@@ -75,7 +78,8 @@
   button:active { transform: scale(.96); }
   button:disabled { opacity: .4; cursor: not-allowed; }
   .btn-add { background: var(--accent); }
-  .btn-reveal { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 16px; font-size: 16px; }
+  .btn-primary { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 16px; font-size: 16px; }
+  .btn-reveal { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 18px; font-size: 18px; margin-top: 20px; }
   .btn-ghost {
     background: transparent;
     border: 1px solid rgba(255,255,255,.15);
@@ -94,6 +98,11 @@
   }
   .status .big { font-size: 40px; margin-bottom: 8px; }
   .status .added-flash { color: var(--accent-2); font-weight: 600; }
+
+  .progress { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.12); }
+  .dot.done { background: var(--accent-2); }
+  .dot.current { background: var(--accent); box-shadow: 0 0 0 3px rgba(108,92,231,.3); }
 
   .names { list-style: none; }
   .names li {
@@ -122,29 +131,38 @@
 
   .actions { display: flex; gap: 10px; margin-top: 20px; }
   .actions button { flex: 1; }
-  .hidden { display: none; }
+  .hidden { display: none !important; }
 </style>
 </head>
 <body>
   <div class="app">
     <h1>👔 CEO Game</h1>
-    <p class="subtitle">Everyone enters a name in secret. Reveal them all at the end.</p>
+    <p class="subtitle">Everyone secretly enters a name. Only the last player reveals them all.</p>
+
+    <!-- SETUP PHASE -->
+    <div id="setupPhase">
+      <label for="playerCount">How many players?</label>
+      <input type="number" id="playerCount" min="2" max="50" value="4" inputmode="numeric">
+      <button class="btn-primary" id="startBtn" style="margin-top:16px;">Start Game</button>
+    </div>
 
     <!-- ENTRY PHASE -->
-    <div id="entryPhase">
-      <p class="count"><b id="countNum">0</b> name(s) entered so far</p>
+    <div id="entryPhase" class="hidden">
+      <div class="progress" id="progress"></div>
+      <p class="count">Player <b id="currentPlayer">1</b> of <b id="totalPlayers">0</b></p>
 
       <div class="entry">
-        <input type="text" id="nameInput" placeholder="Type a name, then press Enter" autocomplete="off">
+        <input type="text" id="nameInput" placeholder="Type your name, then press Enter" autocomplete="off">
         <button class="btn-add" id="addBtn">Add</button>
       </div>
 
       <div class="status">
         <div class="big">🤫</div>
-        <div id="statusText">Names stay hidden until the big reveal.</div>
+        <div id="statusText">Enter a name, then pass the device to the next player.</div>
       </div>
 
-      <button class="btn-reveal" id="revealBtn" disabled style="margin-top:20px;">Reveal All Names</button>
+      <button class="btn-reveal hidden" id="revealBtn">🎉 Reveal All Names</button>
+
       <div class="actions">
         <button class="btn-ghost" id="resetBtn">Reset Game</button>
       </div>
@@ -155,54 +173,94 @@
       <p class="count">The reveal — <b id="revealCount">0</b> name(s)</p>
       <ul class="names" id="namesList"></ul>
       <div class="actions">
-        <button class="btn-ghost" id="backBtn">Keep Adding</button>
         <button class="btn-ghost" id="resetBtn2">New Game</button>
       </div>
     </div>
   </div>
 
 <script>
-  const KEY = 'ceo-game-names';
-  let names = JSON.parse(localStorage.getItem(KEY) || '[]');
-
+  const KEY = 'ceo-game-state';
   const $ = id => document.getElementById(id);
-  const nameInput = $('nameInput');
-  const countNum = $('countNum');
-  const statusText = $('statusText');
-  const revealBtn = $('revealBtn');
 
-  function save() { localStorage.setItem(KEY, JSON.stringify(names)); }
+  let state = load();
 
-  function refreshEntry() {
-    countNum.textContent = names.length;
-    revealBtn.disabled = names.length === 0;
+  function load() {
+    try {
+      const s = JSON.parse(localStorage.getItem(KEY));
+      if (s && Array.isArray(s.names) && typeof s.total === 'number') return s;
+    } catch (e) {}
+    return { total: 0, names: [] };
+  }
+  function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
+  function clearState() {
+    state = { total: 0, names: [] };
+    localStorage.removeItem(KEY);
+  }
+
+  function show(phase) {
+    ['setupPhase', 'entryPhase', 'revealPhase'].forEach(p =>
+      $(p).classList.toggle('hidden', p !== phase));
+  }
+
+  function startGame() {
+    const n = parseInt($('playerCount').value, 10);
+    if (!n || n < 2) { alert('Enter at least 2 players.'); return; }
+    state = { total: n, names: [] };
+    save();
+    renderEntry();
+    show('entryPhase');
+    $('nameInput').focus();
+  }
+
+  function renderEntry() {
+    const { total, names } = state;
+    $('totalPlayers').textContent = total;
+    $('currentPlayer').textContent = Math.min(names.length + 1, total);
+
+    const prog = $('progress');
+    prog.innerHTML = '';
+    for (let i = 0; i < total; i++) {
+      const d = document.createElement('div');
+      d.className = 'dot' + (i < names.length ? ' done' : i === names.length ? ' current' : '');
+      prog.appendChild(d);
+    }
+
+    const allIn = names.length >= total;
+    $('nameInput').classList.toggle('hidden', allIn);
+    $('addBtn').classList.toggle('hidden', allIn);
+    $('revealBtn').classList.toggle('hidden', !allIn);
+
+    if (allIn) {
+      $('statusText').innerHTML = '<span class="added-flash">All players are in!</span> Last player — tap reveal.';
+    }
   }
 
   function addName() {
-    const val = nameInput.value.trim();
+    if (state.names.length >= state.total) return;
+    const val = $('nameInput').value.trim();
     if (!val) return;
-    names.push(val);
+    state.names.push(val);
     save();
-    nameInput.value = '';
-    nameInput.focus();
-    refreshEntry();
-    statusText.innerHTML = '<span class="added-flash">✓ Added!</span> Pass it to the next player.';
+    $('nameInput').value = '';
+    renderEntry();
+    if (state.names.length < state.total) {
+      $('statusText').innerHTML = '<span class="added-flash">✓ Saved!</span> Pass the device to player ' + (state.names.length + 1) + '.';
+      $('nameInput').focus();
+    }
   }
 
   function reveal() {
     const list = $('namesList');
     list.innerHTML = '';
-    // shuffle so order of entry doesn't give it away
-    const shuffled = [...names].sort(() => Math.random() - 0.5);
+    const shuffled = [...state.names].sort(() => Math.random() - 0.5);
     shuffled.forEach((name, i) => {
       const li = document.createElement('li');
       li.style.animationDelay = (i * 0.08) + 's';
-      li.innerHTML = `<span class="num">${i + 1}</span><span>${escapeHtml(name)}</span>`;
+      li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) + '</span>';
       list.appendChild(li);
     });
-    $('revealCount').textContent = names.length;
-    $('entryPhase').classList.add('hidden');
-    $('revealPhase').classList.remove('hidden');
+    $('revealCount').textContent = state.names.length;
+    show('revealPhase');
   }
 
   function escapeHtml(s) {
@@ -210,29 +268,31 @@
   }
 
   function reset() {
-    if (names.length && !confirm('Clear all names and start over?')) return;
-    names = [];
-    save();
-    refreshEntry();
-    statusText.textContent = 'Names stay hidden until the big reveal.';
-    $('revealPhase').classList.add('hidden');
-    $('entryPhase').classList.remove('hidden');
-    nameInput.focus();
+    if (state.names.length && !confirm('Clear everything and start a new game?')) return;
+    clearState();
+    $('playerCount').value = 4;
+    show('setupPhase');
+    $('playerCount').focus();
   }
 
+  $('startBtn').addEventListener('click', startGame);
+  $('playerCount').addEventListener('keydown', e => { if (e.key === 'Enter') startGame(); });
   $('addBtn').addEventListener('click', addName);
-  nameInput.addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
-  revealBtn.addEventListener('click', reveal);
+  $('nameInput').addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
+  $('revealBtn').addEventListener('click', reveal);
   $('resetBtn').addEventListener('click', reset);
   $('resetBtn2').addEventListener('click', reset);
-  $('backBtn').addEventListener('click', () => {
-    $('revealPhase').classList.add('hidden');
-    $('entryPhase').classList.remove('hidden');
-    nameInput.focus();
-  });
 
-  refreshEntry();
-  nameInput.focus();
+  // Restore on load
+  if (state.total > 0 && state.names.length < state.total) {
+    renderEntry();
+    show('entryPhase');
+  } else if (state.total > 0 && state.names.length >= state.total) {
+    renderEntry();
+    show('entryPhase'); // sits on the "ready to reveal" screen
+  } else {
+    show('setupPhase');
+  }
 </script>
 </body>
 </html>
