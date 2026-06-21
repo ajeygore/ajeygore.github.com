@@ -46,13 +46,11 @@
   .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
   .count { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
   .count b { color: var(--accent-2); }
-
   label { display: block; color: var(--muted); font-size: 14px; margin-bottom: 8px; }
 
   .entry { display: flex; gap: 10px; margin-bottom: 18px; }
-  input[type="text"], input[type="number"] {
+  input[type="text"] {
     flex: 1;
-    width: 100%;
     padding: 14px 16px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,.1);
@@ -62,8 +60,8 @@
     outline: none;
     transition: border .2s;
   }
-  input:focus { border-color: var(--accent); }
-  input::placeholder { color: var(--muted); }
+  input[type="text"]:focus { border-color: var(--accent); }
+  input[type="text"]::placeholder { color: var(--muted); }
 
   button {
     border: none;
@@ -88,6 +86,16 @@
     font-size: 13px;
   }
 
+  .roster { list-style: none; margin-bottom: 18px; }
+  .roster li {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 10px;
+    background: rgba(255,255,255,.04); margin-bottom: 8px; font-size: 15px;
+  }
+  .roster .num { width: 24px; height: 24px; flex: 0 0 24px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+  .roster .rm { margin-left: auto; background: transparent; border: none; color: var(--danger); font-size: 18px; padding: 0 6px; cursor: pointer; }
+  .roster .empty { color: var(--muted); font-style: italic; background: none; }
+
   .status {
     background: rgba(108,92,231,.12);
     border: 1px dashed rgba(108,92,231,.5);
@@ -97,6 +105,7 @@
     color: var(--muted);
   }
   .status .big { font-size: 40px; margin-bottom: 8px; }
+  .status .player-name { color: var(--accent-2); font-weight: 700; font-size: 22px; display: block; margin-bottom: 6px; }
   .status .added-flash { color: var(--accent-2); font-weight: 600; }
 
   .progress { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -137,28 +146,33 @@
 <body>
   <div class="app">
     <h1>👔 CEO Game</h1>
-    <p class="subtitle">Everyone secretly enters a name. Only the last player reveals them all.</p>
+    <p class="subtitle">Each player secretly enters a name. Only the last player reveals them all.</p>
 
     <!-- SETUP PHASE -->
     <div id="setupPhase">
-      <label for="playerCount">How many players?</label>
-      <input type="number" id="playerCount" min="2" max="50" value="4" inputmode="numeric">
-      <button class="btn-primary" id="startBtn" style="margin-top:16px;">Start Game</button>
+      <label for="playerName">Add players</label>
+      <div class="entry">
+        <input type="text" id="playerName" placeholder="Player name, then Enter" autocomplete="off">
+        <button class="btn-add" id="addPlayerBtn">Add</button>
+      </div>
+      <ul class="roster" id="rosterList"></ul>
+      <button class="btn-primary" id="startBtn" disabled>Start Game</button>
     </div>
 
     <!-- ENTRY PHASE -->
     <div id="entryPhase" class="hidden">
       <div class="progress" id="progress"></div>
-      <p class="count">Player <b id="currentPlayer">1</b> of <b id="totalPlayers">0</b></p>
+      <p class="count">Turn <b id="turnNum">1</b> of <b id="turnTotal">0</b></p>
 
-      <div class="entry">
-        <input type="text" id="nameInput" placeholder="Type your name, then press Enter" autocomplete="off">
-        <button class="btn-add" id="addBtn">Add</button>
+      <div class="status" id="turnBox">
+        <div class="big">🤫</div>
+        <span class="player-name" id="turnName">Player</span>
+        <div id="statusText">Enter a name, then pass the device to the next player.</div>
       </div>
 
-      <div class="status">
-        <div class="big">🤫</div>
-        <div id="statusText">Enter a name, then pass the device to the next player.</div>
+      <div class="entry" id="entryRow" style="margin-top:18px;">
+        <input type="text" id="nameInput" placeholder="Type a name, then press Enter" autocomplete="off">
+        <button class="btn-add" id="addBtn">Add</button>
       </div>
 
       <button class="btn-reveal hidden" id="revealBtn">🎉 Reveal All Names</button>
@@ -179,117 +193,152 @@
   </div>
 
 <script>
-  const KEY = 'ceo-game-state';
+  const KEY = 'ceo-game-state-v2';
   const $ = id => document.getElementById(id);
 
+  // state: { players: [names of people], entries: [secret names typed] }
   let state = load();
 
   function load() {
     try {
       const s = JSON.parse(localStorage.getItem(KEY));
-      if (s && Array.isArray(s.names) && typeof s.total === 'number') return s;
+      if (s && Array.isArray(s.players) && Array.isArray(s.entries)) return s;
     } catch (e) {}
-    return { total: 0, names: [] };
+    return { players: [], entries: [] };
   }
   function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
-  function clearState() {
-    state = { total: 0, names: [] };
-    localStorage.removeItem(KEY);
-  }
+  function clearState() { state = { players: [], entries: [] }; localStorage.removeItem(KEY); }
 
   function show(phase) {
     ['setupPhase', 'entryPhase', 'revealPhase'].forEach(p =>
       $(p).classList.toggle('hidden', p !== phase));
   }
 
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  /* ---------- Setup ---------- */
+  function renderRoster() {
+    const ul = $('rosterList');
+    ul.innerHTML = '';
+    if (!state.players.length) {
+      ul.innerHTML = '<li class="empty">No players yet — add at least 2.</li>';
+    } else {
+      state.players.forEach((name, i) => {
+        const li = document.createElement('li');
+        li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) +
+          '</span><button class="rm" data-i="' + i + '" title="Remove">×</button>';
+        ul.appendChild(li);
+      });
+    }
+    $('startBtn').disabled = state.players.length < 2;
+  }
+
+  function addPlayer() {
+    const v = $('playerName').value.trim();
+    if (!v) return;
+    state.players.push(v);
+    save();
+    $('playerName').value = '';
+    $('playerName').focus();
+    renderRoster();
+  }
+
+  $('rosterList').addEventListener('click', e => {
+    const btn = e.target.closest('.rm');
+    if (!btn) return;
+    state.players.splice(parseInt(btn.dataset.i, 10), 1);
+    save();
+    renderRoster();
+  });
+
   function startGame() {
-    const n = parseInt($('playerCount').value, 10);
-    if (!n || n < 2) { alert('Enter at least 2 players.'); return; }
-    state = { total: n, names: [] };
+    if (state.players.length < 2) return;
+    state.entries = [];
     save();
     renderEntry();
     show('entryPhase');
     $('nameInput').focus();
   }
 
+  /* ---------- Entry ---------- */
   function renderEntry() {
-    const { total, names } = state;
-    $('totalPlayers').textContent = total;
-    $('currentPlayer').textContent = Math.min(names.length + 1, total);
+    const total = state.players.length;
+    const done = state.entries.length;
+    $('turnTotal').textContent = total;
+    $('turnNum').textContent = Math.min(done + 1, total);
 
     const prog = $('progress');
     prog.innerHTML = '';
     for (let i = 0; i < total; i++) {
       const d = document.createElement('div');
-      d.className = 'dot' + (i < names.length ? ' done' : i === names.length ? ' current' : '');
+      d.className = 'dot' + (i < done ? ' done' : i === done ? ' current' : '');
       prog.appendChild(d);
     }
 
-    const allIn = names.length >= total;
-    $('nameInput').classList.toggle('hidden', allIn);
-    $('addBtn').classList.toggle('hidden', allIn);
+    const allIn = done >= total;
+    $('entryRow').classList.toggle('hidden', allIn);
     $('revealBtn').classList.toggle('hidden', !allIn);
 
     if (allIn) {
-      $('statusText').innerHTML = '<span class="added-flash">All players are in!</span> Last player — tap reveal.';
+      $('turnName').textContent = 'All players are in!';
+      $('statusText').innerHTML = '<span class="added-flash">Ready.</span> Last player — tap reveal.';
+    } else {
+      $('turnName').textContent = state.players[done] + ', your turn';
+      $('statusText').textContent = 'Enter a name secretly, then pass the device.';
     }
   }
 
   function addName() {
-    if (state.names.length >= state.total) return;
+    if (state.entries.length >= state.players.length) return;
     const val = $('nameInput').value.trim();
     if (!val) return;
-    state.names.push(val);
+    state.entries.push(val);
     save();
     $('nameInput').value = '';
     renderEntry();
-    if (state.names.length < state.total) {
-      $('statusText').innerHTML = '<span class="added-flash">✓ Saved!</span> Pass the device to player ' + (state.names.length + 1) + '.';
-      $('nameInput').focus();
-    }
+    if (state.entries.length < state.players.length) $('nameInput').focus();
   }
 
+  /* ---------- Reveal (names only, no player attribution) ---------- */
   function reveal() {
     const list = $('namesList');
     list.innerHTML = '';
-    const shuffled = [...state.names].sort(() => Math.random() - 0.5);
+    const shuffled = [...state.entries].sort(() => Math.random() - 0.5);
     shuffled.forEach((name, i) => {
       const li = document.createElement('li');
       li.style.animationDelay = (i * 0.08) + 's';
       li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) + '</span>';
       list.appendChild(li);
     });
-    $('revealCount').textContent = state.names.length;
+    $('revealCount').textContent = state.entries.length;
     show('revealPhase');
   }
 
-  function escapeHtml(s) {
-    return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  }
-
   function reset() {
-    if (state.names.length && !confirm('Clear everything and start a new game?')) return;
+    if (state.entries.length && !confirm('Clear everything and start a new game?')) return;
     clearState();
-    $('playerCount').value = 4;
+    renderRoster();
     show('setupPhase');
-    $('playerCount').focus();
+    $('playerName').focus();
   }
 
+  /* ---------- Wiring ---------- */
+  $('addPlayerBtn').addEventListener('click', addPlayer);
+  $('playerName').addEventListener('keydown', e => { if (e.key === 'Enter') addPlayer(); });
   $('startBtn').addEventListener('click', startGame);
-  $('playerCount').addEventListener('keydown', e => { if (e.key === 'Enter') startGame(); });
   $('addBtn').addEventListener('click', addName);
   $('nameInput').addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
   $('revealBtn').addEventListener('click', reveal);
   $('resetBtn').addEventListener('click', reset);
   $('resetBtn2').addEventListener('click', reset);
 
-  // Restore on load
-  if (state.total > 0 && state.names.length < state.total) {
+  // Restore
+  renderRoster();
+  if (state.players.length >= 2 && state.entries.length > 0) {
     renderEntry();
     show('entryPhase');
-  } else if (state.total > 0 && state.names.length >= state.total) {
-    renderEntry();
-    show('entryPhase'); // sits on the "ready to reveal" screen
   } else {
     show('setupPhase');
   }

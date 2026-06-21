@@ -89,6 +89,30 @@
   .actions { display: flex; gap: 10px; margin-top: 20px; }
   .actions button { flex: 1; }
 
+  .entry { display: flex; gap: 10px; margin-bottom: 14px; }
+  input[type="text"] {
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+  }
+  input[type="text"]:focus { border-color: var(--accent); }
+  .btn-add { background: var(--accent); }
+
+  .roster { list-style: none; margin-bottom: 18px; }
+  .roster li {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px; border-radius: 10px;
+    background: rgba(255,255,255,.04); margin-bottom: 8px; font-size: 15px;
+  }
+  .roster .num { width: 24px; height: 24px; flex: 0 0 24px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+  .roster .rm { margin-left: auto; background: transparent; border: none; color: var(--imposter); font-size: 18px; padding: 0 6px; cursor: pointer; }
+  .roster .empty { color: var(--muted); font-style: italic; background: none; }
+
   .progress { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; justify-content: center; }
   .dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.12); }
   .dot.done { background: var(--good); }
@@ -140,8 +164,12 @@
 
     <!-- SETUP -->
     <div id="setupPhase">
-      <label for="playerCount">Number of players</label>
-      <input type="number" id="playerCount" min="3" max="50" value="5" inputmode="numeric">
+      <label for="playerName">Add players</label>
+      <div class="entry">
+        <input type="text" id="playerName" placeholder="Player name, then Enter" autocomplete="off">
+        <button class="btn-add" id="addPlayerBtn">Add</button>
+      </div>
+      <ul class="roster" id="rosterList"></ul>
 
       <label for="impCount">Number of imposters</label>
       <input type="number" id="impCount" min="1" max="49" value="1" inputmode="numeric">
@@ -221,10 +249,56 @@
   ];
 
   const KEY = 'imposter-game-state';
+  const ROSTER_KEY = 'imposter-roster';
   let flavor = 'similar';
   let state = null;
   let dealIndex = 0;
   let cardOpen = false;
+  let roster = loadRoster();
+
+  function loadRoster() {
+    try {
+      const r = JSON.parse(localStorage.getItem(ROSTER_KEY));
+      if (Array.isArray(r)) return r;
+    } catch (e) {}
+    return [];
+  }
+  function saveRoster() { localStorage.setItem(ROSTER_KEY, JSON.stringify(roster)); }
+
+  function renderRoster() {
+    const ul = $('rosterList');
+    ul.innerHTML = '';
+    if (!roster.length) {
+      ul.innerHTML = '<li class="empty">No players yet — add at least 3.</li>';
+    } else {
+      roster.forEach((name, i) => {
+        const li = document.createElement('li');
+        li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) +
+          '</span><button class="rm" data-i="' + i + '" title="Remove">×</button>';
+        ul.appendChild(li);
+      });
+    }
+  }
+
+  function addPlayer() {
+    const v = $('playerName').value.trim();
+    if (!v) return;
+    roster.push(v);
+    saveRoster();
+    $('playerName').value = '';
+    $('playerName').focus();
+    renderRoster();
+  }
+
+  $('rosterList').addEventListener('click', e => {
+    const btn = e.target.closest('.rm');
+    if (!btn) return;
+    roster.splice(parseInt(btn.dataset.i, 10), 1);
+    saveRoster();
+    renderRoster();
+  });
+  $('addPlayerBtn').addEventListener('click', addPlayer);
+  $('playerName').addEventListener('keydown', e => { if (e.key === 'Enter') addPlayer(); });
 
   // flavor selection
   document.querySelectorAll('.flavor').forEach(el => {
@@ -243,9 +317,9 @@
   function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
   function startRound() {
-    const total = parseInt($('playerCount').value, 10);
+    const total = roster.length;
     const imps = parseInt($('impCount').value, 10);
-    if (!total || total < 3) { alert('Need at least 3 players.'); return; }
+    if (total < 3) { alert('Add at least 3 players.'); return; }
     if (!imps || imps < 1 || imps >= total) { alert('Imposters must be at least 1 and fewer than the number of players.'); return; }
 
     // choose imposter player indices
@@ -264,7 +338,7 @@
       civWord = pick(WORDS); impWord = '';
     }
 
-    state = { total, imps, flavor, civWord, impWord, imposters: [...imposterSet] };
+    state = { total, imps, flavor, civWord, impWord, players: [...roster], imposters: [...imposterSet] };
     save();
     dealIndex = 0;
     cardOpen = false;
@@ -285,12 +359,13 @@
     }
     const card = $('card');
     card.className = 'card closed';
-    card.innerHTML = '<div class="who">Player ' + (dealIndex + 1) + '</div><div class="tap">👆 Tap to see your word</div>';
+    card.innerHTML = '<div class="who">' + escapeHtml(pname(dealIndex)) + '</div><div class="tap">👆 Tap to see your word</div>';
     $('dealInfo').textContent = 'Make sure no one else is looking.';
     cardOpen = false;
   }
 
   function isImposter(i) { return state.imposters.indexOf(i) !== -1; }
+  function pname(i) { return (state.players && state.players[i]) ? state.players[i] : ('Player ' + (i + 1)); }
 
   function openCard() {
     const card = $('card');
@@ -305,14 +380,14 @@
         '<div class="hint">You don\'t get the word. Listen carefully and bluff your way through.</div>';
     } else {
       const word = imp ? state.impWord : state.civWord; // for "similar", imposter gets the different word
-      card.className = 'card open' + (false ? ' imp' : '');
+      card.className = 'card open';
       card.innerHTML =
-        '<div class="who">Player ' + (dealIndex + 1) + '</div>' +
+        '<div class="who">' + escapeHtml(pname(dealIndex)) + '</div>' +
         '<div class="word">' + escapeHtml(word) + '</div>' +
         '<div class="hint">Remember it. Don\'t say it out loud!</div>';
     }
     $('dealInfo').innerHTML = '<button class="btn-primary" id="nextBtn">' +
-      (dealIndex + 1 < state.total ? 'Hide & Pass to Player ' + (dealIndex + 2) : 'Hide & Start Discussion') +
+      (dealIndex + 1 < state.total ? 'Hide & Pass to ' + escapeHtml(pname(dealIndex + 1)) : 'Hide & Start Discussion') +
       '</button>';
     $('nextBtn').addEventListener('click', nextCard);
   }
@@ -343,7 +418,7 @@
       } else {
         role = imp ? 'IMPOSTER' : 'civilian';
       }
-      li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>Player ' + (i + 1) + '</span>' +
+      li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(pname(i)) + '</span>' +
         '<span class="tag ' + (imp ? 'i' : 'c') + '">' + role + '</span>';
       list.appendChild(li);
     }
@@ -358,6 +433,7 @@
 
   function reset() {
     clearState();
+    renderRoster();
     show('setupPhase');
   }
 
@@ -369,6 +445,7 @@
   $('resetBtn2').addEventListener('click', reset);
   $('againBtn').addEventListener('click', reset);
 
+  renderRoster();
   show('setupPhase');
 </script>
 </body>
