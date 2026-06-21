@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imposter Game</title>
+<style>
+  :root {
+    --bg: #120f26;
+    --panel: #1d1a3a;
+    --accent: #e84393;
+    --accent-2: #fd79a8;
+    --good: #00cec9;
+    --text: #f5f6fa;
+    --muted: #a09ac0;
+    --imposter: #ff7675;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #322a5a, var(--bg));
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .app {
+    width: 100%;
+    max-width: 560px;
+    background: var(--panel);
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+    border: 1px solid rgba(255,255,255,.06);
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: .5px;
+    margin-bottom: 4px;
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  label { display: block; color: var(--muted); font-size: 14px; margin: 18px 0 8px; }
+  label:first-of-type { margin-top: 0; }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+  }
+  input:focus { border-color: var(--accent); }
+
+  .flavors { display: grid; gap: 12px; }
+  .flavor {
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 14px;
+    padding: 16px;
+    cursor: pointer;
+    transition: border .2s, background .2s;
+  }
+  .flavor.sel { border-color: var(--accent); background: rgba(232,67,147,.12); }
+  .flavor .ttl { font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+  .flavor .desc { color: var(--muted); font-size: 13px; line-height: 1.45; }
+
+  button {
+    border: none;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .1s, opacity .2s;
+    color: #fff;
+  }
+  button:active { transform: scale(.97); }
+  button:disabled { opacity: .4; cursor: not-allowed; }
+  .btn-primary { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 16px; font-size: 16px; }
+  .btn-ghost { background: transparent; border: 1px solid rgba(255,255,255,.15); color: var(--muted); padding: 10px 14px; font-size: 13px; }
+  .actions { display: flex; gap: 10px; margin-top: 20px; }
+  .actions button { flex: 1; }
+
+  .progress { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px; justify-content: center; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.12); }
+  .dot.done { background: var(--good); }
+  .dot.current { background: var(--accent); box-shadow: 0 0 0 3px rgba(232,67,147,.3); }
+
+  .card {
+    border-radius: 18px;
+    padding: 40px 24px;
+    text-align: center;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background .2s;
+  }
+  .card.closed { background: rgba(255,255,255,.05); border: 2px dashed rgba(255,255,255,.18); }
+  .card.open { background: rgba(0,206,201,.12); border: 2px solid var(--good); cursor: default; }
+  .card.open.imp { background: rgba(255,118,117,.14); border-color: var(--imposter); }
+  .card .who { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
+  .card .tap { font-size: 18px; color: var(--muted); }
+  .card .face { font-size: 54px; margin-bottom: 12px; }
+  .card .word { font-size: 38px; font-weight: 800; letter-spacing: .5px; }
+  .card .hint { font-size: 14px; color: var(--muted); margin-top: 14px; line-height: 1.5; }
+  .card .role-imp { font-size: 30px; font-weight: 800; color: var(--imposter); }
+
+  .reveal-list { list-style: none; margin-top: 8px; }
+  .reveal-list li {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 16px; border-radius: 12px;
+    background: rgba(255,255,255,.04); margin-bottom: 10px; font-size: 17px;
+  }
+  .reveal-list li.imp { background: rgba(255,118,117,.14); border: 1px solid rgba(255,118,117,.4); }
+  .reveal-list .num { width: 28px; height: 28px; flex: 0 0 28px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+  .reveal-list .tag { margin-left: auto; font-size: 13px; font-weight: 700; }
+  .reveal-list .tag.i { color: var(--imposter); }
+  .reveal-list .tag.c { color: var(--good); }
+
+  .info { text-align: center; color: var(--muted); font-size: 14px; margin: 16px 0; line-height: 1.5; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+  <div class="app">
+    <h1>🕵️ Imposter Game</h1>
+    <p class="subtitle">Pass the device around. Find who doesn't belong.</p>
+
+    <!-- SETUP -->
+    <div id="setupPhase">
+      <label for="playerCount">Number of players</label>
+      <input type="number" id="playerCount" min="3" max="50" value="5" inputmode="numeric">
+
+      <label for="impCount">Number of imposters</label>
+      <input type="number" id="impCount" min="1" max="49" value="1" inputmode="numeric">
+
+      <label>Game flavor</label>
+      <div class="flavors">
+        <div class="flavor sel" data-flavor="similar">
+          <div class="ttl">🔤 Similar Word</div>
+          <div class="desc">Everyone gets a word. Imposters get a <b>slightly different</b> word — and they don't even know they're the imposter. Spot the odd one out.</div>
+        </div>
+        <div class="flavor" data-flavor="blank">
+          <div class="ttl">🚫 Blank Imposter</div>
+          <div class="desc">Everyone gets the <b>same word</b>. Imposters are told <b>"you are the imposter"</b> and get no word — they must bluff and blend in.</div>
+        </div>
+      </div>
+
+      <button class="btn-primary" id="startBtn" style="margin-top:20px;">Start Round</button>
+    </div>
+
+    <!-- REVEAL (per player) -->
+    <div id="dealPhase" class="hidden">
+      <div class="progress" id="progress"></div>
+      <div class="card closed" id="card">
+        <div class="who" id="cardWho">Player 1</div>
+        <div class="tap">👆 Tap to see your word</div>
+      </div>
+      <div class="info" id="dealInfo">Make sure no one else is looking.</div>
+      <div class="actions">
+        <button class="btn-ghost" id="resetBtn">Cancel</button>
+      </div>
+    </div>
+
+    <!-- DISCUSS -->
+    <div id="discussPhase" class="hidden">
+      <div class="card open" style="min-height:auto;cursor:default;">
+        <div class="face">🗣️</div>
+        <div class="word" style="font-size:26px;">Everyone's ready!</div>
+        <div class="hint">Discuss, ask questions, and vote on who the imposter is. When you're done, reveal the answer.</div>
+      </div>
+      <button class="btn-primary" id="revealBtn" style="margin-top:20px;">Reveal Imposters</button>
+      <div class="actions">
+        <button class="btn-ghost" id="resetBtn2">New Round</button>
+      </div>
+    </div>
+
+    <!-- RESULT -->
+    <div id="resultPhase" class="hidden">
+      <p class="info" id="resultWord"></p>
+      <ul class="reveal-list" id="resultList"></ul>
+      <div class="actions">
+        <button class="btn-primary" id="againBtn">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const $ = id => document.getElementById(id);
+
+  // word pairs for "similar" flavor: [civilian, imposter]
+  const PAIRS = [
+    ["Coffee","Tea"],["Dog","Cat"],["Pizza","Burger"],["Beach","Pool"],
+    ["Sun","Moon"],["Doctor","Nurse"],["Car","Bus"],["Football","Basketball"],
+    ["Apple","Orange"],["Winter","Autumn"],["Guitar","Violin"],["Movie","Play"],
+    ["River","Lake"],["King","Queen"],["Email","Letter"],["Train","Tram"],
+    ["Pencil","Pen"],["Spider","Ant"],["Mountain","Hill"],["Lion","Tiger"],
+    ["Cricket","Baseball"],["Salt","Sugar"],["Mumbai","Delhi"],["WhatsApp","Telegram"],
+    ["Tea","Coffee"],["Cake","Pastry"],["Plane","Helicopter"],["Snake","Lizard"],
+    ["Rain","Snow"],["Chess","Checkers"],["Wine","Beer"],["Hotel","Hostel"]
+  ];
+  // single words for "blank" flavor
+  const WORDS = [
+    "Elephant","Hospital","Beach","Airport","Pizza","Wedding","Spider","Volcano",
+    "Library","Casino","Submarine","Festival","Garden","Bank","Restaurant","School",
+    "Zoo","Cinema","Hotel","Park","Beach","Train Station","Gym","Office","Farm",
+    "Jungle","Desert","Spaceship","Castle","Lighthouse","Stadium","Museum","Bakery",
+    "Pharmacy","Circus","Aquarium","Temple","Bridge","Waterfall","Carnival"
+  ];
+
+  const KEY = 'imposter-game-state';
+  let flavor = 'similar';
+  let state = null;
+  let dealIndex = 0;
+  let cardOpen = false;
+
+  // flavor selection
+  document.querySelectorAll('.flavor').forEach(el => {
+    el.addEventListener('click', () => {
+      document.querySelectorAll('.flavor').forEach(f => f.classList.remove('sel'));
+      el.classList.add('sel');
+      flavor = el.dataset.flavor;
+    });
+  });
+
+  function show(phase) {
+    ['setupPhase','dealPhase','discussPhase','resultPhase'].forEach(p =>
+      $(p).classList.toggle('hidden', p !== phase));
+  }
+
+  function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+  function startRound() {
+    const total = parseInt($('playerCount').value, 10);
+    const imps = parseInt($('impCount').value, 10);
+    if (!total || total < 3) { alert('Need at least 3 players.'); return; }
+    if (!imps || imps < 1 || imps >= total) { alert('Imposters must be at least 1 and fewer than the number of players.'); return; }
+
+    // choose imposter player indices
+    const idx = Array.from({length: total}, (_, i) => i);
+    for (let i = idx.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    const imposterSet = new Set(idx.slice(0, imps));
+
+    let civWord = '', impWord = '';
+    if (flavor === 'similar') {
+      const p = pick(PAIRS);
+      civWord = p[0]; impWord = p[1];
+    } else {
+      civWord = pick(WORDS); impWord = '';
+    }
+
+    state = { total, imps, flavor, civWord, impWord, imposters: [...imposterSet] };
+    save();
+    dealIndex = 0;
+    cardOpen = false;
+    renderDeal();
+    show('dealPhase');
+  }
+
+  function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
+  function clearState() { state = null; localStorage.removeItem(KEY); }
+
+  function renderDeal() {
+    const prog = $('progress');
+    prog.innerHTML = '';
+    for (let i = 0; i < state.total; i++) {
+      const d = document.createElement('div');
+      d.className = 'dot' + (i < dealIndex ? ' done' : i === dealIndex ? ' current' : '');
+      prog.appendChild(d);
+    }
+    const card = $('card');
+    card.className = 'card closed';
+    card.innerHTML = '<div class="who">Player ' + (dealIndex + 1) + '</div><div class="tap">👆 Tap to see your word</div>';
+    $('dealInfo').textContent = 'Make sure no one else is looking.';
+    cardOpen = false;
+  }
+
+  function isImposter(i) { return state.imposters.indexOf(i) !== -1; }
+
+  function openCard() {
+    const card = $('card');
+    const imp = isImposter(dealIndex);
+    cardOpen = true;
+
+    if (state.flavor === 'blank' && imp) {
+      card.className = 'card open imp';
+      card.innerHTML =
+        '<div class="face">🕵️</div>' +
+        '<div class="role-imp">YOU ARE THE IMPOSTER</div>' +
+        '<div class="hint">You don\'t get the word. Listen carefully and bluff your way through.</div>';
+    } else {
+      const word = imp ? state.impWord : state.civWord; // for "similar", imposter gets the different word
+      card.className = 'card open' + (false ? ' imp' : '');
+      card.innerHTML =
+        '<div class="who">Player ' + (dealIndex + 1) + '</div>' +
+        '<div class="word">' + escapeHtml(word) + '</div>' +
+        '<div class="hint">Remember it. Don\'t say it out loud!</div>';
+    }
+    $('dealInfo').innerHTML = '<button class="btn-primary" id="nextBtn">' +
+      (dealIndex + 1 < state.total ? 'Hide & Pass to Player ' + (dealIndex + 2) : 'Hide & Start Discussion') +
+      '</button>';
+    $('nextBtn').addEventListener('click', nextCard);
+  }
+
+  function nextCard() {
+    dealIndex++;
+    if (dealIndex >= state.total) {
+      show('discussPhase');
+    } else {
+      renderDeal();
+    }
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function revealResult() {
+    const list = $('resultList');
+    list.innerHTML = '';
+    for (let i = 0; i < state.total; i++) {
+      const imp = isImposter(i);
+      const li = document.createElement('li');
+      if (imp) li.className = 'imp';
+      let role;
+      if (state.flavor === 'similar') {
+        role = imp ? 'IMPOSTER · ' + escapeHtml(state.impWord) : 'word: ' + escapeHtml(state.civWord);
+      } else {
+        role = imp ? 'IMPOSTER' : 'civilian';
+      }
+      li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>Player ' + (i + 1) + '</span>' +
+        '<span class="tag ' + (imp ? 'i' : 'c') + '">' + role + '</span>';
+      list.appendChild(li);
+    }
+    if (state.flavor === 'similar') {
+      $('resultWord').innerHTML = 'Everyone\'s word was <b>' + escapeHtml(state.civWord) +
+        '</b> — imposters had <b>' + escapeHtml(state.impWord) + '</b>.';
+    } else {
+      $('resultWord').innerHTML = 'The word was <b>' + escapeHtml(state.civWord) + '</b>.';
+    }
+    show('resultPhase');
+  }
+
+  function reset() {
+    clearState();
+    show('setupPhase');
+  }
+
+  // card tap (open once)
+  $('card').addEventListener('click', () => { if (!cardOpen) openCard(); });
+  $('startBtn').addEventListener('click', startRound);
+  $('revealBtn').addEventListener('click', revealResult);
+  $('resetBtn').addEventListener('click', reset);
+  $('resetBtn2').addEventListener('click', reset);
+  $('againBtn').addEventListener('click', reset);
+
+  show('setupPhase');
+</script>
+</body>
+</html>
