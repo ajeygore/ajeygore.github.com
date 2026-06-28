@@ -1,177 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CEO Game</title>
-<style>
-  :root {
-    --bg: #0f1226;
-    --panel: #1a1e3a;
-    --accent: #6c5ce7;
-    --accent-2: #00cec9;
-    --text: #f5f6fa;
-    --muted: #9aa0c0;
-    --danger: #ff6b6b;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: radial-gradient(1200px 600px at 50% -10%, #2a2f5a, var(--bg));
-    color: var(--text);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 24px;
-  }
-  .app {
-    width: 100%;
-    max-width: 560px;
-    background: var(--panel);
-    border-radius: 20px;
-    padding: 32px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.45);
-    border: 1px solid rgba(255,255,255,.06);
-  }
-  h1 {
-    font-size: 28px;
-    letter-spacing: .5px;
-    margin-bottom: 4px;
-    background: linear-gradient(90deg, var(--accent-2), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
-  .count { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
-  .count b { color: var(--accent-2); }
-  label { display: block; color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Play the CEO Game - a fun, secret party game where players enter names secretly, and only the last player reveals them all. Perfect for group gatherings, team bonding, and parties!">
+  <meta name="theme-color" content="#0f1226">
+  <title>CEO Game - Secret Party Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at top center, #1e1e38 0%, #0f1226 100%);
+      --panel-bg: rgba(26, 30, 58, 0.85);
+      --panel-border: rgba(255, 255, 255, 0.08);
+      --accent: #6c5ce7;
+      --accent-glow: rgba(108, 92, 231, 0.4);
+      --accent-2: #00cec9;
+      --accent-2-glow: rgba(0, 206, 201, 0.4);
+      --text: #f5f6fa;
+      --text-muted: #9aa0c0;
+      --danger: #ff6b6b;
+      --danger-glow: rgba(255, 107, 107, 0.2);
+      --success: #10b981;
+      --success-glow: rgba(16, 185, 129, 0.2);
+      --card-bg: rgba(255, 255, 255, 0.03);
+      --card-border: rgba(255, 255, 255, 0.05);
+      --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
 
-  .entry { display: flex; gap: 10px; margin-bottom: 18px; }
-  input[type="text"] {
-    flex: 1;
-    padding: 14px 16px;
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,.1);
-    background: rgba(255,255,255,.04);
-    color: var(--text);
-    font-size: 16px;
-    outline: none;
-    transition: border .2s;
-  }
-  input[type="text"]:focus { border-color: var(--accent); }
-  input[type="text"]::placeholder { color: var(--muted); }
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
 
-  button {
-    border: none;
-    border-radius: 12px;
-    padding: 14px 18px;
-    font-size: 15px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform .1s, opacity .2s, background .2s;
-    color: #fff;
-  }
-  button:active { transform: scale(.96); }
-  button:disabled { opacity: .4; cursor: not-allowed; }
-  .btn-add { background: var(--accent); }
-  .btn-primary { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 16px; font-size: 16px; }
-  .btn-reveal { background: linear-gradient(90deg, var(--accent-2), var(--accent)); width: 100%; padding: 18px; font-size: 18px; margin-top: 20px; }
-  .btn-ghost {
-    background: transparent;
-    border: 1px solid rgba(255,255,255,.15);
-    color: var(--muted);
-    padding: 10px 14px;
-    font-size: 13px;
-  }
+    body {
+      font-family: var(--font-family);
+      background: var(--bg-gradient);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow-x: hidden;
+    }
 
-  .roster { list-style: none; margin-bottom: 18px; }
-  .roster li {
-    display: flex; align-items: center; gap: 10px;
-    padding: 10px 14px; border-radius: 10px;
-    background: rgba(255,255,255,.04); margin-bottom: 8px; font-size: 15px;
-  }
-  .roster .num { width: 24px; height: 24px; flex: 0 0 24px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
-  .roster .rm { margin-left: auto; background: transparent; border: none; color: var(--danger); font-size: 18px; padding: 0 6px; cursor: pointer; }
-  .roster .empty { color: var(--muted); font-style: italic; background: none; }
+    .app {
+      width: 100%;
+      max-width: 520px;
+      background: var(--panel-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5),
+                  0 0 40px rgba(108, 92, 231, 0.05);
+      border: 1px solid var(--panel-border);
+      transition: all 0.3s ease;
+    }
 
-  .status {
-    background: rgba(108,92,231,.12);
-    border: 1px dashed rgba(108,92,231,.5);
-    border-radius: 14px;
-    padding: 28px 20px;
-    text-align: center;
-    color: var(--muted);
-  }
-  .status .big { font-size: 40px; margin-bottom: 8px; }
-  .status .player-name { color: var(--accent-2); font-weight: 700; font-size: 22px; display: block; margin-bottom: 6px; }
-  .status .added-flash { color: var(--accent-2); font-weight: 600; }
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--accent-2) 0%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 10px rgba(0, 206, 201, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-  .progress { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
-  .dot { width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,.12); }
-  .dot.done { background: var(--accent-2); }
-  .dot.current { background: var(--accent); box-shadow: 0 0 0 3px rgba(108,92,231,.3); }
+    .subtitle { 
+      color: var(--text-muted); 
+      font-size: 15px; 
+      line-height: 1.5;
+      margin-bottom: 28px; 
+    }
 
-  .names { list-style: none; }
-  .names li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 16px;
-    border-radius: 12px;
-    background: rgba(255,255,255,.04);
-    margin-bottom: 10px;
-    font-size: 17px;
-    animation: pop .35s ease both;
-  }
-  .names li .num {
-    width: 28px; height: 28px;
-    flex: 0 0 28px;
-    border-radius: 50%;
-    background: var(--accent);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 13px; font-weight: 700;
-  }
-  @keyframes pop {
-    from { opacity: 0; transform: translateY(12px) scale(.95); }
-    to { opacity: 1; transform: none; }
-  }
+    .count { 
+      color: var(--text-muted); 
+      font-size: 14px; 
+      margin-bottom: 18px; 
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-  .actions { display: flex; gap: 10px; margin-top: 20px; }
-  .actions button { flex: 1; }
-  .hidden { display: none !important; }
-</style>
+    .count b { 
+      color: var(--accent-2); 
+      font-weight: 700;
+    }
+
+    label { 
+      display: block; 
+      color: var(--text-muted); 
+      font-size: 13px; 
+      font-weight: 700;
+      margin-bottom: 8px; 
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .entry { 
+      display: flex; 
+      gap: 12px; 
+      margin-bottom: 20px; 
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 14px 18px;
+      border-radius: 14px;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 16px;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="text"]:focus { 
+      border-color: var(--accent); 
+      box-shadow: 0 0 0 3px var(--accent-glow), inset 0 2px 4px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    input[type="text"]::placeholder { 
+      color: rgba(255, 255, 255, 0.25); 
+    }
+
+    button {
+      font-family: inherit;
+      border: none;
+      border-radius: 14px;
+      padding: 14px 22px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      user-select: none;
+    }
+
+    button:active { 
+      transform: scale(0.97); 
+    }
+
+    button:disabled { 
+      opacity: 0.35; 
+      cursor: not-allowed; 
+      transform: none !important;
+    }
+
+    .btn-add { 
+      background: linear-gradient(135deg, var(--accent) 0%, #5b4fd1 100%);
+      box-shadow: 0 4px 12px var(--accent-glow);
+    }
+
+    .btn-add:hover:not(:disabled) {
+      background: linear-gradient(135deg, #7c3aed 0%, #5b4fd1 100%);
+      box-shadow: 0 6px 16px var(--accent-glow);
+    }
+
+    .btn-primary { 
+      background: linear-gradient(135deg, var(--accent-2) 0%, var(--accent) 100%); 
+      width: 100%; 
+      padding: 16px; 
+      font-size: 16px;
+      box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      box-shadow: 0 6px 20px rgba(108, 92, 231, 0.45);
+      filter: brightness(1.1);
+    }
+
+    .btn-reveal { 
+      background: linear-gradient(135deg, #10b981 0%, var(--accent-2) 100%); 
+      width: 100%; 
+      padding: 18px; 
+      font-size: 18px; 
+      margin-top: 24px;
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+      letter-spacing: 0.5px;
+    }
+
+    .btn-reveal:hover:not(:disabled) {
+      box-shadow: 0 6px 25px rgba(16, 185, 129, 0.45);
+      filter: brightness(1.1);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text-muted);
+      padding: 12px 18px;
+      font-size: 14px;
+    }
+
+    .btn-ghost:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .roster { 
+      list-style: none; 
+      margin-bottom: 24px; 
+      max-height: 240px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    /* Scrollbar styling for roster */
+    .roster::-webkit-scrollbar {
+      width: 6px;
+    }
+    .roster::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .roster::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+    .roster::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .roster li {
+      display: flex; 
+      align-items: center; 
+      gap: 12px;
+      padding: 12px 16px; 
+      border-radius: 14px;
+      background: var(--card-bg); 
+      border: 1px solid var(--card-border);
+      margin-bottom: 8px; 
+      font-size: 15px;
+      animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .roster .num { 
+      width: 24px; 
+      height: 24px; 
+      flex: 0 0 24px; 
+      border-radius: 50%; 
+      background: linear-gradient(135deg, var(--accent-2) 0%, var(--accent) 100%); 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      font-size: 12px; 
+      font-weight: 800; 
+    }
+
+    .roster .name-text {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .roster .rm { 
+      margin-left: auto; 
+      background: transparent; 
+      border: none; 
+      color: var(--danger); 
+      font-size: 20px; 
+      padding: 0 8px; 
+      cursor: pointer; 
+      transition: all 0.2s;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .roster .rm:hover {
+      color: #ff8787;
+      transform: scale(1.2);
+    }
+
+    .roster .empty { 
+      color: var(--text-muted); 
+      font-style: italic; 
+      background: transparent;
+      border: 1px dashed rgba(255, 255, 255, 0.1);
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .status {
+      background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 206, 201, 0.05) 100%);
+      border: 1px solid rgba(108, 92, 231, 0.25);
+      border-radius: 18px;
+      padding: 32px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      margin-bottom: 24px;
+    }
+
+    .status .big { 
+      font-size: 48px; 
+      margin-bottom: 12px; 
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.08); }
+    }
+
+    .status .player-name { 
+      color: var(--accent-2); 
+      font-weight: 800; 
+      font-size: 24px; 
+      display: block; 
+      margin-bottom: 8px; 
+      letter-spacing: -0.5px;
+      text-shadow: 0 2px 8px rgba(0, 206, 201, 0.2);
+    }
+
+    .status #statusText {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .status .added-flash { 
+      color: var(--success); 
+      font-weight: 700; 
+      display: inline-block;
+      padding: 2px 8px;
+      background: var(--success-glow);
+      border-radius: 6px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .progress { 
+      display: flex; 
+      gap: 8px; 
+      flex-wrap: wrap; 
+      margin-bottom: 24px; 
+      justify-content: center;
+    }
+
+    .dot { 
+      width: 28px; 
+      height: 6px; 
+      border-radius: 3px; 
+      background: rgba(255, 255, 255, 0.1); 
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dot.done { 
+      background: var(--success); 
+      box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+    }
+
+    .dot.current { 
+      background: var(--accent); 
+      box-shadow: 0 0 12px var(--accent);
+      width: 38px;
+    }
+
+    .names { 
+      list-style: none; 
+      margin-top: 16px;
+    }
+
+    .names li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-radius: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      animation: pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    }
+
+    .names li .num {
+      width: 32px; 
+      height: 32px;
+      flex: 0 0 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent) 0%, #5b4fd1 100%);
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      font-size: 14px; 
+      font-weight: 800;
+      box-shadow: 0 2px 6px var(--accent-glow);
+    }
+
+    .names li span:last-of-type {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      flex: 1;
+    }
+
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(20px) scale(0.92); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .actions { 
+      display: flex; 
+      gap: 12px; 
+      margin-top: 24px; 
+    }
+
+    .actions button { 
+      flex: 1; 
+    }
+
+    .hidden { 
+      display: none !important; 
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 480px) {
+      body {
+        padding: 16px 12px;
+      }
+
+      .app {
+        padding: 24px 16px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .entry {
+        gap: 8px;
+      }
+
+      input[type="text"] {
+        padding: 12px 14px;
+        font-size: 15px;
+      }
+
+      button {
+        padding: 12px 16px;
+        font-size: 14px;
+      }
+
+      .btn-primary {
+        padding: 14px;
+        font-size: 15px;
+      }
+
+      .btn-reveal {
+        padding: 16px;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+
+      .status {
+        padding: 24px 16px;
+        margin-bottom: 20px;
+      }
+
+      .status .big {
+        font-size: 40px;
+      }
+
+      .status .player-name {
+        font-size: 20px;
+      }
+
+      .names li {
+        padding: 12px 16px;
+        font-size: 16px;
+      }
+
+      .names li .num {
+        width: 28px;
+        height: 28px;
+        flex: 0 0 28px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .entry {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+      }
+
+      .entry button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="app">
+  <main class="app">
     <h1>👔 CEO Game</h1>
     <p class="subtitle">Each player secretly enters a name. Only the last player reveals them all.</p>
 
     <!-- SETUP PHASE -->
-    <div id="setupPhase">
+    <section id="setupPhase">
       <label for="playerName">Add players</label>
       <div class="entry">
-        <input type="text" id="playerName" placeholder="Player name, then Enter" autocomplete="off">
+        <input type="text" id="playerName" placeholder="Player name, then Enter" autocomplete="off" aria-label="Player name">
         <button class="btn-add" id="addPlayerBtn">Add</button>
       </div>
       <ul class="roster" id="rosterList"></ul>
       <button class="btn-primary" id="startBtn" disabled>Start Game</button>
-    </div>
+    </section>
 
     <!-- ENTRY PHASE -->
-    <div id="entryPhase" class="hidden">
+    <section id="entryPhase" class="hidden">
       <div class="progress" id="progress"></div>
-      <p class="count">Turn <b id="turnNum">1</b> of <b id="turnTotal">0</b></p>
+      <p class="count"><span>Turn <b id="turnNum">1</b> of <b id="turnTotal">0</b></span></p>
 
       <div class="status" id="turnBox">
-        <div class="big">🤫</div>
+        <div class="big" aria-hidden="true">🤫</div>
         <span class="player-name" id="turnName">Player</span>
         <div id="statusText">Enter a name, then pass the device to the next player.</div>
       </div>
 
       <div class="entry" id="entryRow" style="margin-top:18px;">
-        <input type="text" id="nameInput" placeholder="Type a name, then press Enter" autocomplete="off">
+        <input type="text" id="nameInput" placeholder="Type a name, then press Enter" autocomplete="off" aria-label="Secret name entry">
         <button class="btn-add" id="addBtn">Add</button>
       </div>
 
@@ -180,168 +564,168 @@
       <div class="actions">
         <button class="btn-ghost" id="resetBtn">Reset Game</button>
       </div>
-    </div>
+    </section>
 
     <!-- REVEAL PHASE -->
-    <div id="revealPhase" class="hidden">
-      <p class="count">The reveal — <b id="revealCount">0</b> name(s)</p>
+    <section id="revealPhase" class="hidden">
+      <p class="count"><span>The reveal — <b id="revealCount">0</b> name(s)</span></p>
       <ul class="names" id="namesList"></ul>
       <div class="actions">
         <button class="btn-ghost" id="resetBtn2">New Game</button>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-<script>
-  const KEY = 'ceo-game-state-v2';
-  const $ = id => document.getElementById(id);
+  <script>
+    const KEY = 'ceo-game-state-v2';
+    const $ = id => document.getElementById(id);
 
-  // state: { players: [names of people], entries: [secret names typed] }
-  let state = load();
+    // state: { players: [names of people], entries: [secret names typed] }
+    let state = load();
 
-  function load() {
-    try {
-      const s = JSON.parse(localStorage.getItem(KEY));
-      if (s && Array.isArray(s.players) && Array.isArray(s.entries)) return s;
-    } catch (e) {}
-    return { players: [], entries: [] };
-  }
-  function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
-  function clearState() { state = { players: [], entries: [] }; localStorage.removeItem(KEY); }
-
-  function show(phase) {
-    ['setupPhase', 'entryPhase', 'revealPhase'].forEach(p =>
-      $(p).classList.toggle('hidden', p !== phase));
-  }
-
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  }
-
-  /* ---------- Setup ---------- */
-  function renderRoster() {
-    const ul = $('rosterList');
-    ul.innerHTML = '';
-    if (!state.players.length) {
-      ul.innerHTML = '<li class="empty">No players yet — add at least 2.</li>';
-    } else {
-      state.players.forEach((name, i) => {
-        const li = document.createElement('li');
-        li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) +
-          '</span><button class="rm" data-i="' + i + '" title="Remove">×</button>';
-        ul.appendChild(li);
-      });
+    function load() {
+      try {
+        const s = JSON.parse(localStorage.getItem(KEY));
+        if (s && Array.isArray(s.players) && Array.isArray(s.entries)) return s;
+      } catch (e) {}
+      return { players: [], entries: [] };
     }
-    $('startBtn').disabled = state.players.length < 2;
-  }
+    function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
+    function clearState() { state = { players: [], entries: [] }; localStorage.removeItem(KEY); }
 
-  function addPlayer() {
-    const v = $('playerName').value.trim();
-    if (!v) return;
-    state.players.push(v);
-    save();
-    $('playerName').value = '';
-    $('playerName').focus();
-    renderRoster();
-  }
-
-  $('rosterList').addEventListener('click', e => {
-    const btn = e.target.closest('.rm');
-    if (!btn) return;
-    state.players.splice(parseInt(btn.dataset.i, 10), 1);
-    save();
-    renderRoster();
-  });
-
-  function startGame() {
-    if (state.players.length < 2) return;
-    state.entries = [];
-    save();
-    renderEntry();
-    show('entryPhase');
-    $('nameInput').focus();
-  }
-
-  /* ---------- Entry ---------- */
-  function renderEntry() {
-    const total = state.players.length;
-    const done = state.entries.length;
-    $('turnTotal').textContent = total;
-    $('turnNum').textContent = Math.min(done + 1, total);
-
-    const prog = $('progress');
-    prog.innerHTML = '';
-    for (let i = 0; i < total; i++) {
-      const d = document.createElement('div');
-      d.className = 'dot' + (i < done ? ' done' : i === done ? ' current' : '');
-      prog.appendChild(d);
+    function show(phase) {
+      ['setupPhase', 'entryPhase', 'revealPhase'].forEach(p =>
+        $(p).classList.toggle('hidden', p !== phase));
     }
 
-    const allIn = done >= total;
-    $('entryRow').classList.toggle('hidden', allIn);
-    $('revealBtn').classList.toggle('hidden', !allIn);
-
-    if (allIn) {
-      $('turnName').textContent = 'All players are in!';
-      $('statusText').innerHTML = '<span class="added-flash">Ready.</span> Last player — tap reveal.';
-    } else {
-      $('turnName').textContent = state.players[done] + ', your turn';
-      $('statusText').textContent = 'Enter a name secretly, then pass the device.';
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
     }
-  }
 
-  function addName() {
-    if (state.entries.length >= state.players.length) return;
-    const val = $('nameInput').value.trim();
-    if (!val) return;
-    state.entries.push(val);
-    save();
-    $('nameInput').value = '';
-    renderEntry();
-    if (state.entries.length < state.players.length) $('nameInput').focus();
-  }
+    /* ---------- Setup ---------- */
+    function renderRoster() {
+      const ul = $('rosterList');
+      ul.innerHTML = '';
+      if (!state.players.length) {
+        ul.innerHTML = '<li class="empty">No players yet — add at least 2.</li>';
+      } else {
+        state.players.forEach((name, i) => {
+          const li = document.createElement('li');
+          li.innerHTML = '<span class="num">' + (i + 1) + '</span><span class="name-text">' + escapeHtml(name) +
+            '</span><button class="rm" data-i="' + i + '" title="Remove">×</button>';
+          ul.appendChild(li);
+        });
+      }
+      $('startBtn').disabled = state.players.length < 2;
+    }
 
-  /* ---------- Reveal (names only, no player attribution) ---------- */
-  function reveal() {
-    const list = $('namesList');
-    list.innerHTML = '';
-    const shuffled = [...state.entries].sort(() => Math.random() - 0.5);
-    shuffled.forEach((name, i) => {
-      const li = document.createElement('li');
-      li.style.animationDelay = (i * 0.08) + 's';
-      li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) + '</span>';
-      list.appendChild(li);
+    function addPlayer() {
+      const v = $('playerName').value.trim();
+      if (!v) return;
+      state.players.push(v);
+      save();
+      $('playerName').value = '';
+      $('playerName').focus();
+      renderRoster();
+    }
+
+    $('rosterList').addEventListener('click', e => {
+      const btn = e.target.closest('.rm');
+      if (!btn) return;
+      state.players.splice(parseInt(btn.dataset.i, 10), 1);
+      save();
+      renderRoster();
     });
-    $('revealCount').textContent = state.entries.length;
-    show('revealPhase');
-  }
 
-  function reset() {
-    if (state.entries.length && !confirm('Clear everything and start a new game?')) return;
-    clearState();
+    function startGame() {
+      if (state.players.length < 2) return;
+      state.entries = [];
+      save();
+      renderEntry();
+      show('entryPhase');
+      $('nameInput').focus();
+    }
+
+    /* ---------- Entry ---------- */
+    function renderEntry() {
+      const total = state.players.length;
+      const done = state.entries.length;
+      $('turnTotal').textContent = total;
+      $('turnNum').textContent = Math.min(done + 1, total);
+
+      const prog = $('progress');
+      prog.innerHTML = '';
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('div');
+        d.className = 'dot' + (i < done ? ' done' : i === done ? ' current' : '');
+        prog.appendChild(d);
+      }
+
+      const allIn = done >= total;
+      $('entryRow').classList.toggle('hidden', allIn);
+      $('revealBtn').classList.toggle('hidden', !allIn);
+
+      if (allIn) {
+        $('turnName').textContent = 'All players are in!';
+        $('statusText').innerHTML = '<span class="added-flash">Ready.</span> Last player — tap reveal.';
+      } else {
+        $('turnName').textContent = state.players[done] + ', your turn';
+        $('statusText').textContent = 'Enter a name secretly, then pass the device.';
+      }
+    }
+
+    function addName() {
+      if (state.entries.length >= state.players.length) return;
+      const val = $('nameInput').value.trim();
+      if (!val) return;
+      state.entries.push(val);
+      save();
+      $('nameInput').value = '';
+      renderEntry();
+      if (state.entries.length < state.players.length) $('nameInput').focus();
+    }
+
+    /* ---------- Reveal (names only, no player attribution) ---------- */
+    function reveal() {
+      const list = $('namesList');
+      list.innerHTML = '';
+      const shuffled = [...state.entries].sort(() => Math.random() - 0.5);
+      shuffled.forEach((name, i) => {
+        const li = document.createElement('li');
+        li.style.animationDelay = (i * 0.08) + 's';
+        li.innerHTML = '<span class="num">' + (i + 1) + '</span><span>' + escapeHtml(name) + '</span>';
+        list.appendChild(li);
+      });
+      $('revealCount').textContent = state.entries.length;
+      show('revealPhase');
+    }
+
+    function reset() {
+      if (state.entries.length && !confirm('Clear everything and start a new game?')) return;
+      clearState();
+      renderRoster();
+      show('setupPhase');
+      $('playerName').focus();
+    }
+
+    /* ---------- Wiring ---------- */
+    $('addPlayerBtn').addEventListener('click', addPlayer);
+    $('playerName').addEventListener('keydown', e => { if (e.key === 'Enter') addPlayer(); });
+    $('startBtn').addEventListener('click', startGame);
+    $('addBtn').addEventListener('click', addName);
+    $('nameInput').addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
+    $('revealBtn').addEventListener('click', reveal);
+    $('resetBtn').addEventListener('click', reset);
+    $('resetBtn2').addEventListener('click', reset);
+
+    // Restore
     renderRoster();
-    show('setupPhase');
-    $('playerName').focus();
-  }
-
-  /* ---------- Wiring ---------- */
-  $('addPlayerBtn').addEventListener('click', addPlayer);
-  $('playerName').addEventListener('keydown', e => { if (e.key === 'Enter') addPlayer(); });
-  $('startBtn').addEventListener('click', startGame);
-  $('addBtn').addEventListener('click', addName);
-  $('nameInput').addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
-  $('revealBtn').addEventListener('click', reveal);
-  $('resetBtn').addEventListener('click', reset);
-  $('resetBtn2').addEventListener('click', reset);
-
-  // Restore
-  renderRoster();
-  if (state.players.length >= 2 && state.entries.length > 0) {
-    renderEntry();
-    show('entryPhase');
-  } else {
-    show('setupPhase');
-  }
-</script>
+    if (state.players.length >= 2 && state.entries.length > 0) {
+      renderEntry();
+      show('entryPhase');
+    } else {
+      show('setupPhase');
+    }
+  </script>
 </body>
 </html>
