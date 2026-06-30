@@ -8,67 +8,97 @@ title: Presentations
 
 <div class="content-container py-5">
   <div class="row justify-content-center">
-    <div class="col-lg-8">
-
-      <h1 class="mb-4" style="font-weight: 500; font-size: 2.5rem;">Stage Time & Mic Drops</h1>
+    <div class="col-lg-9">
 
       <!-- Intro -->
-      <section class="mb-5">
-        <p>I speak at conferences about scaling product engineering teams, startup tech strategy, and building systems
-          that don't break at 3 AM.</p>
-        <p>Most talks include war stories from building teams at scale, practical advice on tech leadership, and the
-          occasional debugging horror story that makes everyone feel better about their own code.</p>
-      </section>
+      <header class="talks-hero mb-5">
+        <p class="talks-eyebrow">Talks · Podcasts · Keynotes</p>
+        <h1 class="talks-title">Stage Time &amp; Mic Drops</h1>
+        <p class="talks-lede">Conference talks, keynotes and podcast conversations on scaling product
+          engineering teams, startup tech strategy, and building systems that don't break at 3&nbsp;AM —
+          with war stories, practical leadership advice, and the occasional debugging horror story.</p>
+      </header>
 
-      <!-- Recent Talks -->
-      <section class="mb-5">
-        <h2 class="h4 text-primary mb-3">Recent Talks</h2>
-        {% for talk in site.data.talks_updated %}
-        <div class="mb-4 pb-3 border-bottom">
-          <h3 class="h5 mb-2">
-            {% if talk.link %}
-            <a href="{{ talk.link }}" target="_blank" class="text-decoration-none">{{ talk.title }}</a>
-            {% else %}
-            {{ talk.title }}
-            {% endif %}
-          </h3>
-          <p class="text-muted small mb-2">{{ talk.date }}</p>
-          <p class="mb-2">{{ talk.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          {% if talk.link or talk.slides %}
-          <div class="small">
-            {% if talk.link %}<a href="{{ talk.link }}" target="_blank" class="text-decoration-none me-3">→ Watch</a>{%
-            endif %}
-            {% if talk.slides %}<a href="{{ talk.slides }}" target="_blank" class="text-decoration-none">→ Slides</a>{%
-            endif %}
-          </div>
-          {% endif %}
+      <!-- Talks gallery, grouped by year -->
+      {% assign grouped = site.data.talks_updated | group_by_exp: "t", "t.date | split: ' ' | last" %}
+      {% assign grouped = grouped | sort: "name" | reverse %}
+
+      {% for group in grouped %}
+      <section class="talks-section">
+        <div class="talks-year">
+          <span class="talks-year-num">{{ group.name | default: "Other" }}</span>
+          <span class="talks-year-count">{{ group.items | size }} {% if group.items.size == 1 %}talk{% else %}talks{% endif %}</span>
         </div>
-        {% endfor %}
 
-        {% if site.data.talks_updated.size == 0 %}
-        <p class="text-muted">More talks coming soon. Check back later!</p>
-        {% endif %}
+        <div class="talk-grid">
+          {% for talk in group.items %}
+          {% assign is_youtube = false %}
+          {% if talk.link contains 'youtube.com/embed/' %}
+            {% assign vid = talk.link | split: '/embed/' | last | split: '?' | first %}
+            {% assign thumb = 'https://img.youtube.com/vi/' | append: vid | append: '/hqdefault.jpg' %}
+            {% assign is_youtube = true %}
+          {% endif %}
+
+          <a class="talk-card" href="{{ talk.link }}" target="_blank" rel="noopener">
+            <div class="talk-thumb">
+              {% if is_youtube %}
+              <img src="{{ thumb }}" alt="{{ talk.title | escape }}" loading="lazy">
+              {% else %}
+              <div class="talk-thumb-fallback">
+                <span class="talk-thumb-source">{{ talk.short_description | default: "Watch" }}</span>
+              </div>
+              {% endif %}
+              <span class="talk-play"><i class="bi bi-play-fill"></i></span>
+            </div>
+
+            <div class="talk-body">
+              <div class="talk-meta">
+                {% if talk.short_description %}<span class="talk-source">{{ talk.short_description }}</span>{% endif %}
+                {% if talk.date %}<span class="talk-date">{{ talk.date }}</span>{% endif %}
+              </div>
+              <h3 class="talk-card-title">{{ talk.title | strip }}</h3>
+              <p class="talk-desc">{{ talk.description | markdownify | strip_html | strip }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
       </section>
+      {% endfor %}
+
+      {% if site.data.talks_updated.size == 0 %}
+      <p class="text-muted">More talks coming soon. Check back later!</p>
+      {% endif %}
 
       <!-- Speaking Topics -->
-      <section class="mb-5">
-        <h2 class="h4 text-primary mb-3">Speaking Topics</h2>
-        <ul class="list-unstyled">
-          <li class="mb-2"><strong>Scaling Engineering Teams</strong> — from 5 to 500 engineers without losing your
-            sanity</li>
-          <li class="mb-2"><strong>Product Engineering</strong> — building teams that ship value, not just code</li>
-          <li class="mb-2"><strong>Startup Tech Strategy</strong> — making technical decisions when everything is on
-            fire</li>
-          <li class="mb-2"><strong>Systems Thinking</strong> — designing for scale, failure, and human error</li>
-        </ul>
+      <section class="talks-section">
+        <div class="talks-year"><span class="talks-year-num">Speaking Topics</span></div>
+        <div class="topic-grid">
+          <div class="topic-card">
+            <h3>Scaling Engineering Teams</h3>
+            <p>From 5 to 500 engineers without losing your sanity.</p>
+          </div>
+          <div class="topic-card">
+            <h3>Product Engineering</h3>
+            <p>Building teams that ship value, not just code.</p>
+          </div>
+          <div class="topic-card">
+            <h3>Startup Tech Strategy</h3>
+            <p>Making technical decisions when everything is on fire.</p>
+          </div>
+          <div class="topic-card">
+            <h3>Systems Thinking</h3>
+            <p>Designing for scale, failure, and human error.</p>
+          </div>
+        </div>
       </section>
 
       <!-- Book Me -->
-      <section class="mb-5">
-        <h2 class="h4 text-primary mb-3">Book Me to Speak</h2>
-        <p>Available for conferences, company events, and team workshops. I prefer interactive sessions over one-way
-          presentations.</p>
-        <p>Reach me on <a href="https://twitter.com/ajeygore">Twitter</a> or <a href="https://sg.linkedin.com/in/ajeygore">LinkedIn</a>.</p>
+      <section class="talks-section talks-cta">
+        <h2>Book me to speak</h2>
+        <p>Available for conferences, company events, and team workshops. I prefer interactive sessions
+          over one-way presentations.</p>
+        <p>Reach me on <a href="https://twitter.com/ajeygore">Twitter</a> or
+          <a href="https://sg.linkedin.com/in/ajeygore">LinkedIn</a>.</p>
       </section>
 
     </div>
