@@ -1,0 +1,260 @@
+---
+layout: bare
+leadingpath: ./
+permalink: /fun
+title: Fun & Games - Ajey Gore
+subpage: fun
+description: "Games, tools, and playful experiments I've built on nights and weekends — from party games to neon arcade classics to satirical generators."
+lead_image: ajey_gore_website_card.png
+---
+
+<style>
+/* ============================================================
+   /fun — matches the homepage design language:
+   warm "paper" palette, Newsreader serif display, Inter body,
+   oxblood accent, alternating light/dark bands.
+   Scoped under .tv so nothing else on the site is affected.
+   ============================================================ */
+.tv {
+  --paper: #faf8f4;
+  --ink: #23211e;
+  --ink-2: #5d5852;
+  --ink-3: #837d76;
+  --ink-faint: #bdb8b0;
+  --accent: #6b1f2a;
+  --accent-hover: #571820;
+  --border: #23211e17;
+  --coal: #1b1917;
+  --coal-elev: #242120;
+  --coal-ink: #ece7df;
+  --coal-ink-2: #d8d3cbbd;
+  --coal-ink-3: #d8d3cb85;
+  --coal-border: #d8d3cb24;
+  --coal-accent: #e6b9bf;
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  margin: -1rem calc(50% - 50vw) 0;
+  padding: 0;
+}
+
+.tv-wrap { max-width: 840px; margin: 0 auto; padding: 0 1.5rem; }
+@media (min-width: 1200px) { .tv-wrap { max-width: 960px; } }
+@media (min-width: 1600px) { .tv-wrap { max-width: 1080px; } }
+
+.tv-band { padding: 5rem 0; margin-bottom: 0 !important; }  /* override global section margin */
+.tv-hero { padding: 6rem 0 4rem; }
+.tv-band--coal { background: var(--coal); }
+
+.tv-kicker {
+  font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.16em; color: var(--ink-3); margin: 0 0 1.25rem;
+}
+.tv-band--coal .tv-kicker { color: var(--coal-ink-3); }
+
+.tv-title {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1.08;
+  letter-spacing: -0.02em; color: var(--ink); margin: 0 0 1.1rem;
+}
+.tv-lede {
+  font-size: 1.1rem; line-height: 1.65; color: var(--ink-2);
+  max-width: 58ch; margin: 0;
+}
+.tv-note {
+  font-family: var(--serif); font-style: italic;
+  font-size: 1.2rem; line-height: 1.5; color: var(--accent);
+  max-width: 46ch; margin: 1.25rem 0 0;
+}
+.tv-band--coal .tv-secttitle,
+.tv-secttitle {
+  font-family: var(--serif); font-weight: 400;
+  font-size: clamp(1.6rem, 2.8vw, 2rem); letter-spacing: -0.015em;
+  color: var(--ink); margin: 0 0 1.75rem;
+}
+.tv-band--coal .tv-secttitle { color: var(--coal-ink); }
+
+/* Links & buttons (beat the site-wide `a { color: … !important }`) */
+.tv a { text-decoration: none; }
+.tv-btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.72rem 1.35rem; border-radius: 999px;
+  font-size: 0.9rem; font-weight: 600; letter-spacing: 0.01em;
+  background: var(--accent); color: #fff !important; border: 1px solid var(--accent);
+  transition: background .18s ease, transform .18s ease;
+}
+.tv-btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
+.tv-band--coal .tv-btn { background: var(--coal-ink); color: var(--coal) !important; border-color: var(--coal-ink); }
+.tv-band--coal .tv-btn:hover { background: #fff; border-color: #fff; }
+
+/* ---- Card grid (shared by games + tools) ---- */
+.tv-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.25rem; margin-top: 0.5rem;
+}
+.tv-card {
+  display: flex; flex-direction: column;
+  background: #fff; border: 1px solid var(--border); border-radius: 14px;
+  padding: 1.5rem 1.5rem 1.6rem;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.tv-card:hover {
+  transform: translateY(-4px); box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  border-color: var(--ink-faint);
+}
+.tv-card__eyebrow {
+  font-size: 0.68rem; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--ink-faint); margin: 0 0 0.75rem;
+}
+.tv-card__title {
+  font-family: var(--serif); font-weight: 500; font-size: 1.4rem;
+  line-height: 1.2; color: var(--ink); margin: 0 0 0.6rem; transition: color .18s ease;
+}
+.tv-card:hover .tv-card__title { color: var(--accent); }
+.tv-card__desc {
+  font-size: 0.92rem; line-height: 1.55; color: var(--ink-2); margin: 0 0 1.5rem;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+.tv-card__arrow {
+  margin-top: auto; align-self: flex-start;
+  font-size: 1.1rem; color: var(--accent); transition: transform .2s ease;
+}
+.tv-card:hover .tv-card__arrow { transform: translateX(4px); }
+
+/* Featured card accent */
+.tv-card--featured { border-color: color-mix(in srgb, var(--accent) 35%, var(--border)); }
+.tv-card--featured .tv-card__eyebrow { color: var(--accent); }
+
+/* Cards on the dark (games) band */
+.tv-band--coal .tv-card { background: var(--coal-elev); border-color: var(--coal-border); }
+.tv-band--coal .tv-card:hover { border-color: var(--coal-ink-3); box-shadow: 0 14px 30px rgba(0,0,0,0.45); }
+.tv-band--coal .tv-card__eyebrow { color: var(--coal-ink-3); }
+.tv-band--coal .tv-card__title { color: var(--coal-ink); }
+.tv-band--coal .tv-card:hover .tv-card__title { color: var(--coal-accent); }
+.tv-band--coal .tv-card__desc { color: var(--coal-ink-2); }
+.tv-band--coal .tv-card__arrow { color: var(--coal-accent); }
+
+/* ---- CTA band ---- */
+.tv-cta-band h2 {
+  font-family: var(--serif); font-weight: 400; font-size: clamp(1.7rem, 3vw, 2.2rem);
+  letter-spacing: -0.015em; color: var(--coal-ink); margin: 0 0 0.9rem;
+}
+.tv-cta-band p { font-size: 1.05rem; line-height: 1.6; color: var(--coal-ink-2); max-width: 54ch; margin: 0 0 1.75rem; }
+
+@media (max-width: 576px) {
+  .tv-band { padding: 3.5rem 0; }
+  .tv-hero { padding: 4rem 0 3rem; }
+  .tv-grid { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="tv">
+
+  <!-- HERO (light) -->
+  <section class="tv-band tv-hero">
+    <div class="tv-wrap">
+      <p class="tv-kicker">Fun &amp; Games</p>
+      <h1 class="tv-title">Things I've built on nights and weekends.</h1>
+      <p class="tv-lede">Party games, neon arcade classics, small utilities, and the occasional satirical generator — made out of curiosity, for fun, and the odd productivity win.</p>
+      <p class="tv-note">And lately — with AI — ideas came to life faster than I ever thought.</p>
+    </div>
+  </section>
+
+  <!-- GAMES (dark) -->
+  <section class="tv-band tv-band--coal">
+    <div class="tv-wrap">
+      <p class="tv-kicker">Games</p>
+      <h2 class="tv-secttitle">Grab some friends and play.</h2>
+      <div class="tv-grid">
+
+        <a class="tv-card" href="/ceo-game.html">
+          <p class="tv-card__eyebrow">Party game</p>
+          <h3 class="tv-card__title">CEO Game</h3>
+          <p class="tv-card__desc">A secret party game — everyone enters names in secret, and only the last player reveals them all. Made for group gatherings and team bonding.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+        <a class="tv-card" href="/imposter-game.html">
+          <p class="tv-card__eyebrow">Party game</p>
+          <h3 class="tv-card__title">Imposter</h3>
+          <p class="tv-card__desc">A quick social-deduction game for groups. Everyone gets the word — except the imposters. Blend in, or get caught.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+        <a class="tv-card" href="/pacman/">
+          <p class="tv-card__eyebrow">Arcade</p>
+          <h3 class="tv-card__title">Retro Cyber Pacman</h3>
+          <p class="tv-card__desc">A neon, cyberpunk take on the classic maze chase. Dots, ghosts, and a lot of glow.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+        <a class="tv-card" href="/pong/">
+          <p class="tv-card__eyebrow">Arcade</p>
+          <h3 class="tv-card__title">3D Pong</h3>
+          <p class="tv-card__desc">The original arcade duel, reimagined — a neon-and-wood championship in 3D.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+        <a class="tv-card" href="/tetris/">
+          <p class="tv-card__eyebrow">Arcade</p>
+          <h3 class="tv-card__title">Metal Tetris</h3>
+          <p class="tv-card__desc">A heavy-metal edition of the block-stacking classic. Stack fast, clear lines, turn it up.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS & EXPERIMENTS (light) -->
+  <section class="tv-band">
+    <div class="tv-wrap">
+      <p class="tv-kicker">Tools &amp; Experiments</p>
+      <h2 class="tv-secttitle">Small utilities and tinkering.</h2>
+      <div class="tv-grid">
+
+        <a class="tv-card tv-card--featured" href="/wardley-strategy-generator">
+          <p class="tv-card__eyebrow">Featured</p>
+          <h3 class="tv-card__title">Wardley Strategy Generator</h3>
+          <p class="tv-card__desc">The ultimate corporate strategy buzzword generator — convincing enterprise strategy built from premium buzzwords that say absolutely nothing. 100% satire.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+        <a class="tv-card" href="/life.html">
+          <p class="tv-card__eyebrow">Tool</p>
+          <h3 class="tv-card__title">Life Grid &amp; Stats</h3>
+          <p class="tv-card__desc">Visualise your life in weeks — with stats on sleep, work, eating, and the weekends left for family and vacations. Enter your date of birth for a fresh perspective on your time.</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+
+        {% assign other_experiments = site.experiments | sort: 'date' | reverse %}
+        {% for experiment in other_experiments %}
+        {% unless experiment.url contains 'wardley' or experiment.title contains 'Wardley' or experiment.title contains 'strategy generation' %}
+        <a class="tv-card" href="{{ experiment.url }}">
+          <p class="tv-card__eyebrow">Experiment</p>
+          <h3 class="tv-card__title">{{ experiment.title | strip }}</h3>
+          <p class="tv-card__desc">{% if experiment.description %}{{ experiment.description | strip_html | truncate: 150 }}{% else %}{{ experiment.excerpt | strip_html | truncate: 150 }}{% endif %}</p>
+          <span class="tv-card__arrow">→</span>
+        </a>
+        {% endunless %}
+        {% endfor %}
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA (dark) -->
+  <section class="tv-band tv-band--coal">
+    <div class="tv-wrap tv-cta-band">
+      <p class="tv-kicker">More to explore</p>
+      <h2>Want to see more?</h2>
+      <p>Technical deep-dives and proof-of-concepts live in the experiments section.</p>
+      <a class="tv-btn" href="/experiments"><i class="bi bi-flask"></i> View all experiments</a>
+    </div>
+  </section>
+
+</div>
