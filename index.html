@@ -7,107 +7,319 @@ description: "Ajey Gore — former Group CTO at Gojek, Head of Technology at Tho
 lead_image: ajey_gore_website_card.png
 ---
 
-<div class="content-container py-5">
+<style>
+/* ============================================================
+   Homepage — warm "paper" palette + serif display (Newsreader) +
+   sans body (Inter), with alternating light/dark bands.
+   All styles scoped under .v2 so nothing else on the site is affected.
+   ============================================================ */
+.v2 {
+  --paper: #faf8f4;
+  --paper-elev: #fdfcf9;
+  --ink: #23211e;
+  --ink-2: #5d5852;
+  --ink-3: #837d76;
+  --ink-faint: #bdb8b0;
+  --accent: #6b1f2a;
+  --accent-hover: #571820;
+  --border: #23211e17;
+  --coal: #1b1917;
+  --coal-ink: #ece7df;
+  --coal-ink-2: #d8d3cbbd;
+  --coal-ink-3: #d8d3cb85;
+  --coal-border: #d8d3cb24;
+  --coal-accent: #e6b9bf;   /* soft oxblood tint for links on dark */
 
-    <div class="row justify-content-center">
-        <div class="col-lg-8">
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-            <!-- Desktop sidebar (floats into left gutter on wide viewports) -->
-            <nav class="home-nav" aria-label="Page sections">
-                <ul class="home-nav__list">
-                    <li><a href="#writing" class="home-nav__link">Writing</a></li>
-                    <li><a href="#now" class="home-nav__link">Now</a></li>
-                    <li><a href="#story" class="home-nav__link">Story</a></li>
-                    <li><a href="#explore" class="home-nav__link">Explore</a></li>
-                    <li><a href="#contact" class="home-nav__link">Contact</a></li>
-                </ul>
-            </nav>
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  margin: -1rem calc(50% - 50vw) 0;   /* break out of the container to full width */
+  padding: 0;
+}
 
-            <h1 class="home-name">Ajey Gore</h1>
+.v2 .wrap {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+@media (min-width: 1200px) { .v2 .wrap { max-width: 960px; } }
+@media (min-width: 1600px) { .v2 .wrap { max-width: 1080px; } }
 
-            <!-- Journey strip -->
-            <p class="company-strip">PeakXV &middot; Sequoia &middot; Gojek &middot; GoTo &middot; CodeIgnition &middot; Hoppr &middot; ThoughtWorks &middot; NCST</p>
-            <!-- Intro -->
-            <section class="mb-4 intro-section">
-                <p>Three decades building engineering teams and the organisations around them — turning technology into products people actually love using. I founded <strong>CodeIgnition</strong> — a cloud automation and distributed systems company acquired by <strong>Gojek</strong> — and went on to scale their engineering from a 20-person team to over 3,000, shipping millions of orders across 16 products in Southeast Asia, building what became <strong>GoTo Group</strong> — Indonesia's most versatile technology company empowering the country's economy.</p>
+/* --- Bands --- */
+/* Bands alternate light (paper) / dark (coal); the tone change separates
+   them, so no dividing borders are needed between bands. */
+.v2 .band { padding: 5rem 0; }
+.v2 .band--hero { padding: 6.5rem 0 5.5rem; }
 
-                <p>Before that, ten years at <strong>ThoughtWorks</strong> helping engineering teams across India build software that held up as businesses scaled. Today I advise boards and institutions on product and technology — helping shape engineering organisations and the people who lead them. Lately most of my attention is on how AI is remaking software engineering, product discipline, and team structures. I learn more from the people I work with than from anything I could read.</p>
+/* --- Kicker (eyebrow labels) --- */
+.v2 .kicker {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-3);
+  margin: 0 0 1.5rem;
+}
 
-                <p>If there's one thing I keep learning, it's this: teams rarely stall on the code — they stall on the structure around it. The hardest technology problems usually turn out to be organisational ones. If that sounds like where you are, I'd love to <a href="/meetme">talk</a>.</p>
-            </section>
+/* --- Name wordmark --- */
+.v2 .wordmark {
+  font-family: "Newsreader", "Times New Roman", serif;
+  font-weight: 300;
+  font-size: clamp(3rem, 5.5vw, 4.25rem);
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  margin: 0 0 0.9rem;
+}
+.v2 .name-tag {
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--ink-2);
+  margin: 0 0 2.75rem;
+}
 
+/* --- Hero --- */
+.v2 .statement {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 3.8vw, 2.7rem);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 1.5rem;
+}
+.v2 .statement em { font-style: italic; color: var(--accent); }
 
-            <!-- Writing -->
-            <section class="mb-5" id="writing">
-                <h2 class="section-label">Writing</h2>
-                {% if site.posts.size > 0 %}
-                {% for post in site.posts limit:3 %}
-                <article class="post-list-item">
-                    <a href="{{ post.url }}" class="post-list-link">
-                        <span class="post-list-title">{{ post.title }}</span>
-                        <time class="post-list-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
-                    </a>
-                </article>
-                {% endfor %}
-                <p class="mt-3 mb-0"><a href="/blog" class="all-posts-link">All posts →</a></p>
-                {% endif %}
-            </section>
+/* Thought piece — small reflective epigraph under the primary statement */
+.v2 .thought {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;   /* prominent reflective line */
+  line-height: 1.35;
+  letter-spacing: 0.005em;
+  color: var(--ink-2);
+  margin: 0.75rem 0 1.75rem;
+  max-width: 32ch;
+}
 
-            <!-- What I'm Up To -->
-            <section class="mb-5" id="now">
-                <h2 class="section-label">What I'm up to</h2>
+.v2 .context {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: var(--ink-2);
+  margin: 0 0 1.25rem;
+  max-width: 72ch;
+}
+.v2 .context:last-child { margin-bottom: 0; }
 
-                <p>I'm on a break — but still helping people and organisations create impact and magnificent outcomes. Spending time with family, advising founders selectively, and working with <strong><a href="https://helloally.ai" target="_blank">Ally</a></strong> on mental health — a cause I care about deeply. My calendar is friendlier than it's been in years. <a href="/meetme">Book a conversation</a>.</p>
-            </section>
+/* Small résumé aside beneath the thought piece */
+.v2 .small-story {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--ink-3);
+  max-width: 74ch;
+  margin: 2rem 0 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+.v2 .small-story strong { color: var(--ink-2); font-weight: 600; }
 
-            <!-- The story so far -->
-            <section class="mb-5" id="story">
-                <h2 class="section-label">The story so far</h2>
+.v2 .now-line {
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--ink-2);
+  margin: 1.5rem 0 0;
+  max-width: 72ch;
+}
+.v2 .now-line strong { color: var(--ink); font-weight: 600; }
 
-                <p>Most recently, I was Operating Partner (Technology) at <strong>PeakXV Partners</strong> (FKA Sequoia Capital India & SEA), working with portfolio companies on engineering culture, product-market fit, and scaling technology foundations. That chapter concluded in January 2026.</p>
+.v2 .company-strip {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-3);
+  margin: 2.25rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
 
-                <p>Before PeakXV, I was Group CTO at <strong>Gojek</strong>, where I helped scale the engineering team from a handful of people to over 2,000 across multiple countries. And before that, I spent a decade at <strong>ThoughtWorks</strong> — starting as their first India office employee and eventually leading technology for the India region.</p>
+/* --- Section headings --- */
+.v2 .band h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(1.7rem, 3vw, 2.1rem);
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 1.5rem;
+}
 
-                <p>Along the way, I co-founded <strong>CodeIgnition</strong> (acquired by Gojek), ran a startup called <strong>Hoppr</strong> (acquired by Hike), and tried my hand at everything from selling computers to running a printing press. <a href="/about">The longer version is here</a>.</p>
-            </section>
+/* General body copy — only plain (unclassed) paragraphs, so the hero's
+   classed paragraphs (.wordmark, .statement, .thought, etc.) keep their
+   own type sizes instead of being overridden by this higher-specificity rule. */
+.v2 .band p:not([class]) {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+  margin: 0 0 1.1rem;
+  max-width: 74ch;
+}
+.v2 .band p:not([class]):last-child { margin-bottom: 0; }
+.v2 .band strong { color: var(--ink); font-weight: 600; }
 
-            <!-- Explore -->
-            <section class="mb-5" id="explore">
-                <h2 class="section-label">Explore</h2>
-                <a href="/content/talks" class="explore-item">
-                    <div class="explore-item__body">
-                        <span class="explore-item__title">Talks</span>
-                        <span class="explore-item__desc">Conferences on scaling engineering teams and startup tech strategy.</span>
-                    </div>
-                    <span class="explore-item__arrow">→</span>
-                </a>
-                <a href="/books" class="explore-item">
-                    <div class="explore-item__body">
-                        <span class="explore-item__title">Bookshelf</span>
-                        <span class="explore-item__desc">What I've been reading and recommending.</span>
-                    </div>
-                    <span class="explore-item__arrow">→</span>
-                </a>
-                <a href="/tools" class="explore-item">
-                    <div class="explore-item__body">
-                        <span class="explore-item__title">Tools &amp; experiments</span>
-                        <span class="explore-item__desc">Side projects, developer utilities, and things I've built on weekends.</span>
-                    </div>
-                    <span class="explore-item__arrow">→</span>
-                </a>
-            </section>
+/* --- Links --- */
+/* !important needed to beat the site-wide `a { color: … !important }` in override.css */
+.v2 a { color: var(--accent) !important; text-decoration: none; transition: color .18s ease; }
+.v2 a:hover { color: var(--accent-hover) !important; }
+.v2 .band p a { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.v2 .band p a:hover { text-decoration-color: var(--accent-hover); }
 
-            <!-- Get in touch -->
-            <section class="mb-5" id="contact">
-                <h2 class="section-label">Get in touch</h2>
-                <p>If you're building something interesting, thinking through a hard problem, or just want to catch up over coffee — I'd love to hear from you. <a href="/meetme">Book a time</a>.</p>
-            </section>
+/* --- Writing list --- */
+.v2 .post-row {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1.5rem;
+  padding: 0.9rem 0; border-bottom: 1px solid var(--border);
+}
+.v2 .post-row:first-of-type { border-top: 1px solid var(--border); }
+.v2 .post-row__title { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); transition: color .18s ease; }
+.v2 .post-row:hover .post-row__title { color: var(--accent); }
+.v2 .post-row__date { font-size: 0.82rem; color: var(--ink-3); white-space: nowrap; letter-spacing: 0.03em; }
+.v2 .more-link { display: inline-block; margin-top: 1.25rem; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.02em; }
 
-            <!-- Footer note -->
-            <section class="mt-5 pt-4 border-top">
-                <p class="text-muted small">Written by me. Updated when something worth saying comes along.</p>
-            </section>
+/* --- Explore grid --- */
+.v2 .explore { display: grid; gap: 0; margin-top: 0.5rem; }
+.v2 .explore__item {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.15rem 0; border-bottom: 1px solid var(--border);
+}
+.v2 .explore__item:first-child { border-top: 1px solid var(--border); }
+.v2 .explore__title { font-family: var(--serif); font-size: 1.25rem; color: var(--ink); display: block; margin-bottom: 0.15rem; transition: color .18s ease; }
+.v2 .explore__desc { font-size: 0.92rem; color: var(--ink-3); display: block; }
+.v2 .explore__arrow { color: var(--ink-faint); font-size: 1.2rem; transition: transform .2s ease, color .2s ease; }
+.v2 .explore__item:hover .explore__title { color: var(--accent); }
+.v2 .explore__item:hover .explore__arrow { color: var(--accent); transform: translateX(4px); }
 
-        </div>
+/* ============================================================
+   Coal (dark) bands — recolour every element for a dark ground.
+   :not([class]) selectors match the general body-paragraph specificity
+   so the dark colour reliably wins.
+   ============================================================ */
+.v2 .band--coal { background: var(--coal); }
+.v2 .band--coal .kicker { color: var(--coal-ink-3); }
+.v2 .band--coal h2,
+.v2 .band--coal .post-row__title,
+.v2 .band--coal .explore__title { color: var(--coal-ink); }
+.v2 .band--coal p:not([class]) { color: var(--coal-ink-2); }
+.v2 .band--coal strong { color: var(--coal-ink); }
+
+/* Links on dark */
+.v2 .band--coal a { color: var(--coal-accent) !important; }
+.v2 .band--coal a:hover { color: #fff !important; }
+.v2 .band--coal p a { text-decoration-color: color-mix(in srgb, var(--coal-accent) 45%, transparent); }
+.v2 .band--coal .more-link { color: var(--coal-accent) !important; }
+
+/* Lists (writing rows, explore rows) on dark */
+.v2 .band--coal .post-row,
+.v2 .band--coal .post-row:first-of-type,
+.v2 .band--coal .explore__item,
+.v2 .band--coal .explore__item:first-child { border-color: var(--coal-border); }
+.v2 .band--coal .post-row__date,
+.v2 .band--coal .explore__desc { color: var(--coal-ink-3); }
+.v2 .band--coal .explore__arrow { color: var(--coal-ink-3); }
+.v2 .band--coal .post-row:hover .post-row__title,
+.v2 .band--coal .explore__item:hover .explore__title { color: var(--coal-accent); }
+.v2 .band--coal .explore__item:hover .explore__arrow { color: var(--coal-accent); }
+
+.v2 .band--coal .footnote { font-size: 0.82rem; color: var(--coal-ink-3); margin-top: 2rem; }
+
+@media (max-width: 576px) {
+  .v2 .band { padding: 3.5rem 0; }
+  .v2 .band--hero { padding: 4.5rem 0 4rem; }
+  .v2 .wordmark { font-size: 2.6rem; }
+}
+</style>
+
+<div class="v2">
+
+  <!-- HERO — thought piece first -->
+  <section class="band band--hero">
+    <div class="wrap">
+      <p class="wordmark">Ajey Gore</p>
+      <p class="name-tag">People, Product and Technology</p>
+      <h1 class="statement">I build engineering teams and the <em>organisations</em> around them — turning technology into products people actually love.</h1>
+      <p class="thought">Teams don't stall on skills. They stall on everything around them — and that rarely comes from first principles.</p>
+      <p class="context">How the organisation is structured, how solid the practices and foundations are, and how well people communicate across them — that's usually where progress is won or lost. Hard-won, not derived. If that sounds like where you are, I'd love to <a href="/meetme">talk</a>.</p>
+      <p class="now-line"><strong>Most recently</strong> Operating Partner (Technology) at Sequoia Capital India &amp; SEA — now <strong>PeakXV Partners</strong>. Based in <strong>Singapore</strong>, I work with people, teams, and organisations from all walks of life, right across the globe.</p>
+      <p class="small-story">Three decades in: I founded <strong>CodeIgnition</strong> (acquired by Gojek) and scaled Gojek's engineering from 20 people to over 3,000 across 16 products in Southeast Asia — what became <strong>GoTo Group</strong> — after a decade at <strong>ThoughtWorks</strong> building software that held up as businesses scaled.</p>
+      <p class="company-strip">PeakXV · Sequoia · Gojek · GoTo · CodeIgnition · Hoppr · ThoughtWorks · NCST</p>
     </div>
+  </section>
+
+  <!-- WRITING (dark) -->
+  <section class="band band--coal" id="writing">
+    <div class="wrap">
+      <p class="kicker">Writing</p>
+      {% if site.posts.size > 0 %}
+      {% for post in site.posts limit:3 %}
+      <a class="post-row" href="{{ post.url }}">
+        <span class="post-row__title">{{ post.title }}</span>
+        <time class="post-row__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+      </a>
+      {% endfor %}
+      <a href="/blog" class="more-link">All posts →</a>
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- NOW -->
+  <section class="band" id="now">
+    <div class="wrap">
+      <p class="kicker">What I'm up to</p>
+      <h2>Fewer things, done well.</h2>
+      <p>After decades of building at full tilt, I'm deliberate about where my time goes — backing founders and teams I believe in, advising selectively, and giving real energy to causes close to me, like <strong><a href="https://helloally.ai" target="_blank">Ally</a></strong>, where we're working on mental health. Chosen on purpose, given room to matter. If yours is the right kind of hard problem, <a href="/meetme">I'd like to hear about it</a>.</p>
+    </div>
+  </section>
+
+  <!-- STORY (dark) -->
+  <section class="band band--coal" id="story">
+    <div class="wrap">
+      <p class="kicker">The long way here</p>
+      <p>I joined <strong>ThoughtWorks</strong> as their first employee in India and spent a decade there, eventually leading technology for the region — before co-founding <strong>CodeIgnition</strong> (acquired by Gojek) and later running a startup called <strong>Hoppr</strong> (acquired by Hike).</p>
+      <p>Along the way I've tried my hand at everything from selling computers to running a printing press. It's been a winding road, and the detours taught me as much as the milestones. <a href="/about">The longer version is here</a>.</p>
+    </div>
+  </section>
+
+  <!-- EXPLORE -->
+  <section class="band" id="explore">
+    <div class="wrap">
+      <p class="kicker">Explore</p>
+      <div class="explore">
+        <a class="explore__item" href="/content/talks">
+          <span><span class="explore__title">Talks</span><span class="explore__desc">Conferences on scaling engineering teams and startup tech strategy.</span></span>
+          <span class="explore__arrow">→</span>
+        </a>
+        <a class="explore__item" href="/books">
+          <span><span class="explore__title">Bookshelf</span><span class="explore__desc">What I've been reading and recommending.</span></span>
+          <span class="explore__arrow">→</span>
+        </a>
+        <a class="explore__item" href="/tools">
+          <span><span class="explore__title">Tools &amp; experiments</span><span class="explore__desc">Side projects, developer utilities, and weekend builds.</span></span>
+          <span class="explore__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT (dark band) -->
+  <section class="band band--coal" id="contact">
+    <div class="wrap">
+      <p class="kicker">Get in touch</p>
+      <h2>Building something interesting? Let's talk.</h2>
+      <p>Thinking through a hard problem, or just want to catch up over coffee — I'd love to hear from you. <a href="/meetme">Book a time</a>.</p>
+      <p class="footnote">Written by me. Updated when something worth saying comes along.</p>
+    </div>
+  </section>
+
 </div>
