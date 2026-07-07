@@ -335,7 +335,7 @@ lead_image: ajey_gore_website_card.png
         const sleepHoursPerDay = 8;
         const workHoursPerWeek = 40;
         const workStartAge = 22;
-        const retirementAge = 65;
+        const retirementAge = 62;
         const bathingMinutesPerDay = 30;
         const eatingHoursPerWeek = 8;
         const commutingHoursPerDay = 1;
@@ -419,7 +419,7 @@ lead_image: ajey_gore_website_card.png
 
         // Weekends calculation
         const weekendsPerYear = 52;
-        const weekendsLeft = Math.max(0, Math.round((Math.min(adjustedLifeExpectancy, 65) - ageYears) * weekendsPerYear));
+        const weekendsLeft = Math.max(0, Math.round((Math.min(adjustedLifeExpectancy, retirementAge) - ageYears) * weekendsPerYear));
 
         document.getElementById('weekend-info').innerHTML = `
             <div class="weekend-number">${weekendsLeft.toLocaleString()}</div>
