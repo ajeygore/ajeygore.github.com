@@ -1,696 +1,252 @@
 ---
 layout: bare
-body_class: home
 leadingpath: ./
 permalink: /life
-title: "Life in Weeks - Visualize Your Life Journey"
-description: "Interactive tool to visualize your entire life as a grid of weeks, calculate remaining time, and make
-every moment count."
+title: "Your Life in Weeks — Ajey Gore"
+description: "An interactive way to see your whole life as a grid of weeks — the ones you've lived, the one you're in, and the ones still ahead. A gentle nudge to spend them well."
+lead_image: ajey_gore_website_card.png
 ---
 
 <style>
-    /* Custom CSS Variables for Consistent Theme */
-    :root {
-        --bg-primary: #fafafa;
-        --bg-secondary: #ffffff;
-        --border-color: #e0e0e0;
-        --text-primary: #2c3e50;
-        --text-secondary: #7f8c8d;
-        --accent-color: #3498db;
-        --success-color: #27ae60;
-        --warning-color: #f39c12;
-    }
-
-    /* Global Styles */
-    body {
-        background: var(--bg-primary) !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-        color: var(--text-primary) !important;
-    }
-
-    /* Navbar - Light Blue-Purple Gradient */
-    .navbar {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
-    }
-
-    .navbar-brand,
-    .navbar-nav .nav-link {
-        color: white !important;
-        font-weight: 500 !important;
-    }
-
-    .navbar-nav .nav-link:hover {
-        color: #f8f9fa !important;
-        background: rgba(255, 255, 255, 0.1) !important;
-        border-radius: 4px !important;
-    }
-
-    /* Hero Section */
-    .life-hero {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-        border-radius: 12px !important;
-        padding: 3rem 2rem !important;
-    }
-
-    /* Content Container */
-    .content-container {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        padding: 0 15px !important;
-    }
-
-    /* Card Styles */
-    .card {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        border-radius: 8px !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
-    }
-
-    .card-title {
-        color: var(--text-primary) !important;
-        font-weight: 700 !important;
-    }
-
-    /* Input Fields - Flat Style */
-    .form-control,
-    .form-select {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        color: var(--text-primary) !important;
-        border-radius: 4px !important;
-    }
-
-    .form-control::placeholder {
-        color: var(--text-secondary) !important;
-    }
-
-    .form-label {
-        color: var(--text-primary) !important;
-        font-weight: 600 !important;
-    }
-
-    .input-group-text {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        color: var(--text-primary) !important;
-        border-left: none !important;
-    }
-
-    /* Date Input Styling */
-    .date-input {
-        font-family: 'Courier New', monospace;
-        letter-spacing: 0.5px;
-        font-size: 1rem;
-    }
-
-    .date-input:focus {
-        border-color: #86b7fe;
-        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-    }
-
-    .date-input.is-valid {
-        border-color: #198754;
-    }
-
-    .date-input.is-invalid {
-        border-color: #dc3545;
-    }
-
-    /* Flat Life Bar Design */
-    .life-bar {
-        background: linear-gradient(90deg, var(--success-color) 0%, var(--accent-color) 100%);
-        height: 8px;
-        border-radius: 4px;
-        margin: 1rem 0;
-    }
-
-    /* Grid Styles */
-    .life-grid {
-        display: grid;
-        grid-template-columns: repeat(52, 1fr);
-        gap: 1px;
-        background: var(--border-color);
-        padding: 2px;
-        border-radius: 8px;
-        max-width: 100%;
-        overflow-x: auto;
-    }
-
-    .week-cell {
-        width: 8px;
-        height: 8px;
-        background: var(--bg-secondary);
-        border-radius: 1px;
-    }
-
-    .week-cell.lived {
-        background: var(--success-color);
-    }
-
-    .week-cell.current {
-        background: var(--warning-color);
-        box-shadow: 0 0 0 1px var(--warning-color);
-    }
-
-    .week-cell.future {
-        background: var(--border-color);
-    }
-
-    /* Form Check Styling */
-    .form-check-input {
-        width: 1rem;
-        height: 1rem;
-        cursor: pointer;
-        border: 2px solid var(--border-color);
-        background: var(--bg-secondary);
-    }
-
-    .form-check-input:checked {
-        background-color: var(--accent-color);
-        border-color: var(--accent-color);
-    }
-
-    .form-check {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-    }
-
-    .form-check-label {
-        cursor: pointer;
-        font-weight: 500;
-        color: var(--text-primary);
-    }
-
-    /* Flat Statistics Cards */
-    .stats-card {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        transition: transform 0.2s ease;
-        border-radius: 8px !important;
-    }
-
-    .stats-card:hover {
-        transform: translateY(-2px) !important;
-    }
-
-    .stat-number {
-        font-size: 2.5em !important;
-        font-weight: 800 !important;
-        color: var(--text-primary) !important;
-        margin-bottom: 0.25rem !important;
-    }
-
-    .stat-label {
-        font-size: 0.9em !important;
-        color: var(--text-secondary) !important;
-        font-weight: 500 !important;
-    }
-
-    body {
-        background: var(--bg-primary) !important;
-        color: var(--text-primary) !important;
-        min-height: 100vh;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
-    }
-
-    /* Modern light blue-purple gradient navbar */
-    header.sticky-top {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #a8edea 50%, #fed6e3 100%) !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-        box-shadow: 0 2px 10px rgba(102, 126, 234, 0.1) !important;
-    }
-
-    /* Navbar text styling for gradient background */
-    header .name-header {
-        color: white !important;
-        font-weight: 600 !important;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
-    }
-
-    header .menu-section {
-        color: #2d3748 !important;
-        font-weight: 600 !important;
-        text-shadow: none !important;
-    }
-
-    header .menu-section:hover {
-        color: #1a202c !important;
-    }
-
-    /* Hero Section with gradient background for text visibility */
-    .hero-section {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
-        color: white !important;
-        padding: 3rem 0;
-        text-align: center;
-    }
-
-    /* Ensure hero text is visible */
-    .hero-section h1,
-    .hero-section p,
-    .hero-section .text-white {
-        color: white !important;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
-    }
-
-    /* Flat Cards */
-    .card {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
-        border-radius: 8px !important;
-    }
-
-    /* Input Fields - Flat Style */
-    .form-control,
-    .form-select {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        color: var(--text-primary) !important;
-        border-radius: 4px !important;
-    }
-
-    .form-control::placeholder {
-        color: var(--text-secondary) !important;
-    }
-
-    /* Custom Date Input Styling */
-    .date-input {
-        font-family: 'Courier New', monospace;
-        letter-spacing: 0.5px;
-    }
-
-    .input-group-text {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        color: var(--text-primary) !important;
-        border-left: none !important;
-    }
-
-    .date-input:focus+.input-group-text {
-        border-color: #86b7fe !important;
-        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
-    }
-
-    .form-label {
-        color: var(--text-primary) !important;
-        font-weight: 600 !important;
-    }
-
-    /* Flat Life Bar Design */
-    .life-bar {
-        height: 24px !important;
-        background: var(--border-color) !important;
-        border-radius: 4px !important;
-        overflow: hidden !important;
-        position: relative;
-        border: 1px solid var(--border-color) !important;
-    }
-
-    .life-bar-lived {
-        background: #28a745 !important;
-        height: 100% !important;
-        position: relative;
-        transition: width 0.3s ease;
-    }
-
-    .life-bar-remaining {
-        background: #007bff !important;
-        height: 100% !important;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .life-bar-current {
-        position: absolute;
-        top: 0;
-        width: 3px;
-        height: 100%;
-        background: #ffc107 !important;
-        z-index: 10;
-    }
-
-    /* Flat Life Grid Design */
-    .life-grid {
-        display: grid;
-        grid-template-columns: repeat(52, 8px);
-        gap: 1px;
-        justify-content: center;
-        max-width: 100%;
-        overflow-x: auto;
-        padding: 2em 1em;
-    }
-
-    .week-square {
-        width: 8px;
-        height: 8px;
-        border-radius: 1px;
-        border: none;
-        cursor: pointer;
-    }
-
-    .week-square:hover {
-        transform: scale(1.5) !important;
-        z-index: 10;
-        border: 1px solid var(--text-primary) !important;
-    }
-
-    .week-past {
-        background: #28a745 !important;
-    }
-
-    .week-current {
-        background: #ffc107 !important;
-        animation: currentWeekBlink 1s infinite;
-    }
-
-    .week-future {
-        background: #007bff !important;
-        opacity: 0.7;
-    }
-
-    /* Current week blink animation */
-    @keyframes currentWeekBlink {
-
-        0%,
-        50% {
-            opacity: 1;
-        }
-
-        51%,
-        100% {
-            opacity: 0.3;
-        }
-    }
-
-    /* Flat Statistics Cards */
-    .stats-card {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        transition: transform 0.2s ease;
-        border-radius: 8px !important;
-    }
-
-    .stats-card:hover {
-        transform: translateY(-2px) !important;
-
-        .stat-number {
-            font-size: 2.5em !important;
-            font-weight: 800 !important;
-            color: var(--text-primary) !important;
-        }
-
-        .stat-label {
-            color: var(--text-secondary) !important;
-            font-weight: 500 !important;
-        }
-
-        /* Text Colors */
-        .text-white,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5 {
-            color: var(--text-primary) !important;
-        }
-
-        .text-muted,
-        .text-secondary {
-            color: var(--text-secondary) !important;
-        }
-
-        /* Button Styling */
-        .btn-primary {
-            background: var(--accent-color) !important;
-            border: 1px solid var(--accent-color) !important;
-            color: white !important;
-            border-radius: 4px !important;
-        }
-
-        .btn-primary:hover {
-            background: #0056b3 !important;
-            border-color: #0056b3 !important;
-            transform: translateY(-1px) !important;
-            color: white !important;
-        }
-
-        transform: translate(-50%, -50%);
-        font-weight: 700;
-        font-size: 0.9em;
-        color: white !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        z-index: 20;
-    }
-
-    .progress-labels {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0.5em;
-        font-size: 0.9em;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    /* Health Checkboxes */
-    .health-checkboxes {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1em;
-        margin: 1em 0;
-    }
-
-    .form-check-input {
-        background: var(--bg-secondary) !important;
-        border: 1px solid var(--border-color) !important;
-        width: 1rem !important;
-        height: 1rem !important;
-        margin-right: 0.5rem !important;
-        cursor: pointer !important;
-    }
-
-    .form-check-input:checked {
-        background-color: var(--accent-color) !important;
-        border-color: var(--accent-color) !important;
-    }
-
-    .form-check {
-        display: flex !important;
-        align-items: center !important;
-        margin-bottom: 0.5rem !important;
-    }
-
-    .form-check-label {
-        color: var(--text-primary) !important;
-        cursor: pointer !important;
-        margin-left: 0.5rem !important;
-    }
-
-    /* Weekend Display */
-    .weekend-number {
-        font-size: 4em;
-        font-weight: 800;
-        color: var(--accent-color);
-        margin-bottom: 0.5em;
-    }
-
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        .life-grid {
-            grid-template-columns: repeat(52, 6px);
-            padding: 1em 0.5em;
-        }
-
-        .week-square {
-            width: 6px;
-            height: 6px;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .life-grid {
-            grid-template-columns: repeat(52, 5px);
-        }
-
-        .week-square {
-            width: 5px;
-            height: 5px;
-        }
-    }
-
-    /* Utility Classes */
-    .hidden {
-        display: none !important;
-    }
+/* ============================================================
+   /life — "Life in Weeks", in the site's design language:
+   warm paper palette, Newsreader serif, oxblood accent, and a
+   dark "night of weeks" grid band. Scoped under .lv.
+   Compatibility aliases (--text-primary etc.) are defined so the
+   JS-injected inline styles resolve correctly on each band.
+   ============================================================ */
+.lv {
+  --paper:#faf8f4; --paper-elev:#fdfcf9;
+  --ink:#23211e; --ink-2:#5d5852; --ink-3:#837d76; --ink-faint:#bdb8b0;
+  --accent:#6b1f2a; --accent-hover:#571820;
+  --border:#23211e17;
+  --coal:#1b1917; --coal-elev:#242120;
+  --coal-ink:#ece7df; --coal-ink-2:#d8d3cbbd; --coal-ink-3:#d8d3cb85;
+  --coal-border:#d8d3cb24; --coal-accent:#e6b9bf;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;
+
+  /* aliases used by JS-injected inline styles */
+  --text-primary:var(--ink); --text-secondary:var(--ink-2); --accent-color:var(--accent);
+
+  background:var(--paper); color:var(--ink); font-family:var(--sans);
+  margin:-1rem calc(50% - 50vw) 0; padding:0;
+}
+.lv-wrap { max-width:840px; margin:0 auto; padding:0 1.5rem; }
+@media (min-width:1200px){ .lv-wrap{ max-width:920px; } }
+
+.lv-band { padding:4.5rem 0; margin-bottom:0 !important; }
+.lv-hero { padding:6rem 0 3rem; }
+.lv-band--coal { background:var(--coal); --text-primary:var(--coal-ink); --text-secondary:var(--coal-ink-2); --accent-color:var(--coal-accent); }
+
+.lv-kicker { font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.16em; color:var(--ink-3); margin:0 0 1.25rem; }
+.lv-band--coal .lv-kicker { color:var(--coal-ink-3); }
+.lv-title { font-family:var(--serif); font-weight:400; font-size:clamp(2.3rem,4.6vw,3.4rem); line-height:1.06; letter-spacing:-0.02em; color:var(--ink); margin:0 0 1.1rem; }
+.lv-lede { font-size:1.1rem; line-height:1.65; color:var(--ink-2); max-width:58ch; margin:0; }
+.lv-secttitle { font-family:var(--serif); font-weight:400; font-size:clamp(1.7rem,3vw,2.2rem); letter-spacing:-0.015em; color:var(--ink); margin:0 0 0.75rem; }
+.lv-band--coal .lv-secttitle { color:var(--coal-ink); }
+.lv-sub { font-size:1rem; color:var(--ink-2); margin:0 0 1.75rem; }
+
+/* Panels */
+.lv-panel { background:var(--paper-elev); border:1px solid var(--border); border-radius:16px; padding:1.75rem; margin-bottom:1.5rem; }
+.lv-panel:last-child { margin-bottom:0; }
+.lv-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:1.25rem; }
+@media (max-width:576px){ .lv-grid2{ grid-template-columns:1fr; } }
+.lv-field label { display:block; font-size:0.72rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em; color:var(--ink-3); margin:0 0 0.5rem; }
+.lv-input, .lv-select {
+  width:100%; padding:0.75rem 0.9rem; font-size:1rem; font-family:var(--sans);
+  color:var(--ink); background:#fff; border:1px solid var(--border); border-radius:10px;
+  transition:border-color .15s ease, box-shadow .15s ease;
+}
+.lv-input:focus, .lv-select:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 15%,transparent); }
+.lv-input.date-input { font-variant-numeric:tabular-nums; letter-spacing:0.03em; }
+.lv-input.is-valid { border-color:#4a7c59; }
+.lv-input.is-invalid { border-color:#b5443b; }
+.lv-hint { display:block; font-size:0.8rem; color:var(--ink-faint); margin-top:0.45rem; }
+.lv-panel-title { font-family:var(--serif); font-size:1.3rem; color:var(--ink); margin:0 0 0.3rem; }
+.lv-panel-sub { font-size:0.9rem; color:var(--ink-3); margin:0 0 1.25rem; }
+
+/* Button */
+.lv-btn { display:inline-flex; align-items:center; gap:0.5rem; margin-top:1.5rem; padding:0.8rem 1.6rem; border-radius:999px; font-size:0.95rem; font-weight:600; background:var(--accent); color:#fff !important; border:1px solid var(--accent); cursor:pointer; transition:background .18s ease, transform .18s ease; }
+.lv-btn:hover { background:var(--accent-hover); transform:translateY(-1px); }
+
+/* Health checkboxes */
+.lv-checks { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.75rem; }
+.lv-check { display:flex; align-items:center; gap:0.65rem; padding:0.65rem 0.85rem; border:1px solid var(--border); border-radius:10px; cursor:pointer; transition:border-color .15s ease; margin:0; }
+.lv-check:hover { border-color:var(--ink-faint); }
+.lv-check input { width:1.05rem; height:1.05rem; accent-color:var(--accent); cursor:pointer; flex:none; }
+.lv-check span { font-size:0.92rem; color:var(--ink-2); }
+
+/* Progress bar (dark band) */
+.lv-progresswrap { margin-bottom:2.75rem; }
+.lv-progress-top { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.7rem; }
+.lv-progress-top .lv-kicker { margin:0; }
+#life-bar-percentage, .progress-percentage { font-family:var(--serif); font-size:1.5rem; color:var(--coal-ink); }
+.lv-progress { position:relative; height:10px; background:var(--coal-border); border-radius:999px; overflow:visible; }
+.life-bar-lived { position:absolute; left:0; top:0; height:100%; background:var(--coal-accent); border-radius:999px; transition:width .5s ease; }
+.life-bar-remaining { position:absolute; right:0; top:0; height:100%; background:transparent; }
+.life-bar-current { position:absolute; top:-3px; width:2px; height:16px; background:#fff; border-radius:2px; z-index:5; }
+.lv-progress-labels { display:flex; justify-content:space-between; margin-top:0.7rem; font-size:0.8rem; color:var(--coal-ink-3); letter-spacing:0.04em; }
+
+/* Completion line */
+.lv-completion { text-align:center; color:var(--coal-ink-2); font-size:1rem; margin:0 0 1.75rem; line-height:1.6; }
+.lv-completion strong { color:var(--coal-ink); }
+.lv-completion small { color:var(--coal-ink-3); }
+
+/* Week grid — points of light on dark */
+.life-grid { display:grid; grid-template-columns:repeat(52,10px); gap:3px; justify-content:center; padding:0.5rem 0 0; max-width:100%; overflow-x:auto; }
+.week-square { width:10px; height:10px; border-radius:2px; cursor:default; transition:transform .1s ease; }
+.week-square:hover { transform:scale(1.7); z-index:2; }
+.week-past { background:var(--coal-ink); }
+.week-current { background:var(--coal-accent); box-shadow:0 0 0 2px color-mix(in srgb,var(--coal-accent) 45%,transparent); animation:lvPulse 1.4s ease-in-out infinite; }
+.week-future { background:rgba(216,211,203,0.12); }
+@keyframes lvPulse { 0%,100%{ opacity:1; } 50%{ opacity:0.4; } }
+.lv-legend { text-align:center; font-size:0.85rem; color:var(--coal-ink-3); margin:1.5rem 0 0; }
+.lv-legend .dot { display:inline-block; width:9px; height:9px; border-radius:2px; margin:0 0.35rem 0 1rem; vertical-align:middle; }
+.lv-legend .dot.past{ background:var(--coal-ink); }
+.lv-legend .dot.current{ background:var(--coal-accent); }
+.lv-legend .dot.future{ background:rgba(216,211,203,0.20); }
+@media (max-width:768px){ .life-grid{ grid-template-columns:repeat(52,7px); gap:2px; } .week-square{ width:7px; height:7px; } }
+@media (max-width:576px){ .life-grid{ grid-template-columns:repeat(52,5px); gap:1.5px; } .week-square{ width:5px; height:5px; } }
+
+/* Stats cards (JS injects Bootstrap cols) */
+.stats-card, .card.stats-card {
+  background:#fff !important; border:1px solid var(--border) !important; border-radius:14px !important;
+  box-shadow:none !important; transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.stats-card:hover { transform:translateY(-4px); box-shadow:0 12px 28px rgba(0,0,0,0.08) !important; border-color:var(--ink-faint) !important; }
+.stat-number { font-family:var(--serif) !important; font-size:2.1rem !important; font-weight:500 !important; color:var(--ink) !important; margin-bottom:0.3rem !important; line-height:1.1; }
+.stat-label { font-size:0.85rem !important; color:var(--ink-2) !important; font-weight:500 !important; line-height:1.4; }
+.stat-label small { color:var(--ink-faint); }
+
+/* Weekends */
+.weekend-number { font-family:var(--serif); font-size:clamp(3rem,7vw,4.75rem); font-weight:400; color:var(--coal-accent); line-height:1; margin-bottom:0.5rem; }
+
+.hidden { display:none !important; }
 </style>
 
-<!-- Hero Section -->
-<section class="hero-section py-4">
-    <div class="content-container">
-        <div class="row justify-content-center text-center">
-            <div class="col-lg-12">
-                <div class="life-hero mb-4">
-                    <h1 class="display-4 fw-bold text-white mb-3">
-                        🗓️ Life in Weeks
-                    </h1>
-                    <p class="h4 text-white-50 mb-4">
-                        Visualize your entire life as a grid of weeks and see how you spend your time
-                    </p>
-                </div>
-            </div>
-        </div>
+<div class="lv">
+
+  <!-- HERO -->
+  <section class="lv-band lv-hero">
+    <div class="lv-wrap">
+      <p class="lv-kicker">Memento Mori · Life in Weeks</p>
+      <h1 class="lv-title">Your whole life, in weeks.</h1>
+      <p class="lv-lede">A long life is only about 4,000 weeks. Here's yours — every week you've already lived, the one you're in right now, and the ones still ahead. Not to unsettle you — just to make the time feel real.</p>
     </div>
-</section>
+  </section>
 
-<!-- Main Content Section -->
-<section class="py-5">
-    <div class="content-container">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-
-                <!-- Input Section -->
-                <div class="card shadow-lg border-0 mb-4">
-                    <div class="card-body p-4">
-                        <h4 class="card-title text-center mb-4">Enter Your Information</h4>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="dob" class="form-label">Date of Birth</label>
-                                <input type="text" id="dob" name="dob" class="form-control date-input"
-                                    placeholder="YYYY-MM-DD (e.g., 1990-05-15)" maxlength="10" autocomplete="bday">
-                                <small class="form-text text-muted">Enter your birth date in YYYY-MM-DD format</small>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="location" class="form-label">Location (Life Expectancy)</label>
-                                <select id="location" name="location" class="form-select">
-                                    <option value="global">🌍 Global Average (73 years)</option>
-                                    <optgroup label="Continents">
-                                        <option value="europe">🇪🇺 Europe (79 years)</option>
-                                        <option value="north_america">🇺🇸 North America (78 years)</option>
-                                        <option value="oceania">🇦🇺 Oceania (82 years)</option>
-                                        <option value="asia">🇦🇸 Asia (73 years)</option>
-                                        <option value="south_america">🇧🇷 South America (76 years)</option>
-                                        <option value="africa">🇿🇦 Africa (64 years)</option>
-                                    </optgroup>
-                                    <optgroup label="Major Countries">
-                                        <option value="japan">🇯🇵 Japan (85 years)</option>
-                                        <option value="switzerland">🇨🇭 Switzerland (84 years)</option>
-                                        <option value="singapore">🇸🇬 Singapore (84 years)</option>
-                                        <option value="italy">🇮🇹 Italy (83 years)</option>
-                                        <option value="australia">🇦🇺 Australia (83 years)</option>
-                                        <option value="spain">🇪🇸 Spain (83 years)</option>
-                                        <option value="france">🇫🇷 France (83 years)</option>
-                                        <option value="canada">🇨🇦 Canada (82 years)</option>
-                                        <option value="south_korea">🇰🇷 South Korea (82 years)</option>
-                                        <option value="norway">🇳🇴 Norway (82 years)</option>
-                                        <option value="sweden">🇸🇪 Sweden (82 years)</option>
-                                        <option value="uk">🇬🇧 United Kingdom (81 years)</option>
-                                        <option value="germany">🇩🇪 Germany (81 years)</option>
-                                        <option value="usa">🇺🇸 United States (79 years)</option>
-                                        <option value="china">🇨🇳 China (78 years)</option>
-                                        <option value="brazil">🇧🇷 Brazil (76 years)</option>
-                                        <option value="russia">🇷🇺 Russia (73 years)</option>
-                                        <option value="india">🇮🇳 India (70 years)</option>
-                                        <option value="south_africa">🇿🇦 South Africa (65 years)</option>
-                                        <option value="nigeria">🇳🇬 Nigeria (55 years)</option>
-                                    </optgroup>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="text-center mt-4">
-                            <button class="btn btn-primary btn-lg px-5" onclick="calculateLife()">
-                                ✨ Visualize My Life ✨
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Health Factors Section -->
-                <div class="card shadow-lg border-0 mb-4" id="health-factors">
-                    <div class="card-body p-4">
-                        <h4 class="card-title text-center mb-4">Health Factors (Optional)</h4>
-                        <p class="text-center text-muted mb-4">Select any that apply to get a more accurate life
-                            expectancy</p>
-
-                        <div class="health-checkboxes">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="tobacco">
-                                <label class="form-check-label" for="tobacco">🚬 Tobacco use (-7 years)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="alcohol">
-                                <label class="form-check-label" for="alcohol">🍺 Heavy alcohol use (-3 years)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="diabetes">
-                                <label class="form-check-label" for="diabetes">🩺 Diabetes (-4 years)</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="heart">
-                                <label class="form-check-label" for="heart">❤️ Heart disease (-6 years)</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Life Grid Section (Shows first) -->
-                <div class="card shadow-lg border-0 mb-4 hidden" id="grid-container">
-                    <div class="progress-info p-3">
-                        <h3>Life Progress Bar</h3>
-                        <div class="life-bar">
-                            <div id="life-bar-lived" class="life-bar-lived"></div>
-                            <div id="life-bar-remaining" class="life-bar-remaining"></div>
-                            <div id="life-bar-current" class="life-bar-current"></div>
-                            <div id="life-bar-percentage" class="progress-percentage">0%</div>
-                        </div>
-                        <div class="progress-labels">
-                            <span id="current-age-display">Birth</span>
-                            <span id="life-expectancy-display">Life Expectancy</span>
-                        </div>
-                    </div>
-
-                    <div class="card-body p-4">
-                        <h4 class="card-title text-center mb-2">Your Life in Weeks</h4>
-                        <p class="text-center text-muted mb-4" id="completion-info">
-                            <!-- Completion percentage will be inserted here -->
-                        </p>
-
-                        <div id="life-grid" class="life-grid"></div>
-
-                        <p class="text-center text-muted mt-4">
-                            Each square represents one week of your life. Green = lived, Yellow = current week, Blue =
-                            future.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Statistics Section -->
-                <div class="card shadow-lg border-0 mb-4 hidden" id="stats-section">
-                    <div class="card-body p-4">
-                        <h4 class="card-title text-center mb-4">✨ How You've Spent Your Life ✨</h4>
-                        <p class="text-center text-muted mb-4">Every hour counts - here's your time breakdown in style!
-                        </p>
-
-                        <div id="stats-grid" class="row g-3"></div>
-                    </div>
-                </div>
-
-                <!-- Weekend Info Section -->
-                <div class="card shadow-lg border-0 mb-4 hidden" id="weekend-info-card">
-                    <div class="card-body p-4 text-center">
-                        <div id="weekend-info"></div>
-                    </div>
-                </div>
-
-            </div>
+  <!-- INPUT -->
+  <section class="lv-band">
+    <div class="lv-wrap">
+      <div class="lv-panel">
+        <div class="lv-grid2">
+          <div class="lv-field">
+            <label for="dob">Date of birth</label>
+            <input type="text" id="dob" name="dob" class="lv-input date-input" placeholder="YYYY-MM-DD" maxlength="10" autocomplete="bday" inputmode="numeric">
+            <small class="lv-hint">Type it as YYYY-MM-DD — e.g. 1990-05-15.</small>
+          </div>
+          <div class="lv-field">
+            <label for="location">Where you live (life expectancy)</label>
+            <select id="location" name="location" class="lv-select">
+              <option value="global">🌍 Global average (73 years)</option>
+              <optgroup label="Continents">
+                <option value="europe">🇪🇺 Europe (79 years)</option>
+                <option value="north_america">🇺🇸 North America (78 years)</option>
+                <option value="oceania">🇦🇺 Oceania (82 years)</option>
+                <option value="asia">🌏 Asia (73 years)</option>
+                <option value="south_america">🇧🇷 South America (76 years)</option>
+                <option value="africa">🌍 Africa (64 years)</option>
+              </optgroup>
+              <optgroup label="Major countries">
+                <option value="japan">🇯🇵 Japan (85 years)</option>
+                <option value="switzerland">🇨🇭 Switzerland (84 years)</option>
+                <option value="singapore">🇸🇬 Singapore (84 years)</option>
+                <option value="italy">🇮🇹 Italy (83 years)</option>
+                <option value="australia">🇦🇺 Australia (83 years)</option>
+                <option value="spain">🇪🇸 Spain (83 years)</option>
+                <option value="france">🇫🇷 France (83 years)</option>
+                <option value="canada">🇨🇦 Canada (82 years)</option>
+                <option value="south_korea">🇰🇷 South Korea (82 years)</option>
+                <option value="norway">🇳🇴 Norway (82 years)</option>
+                <option value="sweden">🇸🇪 Sweden (82 years)</option>
+                <option value="uk">🇬🇧 United Kingdom (81 years)</option>
+                <option value="germany">🇩🇪 Germany (81 years)</option>
+                <option value="usa">🇺🇸 United States (79 years)</option>
+                <option value="china">🇨🇳 China (78 years)</option>
+                <option value="brazil">🇧🇷 Brazil (76 years)</option>
+                <option value="russia">🇷🇺 Russia (73 years)</option>
+                <option value="india">🇮🇳 India (70 years)</option>
+                <option value="south_africa">🇿🇦 South Africa (65 years)</option>
+                <option value="nigeria">🇳🇬 Nigeria (55 years)</option>
+              </optgroup>
+            </select>
+          </div>
         </div>
+        <button class="lv-btn" onclick="calculateLife()">Visualise my life →</button>
+      </div>
+
+      <div class="lv-panel hidden" id="health-factors">
+        <p class="lv-panel-title">Health factors</p>
+        <p class="lv-panel-sub">Optional — tick any that apply for a more honest estimate.</p>
+        <div class="lv-checks">
+          <label class="lv-check" for="tobacco"><input type="checkbox" id="tobacco"><span>🚬 Tobacco use (−7 yrs)</span></label>
+          <label class="lv-check" for="alcohol"><input type="checkbox" id="alcohol"><span>🍺 Heavy alcohol use (−3 yrs)</span></label>
+          <label class="lv-check" for="diabetes"><input type="checkbox" id="diabetes"><span>🩺 Diabetes (−4 yrs)</span></label>
+          <label class="lv-check" for="heart"><input type="checkbox" id="heart"><span>❤️ Heart disease (−6 yrs)</span></label>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+
+  <!-- GRID (dark) -->
+  <section class="lv-band lv-band--coal hidden" id="grid-container">
+    <div class="lv-wrap">
+      <div class="lv-progresswrap">
+        <div class="lv-progress-top">
+          <span class="lv-kicker">Life progress</span>
+          <span id="life-bar-percentage" class="progress-percentage">0%</span>
+        </div>
+        <div class="lv-progress">
+          <div id="life-bar-lived" class="life-bar-lived"></div>
+          <div id="life-bar-remaining" class="life-bar-remaining"></div>
+          <div id="life-bar-current" class="life-bar-current"></div>
+        </div>
+        <div class="lv-progress-labels">
+          <span id="current-age-display">Birth</span>
+          <span id="life-expectancy-display">Life expectancy</span>
+        </div>
+      </div>
+
+      <h2 class="lv-secttitle" style="text-align:center;">Your life in weeks</h2>
+      <p class="lv-completion" id="completion-info"></p>
+      <div id="life-grid" class="life-grid"></div>
+      <p class="lv-legend">
+        <span class="dot past"></span>Lived
+        <span class="dot current"></span>This week
+        <span class="dot future"></span>Ahead
+      </p>
+    </div>
+  </section>
+
+  <!-- STATS (light) -->
+  <section class="lv-band hidden" id="stats-section">
+    <div class="lv-wrap">
+      <p class="lv-kicker">The tally</p>
+      <h2 class="lv-secttitle">Where the weeks go.</h2>
+      <p class="lv-sub">A rough breakdown of how the hours add up over a life like yours.</p>
+      <div id="stats-grid" class="row g-3"></div>
+    </div>
+  </section>
+
+  <!-- WEEKENDS (dark) -->
+  <section class="lv-band lv-band--coal hidden" id="weekend-info-card">
+    <div class="lv-wrap" style="text-align:center;">
+      <div id="weekend-info"></div>
+    </div>
+  </section>
+
+</div>
 
 <script>
     // Performance optimization - cache grid state
