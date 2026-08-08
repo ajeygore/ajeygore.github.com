@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>OG card source — The Leap</title>
+<!--
+  Bespoke OG card for /content/the-leap (1200x630, render at 2x -> crop to 2400x1260).
+
+  Render:
+    chrome --headless=new --disable-gpu --hide-scrollbars \
+           --window-size=1200,720 --force-device-scale-factor=2 \
+           --default-background-color=fafaf8ff \
+           --screenshot=card.png file://$PWD/leap-card-src.html
+    # then crop the top 1260 rows (same crop the rake task does)
+
+  Note: the title is set in Playfair Display italic to match the site. If Playfair
+  isn't installed locally the stack falls back to Latin Modern / Georgia, which is
+  what the committed PNG was rendered with.
+-->
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1200px;height:630px;overflow:hidden;background:#FAFAF8;}
+  .card{position:relative;width:1200px;height:630px;background:#FAFAF8;border:2px solid #2B2A26;}
+  .panel{position:absolute;top:18px;left:18px;width:592px;height:592px;background:#EDE9E1;overflow:hidden;}
+  .panel .rule1{position:absolute;inset:9px;border:1px solid #C7C0B0;}
+  .panel .rule2{position:absolute;inset:14px;border:1px solid #D8D2C4;}
+  .panel svg{position:absolute;inset:0;width:100%;height:100%;}
+  .pane{position:absolute;top:18px;left:646px;right:26px;bottom:18px;}
+  .title{position:absolute;top:66px;left:0;right:0;color:#111;font-style:italic;font-weight:400;
+         font-family:"Playfair Display","LM Roman 10","Latin Modern Roman",Georgia,serif;
+         font-size:104px;line-height:1.06;letter-spacing:-0.015em;}
+  .quote{position:absolute;top:250px;left:2px;right:0;color:#8A8478;
+         font-family:"Inter","Liberation Sans",Helvetica,Arial,sans-serif;font-size:29px;line-height:1.55;font-weight:400;}
+  .footer{position:absolute;bottom:46px;left:0;right:0;display:flex;justify-content:space-between;align-items:flex-end;}
+  .name{color:#111;font-weight:700;font-size:22px;font-family:"Inter","Liberation Sans",Helvetica,Arial,sans-serif;letter-spacing:0.11em;text-transform:uppercase;}
+  .url{color:#9A958A;font-size:20px;font-family:"Inter","Liberation Sans",Helvetica,Arial,sans-serif;letter-spacing:0.03em;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="panel">
+      <svg viewBox="0 0 592 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#2B2A26" stroke-linecap="round" stroke-linejoin="round">
+
+          <!-- sparkle beyond the far peak -->
+          <g stroke="#2B2A26" stroke-width="1.8" opacity="0.75">
+            <path d="M512 74 V112 M512 140 V178 M462 126 H500 M524 126 H562"/>
+            <path d="M484 98 L503 117 M540 98 L521 117 M484 154 L503 135 M540 154 L521 135" stroke-width="1.3"/>
+          </g>
+          <path d="M78 116 q10 -9 20 0" stroke="#BEB7A6" stroke-width="2"/>
+          <path d="M102 132 q10 -9 20 0" stroke="#BEB7A6" stroke-width="2"/>
+
+          <!-- the far mountain -->
+          <path d="M286 576 L360 372 L436 196 L482 300 L570 576 Z" fill="#DDD2BE" fill-opacity="0.24" stroke="none"/>
+          <path d="M286 576 L360 372 L436 196 L482 300 L570 576" stroke-width="3"/>
+          <path d="M396 310 H474" stroke="#8C8574" stroke-width="1.5" opacity="0.3"/>
+          <path d="M362 400 H502" stroke="#8C8574" stroke-width="1.5" opacity="0.24"/>
+          <path d="M328 490 H532" stroke="#8C8574" stroke-width="1.5" opacity="0.18"/>
+
+          <!-- the mountain you're standing on -->
+          <path d="M40 576 L104 420 L152 336 L200 452 L268 576 Z" fill="#DDD2BE" fill-opacity="0.5" stroke="none"/>
+          <path d="M40 576 L104 420 L152 336 L200 452 L268 576" stroke-width="3"/>
+          <path d="M96 460 H196" stroke="#8C8574" stroke-width="1.5" opacity="0.62"/>
+          <path d="M68 530 H234" stroke="#8C8574" stroke-width="1.5" opacity="0.45"/>
+
+          <!-- the leap -->
+          <g stroke="#2B2A26" stroke-width="3.4">
+            <circle cx="264" cy="236" r="13" stroke-width="3"/>
+            <path d="M256 250 L236 298"/>
+            <path d="M236 298 L204 320 L176 304"/>
+            <path d="M236 298 L276 296 L310 264"/>
+            <path d="M248 266 L296 232"/>
+            <path d="M248 266 L206 282"/>
+          </g>
+
+        </g>
+      </svg>
+      <div class="rule1"></div>
+      <div class="rule2"></div>
+    </div>
+    <div class="pane">
+      <div class="title">The Leap</div>
+      <div class="quote">This doesn&rsquo;t require reinvention.<br/>It requires a start.</div>
+      <div class="footer">
+        <div class="name">Ajey Gore</div>
+        <div class="url">ajeygore.in</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
