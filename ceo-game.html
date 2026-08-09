@@ -439,6 +439,17 @@
       flex: 1; 
     }
 
+    #setupActions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    #setupActions button {
+      width: 100%;
+    }
+
     .hidden { 
       display: none !important; 
     }
@@ -534,13 +545,17 @@
 
     <!-- SETUP PHASE -->
     <section id="setupPhase">
-      <label for="playerName">Add players</label>
-      <div class="entry">
+      <label for="playerName" id="setupLabel">Add players</label>
+      <div class="entry" id="addPlayerRow">
         <input type="text" id="playerName" placeholder="Player name, then Enter" autocomplete="off" aria-label="Player name">
         <button class="btn-add" id="addPlayerBtn">Add</button>
       </div>
       <ul class="roster" id="rosterList"></ul>
-      <button class="btn-primary" id="startBtn" disabled>Start Game</button>
+      <div id="setupActions">
+        <button class="btn-primary" id="finalizeBtn" disabled>Finalize Players</button>
+        <button class="btn-ghost hidden" id="addMoreBtn">Add More Players</button>
+        <button class="btn-primary hidden" id="startBtn">Start Game</button>
+      </div>
     </section>
 
     <!-- ENTRY PHASE -->
@@ -571,6 +586,7 @@
       <p class="count"><span>The reveal — <b id="revealCount">0</b> name(s)</span></p>
       <ul class="names" id="namesList"></ul>
       <div class="actions">
+        <button class="btn-ghost" id="playAgainBtn">Play Again</button>
         <button class="btn-ghost" id="resetBtn2">New Game</button>
       </div>
     </section>
@@ -580,18 +596,20 @@
     const KEY = 'ceo-game-state-v2';
     const $ = id => document.getElementById(id);
 
-    // state: { players: [names of people], entries: [secret names typed] }
+    // state: { players: [names of people], entries: [secret names typed], finalized: bool }
     let state = load();
 
     function load() {
       try {
         const s = JSON.parse(localStorage.getItem(KEY));
-        if (s && Array.isArray(s.players) && Array.isArray(s.entries)) return s;
+        if (s && Array.isArray(s.players) && Array.isArray(s.entries)) {
+          return { players: s.players, entries: s.entries, finalized: s.players.length >= 2 ? !!s.finalized : false };
+        }
       } catch (e) {}
-      return { players: [], entries: [] };
+      return { players: [], entries: [], finalized: false };
     }
     function save() { localStorage.setItem(KEY, JSON.stringify(state)); }
-    function clearState() { state = { players: [], entries: [] }; localStorage.removeItem(KEY); }
+    function clearState() { state = { players: [], entries: [], finalized: false }; localStorage.removeItem(KEY); }
 
     function show(phase) {
       ['setupPhase', 'entryPhase', 'revealPhase'].forEach(p =>
@@ -603,7 +621,7 @@
     }
 
     /* ---------- Setup ---------- */
-    function renderRoster() {
+    function renderSetup() {
       const ul = $('rosterList');
       ul.innerHTML = '';
       if (!state.players.length) {
@@ -616,7 +634,16 @@
           ul.appendChild(li);
         });
       }
+
+      const finalized = state.finalized;
+      $('addPlayerRow').classList.toggle('hidden', finalized);
+      $('finalizeBtn').classList.toggle('hidden', finalized);
+      $('addMoreBtn').classList.toggle('hidden', !finalized);
+      $('startBtn').classList.toggle('hidden', !finalized);
+
+      $('finalizeBtn').disabled = state.players.length < 2;
       $('startBtn').disabled = state.players.length < 2;
+      $('setupLabel').textContent = finalized ? 'Players finalized' : 'Add players';
     }
 
     function addPlayer() {
@@ -626,19 +653,35 @@
       save();
       $('playerName').value = '';
       $('playerName').focus();
-      renderRoster();
+      renderSetup();
     }
 
     $('rosterList').addEventListener('click', e => {
       const btn = e.target.closest('.rm');
       if (!btn) return;
       state.players.splice(parseInt(btn.dataset.i, 10), 1);
+      if (state.finalized) state.finalized = false;
       save();
-      renderRoster();
+      renderSetup();
+      if (!state.finalized) $('playerName').focus();
     });
 
-    function startGame() {
+    function finalizePlayers() {
       if (state.players.length < 2) return;
+      state.finalized = true;
+      save();
+      renderSetup();
+    }
+
+    function unfinalizePlayers() {
+      state.finalized = false;
+      save();
+      renderSetup();
+      $('playerName').focus();
+    }
+
+    function startGame() {
+      if (state.players.length < 2 || !state.finalized) return;
       state.entries = [];
       save();
       renderEntry();
@@ -700,10 +743,18 @@
       show('revealPhase');
     }
 
+    function nextRound() {
+      state.entries = [];
+      state.finalized = true;
+      save();
+      renderSetup();
+      show('setupPhase');
+    }
+
     function reset() {
       if (state.entries.length && !confirm('Clear everything and start a new game?')) return;
       clearState();
-      renderRoster();
+      renderSetup();
       show('setupPhase');
       $('playerName').focus();
     }
@@ -711,16 +762,19 @@
     /* ---------- Wiring ---------- */
     $('addPlayerBtn').addEventListener('click', addPlayer);
     $('playerName').addEventListener('keydown', e => { if (e.key === 'Enter') addPlayer(); });
+    $('finalizeBtn').addEventListener('click', finalizePlayers);
+    $('addMoreBtn').addEventListener('click', unfinalizePlayers);
     $('startBtn').addEventListener('click', startGame);
     $('addBtn').addEventListener('click', addName);
     $('nameInput').addEventListener('keydown', e => { if (e.key === 'Enter') addName(); });
     $('revealBtn').addEventListener('click', reveal);
+    $('playAgainBtn').addEventListener('click', nextRound);
     $('resetBtn').addEventListener('click', reset);
     $('resetBtn2').addEventListener('click', reset);
 
     // Restore
-    renderRoster();
-    if (state.players.length >= 2 && state.entries.length > 0) {
+    renderSetup();
+    if (state.players.length >= 2 && state.finalized && state.entries.length > 0) {
       renderEntry();
       show('entryPhase');
     } else {
