@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Metal Tetris - Heavy Metal Edition</title>
+  <title>Tetris - Multi-Theme Grid Engine</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,179 @@
       --gold-accent: #d4af37;
     }
 
+    /* ===== THEME VARIABLE SYSTEM ===== */
+    /* Metal: steel/neon default (matches original hardcoded look) */
+    body[data-theme="metal"] {
+      --theme-body-bg: #080a0d;
+      --theme-body-texture:
+        radial-gradient(circle at center, rgba(30, 37, 47, 0.4) 0%, rgba(8, 10, 13, 0.95) 100%),
+        linear-gradient(rgba(18, 24, 32, 0.15) 50%, rgba(0, 0, 0, 0.3) 50%),
+        linear-gradient(90deg, rgba(18, 24, 32, 0.15) 50%, rgba(0, 0, 0, 0.3) 50%);
+      --theme-text: #a6afb8;
+      --theme-text-dim: #72869c;
+      --theme-text-bright: #ffffff;
+      --theme-panel-bg: rgba(10, 14, 18, 0.92);
+      --theme-panel-frame: linear-gradient(135deg, #5a6675 0%, #12161c 50%, #5a6675 100%);
+      --theme-accent: #00f0ff;
+      --theme-accent-glow: rgba(0, 240, 255, 0.4);
+      --theme-accent-2: #ff9900;
+      --theme-accent-2-glow: rgba(255, 153, 0, 0.4);
+      --theme-line: #283545;
+      --theme-canvas-bg: #06090c;
+      --theme-canvas-border: #1b2430;
+      --theme-box-bg: #07090c;
+      --theme-box-border: #1a222c;
+      --theme-stat-bg: rgba(15, 20, 26, 0.85);
+      --theme-stat-border: #242f3d;
+      --theme-btn-grad: linear-gradient(to bottom, #2b3543, #151c24);
+      --theme-btn-grad-hover: linear-gradient(to bottom, #374457, #1d2733);
+      --theme-btn-border: #435266;
+      --theme-btn-text: #b0c0d1;
+      --theme-mobile-bg: rgba(14, 18, 24, 0.9);
+      --theme-mobile-border: #283344;
+      --theme-touch-grad: linear-gradient(135deg, #323d4f 0%, #151a22 100%);
+      --theme-touch-grad-active: linear-gradient(135deg, #181f29 0%, #0d1218 100%);
+      --theme-touch-border: #4a5a73;
+      --theme-touch-text: #c4d7ec;
+      --theme-overlay-bg: rgba(5, 7, 10, 0.88);
+      --theme-overlay-content-bg: linear-gradient(135deg, #2b3644 0%, #0b0e12 100%);
+      --theme-overlay-frame: linear-gradient(to bottom right, #5a6675, #151a22, #788a9e, #07090c);
+      --theme-overlay-btn-grad: linear-gradient(to bottom, #425265, #202833);
+      --theme-overlay-btn-border: #5a708a;
+      --theme-overlay-btn-sec-grad: linear-gradient(to bottom, #232a33, #11161d);
+      --theme-overlay-btn-sec-border: #3e4d5f;
+      --theme-rivet-bg: #738290;
+    }
+
+    /* Bricks: warm terracotta / brick-red with mortar tones */
+    body[data-theme="bricks"] {
+      --theme-body-bg: #140d0b;
+      --theme-body-texture:
+        radial-gradient(circle at center, rgba(64, 32, 22, 0.35) 0%, rgba(20, 13, 11, 0.95) 100%),
+        linear-gradient(rgba(70, 38, 26, 0.12) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(70, 38, 26, 0.12) 50%, rgba(0, 0, 0, 0.25) 50%);
+      --theme-text: #c8a892;
+      --theme-text-dim: #8a6a55;
+      --theme-text-bright: #ffffff;
+      --theme-panel-bg: rgba(26, 16, 12, 0.92);
+      --theme-panel-frame: linear-gradient(135deg, #8a4a30 0%, #2a1510 50%, #8a4a30 100%);
+      --theme-accent: #ff7a45;
+      --theme-accent-glow: rgba(255, 122, 69, 0.4);
+      --theme-accent-2: #ffc069;
+      --theme-accent-2-glow: rgba(255, 192, 105, 0.4);
+      --theme-line: #4a2a1e;
+      --theme-canvas-bg: #140d0b;
+      --theme-canvas-border: #3a211a;
+      --theme-box-bg: #170f0c;
+      --theme-box-border: #3a211a;
+      --theme-stat-bg: rgba(34, 20, 14, 0.85);
+      --theme-stat-border: #4a2c20;
+      --theme-btn-grad: linear-gradient(to bottom, #463025, #241410);
+      --theme-btn-grad-hover: linear-gradient(to bottom, #5a3e2e, #301a12);
+      --theme-btn-border: #7a4a32;
+      --theme-btn-text: #e0bfa4;
+      --theme-mobile-bg: rgba(26, 16, 12, 0.9);
+      --theme-mobile-border: #4a2c20;
+      --theme-touch-grad: linear-gradient(135deg, #523528 0%, #221210 100%);
+      --theme-touch-grad-active: linear-gradient(135deg, #2e1a14 0%, #170c0a 100%);
+      --theme-touch-border: #8a5438;
+      --theme-touch-text: #f0d0b8;
+      --theme-overlay-bg: rgba(12, 7, 5, 0.88);
+      --theme-overlay-content-bg: linear-gradient(135deg, #463025 0%, #160d0a 100%);
+      --theme-overlay-frame: linear-gradient(to bottom right, #8a4a30, #2a1510, #a05a3a, #160d0a);
+      --theme-overlay-btn-grad: linear-gradient(to bottom, #684534, #30201a);
+      --theme-overlay-btn-border: #8a5a40;
+      --theme-overlay-btn-sec-grad: linear-gradient(to bottom, #322017, #1a0f0c);
+      --theme-overlay-btn-sec-border: #5a3a28;
+      --theme-rivet-bg: #9a6a50;
+    }
+
+    /* Hay: golden straw / farm, warm yellows and greens */
+    body[data-theme="hay"] {
+      --theme-body-bg: #171204;
+      --theme-body-texture:
+        radial-gradient(circle at center, rgba(80, 62, 18, 0.3) 0%, rgba(23, 18, 4, 0.95) 100%),
+        linear-gradient(rgba(96, 78, 26, 0.1) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(90deg, rgba(96, 78, 26, 0.1) 50%, rgba(0, 0, 0, 0.25) 50%);
+      --theme-text: #d8c89a;
+      --theme-text-dim: #9a8a5a;
+      --theme-text-bright: #ffffff;
+      --theme-panel-bg: rgba(28, 22, 8, 0.92);
+      --theme-panel-frame: linear-gradient(135deg, #a8863a 0%, #2e2408 50%, #a8863a 100%);
+      --theme-accent: #ffd666;
+      --theme-accent-glow: rgba(255, 214, 102, 0.4);
+      --theme-accent-2: #8fbf5f;
+      --theme-accent-2-glow: rgba(143, 191, 95, 0.4);
+      --theme-line: #4a3c16;
+      --theme-canvas-bg: #171204;
+      --theme-canvas-border: #3e3210;
+      --theme-box-bg: #1a1506;
+      --theme-box-border: #3e3210;
+      --theme-stat-bg: rgba(36, 29, 10, 0.85);
+      --theme-stat-border: #50421a;
+      --theme-btn-grad: linear-gradient(to bottom, #4a3e1a, #26200a);
+      --theme-btn-grad-hover: linear-gradient(to bottom, #5e4e22, #302812);
+      --theme-btn-border: #8a7330;
+      --theme-btn-text: #ecdcae;
+      --theme-mobile-bg: rgba(28, 22, 8, 0.9);
+      --theme-mobile-border: #50421a;
+      --theme-touch-grad: linear-gradient(135deg, #54461e 0%, #241e08 100%);
+      --theme-touch-grad-active: linear-gradient(135deg, #2e2610 0%, #181406 100%);
+      --theme-touch-border: #9a8038;
+      --theme-touch-text: #f4e8c0;
+      --theme-overlay-bg: rgba(14, 11, 3, 0.88);
+      --theme-overlay-content-bg: linear-gradient(135deg, #4a3e1a 0%, #171204 100%);
+      --theme-overlay-frame: linear-gradient(to bottom right, #a8863a, #2e2408, #c09a46, #171204);
+      --theme-overlay-btn-grad: linear-gradient(to bottom, #6a5a26, #342c10);
+      --theme-overlay-btn-border: #9a8038;
+      --theme-overlay-btn-sec-grad: linear-gradient(to bottom, #362e12, #1c1808);
+      --theme-overlay-btn-sec-border: #6a5a26;
+      --theme-rivet-bg: #b09348;
+    }
+
+    /* Wood: warm browns / amber, wooden cabin feel */
+    body[data-theme="wood"] {
+      --theme-body-bg: #120b06;
+      --theme-body-texture:
+        radial-gradient(circle at center, rgba(70, 44, 22, 0.35) 0%, rgba(18, 11, 6, 0.95) 100%),
+        linear-gradient(90deg, rgba(88, 56, 28, 0.1) 50%, rgba(0, 0, 0, 0.25) 50%),
+        linear-gradient(rgba(88, 56, 28, 0.08) 50%, rgba(0, 0, 0, 0.2) 50%);
+      --theme-text: #c9a887;
+      --theme-text-dim: #8a6a4e;
+      --theme-text-bright: #ffffff;
+      --theme-panel-bg: rgba(26, 16, 9, 0.92);
+      --theme-panel-frame: linear-gradient(135deg, #8a5a30 0%, #2a170a 50%, #8a5a30 100%);
+      --theme-accent: #ffa940;
+      --theme-accent-glow: rgba(255, 169, 64, 0.4);
+      --theme-accent-2: #ffcf7a;
+      --theme-accent-2-glow: rgba(255, 207, 122, 0.4);
+      --theme-line: #4a2f1a;
+      --theme-canvas-bg: #120b06;
+      --theme-canvas-border: #3a2412;
+      --theme-box-bg: #150d07;
+      --theme-box-border: #3a2412;
+      --theme-stat-bg: rgba(34, 21, 11, 0.85);
+      --theme-stat-border: #4e3018;
+      --theme-btn-grad: linear-gradient(to bottom, #473019, #241507);
+      --theme-btn-grad-hover: linear-gradient(to bottom, #5a3e20, #301b0a);
+      --theme-btn-border: #7d5528;
+      --theme-btn-text: #e6c9a3;
+      --theme-mobile-bg: rgba(26, 16, 9, 0.9);
+      --theme-mobile-border: #4e3018;
+      --theme-touch-grad: linear-gradient(135deg, #533723 0%, #201207 100%);
+      --theme-touch-grad-active: linear-gradient(135deg, #2d1c0e 0%, #150c05 100%);
+      --theme-touch-border: #8a5c2c;
+      --theme-touch-text: #f2d8b8;
+      --theme-overlay-bg: rgba(10, 6, 3, 0.88);
+      --theme-overlay-content-bg: linear-gradient(135deg, #473019 0%, #140c05 100%);
+      --theme-overlay-frame: linear-gradient(to bottom right, #8a5a30, #2a170a, #a06a38, #140c05);
+      --theme-overlay-btn-grad: linear-gradient(to bottom, #6b4a24, #33200e);
+      --theme-overlay-btn-border: #8f6130;
+      --theme-overlay-btn-sec-grad: linear-gradient(to bottom, #332312, #191008);
+      --theme-overlay-btn-sec-border: #5c3f1e;
+      --theme-rivet-bg: #9c6f3e;
+    }
+
     * {
       box-sizing: border-box;
       user-select: none;
@@ -28,14 +201,11 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #080a0d;
+      background-color: var(--theme-body-bg);
       /* Brushed metal micro-texture effect in CSS */
-      background-image: 
-        radial-gradient(circle at center, rgba(30, 37, 47, 0.4) 0%, rgba(8, 10, 13, 0.95) 100%),
-        linear-gradient(rgba(18, 24, 32, 0.15) 50%, rgba(0, 0, 0, 0.3) 50%),
-        linear-gradient(90deg, rgba(18, 24, 32, 0.15) 50%, rgba(0, 0, 0, 0.3) 50%);
+      background-image: var(--theme-body-texture);
       background-size: 100% 100%, 4px 4px, 4px 4px;
-      color: #a6afb8;
+      color: var(--theme-text);
       font-family: 'Montserrat', sans-serif;
       display: flex;
       flex-direction: column;
@@ -48,7 +218,7 @@
 
     /* Metal Panels Framework */
     .metal-panel-wrapper {
-      background: linear-gradient(135deg, var(--steel-light) 0%, var(--steel-dark) 50%, var(--steel-light) 100%);
+      background: var(--theme-panel-frame);
       padding: 5px;
       border-radius: 10px;
       box-shadow: 
@@ -59,7 +229,7 @@
     }
 
     .metal-panel-inner {
-      background: var(--panel-bg);
+      background: var(--theme-panel-bg);
       border: 2px solid #000;
       border-radius: 6px;
       padding: 18px;
@@ -75,7 +245,7 @@
     .rivet {
       width: 6px;
       height: 6px;
-      background: #738290;
+      background: var(--theme-rivet-bg);
       border-radius: 50%;
       position: absolute;
       box-shadow: 
@@ -128,11 +298,11 @@
       font-size: 16px;
       font-weight: 700;
       letter-spacing: 2px;
-      color: var(--neon-cyan);
+      color: var(--theme-accent);
       margin-bottom: 15px;
       text-transform: uppercase;
-      text-shadow: 0 0 6px rgba(0, 240, 255, 0.4);
-      border-bottom: 2px dashed #283545;
+      text-shadow: 0 0 6px var(--theme-accent-glow);
+      border-bottom: 2px dashed var(--theme-line);
       width: 100%;
       text-align: center;
       padding-bottom: 6px;
@@ -140,8 +310,8 @@
 
     /* Preview Canvas Containers */
     .canvas-box {
-      background: #07090c;
-      border: 2px solid #1a222c;
+      background: var(--theme-box-bg);
+      border: 2px solid var(--theme-box-border);
       border-radius: 4px;
       padding: 10px;
       margin-bottom: 15px;
@@ -164,9 +334,10 @@
     }
 
     canvas#gameCanvas {
-      background: #06090c;
-      border: 1px solid #1b2430;
+      background: var(--theme-canvas-bg);
+      border: 1px solid var(--theme-canvas-border);
       border-radius: 2px;
+      touch-action: none;
     }
 
     /* HUD stats styling */
@@ -179,8 +350,8 @@
 
     .stat-box {
       width: 100%;
-      background: rgba(15, 20, 26, 0.85);
-      border: 1px solid #242f3d;
+      background: var(--theme-stat-bg);
+      border: 1px solid var(--theme-stat-border);
       border-radius: 4px;
       padding: 8px 12px;
       display: flex;
@@ -191,7 +362,7 @@
     .stat-label {
       font-family: 'Share Tech Mono', monospace;
       font-size: 11px;
-      color: #72869c;
+      color: var(--theme-text-dim);
       letter-spacing: 1.5px;
       margin-bottom: 3px;
     }
@@ -200,21 +371,21 @@
       font-family: 'Orbitron', sans-serif;
       font-size: 18px;
       font-weight: 700;
-      color: #fff;
+      color: var(--theme-text-bright);
       text-shadow: 0 0 4px rgba(255, 255, 255, 0.3);
     }
 
     .stat-val.highlight {
-      color: var(--neon-orange);
-      text-shadow: 0 0 6px rgba(255, 153, 0, 0.4);
+      color: var(--theme-accent-2);
+      text-shadow: 0 0 6px var(--theme-accent-2-glow);
     }
 
     /* Control Manual styling */
     .controls-manual {
       margin-top: 10px;
       width: 100%;
-      background: rgba(15, 20, 26, 0.5);
-      border: 1px solid #1b2633;
+      background: var(--theme-stat-bg);
+      border: 1px solid var(--theme-canvas-border);
       border-radius: 4px;
       padding: 10px;
       font-family: 'Share Tech Mono', monospace;
@@ -223,7 +394,7 @@
     }
 
     .manual-title {
-      color: #647b93;
+      color: var(--theme-text-dim);
       text-align: center;
       margin-bottom: 5px;
       font-weight: bold;
@@ -233,17 +404,17 @@
     .manual-row {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #17202c;
+      border-bottom: 1px solid var(--theme-line);
       padding: 3px 0;
     }
     .manual-row:last-child {
       border-bottom: none;
     }
     .manual-row span:first-child {
-      color: #a6afb8;
+      color: var(--theme-text);
     }
     .manual-row span:last-child {
-      color: var(--neon-cyan);
+      color: var(--theme-accent);
     }
 
     /* Buttons console layout */
@@ -257,14 +428,14 @@
 
     .console-btn {
       width: 100%;
-      background: linear-gradient(to bottom, #2b3543, #151c24);
-      border: 1px solid #435266;
+      background: var(--theme-btn-grad);
+      border: 1px solid var(--theme-btn-border);
       border-radius: 4px;
       padding: 8px;
       font-family: 'Orbitron', sans-serif;
       font-size: 11px;
       font-weight: 700;
-      color: #b0c0d1;
+      color: var(--theme-btn-text);
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -275,10 +446,10 @@
     }
 
     .console-btn:hover {
-      background: linear-gradient(to bottom, #374457, #1d2733);
-      border-color: var(--neon-cyan);
-      color: #fff;
-      box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+      background: var(--theme-btn-grad-hover);
+      border-color: var(--theme-accent);
+      color: var(--theme-text-bright);
+      box-shadow: 0 0 10px var(--theme-accent-glow);
     }
 
     .console-btn:active {
@@ -297,10 +468,10 @@
       width: 100%;
       max-width: 480px;
       margin-top: 15px;
-      background: rgba(14, 18, 24, 0.9);
-      border: 2px solid #283344;
+      background: var(--theme-mobile-bg);
+      border: 2px solid var(--theme-mobile-border);
       border-radius: 8px;
-      padding: 10px;
+      padding: 12px;
       justify-content: space-between;
       gap: 15px;
       box-shadow: inset 0 0 15px rgba(0,0,0,0.8);
@@ -308,8 +479,8 @@
 
     .mobile-dpad {
       display: grid;
-      grid-template-columns: repeat(3, 45px);
-      grid-template-rows: repeat(2, 45px);
+      grid-template-columns: repeat(3, 56px);
+      grid-template-rows: repeat(2, 56px);
       gap: 8px;
     }
 
@@ -328,10 +499,10 @@
     }
 
     .touch-btn {
-      background: linear-gradient(135deg, #323d4f 0%, #151a22 100%);
-      border: 1px solid #4a5a73;
+      background: var(--theme-touch-grad);
+      border: 1px solid var(--theme-touch-border);
       border-radius: 6px;
-      color: #c4d7ec;
+      color: var(--theme-touch-text);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -343,15 +514,15 @@
     }
 
     .touch-btn:active {
-      background: linear-gradient(135deg, #181f29 0%, #0d1218 100%);
-      border-color: var(--neon-cyan);
-      color: #fff;
+      background: var(--theme-touch-grad-active);
+      border-color: var(--theme-accent);
+      color: var(--theme-text-bright);
       box-shadow: 0 1px 2px rgba(0,0,0,0.7);
     }
 
     .dpad-btn {
-      width: 45px;
-      height: 45px;
+      width: 56px;
+      height: 56px;
     }
 
     .dpad-left { grid-column: 1; grid-row: 1; }
@@ -360,10 +531,11 @@
     .dpad-up { grid-column: 2; grid-row: 1; }
 
     .action-btn {
-      padding: 10px;
-      font-size: 11px;
+      padding: 12px 14px;
+      font-size: 12px;
+      letter-spacing: 1px;
       flex-grow: 1;
-      height: 40px;
+      min-height: 52px;
     }
 
     /* Screen Overlays (Start, Pause, GameOver) */
@@ -373,7 +545,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(5, 7, 10, 0.88);
+      background: var(--theme-overlay-bg);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
       display: flex;
@@ -383,9 +555,9 @@
     }
 
     .overlay-content {
-      background: linear-gradient(135deg, #2b3644 0%, #0b0e12 100%);
+      background: var(--theme-overlay-content-bg);
       border: 4px solid;
-      border-image: linear-gradient(to bottom right, var(--steel-light), #151a22, #788a9e, #07090c) 1;
+      border-image: var(--theme-overlay-frame) 1;
       box-shadow: 
         inset 1px 1px 1px rgba(255,255,255,0.1),
         0 20px 60px rgba(0,0,0,0.85);
@@ -403,24 +575,24 @@
       font-size: 22px;
       font-weight: 900;
       letter-spacing: 3px;
-      color: var(--neon-cyan);
+      color: var(--theme-accent);
       margin-top: 0;
       margin-bottom: 8px;
-      text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+      text-shadow: 0 0 10px var(--theme-accent-glow);
     }
 
     .overlay-subtitle {
       font-family: 'Share Tech Mono', monospace;
       font-size: 12px;
-      color: #72869c;
+      color: var(--theme-text-dim);
       letter-spacing: 1.5px;
       margin-bottom: 25px;
     }
 
     .overlay-btn {
       width: 100%;
-      background: linear-gradient(to bottom, #425265, #202833);
-      border: 2px solid #5a708a;
+      background: var(--theme-overlay-btn-grad);
+      border: 2px solid var(--theme-overlay-btn-border);
       border-radius: 4px;
       padding: 12px;
       font-family: 'Orbitron', sans-serif;
@@ -435,26 +607,26 @@
     }
 
     .overlay-btn:hover {
-      background: linear-gradient(to bottom, #4f637a, #27313f);
-      border-color: var(--neon-cyan);
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+      background: var(--theme-btn-grad-hover);
+      border-color: var(--theme-accent);
+      box-shadow: 0 0 15px var(--theme-accent-glow);
     }
 
     .overlay-btn.btn-sec {
-      background: linear-gradient(to bottom, #232a33, #11161d);
-      border-color: #3e4d5f;
-      color: #8b9eb3;
+      background: var(--theme-overlay-btn-sec-grad);
+      border-color: var(--theme-overlay-btn-sec-border);
+      color: var(--theme-text);
     }
 
     .overlay-btn.btn-sec:hover {
-      border-color: var(--neon-orange);
+      border-color: var(--theme-accent-2);
       color: #fff;
-      box-shadow: 0 0 15px rgba(255, 153, 0, 0.3);
+      box-shadow: 0 0 15px var(--theme-accent-2-glow);
     }
 
     .final-score-list {
       background: rgba(0, 0, 0, 0.4);
-      border: 1px solid #1d252f;
+      border: 1px solid var(--theme-line);
       border-radius: 4px;
       padding: 15px;
       margin-bottom: 25px;
@@ -470,10 +642,10 @@
       font-size: 14px;
     }
     .score-row span:first-child {
-      color: #647b93;
+      color: var(--theme-text-dim);
     }
     .score-row span:last-child {
-      color: #fff;
+      color: var(--theme-text-bright);
       font-weight: bold;
     }
 
@@ -586,9 +758,53 @@
         font-size: 10px;
       }
     }
+    /* Theme selector bar (below header) */
+    .theme-selector {
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .theme-btn {
+      min-width: 84px;
+      padding: 7px 14px;
+      background: var(--theme-btn-grad);
+      border: 1px solid var(--theme-btn-border);
+      border-radius: 4px;
+      color: var(--theme-btn-text);
+      font-family: 'Orbitron', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .theme-btn:hover {
+      background: var(--theme-btn-grad-hover);
+      border-color: var(--theme-accent);
+      color: var(--theme-text-bright);
+    }
+
+    .theme-btn.active {
+      border-color: var(--theme-accent);
+      color: var(--theme-accent);
+      box-shadow: 0 0 10px var(--theme-accent-glow);
+    }
+
+    /* Show mobile controls on narrow viewports even without touch detection */
+    @media (max-width: 820px) {
+      .mobile-controls {
+        display: flex;
+      }
+    }
   </style>
 </head>
-<body>
+<body data-theme="metal">
 
   <!-- Game Header containing Logo -->
   <header>
@@ -630,11 +846,19 @@
           TETRIS
         </text>
         <text x="50%" y="80" font-family="'Share Tech Mono', monospace" font-size="9.5" fill="#75889c" text-anchor="middle" letter-spacing="3.5">
-          HEAVY METAL GRID ENGINE
+          MULTI-THEME GRID ENGINE
         </text>
       </svg>
     </div>
   </header>
+
+  <!-- Theme Selector Bar -->
+  <div class="theme-selector" id="themeSelector">
+    <button class="theme-btn" data-theme="metal">METAL</button>
+    <button class="theme-btn" data-theme="bricks">BRICKS</button>
+    <button class="theme-btn" data-theme="hay">HAY</button>
+    <button class="theme-btn" data-theme="wood">WOOD</button>
+  </div>
 
   <!-- Main Grid Frame Container -->
   <div class="game-container">
@@ -745,10 +969,10 @@
     <div class="mobile-actions">
       <div class="action-row">
         <button id="btnHold" class="touch-btn action-btn">HOLD</button>
-        <button id="btnRotate" class="touch-btn action-btn">ROT</button>
+        <button id="btnRotate" class="touch-btn action-btn">ROTATE</button>
       </div>
       <div class="action-row">
-        <button id="btnDrop" class="touch-btn action-btn" style="border-color: var(--neon-orange);">HARD DROP</button>
+        <button id="btnDrop" class="touch-btn action-btn" style="border-color: var(--theme-accent-2);">HARD DROP</button>
       </div>
     </div>
   </div>
@@ -832,6 +1056,137 @@
     let isMutedMusic = false;
     let isMutedSFX = false;
 
+    /* =========================================================================
+       THEME SYSTEM: block palettes, render styles, grid colors, SFX profiles
+       ========================================================================= */
+    const THEMES = {
+      metal: {
+        style: 'metal',
+        blocks: {
+          I: { main: '#3ba3d6', light: '#9ae2ff', dark: '#155d82' },
+          O: { main: '#dca626', light: '#ffe273', dark: '#865e07' },
+          T: { main: '#c15e21', light: '#ffab73', dark: '#722b00' },
+          S: { main: '#2e9647', light: '#86ea9c', dark: '#0a541b' },
+          Z: { main: '#c62b2b', light: '#ff7c7c', dark: '#770b0b' },
+          J: { main: '#2a5cd3', light: '#88a6f3', dark: '#0e2b83' },
+          L: { main: '#d3711a', light: '#ffb36f', dark: '#7c3a00' }
+        },
+        gridBg: '#06090c',
+        gridLine: '#121922',
+        flash: '255, 230, 160',
+        beamEdge: 'rgba(255, 51, 0, 0)',
+        beamMid: 'rgba(255, 128, 0, 0.55)',
+        beamCore: '#ffffff',
+        sparkMid: '#ffbb00',
+        sparkEdge: '#ff3300',
+        sparkFade: 'rgba(255, 51, 0, 0)',
+        sfx: {
+          move:   { type: 'triangle', f0: 350, f1: 70, dur: 0.04, gain: 0.12 },
+          rotate: { type: 'sine', f0: 280, f1: 560, dur: 0.07, gain: 0.15 },
+          lock:   { t1: 'triangle', f10: 140, f11: 30, t2: 'square', f20: 70, f21: 20, dur: 0.12, gain: 0.25 },
+          clear:  { notes: [587.33, 698.46, 880.00], t1: 'sine', sub0: 293.66, sub1: 587.33, t2: 'triangle', dur: 0.25, gain: 0.25 },
+          tetris: { nf0: 600, nf1: 40, ndur: 0.55, ngain: 0.35, type: 'sawtooth', f0: 220, f1: 40, dur: 0.5, gain: 0.3 },
+          levelup: { freqs: [261.63, 329.63, 392.00, 523.25, 659.25, 783.99, 1046.50], type: 'sine', gain: 0.12 },
+          gameover: { t1: 'sawtooth', f10: 150, f11: 20, t2: 'square', f20: 153, f21: 22, dur: 1.5, gain: 0.3 }
+        }
+      },
+      bricks: {
+        style: 'bricks',
+        mortar: '#d9c3ab',
+        blocks: {
+          I: { main: '#b5502f', light: '#e58a63', dark: '#5f2413' },
+          O: { main: '#c9853e', light: '#f0bd7d', dark: '#6e4516' },
+          T: { main: '#a03e52', light: '#d47e90', dark: '#521b28' },
+          S: { main: '#7a8a3c', light: '#b3c176', dark: '#3d4718' },
+          Z: { main: '#b23a2e', light: '#e8786a', dark: '#5c1812' },
+          J: { main: '#8a5a44', light: '#c08d70', dark: '#46291b' },
+          L: { main: '#c46a28', light: '#f0a068', dark: '#66320e' }
+        },
+        gridBg: '#140d0b',
+        gridLine: '#241612',
+        flash: '255, 210, 170',
+        beamEdge: 'rgba(200, 40, 10, 0)',
+        beamMid: 'rgba(255, 90, 40, 0.55)',
+        beamCore: '#ffffff',
+        sparkMid: '#ff9a50',
+        sparkEdge: '#c63a10',
+        sparkFade: 'rgba(198, 58, 16, 0)',
+        sfx: {
+          move:   { type: 'square', f0: 160, f1: 50, dur: 0.03, gain: 0.08 },
+          rotate: { type: 'triangle', f0: 190, f1: 330, dur: 0.05, gain: 0.09 },
+          lock:   { t1: 'triangle', f10: 95, f11: 28, t2: 'square', f20: 50, f21: 16, dur: 0.09, gain: 0.22 },
+          clear:  { notes: [440.00, 523.25, 659.25], t1: 'triangle', sub0: 220.00, sub1: 440.00, t2: 'triangle', dur: 0.20, gain: 0.18 },
+          tetris: { nf0: 380, nf1: 35, ndur: 0.45, ngain: 0.28, type: 'square', f0: 150, f1: 32, dur: 0.42, gain: 0.25 },
+          levelup: { freqs: [196.00, 246.94, 293.66, 392.00, 493.88, 587.33, 783.99], type: 'triangle', gain: 0.10 },
+          gameover: { t1: 'square', f10: 110, f11: 16, t2: 'triangle', f20: 113, f21: 18, dur: 1.2, gain: 0.25 }
+        }
+      },
+      hay: {
+        style: 'hay',
+        blocks: {
+          I: { main: '#d8b13c', light: '#f5dd85', dark: '#7c6115' },
+          O: { main: '#e0c050', light: '#fbe98f', dark: '#867018' },
+          T: { main: '#c9973a', light: '#eecc7c', dark: '#6e4e12' },
+          S: { main: '#8a9a3e', light: '#c0d178', dark: '#46521a' },
+          Z: { main: '#b8842e', light: '#e5b868', dark: '#5f4210' },
+          J: { main: '#a8732f', light: '#d3a666', dark: '#573a12' },
+          L: { main: '#cfa244', light: '#f4d489', dark: '#75591a' }
+        },
+        gridBg: '#171204',
+        gridLine: '#2a220c',
+        flash: '255, 240, 180',
+        beamEdge: 'rgba(255, 180, 40, 0)',
+        beamMid: 'rgba(255, 214, 102, 0.55)',
+        beamCore: '#ffffff',
+        sparkMid: '#ffe066',
+        sparkEdge: '#e0a020',
+        sparkFade: 'rgba(224, 160, 32, 0)',
+        sfx: {
+          move:   { type: 'sine', f0: 300, f1: 140, dur: 0.05, gain: 0.05 },
+          rotate: { type: 'sine', f0: 240, f1: 420, dur: 0.08, gain: 0.07 },
+          lock:   { t1: 'sine', f10: 120, f11: 40, t2: 'sine', f20: 90, f21: 30, dur: 0.14, gain: 0.12 },
+          clear:  { notes: [523.25, 659.25, 783.99], t1: 'sine', sub0: 261.63, sub1: 523.25, t2: 'sine', dur: 0.30, gain: 0.12 },
+          tetris: { nf0: 450, nf1: 50, ndur: 0.6, ngain: 0.15, type: 'sine', f0: 180, f1: 45, dur: 0.55, gain: 0.15 },
+          levelup: { freqs: [261.63, 329.63, 392.00, 523.25, 659.25, 783.99, 1046.50], type: 'sine', gain: 0.07 },
+          gameover: { t1: 'sine', f10: 130, f11: 25, t2: 'sine', f20: 131, f21: 26, dur: 1.4, gain: 0.16 }
+        }
+      },
+      wood: {
+        style: 'wood',
+        blocks: {
+          I: { main: '#9c6b3f', light: '#caa06e', dark: '#4c3016' },
+          O: { main: '#b3803f', light: '#dfb275', dark: '#5e3d16' },
+          T: { main: '#8a5a35', light: '#bd8a5c', dark: '#442a12' },
+          S: { main: '#7d6b35', light: '#b3a065', dark: '#3e3513' },
+          Z: { main: '#96502f', light: '#c67e58', dark: '#4c2512' },
+          J: { main: '#6f4a2c', light: '#a67c55', dark: '#372213' },
+          L: { main: '#ad7434', light: '#dda865', dark: '#583914' }
+        },
+        gridBg: '#120b06',
+        gridLine: '#241709',
+        flash: '255, 225, 170',
+        beamEdge: 'rgba(220, 120, 20, 0)',
+        beamMid: 'rgba(255, 169, 64, 0.55)',
+        beamCore: '#ffffff',
+        sparkMid: '#ffc46b',
+        sparkEdge: '#c76a1a',
+        sparkFade: 'rgba(199, 106, 26, 0)',
+        sfx: {
+          move:   { type: 'triangle', f0: 260, f1: 120, dur: 0.03, gain: 0.10 },
+          rotate: { type: 'triangle', f0: 220, f1: 400, dur: 0.05, gain: 0.11 },
+          lock:   { t1: 'triangle', f10: 190, f11: 60, t2: 'sine', f20: 120, f21: 40, dur: 0.08, gain: 0.24 },
+          clear:  { notes: [392.00, 493.88, 587.33], t1: 'triangle', sub0: 196.00, sub1: 392.00, t2: 'triangle', dur: 0.18, gain: 0.22 },
+          tetris: { nf0: 500, nf1: 45, ndur: 0.5, ngain: 0.3, type: 'triangle', f0: 200, f1: 38, dur: 0.45, gain: 0.28 },
+          levelup: { freqs: [220.00, 277.18, 329.63, 440.00, 554.37, 659.25, 880.00], type: 'triangle', gain: 0.11 },
+          gameover: { t1: 'triangle', f10: 140, f11: 22, t2: 'sine', f20: 143, f21: 24, dur: 1.3, gain: 0.26 }
+        }
+      }
+    };
+
+    // Active theme (persisted)
+    let currentTheme = localStorage.getItem('tetris_theme') || 'metal';
+    if (!THEMES[currentTheme]) currentTheme = 'metal';
+
     function initAudio() {
       if (audioCtx) return;
       audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -859,151 +1214,152 @@
       }
       
       const now = audioCtx.currentTime;
-      
+      const P = THEMES[currentTheme].sfx[type];
+      if (!P) return;
+
       switch(type) {
         case 'move': {
-          // Short mechanical click
+          // Short click (per-theme oscillator character)
           const osc = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(350, now);
-          osc.frequency.exponentialRampToValueAtTime(70, now + 0.04);
-          
-          gain.gain.setValueAtTime(0.12, now);
-          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
-          
+          osc.type = P.type;
+          osc.frequency.setValueAtTime(P.f0, now);
+          osc.frequency.exponentialRampToValueAtTime(P.f1, now + P.dur);
+
+          gain.gain.setValueAtTime(P.gain, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + P.dur);
+
           osc.connect(gain);
           gain.connect(masterVolume);
           osc.start(now);
-          osc.stop(now + 0.04);
+          osc.stop(now + P.dur);
           break;
         }
         case 'rotate': {
-          // Soft synth swish
+          // Soft swish (per-theme oscillator character)
           const osc = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(280, now);
-          osc.frequency.exponentialRampToValueAtTime(560, now + 0.07);
-          
-          gain.gain.setValueAtTime(0.15, now);
-          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.07);
-          
+          osc.type = P.type;
+          osc.frequency.setValueAtTime(P.f0, now);
+          osc.frequency.exponentialRampToValueAtTime(P.f1, now + P.dur);
+
+          gain.gain.setValueAtTime(P.gain, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + P.dur);
+
           osc.connect(gain);
           gain.connect(masterVolume);
           osc.start(now);
-          osc.stop(now + 0.07);
+          osc.stop(now + P.dur);
           break;
         }
         case 'lock': {
-          // Solid mechanical click/clank
+          // Solid click/clank (per-theme oscillator character)
           const osc1 = audioCtx.createOscillator();
           const osc2 = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
-          
-          osc1.type = 'triangle';
-          osc1.frequency.setValueAtTime(140, now);
-          osc1.frequency.linearRampToValueAtTime(30, now + 0.12);
-          
-          osc2.type = 'square';
-          osc2.frequency.setValueAtTime(70, now);
-          osc2.frequency.linearRampToValueAtTime(20, now + 0.12);
-          
-          gain.gain.setValueAtTime(0.25, now);
-          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
-          
+
+          osc1.type = P.t1;
+          osc1.frequency.setValueAtTime(P.f10, now);
+          osc1.frequency.linearRampToValueAtTime(P.f11, now + P.dur);
+
+          osc2.type = P.t2;
+          osc2.frequency.setValueAtTime(P.f20, now);
+          osc2.frequency.linearRampToValueAtTime(P.f21, now + P.dur);
+
+          gain.gain.setValueAtTime(P.gain, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + P.dur);
+
           osc1.connect(gain);
           osc2.connect(gain);
           gain.connect(masterVolume);
-          
+
           osc1.start(now);
           osc2.start(now);
-          osc1.stop(now + 0.12);
-          osc2.stop(now + 0.12);
+          osc1.stop(now + P.dur);
+          osc2.stop(now + P.dur);
           break;
         }
         case 'clear': {
-          // Retro steel chime
+          // Line clear chime (per-theme notes and oscillators)
           const osc1 = audioCtx.createOscillator();
           const osc2 = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
-          
-          osc1.type = 'sine';
-          osc1.frequency.setValueAtTime(587.33, now); // D5
-          osc1.frequency.setValueAtTime(698.46, now + 0.06); // F5
-          osc1.frequency.setValueAtTime(880.00, now + 0.12); // A5
-          
-          osc2.type = 'triangle';
-          osc2.frequency.setValueAtTime(293.66, now); // D4
-          osc2.frequency.exponentialRampToValueAtTime(587.33, now + 0.22);
-          
-          gain.gain.setValueAtTime(0.25, now);
-          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
-          
+
+          osc1.type = P.t1;
+          osc1.frequency.setValueAtTime(P.notes[0], now);
+          osc1.frequency.setValueAtTime(P.notes[1], now + 0.06);
+          osc1.frequency.setValueAtTime(P.notes[2], now + 0.12);
+
+          osc2.type = P.t2;
+          osc2.frequency.setValueAtTime(P.sub0, now);
+          osc2.frequency.exponentialRampToValueAtTime(P.sub1, now + P.dur - 0.03);
+
+          gain.gain.setValueAtTime(P.gain, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + P.dur);
+
           osc1.connect(gain);
           osc2.connect(gain);
           gain.connect(masterVolume);
-          
+
           osc1.start(now);
           osc2.start(now);
-          osc1.stop(now + 0.25);
-          osc2.stop(now + 0.25);
+          osc1.stop(now + P.dur);
+          osc2.stop(now + P.dur);
           break;
         }
         case 'tetris': {
-          // Industrial metallic blast with white noise
+          // 4-line blast with filtered white noise (per-theme character)
           const noise = createNoiseBuffer();
           if (noise) {
             const noiseSource = audioCtx.createBufferSource();
             noiseSource.buffer = noise;
-            
+
             const noiseFilter = audioCtx.createBiquadFilter();
             noiseFilter.type = 'lowpass';
-            noiseFilter.frequency.setValueAtTime(600, now);
-            noiseFilter.frequency.exponentialRampToValueAtTime(40, now + 0.55);
-            
+            noiseFilter.frequency.setValueAtTime(P.nf0, now);
+            noiseFilter.frequency.exponentialRampToValueAtTime(P.nf1, now + P.ndur);
+
             const noiseGain = audioCtx.createGain();
-            noiseGain.gain.setValueAtTime(0.35, now);
-            noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.55);
-            
+            noiseGain.gain.setValueAtTime(P.ngain, now);
+            noiseGain.gain.exponentialRampToValueAtTime(0.001, now + P.ndur);
+
             noiseSource.connect(noiseFilter);
             noiseFilter.connect(noiseGain);
             noiseGain.connect(masterVolume);
-            
+
             noiseSource.start(now);
-            noiseSource.stop(now + 0.55);
+            noiseSource.stop(now + P.ndur);
           }
-          
+
           // Heavy pitch drop synth sound
           const synthOsc = audioCtx.createOscillator();
           const synthGain = audioCtx.createGain();
-          synthOsc.type = 'sawtooth';
-          synthOsc.frequency.setValueAtTime(220, now);
-          synthOsc.frequency.exponentialRampToValueAtTime(40, now + 0.5);
-          
-          synthGain.gain.setValueAtTime(0.3, now);
-          synthGain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
-          
+          synthOsc.type = P.type;
+          synthOsc.frequency.setValueAtTime(P.f0, now);
+          synthOsc.frequency.exponentialRampToValueAtTime(P.f1, now + P.dur);
+
+          synthGain.gain.setValueAtTime(P.gain, now);
+          synthGain.gain.exponentialRampToValueAtTime(0.001, now + P.dur);
+
           synthOsc.connect(synthGain);
           synthGain.connect(masterVolume);
-          
+
           synthOsc.start(now);
-          synthOsc.stop(now + 0.5);
+          synthOsc.stop(now + P.dur);
           break;
         }
         case 'levelup': {
-          // Triad chord progression upward
-          const frequencies = [261.63, 329.63, 392.00, 523.25, 659.25, 783.99, 1046.50];
-          frequencies.forEach((freq, idx) => {
+          // Triad chord progression upward (per-theme tuning)
+          P.freqs.forEach((freq, idx) => {
             const osc = audioCtx.createOscillator();
             const gain = audioCtx.createGain();
-            osc.type = 'sine';
+            osc.type = P.type;
             osc.frequency.setValueAtTime(freq, now + idx * 0.05);
-            
+
             gain.gain.setValueAtTime(0, now);
-            gain.gain.linearRampToValueAtTime(0.12, now + idx * 0.05 + 0.01);
+            gain.gain.linearRampToValueAtTime(P.gain, now + idx * 0.05 + 0.01);
             gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.05 + 0.12);
-            
+
             osc.connect(gain);
             gain.connect(masterVolume);
             osc.start(now + idx * 0.05);
@@ -1012,30 +1368,30 @@
           break;
         }
         case 'gameover': {
-          // Heavy descending engine fail groan
+          // Heavy descending fail groan (per-theme character)
           const osc1 = audioCtx.createOscillator();
           const osc2 = audioCtx.createOscillator();
           const gain = audioCtx.createGain();
-          
-          osc1.type = 'sawtooth';
-          osc1.frequency.setValueAtTime(150, now);
-          osc1.frequency.linearRampToValueAtTime(20, now + 1.5);
-          
-          osc2.type = 'square';
-          osc2.frequency.setValueAtTime(153, now);
-          osc2.frequency.linearRampToValueAtTime(22, now + 1.5);
-          
-          gain.gain.setValueAtTime(0.3, now);
-          gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.5);
-          
+
+          osc1.type = P.t1;
+          osc1.frequency.setValueAtTime(P.f10, now);
+          osc1.frequency.linearRampToValueAtTime(P.f11, now + P.dur);
+
+          osc2.type = P.t2;
+          osc2.frequency.setValueAtTime(P.f20, now);
+          osc2.frequency.linearRampToValueAtTime(P.f21, now + P.dur);
+
+          gain.gain.setValueAtTime(P.gain, now);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + P.dur);
+
           osc1.connect(gain);
           osc2.connect(gain);
           gain.connect(masterVolume);
-          
+
           osc1.start(now);
           osc2.start(now);
-          osc1.stop(now + 1.5);
-          osc2.stop(now + 1.5);
+          osc1.stop(now + P.dur);
+          osc2.stop(now + P.dur);
           break;
         }
       }
@@ -1309,23 +1665,24 @@
         ctx.rotate(this.rotation);
         
         if (this.isSpark) {
-          // Glowy thermal metal spark (White core, bright orange halo)
+          // Glowy thermal spark (White core, theme-tinted halo)
+          const sparkTheme = THEMES[currentTheme];
           const grad = ctx.createRadialGradient(0, 0, 0, 0, 0, this.size);
           grad.addColorStop(0, '#ffffff');
-          grad.addColorStop(0.3, '#ffbb00');
-          grad.addColorStop(0.6, '#ff3300');
-          grad.addColorStop(1, 'rgba(255, 51, 0, 0)');
-          
+          grad.addColorStop(0.3, sparkTheme.sparkMid);
+          grad.addColorStop(0.6, sparkTheme.sparkEdge);
+          grad.addColorStop(1, sparkTheme.sparkFade);
+
           ctx.fillStyle = grad;
           ctx.beginPath();
           ctx.arc(0, 0, this.size, 0, Math.PI * 2);
           ctx.fill();
         } else {
-          // Brushed steel metal fragment
+          // Spinning fragment shard
           const grad = ctx.createLinearGradient(-this.size/2, -this.size/2, this.size/2, this.size/2);
           grad.addColorStop(0, '#ffffff');
           grad.addColorStop(0.4, this.color);
-          grad.addColorStop(1, '#080a0d');
+          grad.addColorStop(1, THEMES[currentTheme].gridBg);
           
           ctx.fillStyle = grad;
           ctx.beginPath();
@@ -1586,10 +1943,8 @@
     }
 
     function getMinoColorHex(type) {
-      const colors = {
-        I: '#3ba3d6', O: '#dca626', T: '#c15e21', S: '#2e9647', Z: '#c62b2b', J: '#2a5cd3', L: '#d3711a'
-      };
-      return colors[type] || '#777';
+      const palette = THEMES[currentTheme].blocks;
+      return (palette[type] && palette[type].main) || '#777';
     }
 
 
@@ -1789,17 +2144,110 @@
       bindTouchAction('btnDrop', hardDrop);
     }
 
+    // Swipe / tap gestures directly on the game canvas
+    function setupCanvasGestures() {
+      let startX = 0, startY = 0, startT = 0, lastX = 0;
+      let tracking = false;
+      let softDropActive = false;
+      let hardDropFired = false;
+      const CELL_PX = 25;      // one grid move per 25px of horizontal swipe
+      const TAP_MAX_MS = 250;  // quick tap duration ceiling
+      const TAP_MAX_PX = 12;   // quick tap movement ceiling
+      const FLICK_PX = 120;    // strong downward flick distance
+      const FLICK_MS = 350;    // ...within this time = hard drop
+
+      function gesturesEnabled() {
+        return gameState === 'playing' && clearingTimer === 0;
+      }
+
+      canvas.addEventListener('touchstart', e => {
+        e.preventDefault();
+        if (!gesturesEnabled()) return;
+        const t = e.changedTouches[0];
+        startX = lastX = t.clientX;
+        startY = t.clientY;
+        startT = performance.now();
+        tracking = true;
+        softDropActive = false;
+        hardDropFired = false;
+      }, { passive: false });
+
+      canvas.addEventListener('touchmove', e => {
+        e.preventDefault();
+        if (!tracking || !gesturesEnabled()) return;
+        const t = e.changedTouches[0];
+
+        // Horizontal swipe: repeated moves, one cell per CELL_PX
+        let dx = t.clientX - lastX;
+        while (dx >= CELL_PX) {
+          moveRight();
+          dx -= CELL_PX;
+          lastX += CELL_PX;
+        }
+        while (dx <= -CELL_PX) {
+          moveLeft();
+          dx += CELL_PX;
+          lastX -= CELL_PX;
+        }
+
+        // Vertical swipe down: strong flick = hard drop, else soft drop while held
+        const dy = t.clientY - startY;
+        const elapsed = performance.now() - startT;
+        if (!hardDropFired && dy > FLICK_PX && elapsed < FLICK_MS) {
+          hardDropFired = true;
+          if (softDropActive) {
+            keyState.down.pressed = false;
+            softDropActive = false;
+          }
+          hardDrop();
+          tracking = false;
+          return;
+        }
+        if (dy > 30 && !softDropActive) {
+          keyState.down.pressed = true; // soft drop while swiping down
+          softDropActive = true;
+        } else if (dy <= 10 && softDropActive) {
+          keyState.down.pressed = false;
+          softDropActive = false;
+        }
+      }, { passive: false });
+
+      function endGesture(e) {
+        if (!tracking) return;
+        e.preventDefault();
+        const t = e.changedTouches[0];
+        const elapsed = performance.now() - startT;
+        const distX = Math.abs(t.clientX - startX);
+        const distY = t.clientY - startY;
+
+        if (softDropActive) {
+          keyState.down.pressed = false;
+          softDropActive = false;
+        }
+
+        // Quick tap = rotate
+        if (elapsed < TAP_MAX_MS && distX < TAP_MAX_PX && distY < TAP_MAX_PX && gesturesEnabled()) {
+          rotatePiece();
+        }
+        tracking = false;
+      }
+
+      canvas.addEventListener('touchend', endGesture, { passive: false });
+      canvas.addEventListener('touchcancel', endGesture, { passive: false });
+    }
+
 
     /* =========================================================================
        CANVAS RENDERING OPERATIONS
        ========================================================================= */
     function drawGrid() {
+      const gridTheme = THEMES[currentTheme];
       // Draw grid plates backing
-      ctx.fillStyle = '#06090c';
+      ctx.fillStyle = gridTheme.gridBg;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      
+
       // Grid lines drawing
-      ctx.strokeStyle = '#121922';
+      ctx.strokeStyle = gridTheme.gridLine;
       ctx.lineWidth = 1;
       
       for (let c = 0; c <= COLS; c++) {
@@ -1816,25 +2264,36 @@
       }
     }
 
-    // Heavy Metal Brick Rendering
+    // Deterministic pseudo-random hash (stable per position, avoids flicker)
+    function hashRand(x, y, i) {
+      const s = Math.sin(x * 12.9898 + y * 78.233 + i * 37.719) * 43758.5453;
+      return s - Math.floor(s);
+    }
+
+    // Theme-aware Mino Rendering (dispatches on active theme style)
     function drawMino(targetCtx, x, y, type, size = 30) {
-      const colors = {
-        I: { main: '#3ba3d6', light: '#9ae2ff', dark: '#155d82' }, // Cyan Steel / Titanium
-        O: { main: '#dca626', light: '#ffe273', dark: '#865e07' }, // Industrial Gold
-        T: { main: '#c15e21', light: '#ffab73', dark: '#722b00' }, // Copper / Bronze
-        S: { main: '#2e9647', light: '#86ea9c', dark: '#0a541b' }, // Chromium green
-        Z: { main: '#c62b2b', light: '#ff7c7c', dark: '#770b0b' }, // Red Iron / Rust
-        J: { main: '#2a5cd3', light: '#88a6f3', dark: '#0e2b83' }, // Cobalt Blue
-        L: { main: '#d3711a', light: '#ffb36f', dark: '#7c3a00' }  // Orange Brass
-      };
-      
-      const c = colors[type] || { main: '#777', light: '#bbb', dark: '#333' };
+      const theme = THEMES[currentTheme];
+      const c = theme.blocks[type] || { main: '#777', light: '#bbb', dark: '#333' };
+
+      if (theme.style === 'bricks') {
+        drawMinoBricks(targetCtx, x, y, c, size, theme);
+      } else if (theme.style === 'hay') {
+        drawMinoHay(targetCtx, x, y, c, size);
+      } else if (theme.style === 'wood') {
+        drawMinoWood(targetCtx, x, y, c, size);
+      } else {
+        drawMinoMetal(targetCtx, x, y, c, size);
+      }
+    }
+
+    // Metal: bevel + rivets + brushed-metal gradient (original renderer)
+    function drawMinoMetal(targetCtx, x, y, c, size) {
       const b = Math.max(2, Math.floor(size * 0.1)); // bevel size
-      
+
       // Bevel outer boundaries
       targetCtx.fillStyle = c.dark;
       targetCtx.fillRect(x, y, size, size);
-      
+
       // Light highlight overlay (Top-Left side bevels)
       targetCtx.fillStyle = c.light;
       targetCtx.beginPath();
@@ -1846,11 +2305,11 @@
       targetCtx.lineTo(x, y + size);
       targetCtx.closePath();
       targetCtx.fill();
-      
+
       // Solid core block face
       targetCtx.fillStyle = c.main;
       targetCtx.fillRect(x + b, y + b, size - 2 * b, size - 2 * b);
-      
+
       // Specular brushed-metal reflection (diagonal light glare)
       const grad = targetCtx.createLinearGradient(x + b, y + b, x + size - b, y + size - b);
       grad.addColorStop(0, 'rgba(255, 255, 255, 0.45)');
@@ -1860,24 +2319,24 @@
       grad.addColorStop(1, 'rgba(0, 0, 0, 0.45)');
       targetCtx.fillStyle = grad;
       targetCtx.fillRect(x + b, y + b, size - 2 * b, size - 2 * b);
-      
+
       // Inner seam engraving border
       targetCtx.strokeStyle = 'rgba(0, 0, 0, 0.22)';
       targetCtx.lineWidth = 1;
       const innerOffset = Math.max(3, Math.floor(size * 0.2));
       targetCtx.strokeRect(x + innerOffset, y + innerOffset, size - 2 * innerOffset, size - 2 * innerOffset);
-      
+
       // Four corner industrial rivets
       const rivetRad = Math.max(0.8, size * 0.05);
       const rivetOffset = Math.max(4, Math.floor(size * 0.22));
-      
+
       const rivets = [
         {rx: x + rivetOffset, ry: y + rivetOffset},
         {rx: x + size - rivetOffset, ry: y + rivetOffset},
         {rx: x + rivetOffset, ry: y + size - rivetOffset},
         {rx: x + size - rivetOffset, ry: y + size - rivetOffset}
       ];
-      
+
       targetCtx.fillStyle = 'rgba(0, 0, 0, 0.55)';
       rivets.forEach(riv => {
         // Shadow base
@@ -1891,6 +2350,105 @@
         targetCtx.fill();
         targetCtx.fillStyle = 'rgba(0, 0, 0, 0.55)';
       });
+    }
+
+    // Bricks: flat face with mortar border, offset mortar groove, speckle noise
+    function drawMinoBricks(targetCtx, x, y, c, size, theme) {
+      const m = Math.max(2, Math.floor(size * 0.12)); // mortar border width
+
+      // Mortar base frame
+      targetCtx.fillStyle = theme.mortar || '#d9c3ab';
+      targetCtx.fillRect(x, y, size, size);
+
+      // Brick face with slight vertical gradient
+      const grad = targetCtx.createLinearGradient(x, y + m, x, y + size - m);
+      grad.addColorStop(0, c.light);
+      grad.addColorStop(0.35, c.main);
+      grad.addColorStop(1, c.dark);
+      targetCtx.fillStyle = grad;
+      targetCtx.fillRect(x + m, y + m, size - 2 * m, size - 2 * m);
+
+      // Slightly offset horizontal mortar groove line across the face
+      const grooveY = y + Math.floor(size * 0.55) + (hashRand(x, y, 1) > 0.5 ? 1 : -1);
+      targetCtx.fillStyle = theme.mortar || '#d9c3ab';
+      targetCtx.globalAlpha = 0.85;
+      targetCtx.fillRect(x, grooveY, size, Math.max(1, Math.floor(size * 0.045)));
+      targetCtx.globalAlpha = 1;
+
+      // Subtle baked-clay speckle noise (deterministic)
+      for (let i = 0; i < 7; i++) {
+        const px = x + m + hashRand(x, y, 10 + i) * (size - 2 * m);
+        const py = y + m + hashRand(x, y, 30 + i) * (size - 2 * m);
+        targetCtx.fillStyle = i % 2 === 0 ? 'rgba(0, 0, 0, 0.18)' : 'rgba(255, 255, 255, 0.12)';
+        targetCtx.fillRect(px, py, Math.max(1, size * 0.05), Math.max(1, size * 0.05));
+      }
+    }
+
+    // Hay: golden straw bale with thin vertical straw streaks, soft warm border
+    function drawMinoHay(targetCtx, x, y, c, size) {
+      const b = Math.max(2, Math.floor(size * 0.08)); // soft border width
+
+      // Soft warm border
+      targetCtx.fillStyle = c.dark;
+      targetCtx.fillRect(x, y, size, size);
+
+      // Golden fill gradient
+      const grad = targetCtx.createLinearGradient(x, y + b, x, y + size - b);
+      grad.addColorStop(0, c.light);
+      grad.addColorStop(0.4, c.main);
+      grad.addColorStop(1, c.dark);
+      targetCtx.fillStyle = grad;
+      targetCtx.fillRect(x + b, y + b, size - 2 * b, size - 2 * b);
+
+      // Thin vertical straw streaks (deterministic)
+      targetCtx.lineWidth = 1;
+      for (let i = 0; i < 4; i++) {
+        const sx = x + b + (size - 2 * b) * ((i + 1) / 5) + (hashRand(x, y, 50 + i) - 0.5) * size * 0.12;
+        targetCtx.strokeStyle = i % 2 === 0 ? 'rgba(120, 85, 20, 0.35)' : 'rgba(255, 240, 180, 0.3)';
+        targetCtx.beginPath();
+        targetCtx.moveTo(sx, y + b);
+        targetCtx.lineTo(sx + (hashRand(x, y, 60 + i) - 0.5) * 3, y + size - b);
+        targetCtx.stroke();
+      }
+
+      // Soft top highlight
+      targetCtx.fillStyle = 'rgba(255, 245, 200, 0.22)';
+      targetCtx.fillRect(x + b, y + b, size - 2 * b, Math.max(1, Math.floor(size * 0.08)));
+    }
+
+    // Wood: plank with brown gradient, curved grain lines, warm highlight
+    function drawMinoWood(targetCtx, x, y, c, size) {
+      const b = Math.max(2, Math.floor(size * 0.08)); // edge width
+
+      // Dark plank edge
+      targetCtx.fillStyle = c.dark;
+      targetCtx.fillRect(x, y, size, size);
+
+      // Brown plank gradient (horizontal, like wood planks)
+      const grad = targetCtx.createLinearGradient(x + b, y, x + size - b, y);
+      grad.addColorStop(0, c.dark);
+      grad.addColorStop(0.25, c.main);
+      grad.addColorStop(0.6, c.light);
+      grad.addColorStop(1, c.main);
+      targetCtx.fillStyle = grad;
+      targetCtx.fillRect(x + b, y + b, size - 2 * b, size - 2 * b);
+
+      // 2-3 curved vertical grain lines (deterministic)
+      const grainCount = 2 + (hashRand(x, y, 70) > 0.5 ? 1 : 0);
+      targetCtx.lineWidth = 1;
+      targetCtx.strokeStyle = 'rgba(60, 35, 12, 0.4)';
+      for (let i = 0; i < grainCount; i++) {
+        const gx = x + b + (size - 2 * b) * ((i + 1) / (grainCount + 1));
+        const sway = (hashRand(x, y, 80 + i) - 0.5) * size * 0.3;
+        targetCtx.beginPath();
+        targetCtx.moveTo(gx, y + b);
+        targetCtx.quadraticCurveTo(gx + sway, y + size / 2, gx + sway * 0.4, y + size - b);
+        targetCtx.stroke();
+      }
+
+      // Warm highlight along the top edge
+      targetCtx.fillStyle = 'rgba(255, 220, 160, 0.25)';
+      targetCtx.fillRect(x + b, y + b, size - 2 * b, Math.max(1, Math.floor(size * 0.1)));
     }
 
     // Ghost placement preview minos
@@ -1993,7 +2551,7 @@
             // Draw hot-flash overlay if row is exploding
             if (isClearing) {
               const progress = (220 - clearingTimer) / 220;
-              ctx.fillStyle = `rgba(255, 230, 160, ${0.9 - progress * 0.9})`;
+              ctx.fillStyle = `rgba(${THEMES[currentTheme].flash}, ${0.9 - progress * 0.9})`;
               ctx.fillRect(c * blockSize, r * blockSize, blockSize, blockSize);
             }
           }
@@ -2016,22 +2574,23 @@
         }
       }
       
-      // 4.5. Expanding Metal Shockwaves (Beams of Light clearing rows)
+      // 4.5. Expanding Shockwaves (Beams of Light clearing rows)
       if (linesToClear.length > 0) {
+        const beamTheme = THEMES[currentTheme];
         ctx.save();
         ctx.globalCompositeOperation = 'lighter';
         linesToClear.forEach(r => {
           const progress = (220 - clearingTimer) / 220;
           const beamHeight = blockSize * 1.5 * (1 - progress);
           const yCenter = r * blockSize + blockSize / 2;
-          
-          // Heavy orange thermal energy flare
+
+          // Theme-tinted thermal energy flare
           const beamGrad = ctx.createLinearGradient(0, yCenter - beamHeight/2, 0, yCenter + beamHeight/2);
-          beamGrad.addColorStop(0, 'rgba(255, 51, 0, 0)');
-          beamGrad.addColorStop(0.2, 'rgba(255, 128, 0, 0.55)');
-          beamGrad.addColorStop(0.5, '#ffffff'); // pure white hot core
-          beamGrad.addColorStop(0.8, 'rgba(255, 128, 0, 0.55)');
-          beamGrad.addColorStop(1, 'rgba(255, 51, 0, 0)');
+          beamGrad.addColorStop(0, beamTheme.beamEdge);
+          beamGrad.addColorStop(0.2, beamTheme.beamMid);
+          beamGrad.addColorStop(0.5, beamTheme.beamCore); // pure white hot core
+          beamGrad.addColorStop(0.8, beamTheme.beamMid);
+          beamGrad.addColorStop(1, beamTheme.beamEdge);
           
           ctx.fillStyle = beamGrad;
           ctx.fillRect(0, yCenter - beamHeight/2, canvas.width, beamHeight);
@@ -2237,7 +2796,7 @@
       } else {
         startMusicEngine();
         musicBtnLabel.innerText = "MUSIC ON";
-        musicToggleBtn.style.borderColor = '#435266';
+        musicToggleBtn.style.borderColor = ''; // revert to themed CSS
       }
     });
 
@@ -2249,12 +2808,29 @@
         sfxToggleBtn.style.borderColor = '#c62b2b';
       } else {
         sfxBtnLabel.innerText = "SFX ON";
-        sfxToggleBtn.style.borderColor = '#435266';
+        sfxToggleBtn.style.borderColor = ''; // revert to themed CSS
       }
     });
 
+    // Theme selector bindings (live switch, persisted)
+    function applyTheme(name) {
+      if (!THEMES[name]) return;
+      currentTheme = name;
+      document.body.setAttribute('data-theme', name);
+      localStorage.setItem('tetris_theme', name);
+      document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-theme') === name);
+      });
+    }
+
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.addEventListener('click', () => applyTheme(btn.getAttribute('data-theme')));
+    });
+    applyTheme(currentTheme);
+
     // Run setup modules
     setupMobileControls();
+    setupCanvasGestures();
     requestAnimationFrame(gameLoop);
     updateHUD();
 
