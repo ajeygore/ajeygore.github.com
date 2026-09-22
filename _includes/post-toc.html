@@ -15,6 +15,7 @@ Data is pre-computed by the editorial hook into page.editorial.toc_json.
   {%- assign toc_json = page.editorial.toc_json | default: '[]' -%}
   {%- unless toc_json == '[]' -%}
 <aside class="post-toc" data-post-toc='{{ toc_json | escape }}' aria-label="On this page">
+  <p class="post-toc__title">Contents</p>
   <button class="post-toc__toggle" type="button" aria-expanded="false" aria-controls="post-toc-list">
     <span>On this page</span>
     <i class="bi bi-chevron-down" aria-hidden="true"></i>
